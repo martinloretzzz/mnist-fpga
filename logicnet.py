@@ -4,10 +4,6 @@ import torch.nn as nn
 normal_repr = torch.Tensor.__repr__
 torch.Tensor.__repr__ = lambda self: f"{self.shape} {normal_repr(self)}"
 
-hid1 = torch.load("./hidden/mnist_hidden_1.pth", weights_only=True)
-hid2 = torch.load("./hidden/mnist_hidden_2.pth", weights_only=True)
-hid1 = (hid1 >= 0).float()
-
 
 class BinaryLayer(nn.Module):
     def __init__(self, weight_path, device):
@@ -28,10 +24,19 @@ class BinaryLayer(nn.Module):
         x_or = torch.any(x_and, dim=-1)
         return x_or
 
-bin_layer = BinaryLayer("./hidden/l1_conn.pth", device=hid1.device)
 
-test_batch_size = 10000
-out = bin_layer(hid1[0:test_batch_size])
+hid0 = torch.load("./hidden/mnist_hidden_0.pth", weights_only=True).to("cpu")
+hid1 = torch.load("./hidden/mnist_hidden_1.pth", weights_only=True).to("cpu")
+hid2 = torch.load("./hidden/mnist_hidden_2.pth", weights_only=True).to("cpu")
+hid1 = (hid1 >= 0).float()
+
+bin_layer0 = BinaryLayer("./hidden/l0_conn.pth", device=hid1.device)
+bin_layer1 = BinaryLayer("./hidden/l1_conn.pth", device=hid1.device)
+
+test_batch_size = 2000
+x_in = hid0[0:test_batch_size]
+h = bin_layer0(x_in)
+out = bin_layer1(h)
 y_pred = torch.argmax(out.float(), dim=1)
 y_true = torch.argmax(hid2[0:test_batch_size], dim=1)
 
