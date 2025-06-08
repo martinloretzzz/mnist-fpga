@@ -4,7 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
-from torch.optim.lr_scheduler import StepLR
+from torch.optim.lr_scheduler import StepLR, CosineAnnealingLR
 import wandb
 
 # Conv Accuracy: 99.19% (14 epochs)
@@ -32,7 +32,7 @@ class BinActive(torch.autograd.Function):
     @staticmethod
     def forward(ctx, input):
         ctx.save_for_backward(input)
-        input = 0.25 * input.sign()
+        input = 0.5 * input.sign()
         return input 
 
     @staticmethod
@@ -113,8 +113,7 @@ def main():
         batch_size=64,
         test_batch_size=1000,
         epochs=10,
-        lr=1.0,
-        gamma=0.7,
+        lr=0.004,
         no_accel=False,
         dry_run=False,
         seed=1,
@@ -123,7 +122,7 @@ def main():
     )
 
     wandb.init(project="mnist-fpga", config=vars(args))
-    wandb.config.update({"model": "BinaryActivationNet", "optimizer": "Adadelta"})
+    wandb.config.update({"model": "BinaryActivationNet", "optimizer": "AdamW"})  # Updated optimizer name
 
     use_accel = not args.no_accel and torch.cuda.is_available()
     torch.manual_seed(args.seed)
@@ -147,20 +146,20 @@ def main():
     test_loader = torch.utils.data.DataLoader(dataset2, **test_kwargs)
 
     model = Net().to(device)
-    optimizer = optim.Adadelta(model.parameters(), lr=args.lr, weight_decay=0.0)
+    optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.0005)
     param_count = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"Parameter Count: {param_count}")
     wandb.config.update({"parameter_count": param_count})
 
-    scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
+    scheduler = CosineAnnealingLR(optimizer, T_max=args.epochs, eta_min=1e-6)
     for epoch in range(1, args.epochs + 1):
         train(args, model, device, train_loader, optimizer, epoch)
         test(model, device, test_loader)
         scheduler.step()
 
     if args.save_model:
-        torch.save(model.state_dict(), "mnist_model.pt")
-        wandb.save("mnist_model.pt")
+        torch.save(model.state_dict(), "./mnist_model.pt")
+        wandb.save("./mnist_model.pt")
 
 if __name__ == '__main__':
     main()
