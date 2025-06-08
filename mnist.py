@@ -11,26 +11,33 @@ from torch.optim.lr_scheduler import StepLR
 # Binarized Input: 97.49 (10 epochs, 100k params)
 # Binarized Input: 98.05 (10 epochs, 100k params, batchnorm)
 # Binarized Input: 97.94 (10 epochs, 100k params, batchnorm, dropout)
+# Binarized Input: 97.88 (10 epochs, 100k params, batchnorm, no bias)
+# Remove unused pixels: 97.95 (10 epochs, 84k params, from 98.05)
+
+unused_pixel_mask = ~torch.load("mnist_unused_mask.pth", weights_only=True).view(-1)
 
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.ln1 = nn.Linear(28 * 28, 128)
+        in_feature_count = unused_pixel_mask.sum().item()
+        self.ln1 = nn.Linear(in_feature_count, 128)
         self.bn1 = nn.BatchNorm1d(128)
         self.ln2 = nn.Linear(128, 64)
         self.bn2 = nn.BatchNorm1d(64)
         self.ln3 = nn.Linear(64, 10)
 
     def forward(self, x):
-        x = x.flatten(1)
+        # moved to preprocess
+        # x = x.flatten(1)
+        # x = x[:, unused_pixel_mask]
         x = self.ln1(x)
         x = self.bn1(x)
         x = F.relu(x)
-        x = F.dropout(x, p=0.2, training=self.training)
+        # x = F.dropout(x, p=0.2, training=self.training)
         x = self.ln2(x)
         x = self.bn2(x)
         x = F.relu(x)
-        x = F.dropout(x, p=0.2, training=self.training)
+        # x = F.dropout(x, p=0.2, training=self.training)
         x = self.ln3(x)
 
         output = F.log_softmax(x, dim=1)
@@ -73,9 +80,11 @@ def test(model, device, test_loader):
         100. * correct / len(test_loader.dataset)))
 
 
-class Binarize(object):
-    def __call__(self, tensor):
-        return torch.where(tensor > 0.5, torch.tensor(0.5), torch.tensor(-0.5))
+class BinarizePreprocess(object):
+    def __call__(self, x):
+        x = x.flatten(1)
+        x = x[:, unused_pixel_mask]
+        return torch.where(x > 0.5, torch.tensor(0.5), torch.tensor(-0.5))
 
 def main():
     args = SimpleNamespace(
@@ -87,7 +96,7 @@ def main():
         no_accel=False,
         dry_run=False,
         seed=1,
-        log_interval=100,
+        log_interval=200,
         save_model=False
     )
 
@@ -110,7 +119,7 @@ def main():
     transform=transforms.Compose([
         transforms.ToTensor(),
         # transforms.Normalize((0.1307,), (0.3081,))
-        Binarize()
+        BinarizePreprocess()
         ])
     dataset1 = datasets.MNIST('../data', train=True, download=True,
                        transform=transform)
@@ -121,6 +130,7 @@ def main():
 
     model = Net().to(device)
     optimizer = optim.Adadelta(model.parameters(), lr=args.lr)
+    # optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=5e-5)
     print(f"Parameter Count: {sum(p.numel() for p in model.parameters() if p.requires_grad)}")
 
     scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
