@@ -1,4 +1,4 @@
-import argparse
+from types import SimpleNamespace
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -8,21 +8,29 @@ from torch.optim.lr_scheduler import StepLR
 
 # Conv Accuracy: 99.19% (14 epochs)
 # Linear Accuracy: 98.10% (10 epochs)
+# Binarized Input: 97.49 (10 epochs, 100k params)
+# Binarized Input: 98.05 (10 epochs, 100k params, batchnorm)
+# Binarized Input: 97.94 (10 epochs, 100k params, batchnorm, dropout)
 
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
         self.ln1 = nn.Linear(28 * 28, 128)
+        self.bn1 = nn.BatchNorm1d(128)
         self.ln2 = nn.Linear(128, 64)
+        self.bn2 = nn.BatchNorm1d(64)
         self.ln3 = nn.Linear(64, 10)
 
     def forward(self, x):
         x = x.flatten(1)
-        # x = torch.where(x > 0, 0.5, -0.5)
         x = self.ln1(x)
+        x = self.bn1(x)
         x = F.relu(x)
+        x = F.dropout(x, p=0.2, training=self.training)
         x = self.ln2(x)
+        x = self.bn2(x)
         x = F.relu(x)
+        x = F.dropout(x, p=0.2, training=self.training)
         x = self.ln3(x)
 
         output = F.log_softmax(x, dim=1)
@@ -65,37 +73,30 @@ def test(model, device, test_loader):
         100. * correct / len(test_loader.dataset)))
 
 
+class Binarize(object):
+    def __call__(self, tensor):
+        return torch.where(tensor > 0.5, torch.tensor(0.5), torch.tensor(-0.5))
+
 def main():
-    # Training settings
-    parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
-    parser.add_argument('--batch-size', type=int, default=64, metavar='N',
-                        help='input batch size for training (default: 64)')
-    parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
-                        help='input batch size for testing (default: 1000)')
-    parser.add_argument('--epochs', type=int, default=10, metavar='N',
-                        help='number of epochs to train (default: 14)')
-    parser.add_argument('--lr', type=float, default=1.0, metavar='LR',
-                        help='learning rate (default: 1.0)')
-    parser.add_argument('--gamma', type=float, default=0.7, metavar='M',
-                        help='Learning rate step gamma (default: 0.7)')
-    parser.add_argument('--no-accel', action='store_true',
-                        help='disables accelerator')
-    parser.add_argument('--dry-run', action='store_true',
-                        help='quickly check a single pass')
-    parser.add_argument('--seed', type=int, default=1, metavar='S',
-                        help='random seed (default: 1)')
-    parser.add_argument('--log-interval', type=int, default=10, metavar='N',
-                        help='how many batches to wait before logging training status')
-    parser.add_argument('--save-model', action='store_true', 
-                        help='For Saving the current Model')
-    args = parser.parse_args()
+    args = SimpleNamespace(
+        batch_size=64,
+        test_batch_size=1000,
+        epochs=10,
+        lr=1.0,
+        gamma=0.7,
+        no_accel=False,
+        dry_run=False,
+        seed=1,
+        log_interval=100,
+        save_model=False
+    )
 
     use_accel = not args.no_accel and torch.cuda.is_available()
 
     torch.manual_seed(args.seed)
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(device)
+    print(f"Device: {device}")
 
     train_kwargs = {'batch_size': args.batch_size}
     test_kwargs = {'batch_size': args.test_batch_size}
@@ -108,7 +109,8 @@ def main():
 
     transform=transforms.Compose([
         transforms.ToTensor(),
-        transforms.Normalize((0.1307,), (0.3081,))
+        # transforms.Normalize((0.1307,), (0.3081,))
+        Binarize()
         ])
     dataset1 = datasets.MNIST('../data', train=True, download=True,
                        transform=transform)
