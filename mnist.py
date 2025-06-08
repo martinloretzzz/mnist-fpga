@@ -14,6 +14,7 @@ from torch.optim.lr_scheduler import StepLR
 # Binarized Input: 97.88 (10 epochs, 100k params, batchnorm, no bias)
 # Remove unused pixels: 97.95 (10 epochs, 84k params, from 98.05)
 # Smaller network: 97.55 (10 epochs, 40k params, from 97.95)
+# Single Layer Network: 92.05 (10 epochs)
 
 unused_pixel_mask = ~torch.load("mnist_unused_mask.pth", weights_only=True).view(-1)
 
@@ -25,21 +26,36 @@ class BinaryActivation(torch.autograd.Function):
     @staticmethod
     def backward(ctx, grad_output):
         return F.hardtanh(grad_output)
+    
+class BinActive(torch.autograd.Function):
+    @staticmethod
+    def forward(ctx, input):
+        ctx.save_for_backward(input)
+        input = 0.25 * input.sign()
+        return input 
+
+    @staticmethod
+    def backward(ctx, grad_output):
+        input, = ctx.saved_tensors
+        grad_input = grad_output.clone()
+        grad_input[input.ge(1)] = 0
+        grad_input[input.le(-1)] = 0
+        return grad_input
 
 class BinaryActivationLayer(nn.Module):
     def __init__(self):
         super(BinaryActivationLayer, self).__init__()
 
     def forward(self, x):
-        return BinaryActivation.apply(x)
+        return BinActive.apply(x)
 
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
         in_feature_count = unused_pixel_mask.sum().item()
-        self.ln1 = nn.Linear(in_feature_count, 128)
+        self.ln1 = nn.Linear(in_feature_count, 256)
         # self.bn1 = nn.BatchNorm1d(128)
-        self.ln2 = nn.Linear(128, 10)
+        self.ln2 = nn.Linear(256, 10)
         self.binary_act1 = BinaryActivationLayer()
 
     def forward(self, x):
