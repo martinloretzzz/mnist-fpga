@@ -13,6 +13,7 @@ from torch.optim.lr_scheduler import StepLR
 # Binarized Input: 97.94 (10 epochs, 100k params, batchnorm, dropout)
 # Binarized Input: 97.88 (10 epochs, 100k params, batchnorm, no bias)
 # Remove unused pixels: 97.95 (10 epochs, 84k params, from 98.05)
+# Smaller network: 97.55 (10 epochs, 40k params, from 97.95)
 
 unused_pixel_mask = ~torch.load("mnist_unused_mask.pth", weights_only=True).view(-1)
 
@@ -20,16 +21,17 @@ class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
         in_feature_count = unused_pixel_mask.sum().item()
-        self.ln1 = nn.Linear(in_feature_count, 128)
-        self.bn1 = nn.BatchNorm1d(128)
-        self.ln2 = nn.Linear(128, 64)
-        self.bn2 = nn.BatchNorm1d(64)
-        self.ln3 = nn.Linear(64, 10)
+        self.ln1 = nn.Linear(in_feature_count, 64)
+        self.bn1 = nn.BatchNorm1d(64)
+        self.ln2 = nn.Linear(64, 32)
+        self.bn2 = nn.BatchNorm1d(32)
+        self.ln3 = nn.Linear(32, 10)
 
     def forward(self, x):
         # moved to preprocess
         # x = x.flatten(1)
         # x = x[:, unused_pixel_mask]
+        x = x.flatten(1)
         x = self.ln1(x)
         x = self.bn1(x)
         x = F.relu(x)
@@ -37,7 +39,7 @@ class Net(nn.Module):
         x = self.ln2(x)
         x = self.bn2(x)
         x = F.relu(x)
-        # x = F.dropout(x, p=0.2, training=self.training)
+        # x = F.dropout(x, p=0.1, training=self.training)
         x = self.ln3(x)
 
         output = F.log_softmax(x, dim=1)
