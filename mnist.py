@@ -60,18 +60,21 @@ class Net(nn.Module):
 
     def forward(self, x):
         x = x.flatten(1)
+        hid0 = x
         x = self.ln1(x)
         x = self.binary_act1(x)
+        hid1 = x
         x = self.ln2(x)
         output = F.log_softmax(x, dim=1)
-        return output
+        hid2 = F.one_hot(torch.argmax(output, dim=1), num_classes=output.shape[-1])
+        return output, [hid0, hid1, hid2]
 
 def train(args, model, device, train_loader, optimizer, epoch):
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader):
         data, target = data.to(device), target.to(device)
         optimizer.zero_grad()
-        output = model(data)
+        output, hidden = model(data)
         loss = F.nll_loss(output, target)
         loss.backward()
         optimizer.step()
@@ -90,7 +93,7 @@ def test(model, device, test_loader):
     with torch.no_grad():
         for data, target in test_loader:
             data, target = data.to(device), target.to(device)
-            output = model(data)
+            output, hidden = model(data)
             test_loss += F.nll_loss(output, target, reduction='sum').item()
             pred = output.argmax(dim=1, keepdim=True)
             correct += pred.eq(target.view_as(pred)).sum().item()
@@ -101,6 +104,20 @@ def test(model, device, test_loader):
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset), accuracy))
     wandb.log({"test_loss": test_loss, "test_accuracy": accuracy})
+
+def collect_hidden(model, device, data_loader):
+    model.eval()
+    hiddens = []
+    with torch.no_grad():
+        for data, target in data_loader:
+            data, target = data.to(device), target.to(device)
+            output, hidden = model(data)
+            hiddens.append(hidden)
+
+    hiddens = [torch.cat([h[i] for h in hiddens], dim=0) for i in range(len(hiddens[0]))]
+    for i, hidden in enumerate(hiddens):
+        torch.save(hidden, f"./hidden/mnist_hidden_{i}.pth")
+
 
 class BinarizePreprocess(object):
     def __call__(self, x):
@@ -156,6 +173,7 @@ def main():
         train(args, model, device, train_loader, optimizer, epoch)
         test(model, device, test_loader)
         scheduler.step()
+    collect_hidden(model, device, train_loader)
 
     if args.save_model:
         torch.save(model.state_dict(), "./mnist_model.pt")
