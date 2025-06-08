@@ -7,29 +7,24 @@ from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
 
 # Conv Accuracy: 99.19% (14 epochs)
+# Linear Accuracy: 98.10% (10 epochs)
 
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.conv1 = nn.Conv2d(1, 32, 3, 1)
-        self.conv2 = nn.Conv2d(32, 64, 3, 1)
-        self.dropout1 = nn.Dropout(0.25)
-        self.dropout2 = nn.Dropout(0.5)
-        self.fc1 = nn.Linear(9216, 128)
-        self.fc2 = nn.Linear(128, 10)
+        self.ln1 = nn.Linear(28 * 28, 128)
+        self.ln2 = nn.Linear(128, 64)
+        self.ln3 = nn.Linear(64, 10)
 
     def forward(self, x):
-        x = self.conv1(x)
+        x = x.flatten(1)
+        # x = torch.where(x > 0, 0.5, -0.5)
+        x = self.ln1(x)
         x = F.relu(x)
-        x = self.conv2(x)
+        x = self.ln2(x)
         x = F.relu(x)
-        x = F.max_pool2d(x, 2)
-        x = self.dropout1(x)
-        x = torch.flatten(x, 1)
-        x = self.fc1(x)
-        x = F.relu(x)
-        x = self.dropout2(x)
-        x = self.fc2(x)
+        x = self.ln3(x)
+
         output = F.log_softmax(x, dim=1)
         return output
 
@@ -77,7 +72,7 @@ def main():
                         help='input batch size for training (default: 64)')
     parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
                         help='input batch size for testing (default: 1000)')
-    parser.add_argument('--epochs', type=int, default=14, metavar='N',
+    parser.add_argument('--epochs', type=int, default=10, metavar='N',
                         help='number of epochs to train (default: 14)')
     parser.add_argument('--lr', type=float, default=1.0, metavar='LR',
                         help='learning rate (default: 1.0)')
@@ -100,6 +95,7 @@ def main():
     torch.manual_seed(args.seed)
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(device)
 
     train_kwargs = {'batch_size': args.batch_size}
     test_kwargs = {'batch_size': args.test_batch_size}
@@ -123,6 +119,7 @@ def main():
 
     model = Net().to(device)
     optimizer = optim.Adadelta(model.parameters(), lr=args.lr)
+    print(f"Parameter Count: {sum(p.numel() for p in model.parameters() if p.requires_grad)}")
 
     scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
     for epoch in range(1, args.epochs + 1):
