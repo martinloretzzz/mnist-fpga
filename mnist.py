@@ -5,6 +5,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
+import wandb
 
 # Conv Accuracy: 99.19% (14 epochs)
 # Linear Accuracy: 98.10% (10 epochs)
@@ -54,26 +55,16 @@ class Net(nn.Module):
         super(Net, self).__init__()
         in_feature_count = unused_pixel_mask.sum().item()
         self.ln1 = nn.Linear(in_feature_count, 256)
-        # self.bn1 = nn.BatchNorm1d(128)
         self.ln2 = nn.Linear(256, 10)
         self.binary_act1 = BinaryActivationLayer()
 
     def forward(self, x):
-        # moved to preprocess
-        # x = x.flatten(1)
-        # x = x[:, unused_pixel_mask]
-
         x = x.flatten(1)
         x = self.ln1(x)
-        # x = self.bn1(x)
-        # x = F.relu(x)
         x = self.binary_act1(x)
-
         x = self.ln2(x)
-
         output = F.log_softmax(x, dim=1)
         return output
-
 
 def train(args, model, device, train_loader, optimizer, epoch):
     model.train()
@@ -88,9 +79,9 @@ def train(args, model, device, train_loader, optimizer, epoch):
             print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
                 epoch, batch_idx * len(data), len(train_loader.dataset),
                 100. * batch_idx / len(train_loader), loss.item()))
+            wandb.log({"epoch": epoch, "train_loss": loss.item()})
             if args.dry_run:
                 break
-
 
 def test(model, device, test_loader):
     model.eval()
@@ -100,16 +91,16 @@ def test(model, device, test_loader):
         for data, target in test_loader:
             data, target = data.to(device), target.to(device)
             output = model(data)
-            test_loss += F.nll_loss(output, target, reduction='sum').item()  # sum up batch loss
-            pred = output.argmax(dim=1, keepdim=True)  # get the index of the max log-probability
+            test_loss += F.nll_loss(output, target, reduction='sum').item()
+            pred = output.argmax(dim=1, keepdim=True)
             correct += pred.eq(target.view_as(pred)).sum().item()
 
     test_loss /= len(test_loader.dataset)
+    accuracy = 100. * correct / len(test_loader.dataset)
 
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
-        test_loss, correct, len(test_loader.dataset),
-        100. * correct / len(test_loader.dataset)))
-
+        test_loss, correct, len(test_loader.dataset), accuracy))
+    wandb.log({"test_loss": test_loss, "test_accuracy": accuracy})
 
 class BinarizePreprocess(object):
     def __call__(self, x):
@@ -131,38 +122,35 @@ def main():
         save_model=False
     )
 
+    wandb.init(project="mnist-fpga", config=vars(args))
+    wandb.config.update({"model": "BinaryActivationNet", "optimizer": "Adadelta"})
+
     use_accel = not args.no_accel and torch.cuda.is_available()
-
     torch.manual_seed(args.seed)
-
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Device: {device}")
 
     train_kwargs = {'batch_size': args.batch_size}
     test_kwargs = {'batch_size': args.test_batch_size}
     if use_accel:
-        accel_kwargs = {'num_workers': 1,
-                       'pin_memory': True,
-                       'shuffle': True}
+        accel_kwargs = {'num_workers': 1, 'pin_memory': True, 'shuffle': True}
         train_kwargs.update(accel_kwargs)
         test_kwargs.update(accel_kwargs)
 
-    transform=transforms.Compose([
+    transform = transforms.Compose([
         transforms.ToTensor(),
-        # transforms.Normalize((0.1307,), (0.3081,))
         BinarizePreprocess()
-        ])
-    dataset1 = datasets.MNIST('../data', train=True, download=True,
-                       transform=transform)
-    dataset2 = datasets.MNIST('../data', train=False,
-                       transform=transform)
-    train_loader = torch.utils.data.DataLoader(dataset1,**train_kwargs)
+    ])
+    dataset1 = datasets.MNIST('../data', train=True, download=True, transform=transform)
+    dataset2 = datasets.MNIST('../data', train=False, transform=transform)
+    train_loader = torch.utils.data.DataLoader(dataset1, **train_kwargs)
     test_loader = torch.utils.data.DataLoader(dataset2, **test_kwargs)
 
     model = Net().to(device)
     optimizer = optim.Adadelta(model.parameters(), lr=args.lr, weight_decay=0.0)
-    # optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=5e-5)
-    print(f"Parameter Count: {sum(p.numel() for p in model.parameters() if p.requires_grad)}")
+    param_count = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    print(f"Parameter Count: {param_count}")
+    wandb.config.update({"parameter_count": param_count})
 
     scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
     for epoch in range(1, args.epochs + 1):
@@ -171,8 +159,8 @@ def main():
         scheduler.step()
 
     if args.save_model:
-        torch.save(model.state_dict(), "mnist_cnn.pt")
-
+        torch.save(model.state_dict(), "mnist_model.pt")
+        wandb.save("mnist_model.pt")
 
 if __name__ == '__main__':
     main()
