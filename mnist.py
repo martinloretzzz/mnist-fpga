@@ -17,30 +17,43 @@ from torch.optim.lr_scheduler import StepLR
 
 unused_pixel_mask = ~torch.load("mnist_unused_mask.pth", weights_only=True).view(-1)
 
+class BinaryActivation(torch.autograd.Function):
+    @staticmethod
+    def forward(ctx, input):
+        return 0.25 * ((input > 0.0).float())
+
+    @staticmethod
+    def backward(ctx, grad_output):
+        return F.hardtanh(grad_output)
+
+class BinaryActivationLayer(nn.Module):
+    def __init__(self):
+        super(BinaryActivationLayer, self).__init__()
+
+    def forward(self, x):
+        return BinaryActivation.apply(x)
+
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
         in_feature_count = unused_pixel_mask.sum().item()
-        self.ln1 = nn.Linear(in_feature_count, 64)
-        self.bn1 = nn.BatchNorm1d(64)
-        self.ln2 = nn.Linear(64, 32)
-        self.bn2 = nn.BatchNorm1d(32)
-        self.ln3 = nn.Linear(32, 10)
+        self.ln1 = nn.Linear(in_feature_count, 128)
+        # self.bn1 = nn.BatchNorm1d(128)
+        self.ln2 = nn.Linear(128, 10)
+        self.binary_act1 = BinaryActivationLayer()
 
     def forward(self, x):
         # moved to preprocess
         # x = x.flatten(1)
         # x = x[:, unused_pixel_mask]
+
         x = x.flatten(1)
         x = self.ln1(x)
-        x = self.bn1(x)
-        x = F.relu(x)
-        # x = F.dropout(x, p=0.2, training=self.training)
+        # x = self.bn1(x)
+        # x = F.relu(x)
+        x = self.binary_act1(x)
+
         x = self.ln2(x)
-        x = self.bn2(x)
-        x = F.relu(x)
-        # x = F.dropout(x, p=0.1, training=self.training)
-        x = self.ln3(x)
 
         output = F.log_softmax(x, dim=1)
         return output
@@ -86,7 +99,7 @@ class BinarizePreprocess(object):
     def __call__(self, x):
         x = x.flatten(1)
         x = x[:, unused_pixel_mask]
-        return torch.where(x > 0.5, torch.tensor(0.5), torch.tensor(-0.5))
+        return torch.where(x > 0.5, torch.tensor(1.0), torch.tensor(0.0))
 
 def main():
     args = SimpleNamespace(
@@ -131,7 +144,7 @@ def main():
     test_loader = torch.utils.data.DataLoader(dataset2, **test_kwargs)
 
     model = Net().to(device)
-    optimizer = optim.Adadelta(model.parameters(), lr=args.lr)
+    optimizer = optim.Adadelta(model.parameters(), lr=args.lr, weight_decay=0.0)
     # optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=5e-5)
     print(f"Parameter Count: {sum(p.numel() for p in model.parameters() if p.requires_grad)}")
 
