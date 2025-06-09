@@ -1,10 +1,12 @@
+# pip install matplotlib wandb
+
 from types import SimpleNamespace
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
-from torch.optim.lr_scheduler import StepLR, CosineAnnealingLR
+from torch.optim.lr_scheduler import StepLR, CosineAnnealingLR, LinearLR, SequentialLR
 import wandb
 
 # Conv Accuracy: 99.19% (14 epochs)
@@ -32,7 +34,7 @@ class BinActive(torch.autograd.Function):
     @staticmethod
     def forward(ctx, input):
         ctx.save_for_backward(input)
-        input = 0.5 * input.sign()
+        input = 0.25 * input.sign()
         return input 
 
     @staticmethod
@@ -82,11 +84,11 @@ def train(args, model, device, train_loader, optimizer, epoch):
             print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
                 epoch, batch_idx * len(data), len(train_loader.dataset),
                 100. * batch_idx / len(train_loader), loss.item()))
-            wandb.log({"epoch": epoch, "train_loss": loss.item()})
+            wandb.log({"epoch": epoch, "train_loss": loss.item(), "lr": optimizer.param_groups[0]['lr']})
             if args.dry_run:
                 break
 
-def test(model, device, test_loader):
+def test(model, device, test_loader, epoch):
     model.eval()
     test_loss = 0
     correct = 0
@@ -103,7 +105,7 @@ def test(model, device, test_loader):
 
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset), accuracy))
-    wandb.log({"test_loss": test_loss, "test_accuracy": accuracy})
+    wandb.log({"test_loss": test_loss, "test_accuracy": accuracy, "epoch": epoch})
 
 def collect_hidden(model, device, data_loader):
     model.eval()
@@ -129,11 +131,11 @@ def main():
     args = SimpleNamespace(
         batch_size=64,
         test_batch_size=1000,
-        epochs=10,
+        epochs=8,
         lr=0.004,
         no_accel=False,
         dry_run=False,
-        seed=1,
+        seed=42,
         log_interval=200,
         save_model=False
     )
@@ -163,7 +165,7 @@ def main():
     test_loader = torch.utils.data.DataLoader(dataset2, **test_kwargs)
 
     model = Net().to(device)
-    optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.0005)
+    optimizer = optim.AdamW(model.parameters(), betas=(0.9, 0.999), lr=args.lr, weight_decay=0.0005)
     param_count = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"Parameter Count: {param_count}")
     wandb.config.update({"parameter_count": param_count})
@@ -171,7 +173,7 @@ def main():
     scheduler = CosineAnnealingLR(optimizer, T_max=args.epochs, eta_min=1e-6)
     for epoch in range(1, args.epochs + 1):
         train(args, model, device, train_loader, optimizer, epoch)
-        test(model, device, test_loader)
+        test(model, device, test_loader, epoch)
         scheduler.step()
     collect_hidden(model, device, train_loader)
 
