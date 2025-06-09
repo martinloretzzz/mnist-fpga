@@ -56,8 +56,8 @@ class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
         in_feature_count = unused_pixel_mask.sum().item()
-        self.ln1 = nn.Linear(in_feature_count, 1024)
-        self.ln2 = nn.Linear(1024, 10)
+        self.ln1 = nn.Linear(in_feature_count, 2048)
+        self.ln2 = nn.Linear(2048, 10)
         self.binary_act1 = BinaryActivationLayer()
 
     def forward(self, x):

@@ -1,12 +1,12 @@
+import os
+import pickle
+import re
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import datasets, transforms
 from mnist import BinarizePreprocess
 from tqdm import tqdm
-import os
-import pickle
-import re
 
 normal_repr = torch.Tensor.__repr__
 torch.Tensor.__repr__ = lambda self: f"{self.shape} {normal_repr(self)}"
@@ -88,14 +88,19 @@ class RandomForestLayer():
 class DesitionTreeNet(nn.Module):
     def __init__(self):
         super(DesitionTreeNet, self).__init__()
-        self.l0 = DesitionTreeLayer("./hidden/tree_l0/")
-        self.l1 = RandomForestLayer("./hidden/tree_l1_rf_0.pkl")
+        self.l0 = DesitionTreeLayer("./hidden/tree_l0_1024_d2/")
+        self.l1 = RandomForestLayer("./hidden/l1_pred_xgboost_1024_l0_d2.pth")
 
     def forward(self, x):
         x = x.bool()
         x1 = self.l0(x)
+        # x1 = torch.cat([x, x1], dim=1)
         x2 = self.l1(x1)
         return x2, [x, x1, x2]
+
+# 97.51 1024, d4
+# 97.63 1024, d3
+# 97.69 1024, d3, skip
 
 model = DesitionTreeNet()
 
@@ -121,7 +126,6 @@ def test(model, device, data_loader):
 
             hidden_outputs.append(hidden[1])
             target_outputs.append(target)
-
     accuracy = 100. * correct / len(data_loader.dataset)
 
     print('\nTest set: Accuracy: {}/{} ({:.0f}%)\n'.format(

@@ -6,6 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import export_text
 from tqdm import tqdm
 import pickle
+from xgboost import XGBClassifier
 
 normal_repr = torch.Tensor.__repr__
 torch.Tensor.__repr__ = lambda self: f"{self.shape} {normal_repr(self)}"
@@ -14,6 +15,27 @@ torch.Tensor.__repr__ = lambda self: f"{self.shape} {normal_repr(self)}"
 # 0: Not connected, value always 1
 # 1..n+1: Positive feature
 # n+1..2n+1: Negative feature
+
+def train_xgboost(hid_in, hid_out):
+    X = np.array(hid_in.long().cpu().numpy())
+    y = np.array(hid_out.long().cpu().numpy())
+
+    print(hid_out.unique())
+
+    model = XGBClassifier(
+        n_estimators=100,
+        reg_lambda=1.0,  # L2 regularization
+        reg_alpha=0.1,   # L1 regularization
+        random_state=42
+    )
+    model.fit(X, y)
+
+    y_pred = model.predict(X)
+    correct = np.sum(y_pred == y)
+    print(f"Correct rows: {correct}/{len(y)}")
+    print(f"Accuracy: {correct / len(y) * 100:.2f}%")
+    print(f"Error: {(len(y) - correct) / len(y) * 100:.2f}%")
+    return model, y_pred
 
 
 def get_logic_connections_for_layer(hid_in, hid_out, max_depth=None, save_tree_prefix=None, random_forest=False, random_forest_n_estimators=100):
@@ -44,7 +66,7 @@ def get_logic_connections_for_layer(hid_in, hid_out, max_depth=None, save_tree_p
         logic_terms = [f"A{i}" for i in range(X.shape[1])]
 
         # Extract tree structure as text
-        # tree_rules = export_text(clf, feature_names=[f"A{i}" for i in range(X.shape[1])])
+        tree_rules = export_text(clf, feature_names=[f"A{i}" for i in range(X.shape[1])])
         # print("Decision Tree Rules:\n", tree_rules)
 
         # Convert tree to Boolean expression
@@ -131,18 +153,33 @@ def get_logic_connections_for_layer(hid_in, hid_out, max_depth=None, save_tree_p
 
 # depth 5 => 32 nodes
 
-"""
+# first layer
+# """
 hid0 = torch.load("./hidden/mnist_hidden_0.pth", weights_only=True)
 hid1 = torch.load("./hidden/mnist_hidden_1.pth", weights_only=True)
 hid1 = (hid1 >= 0).float()
 
-layer0_conn, layer0_all_pred = get_logic_connections_for_layer(hid0, hid1, max_depth=6, save_tree_prefix="./hidden/tree_l0/tree")
-torch.save(layer0_all_pred, "./hidden/l0_pred.pth")
+layer0_conn, layer0_all_pred = get_logic_connections_for_layer(hid0, hid1, max_depth=3, save_tree_prefix="./hidden/tree_l0/tree")
+torch.save(layer0_all_pred, "./hidden/l0_pred_2048_d3.pth")
 # torch.save(layer0_conn, "./hidden/l0_conn.pth")
+# """
+
+# XGBoost
+"""
+hid1 = torch.load("./hidden/l0_pred_1024_d3.pth", weights_only=True)
+hid_target = torch.load("./hidden/mnist_hidden_target.pth", weights_only=True)
+print(f"Invlaid data: {hid_target[hid_target < 0]}")
+hid_target[hid_target < 0] = 0
+
+hid0 = torch.load("./hidden/mnist_hidden_0.pth", weights_only=True)
+hidx = torch.cat([hid0.cpu(), hid1.cpu()], dim=1)
+
+model, output = train_xgboost(hidx, hid_target)
+with open("./hidden/l1_pred_xgboost_1024_l0_d3_skip.pth", 'wb') as file: pickle.dump(model, file)
 """
 
 
-
+"""
 hid1 = torch.load("./hidden/l0_pred.pth", weights_only=True)
 hid_target = torch.load("./hidden/mnist_hidden_target.pth", weights_only=True)
 hid_target = hid_target.unsqueeze(-1)
@@ -150,7 +187,7 @@ hid_target = hid_target.unsqueeze(-1)
 layer1_conn, layer1_all_pred = get_logic_connections_for_layer(hid1, hid_target, random_forest=True, random_forest_n_estimators=100, save_tree_prefix="./hidden/tree_l1_rf")
 torch.save(layer1_all_pred, "./hidden/l1_pred_rf_1024.pth")
 # torch.save(layer1_conn, "./hidden/l1_conn_rf.pth")
-
+"""
 
 
 """
@@ -161,4 +198,15 @@ hid_target = torch.nn.functional.one_hot(hid_target, num_classes=10)
 layer1_conn, layer1_all_pred = get_logic_connections_for_layer(hid1, hid_target, max_depth=8, save_tree_prefix="./hidden/tree_l1/tree")
 torch.save(layer1_all_pred, "./hidden/l1_pred.pth")
 # #torch.save(layer1_conn, "./hidden/l1_conn.pth")
+"""
+
+# XGBoost Full
+"""
+hid0 = torch.load("./hidden/mnist_hidden_0.pth", weights_only=True)
+hid_target = torch.load("./hidden/mnist_hidden_target.pth", weights_only=True)
+print(f"Invlaid data: {hid_target[hid_target < 0]}")
+hid_target[hid_target < 0] = 0
+
+model, output = train_xgboost(hid0, hid_target)
+with open("./hidden/l1_pred_xgboost_1024_single_layer.pth", 'wb') as file: pickle.dump(model, file)
 """
