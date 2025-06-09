@@ -1,4 +1,4 @@
-# pip install matplotlib wandb
+# pip install matplotlib wandb scikit-learn
 
 from types import SimpleNamespace
 import torch
@@ -56,8 +56,8 @@ class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
         in_feature_count = unused_pixel_mask.sum().item()
-        self.ln1 = nn.Linear(in_feature_count, 256)
-        self.ln2 = nn.Linear(256, 10)
+        self.ln1 = nn.Linear(in_feature_count, 1024)
+        self.ln2 = nn.Linear(1024, 10)
         self.binary_act1 = BinaryActivationLayer()
 
     def forward(self, x):
@@ -114,11 +114,12 @@ def collect_hidden(model, device, data_loader):
         for data, target in data_loader:
             data, target = data.to(device), target.to(device)
             output, hidden = model(data)
-            hiddens.append(hidden)
+            hiddens.append([*hidden, target])
 
     hiddens = [torch.cat([h[i] for h in hiddens], dim=0) for i in range(len(hiddens[0]))]
     for i, hidden in enumerate(hiddens):
-        torch.save(hidden, f"./hidden/mnist_hidden_{i}.pth")
+        name = i if i <= 2 else "target"
+        torch.save(hidden, f"./hidden/mnist_hidden_{name}.pth")
 
 
 class BinarizePreprocess(object):

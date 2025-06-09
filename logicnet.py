@@ -4,11 +4,14 @@ import torch.nn.functional as F
 from torchvision import datasets, transforms
 from mnist import BinarizePreprocess
 from tqdm import tqdm
+import os
+import pickle
+import re
 
 normal_repr = torch.Tensor.__repr__
 torch.Tensor.__repr__ = lambda self: f"{self.shape} {normal_repr(self)}"
 
-
+"""
 class BinaryLayer(nn.Module):
     def __init__(self, weight_path):
         super(BinaryLayer, self).__init__()
@@ -39,32 +42,69 @@ class LogicNet(nn.Module):
         x1 = self.l0(x)
         x2 = self.l1(x1)
         return x2, [x, x1, x2]
+"""
 
 device = "cpu" # "cuda" if torch.cuda.is_available() else "cpu"
-model = LogicNet().to(device)
+# model = LogicNet().to(device)
 
-"""
-hid0 = torch.load("./hidden/mnist_hidden_0.pth", weights_only=True).to(device)
-hid1 = torch.load("./hidden/mnist_hidden_1.pth", weights_only=True).to(device)
-hid2 = torch.load("./hidden/mnist_hidden_2.pth", weights_only=True).to(device)
-hid1 = (hid1 >= 0).float()
 
-test_batch_size = 100
-x_in = hid0[0:test_batch_size]
-out = model(x_in)
-y_pred = torch.argmax(out.float(), dim=1)
-y_true = torch.argmax(hid2[0:test_batch_size], dim=1)
+class DesitionTreeLayer():
+    def __init__(self, layer_path, is_random_forest=False):
+        def get_tree_id(filename):
+            match = re.match(r'tree_(\d+)\.pkl', filename)
+            return int(match.group(1)) if match else float('inf')
+        
+        self.trees = []
+        files = [f for f in os.listdir(layer_path) if os.path.isfile(os.path.join(layer_path, f))]
+        files = sorted(files, key=get_tree_id)
+        for tree_file in files:
+            if tree_file.endswith('.pkl'):
+                with open(os.path.join(layer_path, tree_file), 'rb') as file:
+                    tree = pickle.load(file)
+                self.trees.append(tree)
+        self.out_features = len(self.trees)
 
-print(f"Correct predictions: {torch.sum(y_pred == y_true)}/{len(y_true)}")
-"""
+    def __call__(self, x):
+        x_np = x.cpu().numpy()
+        result = []
+        for i, tree in enumerate(self.trees):
+            y_pred = tree.predict(x_np)
+            result.append(torch.tensor(y_pred))
+        result = torch.stack(result, dim=1)
+        return result.bool()
 
+class RandomForestLayer():
+    def __init__(self, rf_path):
+        with open(rf_path, 'rb') as file:
+            self.random_forest = pickle.load(file)
+
+    def __call__(self, x):
+        x_np = x.cpu().numpy()
+        y_pred = self.random_forest.predict(x_np)
+        y_pred = torch.nn.functional.one_hot(torch.tensor(y_pred), num_classes=10)
+        return y_pred.bool()
+
+
+class DesitionTreeNet(nn.Module):
+    def __init__(self):
+        super(DesitionTreeNet, self).__init__()
+        self.l0 = DesitionTreeLayer("./hidden/tree_l0/")
+        self.l1 = RandomForestLayer("./hidden/tree_l1_rf_0.pkl")
+
+    def forward(self, x):
+        x = x.bool()
+        x1 = self.l0(x)
+        x2 = self.l1(x1)
+        return x2, [x, x1, x2]
+
+model = DesitionTreeNet()
 
 transform = transforms.Compose([transforms.ToTensor(), BinarizePreprocess()])
 dataset = datasets.MNIST('../data', train=False, transform=transform)
 data_loader = torch.utils.data.DataLoader(dataset, batch_size=128, num_workers=1, shuffle=False)
 
-dataset.data = dataset.data[0:1000]
-dataset.targets = dataset.targets[0:1000]
+dataset.data = dataset.data[0:10000]
+dataset.targets = dataset.targets[0:10000]
 
 def test(model, device, data_loader):
     model.eval()

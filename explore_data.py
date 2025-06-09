@@ -34,7 +34,7 @@ fd_binary = torch.where(full_dataset > 0.5, 1.0, 0.0)
 fd_flat = fd_binary.view(-1, 28 * 28)
 fd_zero_count = (fd_flat == 0).sum(dim=0)
 
-treshhold = 0.0005
+treshhold = 0.0000
 fd_unused_pixel_count = (len(trainset) - fd_zero_count) / len(trainset)
 unused_pixel_mask = (fd_unused_pixel_count <= treshhold)
 fd_unused_pixel = fd_unused_pixel_count[unused_pixel_mask]
