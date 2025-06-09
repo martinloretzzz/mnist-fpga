@@ -13,6 +13,10 @@ hid1 = torch.load("./hidden/mnist_hidden_1.pth", weights_only=True)
 hid2 = torch.load("./hidden/mnist_hidden_2.pth", weights_only=True)
 hid1 = (hid1 >= 0).float()
 
+hid1 = torch.load("./hidden/mnist_binary_retrain_1.pth", weights_only=True)
+hid2 = torch.load("./hidden/mnist_binary_retrain_2.pth", weights_only=True)
+
+
 # Connections are indexed in the following way:
 # 0: Not connected, value always 1
 # 1..n+1: Positive feature
@@ -114,8 +118,8 @@ def get_logic_connections_for_layer(hid_in, hid_out, max_depth):
     print(f"All connections shape: {all_conn.shape}")
     return all_conn
 
-layer1_conn = get_logic_connections_for_layer(hid1, hid2, max_depth=20)
-torch.save(layer1_conn, "./hidden/l1_conn.pth")
+layer1_conn = get_logic_connections_for_layer(hid1, hid2, max_depth=12)
+torch.save(layer1_conn, "./hidden/l1_conn_retrained.pth")
 
-layer0_conn = get_logic_connections_for_layer(hid0, hid1, max_depth=20)
-torch.save(layer0_conn, "./hidden/l0_conn.pth")
+# layer0_conn = get_logic_connections_for_layer(hid0, hid1, max_depth=20)
+# torch.save(layer0_conn, "./hidden/l0_conn.pth")
