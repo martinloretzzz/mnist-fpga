@@ -88,25 +88,26 @@ class RandomForestLayer():
 class DesitionTreeNet(nn.Module):
     def __init__(self):
         super(DesitionTreeNet, self).__init__()
-        self.l0 = DesitionTreeLayer("./hidden/tree_l0_1024_d2/")
-        self.l1 = RandomForestLayer("./hidden/l1_pred_xgboost_1024_l0_d2.pth")
+        self.l0 = DesitionTreeLayer("./hidden/tree_l0_2048_d3/")
+        self.l1 = RandomForestLayer("./hidden/l1_pred_xgboost_2048_l0_d3.pth")
 
     def forward(self, x):
         x = x.bool()
         x1 = self.l0(x)
-        # x1 = torch.cat([x, x1], dim=1)
         x2 = self.l1(x1)
         return x2, [x, x1, x2]
 
 # 97.51 1024, d4
 # 97.63 1024, d3
-# 97.69 1024, d3, skip
+# 97.69 1600, d3, skip
+# 97.74 2048, d3
+# 97.87 single xgb, 200, 4
 
 model = DesitionTreeNet()
 
 transform = transforms.Compose([transforms.ToTensor(), BinarizePreprocess()])
 dataset = datasets.MNIST('../data', train=False, transform=transform)
-data_loader = torch.utils.data.DataLoader(dataset, batch_size=128, num_workers=1, shuffle=False)
+data_loader = torch.utils.data.DataLoader(dataset, batch_size=1000, num_workers=1, shuffle=False)
 
 dataset.data = dataset.data[0:10000]
 dataset.targets = dataset.targets[0:10000]
