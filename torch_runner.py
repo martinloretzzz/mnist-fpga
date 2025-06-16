@@ -75,6 +75,31 @@ data = json.load(open(file_path, 'r'))
 trees = [extract_tree_to_logic(tree) for tree in data]
 
 leaf_paths, leaf_values, leaf_classifier_ids = trees_to_feature_arrays(trees, max_depth=4, positive_feature_count=28*28)
+
+# TODO: Move verilog stuff to seperate file
+def trees_to_sv(trees, num_classes=10):
+    def leaf_to_logic(leaf):
+        return " && ".join([f"{"!" if term.startswith("n") else ""}f[{term[1:]}]" for term in leaf])
+    
+    leaf_id = 0
+    statements = []
+    for tree_id, tree in enumerate(trees):
+        statements.append(f"// Tree {tree_id}, Classifier {tree_id % num_classes}, Iteration: {tree_id // num_classes}")
+        for leaf, value in tree:
+            statements.append(f"assign leaf[{leaf_id}] = {leaf_to_logic(leaf)};")
+            leaf_id += 1
+        statements.append("")
+    
+    return f"""module decision_tree_leaves(input logic [0:{28*28-1}] f, output logic [0:{leaf_id-1}] leaf);
+{"\n\t".join(statements)}
+endmodule"""
+
+tree_leaves_sv = trees_to_sv(trees)
+print(tree_leaves_sv)
+
+with open("./fpga/hdl/decision_tree_leaves.sv", "w") as f:
+    f.write(tree_leaves_sv)
+
 leaf_paths = torch.tensor(leaf_paths, dtype=torch.long)
 leaf_values = torch.tensor(leaf_values, dtype=torch.float)
 leaf_classifier_ids = torch.tensor(leaf_classifier_ids, dtype=torch.long)
