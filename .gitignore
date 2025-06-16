@@ -5,3 +5,6 @@ histogram.png
 data/
 wandb/
 hidden/
+.venv
+.vscode
+xgboost
