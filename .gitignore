@@ -1,7 +1,6 @@
 mnist_unused_mask.pth
 mnist_unused_pixels.png
 model.joblib
-model.json
 histogram.png
 data/
 wandb/
