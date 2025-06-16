@@ -1,8 +1,7 @@
 import json
-from collections import Counter
-import matplotlib.pyplot as plt
 import torch
 import torchvision
+from tqdm import tqdm
 
 def extract_tree_to_logic(node, parents=None):
     if parents is None: 
@@ -21,13 +20,13 @@ def trees_to_feature_arrays(trees, max_depth, positive_feature_count, num_classe
     one_feature_offset = 2 * positive_feature_count
     negative_feature_start = positive_feature_count
 
-    leave_paths = []
-    leave_values = []
-    leave_classifier_ids = []
+    leaf_paths = []
+    leaf_values = []
+    leaf_classifier_ids = []
     for tree_id, tree in enumerate(trees):
         for leaf_nodes, value in tree:
-            leave_classifier_ids.append(tree_id % num_classes)
-            leave_values.append(value)
+            leaf_classifier_ids.append(tree_id % num_classes)
+            leaf_values.append(value)
             leaf_feature_nodes = []
             for i in range(max_depth):
                 feature_id = one_feature_offset
@@ -37,8 +36,8 @@ def trees_to_feature_arrays(trees, max_depth, positive_feature_count, num_classe
                     if leaf_nodes[i].startswith("n"):
                         feature_id = negative_feature_start + int(leaf_nodes[i].replace("n", ""))
                 leaf_feature_nodes.append(feature_id)
-            leave_paths.append(leaf_feature_nodes)
-    return leave_paths, leave_values, leave_classifier_ids
+            leaf_paths.append(leaf_feature_nodes)
+    return leaf_paths, leaf_values, leaf_classifier_ids
 
 
 def binarize(x):
@@ -75,26 +74,50 @@ data = json.load(open(file_path, 'r'))
 
 trees = [extract_tree_to_logic(tree) for tree in data]
 
-leave_paths, leave_values, leave_classifier_ids = trees_to_feature_arrays(trees, max_depth=4, positive_feature_count=28*28)
-leave_paths = torch.tensor(leave_paths, dtype=torch.long)
-leave_values = torch.tensor(leave_values, dtype=torch.float)
-leave_classifier_ids = torch.tensor(leave_classifier_ids, dtype=torch.long)
+leaf_paths, leaf_values, leaf_classifier_ids = trees_to_feature_arrays(trees, max_depth=4, positive_feature_count=28*28)
+leaf_paths = torch.tensor(leaf_paths, dtype=torch.long)
+leaf_values = torch.tensor(leaf_values, dtype=torch.float)
+leaf_classifier_ids = torch.tensor(leaf_classifier_ids, dtype=torch.long)
 
 x_features = image_full_feature_space(x_test)
 
-def run_model(x_features):
+
+
+def run_model(x_features, use_fast_torch_adder=True):
     batch_size = x_features.size(0)
 
-    active_nodes = x_features[torch.arange(batch_size).unsqueeze(1), leave_paths.view(-1)]
+    active_nodes = x_features[torch.arange(batch_size).unsqueeze(1), leaf_paths.view(-1)]
     active_nodes = active_nodes.view(batch_size, -1, 4)
     active_leaves = torch.all(active_nodes, dim=-1)
 
     class_scores = []
-    for i in range(10):
-        classifier_mask = leave_classifier_ids == i
-        active_leave_values = leave_values * active_leaves.float() * classifier_mask.float()
-        tree_score = active_leave_values.sum(-1)
-        class_scores.append(tree_score)
+    if use_fast_torch_adder:
+        for i in range(10):
+            classifier_mask = leaf_classifier_ids == i
+            active_leave_values = leaf_values * active_leaves.float() * classifier_mask.float()
+            tree_score = active_leave_values.sum(-1)
+            class_scores.append(tree_score)
+    
+    if not use_fast_torch_adder:
+        unique_leaf_values, _ = torch.sort(leaf_values.unique())
+        for i in tqdm(range(10)):
+            classifier_mask = leaf_classifier_ids == i
+            count_map = {}
+            for value in list(unique_leaf_values):
+                leaf_value_mask = leaf_values == value
+                active_leaf_values = leaf_value_mask & active_leaves & classifier_mask
+                active_leaf_count = active_leaf_values.sum(-1)
+                count_map[value.item()] = active_leaf_count
+
+            negative_score = (count_map[-0.25] >> 2) + (count_map[-0.125] >> 3) \
+                    + (count_map[-0.0625] >> 4) + (count_map[-0.03125] >> 5) \
+                    + (count_map[-0.015625] >> 6)
+            positive_score = (count_map[0.015625] >> 6) + (count_map[0.03125] >> 5) \
+                    + (count_map[0.0625] >> 4) + (count_map[0.1250] >> 3) \
+                    + (count_map[0.2500] >> 2) + (count_map[0.5000] >> 1) \
+                    + (count_map[1.0000] >> 0) + (count_map[2.0000] << 1)
+            tree_score = -negative_score + positive_score
+            class_scores.append(tree_score)
 
     class_scores = torch.stack(class_scores, dim=-1)
     return class_scores
