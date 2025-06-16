@@ -82,8 +82,7 @@ leaf_classifier_ids = torch.tensor(leaf_classifier_ids, dtype=torch.long)
 x_features = image_full_feature_space(x_test)
 
 
-
-def run_model(x_features, use_fast_torch_adder=True):
+def run_model(x_features, use_fast_torch_adder=False):
     batch_size = x_features.size(0)
 
     active_nodes = x_features[torch.arange(batch_size).unsqueeze(1), leaf_paths.view(-1)]
@@ -107,15 +106,26 @@ def run_model(x_features, use_fast_torch_adder=True):
                 leaf_value_mask = leaf_values == value
                 active_leaf_values = leaf_value_mask & active_leaves & classifier_mask
                 active_leaf_count = active_leaf_values.sum(-1)
-                count_map[value.item()] = active_leaf_count
+                count_map[value.item()] = active_leaf_count.to(torch.int8)
 
-            negative_score = (count_map[-0.25] >> 2) + (count_map[-0.125] >> 3) \
-                    + (count_map[-0.0625] >> 4) + (count_map[-0.03125] >> 5) \
-                    + (count_map[-0.015625] >> 6)
-            positive_score = (count_map[0.015625] >> 6) + (count_map[0.03125] >> 5) \
-                    + (count_map[0.0625] >> 4) + (count_map[0.1250] >> 3) \
-                    + (count_map[0.2500] >> 2) + (count_map[0.5000] >> 1) \
-                    + (count_map[1.0000] >> 0) + (count_map[2.0000] << 1)
+            negative_score = count_map[-0.015625]
+            negative_score = (negative_score >> 1) + count_map[-0.03125]
+            negative_score = (negative_score >> 1) + count_map[-0.0625]
+            negative_score = (negative_score >> 1) + count_map[-0.125]
+            negative_score = (negative_score >> 1) + count_map[-0.25]
+
+            positive_score = count_map[0.015625]
+            positive_score = (positive_score >> 1) + count_map[0.03125]
+            positive_score = (positive_score >> 1) + count_map[0.0625]
+            positive_score = (positive_score >> 1) + count_map[0.125]
+            positive_score = (positive_score >> 1) + count_map[0.25]
+            positive_score = positive_score + (count_map[0.5] << 0)
+            positive_score = positive_score + (count_map[1.0] << 1)
+            positive_score = positive_score + (count_map[2.0] << 2)
+
+            # print(torch.max(negative_score, dim=-1)[0], torch.max(positive_score, dim=-1)[0])
+
+            # both scores are in base 0.25
             tree_score = -negative_score + positive_score
             class_scores.append(tree_score)
 
