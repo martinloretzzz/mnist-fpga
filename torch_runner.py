@@ -81,24 +81,67 @@ def trees_to_sv(trees, num_classes=10):
     def leaf_to_logic(leaf):
         return " && ".join([f"{"!" if term.startswith("n") else ""}f[{term[1:]}]" for term in leaf])
     
-    leaf_id = 0
-    statements = []
+    discrete_values = [-0.25, -0.125, -0.0625, -0.03125, -0.015625, 0.015625, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1.0, 2.0]
+
+    classifier_leaves = {}
+    classifier_counters = {}
+    classifier_leaf_id = {}
     for tree_id, tree in enumerate(trees):
-        statements.append(f"// Tree {tree_id}, Classifier {tree_id % num_classes}, Iteration: {tree_id // num_classes}")
+        classifier_id = tree_id % num_classes
+        iteration_id = tree_id // num_classes
+        classifier_leaves.setdefault(classifier_id, [])
+        classifier_counters.setdefault(classifier_id, {})
+        classifier_leaf_id.setdefault(classifier_id, 0)
+
         for leaf, value in tree:
-            statements.append(f"assign leaf[{leaf_id}] = {leaf_to_logic(leaf)};")
-            leaf_id += 1
-        statements.append("")
-    
-    return f"""module decision_tree_leaves(input logic [0:{28*28-1}] f, output logic [0:{leaf_id-1}] leaf);
-{"\n\t".join(statements)}
-endmodule"""
+            statement = f"assign leaf[{classifier_leaf_id[classifier_id]}] = {leaf_to_logic(leaf)}; // c{classifier_id}t{tree_id}i{iteration_id}"
+            classifier_leaves[classifier_id].append(statement)
 
-tree_leaves_sv = trees_to_sv(trees)
-print(tree_leaves_sv)
+            classifier_counters[classifier_id].setdefault(value, [])
+            classifier_counters[classifier_id][value].append(classifier_leaf_id[classifier_id])
 
-with open("./fpga/hdl/decision_tree_leaves.sv", "w") as f:
-    f.write(tree_leaves_sv)
+            classifier_leaf_id[classifier_id] += 1
+
+    tree_modules = []
+    for digit, statements in classifier_leaves.items():
+        tree_modules.append(f"""module decision_tree_leaves_{digit}(input logic [0:{28*28-1}] f, output logic [0:{len(statements)-1}] leaf);
+\t{"\n\t".join(statements)}
+endmodule""")
+    decision_tree_module = "`timescale 1ns / 1ps\n\n" + "\n\n".join(tree_modules)
+
+
+    counter_modules = []
+    for digit, value_leafs in classifier_counters.items():
+        in_count = len(classifier_leaves[digit])
+        out_count = len(discrete_values)
+
+        statements = []
+        for i, value in enumerate(discrete_values):
+            if value in value_leafs:
+                statement = f"assign val[{i}] = {" + ".join([f"l[{str(leaf_id)}]" for leaf_id in value_leafs[value]])}; // {value}"
+                statements.append(statement)
+            else:
+                statements.append(f"assign val[{i}] = 0; // {value}")
+
+        counter_modules.append(f"""module leaf_counter_{digit}(input logic [0:{in_count-1}] l, output logic [7:0] val [0:{out_count-1}]);
+\t{"\n\t".join(statements)}
+endmodule""")
+    counter_module = "`timescale 1ns / 1ps\n\n" + "\n\n".join(counter_modules)
+
+    return decision_tree_module, counter_module
+
+decision_tree_module, counter_module = trees_to_sv(trees)
+
+print(decision_tree_module)
+print()
+print(counter_module)
+
+with open("./fpga/hdl/decision_trees.sv", "w") as f:
+    f.write(decision_tree_module)
+
+with open("./fpga/hdl/leaf_counters.sv", "w") as f:
+    f.write(counter_module)
+
 
 leaf_paths = torch.tensor(leaf_paths, dtype=torch.long)
 leaf_values = torch.tensor(leaf_values, dtype=torch.float)
