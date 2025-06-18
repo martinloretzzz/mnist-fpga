@@ -9,7 +9,7 @@ def input_high_at(high_indices):
     return BinaryValue("".join(bits))
 
 @cocotb.test()
-async def my_first_test(dut):
+async def test_first_decision_tree(dut):
     dut.f.value = input_high_at([])
 
     await Timer(1, units="ns")
