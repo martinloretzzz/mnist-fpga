@@ -6,7 +6,6 @@
 module mnist_classifier(input logic [0:783] image, output logic [3:0] digit);
     logic [7:0] score [0:9];
 
-
     // Digit 0
 	wire [0:1411] leaf_0;
 	wire [7:0] val_count_0 [0:12];

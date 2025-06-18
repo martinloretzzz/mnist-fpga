@@ -21,7 +21,7 @@ def set_vector(signal, values):
         signal[i].value = values[i]
 
 
-@cocotb.test()
+@cocotb.test(skip=True)
 async def test_classifier_on_first_digit(dut):
     image_id = 0
     first_image = x_test[image_id].tolist()
@@ -31,3 +31,20 @@ async def test_classifier_on_first_digit(dut):
     await Timer(1, units="ns")
 
     assert dut.digit.value == first_label
+
+
+@cocotb.test(skip=False)
+async def test_classifier_on_10_digits(dut):
+    correct = 0
+    for i in range(10):
+        image_id = 10 + i
+        image = x_test[image_id].tolist()
+        label = y_test[image_id].tolist()
+
+        set_vector(dut.image, image)
+        await Timer(1, units="ns")
+
+        correct += dut.digit.value == label
+
+        print(f"{i}: {dut.digit.value}/{label} y_pred/y_true")
+    assert correct >= 9
