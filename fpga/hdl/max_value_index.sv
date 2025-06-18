@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module max_value_index(input logic [7:0] score [0:9], output logic [7:0] digit);
+module max_value_index(input logic [7:0] score [0:9], output logic [3:0] digit);
 	logic [3:0] max_l0 [0:4];
 	logic [3:0] max_l1 [0:2];
 	logic [3:0] max_l2;
