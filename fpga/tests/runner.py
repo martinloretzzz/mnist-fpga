@@ -25,6 +25,8 @@ if __name__ == "__main__":
             module_unit_test_runner("leaf_counter_0", ["leaf_counters.sv"], ["test_leaf_counter"])
         case "adder":
             module_unit_test_runner("counter_adder", ["counter_adder.sv"], ["test_counter_adder"])
+        case "max":
+            module_unit_test_runner("max_value_index", ["max_value_index.sv"], ["test_max_value_index"])
         case _:
             raise Exception(f"Can't find a runner for {args.test}")
 
