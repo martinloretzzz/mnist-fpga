@@ -1,7 +1,6 @@
 import json
 import torch
 import torchvision
-from tqdm import tqdm
 
 def extract_tree_to_logic(node, parents=None):
     if parents is None: 
@@ -44,17 +43,8 @@ def binarize(x):
     x = x.flatten(1)
     return torch.where(x > 0.3, torch.tensor(1.0), torch.tensor(0.0))
 
-def convert_to_numpy(dataset, to_numpy=True):
-    data = []
-    labels = []
-    for img, label in dataset:
-        data.append(img)
-        labels.append(label)
-    data = binarize(torch.cat(data, dim=0))
-    labels = torch.tensor(labels)
-    if to_numpy:
-        data, labels = data.numpy(), labels.numpy()
-    return data, labels
+train_dataset = torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=torchvision.transforms.ToTensor())
+test_dataset = torchvision.datasets.MNIST(root='./data', train=False, download=True, transform=torchvision.transforms.ToTensor())
 
 def image_full_feature_space(data):
     data = data.bool()
@@ -62,12 +52,8 @@ def image_full_feature_space(data):
     ones_data = torch.ones((data.shape[0], 1), dtype=torch.bool, device=data.device)
     return torch.cat((data, negative_data, ones_data),  dim=-1)
 
-
-train_dataset = torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=torchvision.transforms.ToTensor())
-test_dataset = torchvision.datasets.MNIST(root='./data', train=False, download=True, transform=torchvision.transforms.ToTensor())
-
 # X_train, y_train = convert_to_numpy(train_dataset, to_numpy=False)
-x_test, y_test = convert_to_numpy(test_dataset, to_numpy=False)
+x_test, y_test = binarize(test_dataset.data), test_dataset.targets
 
 file_path = "model.json"
 data = json.load(open(file_path, 'r'))
@@ -130,13 +116,32 @@ endmodule""")
 endmodule""")
     counter_module = module_header + "\n\n".join(counter_modules)
 
-    return decision_tree_module, counter_module
+    classifier_runners = []
+    for i, (digit, value_leafs) in enumerate(classifier_counters.items()):
+        leaf_count = len(classifier_leaves[digit])
+        classifier_runners.append(f"""
+    // Digit {i}
+	wire [0:{leaf_count-1}] leaf_{i};
+	wire [7:0] val_count_{i} [0:12];
+    decision_tree_leaves_{i} dtl_{i} (.f(image), .leaf(leaf_{i}));
+    leaf_counter_{i} lc_{i} (.l(leaf_{i}), .val(val_count_{i}));
+    counter_adder ca_{i} (.val(val_count_{i}), .score(score[{i}]));""")
 
-decision_tree_module, counter_module = trees_to_sv(trees)
 
-print(decision_tree_module)
-print()
-print(counter_module)
+    classifier_module = module_header + f"""
+module mnist_classifier(input logic [0:783] image, output logic [3:0] digit);
+    logic [7:0] score [0:9];
+
+{"\n\n".join(classifier_runners)}
+
+    // Get maximum score
+    max_value_index mvi(.score(score), .digit(digit));
+endmodule"""
+
+    return decision_tree_module, counter_module, classifier_module
+
+decision_tree_module, counter_module , classifier_module = trees_to_sv(trees)
+
 
 with open("./fpga/hdl/decision_trees.sv", "w") as f:
     f.write(decision_tree_module)
@@ -144,6 +149,8 @@ with open("./fpga/hdl/decision_trees.sv", "w") as f:
 with open("./fpga/hdl/leaf_counters.sv", "w") as f:
     f.write(counter_module)
 
+with open("./fpga/hdl/mnist_classifier.sv", "w") as f:
+    f.write(classifier_module)
 
 leaf_paths = torch.tensor(leaf_paths, dtype=torch.long)
 leaf_values = torch.tensor(leaf_values, dtype=torch.float)
@@ -169,7 +176,7 @@ def run_model(x_features, use_fast_torch_adder=False):
     
     if not use_fast_torch_adder:
         unique_leaf_values, _ = torch.sort(leaf_values.unique())
-        for i in tqdm(range(10)):
+        for i in range(10):
             classifier_mask = leaf_classifier_ids == i
             count_map = {}
             for value in list(unique_leaf_values):
@@ -189,9 +196,9 @@ def run_model(x_features, use_fast_torch_adder=False):
             positive_score = (positive_score >> 1) + count_map[0.0625]
             positive_score = (positive_score >> 1) + count_map[0.125]
             positive_score = (positive_score >> 1) + count_map[0.25]
-            positive_score = positive_score + (count_map[0.5] << 0)
-            positive_score = positive_score + (count_map[1.0] << 1)
-            positive_score = positive_score + (count_map[2.0] << 2)
+            positive_score = positive_score + (count_map[0.5] << 1)
+            positive_score = positive_score + (count_map[1.0] << 2)
+            positive_score = positive_score + (count_map[2.0] << 3)
 
             # print(torch.max(negative_score, dim=-1)[0], torch.max(positive_score, dim=-1)[0])
 
