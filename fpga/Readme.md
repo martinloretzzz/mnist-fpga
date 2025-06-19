@@ -6,12 +6,21 @@ sudo apt install iverilog
 
 ALM Usage:
 - Initial Design: 14418
-  
+
 Initial Design:
 - Clock: 25MHz
 - ALM: 14.4k
 - Power: 510mW
 - 49.02 Mimg/s/W
+
+Combine same discrete values inside tree (OR Gate, only single leaf active):
+- Clock: 25MHz
+- ALM: 11.3k
+- Setup Slack: 4.1
+- Power: 473mW
+- 52.85 Mimg/s/W
+- 56.53 Mimg/s @ 27.5MHz & 486mW
+
 
 Power:
 - 350mW Static (Base) Power consumption

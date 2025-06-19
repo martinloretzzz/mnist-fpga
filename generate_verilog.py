@@ -1,9 +1,6 @@
 import json
 
 
-def flat(nested_list):
-    [item for sublist in nested_list for item in sublist]
-
 def extract_tree(node, parents=None):
     if parents is None: 
         parents = []
@@ -54,14 +51,22 @@ def generate_leaf_counter_module(classifiers):
         leaf_id = 0
         leaf_ids_by_value = {}
         for tree in classifier_trees:
+            leaf_ids_by_value_in_tree = {}
             for leaf, value in tree:
-                leaf_ids_by_value.setdefault(value, [])
-                leaf_ids_by_value[value].append(leaf_id)
+                leaf_ids_by_value_in_tree.setdefault(value, [])
+                leaf_ids_by_value_in_tree[value].append(leaf_id)
                 leaf_id += 1
+
+            for value, leaf_id_group in leaf_ids_by_value_in_tree.items():
+                leaf_ids_by_value.setdefault(value, [])
+                leaf_ids_by_value[value].append(leaf_id_group)
+
+        def generate_leaf_groups_sum(leaf_groups):
+            return " + ".join([f"({" || ".join([f"l[{str(leaf_id)}]" for leaf_id in leaf_group])})" for leaf_group in leaf_groups])
 
         statements = []
         for i, value in enumerate(discrete_values):
-            sum_expression = " + ".join([f"l[{str(leaf_id)}]" for leaf_id in leaf_ids_by_value[value]]) if value in leaf_ids_by_value else "0"
+            sum_expression = generate_leaf_groups_sum(leaf_ids_by_value[value]) if value in leaf_ids_by_value else "0"
             statements.append(f"assign val[{i}] = {sum_expression}; // {value}")
 
         leaf_count = leaf_id
