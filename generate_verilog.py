@@ -92,16 +92,28 @@ endmodule"""
 
 def generate_classifier_module(classifiers):
     return f"""
-module mnist_classifier(input logic [0:783] image, output logic [3:0] digit);
+module mnist_classifier(input logic clk, input logic [0:783] image, output logic [3:0] digit);
     logic [7:0] score [0:9];
-
+    integer i;
+    
 {"\n\n\n".join([
     f'''    // Digit {i}
-	wire [0:{sum([len(tree) for tree in trees])-1}] leaf_{i};
-	wire [7:0] val_count_{i} [0:12];
+    wire [0:{sum([len(tree) for tree in trees])-1}] leaf_{i};
+    wire [7:0] val_count_{i} [0:12];
+    wire [7:0] score_{i};
+    reg [0:{sum([len(tree) for tree in trees])-1}] leaf_{i}_reg; 
+    reg [7:0] val_count_{i}_reg [0:12];
     decision_tree_leaves_{i} dtl_{i} (.f(image), .leaf(leaf_{i}));
-    leaf_counter_{i} lc_{i} (.l(leaf_{i}), .val(val_count_{i}));
-    counter_adder ca_{i} (.val(val_count_{i}), .score(score[{i}]));'''
+    leaf_counter_{i} lc_{i} (.l(leaf_{i}_reg), .val(val_count_{i}));
+    counter_adder ca_{i} (.val(val_count_{i}_reg), .score(score_{i}));
+    
+    always_ff @(posedge clk) begin
+        leaf_{i}_reg <= leaf_{i};
+        for (i = 0; i < 13; i = i + 1)
+            val_count_{i}_reg[i] <= val_count_{i}[i];
+        score[{i}] <= score_{i};
+    end
+    '''
     for i, trees in classifiers.items()
 ])}
 

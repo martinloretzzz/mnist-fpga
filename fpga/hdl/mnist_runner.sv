@@ -18,7 +18,7 @@ module mnist_runner (
         end
     end
 
-    mnist_classifier mcl (.image(mem), .digit(digit_out));
+    mnist_classifier mcl (.clk(clk), .image(mem), .digit(digit_out));
 
     always_ff @(posedge clk) begin
         if (write_enable) begin

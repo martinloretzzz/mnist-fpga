@@ -29,6 +29,13 @@ Paralell prefix sum with 6 input on the first stage:
 - 53.3 Mimg/s/W
 - 62.5 Mimg/s @ 31MHz & 496mW
 
+Pipeline classifier:
+- Clock: 100MHz
+- ALM: 13.8k
+- Setup Slack: 0.39
+- Power: 424mW
+- 235.8 Mimg/s/W
+
 Power:
 - 350mW Static (Base) Power consumption
 - 61mW @ 10MHz
