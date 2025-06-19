@@ -21,6 +21,13 @@ Combine same discrete values inside tree (OR Gate, only single leaf active):
 - 52.85 Mimg/s/W
 - 56.53 Mimg/s @ 27.5MHz & 486mW
 
+Paralell prefix sum with 6 input on the first stage:
+- Clock: 25MHz
+- ALM: 11.3k
+- Setup Slack: 7.76
+- Power: 469mW
+- 53.3 Mimg/s/W
+- 62.5 Mimg/s @ 31MHz & 496mW
 
 Power:
 - 350mW Static (Base) Power consumption

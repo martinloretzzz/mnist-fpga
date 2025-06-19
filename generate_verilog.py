@@ -1,6 +1,10 @@
 import json
 
 
+def chunk_list(arr, chunk_size):
+    return [arr[i:i + chunk_size] for i in range(0, len(arr), chunk_size)]
+
+
 def extract_tree(node, parents=None):
     if parents is None: 
         parents = []
@@ -61,12 +65,21 @@ def generate_leaf_counter_module(classifiers):
                 leaf_ids_by_value.setdefault(value, [])
                 leaf_ids_by_value[value].append(leaf_id_group)
 
-        def generate_leaf_groups_sum(leaf_groups):
-            return " + ".join([f"({" || ".join([f"l[{str(leaf_id)}]" for leaf_id in leaf_group])})" for leaf_group in leaf_groups])
+        def combine_leaf_groups(leaf_groups):
+            return [f"({" || ".join([f"l[{str(leaf_id)}]" for leaf_id in leaf_group])})" for leaf_group in leaf_groups]
+
+        def generate_leaf_prefix_summer(terms):
+            terms = chunk_list(terms, 6)
+            terms = [f"({" + ".join(sum_group)})" for sum_group in terms]
+            while True:
+                if len(terms) <= 2: break
+                terms = chunk_list(terms, 2)
+                terms = [f"({" + ".join(sum_group)})" for sum_group in terms]
+            return " + ".join(terms)
 
         statements = []
         for i, value in enumerate(discrete_values):
-            sum_expression = generate_leaf_groups_sum(leaf_ids_by_value[value]) if value in leaf_ids_by_value else "0"
+            sum_expression = generate_leaf_prefix_summer(combine_leaf_groups(leaf_ids_by_value[value])) if value in leaf_ids_by_value else "0"
             statements.append(f"assign val[{i}] = {sum_expression}; // {value}")
 
         leaf_count = leaf_id
