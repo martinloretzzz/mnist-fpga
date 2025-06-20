@@ -8,3 +8,4 @@ hidden/
 .venv
 .vscode
 xgboost
+__pycache__

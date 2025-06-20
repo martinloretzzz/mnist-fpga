@@ -1,6 +1,6 @@
 import json
 import torch
-import torchvision
+from util import get_mnist_dataset
 
 def extract_tree_to_logic(node, parents=None):
     if parents is None: 
@@ -38,22 +38,13 @@ def trees_to_feature_arrays(trees, max_depth, positive_feature_count, num_classe
             leaf_paths.append(leaf_feature_nodes)
     return leaf_paths, leaf_values, leaf_classifier_ids
 
-
-def binarize(x):
-    x = x.flatten(1)
-    return torch.where(x > 0.3, torch.tensor(1.0), torch.tensor(0.0))
-
-train_dataset = torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=torchvision.transforms.ToTensor())
-test_dataset = torchvision.datasets.MNIST(root='./data', train=False, download=True, transform=torchvision.transforms.ToTensor())
-
 def image_full_feature_space(data):
     data = data.bool()
     negative_data = ~data
     ones_data = torch.ones((data.shape[0], 1), dtype=torch.bool, device=data.device)
     return torch.cat((data, negative_data, ones_data),  dim=-1)
 
-# X_train, y_train = convert_to_numpy(train_dataset, to_numpy=False)
-x_test, y_test = binarize(test_dataset.data), test_dataset.targets
+x_test, y_test = get_mnist_dataset(train=False)
 
 file_path = "model.json"
 data = json.load(open(file_path, 'r'))
@@ -69,11 +60,11 @@ leaf_classifier_ids = torch.tensor(leaf_classifier_ids, dtype=torch.long)
 x_features = image_full_feature_space(x_test)
 
 
-def run_model(x_features, use_fast_torch_adder=False):
+def run_model(x_features, use_fast_torch_adder=False, max_depth=4):
     batch_size = x_features.size(0)
 
     active_nodes = x_features[torch.arange(batch_size).unsqueeze(1), leaf_paths.view(-1)]
-    active_nodes = active_nodes.view(batch_size, -1, 4)
+    active_nodes = active_nodes.view(batch_size, -1, max_depth)
     active_leaves = torch.all(active_nodes, dim=-1)
 
     class_scores = []
@@ -106,6 +97,7 @@ def run_model(x_features, use_fast_torch_adder=False):
             positive_score = (positive_score >> 1) + count_map[0.0625]
             positive_score = (positive_score >> 1) + count_map[0.125]
             positive_score = (positive_score >> 1) + count_map[0.25]
+            # Why does << 0 work better even if it's a bug?
             positive_score = positive_score + (count_map[0.5] << 1)
             positive_score = positive_score + (count_map[1.0] << 2)
             positive_score = positive_score + (count_map[2.0] << 3)
