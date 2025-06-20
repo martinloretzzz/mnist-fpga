@@ -2,11 +2,11 @@
 
 module max_value_index(input logic [7:0] score [0:9], output logic [3:0] digit);
 	logic [3:0] max_l0_idx [0:4];
-	logic [3:0] max_l0_val [0:4];
+	logic [7:0] max_l0_val [0:4];
 	logic [3:0] max_l1_idx [0:2];
-	logic [3:0] max_l1_val [0:2];
+	logic [7:0] max_l1_val [0:2];
 	logic [3:0] max_l2_idx;
-	logic [3:0] max_l2_val;
+	logic [7:0] max_l2_val;
 
 	assign max_l0_idx[0] = (score[0] >= score[1]) ? 4'd0 : 4'd1;
 	assign max_l0_val[0] = (score[0] >= score[1]) ? score[0] : score[1];
