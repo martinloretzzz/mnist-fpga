@@ -1,5 +1,5 @@
 import json
-
+import math
 
 def chunk_list(arr, chunk_size):
     return [arr[i:i + chunk_size] for i in range(0, len(arr), chunk_size)]
@@ -68,14 +68,54 @@ def generate_leaf_counter_module(classifiers):
         def combine_leaf_groups(leaf_groups):
             return [" || ".join([f"l[{str(leaf_id)}]" for leaf_id in leaf_group]) for leaf_group in leaf_groups]
 
-        def generate_leaf_prefix_summer(terms):
-            terms = chunk_list(terms, 6)
-            terms = [f"{" + ".join(sum_group)}" for sum_group in terms]
-            while True:
-                if len(terms) <= 2: break
-                terms = chunk_list(terms, 2)
-                terms = [f"{" + ".join(sum_group)}" for sum_group in terms]
-            return " + ".join(terms)
+        def generate_leaf_prefix_summer(value_id, terms):
+            first_layer_group_size=4
+            reduce_depth_count=5
+
+            buf_prefix = f"v{value_id}c{classifier_id}"
+            def buf(depth, i, postfix=""):
+                return f"{buf_prefix}l{depth}{postfix}[{i}]"
+
+            assert len(terms) // first_layer_group_size < 2 ** reduce_depth_count
+
+            terms = chunk_list(terms, first_layer_group_size)
+            terms = [" + ".join(sum_group) for sum_group in terms]
+
+            statements = []
+            statements.append(f"logic [2:0] {buf_prefix}l{0}_out [0:{len(terms)-1}];")
+            statements.append(f"logic [2:0] {buf_prefix}l{0} [0:{len(terms)-1}];")
+            for i, term in enumerate(terms):
+                statements.append(f"assign {buf_prefix}l{0}_out[{i}] = {term};")
+
+            statements.append(f"""
+    always_ff @(posedge clk) begin
+        for (i = 0; i < {len(terms)}; i = i + 1)
+            {buf_prefix}l{0}[i] <= {buf_prefix}l{0}_out[i];
+    end\n""")
+
+            term_count = len(terms)
+            for layer_i in range(1, reduce_depth_count+1):
+                next_term_count = math.ceil(term_count / 2)
+                statements.append(f"reg [{2+layer_i}:0] {buf_prefix}l{layer_i} [0:{next_term_count-1}];")
+                statements.append(f"logic [{2+layer_i}:0] {buf_prefix}l{layer_i}_out [0:{next_term_count-1}];")
+                if term_count >= 2:
+                    for i in range(next_term_count):
+                        buf_name = buf(layer_i, i, postfix="_out")
+                        if (2 * i + 1) < term_count:
+                            statements.append(f"assign {buf_name} = {buf(layer_i-1, 2 * i)} + {buf(layer_i-1, 2 * i + 1)};")
+                        else:
+                            statements.append(f"assign {buf_name} = {buf(layer_i-1, 2 * i)};")
+                else:
+                    statements.append(f"assign {buf(layer_i, i, postfix="_out")} = {buf(layer_i-1, i)};")
+                statements.append(f"""
+    always_ff @(posedge clk) begin
+        for (i = 0; i < {next_term_count}; i = i + 1)
+            {buf(layer_i, "i")} <= {buf(layer_i, "i", postfix="_out")};
+    end\n""")
+                term_count = next_term_count
+
+            statements.append(f"assign val[{value_id}] = {buf(layer_i, i)};")
+            return statements
 
         statements = []
         for value_id, value in enumerate(discrete_values):
@@ -93,14 +133,15 @@ def generate_leaf_counter_module(classifiers):
     end
     """)
 
-                sum_expression = generate_leaf_prefix_summer([f"g{value_id}_reg[{i}]" for i in range(len(leaf_groups))])
-                statements.append(f"assign val[{value_id}] = {sum_expression};")
+                sum_groups = [f"g{value_id}_reg[{i}]" for i in range(len(leaf_groups))]
+                statements.extend(generate_leaf_prefix_summer(value_id, sum_groups))
             else:
                 statements.append(f"assign val[{value_id}] = 0;")
             statements.append(f"")
 
         leaf_count = leaf_id
         return f"""module leaf_counter_{classifier_id}(input logic clk, input logic [0:{leaf_count-1}] l, output logic [7:0] val [0:{len(discrete_values)-1}]);
+    integer i;
 \t{"\n\t".join(statements)}
 endmodule"""
 
@@ -118,12 +159,16 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [0:{sum([len(tree) for tree in trees])-1}] leaf_{i};
     wire [7:0] val_count_{i} [0:12];
     wire [7:0] score_{i};
+    (* preserve, noprune *) reg [0:783] image_{i}_reg;
+    reg [0:{sum([len(tree) for tree in trees])-1}] leaf_{i}_reg;
     reg [7:0] val_count_{i}_reg [0:12];
-    decision_tree_leaves_{i} dtl_{i} (.f(image), .leaf(leaf_{i}));
-    leaf_counter_{i} lc_{i} (.clk(clk), .l(leaf_{i}), .val(val_count_{i}));
-    counter_adder ca_{i} (.val(val_count_{i}_reg), .score(score_{i}));
+    decision_tree_leaves_{i} dtl_{i} (.f(image_{i}_reg), .leaf(leaf_{i}));
+    leaf_counter_{i} lc_{i} (.clk(clk), .l(leaf_{i}_reg), .val(val_count_{i}));
+    counter_adder ca_{i} (.clk(clk), .val(val_count_{i}_reg), .score(score_{i}));
     
     always_ff @(posedge clk) begin
+        image_{i}_reg <= image;
+        leaf_{i}_reg <= leaf_{i};
         for (i = 0; i < 13; i = i + 1)
             val_count_{i}_reg[i] <= val_count_{i}[i];
         score[{i}] <= score_{i};

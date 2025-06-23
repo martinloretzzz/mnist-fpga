@@ -3,6 +3,7 @@
 `timescale 1ns / 1ps
 
 module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0] val [0:12]);
+    integer i;
 	// -0.25
 	logic [0:55] g0;
 	reg [0:55] g0_reg;
@@ -67,7 +68,84 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g0_reg <= g0;
     end
     
-	assign val[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3] + g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7] + g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11] + g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15] + g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19] + g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23] + g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27] + g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31] + g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35] + g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39] + g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43] + g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47] + g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51] + g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55];
+	logic [2:0] v0c0l0_out [0:13];
+	logic [2:0] v0c0l0 [0:13];
+	assign v0c0l0_out[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3];
+	assign v0c0l0_out[1] = g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7];
+	assign v0c0l0_out[2] = g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11];
+	assign v0c0l0_out[3] = g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15];
+	assign v0c0l0_out[4] = g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19];
+	assign v0c0l0_out[5] = g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23];
+	assign v0c0l0_out[6] = g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27];
+	assign v0c0l0_out[7] = g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31];
+	assign v0c0l0_out[8] = g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35];
+	assign v0c0l0_out[9] = g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39];
+	assign v0c0l0_out[10] = g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43];
+	assign v0c0l0_out[11] = g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47];
+	assign v0c0l0_out[12] = g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51];
+	assign v0c0l0_out[13] = g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 14; i = i + 1)
+            v0c0l0[i] <= v0c0l0_out[i];
+    end
+
+	reg [3:0] v0c0l1 [0:6];
+	logic [3:0] v0c0l1_out [0:6];
+	assign v0c0l1_out[0] = v0c0l0[0] + v0c0l0[1];
+	assign v0c0l1_out[1] = v0c0l0[2] + v0c0l0[3];
+	assign v0c0l1_out[2] = v0c0l0[4] + v0c0l0[5];
+	assign v0c0l1_out[3] = v0c0l0[6] + v0c0l0[7];
+	assign v0c0l1_out[4] = v0c0l0[8] + v0c0l0[9];
+	assign v0c0l1_out[5] = v0c0l0[10] + v0c0l0[11];
+	assign v0c0l1_out[6] = v0c0l0[12] + v0c0l0[13];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v0c0l1[i] <= v0c0l1_out[i];
+    end
+
+	reg [4:0] v0c0l2 [0:3];
+	logic [4:0] v0c0l2_out [0:3];
+	assign v0c0l2_out[0] = v0c0l1[0] + v0c0l1[1];
+	assign v0c0l2_out[1] = v0c0l1[2] + v0c0l1[3];
+	assign v0c0l2_out[2] = v0c0l1[4] + v0c0l1[5];
+	assign v0c0l2_out[3] = v0c0l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v0c0l2[i] <= v0c0l2_out[i];
+    end
+
+	reg [5:0] v0c0l3 [0:1];
+	logic [5:0] v0c0l3_out [0:1];
+	assign v0c0l3_out[0] = v0c0l2[0] + v0c0l2[1];
+	assign v0c0l3_out[1] = v0c0l2[2] + v0c0l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v0c0l3[i] <= v0c0l3_out[i];
+    end
+
+	reg [6:0] v0c0l4 [0:0];
+	logic [6:0] v0c0l4_out [0:0];
+	assign v0c0l4_out[0] = v0c0l3[0] + v0c0l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c0l4[i] <= v0c0l4_out[i];
+    end
+
+	reg [7:0] v0c0l5 [0:0];
+	logic [7:0] v0c0l5_out [0:0];
+	assign v0c0l5_out[0] = v0c0l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c0l5[i] <= v0c0l5_out[i];
+    end
+
+	assign val[0] = v0c0l5[0];
 	
 	// -0.125
 	logic [0:97] g1;
@@ -175,7 +253,107 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g1_reg <= g1;
     end
     
-	assign val[1] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3] + g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7] + g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11] + g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15] + g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19] + g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23] + g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27] + g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31] + g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35] + g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39] + g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43] + g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47] + g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51] + g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55] + g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59] + g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63] + g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67] + g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71] + g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75] + g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79] + g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83] + g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87] + g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91] + g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95] + g1_reg[96] + g1_reg[97];
+	logic [2:0] v1c0l0_out [0:24];
+	logic [2:0] v1c0l0 [0:24];
+	assign v1c0l0_out[0] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3];
+	assign v1c0l0_out[1] = g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7];
+	assign v1c0l0_out[2] = g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11];
+	assign v1c0l0_out[3] = g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15];
+	assign v1c0l0_out[4] = g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19];
+	assign v1c0l0_out[5] = g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23];
+	assign v1c0l0_out[6] = g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27];
+	assign v1c0l0_out[7] = g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31];
+	assign v1c0l0_out[8] = g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35];
+	assign v1c0l0_out[9] = g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39];
+	assign v1c0l0_out[10] = g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43];
+	assign v1c0l0_out[11] = g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47];
+	assign v1c0l0_out[12] = g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51];
+	assign v1c0l0_out[13] = g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55];
+	assign v1c0l0_out[14] = g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59];
+	assign v1c0l0_out[15] = g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63];
+	assign v1c0l0_out[16] = g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67];
+	assign v1c0l0_out[17] = g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71];
+	assign v1c0l0_out[18] = g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75];
+	assign v1c0l0_out[19] = g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79];
+	assign v1c0l0_out[20] = g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83];
+	assign v1c0l0_out[21] = g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87];
+	assign v1c0l0_out[22] = g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91];
+	assign v1c0l0_out[23] = g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	assign v1c0l0_out[24] = g1_reg[96] + g1_reg[97];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 25; i = i + 1)
+            v1c0l0[i] <= v1c0l0_out[i];
+    end
+
+	reg [3:0] v1c0l1 [0:12];
+	logic [3:0] v1c0l1_out [0:12];
+	assign v1c0l1_out[0] = v1c0l0[0] + v1c0l0[1];
+	assign v1c0l1_out[1] = v1c0l0[2] + v1c0l0[3];
+	assign v1c0l1_out[2] = v1c0l0[4] + v1c0l0[5];
+	assign v1c0l1_out[3] = v1c0l0[6] + v1c0l0[7];
+	assign v1c0l1_out[4] = v1c0l0[8] + v1c0l0[9];
+	assign v1c0l1_out[5] = v1c0l0[10] + v1c0l0[11];
+	assign v1c0l1_out[6] = v1c0l0[12] + v1c0l0[13];
+	assign v1c0l1_out[7] = v1c0l0[14] + v1c0l0[15];
+	assign v1c0l1_out[8] = v1c0l0[16] + v1c0l0[17];
+	assign v1c0l1_out[9] = v1c0l0[18] + v1c0l0[19];
+	assign v1c0l1_out[10] = v1c0l0[20] + v1c0l0[21];
+	assign v1c0l1_out[11] = v1c0l0[22] + v1c0l0[23];
+	assign v1c0l1_out[12] = v1c0l0[24];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v1c0l1[i] <= v1c0l1_out[i];
+    end
+
+	reg [4:0] v1c0l2 [0:6];
+	logic [4:0] v1c0l2_out [0:6];
+	assign v1c0l2_out[0] = v1c0l1[0] + v1c0l1[1];
+	assign v1c0l2_out[1] = v1c0l1[2] + v1c0l1[3];
+	assign v1c0l2_out[2] = v1c0l1[4] + v1c0l1[5];
+	assign v1c0l2_out[3] = v1c0l1[6] + v1c0l1[7];
+	assign v1c0l2_out[4] = v1c0l1[8] + v1c0l1[9];
+	assign v1c0l2_out[5] = v1c0l1[10] + v1c0l1[11];
+	assign v1c0l2_out[6] = v1c0l1[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v1c0l2[i] <= v1c0l2_out[i];
+    end
+
+	reg [5:0] v1c0l3 [0:3];
+	logic [5:0] v1c0l3_out [0:3];
+	assign v1c0l3_out[0] = v1c0l2[0] + v1c0l2[1];
+	assign v1c0l3_out[1] = v1c0l2[2] + v1c0l2[3];
+	assign v1c0l3_out[2] = v1c0l2[4] + v1c0l2[5];
+	assign v1c0l3_out[3] = v1c0l2[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v1c0l3[i] <= v1c0l3_out[i];
+    end
+
+	reg [6:0] v1c0l4 [0:1];
+	logic [6:0] v1c0l4_out [0:1];
+	assign v1c0l4_out[0] = v1c0l3[0] + v1c0l3[1];
+	assign v1c0l4_out[1] = v1c0l3[2] + v1c0l3[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v1c0l4[i] <= v1c0l4_out[i];
+    end
+
+	reg [7:0] v1c0l5 [0:0];
+	logic [7:0] v1c0l5_out [0:0];
+	assign v1c0l5_out[0] = v1c0l4[0] + v1c0l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v1c0l5[i] <= v1c0l5_out[i];
+    end
+
+	assign val[1] = v1c0l5[0];
 	
 	// -0.0625
 	logic [0:90] g2;
@@ -276,7 +454,102 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g2_reg <= g2;
     end
     
-	assign val[2] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3] + g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7] + g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11] + g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15] + g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19] + g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23] + g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27] + g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31] + g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35] + g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39] + g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43] + g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47] + g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51] + g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55] + g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59] + g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63] + g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67] + g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71] + g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75] + g2_reg[76] + g2_reg[77] + g2_reg[78] + g2_reg[79] + g2_reg[80] + g2_reg[81] + g2_reg[82] + g2_reg[83] + g2_reg[84] + g2_reg[85] + g2_reg[86] + g2_reg[87] + g2_reg[88] + g2_reg[89] + g2_reg[90];
+	logic [2:0] v2c0l0_out [0:22];
+	logic [2:0] v2c0l0 [0:22];
+	assign v2c0l0_out[0] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3];
+	assign v2c0l0_out[1] = g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7];
+	assign v2c0l0_out[2] = g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11];
+	assign v2c0l0_out[3] = g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15];
+	assign v2c0l0_out[4] = g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19];
+	assign v2c0l0_out[5] = g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23];
+	assign v2c0l0_out[6] = g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27];
+	assign v2c0l0_out[7] = g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31];
+	assign v2c0l0_out[8] = g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35];
+	assign v2c0l0_out[9] = g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39];
+	assign v2c0l0_out[10] = g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43];
+	assign v2c0l0_out[11] = g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47];
+	assign v2c0l0_out[12] = g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51];
+	assign v2c0l0_out[13] = g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55];
+	assign v2c0l0_out[14] = g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59];
+	assign v2c0l0_out[15] = g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63];
+	assign v2c0l0_out[16] = g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67];
+	assign v2c0l0_out[17] = g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71];
+	assign v2c0l0_out[18] = g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75];
+	assign v2c0l0_out[19] = g2_reg[76] + g2_reg[77] + g2_reg[78] + g2_reg[79];
+	assign v2c0l0_out[20] = g2_reg[80] + g2_reg[81] + g2_reg[82] + g2_reg[83];
+	assign v2c0l0_out[21] = g2_reg[84] + g2_reg[85] + g2_reg[86] + g2_reg[87];
+	assign v2c0l0_out[22] = g2_reg[88] + g2_reg[89] + g2_reg[90];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 23; i = i + 1)
+            v2c0l0[i] <= v2c0l0_out[i];
+    end
+
+	reg [3:0] v2c0l1 [0:11];
+	logic [3:0] v2c0l1_out [0:11];
+	assign v2c0l1_out[0] = v2c0l0[0] + v2c0l0[1];
+	assign v2c0l1_out[1] = v2c0l0[2] + v2c0l0[3];
+	assign v2c0l1_out[2] = v2c0l0[4] + v2c0l0[5];
+	assign v2c0l1_out[3] = v2c0l0[6] + v2c0l0[7];
+	assign v2c0l1_out[4] = v2c0l0[8] + v2c0l0[9];
+	assign v2c0l1_out[5] = v2c0l0[10] + v2c0l0[11];
+	assign v2c0l1_out[6] = v2c0l0[12] + v2c0l0[13];
+	assign v2c0l1_out[7] = v2c0l0[14] + v2c0l0[15];
+	assign v2c0l1_out[8] = v2c0l0[16] + v2c0l0[17];
+	assign v2c0l1_out[9] = v2c0l0[18] + v2c0l0[19];
+	assign v2c0l1_out[10] = v2c0l0[20] + v2c0l0[21];
+	assign v2c0l1_out[11] = v2c0l0[22];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 12; i = i + 1)
+            v2c0l1[i] <= v2c0l1_out[i];
+    end
+
+	reg [4:0] v2c0l2 [0:5];
+	logic [4:0] v2c0l2_out [0:5];
+	assign v2c0l2_out[0] = v2c0l1[0] + v2c0l1[1];
+	assign v2c0l2_out[1] = v2c0l1[2] + v2c0l1[3];
+	assign v2c0l2_out[2] = v2c0l1[4] + v2c0l1[5];
+	assign v2c0l2_out[3] = v2c0l1[6] + v2c0l1[7];
+	assign v2c0l2_out[4] = v2c0l1[8] + v2c0l1[9];
+	assign v2c0l2_out[5] = v2c0l1[10] + v2c0l1[11];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v2c0l2[i] <= v2c0l2_out[i];
+    end
+
+	reg [5:0] v2c0l3 [0:2];
+	logic [5:0] v2c0l3_out [0:2];
+	assign v2c0l3_out[0] = v2c0l2[0] + v2c0l2[1];
+	assign v2c0l3_out[1] = v2c0l2[2] + v2c0l2[3];
+	assign v2c0l3_out[2] = v2c0l2[4] + v2c0l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v2c0l3[i] <= v2c0l3_out[i];
+    end
+
+	reg [6:0] v2c0l4 [0:1];
+	logic [6:0] v2c0l4_out [0:1];
+	assign v2c0l4_out[0] = v2c0l3[0] + v2c0l3[1];
+	assign v2c0l4_out[1] = v2c0l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v2c0l4[i] <= v2c0l4_out[i];
+    end
+
+	reg [7:0] v2c0l5 [0:0];
+	logic [7:0] v2c0l5_out [0:0];
+	assign v2c0l5_out[0] = v2c0l4[0] + v2c0l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v2c0l5[i] <= v2c0l5_out[i];
+    end
+
+	assign val[2] = v2c0l5[0];
 	
 	// -0.03125
 	logic [0:62] g3;
@@ -349,7 +622,87 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g3_reg <= g3;
     end
     
-	assign val[3] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3] + g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7] + g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11] + g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15] + g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19] + g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23] + g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27] + g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31] + g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35] + g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39] + g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43] + g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47] + g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51] + g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55] + g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59] + g3_reg[60] + g3_reg[61] + g3_reg[62];
+	logic [2:0] v3c0l0_out [0:15];
+	logic [2:0] v3c0l0 [0:15];
+	assign v3c0l0_out[0] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3];
+	assign v3c0l0_out[1] = g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7];
+	assign v3c0l0_out[2] = g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11];
+	assign v3c0l0_out[3] = g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15];
+	assign v3c0l0_out[4] = g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19];
+	assign v3c0l0_out[5] = g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23];
+	assign v3c0l0_out[6] = g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27];
+	assign v3c0l0_out[7] = g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31];
+	assign v3c0l0_out[8] = g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35];
+	assign v3c0l0_out[9] = g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39];
+	assign v3c0l0_out[10] = g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43];
+	assign v3c0l0_out[11] = g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47];
+	assign v3c0l0_out[12] = g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51];
+	assign v3c0l0_out[13] = g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55];
+	assign v3c0l0_out[14] = g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59];
+	assign v3c0l0_out[15] = g3_reg[60] + g3_reg[61] + g3_reg[62];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 16; i = i + 1)
+            v3c0l0[i] <= v3c0l0_out[i];
+    end
+
+	reg [3:0] v3c0l1 [0:7];
+	logic [3:0] v3c0l1_out [0:7];
+	assign v3c0l1_out[0] = v3c0l0[0] + v3c0l0[1];
+	assign v3c0l1_out[1] = v3c0l0[2] + v3c0l0[3];
+	assign v3c0l1_out[2] = v3c0l0[4] + v3c0l0[5];
+	assign v3c0l1_out[3] = v3c0l0[6] + v3c0l0[7];
+	assign v3c0l1_out[4] = v3c0l0[8] + v3c0l0[9];
+	assign v3c0l1_out[5] = v3c0l0[10] + v3c0l0[11];
+	assign v3c0l1_out[6] = v3c0l0[12] + v3c0l0[13];
+	assign v3c0l1_out[7] = v3c0l0[14] + v3c0l0[15];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v3c0l1[i] <= v3c0l1_out[i];
+    end
+
+	reg [4:0] v3c0l2 [0:3];
+	logic [4:0] v3c0l2_out [0:3];
+	assign v3c0l2_out[0] = v3c0l1[0] + v3c0l1[1];
+	assign v3c0l2_out[1] = v3c0l1[2] + v3c0l1[3];
+	assign v3c0l2_out[2] = v3c0l1[4] + v3c0l1[5];
+	assign v3c0l2_out[3] = v3c0l1[6] + v3c0l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v3c0l2[i] <= v3c0l2_out[i];
+    end
+
+	reg [5:0] v3c0l3 [0:1];
+	logic [5:0] v3c0l3_out [0:1];
+	assign v3c0l3_out[0] = v3c0l2[0] + v3c0l2[1];
+	assign v3c0l3_out[1] = v3c0l2[2] + v3c0l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v3c0l3[i] <= v3c0l3_out[i];
+    end
+
+	reg [6:0] v3c0l4 [0:0];
+	logic [6:0] v3c0l4_out [0:0];
+	assign v3c0l4_out[0] = v3c0l3[0] + v3c0l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c0l4[i] <= v3c0l4_out[i];
+    end
+
+	reg [7:0] v3c0l5 [0:0];
+	logic [7:0] v3c0l5_out [0:0];
+	assign v3c0l5_out[0] = v3c0l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c0l5[i] <= v3c0l5_out[i];
+    end
+
+	assign val[3] = v3c0l5[0];
 	
 	// -0.015625
 	logic [0:36] g4;
@@ -396,7 +749,77 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g4_reg <= g4;
     end
     
-	assign val[4] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3] + g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7] + g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11] + g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15] + g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19] + g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23] + g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27] + g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31] + g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35] + g4_reg[36];
+	logic [2:0] v4c0l0_out [0:9];
+	logic [2:0] v4c0l0 [0:9];
+	assign v4c0l0_out[0] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3];
+	assign v4c0l0_out[1] = g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7];
+	assign v4c0l0_out[2] = g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11];
+	assign v4c0l0_out[3] = g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15];
+	assign v4c0l0_out[4] = g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19];
+	assign v4c0l0_out[5] = g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23];
+	assign v4c0l0_out[6] = g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27];
+	assign v4c0l0_out[7] = g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31];
+	assign v4c0l0_out[8] = g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	assign v4c0l0_out[9] = g4_reg[36];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v4c0l0[i] <= v4c0l0_out[i];
+    end
+
+	reg [3:0] v4c0l1 [0:4];
+	logic [3:0] v4c0l1_out [0:4];
+	assign v4c0l1_out[0] = v4c0l0[0] + v4c0l0[1];
+	assign v4c0l1_out[1] = v4c0l0[2] + v4c0l0[3];
+	assign v4c0l1_out[2] = v4c0l0[4] + v4c0l0[5];
+	assign v4c0l1_out[3] = v4c0l0[6] + v4c0l0[7];
+	assign v4c0l1_out[4] = v4c0l0[8] + v4c0l0[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v4c0l1[i] <= v4c0l1_out[i];
+    end
+
+	reg [4:0] v4c0l2 [0:2];
+	logic [4:0] v4c0l2_out [0:2];
+	assign v4c0l2_out[0] = v4c0l1[0] + v4c0l1[1];
+	assign v4c0l2_out[1] = v4c0l1[2] + v4c0l1[3];
+	assign v4c0l2_out[2] = v4c0l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v4c0l2[i] <= v4c0l2_out[i];
+    end
+
+	reg [5:0] v4c0l3 [0:1];
+	logic [5:0] v4c0l3_out [0:1];
+	assign v4c0l3_out[0] = v4c0l2[0] + v4c0l2[1];
+	assign v4c0l3_out[1] = v4c0l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v4c0l3[i] <= v4c0l3_out[i];
+    end
+
+	reg [6:0] v4c0l4 [0:0];
+	logic [6:0] v4c0l4_out [0:0];
+	assign v4c0l4_out[0] = v4c0l3[0] + v4c0l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c0l4[i] <= v4c0l4_out[i];
+    end
+
+	reg [7:0] v4c0l5 [0:0];
+	logic [7:0] v4c0l5_out [0:0];
+	assign v4c0l5_out[0] = v4c0l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c0l5[i] <= v4c0l5_out[i];
+    end
+
+	assign val[4] = v4c0l5[0];
 	
 	// 0.015625
 	logic [0:40] g5;
@@ -447,7 +870,79 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g5_reg <= g5;
     end
     
-	assign val[5] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3] + g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7] + g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11] + g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15] + g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19] + g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23] + g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27] + g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31] + g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35] + g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39] + g5_reg[40];
+	logic [2:0] v5c0l0_out [0:10];
+	logic [2:0] v5c0l0 [0:10];
+	assign v5c0l0_out[0] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3];
+	assign v5c0l0_out[1] = g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7];
+	assign v5c0l0_out[2] = g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11];
+	assign v5c0l0_out[3] = g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15];
+	assign v5c0l0_out[4] = g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19];
+	assign v5c0l0_out[5] = g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23];
+	assign v5c0l0_out[6] = g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27];
+	assign v5c0l0_out[7] = g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31];
+	assign v5c0l0_out[8] = g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35];
+	assign v5c0l0_out[9] = g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39];
+	assign v5c0l0_out[10] = g5_reg[40];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v5c0l0[i] <= v5c0l0_out[i];
+    end
+
+	reg [3:0] v5c0l1 [0:5];
+	logic [3:0] v5c0l1_out [0:5];
+	assign v5c0l1_out[0] = v5c0l0[0] + v5c0l0[1];
+	assign v5c0l1_out[1] = v5c0l0[2] + v5c0l0[3];
+	assign v5c0l1_out[2] = v5c0l0[4] + v5c0l0[5];
+	assign v5c0l1_out[3] = v5c0l0[6] + v5c0l0[7];
+	assign v5c0l1_out[4] = v5c0l0[8] + v5c0l0[9];
+	assign v5c0l1_out[5] = v5c0l0[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v5c0l1[i] <= v5c0l1_out[i];
+    end
+
+	reg [4:0] v5c0l2 [0:2];
+	logic [4:0] v5c0l2_out [0:2];
+	assign v5c0l2_out[0] = v5c0l1[0] + v5c0l1[1];
+	assign v5c0l2_out[1] = v5c0l1[2] + v5c0l1[3];
+	assign v5c0l2_out[2] = v5c0l1[4] + v5c0l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v5c0l2[i] <= v5c0l2_out[i];
+    end
+
+	reg [5:0] v5c0l3 [0:1];
+	logic [5:0] v5c0l3_out [0:1];
+	assign v5c0l3_out[0] = v5c0l2[0] + v5c0l2[1];
+	assign v5c0l3_out[1] = v5c0l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v5c0l3[i] <= v5c0l3_out[i];
+    end
+
+	reg [6:0] v5c0l4 [0:0];
+	logic [6:0] v5c0l4_out [0:0];
+	assign v5c0l4_out[0] = v5c0l3[0] + v5c0l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c0l4[i] <= v5c0l4_out[i];
+    end
+
+	reg [7:0] v5c0l5 [0:0];
+	logic [7:0] v5c0l5_out [0:0];
+	assign v5c0l5_out[0] = v5c0l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c0l5[i] <= v5c0l5_out[i];
+    end
+
+	assign val[5] = v5c0l5[0];
 	
 	// 0.03125
 	logic [0:57] g6;
@@ -515,7 +1010,86 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g6_reg <= g6;
     end
     
-	assign val[6] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3] + g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7] + g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11] + g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15] + g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19] + g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23] + g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27] + g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31] + g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35] + g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39] + g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43] + g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47] + g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51] + g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55] + g6_reg[56] + g6_reg[57];
+	logic [2:0] v6c0l0_out [0:14];
+	logic [2:0] v6c0l0 [0:14];
+	assign v6c0l0_out[0] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3];
+	assign v6c0l0_out[1] = g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7];
+	assign v6c0l0_out[2] = g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11];
+	assign v6c0l0_out[3] = g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15];
+	assign v6c0l0_out[4] = g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19];
+	assign v6c0l0_out[5] = g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23];
+	assign v6c0l0_out[6] = g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27];
+	assign v6c0l0_out[7] = g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31];
+	assign v6c0l0_out[8] = g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35];
+	assign v6c0l0_out[9] = g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39];
+	assign v6c0l0_out[10] = g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	assign v6c0l0_out[11] = g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47];
+	assign v6c0l0_out[12] = g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51];
+	assign v6c0l0_out[13] = g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55];
+	assign v6c0l0_out[14] = g6_reg[56] + g6_reg[57];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 15; i = i + 1)
+            v6c0l0[i] <= v6c0l0_out[i];
+    end
+
+	reg [3:0] v6c0l1 [0:7];
+	logic [3:0] v6c0l1_out [0:7];
+	assign v6c0l1_out[0] = v6c0l0[0] + v6c0l0[1];
+	assign v6c0l1_out[1] = v6c0l0[2] + v6c0l0[3];
+	assign v6c0l1_out[2] = v6c0l0[4] + v6c0l0[5];
+	assign v6c0l1_out[3] = v6c0l0[6] + v6c0l0[7];
+	assign v6c0l1_out[4] = v6c0l0[8] + v6c0l0[9];
+	assign v6c0l1_out[5] = v6c0l0[10] + v6c0l0[11];
+	assign v6c0l1_out[6] = v6c0l0[12] + v6c0l0[13];
+	assign v6c0l1_out[7] = v6c0l0[14];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v6c0l1[i] <= v6c0l1_out[i];
+    end
+
+	reg [4:0] v6c0l2 [0:3];
+	logic [4:0] v6c0l2_out [0:3];
+	assign v6c0l2_out[0] = v6c0l1[0] + v6c0l1[1];
+	assign v6c0l2_out[1] = v6c0l1[2] + v6c0l1[3];
+	assign v6c0l2_out[2] = v6c0l1[4] + v6c0l1[5];
+	assign v6c0l2_out[3] = v6c0l1[6] + v6c0l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v6c0l2[i] <= v6c0l2_out[i];
+    end
+
+	reg [5:0] v6c0l3 [0:1];
+	logic [5:0] v6c0l3_out [0:1];
+	assign v6c0l3_out[0] = v6c0l2[0] + v6c0l2[1];
+	assign v6c0l3_out[1] = v6c0l2[2] + v6c0l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v6c0l3[i] <= v6c0l3_out[i];
+    end
+
+	reg [6:0] v6c0l4 [0:0];
+	logic [6:0] v6c0l4_out [0:0];
+	assign v6c0l4_out[0] = v6c0l3[0] + v6c0l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c0l4[i] <= v6c0l4_out[i];
+    end
+
+	reg [7:0] v6c0l5 [0:0];
+	logic [7:0] v6c0l5_out [0:0];
+	assign v6c0l5_out[0] = v6c0l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c0l5[i] <= v6c0l5_out[i];
+    end
+
+	assign val[6] = v6c0l5[0];
 	
 	// 0.0625
 	logic [0:79] g7;
@@ -605,7 +1179,96 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g7_reg <= g7;
     end
     
-	assign val[7] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3] + g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7] + g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11] + g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15] + g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19] + g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23] + g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27] + g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31] + g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35] + g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39] + g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43] + g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47] + g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51] + g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55] + g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59] + g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63] + g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67] + g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71] + g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75] + g7_reg[76] + g7_reg[77] + g7_reg[78] + g7_reg[79];
+	logic [2:0] v7c0l0_out [0:19];
+	logic [2:0] v7c0l0 [0:19];
+	assign v7c0l0_out[0] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3];
+	assign v7c0l0_out[1] = g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7];
+	assign v7c0l0_out[2] = g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11];
+	assign v7c0l0_out[3] = g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15];
+	assign v7c0l0_out[4] = g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19];
+	assign v7c0l0_out[5] = g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23];
+	assign v7c0l0_out[6] = g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27];
+	assign v7c0l0_out[7] = g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31];
+	assign v7c0l0_out[8] = g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35];
+	assign v7c0l0_out[9] = g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39];
+	assign v7c0l0_out[10] = g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43];
+	assign v7c0l0_out[11] = g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47];
+	assign v7c0l0_out[12] = g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51];
+	assign v7c0l0_out[13] = g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55];
+	assign v7c0l0_out[14] = g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59];
+	assign v7c0l0_out[15] = g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63];
+	assign v7c0l0_out[16] = g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67];
+	assign v7c0l0_out[17] = g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71];
+	assign v7c0l0_out[18] = g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75];
+	assign v7c0l0_out[19] = g7_reg[76] + g7_reg[77] + g7_reg[78] + g7_reg[79];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 20; i = i + 1)
+            v7c0l0[i] <= v7c0l0_out[i];
+    end
+
+	reg [3:0] v7c0l1 [0:9];
+	logic [3:0] v7c0l1_out [0:9];
+	assign v7c0l1_out[0] = v7c0l0[0] + v7c0l0[1];
+	assign v7c0l1_out[1] = v7c0l0[2] + v7c0l0[3];
+	assign v7c0l1_out[2] = v7c0l0[4] + v7c0l0[5];
+	assign v7c0l1_out[3] = v7c0l0[6] + v7c0l0[7];
+	assign v7c0l1_out[4] = v7c0l0[8] + v7c0l0[9];
+	assign v7c0l1_out[5] = v7c0l0[10] + v7c0l0[11];
+	assign v7c0l1_out[6] = v7c0l0[12] + v7c0l0[13];
+	assign v7c0l1_out[7] = v7c0l0[14] + v7c0l0[15];
+	assign v7c0l1_out[8] = v7c0l0[16] + v7c0l0[17];
+	assign v7c0l1_out[9] = v7c0l0[18] + v7c0l0[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v7c0l1[i] <= v7c0l1_out[i];
+    end
+
+	reg [4:0] v7c0l2 [0:4];
+	logic [4:0] v7c0l2_out [0:4];
+	assign v7c0l2_out[0] = v7c0l1[0] + v7c0l1[1];
+	assign v7c0l2_out[1] = v7c0l1[2] + v7c0l1[3];
+	assign v7c0l2_out[2] = v7c0l1[4] + v7c0l1[5];
+	assign v7c0l2_out[3] = v7c0l1[6] + v7c0l1[7];
+	assign v7c0l2_out[4] = v7c0l1[8] + v7c0l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v7c0l2[i] <= v7c0l2_out[i];
+    end
+
+	reg [5:0] v7c0l3 [0:2];
+	logic [5:0] v7c0l3_out [0:2];
+	assign v7c0l3_out[0] = v7c0l2[0] + v7c0l2[1];
+	assign v7c0l3_out[1] = v7c0l2[2] + v7c0l2[3];
+	assign v7c0l3_out[2] = v7c0l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v7c0l3[i] <= v7c0l3_out[i];
+    end
+
+	reg [6:0] v7c0l4 [0:1];
+	logic [6:0] v7c0l4_out [0:1];
+	assign v7c0l4_out[0] = v7c0l3[0] + v7c0l3[1];
+	assign v7c0l4_out[1] = v7c0l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v7c0l4[i] <= v7c0l4_out[i];
+    end
+
+	reg [7:0] v7c0l5 [0:0];
+	logic [7:0] v7c0l5_out [0:0];
+	assign v7c0l5_out[0] = v7c0l4[0] + v7c0l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c0l5[i] <= v7c0l5_out[i];
+    end
+
+	assign val[7] = v7c0l5[0];
 	
 	// 0.125
 	logic [0:87] g8;
@@ -703,7 +1366,100 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g8_reg <= g8;
     end
     
-	assign val[8] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3] + g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7] + g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11] + g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15] + g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19] + g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23] + g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27] + g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31] + g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35] + g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39] + g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43] + g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47] + g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51] + g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55] + g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59] + g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63] + g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67] + g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71] + g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75] + g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79] + g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83] + g8_reg[84] + g8_reg[85] + g8_reg[86] + g8_reg[87];
+	logic [2:0] v8c0l0_out [0:21];
+	logic [2:0] v8c0l0 [0:21];
+	assign v8c0l0_out[0] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3];
+	assign v8c0l0_out[1] = g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7];
+	assign v8c0l0_out[2] = g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11];
+	assign v8c0l0_out[3] = g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15];
+	assign v8c0l0_out[4] = g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19];
+	assign v8c0l0_out[5] = g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23];
+	assign v8c0l0_out[6] = g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27];
+	assign v8c0l0_out[7] = g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31];
+	assign v8c0l0_out[8] = g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35];
+	assign v8c0l0_out[9] = g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39];
+	assign v8c0l0_out[10] = g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43];
+	assign v8c0l0_out[11] = g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47];
+	assign v8c0l0_out[12] = g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51];
+	assign v8c0l0_out[13] = g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55];
+	assign v8c0l0_out[14] = g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59];
+	assign v8c0l0_out[15] = g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63];
+	assign v8c0l0_out[16] = g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67];
+	assign v8c0l0_out[17] = g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71];
+	assign v8c0l0_out[18] = g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75];
+	assign v8c0l0_out[19] = g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79];
+	assign v8c0l0_out[20] = g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83];
+	assign v8c0l0_out[21] = g8_reg[84] + g8_reg[85] + g8_reg[86] + g8_reg[87];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 22; i = i + 1)
+            v8c0l0[i] <= v8c0l0_out[i];
+    end
+
+	reg [3:0] v8c0l1 [0:10];
+	logic [3:0] v8c0l1_out [0:10];
+	assign v8c0l1_out[0] = v8c0l0[0] + v8c0l0[1];
+	assign v8c0l1_out[1] = v8c0l0[2] + v8c0l0[3];
+	assign v8c0l1_out[2] = v8c0l0[4] + v8c0l0[5];
+	assign v8c0l1_out[3] = v8c0l0[6] + v8c0l0[7];
+	assign v8c0l1_out[4] = v8c0l0[8] + v8c0l0[9];
+	assign v8c0l1_out[5] = v8c0l0[10] + v8c0l0[11];
+	assign v8c0l1_out[6] = v8c0l0[12] + v8c0l0[13];
+	assign v8c0l1_out[7] = v8c0l0[14] + v8c0l0[15];
+	assign v8c0l1_out[8] = v8c0l0[16] + v8c0l0[17];
+	assign v8c0l1_out[9] = v8c0l0[18] + v8c0l0[19];
+	assign v8c0l1_out[10] = v8c0l0[20] + v8c0l0[21];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v8c0l1[i] <= v8c0l1_out[i];
+    end
+
+	reg [4:0] v8c0l2 [0:5];
+	logic [4:0] v8c0l2_out [0:5];
+	assign v8c0l2_out[0] = v8c0l1[0] + v8c0l1[1];
+	assign v8c0l2_out[1] = v8c0l1[2] + v8c0l1[3];
+	assign v8c0l2_out[2] = v8c0l1[4] + v8c0l1[5];
+	assign v8c0l2_out[3] = v8c0l1[6] + v8c0l1[7];
+	assign v8c0l2_out[4] = v8c0l1[8] + v8c0l1[9];
+	assign v8c0l2_out[5] = v8c0l1[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v8c0l2[i] <= v8c0l2_out[i];
+    end
+
+	reg [5:0] v8c0l3 [0:2];
+	logic [5:0] v8c0l3_out [0:2];
+	assign v8c0l3_out[0] = v8c0l2[0] + v8c0l2[1];
+	assign v8c0l3_out[1] = v8c0l2[2] + v8c0l2[3];
+	assign v8c0l3_out[2] = v8c0l2[4] + v8c0l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v8c0l3[i] <= v8c0l3_out[i];
+    end
+
+	reg [6:0] v8c0l4 [0:1];
+	logic [6:0] v8c0l4_out [0:1];
+	assign v8c0l4_out[0] = v8c0l3[0] + v8c0l3[1];
+	assign v8c0l4_out[1] = v8c0l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v8c0l4[i] <= v8c0l4_out[i];
+    end
+
+	reg [7:0] v8c0l5 [0:0];
+	logic [7:0] v8c0l5_out [0:0];
+	assign v8c0l5_out[0] = v8c0l4[0] + v8c0l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v8c0l5[i] <= v8c0l5_out[i];
+    end
+
+	assign val[8] = v8c0l5[0];
 	
 	// 0.25
 	logic [0:43] g9;
@@ -757,7 +1513,79 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g9_reg <= g9;
     end
     
-	assign val[9] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3] + g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7] + g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11] + g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15] + g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19] + g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23] + g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27] + g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31] + g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35] + g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39] + g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43];
+	logic [2:0] v9c0l0_out [0:10];
+	logic [2:0] v9c0l0 [0:10];
+	assign v9c0l0_out[0] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3];
+	assign v9c0l0_out[1] = g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7];
+	assign v9c0l0_out[2] = g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11];
+	assign v9c0l0_out[3] = g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15];
+	assign v9c0l0_out[4] = g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19];
+	assign v9c0l0_out[5] = g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23];
+	assign v9c0l0_out[6] = g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27];
+	assign v9c0l0_out[7] = g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31];
+	assign v9c0l0_out[8] = g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	assign v9c0l0_out[9] = g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39];
+	assign v9c0l0_out[10] = g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v9c0l0[i] <= v9c0l0_out[i];
+    end
+
+	reg [3:0] v9c0l1 [0:5];
+	logic [3:0] v9c0l1_out [0:5];
+	assign v9c0l1_out[0] = v9c0l0[0] + v9c0l0[1];
+	assign v9c0l1_out[1] = v9c0l0[2] + v9c0l0[3];
+	assign v9c0l1_out[2] = v9c0l0[4] + v9c0l0[5];
+	assign v9c0l1_out[3] = v9c0l0[6] + v9c0l0[7];
+	assign v9c0l1_out[4] = v9c0l0[8] + v9c0l0[9];
+	assign v9c0l1_out[5] = v9c0l0[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v9c0l1[i] <= v9c0l1_out[i];
+    end
+
+	reg [4:0] v9c0l2 [0:2];
+	logic [4:0] v9c0l2_out [0:2];
+	assign v9c0l2_out[0] = v9c0l1[0] + v9c0l1[1];
+	assign v9c0l2_out[1] = v9c0l1[2] + v9c0l1[3];
+	assign v9c0l2_out[2] = v9c0l1[4] + v9c0l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v9c0l2[i] <= v9c0l2_out[i];
+    end
+
+	reg [5:0] v9c0l3 [0:1];
+	logic [5:0] v9c0l3_out [0:1];
+	assign v9c0l3_out[0] = v9c0l2[0] + v9c0l2[1];
+	assign v9c0l3_out[1] = v9c0l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v9c0l3[i] <= v9c0l3_out[i];
+    end
+
+	reg [6:0] v9c0l4 [0:0];
+	logic [6:0] v9c0l4_out [0:0];
+	assign v9c0l4_out[0] = v9c0l3[0] + v9c0l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c0l4[i] <= v9c0l4_out[i];
+    end
+
+	reg [7:0] v9c0l5 [0:0];
+	logic [7:0] v9c0l5_out [0:0];
+	assign v9c0l5_out[0] = v9c0l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c0l5[i] <= v9c0l5_out[i];
+    end
+
+	assign val[9] = v9c0l5[0];
 	
 	// 0.5
 	logic [0:5] g10;
@@ -773,7 +1601,62 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g10_reg <= g10;
     end
     
-	assign val[10] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3] + g10_reg[4] + g10_reg[5];
+	logic [2:0] v10c0l0_out [0:1];
+	logic [2:0] v10c0l0 [0:1];
+	assign v10c0l0_out[0] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	assign v10c0l0_out[1] = g10_reg[4] + g10_reg[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v10c0l0[i] <= v10c0l0_out[i];
+    end
+
+	reg [3:0] v10c0l1 [0:0];
+	logic [3:0] v10c0l1_out [0:0];
+	assign v10c0l1_out[0] = v10c0l0[0] + v10c0l0[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c0l1[i] <= v10c0l1_out[i];
+    end
+
+	reg [4:0] v10c0l2 [0:0];
+	logic [4:0] v10c0l2_out [0:0];
+	assign v10c0l2_out[0] = v10c0l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c0l2[i] <= v10c0l2_out[i];
+    end
+
+	reg [5:0] v10c0l3 [0:0];
+	logic [5:0] v10c0l3_out [0:0];
+	assign v10c0l3_out[0] = v10c0l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c0l3[i] <= v10c0l3_out[i];
+    end
+
+	reg [6:0] v10c0l4 [0:0];
+	logic [6:0] v10c0l4_out [0:0];
+	assign v10c0l4_out[0] = v10c0l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c0l4[i] <= v10c0l4_out[i];
+    end
+
+	reg [7:0] v10c0l5 [0:0];
+	logic [7:0] v10c0l5_out [0:0];
+	assign v10c0l5_out[0] = v10c0l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c0l5[i] <= v10c0l5_out[i];
+    end
+
+	assign val[10] = v10c0l5[0];
 	
 	// 1.0
 	logic [0:0] g11;
@@ -784,7 +1667,61 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g11_reg <= g11;
     end
     
-	assign val[11] = g11_reg[0];
+	logic [2:0] v11c0l0_out [0:0];
+	logic [2:0] v11c0l0 [0:0];
+	assign v11c0l0_out[0] = g11_reg[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c0l0[i] <= v11c0l0_out[i];
+    end
+
+	reg [3:0] v11c0l1 [0:0];
+	logic [3:0] v11c0l1_out [0:0];
+	assign v11c0l1_out[0] = v11c0l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c0l1[i] <= v11c0l1_out[i];
+    end
+
+	reg [4:0] v11c0l2 [0:0];
+	logic [4:0] v11c0l2_out [0:0];
+	assign v11c0l2_out[0] = v11c0l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c0l2[i] <= v11c0l2_out[i];
+    end
+
+	reg [5:0] v11c0l3 [0:0];
+	logic [5:0] v11c0l3_out [0:0];
+	assign v11c0l3_out[0] = v11c0l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c0l3[i] <= v11c0l3_out[i];
+    end
+
+	reg [6:0] v11c0l4 [0:0];
+	logic [6:0] v11c0l4_out [0:0];
+	assign v11c0l4_out[0] = v11c0l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c0l4[i] <= v11c0l4_out[i];
+    end
+
+	reg [7:0] v11c0l5 [0:0];
+	logic [7:0] v11c0l5_out [0:0];
+	assign v11c0l5_out[0] = v11c0l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c0l5[i] <= v11c0l5_out[i];
+    end
+
+	assign val[11] = v11c0l5[0];
 	
 	// 2.0
 	logic [0:0] g12;
@@ -795,12 +1732,67 @@ module leaf_counter_0(input logic clk, input logic [0:1411] l, output logic [7:0
         g12_reg <= g12;
     end
     
-	assign val[12] = g12_reg[0];
+	logic [2:0] v12c0l0_out [0:0];
+	logic [2:0] v12c0l0 [0:0];
+	assign v12c0l0_out[0] = g12_reg[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c0l0[i] <= v12c0l0_out[i];
+    end
+
+	reg [3:0] v12c0l1 [0:0];
+	logic [3:0] v12c0l1_out [0:0];
+	assign v12c0l1_out[0] = v12c0l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c0l1[i] <= v12c0l1_out[i];
+    end
+
+	reg [4:0] v12c0l2 [0:0];
+	logic [4:0] v12c0l2_out [0:0];
+	assign v12c0l2_out[0] = v12c0l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c0l2[i] <= v12c0l2_out[i];
+    end
+
+	reg [5:0] v12c0l3 [0:0];
+	logic [5:0] v12c0l3_out [0:0];
+	assign v12c0l3_out[0] = v12c0l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c0l3[i] <= v12c0l3_out[i];
+    end
+
+	reg [6:0] v12c0l4 [0:0];
+	logic [6:0] v12c0l4_out [0:0];
+	assign v12c0l4_out[0] = v12c0l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c0l4[i] <= v12c0l4_out[i];
+    end
+
+	reg [7:0] v12c0l5 [0:0];
+	logic [7:0] v12c0l5_out [0:0];
+	assign v12c0l5_out[0] = v12c0l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c0l5[i] <= v12c0l5_out[i];
+    end
+
+	assign val[12] = v12c0l5[0];
 	
 endmodule
 
 
 module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0] val [0:12]);
+    integer i;
 	// -0.25
 	logic [0:85] g0;
 	reg [0:85] g0_reg;
@@ -895,7 +1887,100 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g0_reg <= g0;
     end
     
-	assign val[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3] + g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7] + g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11] + g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15] + g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19] + g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23] + g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27] + g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31] + g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35] + g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39] + g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43] + g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47] + g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51] + g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55] + g0_reg[56] + g0_reg[57] + g0_reg[58] + g0_reg[59] + g0_reg[60] + g0_reg[61] + g0_reg[62] + g0_reg[63] + g0_reg[64] + g0_reg[65] + g0_reg[66] + g0_reg[67] + g0_reg[68] + g0_reg[69] + g0_reg[70] + g0_reg[71] + g0_reg[72] + g0_reg[73] + g0_reg[74] + g0_reg[75] + g0_reg[76] + g0_reg[77] + g0_reg[78] + g0_reg[79] + g0_reg[80] + g0_reg[81] + g0_reg[82] + g0_reg[83] + g0_reg[84] + g0_reg[85];
+	logic [2:0] v0c1l0_out [0:21];
+	logic [2:0] v0c1l0 [0:21];
+	assign v0c1l0_out[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3];
+	assign v0c1l0_out[1] = g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7];
+	assign v0c1l0_out[2] = g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11];
+	assign v0c1l0_out[3] = g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15];
+	assign v0c1l0_out[4] = g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19];
+	assign v0c1l0_out[5] = g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23];
+	assign v0c1l0_out[6] = g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27];
+	assign v0c1l0_out[7] = g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31];
+	assign v0c1l0_out[8] = g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35];
+	assign v0c1l0_out[9] = g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39];
+	assign v0c1l0_out[10] = g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43];
+	assign v0c1l0_out[11] = g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47];
+	assign v0c1l0_out[12] = g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51];
+	assign v0c1l0_out[13] = g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55];
+	assign v0c1l0_out[14] = g0_reg[56] + g0_reg[57] + g0_reg[58] + g0_reg[59];
+	assign v0c1l0_out[15] = g0_reg[60] + g0_reg[61] + g0_reg[62] + g0_reg[63];
+	assign v0c1l0_out[16] = g0_reg[64] + g0_reg[65] + g0_reg[66] + g0_reg[67];
+	assign v0c1l0_out[17] = g0_reg[68] + g0_reg[69] + g0_reg[70] + g0_reg[71];
+	assign v0c1l0_out[18] = g0_reg[72] + g0_reg[73] + g0_reg[74] + g0_reg[75];
+	assign v0c1l0_out[19] = g0_reg[76] + g0_reg[77] + g0_reg[78] + g0_reg[79];
+	assign v0c1l0_out[20] = g0_reg[80] + g0_reg[81] + g0_reg[82] + g0_reg[83];
+	assign v0c1l0_out[21] = g0_reg[84] + g0_reg[85];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 22; i = i + 1)
+            v0c1l0[i] <= v0c1l0_out[i];
+    end
+
+	reg [3:0] v0c1l1 [0:10];
+	logic [3:0] v0c1l1_out [0:10];
+	assign v0c1l1_out[0] = v0c1l0[0] + v0c1l0[1];
+	assign v0c1l1_out[1] = v0c1l0[2] + v0c1l0[3];
+	assign v0c1l1_out[2] = v0c1l0[4] + v0c1l0[5];
+	assign v0c1l1_out[3] = v0c1l0[6] + v0c1l0[7];
+	assign v0c1l1_out[4] = v0c1l0[8] + v0c1l0[9];
+	assign v0c1l1_out[5] = v0c1l0[10] + v0c1l0[11];
+	assign v0c1l1_out[6] = v0c1l0[12] + v0c1l0[13];
+	assign v0c1l1_out[7] = v0c1l0[14] + v0c1l0[15];
+	assign v0c1l1_out[8] = v0c1l0[16] + v0c1l0[17];
+	assign v0c1l1_out[9] = v0c1l0[18] + v0c1l0[19];
+	assign v0c1l1_out[10] = v0c1l0[20] + v0c1l0[21];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v0c1l1[i] <= v0c1l1_out[i];
+    end
+
+	reg [4:0] v0c1l2 [0:5];
+	logic [4:0] v0c1l2_out [0:5];
+	assign v0c1l2_out[0] = v0c1l1[0] + v0c1l1[1];
+	assign v0c1l2_out[1] = v0c1l1[2] + v0c1l1[3];
+	assign v0c1l2_out[2] = v0c1l1[4] + v0c1l1[5];
+	assign v0c1l2_out[3] = v0c1l1[6] + v0c1l1[7];
+	assign v0c1l2_out[4] = v0c1l1[8] + v0c1l1[9];
+	assign v0c1l2_out[5] = v0c1l1[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v0c1l2[i] <= v0c1l2_out[i];
+    end
+
+	reg [5:0] v0c1l3 [0:2];
+	logic [5:0] v0c1l3_out [0:2];
+	assign v0c1l3_out[0] = v0c1l2[0] + v0c1l2[1];
+	assign v0c1l3_out[1] = v0c1l2[2] + v0c1l2[3];
+	assign v0c1l3_out[2] = v0c1l2[4] + v0c1l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v0c1l3[i] <= v0c1l3_out[i];
+    end
+
+	reg [6:0] v0c1l4 [0:1];
+	logic [6:0] v0c1l4_out [0:1];
+	assign v0c1l4_out[0] = v0c1l3[0] + v0c1l3[1];
+	assign v0c1l4_out[1] = v0c1l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v0c1l4[i] <= v0c1l4_out[i];
+    end
+
+	reg [7:0] v0c1l5 [0:0];
+	logic [7:0] v0c1l5_out [0:0];
+	assign v0c1l5_out[0] = v0c1l4[0] + v0c1l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c1l5[i] <= v0c1l5_out[i];
+    end
+
+	assign val[0] = v0c1l5[0];
 	
 	// -0.125
 	logic [0:96] g1;
@@ -1002,7 +2087,107 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g1_reg <= g1;
     end
     
-	assign val[1] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3] + g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7] + g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11] + g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15] + g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19] + g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23] + g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27] + g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31] + g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35] + g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39] + g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43] + g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47] + g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51] + g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55] + g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59] + g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63] + g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67] + g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71] + g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75] + g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79] + g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83] + g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87] + g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91] + g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95] + g1_reg[96];
+	logic [2:0] v1c1l0_out [0:24];
+	logic [2:0] v1c1l0 [0:24];
+	assign v1c1l0_out[0] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3];
+	assign v1c1l0_out[1] = g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7];
+	assign v1c1l0_out[2] = g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11];
+	assign v1c1l0_out[3] = g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15];
+	assign v1c1l0_out[4] = g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19];
+	assign v1c1l0_out[5] = g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23];
+	assign v1c1l0_out[6] = g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27];
+	assign v1c1l0_out[7] = g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31];
+	assign v1c1l0_out[8] = g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35];
+	assign v1c1l0_out[9] = g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39];
+	assign v1c1l0_out[10] = g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43];
+	assign v1c1l0_out[11] = g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47];
+	assign v1c1l0_out[12] = g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51];
+	assign v1c1l0_out[13] = g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55];
+	assign v1c1l0_out[14] = g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59];
+	assign v1c1l0_out[15] = g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63];
+	assign v1c1l0_out[16] = g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67];
+	assign v1c1l0_out[17] = g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71];
+	assign v1c1l0_out[18] = g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75];
+	assign v1c1l0_out[19] = g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79];
+	assign v1c1l0_out[20] = g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83];
+	assign v1c1l0_out[21] = g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87];
+	assign v1c1l0_out[22] = g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91];
+	assign v1c1l0_out[23] = g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	assign v1c1l0_out[24] = g1_reg[96];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 25; i = i + 1)
+            v1c1l0[i] <= v1c1l0_out[i];
+    end
+
+	reg [3:0] v1c1l1 [0:12];
+	logic [3:0] v1c1l1_out [0:12];
+	assign v1c1l1_out[0] = v1c1l0[0] + v1c1l0[1];
+	assign v1c1l1_out[1] = v1c1l0[2] + v1c1l0[3];
+	assign v1c1l1_out[2] = v1c1l0[4] + v1c1l0[5];
+	assign v1c1l1_out[3] = v1c1l0[6] + v1c1l0[7];
+	assign v1c1l1_out[4] = v1c1l0[8] + v1c1l0[9];
+	assign v1c1l1_out[5] = v1c1l0[10] + v1c1l0[11];
+	assign v1c1l1_out[6] = v1c1l0[12] + v1c1l0[13];
+	assign v1c1l1_out[7] = v1c1l0[14] + v1c1l0[15];
+	assign v1c1l1_out[8] = v1c1l0[16] + v1c1l0[17];
+	assign v1c1l1_out[9] = v1c1l0[18] + v1c1l0[19];
+	assign v1c1l1_out[10] = v1c1l0[20] + v1c1l0[21];
+	assign v1c1l1_out[11] = v1c1l0[22] + v1c1l0[23];
+	assign v1c1l1_out[12] = v1c1l0[24];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v1c1l1[i] <= v1c1l1_out[i];
+    end
+
+	reg [4:0] v1c1l2 [0:6];
+	logic [4:0] v1c1l2_out [0:6];
+	assign v1c1l2_out[0] = v1c1l1[0] + v1c1l1[1];
+	assign v1c1l2_out[1] = v1c1l1[2] + v1c1l1[3];
+	assign v1c1l2_out[2] = v1c1l1[4] + v1c1l1[5];
+	assign v1c1l2_out[3] = v1c1l1[6] + v1c1l1[7];
+	assign v1c1l2_out[4] = v1c1l1[8] + v1c1l1[9];
+	assign v1c1l2_out[5] = v1c1l1[10] + v1c1l1[11];
+	assign v1c1l2_out[6] = v1c1l1[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v1c1l2[i] <= v1c1l2_out[i];
+    end
+
+	reg [5:0] v1c1l3 [0:3];
+	logic [5:0] v1c1l3_out [0:3];
+	assign v1c1l3_out[0] = v1c1l2[0] + v1c1l2[1];
+	assign v1c1l3_out[1] = v1c1l2[2] + v1c1l2[3];
+	assign v1c1l3_out[2] = v1c1l2[4] + v1c1l2[5];
+	assign v1c1l3_out[3] = v1c1l2[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v1c1l3[i] <= v1c1l3_out[i];
+    end
+
+	reg [6:0] v1c1l4 [0:1];
+	logic [6:0] v1c1l4_out [0:1];
+	assign v1c1l4_out[0] = v1c1l3[0] + v1c1l3[1];
+	assign v1c1l4_out[1] = v1c1l3[2] + v1c1l3[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v1c1l4[i] <= v1c1l4_out[i];
+    end
+
+	reg [7:0] v1c1l5 [0:0];
+	logic [7:0] v1c1l5_out [0:0];
+	assign v1c1l5_out[0] = v1c1l4[0] + v1c1l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v1c1l5[i] <= v1c1l5_out[i];
+    end
+
+	assign val[1] = v1c1l5[0];
 	
 	// -0.0625
 	logic [0:69] g2;
@@ -1082,7 +2267,93 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g2_reg <= g2;
     end
     
-	assign val[2] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3] + g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7] + g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11] + g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15] + g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19] + g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23] + g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27] + g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31] + g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35] + g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39] + g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43] + g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47] + g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51] + g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55] + g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59] + g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63] + g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67] + g2_reg[68] + g2_reg[69];
+	logic [2:0] v2c1l0_out [0:17];
+	logic [2:0] v2c1l0 [0:17];
+	assign v2c1l0_out[0] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3];
+	assign v2c1l0_out[1] = g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7];
+	assign v2c1l0_out[2] = g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11];
+	assign v2c1l0_out[3] = g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15];
+	assign v2c1l0_out[4] = g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19];
+	assign v2c1l0_out[5] = g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23];
+	assign v2c1l0_out[6] = g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27];
+	assign v2c1l0_out[7] = g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31];
+	assign v2c1l0_out[8] = g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35];
+	assign v2c1l0_out[9] = g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39];
+	assign v2c1l0_out[10] = g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43];
+	assign v2c1l0_out[11] = g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47];
+	assign v2c1l0_out[12] = g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51];
+	assign v2c1l0_out[13] = g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55];
+	assign v2c1l0_out[14] = g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59];
+	assign v2c1l0_out[15] = g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63];
+	assign v2c1l0_out[16] = g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67];
+	assign v2c1l0_out[17] = g2_reg[68] + g2_reg[69];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 18; i = i + 1)
+            v2c1l0[i] <= v2c1l0_out[i];
+    end
+
+	reg [3:0] v2c1l1 [0:8];
+	logic [3:0] v2c1l1_out [0:8];
+	assign v2c1l1_out[0] = v2c1l0[0] + v2c1l0[1];
+	assign v2c1l1_out[1] = v2c1l0[2] + v2c1l0[3];
+	assign v2c1l1_out[2] = v2c1l0[4] + v2c1l0[5];
+	assign v2c1l1_out[3] = v2c1l0[6] + v2c1l0[7];
+	assign v2c1l1_out[4] = v2c1l0[8] + v2c1l0[9];
+	assign v2c1l1_out[5] = v2c1l0[10] + v2c1l0[11];
+	assign v2c1l1_out[6] = v2c1l0[12] + v2c1l0[13];
+	assign v2c1l1_out[7] = v2c1l0[14] + v2c1l0[15];
+	assign v2c1l1_out[8] = v2c1l0[16] + v2c1l0[17];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v2c1l1[i] <= v2c1l1_out[i];
+    end
+
+	reg [4:0] v2c1l2 [0:4];
+	logic [4:0] v2c1l2_out [0:4];
+	assign v2c1l2_out[0] = v2c1l1[0] + v2c1l1[1];
+	assign v2c1l2_out[1] = v2c1l1[2] + v2c1l1[3];
+	assign v2c1l2_out[2] = v2c1l1[4] + v2c1l1[5];
+	assign v2c1l2_out[3] = v2c1l1[6] + v2c1l1[7];
+	assign v2c1l2_out[4] = v2c1l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v2c1l2[i] <= v2c1l2_out[i];
+    end
+
+	reg [5:0] v2c1l3 [0:2];
+	logic [5:0] v2c1l3_out [0:2];
+	assign v2c1l3_out[0] = v2c1l2[0] + v2c1l2[1];
+	assign v2c1l3_out[1] = v2c1l2[2] + v2c1l2[3];
+	assign v2c1l3_out[2] = v2c1l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v2c1l3[i] <= v2c1l3_out[i];
+    end
+
+	reg [6:0] v2c1l4 [0:1];
+	logic [6:0] v2c1l4_out [0:1];
+	assign v2c1l4_out[0] = v2c1l3[0] + v2c1l3[1];
+	assign v2c1l4_out[1] = v2c1l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v2c1l4[i] <= v2c1l4_out[i];
+    end
+
+	reg [7:0] v2c1l5 [0:0];
+	logic [7:0] v2c1l5_out [0:0];
+	assign v2c1l5_out[0] = v2c1l4[0] + v2c1l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v2c1l5[i] <= v2c1l5_out[i];
+    end
+
+	assign val[2] = v2c1l5[0];
 	
 	// -0.03125
 	logic [0:47] g3;
@@ -1140,7 +2411,80 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g3_reg <= g3;
     end
     
-	assign val[3] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3] + g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7] + g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11] + g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15] + g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19] + g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23] + g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27] + g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31] + g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35] + g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39] + g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43] + g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47];
+	logic [2:0] v3c1l0_out [0:11];
+	logic [2:0] v3c1l0 [0:11];
+	assign v3c1l0_out[0] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3];
+	assign v3c1l0_out[1] = g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7];
+	assign v3c1l0_out[2] = g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11];
+	assign v3c1l0_out[3] = g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15];
+	assign v3c1l0_out[4] = g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19];
+	assign v3c1l0_out[5] = g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23];
+	assign v3c1l0_out[6] = g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27];
+	assign v3c1l0_out[7] = g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31];
+	assign v3c1l0_out[8] = g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35];
+	assign v3c1l0_out[9] = g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39];
+	assign v3c1l0_out[10] = g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43];
+	assign v3c1l0_out[11] = g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 12; i = i + 1)
+            v3c1l0[i] <= v3c1l0_out[i];
+    end
+
+	reg [3:0] v3c1l1 [0:5];
+	logic [3:0] v3c1l1_out [0:5];
+	assign v3c1l1_out[0] = v3c1l0[0] + v3c1l0[1];
+	assign v3c1l1_out[1] = v3c1l0[2] + v3c1l0[3];
+	assign v3c1l1_out[2] = v3c1l0[4] + v3c1l0[5];
+	assign v3c1l1_out[3] = v3c1l0[6] + v3c1l0[7];
+	assign v3c1l1_out[4] = v3c1l0[8] + v3c1l0[9];
+	assign v3c1l1_out[5] = v3c1l0[10] + v3c1l0[11];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v3c1l1[i] <= v3c1l1_out[i];
+    end
+
+	reg [4:0] v3c1l2 [0:2];
+	logic [4:0] v3c1l2_out [0:2];
+	assign v3c1l2_out[0] = v3c1l1[0] + v3c1l1[1];
+	assign v3c1l2_out[1] = v3c1l1[2] + v3c1l1[3];
+	assign v3c1l2_out[2] = v3c1l1[4] + v3c1l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v3c1l2[i] <= v3c1l2_out[i];
+    end
+
+	reg [5:0] v3c1l3 [0:1];
+	logic [5:0] v3c1l3_out [0:1];
+	assign v3c1l3_out[0] = v3c1l2[0] + v3c1l2[1];
+	assign v3c1l3_out[1] = v3c1l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v3c1l3[i] <= v3c1l3_out[i];
+    end
+
+	reg [6:0] v3c1l4 [0:0];
+	logic [6:0] v3c1l4_out [0:0];
+	assign v3c1l4_out[0] = v3c1l3[0] + v3c1l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c1l4[i] <= v3c1l4_out[i];
+    end
+
+	reg [7:0] v3c1l5 [0:0];
+	logic [7:0] v3c1l5_out [0:0];
+	assign v3c1l5_out[0] = v3c1l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c1l5[i] <= v3c1l5_out[i];
+    end
+
+	assign val[3] = v3c1l5[0];
 	
 	// -0.015625
 	logic [0:24] g4;
@@ -1175,7 +2519,71 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g4_reg <= g4;
     end
     
-	assign val[4] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3] + g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7] + g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11] + g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15] + g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19] + g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23] + g4_reg[24];
+	logic [2:0] v4c1l0_out [0:6];
+	logic [2:0] v4c1l0 [0:6];
+	assign v4c1l0_out[0] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3];
+	assign v4c1l0_out[1] = g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7];
+	assign v4c1l0_out[2] = g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11];
+	assign v4c1l0_out[3] = g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15];
+	assign v4c1l0_out[4] = g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19];
+	assign v4c1l0_out[5] = g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23];
+	assign v4c1l0_out[6] = g4_reg[24];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v4c1l0[i] <= v4c1l0_out[i];
+    end
+
+	reg [3:0] v4c1l1 [0:3];
+	logic [3:0] v4c1l1_out [0:3];
+	assign v4c1l1_out[0] = v4c1l0[0] + v4c1l0[1];
+	assign v4c1l1_out[1] = v4c1l0[2] + v4c1l0[3];
+	assign v4c1l1_out[2] = v4c1l0[4] + v4c1l0[5];
+	assign v4c1l1_out[3] = v4c1l0[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v4c1l1[i] <= v4c1l1_out[i];
+    end
+
+	reg [4:0] v4c1l2 [0:1];
+	logic [4:0] v4c1l2_out [0:1];
+	assign v4c1l2_out[0] = v4c1l1[0] + v4c1l1[1];
+	assign v4c1l2_out[1] = v4c1l1[2] + v4c1l1[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v4c1l2[i] <= v4c1l2_out[i];
+    end
+
+	reg [5:0] v4c1l3 [0:0];
+	logic [5:0] v4c1l3_out [0:0];
+	assign v4c1l3_out[0] = v4c1l2[0] + v4c1l2[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c1l3[i] <= v4c1l3_out[i];
+    end
+
+	reg [6:0] v4c1l4 [0:0];
+	logic [6:0] v4c1l4_out [0:0];
+	assign v4c1l4_out[0] = v4c1l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c1l4[i] <= v4c1l4_out[i];
+    end
+
+	reg [7:0] v4c1l5 [0:0];
+	logic [7:0] v4c1l5_out [0:0];
+	assign v4c1l5_out[0] = v4c1l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c1l5[i] <= v4c1l5_out[i];
+    end
+
+	assign val[4] = v4c1l5[0];
 	
 	// 0.015625
 	logic [0:24] g5;
@@ -1210,7 +2618,71 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g5_reg <= g5;
     end
     
-	assign val[5] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3] + g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7] + g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11] + g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15] + g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19] + g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23] + g5_reg[24];
+	logic [2:0] v5c1l0_out [0:6];
+	logic [2:0] v5c1l0 [0:6];
+	assign v5c1l0_out[0] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3];
+	assign v5c1l0_out[1] = g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7];
+	assign v5c1l0_out[2] = g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11];
+	assign v5c1l0_out[3] = g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15];
+	assign v5c1l0_out[4] = g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19];
+	assign v5c1l0_out[5] = g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23];
+	assign v5c1l0_out[6] = g5_reg[24];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v5c1l0[i] <= v5c1l0_out[i];
+    end
+
+	reg [3:0] v5c1l1 [0:3];
+	logic [3:0] v5c1l1_out [0:3];
+	assign v5c1l1_out[0] = v5c1l0[0] + v5c1l0[1];
+	assign v5c1l1_out[1] = v5c1l0[2] + v5c1l0[3];
+	assign v5c1l1_out[2] = v5c1l0[4] + v5c1l0[5];
+	assign v5c1l1_out[3] = v5c1l0[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v5c1l1[i] <= v5c1l1_out[i];
+    end
+
+	reg [4:0] v5c1l2 [0:1];
+	logic [4:0] v5c1l2_out [0:1];
+	assign v5c1l2_out[0] = v5c1l1[0] + v5c1l1[1];
+	assign v5c1l2_out[1] = v5c1l1[2] + v5c1l1[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v5c1l2[i] <= v5c1l2_out[i];
+    end
+
+	reg [5:0] v5c1l3 [0:0];
+	logic [5:0] v5c1l3_out [0:0];
+	assign v5c1l3_out[0] = v5c1l2[0] + v5c1l2[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c1l3[i] <= v5c1l3_out[i];
+    end
+
+	reg [6:0] v5c1l4 [0:0];
+	logic [6:0] v5c1l4_out [0:0];
+	assign v5c1l4_out[0] = v5c1l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c1l4[i] <= v5c1l4_out[i];
+    end
+
+	reg [7:0] v5c1l5 [0:0];
+	logic [7:0] v5c1l5_out [0:0];
+	assign v5c1l5_out[0] = v5c1l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c1l5[i] <= v5c1l5_out[i];
+    end
+
+	assign val[5] = v5c1l5[0];
 	
 	// 0.03125
 	logic [0:43] g6;
@@ -1264,7 +2736,79 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g6_reg <= g6;
     end
     
-	assign val[6] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3] + g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7] + g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11] + g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15] + g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19] + g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23] + g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27] + g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31] + g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35] + g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39] + g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	logic [2:0] v6c1l0_out [0:10];
+	logic [2:0] v6c1l0 [0:10];
+	assign v6c1l0_out[0] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3];
+	assign v6c1l0_out[1] = g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7];
+	assign v6c1l0_out[2] = g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11];
+	assign v6c1l0_out[3] = g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15];
+	assign v6c1l0_out[4] = g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19];
+	assign v6c1l0_out[5] = g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23];
+	assign v6c1l0_out[6] = g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27];
+	assign v6c1l0_out[7] = g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31];
+	assign v6c1l0_out[8] = g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35];
+	assign v6c1l0_out[9] = g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39];
+	assign v6c1l0_out[10] = g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v6c1l0[i] <= v6c1l0_out[i];
+    end
+
+	reg [3:0] v6c1l1 [0:5];
+	logic [3:0] v6c1l1_out [0:5];
+	assign v6c1l1_out[0] = v6c1l0[0] + v6c1l0[1];
+	assign v6c1l1_out[1] = v6c1l0[2] + v6c1l0[3];
+	assign v6c1l1_out[2] = v6c1l0[4] + v6c1l0[5];
+	assign v6c1l1_out[3] = v6c1l0[6] + v6c1l0[7];
+	assign v6c1l1_out[4] = v6c1l0[8] + v6c1l0[9];
+	assign v6c1l1_out[5] = v6c1l0[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v6c1l1[i] <= v6c1l1_out[i];
+    end
+
+	reg [4:0] v6c1l2 [0:2];
+	logic [4:0] v6c1l2_out [0:2];
+	assign v6c1l2_out[0] = v6c1l1[0] + v6c1l1[1];
+	assign v6c1l2_out[1] = v6c1l1[2] + v6c1l1[3];
+	assign v6c1l2_out[2] = v6c1l1[4] + v6c1l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v6c1l2[i] <= v6c1l2_out[i];
+    end
+
+	reg [5:0] v6c1l3 [0:1];
+	logic [5:0] v6c1l3_out [0:1];
+	assign v6c1l3_out[0] = v6c1l2[0] + v6c1l2[1];
+	assign v6c1l3_out[1] = v6c1l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v6c1l3[i] <= v6c1l3_out[i];
+    end
+
+	reg [6:0] v6c1l4 [0:0];
+	logic [6:0] v6c1l4_out [0:0];
+	assign v6c1l4_out[0] = v6c1l3[0] + v6c1l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c1l4[i] <= v6c1l4_out[i];
+    end
+
+	reg [7:0] v6c1l5 [0:0];
+	logic [7:0] v6c1l5_out [0:0];
+	assign v6c1l5_out[0] = v6c1l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c1l5[i] <= v6c1l5_out[i];
+    end
+
+	assign val[6] = v6c1l5[0];
 	
 	// 0.0625
 	logic [0:64] g7;
@@ -1339,7 +2883,92 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g7_reg <= g7;
     end
     
-	assign val[7] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3] + g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7] + g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11] + g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15] + g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19] + g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23] + g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27] + g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31] + g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35] + g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39] + g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43] + g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47] + g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51] + g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55] + g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59] + g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63] + g7_reg[64];
+	logic [2:0] v7c1l0_out [0:16];
+	logic [2:0] v7c1l0 [0:16];
+	assign v7c1l0_out[0] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3];
+	assign v7c1l0_out[1] = g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7];
+	assign v7c1l0_out[2] = g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11];
+	assign v7c1l0_out[3] = g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15];
+	assign v7c1l0_out[4] = g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19];
+	assign v7c1l0_out[5] = g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23];
+	assign v7c1l0_out[6] = g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27];
+	assign v7c1l0_out[7] = g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31];
+	assign v7c1l0_out[8] = g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35];
+	assign v7c1l0_out[9] = g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39];
+	assign v7c1l0_out[10] = g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43];
+	assign v7c1l0_out[11] = g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47];
+	assign v7c1l0_out[12] = g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51];
+	assign v7c1l0_out[13] = g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55];
+	assign v7c1l0_out[14] = g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59];
+	assign v7c1l0_out[15] = g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63];
+	assign v7c1l0_out[16] = g7_reg[64];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 17; i = i + 1)
+            v7c1l0[i] <= v7c1l0_out[i];
+    end
+
+	reg [3:0] v7c1l1 [0:8];
+	logic [3:0] v7c1l1_out [0:8];
+	assign v7c1l1_out[0] = v7c1l0[0] + v7c1l0[1];
+	assign v7c1l1_out[1] = v7c1l0[2] + v7c1l0[3];
+	assign v7c1l1_out[2] = v7c1l0[4] + v7c1l0[5];
+	assign v7c1l1_out[3] = v7c1l0[6] + v7c1l0[7];
+	assign v7c1l1_out[4] = v7c1l0[8] + v7c1l0[9];
+	assign v7c1l1_out[5] = v7c1l0[10] + v7c1l0[11];
+	assign v7c1l1_out[6] = v7c1l0[12] + v7c1l0[13];
+	assign v7c1l1_out[7] = v7c1l0[14] + v7c1l0[15];
+	assign v7c1l1_out[8] = v7c1l0[16];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v7c1l1[i] <= v7c1l1_out[i];
+    end
+
+	reg [4:0] v7c1l2 [0:4];
+	logic [4:0] v7c1l2_out [0:4];
+	assign v7c1l2_out[0] = v7c1l1[0] + v7c1l1[1];
+	assign v7c1l2_out[1] = v7c1l1[2] + v7c1l1[3];
+	assign v7c1l2_out[2] = v7c1l1[4] + v7c1l1[5];
+	assign v7c1l2_out[3] = v7c1l1[6] + v7c1l1[7];
+	assign v7c1l2_out[4] = v7c1l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v7c1l2[i] <= v7c1l2_out[i];
+    end
+
+	reg [5:0] v7c1l3 [0:2];
+	logic [5:0] v7c1l3_out [0:2];
+	assign v7c1l3_out[0] = v7c1l2[0] + v7c1l2[1];
+	assign v7c1l3_out[1] = v7c1l2[2] + v7c1l2[3];
+	assign v7c1l3_out[2] = v7c1l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v7c1l3[i] <= v7c1l3_out[i];
+    end
+
+	reg [6:0] v7c1l4 [0:1];
+	logic [6:0] v7c1l4_out [0:1];
+	assign v7c1l4_out[0] = v7c1l3[0] + v7c1l3[1];
+	assign v7c1l4_out[1] = v7c1l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v7c1l4[i] <= v7c1l4_out[i];
+    end
+
+	reg [7:0] v7c1l5 [0:0];
+	logic [7:0] v7c1l5_out [0:0];
+	assign v7c1l5_out[0] = v7c1l4[0] + v7c1l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c1l5[i] <= v7c1l5_out[i];
+    end
+
+	assign val[7] = v7c1l5[0];
 	
 	// 0.125
 	logic [0:69] g8;
@@ -1419,7 +3048,93 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g8_reg <= g8;
     end
     
-	assign val[8] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3] + g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7] + g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11] + g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15] + g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19] + g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23] + g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27] + g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31] + g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35] + g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39] + g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43] + g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47] + g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51] + g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55] + g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59] + g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63] + g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67] + g8_reg[68] + g8_reg[69];
+	logic [2:0] v8c1l0_out [0:17];
+	logic [2:0] v8c1l0 [0:17];
+	assign v8c1l0_out[0] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3];
+	assign v8c1l0_out[1] = g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7];
+	assign v8c1l0_out[2] = g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11];
+	assign v8c1l0_out[3] = g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15];
+	assign v8c1l0_out[4] = g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19];
+	assign v8c1l0_out[5] = g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23];
+	assign v8c1l0_out[6] = g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27];
+	assign v8c1l0_out[7] = g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31];
+	assign v8c1l0_out[8] = g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35];
+	assign v8c1l0_out[9] = g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39];
+	assign v8c1l0_out[10] = g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43];
+	assign v8c1l0_out[11] = g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47];
+	assign v8c1l0_out[12] = g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51];
+	assign v8c1l0_out[13] = g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55];
+	assign v8c1l0_out[14] = g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59];
+	assign v8c1l0_out[15] = g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63];
+	assign v8c1l0_out[16] = g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67];
+	assign v8c1l0_out[17] = g8_reg[68] + g8_reg[69];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 18; i = i + 1)
+            v8c1l0[i] <= v8c1l0_out[i];
+    end
+
+	reg [3:0] v8c1l1 [0:8];
+	logic [3:0] v8c1l1_out [0:8];
+	assign v8c1l1_out[0] = v8c1l0[0] + v8c1l0[1];
+	assign v8c1l1_out[1] = v8c1l0[2] + v8c1l0[3];
+	assign v8c1l1_out[2] = v8c1l0[4] + v8c1l0[5];
+	assign v8c1l1_out[3] = v8c1l0[6] + v8c1l0[7];
+	assign v8c1l1_out[4] = v8c1l0[8] + v8c1l0[9];
+	assign v8c1l1_out[5] = v8c1l0[10] + v8c1l0[11];
+	assign v8c1l1_out[6] = v8c1l0[12] + v8c1l0[13];
+	assign v8c1l1_out[7] = v8c1l0[14] + v8c1l0[15];
+	assign v8c1l1_out[8] = v8c1l0[16] + v8c1l0[17];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v8c1l1[i] <= v8c1l1_out[i];
+    end
+
+	reg [4:0] v8c1l2 [0:4];
+	logic [4:0] v8c1l2_out [0:4];
+	assign v8c1l2_out[0] = v8c1l1[0] + v8c1l1[1];
+	assign v8c1l2_out[1] = v8c1l1[2] + v8c1l1[3];
+	assign v8c1l2_out[2] = v8c1l1[4] + v8c1l1[5];
+	assign v8c1l2_out[3] = v8c1l1[6] + v8c1l1[7];
+	assign v8c1l2_out[4] = v8c1l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v8c1l2[i] <= v8c1l2_out[i];
+    end
+
+	reg [5:0] v8c1l3 [0:2];
+	logic [5:0] v8c1l3_out [0:2];
+	assign v8c1l3_out[0] = v8c1l2[0] + v8c1l2[1];
+	assign v8c1l3_out[1] = v8c1l2[2] + v8c1l2[3];
+	assign v8c1l3_out[2] = v8c1l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v8c1l3[i] <= v8c1l3_out[i];
+    end
+
+	reg [6:0] v8c1l4 [0:1];
+	logic [6:0] v8c1l4_out [0:1];
+	assign v8c1l4_out[0] = v8c1l3[0] + v8c1l3[1];
+	assign v8c1l4_out[1] = v8c1l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v8c1l4[i] <= v8c1l4_out[i];
+    end
+
+	reg [7:0] v8c1l5 [0:0];
+	logic [7:0] v8c1l5_out [0:0];
+	assign v8c1l5_out[0] = v8c1l4[0] + v8c1l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v8c1l5[i] <= v8c1l5_out[i];
+    end
+
+	assign val[8] = v8c1l5[0];
 	
 	// 0.25
 	logic [0:52] g9;
@@ -1482,7 +3197,84 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g9_reg <= g9;
     end
     
-	assign val[9] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3] + g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7] + g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11] + g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15] + g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19] + g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23] + g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27] + g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31] + g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35] + g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39] + g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43] + g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47] + g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51] + g9_reg[52];
+	logic [2:0] v9c1l0_out [0:13];
+	logic [2:0] v9c1l0 [0:13];
+	assign v9c1l0_out[0] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3];
+	assign v9c1l0_out[1] = g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7];
+	assign v9c1l0_out[2] = g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11];
+	assign v9c1l0_out[3] = g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15];
+	assign v9c1l0_out[4] = g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19];
+	assign v9c1l0_out[5] = g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23];
+	assign v9c1l0_out[6] = g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27];
+	assign v9c1l0_out[7] = g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31];
+	assign v9c1l0_out[8] = g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	assign v9c1l0_out[9] = g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39];
+	assign v9c1l0_out[10] = g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43];
+	assign v9c1l0_out[11] = g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47];
+	assign v9c1l0_out[12] = g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51];
+	assign v9c1l0_out[13] = g9_reg[52];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 14; i = i + 1)
+            v9c1l0[i] <= v9c1l0_out[i];
+    end
+
+	reg [3:0] v9c1l1 [0:6];
+	logic [3:0] v9c1l1_out [0:6];
+	assign v9c1l1_out[0] = v9c1l0[0] + v9c1l0[1];
+	assign v9c1l1_out[1] = v9c1l0[2] + v9c1l0[3];
+	assign v9c1l1_out[2] = v9c1l0[4] + v9c1l0[5];
+	assign v9c1l1_out[3] = v9c1l0[6] + v9c1l0[7];
+	assign v9c1l1_out[4] = v9c1l0[8] + v9c1l0[9];
+	assign v9c1l1_out[5] = v9c1l0[10] + v9c1l0[11];
+	assign v9c1l1_out[6] = v9c1l0[12] + v9c1l0[13];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v9c1l1[i] <= v9c1l1_out[i];
+    end
+
+	reg [4:0] v9c1l2 [0:3];
+	logic [4:0] v9c1l2_out [0:3];
+	assign v9c1l2_out[0] = v9c1l1[0] + v9c1l1[1];
+	assign v9c1l2_out[1] = v9c1l1[2] + v9c1l1[3];
+	assign v9c1l2_out[2] = v9c1l1[4] + v9c1l1[5];
+	assign v9c1l2_out[3] = v9c1l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v9c1l2[i] <= v9c1l2_out[i];
+    end
+
+	reg [5:0] v9c1l3 [0:1];
+	logic [5:0] v9c1l3_out [0:1];
+	assign v9c1l3_out[0] = v9c1l2[0] + v9c1l2[1];
+	assign v9c1l3_out[1] = v9c1l2[2] + v9c1l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v9c1l3[i] <= v9c1l3_out[i];
+    end
+
+	reg [6:0] v9c1l4 [0:0];
+	logic [6:0] v9c1l4_out [0:0];
+	assign v9c1l4_out[0] = v9c1l3[0] + v9c1l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c1l4[i] <= v9c1l4_out[i];
+    end
+
+	reg [7:0] v9c1l5 [0:0];
+	logic [7:0] v9c1l5_out [0:0];
+	assign v9c1l5_out[0] = v9c1l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c1l5[i] <= v9c1l5_out[i];
+    end
+
+	assign val[9] = v9c1l5[0];
 	
 	// 0.5
 	logic [0:11] g10;
@@ -1504,7 +3296,64 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g10_reg <= g10;
     end
     
-	assign val[10] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3] + g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7] + g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11];
+	logic [2:0] v10c1l0_out [0:2];
+	logic [2:0] v10c1l0 [0:2];
+	assign v10c1l0_out[0] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	assign v10c1l0_out[1] = g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7];
+	assign v10c1l0_out[2] = g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v10c1l0[i] <= v10c1l0_out[i];
+    end
+
+	reg [3:0] v10c1l1 [0:1];
+	logic [3:0] v10c1l1_out [0:1];
+	assign v10c1l1_out[0] = v10c1l0[0] + v10c1l0[1];
+	assign v10c1l1_out[1] = v10c1l0[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v10c1l1[i] <= v10c1l1_out[i];
+    end
+
+	reg [4:0] v10c1l2 [0:0];
+	logic [4:0] v10c1l2_out [0:0];
+	assign v10c1l2_out[0] = v10c1l1[0] + v10c1l1[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c1l2[i] <= v10c1l2_out[i];
+    end
+
+	reg [5:0] v10c1l3 [0:0];
+	logic [5:0] v10c1l3_out [0:0];
+	assign v10c1l3_out[0] = v10c1l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c1l3[i] <= v10c1l3_out[i];
+    end
+
+	reg [6:0] v10c1l4 [0:0];
+	logic [6:0] v10c1l4_out [0:0];
+	assign v10c1l4_out[0] = v10c1l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c1l4[i] <= v10c1l4_out[i];
+    end
+
+	reg [7:0] v10c1l5 [0:0];
+	logic [7:0] v10c1l5_out [0:0];
+	assign v10c1l5_out[0] = v10c1l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c1l5[i] <= v10c1l5_out[i];
+    end
+
+	assign val[10] = v10c1l5[0];
 	
 	// 1.0
 	logic [0:0] g11;
@@ -1515,7 +3364,61 @@ module leaf_counter_1(input logic clk, input logic [0:1154] l, output logic [7:0
         g11_reg <= g11;
     end
     
-	assign val[11] = g11_reg[0];
+	logic [2:0] v11c1l0_out [0:0];
+	logic [2:0] v11c1l0 [0:0];
+	assign v11c1l0_out[0] = g11_reg[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c1l0[i] <= v11c1l0_out[i];
+    end
+
+	reg [3:0] v11c1l1 [0:0];
+	logic [3:0] v11c1l1_out [0:0];
+	assign v11c1l1_out[0] = v11c1l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c1l1[i] <= v11c1l1_out[i];
+    end
+
+	reg [4:0] v11c1l2 [0:0];
+	logic [4:0] v11c1l2_out [0:0];
+	assign v11c1l2_out[0] = v11c1l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c1l2[i] <= v11c1l2_out[i];
+    end
+
+	reg [5:0] v11c1l3 [0:0];
+	logic [5:0] v11c1l3_out [0:0];
+	assign v11c1l3_out[0] = v11c1l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c1l3[i] <= v11c1l3_out[i];
+    end
+
+	reg [6:0] v11c1l4 [0:0];
+	logic [6:0] v11c1l4_out [0:0];
+	assign v11c1l4_out[0] = v11c1l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c1l4[i] <= v11c1l4_out[i];
+    end
+
+	reg [7:0] v11c1l5 [0:0];
+	logic [7:0] v11c1l5_out [0:0];
+	assign v11c1l5_out[0] = v11c1l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c1l5[i] <= v11c1l5_out[i];
+    end
+
+	assign val[11] = v11c1l5[0];
 	
 	// 2.0
 	assign val[12] = 0;
@@ -1524,6 +3427,7 @@ endmodule
 
 
 module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0] val [0:12]);
+    integer i;
 	// -0.25
 	logic [0:62] g0;
 	reg [0:62] g0_reg;
@@ -1595,7 +3499,87 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g0_reg <= g0;
     end
     
-	assign val[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3] + g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7] + g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11] + g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15] + g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19] + g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23] + g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27] + g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31] + g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35] + g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39] + g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43] + g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47] + g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51] + g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55] + g0_reg[56] + g0_reg[57] + g0_reg[58] + g0_reg[59] + g0_reg[60] + g0_reg[61] + g0_reg[62];
+	logic [2:0] v0c2l0_out [0:15];
+	logic [2:0] v0c2l0 [0:15];
+	assign v0c2l0_out[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3];
+	assign v0c2l0_out[1] = g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7];
+	assign v0c2l0_out[2] = g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11];
+	assign v0c2l0_out[3] = g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15];
+	assign v0c2l0_out[4] = g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19];
+	assign v0c2l0_out[5] = g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23];
+	assign v0c2l0_out[6] = g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27];
+	assign v0c2l0_out[7] = g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31];
+	assign v0c2l0_out[8] = g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35];
+	assign v0c2l0_out[9] = g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39];
+	assign v0c2l0_out[10] = g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43];
+	assign v0c2l0_out[11] = g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47];
+	assign v0c2l0_out[12] = g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51];
+	assign v0c2l0_out[13] = g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55];
+	assign v0c2l0_out[14] = g0_reg[56] + g0_reg[57] + g0_reg[58] + g0_reg[59];
+	assign v0c2l0_out[15] = g0_reg[60] + g0_reg[61] + g0_reg[62];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 16; i = i + 1)
+            v0c2l0[i] <= v0c2l0_out[i];
+    end
+
+	reg [3:0] v0c2l1 [0:7];
+	logic [3:0] v0c2l1_out [0:7];
+	assign v0c2l1_out[0] = v0c2l0[0] + v0c2l0[1];
+	assign v0c2l1_out[1] = v0c2l0[2] + v0c2l0[3];
+	assign v0c2l1_out[2] = v0c2l0[4] + v0c2l0[5];
+	assign v0c2l1_out[3] = v0c2l0[6] + v0c2l0[7];
+	assign v0c2l1_out[4] = v0c2l0[8] + v0c2l0[9];
+	assign v0c2l1_out[5] = v0c2l0[10] + v0c2l0[11];
+	assign v0c2l1_out[6] = v0c2l0[12] + v0c2l0[13];
+	assign v0c2l1_out[7] = v0c2l0[14] + v0c2l0[15];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v0c2l1[i] <= v0c2l1_out[i];
+    end
+
+	reg [4:0] v0c2l2 [0:3];
+	logic [4:0] v0c2l2_out [0:3];
+	assign v0c2l2_out[0] = v0c2l1[0] + v0c2l1[1];
+	assign v0c2l2_out[1] = v0c2l1[2] + v0c2l1[3];
+	assign v0c2l2_out[2] = v0c2l1[4] + v0c2l1[5];
+	assign v0c2l2_out[3] = v0c2l1[6] + v0c2l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v0c2l2[i] <= v0c2l2_out[i];
+    end
+
+	reg [5:0] v0c2l3 [0:1];
+	logic [5:0] v0c2l3_out [0:1];
+	assign v0c2l3_out[0] = v0c2l2[0] + v0c2l2[1];
+	assign v0c2l3_out[1] = v0c2l2[2] + v0c2l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v0c2l3[i] <= v0c2l3_out[i];
+    end
+
+	reg [6:0] v0c2l4 [0:0];
+	logic [6:0] v0c2l4_out [0:0];
+	assign v0c2l4_out[0] = v0c2l3[0] + v0c2l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c2l4[i] <= v0c2l4_out[i];
+    end
+
+	reg [7:0] v0c2l5 [0:0];
+	logic [7:0] v0c2l5_out [0:0];
+	assign v0c2l5_out[0] = v0c2l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c2l5[i] <= v0c2l5_out[i];
+    end
+
+	assign val[0] = v0c2l5[0];
 	
 	// -0.125
 	logic [0:94] g1;
@@ -1700,7 +3684,103 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g1_reg <= g1;
     end
     
-	assign val[1] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3] + g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7] + g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11] + g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15] + g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19] + g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23] + g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27] + g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31] + g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35] + g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39] + g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43] + g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47] + g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51] + g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55] + g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59] + g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63] + g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67] + g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71] + g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75] + g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79] + g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83] + g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87] + g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91] + g1_reg[92] + g1_reg[93] + g1_reg[94];
+	logic [2:0] v1c2l0_out [0:23];
+	logic [2:0] v1c2l0 [0:23];
+	assign v1c2l0_out[0] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3];
+	assign v1c2l0_out[1] = g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7];
+	assign v1c2l0_out[2] = g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11];
+	assign v1c2l0_out[3] = g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15];
+	assign v1c2l0_out[4] = g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19];
+	assign v1c2l0_out[5] = g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23];
+	assign v1c2l0_out[6] = g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27];
+	assign v1c2l0_out[7] = g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31];
+	assign v1c2l0_out[8] = g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35];
+	assign v1c2l0_out[9] = g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39];
+	assign v1c2l0_out[10] = g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43];
+	assign v1c2l0_out[11] = g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47];
+	assign v1c2l0_out[12] = g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51];
+	assign v1c2l0_out[13] = g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55];
+	assign v1c2l0_out[14] = g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59];
+	assign v1c2l0_out[15] = g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63];
+	assign v1c2l0_out[16] = g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67];
+	assign v1c2l0_out[17] = g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71];
+	assign v1c2l0_out[18] = g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75];
+	assign v1c2l0_out[19] = g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79];
+	assign v1c2l0_out[20] = g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83];
+	assign v1c2l0_out[21] = g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87];
+	assign v1c2l0_out[22] = g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91];
+	assign v1c2l0_out[23] = g1_reg[92] + g1_reg[93] + g1_reg[94];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 24; i = i + 1)
+            v1c2l0[i] <= v1c2l0_out[i];
+    end
+
+	reg [3:0] v1c2l1 [0:11];
+	logic [3:0] v1c2l1_out [0:11];
+	assign v1c2l1_out[0] = v1c2l0[0] + v1c2l0[1];
+	assign v1c2l1_out[1] = v1c2l0[2] + v1c2l0[3];
+	assign v1c2l1_out[2] = v1c2l0[4] + v1c2l0[5];
+	assign v1c2l1_out[3] = v1c2l0[6] + v1c2l0[7];
+	assign v1c2l1_out[4] = v1c2l0[8] + v1c2l0[9];
+	assign v1c2l1_out[5] = v1c2l0[10] + v1c2l0[11];
+	assign v1c2l1_out[6] = v1c2l0[12] + v1c2l0[13];
+	assign v1c2l1_out[7] = v1c2l0[14] + v1c2l0[15];
+	assign v1c2l1_out[8] = v1c2l0[16] + v1c2l0[17];
+	assign v1c2l1_out[9] = v1c2l0[18] + v1c2l0[19];
+	assign v1c2l1_out[10] = v1c2l0[20] + v1c2l0[21];
+	assign v1c2l1_out[11] = v1c2l0[22] + v1c2l0[23];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 12; i = i + 1)
+            v1c2l1[i] <= v1c2l1_out[i];
+    end
+
+	reg [4:0] v1c2l2 [0:5];
+	logic [4:0] v1c2l2_out [0:5];
+	assign v1c2l2_out[0] = v1c2l1[0] + v1c2l1[1];
+	assign v1c2l2_out[1] = v1c2l1[2] + v1c2l1[3];
+	assign v1c2l2_out[2] = v1c2l1[4] + v1c2l1[5];
+	assign v1c2l2_out[3] = v1c2l1[6] + v1c2l1[7];
+	assign v1c2l2_out[4] = v1c2l1[8] + v1c2l1[9];
+	assign v1c2l2_out[5] = v1c2l1[10] + v1c2l1[11];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v1c2l2[i] <= v1c2l2_out[i];
+    end
+
+	reg [5:0] v1c2l3 [0:2];
+	logic [5:0] v1c2l3_out [0:2];
+	assign v1c2l3_out[0] = v1c2l2[0] + v1c2l2[1];
+	assign v1c2l3_out[1] = v1c2l2[2] + v1c2l2[3];
+	assign v1c2l3_out[2] = v1c2l2[4] + v1c2l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v1c2l3[i] <= v1c2l3_out[i];
+    end
+
+	reg [6:0] v1c2l4 [0:1];
+	logic [6:0] v1c2l4_out [0:1];
+	assign v1c2l4_out[0] = v1c2l3[0] + v1c2l3[1];
+	assign v1c2l4_out[1] = v1c2l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v1c2l4[i] <= v1c2l4_out[i];
+    end
+
+	reg [7:0] v1c2l5 [0:0];
+	logic [7:0] v1c2l5_out [0:0];
+	assign v1c2l5_out[0] = v1c2l4[0] + v1c2l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v1c2l5[i] <= v1c2l5_out[i];
+    end
+
+	assign val[1] = v1c2l5[0];
 	
 	// -0.0625
 	logic [0:77] g2;
@@ -1788,7 +3868,96 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g2_reg <= g2;
     end
     
-	assign val[2] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3] + g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7] + g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11] + g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15] + g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19] + g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23] + g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27] + g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31] + g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35] + g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39] + g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43] + g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47] + g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51] + g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55] + g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59] + g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63] + g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67] + g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71] + g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75] + g2_reg[76] + g2_reg[77];
+	logic [2:0] v2c2l0_out [0:19];
+	logic [2:0] v2c2l0 [0:19];
+	assign v2c2l0_out[0] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3];
+	assign v2c2l0_out[1] = g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7];
+	assign v2c2l0_out[2] = g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11];
+	assign v2c2l0_out[3] = g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15];
+	assign v2c2l0_out[4] = g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19];
+	assign v2c2l0_out[5] = g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23];
+	assign v2c2l0_out[6] = g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27];
+	assign v2c2l0_out[7] = g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31];
+	assign v2c2l0_out[8] = g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35];
+	assign v2c2l0_out[9] = g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39];
+	assign v2c2l0_out[10] = g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43];
+	assign v2c2l0_out[11] = g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47];
+	assign v2c2l0_out[12] = g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51];
+	assign v2c2l0_out[13] = g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55];
+	assign v2c2l0_out[14] = g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59];
+	assign v2c2l0_out[15] = g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63];
+	assign v2c2l0_out[16] = g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67];
+	assign v2c2l0_out[17] = g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71];
+	assign v2c2l0_out[18] = g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75];
+	assign v2c2l0_out[19] = g2_reg[76] + g2_reg[77];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 20; i = i + 1)
+            v2c2l0[i] <= v2c2l0_out[i];
+    end
+
+	reg [3:0] v2c2l1 [0:9];
+	logic [3:0] v2c2l1_out [0:9];
+	assign v2c2l1_out[0] = v2c2l0[0] + v2c2l0[1];
+	assign v2c2l1_out[1] = v2c2l0[2] + v2c2l0[3];
+	assign v2c2l1_out[2] = v2c2l0[4] + v2c2l0[5];
+	assign v2c2l1_out[3] = v2c2l0[6] + v2c2l0[7];
+	assign v2c2l1_out[4] = v2c2l0[8] + v2c2l0[9];
+	assign v2c2l1_out[5] = v2c2l0[10] + v2c2l0[11];
+	assign v2c2l1_out[6] = v2c2l0[12] + v2c2l0[13];
+	assign v2c2l1_out[7] = v2c2l0[14] + v2c2l0[15];
+	assign v2c2l1_out[8] = v2c2l0[16] + v2c2l0[17];
+	assign v2c2l1_out[9] = v2c2l0[18] + v2c2l0[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v2c2l1[i] <= v2c2l1_out[i];
+    end
+
+	reg [4:0] v2c2l2 [0:4];
+	logic [4:0] v2c2l2_out [0:4];
+	assign v2c2l2_out[0] = v2c2l1[0] + v2c2l1[1];
+	assign v2c2l2_out[1] = v2c2l1[2] + v2c2l1[3];
+	assign v2c2l2_out[2] = v2c2l1[4] + v2c2l1[5];
+	assign v2c2l2_out[3] = v2c2l1[6] + v2c2l1[7];
+	assign v2c2l2_out[4] = v2c2l1[8] + v2c2l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v2c2l2[i] <= v2c2l2_out[i];
+    end
+
+	reg [5:0] v2c2l3 [0:2];
+	logic [5:0] v2c2l3_out [0:2];
+	assign v2c2l3_out[0] = v2c2l2[0] + v2c2l2[1];
+	assign v2c2l3_out[1] = v2c2l2[2] + v2c2l2[3];
+	assign v2c2l3_out[2] = v2c2l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v2c2l3[i] <= v2c2l3_out[i];
+    end
+
+	reg [6:0] v2c2l4 [0:1];
+	logic [6:0] v2c2l4_out [0:1];
+	assign v2c2l4_out[0] = v2c2l3[0] + v2c2l3[1];
+	assign v2c2l4_out[1] = v2c2l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v2c2l4[i] <= v2c2l4_out[i];
+    end
+
+	reg [7:0] v2c2l5 [0:0];
+	logic [7:0] v2c2l5_out [0:0];
+	assign v2c2l5_out[0] = v2c2l4[0] + v2c2l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v2c2l5[i] <= v2c2l5_out[i];
+    end
+
+	assign val[2] = v2c2l5[0];
 	
 	// -0.03125
 	logic [0:64] g3;
@@ -1863,7 +4032,92 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g3_reg <= g3;
     end
     
-	assign val[3] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3] + g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7] + g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11] + g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15] + g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19] + g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23] + g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27] + g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31] + g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35] + g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39] + g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43] + g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47] + g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51] + g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55] + g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59] + g3_reg[60] + g3_reg[61] + g3_reg[62] + g3_reg[63] + g3_reg[64];
+	logic [2:0] v3c2l0_out [0:16];
+	logic [2:0] v3c2l0 [0:16];
+	assign v3c2l0_out[0] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3];
+	assign v3c2l0_out[1] = g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7];
+	assign v3c2l0_out[2] = g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11];
+	assign v3c2l0_out[3] = g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15];
+	assign v3c2l0_out[4] = g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19];
+	assign v3c2l0_out[5] = g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23];
+	assign v3c2l0_out[6] = g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27];
+	assign v3c2l0_out[7] = g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31];
+	assign v3c2l0_out[8] = g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35];
+	assign v3c2l0_out[9] = g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39];
+	assign v3c2l0_out[10] = g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43];
+	assign v3c2l0_out[11] = g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47];
+	assign v3c2l0_out[12] = g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51];
+	assign v3c2l0_out[13] = g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55];
+	assign v3c2l0_out[14] = g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59];
+	assign v3c2l0_out[15] = g3_reg[60] + g3_reg[61] + g3_reg[62] + g3_reg[63];
+	assign v3c2l0_out[16] = g3_reg[64];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 17; i = i + 1)
+            v3c2l0[i] <= v3c2l0_out[i];
+    end
+
+	reg [3:0] v3c2l1 [0:8];
+	logic [3:0] v3c2l1_out [0:8];
+	assign v3c2l1_out[0] = v3c2l0[0] + v3c2l0[1];
+	assign v3c2l1_out[1] = v3c2l0[2] + v3c2l0[3];
+	assign v3c2l1_out[2] = v3c2l0[4] + v3c2l0[5];
+	assign v3c2l1_out[3] = v3c2l0[6] + v3c2l0[7];
+	assign v3c2l1_out[4] = v3c2l0[8] + v3c2l0[9];
+	assign v3c2l1_out[5] = v3c2l0[10] + v3c2l0[11];
+	assign v3c2l1_out[6] = v3c2l0[12] + v3c2l0[13];
+	assign v3c2l1_out[7] = v3c2l0[14] + v3c2l0[15];
+	assign v3c2l1_out[8] = v3c2l0[16];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v3c2l1[i] <= v3c2l1_out[i];
+    end
+
+	reg [4:0] v3c2l2 [0:4];
+	logic [4:0] v3c2l2_out [0:4];
+	assign v3c2l2_out[0] = v3c2l1[0] + v3c2l1[1];
+	assign v3c2l2_out[1] = v3c2l1[2] + v3c2l1[3];
+	assign v3c2l2_out[2] = v3c2l1[4] + v3c2l1[5];
+	assign v3c2l2_out[3] = v3c2l1[6] + v3c2l1[7];
+	assign v3c2l2_out[4] = v3c2l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v3c2l2[i] <= v3c2l2_out[i];
+    end
+
+	reg [5:0] v3c2l3 [0:2];
+	logic [5:0] v3c2l3_out [0:2];
+	assign v3c2l3_out[0] = v3c2l2[0] + v3c2l2[1];
+	assign v3c2l3_out[1] = v3c2l2[2] + v3c2l2[3];
+	assign v3c2l3_out[2] = v3c2l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v3c2l3[i] <= v3c2l3_out[i];
+    end
+
+	reg [6:0] v3c2l4 [0:1];
+	logic [6:0] v3c2l4_out [0:1];
+	assign v3c2l4_out[0] = v3c2l3[0] + v3c2l3[1];
+	assign v3c2l4_out[1] = v3c2l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v3c2l4[i] <= v3c2l4_out[i];
+    end
+
+	reg [7:0] v3c2l5 [0:0];
+	logic [7:0] v3c2l5_out [0:0];
+	assign v3c2l5_out[0] = v3c2l4[0] + v3c2l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c2l5[i] <= v3c2l5_out[i];
+    end
+
+	assign val[3] = v3c2l5[0];
 	
 	// -0.015625
 	logic [0:35] g4;
@@ -1909,7 +4163,76 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g4_reg <= g4;
     end
     
-	assign val[4] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3] + g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7] + g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11] + g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15] + g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19] + g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23] + g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27] + g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31] + g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	logic [2:0] v4c2l0_out [0:8];
+	logic [2:0] v4c2l0 [0:8];
+	assign v4c2l0_out[0] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3];
+	assign v4c2l0_out[1] = g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7];
+	assign v4c2l0_out[2] = g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11];
+	assign v4c2l0_out[3] = g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15];
+	assign v4c2l0_out[4] = g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19];
+	assign v4c2l0_out[5] = g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23];
+	assign v4c2l0_out[6] = g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27];
+	assign v4c2l0_out[7] = g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31];
+	assign v4c2l0_out[8] = g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v4c2l0[i] <= v4c2l0_out[i];
+    end
+
+	reg [3:0] v4c2l1 [0:4];
+	logic [3:0] v4c2l1_out [0:4];
+	assign v4c2l1_out[0] = v4c2l0[0] + v4c2l0[1];
+	assign v4c2l1_out[1] = v4c2l0[2] + v4c2l0[3];
+	assign v4c2l1_out[2] = v4c2l0[4] + v4c2l0[5];
+	assign v4c2l1_out[3] = v4c2l0[6] + v4c2l0[7];
+	assign v4c2l1_out[4] = v4c2l0[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v4c2l1[i] <= v4c2l1_out[i];
+    end
+
+	reg [4:0] v4c2l2 [0:2];
+	logic [4:0] v4c2l2_out [0:2];
+	assign v4c2l2_out[0] = v4c2l1[0] + v4c2l1[1];
+	assign v4c2l2_out[1] = v4c2l1[2] + v4c2l1[3];
+	assign v4c2l2_out[2] = v4c2l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v4c2l2[i] <= v4c2l2_out[i];
+    end
+
+	reg [5:0] v4c2l3 [0:1];
+	logic [5:0] v4c2l3_out [0:1];
+	assign v4c2l3_out[0] = v4c2l2[0] + v4c2l2[1];
+	assign v4c2l3_out[1] = v4c2l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v4c2l3[i] <= v4c2l3_out[i];
+    end
+
+	reg [6:0] v4c2l4 [0:0];
+	logic [6:0] v4c2l4_out [0:0];
+	assign v4c2l4_out[0] = v4c2l3[0] + v4c2l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c2l4[i] <= v4c2l4_out[i];
+    end
+
+	reg [7:0] v4c2l5 [0:0];
+	logic [7:0] v4c2l5_out [0:0];
+	assign v4c2l5_out[0] = v4c2l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c2l5[i] <= v4c2l5_out[i];
+    end
+
+	assign val[4] = v4c2l5[0];
 	
 	// 0.015625
 	logic [0:41] g5;
@@ -1961,7 +4284,79 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g5_reg <= g5;
     end
     
-	assign val[5] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3] + g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7] + g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11] + g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15] + g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19] + g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23] + g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27] + g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31] + g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35] + g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39] + g5_reg[40] + g5_reg[41];
+	logic [2:0] v5c2l0_out [0:10];
+	logic [2:0] v5c2l0 [0:10];
+	assign v5c2l0_out[0] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3];
+	assign v5c2l0_out[1] = g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7];
+	assign v5c2l0_out[2] = g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11];
+	assign v5c2l0_out[3] = g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15];
+	assign v5c2l0_out[4] = g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19];
+	assign v5c2l0_out[5] = g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23];
+	assign v5c2l0_out[6] = g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27];
+	assign v5c2l0_out[7] = g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31];
+	assign v5c2l0_out[8] = g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35];
+	assign v5c2l0_out[9] = g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39];
+	assign v5c2l0_out[10] = g5_reg[40] + g5_reg[41];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v5c2l0[i] <= v5c2l0_out[i];
+    end
+
+	reg [3:0] v5c2l1 [0:5];
+	logic [3:0] v5c2l1_out [0:5];
+	assign v5c2l1_out[0] = v5c2l0[0] + v5c2l0[1];
+	assign v5c2l1_out[1] = v5c2l0[2] + v5c2l0[3];
+	assign v5c2l1_out[2] = v5c2l0[4] + v5c2l0[5];
+	assign v5c2l1_out[3] = v5c2l0[6] + v5c2l0[7];
+	assign v5c2l1_out[4] = v5c2l0[8] + v5c2l0[9];
+	assign v5c2l1_out[5] = v5c2l0[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v5c2l1[i] <= v5c2l1_out[i];
+    end
+
+	reg [4:0] v5c2l2 [0:2];
+	logic [4:0] v5c2l2_out [0:2];
+	assign v5c2l2_out[0] = v5c2l1[0] + v5c2l1[1];
+	assign v5c2l2_out[1] = v5c2l1[2] + v5c2l1[3];
+	assign v5c2l2_out[2] = v5c2l1[4] + v5c2l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v5c2l2[i] <= v5c2l2_out[i];
+    end
+
+	reg [5:0] v5c2l3 [0:1];
+	logic [5:0] v5c2l3_out [0:1];
+	assign v5c2l3_out[0] = v5c2l2[0] + v5c2l2[1];
+	assign v5c2l3_out[1] = v5c2l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v5c2l3[i] <= v5c2l3_out[i];
+    end
+
+	reg [6:0] v5c2l4 [0:0];
+	logic [6:0] v5c2l4_out [0:0];
+	assign v5c2l4_out[0] = v5c2l3[0] + v5c2l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c2l4[i] <= v5c2l4_out[i];
+    end
+
+	reg [7:0] v5c2l5 [0:0];
+	logic [7:0] v5c2l5_out [0:0];
+	assign v5c2l5_out[0] = v5c2l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c2l5[i] <= v5c2l5_out[i];
+    end
+
+	assign val[5] = v5c2l5[0];
 	
 	// 0.03125
 	logic [0:51] g6;
@@ -2023,7 +4418,83 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g6_reg <= g6;
     end
     
-	assign val[6] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3] + g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7] + g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11] + g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15] + g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19] + g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23] + g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27] + g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31] + g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35] + g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39] + g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43] + g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47] + g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51];
+	logic [2:0] v6c2l0_out [0:12];
+	logic [2:0] v6c2l0 [0:12];
+	assign v6c2l0_out[0] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3];
+	assign v6c2l0_out[1] = g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7];
+	assign v6c2l0_out[2] = g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11];
+	assign v6c2l0_out[3] = g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15];
+	assign v6c2l0_out[4] = g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19];
+	assign v6c2l0_out[5] = g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23];
+	assign v6c2l0_out[6] = g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27];
+	assign v6c2l0_out[7] = g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31];
+	assign v6c2l0_out[8] = g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35];
+	assign v6c2l0_out[9] = g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39];
+	assign v6c2l0_out[10] = g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	assign v6c2l0_out[11] = g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47];
+	assign v6c2l0_out[12] = g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v6c2l0[i] <= v6c2l0_out[i];
+    end
+
+	reg [3:0] v6c2l1 [0:6];
+	logic [3:0] v6c2l1_out [0:6];
+	assign v6c2l1_out[0] = v6c2l0[0] + v6c2l0[1];
+	assign v6c2l1_out[1] = v6c2l0[2] + v6c2l0[3];
+	assign v6c2l1_out[2] = v6c2l0[4] + v6c2l0[5];
+	assign v6c2l1_out[3] = v6c2l0[6] + v6c2l0[7];
+	assign v6c2l1_out[4] = v6c2l0[8] + v6c2l0[9];
+	assign v6c2l1_out[5] = v6c2l0[10] + v6c2l0[11];
+	assign v6c2l1_out[6] = v6c2l0[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v6c2l1[i] <= v6c2l1_out[i];
+    end
+
+	reg [4:0] v6c2l2 [0:3];
+	logic [4:0] v6c2l2_out [0:3];
+	assign v6c2l2_out[0] = v6c2l1[0] + v6c2l1[1];
+	assign v6c2l2_out[1] = v6c2l1[2] + v6c2l1[3];
+	assign v6c2l2_out[2] = v6c2l1[4] + v6c2l1[5];
+	assign v6c2l2_out[3] = v6c2l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v6c2l2[i] <= v6c2l2_out[i];
+    end
+
+	reg [5:0] v6c2l3 [0:1];
+	logic [5:0] v6c2l3_out [0:1];
+	assign v6c2l3_out[0] = v6c2l2[0] + v6c2l2[1];
+	assign v6c2l3_out[1] = v6c2l2[2] + v6c2l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v6c2l3[i] <= v6c2l3_out[i];
+    end
+
+	reg [6:0] v6c2l4 [0:0];
+	logic [6:0] v6c2l4_out [0:0];
+	assign v6c2l4_out[0] = v6c2l3[0] + v6c2l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c2l4[i] <= v6c2l4_out[i];
+    end
+
+	reg [7:0] v6c2l5 [0:0];
+	logic [7:0] v6c2l5_out [0:0];
+	assign v6c2l5_out[0] = v6c2l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c2l5[i] <= v6c2l5_out[i];
+    end
+
+	assign val[6] = v6c2l5[0];
 	
 	// 0.0625
 	logic [0:70] g7;
@@ -2104,7 +4575,93 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g7_reg <= g7;
     end
     
-	assign val[7] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3] + g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7] + g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11] + g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15] + g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19] + g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23] + g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27] + g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31] + g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35] + g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39] + g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43] + g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47] + g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51] + g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55] + g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59] + g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63] + g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67] + g7_reg[68] + g7_reg[69] + g7_reg[70];
+	logic [2:0] v7c2l0_out [0:17];
+	logic [2:0] v7c2l0 [0:17];
+	assign v7c2l0_out[0] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3];
+	assign v7c2l0_out[1] = g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7];
+	assign v7c2l0_out[2] = g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11];
+	assign v7c2l0_out[3] = g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15];
+	assign v7c2l0_out[4] = g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19];
+	assign v7c2l0_out[5] = g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23];
+	assign v7c2l0_out[6] = g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27];
+	assign v7c2l0_out[7] = g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31];
+	assign v7c2l0_out[8] = g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35];
+	assign v7c2l0_out[9] = g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39];
+	assign v7c2l0_out[10] = g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43];
+	assign v7c2l0_out[11] = g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47];
+	assign v7c2l0_out[12] = g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51];
+	assign v7c2l0_out[13] = g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55];
+	assign v7c2l0_out[14] = g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59];
+	assign v7c2l0_out[15] = g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63];
+	assign v7c2l0_out[16] = g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67];
+	assign v7c2l0_out[17] = g7_reg[68] + g7_reg[69] + g7_reg[70];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 18; i = i + 1)
+            v7c2l0[i] <= v7c2l0_out[i];
+    end
+
+	reg [3:0] v7c2l1 [0:8];
+	logic [3:0] v7c2l1_out [0:8];
+	assign v7c2l1_out[0] = v7c2l0[0] + v7c2l0[1];
+	assign v7c2l1_out[1] = v7c2l0[2] + v7c2l0[3];
+	assign v7c2l1_out[2] = v7c2l0[4] + v7c2l0[5];
+	assign v7c2l1_out[3] = v7c2l0[6] + v7c2l0[7];
+	assign v7c2l1_out[4] = v7c2l0[8] + v7c2l0[9];
+	assign v7c2l1_out[5] = v7c2l0[10] + v7c2l0[11];
+	assign v7c2l1_out[6] = v7c2l0[12] + v7c2l0[13];
+	assign v7c2l1_out[7] = v7c2l0[14] + v7c2l0[15];
+	assign v7c2l1_out[8] = v7c2l0[16] + v7c2l0[17];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v7c2l1[i] <= v7c2l1_out[i];
+    end
+
+	reg [4:0] v7c2l2 [0:4];
+	logic [4:0] v7c2l2_out [0:4];
+	assign v7c2l2_out[0] = v7c2l1[0] + v7c2l1[1];
+	assign v7c2l2_out[1] = v7c2l1[2] + v7c2l1[3];
+	assign v7c2l2_out[2] = v7c2l1[4] + v7c2l1[5];
+	assign v7c2l2_out[3] = v7c2l1[6] + v7c2l1[7];
+	assign v7c2l2_out[4] = v7c2l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v7c2l2[i] <= v7c2l2_out[i];
+    end
+
+	reg [5:0] v7c2l3 [0:2];
+	logic [5:0] v7c2l3_out [0:2];
+	assign v7c2l3_out[0] = v7c2l2[0] + v7c2l2[1];
+	assign v7c2l3_out[1] = v7c2l2[2] + v7c2l2[3];
+	assign v7c2l3_out[2] = v7c2l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v7c2l3[i] <= v7c2l3_out[i];
+    end
+
+	reg [6:0] v7c2l4 [0:1];
+	logic [6:0] v7c2l4_out [0:1];
+	assign v7c2l4_out[0] = v7c2l3[0] + v7c2l3[1];
+	assign v7c2l4_out[1] = v7c2l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v7c2l4[i] <= v7c2l4_out[i];
+    end
+
+	reg [7:0] v7c2l5 [0:0];
+	logic [7:0] v7c2l5_out [0:0];
+	assign v7c2l5_out[0] = v7c2l4[0] + v7c2l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c2l5[i] <= v7c2l5_out[i];
+    end
+
+	assign val[7] = v7c2l5[0];
 	
 	// 0.125
 	logic [0:85] g8;
@@ -2200,7 +4757,100 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g8_reg <= g8;
     end
     
-	assign val[8] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3] + g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7] + g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11] + g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15] + g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19] + g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23] + g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27] + g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31] + g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35] + g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39] + g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43] + g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47] + g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51] + g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55] + g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59] + g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63] + g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67] + g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71] + g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75] + g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79] + g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83] + g8_reg[84] + g8_reg[85];
+	logic [2:0] v8c2l0_out [0:21];
+	logic [2:0] v8c2l0 [0:21];
+	assign v8c2l0_out[0] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3];
+	assign v8c2l0_out[1] = g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7];
+	assign v8c2l0_out[2] = g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11];
+	assign v8c2l0_out[3] = g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15];
+	assign v8c2l0_out[4] = g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19];
+	assign v8c2l0_out[5] = g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23];
+	assign v8c2l0_out[6] = g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27];
+	assign v8c2l0_out[7] = g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31];
+	assign v8c2l0_out[8] = g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35];
+	assign v8c2l0_out[9] = g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39];
+	assign v8c2l0_out[10] = g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43];
+	assign v8c2l0_out[11] = g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47];
+	assign v8c2l0_out[12] = g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51];
+	assign v8c2l0_out[13] = g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55];
+	assign v8c2l0_out[14] = g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59];
+	assign v8c2l0_out[15] = g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63];
+	assign v8c2l0_out[16] = g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67];
+	assign v8c2l0_out[17] = g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71];
+	assign v8c2l0_out[18] = g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75];
+	assign v8c2l0_out[19] = g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79];
+	assign v8c2l0_out[20] = g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83];
+	assign v8c2l0_out[21] = g8_reg[84] + g8_reg[85];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 22; i = i + 1)
+            v8c2l0[i] <= v8c2l0_out[i];
+    end
+
+	reg [3:0] v8c2l1 [0:10];
+	logic [3:0] v8c2l1_out [0:10];
+	assign v8c2l1_out[0] = v8c2l0[0] + v8c2l0[1];
+	assign v8c2l1_out[1] = v8c2l0[2] + v8c2l0[3];
+	assign v8c2l1_out[2] = v8c2l0[4] + v8c2l0[5];
+	assign v8c2l1_out[3] = v8c2l0[6] + v8c2l0[7];
+	assign v8c2l1_out[4] = v8c2l0[8] + v8c2l0[9];
+	assign v8c2l1_out[5] = v8c2l0[10] + v8c2l0[11];
+	assign v8c2l1_out[6] = v8c2l0[12] + v8c2l0[13];
+	assign v8c2l1_out[7] = v8c2l0[14] + v8c2l0[15];
+	assign v8c2l1_out[8] = v8c2l0[16] + v8c2l0[17];
+	assign v8c2l1_out[9] = v8c2l0[18] + v8c2l0[19];
+	assign v8c2l1_out[10] = v8c2l0[20] + v8c2l0[21];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v8c2l1[i] <= v8c2l1_out[i];
+    end
+
+	reg [4:0] v8c2l2 [0:5];
+	logic [4:0] v8c2l2_out [0:5];
+	assign v8c2l2_out[0] = v8c2l1[0] + v8c2l1[1];
+	assign v8c2l2_out[1] = v8c2l1[2] + v8c2l1[3];
+	assign v8c2l2_out[2] = v8c2l1[4] + v8c2l1[5];
+	assign v8c2l2_out[3] = v8c2l1[6] + v8c2l1[7];
+	assign v8c2l2_out[4] = v8c2l1[8] + v8c2l1[9];
+	assign v8c2l2_out[5] = v8c2l1[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v8c2l2[i] <= v8c2l2_out[i];
+    end
+
+	reg [5:0] v8c2l3 [0:2];
+	logic [5:0] v8c2l3_out [0:2];
+	assign v8c2l3_out[0] = v8c2l2[0] + v8c2l2[1];
+	assign v8c2l3_out[1] = v8c2l2[2] + v8c2l2[3];
+	assign v8c2l3_out[2] = v8c2l2[4] + v8c2l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v8c2l3[i] <= v8c2l3_out[i];
+    end
+
+	reg [6:0] v8c2l4 [0:1];
+	logic [6:0] v8c2l4_out [0:1];
+	assign v8c2l4_out[0] = v8c2l3[0] + v8c2l3[1];
+	assign v8c2l4_out[1] = v8c2l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v8c2l4[i] <= v8c2l4_out[i];
+    end
+
+	reg [7:0] v8c2l5 [0:0];
+	logic [7:0] v8c2l5_out [0:0];
+	assign v8c2l5_out[0] = v8c2l4[0] + v8c2l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v8c2l5[i] <= v8c2l5_out[i];
+    end
+
+	assign val[8] = v8c2l5[0];
 	
 	// 0.25
 	logic [0:62] g9;
@@ -2273,7 +4923,87 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g9_reg <= g9;
     end
     
-	assign val[9] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3] + g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7] + g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11] + g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15] + g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19] + g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23] + g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27] + g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31] + g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35] + g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39] + g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43] + g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47] + g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51] + g9_reg[52] + g9_reg[53] + g9_reg[54] + g9_reg[55] + g9_reg[56] + g9_reg[57] + g9_reg[58] + g9_reg[59] + g9_reg[60] + g9_reg[61] + g9_reg[62];
+	logic [2:0] v9c2l0_out [0:15];
+	logic [2:0] v9c2l0 [0:15];
+	assign v9c2l0_out[0] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3];
+	assign v9c2l0_out[1] = g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7];
+	assign v9c2l0_out[2] = g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11];
+	assign v9c2l0_out[3] = g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15];
+	assign v9c2l0_out[4] = g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19];
+	assign v9c2l0_out[5] = g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23];
+	assign v9c2l0_out[6] = g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27];
+	assign v9c2l0_out[7] = g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31];
+	assign v9c2l0_out[8] = g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	assign v9c2l0_out[9] = g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39];
+	assign v9c2l0_out[10] = g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43];
+	assign v9c2l0_out[11] = g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47];
+	assign v9c2l0_out[12] = g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51];
+	assign v9c2l0_out[13] = g9_reg[52] + g9_reg[53] + g9_reg[54] + g9_reg[55];
+	assign v9c2l0_out[14] = g9_reg[56] + g9_reg[57] + g9_reg[58] + g9_reg[59];
+	assign v9c2l0_out[15] = g9_reg[60] + g9_reg[61] + g9_reg[62];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 16; i = i + 1)
+            v9c2l0[i] <= v9c2l0_out[i];
+    end
+
+	reg [3:0] v9c2l1 [0:7];
+	logic [3:0] v9c2l1_out [0:7];
+	assign v9c2l1_out[0] = v9c2l0[0] + v9c2l0[1];
+	assign v9c2l1_out[1] = v9c2l0[2] + v9c2l0[3];
+	assign v9c2l1_out[2] = v9c2l0[4] + v9c2l0[5];
+	assign v9c2l1_out[3] = v9c2l0[6] + v9c2l0[7];
+	assign v9c2l1_out[4] = v9c2l0[8] + v9c2l0[9];
+	assign v9c2l1_out[5] = v9c2l0[10] + v9c2l0[11];
+	assign v9c2l1_out[6] = v9c2l0[12] + v9c2l0[13];
+	assign v9c2l1_out[7] = v9c2l0[14] + v9c2l0[15];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v9c2l1[i] <= v9c2l1_out[i];
+    end
+
+	reg [4:0] v9c2l2 [0:3];
+	logic [4:0] v9c2l2_out [0:3];
+	assign v9c2l2_out[0] = v9c2l1[0] + v9c2l1[1];
+	assign v9c2l2_out[1] = v9c2l1[2] + v9c2l1[3];
+	assign v9c2l2_out[2] = v9c2l1[4] + v9c2l1[5];
+	assign v9c2l2_out[3] = v9c2l1[6] + v9c2l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v9c2l2[i] <= v9c2l2_out[i];
+    end
+
+	reg [5:0] v9c2l3 [0:1];
+	logic [5:0] v9c2l3_out [0:1];
+	assign v9c2l3_out[0] = v9c2l2[0] + v9c2l2[1];
+	assign v9c2l3_out[1] = v9c2l2[2] + v9c2l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v9c2l3[i] <= v9c2l3_out[i];
+    end
+
+	reg [6:0] v9c2l4 [0:0];
+	logic [6:0] v9c2l4_out [0:0];
+	assign v9c2l4_out[0] = v9c2l3[0] + v9c2l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c2l4[i] <= v9c2l4_out[i];
+    end
+
+	reg [7:0] v9c2l5 [0:0];
+	logic [7:0] v9c2l5_out [0:0];
+	assign v9c2l5_out[0] = v9c2l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c2l5[i] <= v9c2l5_out[i];
+    end
+
+	assign val[9] = v9c2l5[0];
 	
 	// 0.5
 	logic [0:19] g10;
@@ -2303,7 +5033,68 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g10_reg <= g10;
     end
     
-	assign val[10] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3] + g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7] + g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11] + g10_reg[12] + g10_reg[13] + g10_reg[14] + g10_reg[15] + g10_reg[16] + g10_reg[17] + g10_reg[18] + g10_reg[19];
+	logic [2:0] v10c2l0_out [0:4];
+	logic [2:0] v10c2l0 [0:4];
+	assign v10c2l0_out[0] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	assign v10c2l0_out[1] = g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7];
+	assign v10c2l0_out[2] = g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11];
+	assign v10c2l0_out[3] = g10_reg[12] + g10_reg[13] + g10_reg[14] + g10_reg[15];
+	assign v10c2l0_out[4] = g10_reg[16] + g10_reg[17] + g10_reg[18] + g10_reg[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v10c2l0[i] <= v10c2l0_out[i];
+    end
+
+	reg [3:0] v10c2l1 [0:2];
+	logic [3:0] v10c2l1_out [0:2];
+	assign v10c2l1_out[0] = v10c2l0[0] + v10c2l0[1];
+	assign v10c2l1_out[1] = v10c2l0[2] + v10c2l0[3];
+	assign v10c2l1_out[2] = v10c2l0[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v10c2l1[i] <= v10c2l1_out[i];
+    end
+
+	reg [4:0] v10c2l2 [0:1];
+	logic [4:0] v10c2l2_out [0:1];
+	assign v10c2l2_out[0] = v10c2l1[0] + v10c2l1[1];
+	assign v10c2l2_out[1] = v10c2l1[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v10c2l2[i] <= v10c2l2_out[i];
+    end
+
+	reg [5:0] v10c2l3 [0:0];
+	logic [5:0] v10c2l3_out [0:0];
+	assign v10c2l3_out[0] = v10c2l2[0] + v10c2l2[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c2l3[i] <= v10c2l3_out[i];
+    end
+
+	reg [6:0] v10c2l4 [0:0];
+	logic [6:0] v10c2l4_out [0:0];
+	assign v10c2l4_out[0] = v10c2l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c2l4[i] <= v10c2l4_out[i];
+    end
+
+	reg [7:0] v10c2l5 [0:0];
+	logic [7:0] v10c2l5_out [0:0];
+	assign v10c2l5_out[0] = v10c2l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c2l5[i] <= v10c2l5_out[i];
+    end
+
+	assign val[10] = v10c2l5[0];
 	
 	// 1.0
 	logic [0:3] g11;
@@ -2317,7 +5108,61 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g11_reg <= g11;
     end
     
-	assign val[11] = g11_reg[0] + g11_reg[1] + g11_reg[2] + g11_reg[3];
+	logic [2:0] v11c2l0_out [0:0];
+	logic [2:0] v11c2l0 [0:0];
+	assign v11c2l0_out[0] = g11_reg[0] + g11_reg[1] + g11_reg[2] + g11_reg[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c2l0[i] <= v11c2l0_out[i];
+    end
+
+	reg [3:0] v11c2l1 [0:0];
+	logic [3:0] v11c2l1_out [0:0];
+	assign v11c2l1_out[0] = v11c2l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c2l1[i] <= v11c2l1_out[i];
+    end
+
+	reg [4:0] v11c2l2 [0:0];
+	logic [4:0] v11c2l2_out [0:0];
+	assign v11c2l2_out[0] = v11c2l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c2l2[i] <= v11c2l2_out[i];
+    end
+
+	reg [5:0] v11c2l3 [0:0];
+	logic [5:0] v11c2l3_out [0:0];
+	assign v11c2l3_out[0] = v11c2l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c2l3[i] <= v11c2l3_out[i];
+    end
+
+	reg [6:0] v11c2l4 [0:0];
+	logic [6:0] v11c2l4_out [0:0];
+	assign v11c2l4_out[0] = v11c2l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c2l4[i] <= v11c2l4_out[i];
+    end
+
+	reg [7:0] v11c2l5 [0:0];
+	logic [7:0] v11c2l5_out [0:0];
+	assign v11c2l5_out[0] = v11c2l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c2l5[i] <= v11c2l5_out[i];
+    end
+
+	assign val[11] = v11c2l5[0];
 	
 	// 2.0
 	logic [0:0] g12;
@@ -2328,12 +5173,67 @@ module leaf_counter_2(input logic clk, input logic [0:1374] l, output logic [7:0
         g12_reg <= g12;
     end
     
-	assign val[12] = g12_reg[0];
+	logic [2:0] v12c2l0_out [0:0];
+	logic [2:0] v12c2l0 [0:0];
+	assign v12c2l0_out[0] = g12_reg[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c2l0[i] <= v12c2l0_out[i];
+    end
+
+	reg [3:0] v12c2l1 [0:0];
+	logic [3:0] v12c2l1_out [0:0];
+	assign v12c2l1_out[0] = v12c2l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c2l1[i] <= v12c2l1_out[i];
+    end
+
+	reg [4:0] v12c2l2 [0:0];
+	logic [4:0] v12c2l2_out [0:0];
+	assign v12c2l2_out[0] = v12c2l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c2l2[i] <= v12c2l2_out[i];
+    end
+
+	reg [5:0] v12c2l3 [0:0];
+	logic [5:0] v12c2l3_out [0:0];
+	assign v12c2l3_out[0] = v12c2l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c2l3[i] <= v12c2l3_out[i];
+    end
+
+	reg [6:0] v12c2l4 [0:0];
+	logic [6:0] v12c2l4_out [0:0];
+	assign v12c2l4_out[0] = v12c2l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c2l4[i] <= v12c2l4_out[i];
+    end
+
+	reg [7:0] v12c2l5 [0:0];
+	logic [7:0] v12c2l5_out [0:0];
+	assign v12c2l5_out[0] = v12c2l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c2l5[i] <= v12c2l5_out[i];
+    end
+
+	assign val[12] = v12c2l5[0];
 	
 endmodule
 
 
 module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0] val [0:12]);
+    integer i;
 	// -0.25
 	logic [0:48] g0;
 	reg [0:48] g0_reg;
@@ -2391,7 +5291,83 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g0_reg <= g0;
     end
     
-	assign val[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3] + g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7] + g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11] + g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15] + g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19] + g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23] + g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27] + g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31] + g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35] + g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39] + g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43] + g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47] + g0_reg[48];
+	logic [2:0] v0c3l0_out [0:12];
+	logic [2:0] v0c3l0 [0:12];
+	assign v0c3l0_out[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3];
+	assign v0c3l0_out[1] = g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7];
+	assign v0c3l0_out[2] = g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11];
+	assign v0c3l0_out[3] = g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15];
+	assign v0c3l0_out[4] = g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19];
+	assign v0c3l0_out[5] = g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23];
+	assign v0c3l0_out[6] = g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27];
+	assign v0c3l0_out[7] = g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31];
+	assign v0c3l0_out[8] = g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35];
+	assign v0c3l0_out[9] = g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39];
+	assign v0c3l0_out[10] = g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43];
+	assign v0c3l0_out[11] = g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47];
+	assign v0c3l0_out[12] = g0_reg[48];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v0c3l0[i] <= v0c3l0_out[i];
+    end
+
+	reg [3:0] v0c3l1 [0:6];
+	logic [3:0] v0c3l1_out [0:6];
+	assign v0c3l1_out[0] = v0c3l0[0] + v0c3l0[1];
+	assign v0c3l1_out[1] = v0c3l0[2] + v0c3l0[3];
+	assign v0c3l1_out[2] = v0c3l0[4] + v0c3l0[5];
+	assign v0c3l1_out[3] = v0c3l0[6] + v0c3l0[7];
+	assign v0c3l1_out[4] = v0c3l0[8] + v0c3l0[9];
+	assign v0c3l1_out[5] = v0c3l0[10] + v0c3l0[11];
+	assign v0c3l1_out[6] = v0c3l0[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v0c3l1[i] <= v0c3l1_out[i];
+    end
+
+	reg [4:0] v0c3l2 [0:3];
+	logic [4:0] v0c3l2_out [0:3];
+	assign v0c3l2_out[0] = v0c3l1[0] + v0c3l1[1];
+	assign v0c3l2_out[1] = v0c3l1[2] + v0c3l1[3];
+	assign v0c3l2_out[2] = v0c3l1[4] + v0c3l1[5];
+	assign v0c3l2_out[3] = v0c3l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v0c3l2[i] <= v0c3l2_out[i];
+    end
+
+	reg [5:0] v0c3l3 [0:1];
+	logic [5:0] v0c3l3_out [0:1];
+	assign v0c3l3_out[0] = v0c3l2[0] + v0c3l2[1];
+	assign v0c3l3_out[1] = v0c3l2[2] + v0c3l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v0c3l3[i] <= v0c3l3_out[i];
+    end
+
+	reg [6:0] v0c3l4 [0:0];
+	logic [6:0] v0c3l4_out [0:0];
+	assign v0c3l4_out[0] = v0c3l3[0] + v0c3l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c3l4[i] <= v0c3l4_out[i];
+    end
+
+	reg [7:0] v0c3l5 [0:0];
+	logic [7:0] v0c3l5_out [0:0];
+	assign v0c3l5_out[0] = v0c3l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c3l5[i] <= v0c3l5_out[i];
+    end
+
+	assign val[0] = v0c3l5[0];
 	
 	// -0.125
 	logic [0:96] g1;
@@ -2498,7 +5474,107 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g1_reg <= g1;
     end
     
-	assign val[1] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3] + g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7] + g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11] + g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15] + g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19] + g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23] + g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27] + g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31] + g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35] + g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39] + g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43] + g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47] + g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51] + g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55] + g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59] + g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63] + g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67] + g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71] + g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75] + g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79] + g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83] + g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87] + g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91] + g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95] + g1_reg[96];
+	logic [2:0] v1c3l0_out [0:24];
+	logic [2:0] v1c3l0 [0:24];
+	assign v1c3l0_out[0] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3];
+	assign v1c3l0_out[1] = g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7];
+	assign v1c3l0_out[2] = g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11];
+	assign v1c3l0_out[3] = g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15];
+	assign v1c3l0_out[4] = g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19];
+	assign v1c3l0_out[5] = g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23];
+	assign v1c3l0_out[6] = g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27];
+	assign v1c3l0_out[7] = g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31];
+	assign v1c3l0_out[8] = g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35];
+	assign v1c3l0_out[9] = g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39];
+	assign v1c3l0_out[10] = g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43];
+	assign v1c3l0_out[11] = g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47];
+	assign v1c3l0_out[12] = g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51];
+	assign v1c3l0_out[13] = g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55];
+	assign v1c3l0_out[14] = g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59];
+	assign v1c3l0_out[15] = g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63];
+	assign v1c3l0_out[16] = g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67];
+	assign v1c3l0_out[17] = g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71];
+	assign v1c3l0_out[18] = g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75];
+	assign v1c3l0_out[19] = g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79];
+	assign v1c3l0_out[20] = g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83];
+	assign v1c3l0_out[21] = g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87];
+	assign v1c3l0_out[22] = g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91];
+	assign v1c3l0_out[23] = g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	assign v1c3l0_out[24] = g1_reg[96];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 25; i = i + 1)
+            v1c3l0[i] <= v1c3l0_out[i];
+    end
+
+	reg [3:0] v1c3l1 [0:12];
+	logic [3:0] v1c3l1_out [0:12];
+	assign v1c3l1_out[0] = v1c3l0[0] + v1c3l0[1];
+	assign v1c3l1_out[1] = v1c3l0[2] + v1c3l0[3];
+	assign v1c3l1_out[2] = v1c3l0[4] + v1c3l0[5];
+	assign v1c3l1_out[3] = v1c3l0[6] + v1c3l0[7];
+	assign v1c3l1_out[4] = v1c3l0[8] + v1c3l0[9];
+	assign v1c3l1_out[5] = v1c3l0[10] + v1c3l0[11];
+	assign v1c3l1_out[6] = v1c3l0[12] + v1c3l0[13];
+	assign v1c3l1_out[7] = v1c3l0[14] + v1c3l0[15];
+	assign v1c3l1_out[8] = v1c3l0[16] + v1c3l0[17];
+	assign v1c3l1_out[9] = v1c3l0[18] + v1c3l0[19];
+	assign v1c3l1_out[10] = v1c3l0[20] + v1c3l0[21];
+	assign v1c3l1_out[11] = v1c3l0[22] + v1c3l0[23];
+	assign v1c3l1_out[12] = v1c3l0[24];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v1c3l1[i] <= v1c3l1_out[i];
+    end
+
+	reg [4:0] v1c3l2 [0:6];
+	logic [4:0] v1c3l2_out [0:6];
+	assign v1c3l2_out[0] = v1c3l1[0] + v1c3l1[1];
+	assign v1c3l2_out[1] = v1c3l1[2] + v1c3l1[3];
+	assign v1c3l2_out[2] = v1c3l1[4] + v1c3l1[5];
+	assign v1c3l2_out[3] = v1c3l1[6] + v1c3l1[7];
+	assign v1c3l2_out[4] = v1c3l1[8] + v1c3l1[9];
+	assign v1c3l2_out[5] = v1c3l1[10] + v1c3l1[11];
+	assign v1c3l2_out[6] = v1c3l1[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v1c3l2[i] <= v1c3l2_out[i];
+    end
+
+	reg [5:0] v1c3l3 [0:3];
+	logic [5:0] v1c3l3_out [0:3];
+	assign v1c3l3_out[0] = v1c3l2[0] + v1c3l2[1];
+	assign v1c3l3_out[1] = v1c3l2[2] + v1c3l2[3];
+	assign v1c3l3_out[2] = v1c3l2[4] + v1c3l2[5];
+	assign v1c3l3_out[3] = v1c3l2[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v1c3l3[i] <= v1c3l3_out[i];
+    end
+
+	reg [6:0] v1c3l4 [0:1];
+	logic [6:0] v1c3l4_out [0:1];
+	assign v1c3l4_out[0] = v1c3l3[0] + v1c3l3[1];
+	assign v1c3l4_out[1] = v1c3l3[2] + v1c3l3[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v1c3l4[i] <= v1c3l4_out[i];
+    end
+
+	reg [7:0] v1c3l5 [0:0];
+	logic [7:0] v1c3l5_out [0:0];
+	assign v1c3l5_out[0] = v1c3l4[0] + v1c3l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v1c3l5[i] <= v1c3l5_out[i];
+    end
+
+	assign val[1] = v1c3l5[0];
 	
 	// -0.0625
 	logic [0:87] g2;
@@ -2596,7 +5672,100 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g2_reg <= g2;
     end
     
-	assign val[2] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3] + g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7] + g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11] + g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15] + g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19] + g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23] + g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27] + g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31] + g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35] + g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39] + g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43] + g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47] + g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51] + g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55] + g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59] + g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63] + g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67] + g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71] + g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75] + g2_reg[76] + g2_reg[77] + g2_reg[78] + g2_reg[79] + g2_reg[80] + g2_reg[81] + g2_reg[82] + g2_reg[83] + g2_reg[84] + g2_reg[85] + g2_reg[86] + g2_reg[87];
+	logic [2:0] v2c3l0_out [0:21];
+	logic [2:0] v2c3l0 [0:21];
+	assign v2c3l0_out[0] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3];
+	assign v2c3l0_out[1] = g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7];
+	assign v2c3l0_out[2] = g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11];
+	assign v2c3l0_out[3] = g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15];
+	assign v2c3l0_out[4] = g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19];
+	assign v2c3l0_out[5] = g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23];
+	assign v2c3l0_out[6] = g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27];
+	assign v2c3l0_out[7] = g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31];
+	assign v2c3l0_out[8] = g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35];
+	assign v2c3l0_out[9] = g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39];
+	assign v2c3l0_out[10] = g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43];
+	assign v2c3l0_out[11] = g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47];
+	assign v2c3l0_out[12] = g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51];
+	assign v2c3l0_out[13] = g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55];
+	assign v2c3l0_out[14] = g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59];
+	assign v2c3l0_out[15] = g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63];
+	assign v2c3l0_out[16] = g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67];
+	assign v2c3l0_out[17] = g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71];
+	assign v2c3l0_out[18] = g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75];
+	assign v2c3l0_out[19] = g2_reg[76] + g2_reg[77] + g2_reg[78] + g2_reg[79];
+	assign v2c3l0_out[20] = g2_reg[80] + g2_reg[81] + g2_reg[82] + g2_reg[83];
+	assign v2c3l0_out[21] = g2_reg[84] + g2_reg[85] + g2_reg[86] + g2_reg[87];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 22; i = i + 1)
+            v2c3l0[i] <= v2c3l0_out[i];
+    end
+
+	reg [3:0] v2c3l1 [0:10];
+	logic [3:0] v2c3l1_out [0:10];
+	assign v2c3l1_out[0] = v2c3l0[0] + v2c3l0[1];
+	assign v2c3l1_out[1] = v2c3l0[2] + v2c3l0[3];
+	assign v2c3l1_out[2] = v2c3l0[4] + v2c3l0[5];
+	assign v2c3l1_out[3] = v2c3l0[6] + v2c3l0[7];
+	assign v2c3l1_out[4] = v2c3l0[8] + v2c3l0[9];
+	assign v2c3l1_out[5] = v2c3l0[10] + v2c3l0[11];
+	assign v2c3l1_out[6] = v2c3l0[12] + v2c3l0[13];
+	assign v2c3l1_out[7] = v2c3l0[14] + v2c3l0[15];
+	assign v2c3l1_out[8] = v2c3l0[16] + v2c3l0[17];
+	assign v2c3l1_out[9] = v2c3l0[18] + v2c3l0[19];
+	assign v2c3l1_out[10] = v2c3l0[20] + v2c3l0[21];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v2c3l1[i] <= v2c3l1_out[i];
+    end
+
+	reg [4:0] v2c3l2 [0:5];
+	logic [4:0] v2c3l2_out [0:5];
+	assign v2c3l2_out[0] = v2c3l1[0] + v2c3l1[1];
+	assign v2c3l2_out[1] = v2c3l1[2] + v2c3l1[3];
+	assign v2c3l2_out[2] = v2c3l1[4] + v2c3l1[5];
+	assign v2c3l2_out[3] = v2c3l1[6] + v2c3l1[7];
+	assign v2c3l2_out[4] = v2c3l1[8] + v2c3l1[9];
+	assign v2c3l2_out[5] = v2c3l1[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v2c3l2[i] <= v2c3l2_out[i];
+    end
+
+	reg [5:0] v2c3l3 [0:2];
+	logic [5:0] v2c3l3_out [0:2];
+	assign v2c3l3_out[0] = v2c3l2[0] + v2c3l2[1];
+	assign v2c3l3_out[1] = v2c3l2[2] + v2c3l2[3];
+	assign v2c3l3_out[2] = v2c3l2[4] + v2c3l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v2c3l3[i] <= v2c3l3_out[i];
+    end
+
+	reg [6:0] v2c3l4 [0:1];
+	logic [6:0] v2c3l4_out [0:1];
+	assign v2c3l4_out[0] = v2c3l3[0] + v2c3l3[1];
+	assign v2c3l4_out[1] = v2c3l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v2c3l4[i] <= v2c3l4_out[i];
+    end
+
+	reg [7:0] v2c3l5 [0:0];
+	logic [7:0] v2c3l5_out [0:0];
+	assign v2c3l5_out[0] = v2c3l4[0] + v2c3l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v2c3l5[i] <= v2c3l5_out[i];
+    end
+
+	assign val[2] = v2c3l5[0];
 	
 	// -0.03125
 	logic [0:61] g3;
@@ -2668,7 +5837,87 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g3_reg <= g3;
     end
     
-	assign val[3] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3] + g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7] + g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11] + g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15] + g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19] + g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23] + g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27] + g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31] + g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35] + g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39] + g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43] + g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47] + g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51] + g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55] + g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59] + g3_reg[60] + g3_reg[61];
+	logic [2:0] v3c3l0_out [0:15];
+	logic [2:0] v3c3l0 [0:15];
+	assign v3c3l0_out[0] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3];
+	assign v3c3l0_out[1] = g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7];
+	assign v3c3l0_out[2] = g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11];
+	assign v3c3l0_out[3] = g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15];
+	assign v3c3l0_out[4] = g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19];
+	assign v3c3l0_out[5] = g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23];
+	assign v3c3l0_out[6] = g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27];
+	assign v3c3l0_out[7] = g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31];
+	assign v3c3l0_out[8] = g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35];
+	assign v3c3l0_out[9] = g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39];
+	assign v3c3l0_out[10] = g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43];
+	assign v3c3l0_out[11] = g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47];
+	assign v3c3l0_out[12] = g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51];
+	assign v3c3l0_out[13] = g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55];
+	assign v3c3l0_out[14] = g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59];
+	assign v3c3l0_out[15] = g3_reg[60] + g3_reg[61];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 16; i = i + 1)
+            v3c3l0[i] <= v3c3l0_out[i];
+    end
+
+	reg [3:0] v3c3l1 [0:7];
+	logic [3:0] v3c3l1_out [0:7];
+	assign v3c3l1_out[0] = v3c3l0[0] + v3c3l0[1];
+	assign v3c3l1_out[1] = v3c3l0[2] + v3c3l0[3];
+	assign v3c3l1_out[2] = v3c3l0[4] + v3c3l0[5];
+	assign v3c3l1_out[3] = v3c3l0[6] + v3c3l0[7];
+	assign v3c3l1_out[4] = v3c3l0[8] + v3c3l0[9];
+	assign v3c3l1_out[5] = v3c3l0[10] + v3c3l0[11];
+	assign v3c3l1_out[6] = v3c3l0[12] + v3c3l0[13];
+	assign v3c3l1_out[7] = v3c3l0[14] + v3c3l0[15];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v3c3l1[i] <= v3c3l1_out[i];
+    end
+
+	reg [4:0] v3c3l2 [0:3];
+	logic [4:0] v3c3l2_out [0:3];
+	assign v3c3l2_out[0] = v3c3l1[0] + v3c3l1[1];
+	assign v3c3l2_out[1] = v3c3l1[2] + v3c3l1[3];
+	assign v3c3l2_out[2] = v3c3l1[4] + v3c3l1[5];
+	assign v3c3l2_out[3] = v3c3l1[6] + v3c3l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v3c3l2[i] <= v3c3l2_out[i];
+    end
+
+	reg [5:0] v3c3l3 [0:1];
+	logic [5:0] v3c3l3_out [0:1];
+	assign v3c3l3_out[0] = v3c3l2[0] + v3c3l2[1];
+	assign v3c3l3_out[1] = v3c3l2[2] + v3c3l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v3c3l3[i] <= v3c3l3_out[i];
+    end
+
+	reg [6:0] v3c3l4 [0:0];
+	logic [6:0] v3c3l4_out [0:0];
+	assign v3c3l4_out[0] = v3c3l3[0] + v3c3l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c3l4[i] <= v3c3l4_out[i];
+    end
+
+	reg [7:0] v3c3l5 [0:0];
+	logic [7:0] v3c3l5_out [0:0];
+	assign v3c3l5_out[0] = v3c3l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c3l5[i] <= v3c3l5_out[i];
+    end
+
+	assign val[3] = v3c3l5[0];
 	
 	// -0.015625
 	logic [0:39] g4;
@@ -2718,7 +5967,77 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g4_reg <= g4;
     end
     
-	assign val[4] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3] + g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7] + g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11] + g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15] + g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19] + g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23] + g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27] + g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31] + g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35] + g4_reg[36] + g4_reg[37] + g4_reg[38] + g4_reg[39];
+	logic [2:0] v4c3l0_out [0:9];
+	logic [2:0] v4c3l0 [0:9];
+	assign v4c3l0_out[0] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3];
+	assign v4c3l0_out[1] = g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7];
+	assign v4c3l0_out[2] = g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11];
+	assign v4c3l0_out[3] = g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15];
+	assign v4c3l0_out[4] = g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19];
+	assign v4c3l0_out[5] = g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23];
+	assign v4c3l0_out[6] = g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27];
+	assign v4c3l0_out[7] = g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31];
+	assign v4c3l0_out[8] = g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	assign v4c3l0_out[9] = g4_reg[36] + g4_reg[37] + g4_reg[38] + g4_reg[39];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v4c3l0[i] <= v4c3l0_out[i];
+    end
+
+	reg [3:0] v4c3l1 [0:4];
+	logic [3:0] v4c3l1_out [0:4];
+	assign v4c3l1_out[0] = v4c3l0[0] + v4c3l0[1];
+	assign v4c3l1_out[1] = v4c3l0[2] + v4c3l0[3];
+	assign v4c3l1_out[2] = v4c3l0[4] + v4c3l0[5];
+	assign v4c3l1_out[3] = v4c3l0[6] + v4c3l0[7];
+	assign v4c3l1_out[4] = v4c3l0[8] + v4c3l0[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v4c3l1[i] <= v4c3l1_out[i];
+    end
+
+	reg [4:0] v4c3l2 [0:2];
+	logic [4:0] v4c3l2_out [0:2];
+	assign v4c3l2_out[0] = v4c3l1[0] + v4c3l1[1];
+	assign v4c3l2_out[1] = v4c3l1[2] + v4c3l1[3];
+	assign v4c3l2_out[2] = v4c3l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v4c3l2[i] <= v4c3l2_out[i];
+    end
+
+	reg [5:0] v4c3l3 [0:1];
+	logic [5:0] v4c3l3_out [0:1];
+	assign v4c3l3_out[0] = v4c3l2[0] + v4c3l2[1];
+	assign v4c3l3_out[1] = v4c3l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v4c3l3[i] <= v4c3l3_out[i];
+    end
+
+	reg [6:0] v4c3l4 [0:0];
+	logic [6:0] v4c3l4_out [0:0];
+	assign v4c3l4_out[0] = v4c3l3[0] + v4c3l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c3l4[i] <= v4c3l4_out[i];
+    end
+
+	reg [7:0] v4c3l5 [0:0];
+	logic [7:0] v4c3l5_out [0:0];
+	assign v4c3l5_out[0] = v4c3l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c3l5[i] <= v4c3l5_out[i];
+    end
+
+	assign val[4] = v4c3l5[0];
 	
 	// 0.015625
 	logic [0:40] g5;
@@ -2769,7 +6088,79 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g5_reg <= g5;
     end
     
-	assign val[5] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3] + g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7] + g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11] + g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15] + g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19] + g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23] + g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27] + g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31] + g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35] + g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39] + g5_reg[40];
+	logic [2:0] v5c3l0_out [0:10];
+	logic [2:0] v5c3l0 [0:10];
+	assign v5c3l0_out[0] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3];
+	assign v5c3l0_out[1] = g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7];
+	assign v5c3l0_out[2] = g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11];
+	assign v5c3l0_out[3] = g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15];
+	assign v5c3l0_out[4] = g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19];
+	assign v5c3l0_out[5] = g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23];
+	assign v5c3l0_out[6] = g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27];
+	assign v5c3l0_out[7] = g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31];
+	assign v5c3l0_out[8] = g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35];
+	assign v5c3l0_out[9] = g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39];
+	assign v5c3l0_out[10] = g5_reg[40];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v5c3l0[i] <= v5c3l0_out[i];
+    end
+
+	reg [3:0] v5c3l1 [0:5];
+	logic [3:0] v5c3l1_out [0:5];
+	assign v5c3l1_out[0] = v5c3l0[0] + v5c3l0[1];
+	assign v5c3l1_out[1] = v5c3l0[2] + v5c3l0[3];
+	assign v5c3l1_out[2] = v5c3l0[4] + v5c3l0[5];
+	assign v5c3l1_out[3] = v5c3l0[6] + v5c3l0[7];
+	assign v5c3l1_out[4] = v5c3l0[8] + v5c3l0[9];
+	assign v5c3l1_out[5] = v5c3l0[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v5c3l1[i] <= v5c3l1_out[i];
+    end
+
+	reg [4:0] v5c3l2 [0:2];
+	logic [4:0] v5c3l2_out [0:2];
+	assign v5c3l2_out[0] = v5c3l1[0] + v5c3l1[1];
+	assign v5c3l2_out[1] = v5c3l1[2] + v5c3l1[3];
+	assign v5c3l2_out[2] = v5c3l1[4] + v5c3l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v5c3l2[i] <= v5c3l2_out[i];
+    end
+
+	reg [5:0] v5c3l3 [0:1];
+	logic [5:0] v5c3l3_out [0:1];
+	assign v5c3l3_out[0] = v5c3l2[0] + v5c3l2[1];
+	assign v5c3l3_out[1] = v5c3l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v5c3l3[i] <= v5c3l3_out[i];
+    end
+
+	reg [6:0] v5c3l4 [0:0];
+	logic [6:0] v5c3l4_out [0:0];
+	assign v5c3l4_out[0] = v5c3l3[0] + v5c3l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c3l4[i] <= v5c3l4_out[i];
+    end
+
+	reg [7:0] v5c3l5 [0:0];
+	logic [7:0] v5c3l5_out [0:0];
+	assign v5c3l5_out[0] = v5c3l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c3l5[i] <= v5c3l5_out[i];
+    end
+
+	assign val[5] = v5c3l5[0];
 	
 	// 0.03125
 	logic [0:54] g6;
@@ -2834,7 +6225,84 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g6_reg <= g6;
     end
     
-	assign val[6] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3] + g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7] + g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11] + g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15] + g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19] + g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23] + g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27] + g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31] + g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35] + g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39] + g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43] + g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47] + g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51] + g6_reg[52] + g6_reg[53] + g6_reg[54];
+	logic [2:0] v6c3l0_out [0:13];
+	logic [2:0] v6c3l0 [0:13];
+	assign v6c3l0_out[0] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3];
+	assign v6c3l0_out[1] = g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7];
+	assign v6c3l0_out[2] = g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11];
+	assign v6c3l0_out[3] = g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15];
+	assign v6c3l0_out[4] = g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19];
+	assign v6c3l0_out[5] = g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23];
+	assign v6c3l0_out[6] = g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27];
+	assign v6c3l0_out[7] = g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31];
+	assign v6c3l0_out[8] = g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35];
+	assign v6c3l0_out[9] = g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39];
+	assign v6c3l0_out[10] = g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	assign v6c3l0_out[11] = g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47];
+	assign v6c3l0_out[12] = g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51];
+	assign v6c3l0_out[13] = g6_reg[52] + g6_reg[53] + g6_reg[54];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 14; i = i + 1)
+            v6c3l0[i] <= v6c3l0_out[i];
+    end
+
+	reg [3:0] v6c3l1 [0:6];
+	logic [3:0] v6c3l1_out [0:6];
+	assign v6c3l1_out[0] = v6c3l0[0] + v6c3l0[1];
+	assign v6c3l1_out[1] = v6c3l0[2] + v6c3l0[3];
+	assign v6c3l1_out[2] = v6c3l0[4] + v6c3l0[5];
+	assign v6c3l1_out[3] = v6c3l0[6] + v6c3l0[7];
+	assign v6c3l1_out[4] = v6c3l0[8] + v6c3l0[9];
+	assign v6c3l1_out[5] = v6c3l0[10] + v6c3l0[11];
+	assign v6c3l1_out[6] = v6c3l0[12] + v6c3l0[13];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v6c3l1[i] <= v6c3l1_out[i];
+    end
+
+	reg [4:0] v6c3l2 [0:3];
+	logic [4:0] v6c3l2_out [0:3];
+	assign v6c3l2_out[0] = v6c3l1[0] + v6c3l1[1];
+	assign v6c3l2_out[1] = v6c3l1[2] + v6c3l1[3];
+	assign v6c3l2_out[2] = v6c3l1[4] + v6c3l1[5];
+	assign v6c3l2_out[3] = v6c3l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v6c3l2[i] <= v6c3l2_out[i];
+    end
+
+	reg [5:0] v6c3l3 [0:1];
+	logic [5:0] v6c3l3_out [0:1];
+	assign v6c3l3_out[0] = v6c3l2[0] + v6c3l2[1];
+	assign v6c3l3_out[1] = v6c3l2[2] + v6c3l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v6c3l3[i] <= v6c3l3_out[i];
+    end
+
+	reg [6:0] v6c3l4 [0:0];
+	logic [6:0] v6c3l4_out [0:0];
+	assign v6c3l4_out[0] = v6c3l3[0] + v6c3l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c3l4[i] <= v6c3l4_out[i];
+    end
+
+	reg [7:0] v6c3l5 [0:0];
+	logic [7:0] v6c3l5_out [0:0];
+	assign v6c3l5_out[0] = v6c3l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c3l5[i] <= v6c3l5_out[i];
+    end
+
+	assign val[6] = v6c3l5[0];
 	
 	// 0.0625
 	logic [0:79] g7;
@@ -2924,7 +6392,96 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g7_reg <= g7;
     end
     
-	assign val[7] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3] + g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7] + g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11] + g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15] + g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19] + g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23] + g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27] + g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31] + g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35] + g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39] + g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43] + g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47] + g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51] + g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55] + g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59] + g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63] + g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67] + g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71] + g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75] + g7_reg[76] + g7_reg[77] + g7_reg[78] + g7_reg[79];
+	logic [2:0] v7c3l0_out [0:19];
+	logic [2:0] v7c3l0 [0:19];
+	assign v7c3l0_out[0] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3];
+	assign v7c3l0_out[1] = g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7];
+	assign v7c3l0_out[2] = g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11];
+	assign v7c3l0_out[3] = g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15];
+	assign v7c3l0_out[4] = g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19];
+	assign v7c3l0_out[5] = g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23];
+	assign v7c3l0_out[6] = g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27];
+	assign v7c3l0_out[7] = g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31];
+	assign v7c3l0_out[8] = g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35];
+	assign v7c3l0_out[9] = g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39];
+	assign v7c3l0_out[10] = g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43];
+	assign v7c3l0_out[11] = g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47];
+	assign v7c3l0_out[12] = g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51];
+	assign v7c3l0_out[13] = g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55];
+	assign v7c3l0_out[14] = g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59];
+	assign v7c3l0_out[15] = g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63];
+	assign v7c3l0_out[16] = g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67];
+	assign v7c3l0_out[17] = g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71];
+	assign v7c3l0_out[18] = g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75];
+	assign v7c3l0_out[19] = g7_reg[76] + g7_reg[77] + g7_reg[78] + g7_reg[79];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 20; i = i + 1)
+            v7c3l0[i] <= v7c3l0_out[i];
+    end
+
+	reg [3:0] v7c3l1 [0:9];
+	logic [3:0] v7c3l1_out [0:9];
+	assign v7c3l1_out[0] = v7c3l0[0] + v7c3l0[1];
+	assign v7c3l1_out[1] = v7c3l0[2] + v7c3l0[3];
+	assign v7c3l1_out[2] = v7c3l0[4] + v7c3l0[5];
+	assign v7c3l1_out[3] = v7c3l0[6] + v7c3l0[7];
+	assign v7c3l1_out[4] = v7c3l0[8] + v7c3l0[9];
+	assign v7c3l1_out[5] = v7c3l0[10] + v7c3l0[11];
+	assign v7c3l1_out[6] = v7c3l0[12] + v7c3l0[13];
+	assign v7c3l1_out[7] = v7c3l0[14] + v7c3l0[15];
+	assign v7c3l1_out[8] = v7c3l0[16] + v7c3l0[17];
+	assign v7c3l1_out[9] = v7c3l0[18] + v7c3l0[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v7c3l1[i] <= v7c3l1_out[i];
+    end
+
+	reg [4:0] v7c3l2 [0:4];
+	logic [4:0] v7c3l2_out [0:4];
+	assign v7c3l2_out[0] = v7c3l1[0] + v7c3l1[1];
+	assign v7c3l2_out[1] = v7c3l1[2] + v7c3l1[3];
+	assign v7c3l2_out[2] = v7c3l1[4] + v7c3l1[5];
+	assign v7c3l2_out[3] = v7c3l1[6] + v7c3l1[7];
+	assign v7c3l2_out[4] = v7c3l1[8] + v7c3l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v7c3l2[i] <= v7c3l2_out[i];
+    end
+
+	reg [5:0] v7c3l3 [0:2];
+	logic [5:0] v7c3l3_out [0:2];
+	assign v7c3l3_out[0] = v7c3l2[0] + v7c3l2[1];
+	assign v7c3l3_out[1] = v7c3l2[2] + v7c3l2[3];
+	assign v7c3l3_out[2] = v7c3l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v7c3l3[i] <= v7c3l3_out[i];
+    end
+
+	reg [6:0] v7c3l4 [0:1];
+	logic [6:0] v7c3l4_out [0:1];
+	assign v7c3l4_out[0] = v7c3l3[0] + v7c3l3[1];
+	assign v7c3l4_out[1] = v7c3l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v7c3l4[i] <= v7c3l4_out[i];
+    end
+
+	reg [7:0] v7c3l5 [0:0];
+	logic [7:0] v7c3l5_out [0:0];
+	assign v7c3l5_out[0] = v7c3l4[0] + v7c3l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c3l5[i] <= v7c3l5_out[i];
+    end
+
+	assign val[7] = v7c3l5[0];
 	
 	// 0.125
 	logic [0:87] g8;
@@ -3022,7 +6579,100 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g8_reg <= g8;
     end
     
-	assign val[8] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3] + g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7] + g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11] + g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15] + g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19] + g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23] + g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27] + g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31] + g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35] + g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39] + g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43] + g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47] + g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51] + g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55] + g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59] + g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63] + g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67] + g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71] + g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75] + g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79] + g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83] + g8_reg[84] + g8_reg[85] + g8_reg[86] + g8_reg[87];
+	logic [2:0] v8c3l0_out [0:21];
+	logic [2:0] v8c3l0 [0:21];
+	assign v8c3l0_out[0] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3];
+	assign v8c3l0_out[1] = g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7];
+	assign v8c3l0_out[2] = g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11];
+	assign v8c3l0_out[3] = g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15];
+	assign v8c3l0_out[4] = g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19];
+	assign v8c3l0_out[5] = g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23];
+	assign v8c3l0_out[6] = g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27];
+	assign v8c3l0_out[7] = g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31];
+	assign v8c3l0_out[8] = g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35];
+	assign v8c3l0_out[9] = g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39];
+	assign v8c3l0_out[10] = g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43];
+	assign v8c3l0_out[11] = g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47];
+	assign v8c3l0_out[12] = g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51];
+	assign v8c3l0_out[13] = g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55];
+	assign v8c3l0_out[14] = g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59];
+	assign v8c3l0_out[15] = g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63];
+	assign v8c3l0_out[16] = g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67];
+	assign v8c3l0_out[17] = g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71];
+	assign v8c3l0_out[18] = g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75];
+	assign v8c3l0_out[19] = g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79];
+	assign v8c3l0_out[20] = g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83];
+	assign v8c3l0_out[21] = g8_reg[84] + g8_reg[85] + g8_reg[86] + g8_reg[87];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 22; i = i + 1)
+            v8c3l0[i] <= v8c3l0_out[i];
+    end
+
+	reg [3:0] v8c3l1 [0:10];
+	logic [3:0] v8c3l1_out [0:10];
+	assign v8c3l1_out[0] = v8c3l0[0] + v8c3l0[1];
+	assign v8c3l1_out[1] = v8c3l0[2] + v8c3l0[3];
+	assign v8c3l1_out[2] = v8c3l0[4] + v8c3l0[5];
+	assign v8c3l1_out[3] = v8c3l0[6] + v8c3l0[7];
+	assign v8c3l1_out[4] = v8c3l0[8] + v8c3l0[9];
+	assign v8c3l1_out[5] = v8c3l0[10] + v8c3l0[11];
+	assign v8c3l1_out[6] = v8c3l0[12] + v8c3l0[13];
+	assign v8c3l1_out[7] = v8c3l0[14] + v8c3l0[15];
+	assign v8c3l1_out[8] = v8c3l0[16] + v8c3l0[17];
+	assign v8c3l1_out[9] = v8c3l0[18] + v8c3l0[19];
+	assign v8c3l1_out[10] = v8c3l0[20] + v8c3l0[21];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v8c3l1[i] <= v8c3l1_out[i];
+    end
+
+	reg [4:0] v8c3l2 [0:5];
+	logic [4:0] v8c3l2_out [0:5];
+	assign v8c3l2_out[0] = v8c3l1[0] + v8c3l1[1];
+	assign v8c3l2_out[1] = v8c3l1[2] + v8c3l1[3];
+	assign v8c3l2_out[2] = v8c3l1[4] + v8c3l1[5];
+	assign v8c3l2_out[3] = v8c3l1[6] + v8c3l1[7];
+	assign v8c3l2_out[4] = v8c3l1[8] + v8c3l1[9];
+	assign v8c3l2_out[5] = v8c3l1[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v8c3l2[i] <= v8c3l2_out[i];
+    end
+
+	reg [5:0] v8c3l3 [0:2];
+	logic [5:0] v8c3l3_out [0:2];
+	assign v8c3l3_out[0] = v8c3l2[0] + v8c3l2[1];
+	assign v8c3l3_out[1] = v8c3l2[2] + v8c3l2[3];
+	assign v8c3l3_out[2] = v8c3l2[4] + v8c3l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v8c3l3[i] <= v8c3l3_out[i];
+    end
+
+	reg [6:0] v8c3l4 [0:1];
+	logic [6:0] v8c3l4_out [0:1];
+	assign v8c3l4_out[0] = v8c3l3[0] + v8c3l3[1];
+	assign v8c3l4_out[1] = v8c3l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v8c3l4[i] <= v8c3l4_out[i];
+    end
+
+	reg [7:0] v8c3l5 [0:0];
+	logic [7:0] v8c3l5_out [0:0];
+	assign v8c3l5_out[0] = v8c3l4[0] + v8c3l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v8c3l5[i] <= v8c3l5_out[i];
+    end
+
+	assign val[8] = v8c3l5[0];
 	
 	// 0.25
 	logic [0:68] g9;
@@ -3101,7 +6751,93 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g9_reg <= g9;
     end
     
-	assign val[9] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3] + g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7] + g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11] + g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15] + g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19] + g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23] + g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27] + g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31] + g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35] + g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39] + g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43] + g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47] + g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51] + g9_reg[52] + g9_reg[53] + g9_reg[54] + g9_reg[55] + g9_reg[56] + g9_reg[57] + g9_reg[58] + g9_reg[59] + g9_reg[60] + g9_reg[61] + g9_reg[62] + g9_reg[63] + g9_reg[64] + g9_reg[65] + g9_reg[66] + g9_reg[67] + g9_reg[68];
+	logic [2:0] v9c3l0_out [0:17];
+	logic [2:0] v9c3l0 [0:17];
+	assign v9c3l0_out[0] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3];
+	assign v9c3l0_out[1] = g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7];
+	assign v9c3l0_out[2] = g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11];
+	assign v9c3l0_out[3] = g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15];
+	assign v9c3l0_out[4] = g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19];
+	assign v9c3l0_out[5] = g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23];
+	assign v9c3l0_out[6] = g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27];
+	assign v9c3l0_out[7] = g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31];
+	assign v9c3l0_out[8] = g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	assign v9c3l0_out[9] = g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39];
+	assign v9c3l0_out[10] = g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43];
+	assign v9c3l0_out[11] = g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47];
+	assign v9c3l0_out[12] = g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51];
+	assign v9c3l0_out[13] = g9_reg[52] + g9_reg[53] + g9_reg[54] + g9_reg[55];
+	assign v9c3l0_out[14] = g9_reg[56] + g9_reg[57] + g9_reg[58] + g9_reg[59];
+	assign v9c3l0_out[15] = g9_reg[60] + g9_reg[61] + g9_reg[62] + g9_reg[63];
+	assign v9c3l0_out[16] = g9_reg[64] + g9_reg[65] + g9_reg[66] + g9_reg[67];
+	assign v9c3l0_out[17] = g9_reg[68];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 18; i = i + 1)
+            v9c3l0[i] <= v9c3l0_out[i];
+    end
+
+	reg [3:0] v9c3l1 [0:8];
+	logic [3:0] v9c3l1_out [0:8];
+	assign v9c3l1_out[0] = v9c3l0[0] + v9c3l0[1];
+	assign v9c3l1_out[1] = v9c3l0[2] + v9c3l0[3];
+	assign v9c3l1_out[2] = v9c3l0[4] + v9c3l0[5];
+	assign v9c3l1_out[3] = v9c3l0[6] + v9c3l0[7];
+	assign v9c3l1_out[4] = v9c3l0[8] + v9c3l0[9];
+	assign v9c3l1_out[5] = v9c3l0[10] + v9c3l0[11];
+	assign v9c3l1_out[6] = v9c3l0[12] + v9c3l0[13];
+	assign v9c3l1_out[7] = v9c3l0[14] + v9c3l0[15];
+	assign v9c3l1_out[8] = v9c3l0[16] + v9c3l0[17];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v9c3l1[i] <= v9c3l1_out[i];
+    end
+
+	reg [4:0] v9c3l2 [0:4];
+	logic [4:0] v9c3l2_out [0:4];
+	assign v9c3l2_out[0] = v9c3l1[0] + v9c3l1[1];
+	assign v9c3l2_out[1] = v9c3l1[2] + v9c3l1[3];
+	assign v9c3l2_out[2] = v9c3l1[4] + v9c3l1[5];
+	assign v9c3l2_out[3] = v9c3l1[6] + v9c3l1[7];
+	assign v9c3l2_out[4] = v9c3l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v9c3l2[i] <= v9c3l2_out[i];
+    end
+
+	reg [5:0] v9c3l3 [0:2];
+	logic [5:0] v9c3l3_out [0:2];
+	assign v9c3l3_out[0] = v9c3l2[0] + v9c3l2[1];
+	assign v9c3l3_out[1] = v9c3l2[2] + v9c3l2[3];
+	assign v9c3l3_out[2] = v9c3l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v9c3l3[i] <= v9c3l3_out[i];
+    end
+
+	reg [6:0] v9c3l4 [0:1];
+	logic [6:0] v9c3l4_out [0:1];
+	assign v9c3l4_out[0] = v9c3l3[0] + v9c3l3[1];
+	assign v9c3l4_out[1] = v9c3l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v9c3l4[i] <= v9c3l4_out[i];
+    end
+
+	reg [7:0] v9c3l5 [0:0];
+	logic [7:0] v9c3l5_out [0:0];
+	assign v9c3l5_out[0] = v9c3l4[0] + v9c3l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c3l5[i] <= v9c3l5_out[i];
+    end
+
+	assign val[9] = v9c3l5[0];
 	
 	// 0.5
 	logic [0:20] g10;
@@ -3132,7 +6868,69 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g10_reg <= g10;
     end
     
-	assign val[10] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3] + g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7] + g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11] + g10_reg[12] + g10_reg[13] + g10_reg[14] + g10_reg[15] + g10_reg[16] + g10_reg[17] + g10_reg[18] + g10_reg[19] + g10_reg[20];
+	logic [2:0] v10c3l0_out [0:5];
+	logic [2:0] v10c3l0 [0:5];
+	assign v10c3l0_out[0] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	assign v10c3l0_out[1] = g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7];
+	assign v10c3l0_out[2] = g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11];
+	assign v10c3l0_out[3] = g10_reg[12] + g10_reg[13] + g10_reg[14] + g10_reg[15];
+	assign v10c3l0_out[4] = g10_reg[16] + g10_reg[17] + g10_reg[18] + g10_reg[19];
+	assign v10c3l0_out[5] = g10_reg[20];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v10c3l0[i] <= v10c3l0_out[i];
+    end
+
+	reg [3:0] v10c3l1 [0:2];
+	logic [3:0] v10c3l1_out [0:2];
+	assign v10c3l1_out[0] = v10c3l0[0] + v10c3l0[1];
+	assign v10c3l1_out[1] = v10c3l0[2] + v10c3l0[3];
+	assign v10c3l1_out[2] = v10c3l0[4] + v10c3l0[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v10c3l1[i] <= v10c3l1_out[i];
+    end
+
+	reg [4:0] v10c3l2 [0:1];
+	logic [4:0] v10c3l2_out [0:1];
+	assign v10c3l2_out[0] = v10c3l1[0] + v10c3l1[1];
+	assign v10c3l2_out[1] = v10c3l1[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v10c3l2[i] <= v10c3l2_out[i];
+    end
+
+	reg [5:0] v10c3l3 [0:0];
+	logic [5:0] v10c3l3_out [0:0];
+	assign v10c3l3_out[0] = v10c3l2[0] + v10c3l2[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c3l3[i] <= v10c3l3_out[i];
+    end
+
+	reg [6:0] v10c3l4 [0:0];
+	logic [6:0] v10c3l4_out [0:0];
+	assign v10c3l4_out[0] = v10c3l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c3l4[i] <= v10c3l4_out[i];
+    end
+
+	reg [7:0] v10c3l5 [0:0];
+	logic [7:0] v10c3l5_out [0:0];
+	assign v10c3l5_out[0] = v10c3l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c3l5[i] <= v10c3l5_out[i];
+    end
+
+	assign val[10] = v10c3l5[0];
 	
 	// 1.0
 	logic [0:2] g11;
@@ -3145,7 +6943,61 @@ module leaf_counter_3(input logic clk, input logic [0:1472] l, output logic [7:0
         g11_reg <= g11;
     end
     
-	assign val[11] = g11_reg[0] + g11_reg[1] + g11_reg[2];
+	logic [2:0] v11c3l0_out [0:0];
+	logic [2:0] v11c3l0 [0:0];
+	assign v11c3l0_out[0] = g11_reg[0] + g11_reg[1] + g11_reg[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c3l0[i] <= v11c3l0_out[i];
+    end
+
+	reg [3:0] v11c3l1 [0:0];
+	logic [3:0] v11c3l1_out [0:0];
+	assign v11c3l1_out[0] = v11c3l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c3l1[i] <= v11c3l1_out[i];
+    end
+
+	reg [4:0] v11c3l2 [0:0];
+	logic [4:0] v11c3l2_out [0:0];
+	assign v11c3l2_out[0] = v11c3l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c3l2[i] <= v11c3l2_out[i];
+    end
+
+	reg [5:0] v11c3l3 [0:0];
+	logic [5:0] v11c3l3_out [0:0];
+	assign v11c3l3_out[0] = v11c3l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c3l3[i] <= v11c3l3_out[i];
+    end
+
+	reg [6:0] v11c3l4 [0:0];
+	logic [6:0] v11c3l4_out [0:0];
+	assign v11c3l4_out[0] = v11c3l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c3l4[i] <= v11c3l4_out[i];
+    end
+
+	reg [7:0] v11c3l5 [0:0];
+	logic [7:0] v11c3l5_out [0:0];
+	assign v11c3l5_out[0] = v11c3l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c3l5[i] <= v11c3l5_out[i];
+    end
+
+	assign val[11] = v11c3l5[0];
 	
 	// 2.0
 	assign val[12] = 0;
@@ -3154,6 +7006,7 @@ endmodule
 
 
 module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0] val [0:12]);
+    integer i;
 	// -0.25
 	logic [0:64] g0;
 	reg [0:64] g0_reg;
@@ -3227,7 +7080,92 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g0_reg <= g0;
     end
     
-	assign val[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3] + g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7] + g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11] + g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15] + g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19] + g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23] + g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27] + g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31] + g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35] + g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39] + g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43] + g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47] + g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51] + g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55] + g0_reg[56] + g0_reg[57] + g0_reg[58] + g0_reg[59] + g0_reg[60] + g0_reg[61] + g0_reg[62] + g0_reg[63] + g0_reg[64];
+	logic [2:0] v0c4l0_out [0:16];
+	logic [2:0] v0c4l0 [0:16];
+	assign v0c4l0_out[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3];
+	assign v0c4l0_out[1] = g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7];
+	assign v0c4l0_out[2] = g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11];
+	assign v0c4l0_out[3] = g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15];
+	assign v0c4l0_out[4] = g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19];
+	assign v0c4l0_out[5] = g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23];
+	assign v0c4l0_out[6] = g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27];
+	assign v0c4l0_out[7] = g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31];
+	assign v0c4l0_out[8] = g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35];
+	assign v0c4l0_out[9] = g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39];
+	assign v0c4l0_out[10] = g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43];
+	assign v0c4l0_out[11] = g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47];
+	assign v0c4l0_out[12] = g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51];
+	assign v0c4l0_out[13] = g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55];
+	assign v0c4l0_out[14] = g0_reg[56] + g0_reg[57] + g0_reg[58] + g0_reg[59];
+	assign v0c4l0_out[15] = g0_reg[60] + g0_reg[61] + g0_reg[62] + g0_reg[63];
+	assign v0c4l0_out[16] = g0_reg[64];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 17; i = i + 1)
+            v0c4l0[i] <= v0c4l0_out[i];
+    end
+
+	reg [3:0] v0c4l1 [0:8];
+	logic [3:0] v0c4l1_out [0:8];
+	assign v0c4l1_out[0] = v0c4l0[0] + v0c4l0[1];
+	assign v0c4l1_out[1] = v0c4l0[2] + v0c4l0[3];
+	assign v0c4l1_out[2] = v0c4l0[4] + v0c4l0[5];
+	assign v0c4l1_out[3] = v0c4l0[6] + v0c4l0[7];
+	assign v0c4l1_out[4] = v0c4l0[8] + v0c4l0[9];
+	assign v0c4l1_out[5] = v0c4l0[10] + v0c4l0[11];
+	assign v0c4l1_out[6] = v0c4l0[12] + v0c4l0[13];
+	assign v0c4l1_out[7] = v0c4l0[14] + v0c4l0[15];
+	assign v0c4l1_out[8] = v0c4l0[16];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v0c4l1[i] <= v0c4l1_out[i];
+    end
+
+	reg [4:0] v0c4l2 [0:4];
+	logic [4:0] v0c4l2_out [0:4];
+	assign v0c4l2_out[0] = v0c4l1[0] + v0c4l1[1];
+	assign v0c4l2_out[1] = v0c4l1[2] + v0c4l1[3];
+	assign v0c4l2_out[2] = v0c4l1[4] + v0c4l1[5];
+	assign v0c4l2_out[3] = v0c4l1[6] + v0c4l1[7];
+	assign v0c4l2_out[4] = v0c4l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v0c4l2[i] <= v0c4l2_out[i];
+    end
+
+	reg [5:0] v0c4l3 [0:2];
+	logic [5:0] v0c4l3_out [0:2];
+	assign v0c4l3_out[0] = v0c4l2[0] + v0c4l2[1];
+	assign v0c4l3_out[1] = v0c4l2[2] + v0c4l2[3];
+	assign v0c4l3_out[2] = v0c4l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v0c4l3[i] <= v0c4l3_out[i];
+    end
+
+	reg [6:0] v0c4l4 [0:1];
+	logic [6:0] v0c4l4_out [0:1];
+	assign v0c4l4_out[0] = v0c4l3[0] + v0c4l3[1];
+	assign v0c4l4_out[1] = v0c4l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v0c4l4[i] <= v0c4l4_out[i];
+    end
+
+	reg [7:0] v0c4l5 [0:0];
+	logic [7:0] v0c4l5_out [0:0];
+	assign v0c4l5_out[0] = v0c4l4[0] + v0c4l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c4l5[i] <= v0c4l5_out[i];
+    end
+
+	assign val[0] = v0c4l5[0];
 	
 	// -0.125
 	logic [0:99] g1;
@@ -3337,7 +7275,107 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g1_reg <= g1;
     end
     
-	assign val[1] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3] + g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7] + g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11] + g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15] + g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19] + g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23] + g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27] + g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31] + g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35] + g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39] + g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43] + g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47] + g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51] + g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55] + g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59] + g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63] + g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67] + g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71] + g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75] + g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79] + g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83] + g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87] + g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91] + g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95] + g1_reg[96] + g1_reg[97] + g1_reg[98] + g1_reg[99];
+	logic [2:0] v1c4l0_out [0:24];
+	logic [2:0] v1c4l0 [0:24];
+	assign v1c4l0_out[0] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3];
+	assign v1c4l0_out[1] = g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7];
+	assign v1c4l0_out[2] = g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11];
+	assign v1c4l0_out[3] = g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15];
+	assign v1c4l0_out[4] = g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19];
+	assign v1c4l0_out[5] = g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23];
+	assign v1c4l0_out[6] = g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27];
+	assign v1c4l0_out[7] = g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31];
+	assign v1c4l0_out[8] = g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35];
+	assign v1c4l0_out[9] = g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39];
+	assign v1c4l0_out[10] = g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43];
+	assign v1c4l0_out[11] = g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47];
+	assign v1c4l0_out[12] = g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51];
+	assign v1c4l0_out[13] = g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55];
+	assign v1c4l0_out[14] = g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59];
+	assign v1c4l0_out[15] = g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63];
+	assign v1c4l0_out[16] = g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67];
+	assign v1c4l0_out[17] = g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71];
+	assign v1c4l0_out[18] = g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75];
+	assign v1c4l0_out[19] = g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79];
+	assign v1c4l0_out[20] = g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83];
+	assign v1c4l0_out[21] = g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87];
+	assign v1c4l0_out[22] = g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91];
+	assign v1c4l0_out[23] = g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	assign v1c4l0_out[24] = g1_reg[96] + g1_reg[97] + g1_reg[98] + g1_reg[99];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 25; i = i + 1)
+            v1c4l0[i] <= v1c4l0_out[i];
+    end
+
+	reg [3:0] v1c4l1 [0:12];
+	logic [3:0] v1c4l1_out [0:12];
+	assign v1c4l1_out[0] = v1c4l0[0] + v1c4l0[1];
+	assign v1c4l1_out[1] = v1c4l0[2] + v1c4l0[3];
+	assign v1c4l1_out[2] = v1c4l0[4] + v1c4l0[5];
+	assign v1c4l1_out[3] = v1c4l0[6] + v1c4l0[7];
+	assign v1c4l1_out[4] = v1c4l0[8] + v1c4l0[9];
+	assign v1c4l1_out[5] = v1c4l0[10] + v1c4l0[11];
+	assign v1c4l1_out[6] = v1c4l0[12] + v1c4l0[13];
+	assign v1c4l1_out[7] = v1c4l0[14] + v1c4l0[15];
+	assign v1c4l1_out[8] = v1c4l0[16] + v1c4l0[17];
+	assign v1c4l1_out[9] = v1c4l0[18] + v1c4l0[19];
+	assign v1c4l1_out[10] = v1c4l0[20] + v1c4l0[21];
+	assign v1c4l1_out[11] = v1c4l0[22] + v1c4l0[23];
+	assign v1c4l1_out[12] = v1c4l0[24];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v1c4l1[i] <= v1c4l1_out[i];
+    end
+
+	reg [4:0] v1c4l2 [0:6];
+	logic [4:0] v1c4l2_out [0:6];
+	assign v1c4l2_out[0] = v1c4l1[0] + v1c4l1[1];
+	assign v1c4l2_out[1] = v1c4l1[2] + v1c4l1[3];
+	assign v1c4l2_out[2] = v1c4l1[4] + v1c4l1[5];
+	assign v1c4l2_out[3] = v1c4l1[6] + v1c4l1[7];
+	assign v1c4l2_out[4] = v1c4l1[8] + v1c4l1[9];
+	assign v1c4l2_out[5] = v1c4l1[10] + v1c4l1[11];
+	assign v1c4l2_out[6] = v1c4l1[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v1c4l2[i] <= v1c4l2_out[i];
+    end
+
+	reg [5:0] v1c4l3 [0:3];
+	logic [5:0] v1c4l3_out [0:3];
+	assign v1c4l3_out[0] = v1c4l2[0] + v1c4l2[1];
+	assign v1c4l3_out[1] = v1c4l2[2] + v1c4l2[3];
+	assign v1c4l3_out[2] = v1c4l2[4] + v1c4l2[5];
+	assign v1c4l3_out[3] = v1c4l2[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v1c4l3[i] <= v1c4l3_out[i];
+    end
+
+	reg [6:0] v1c4l4 [0:1];
+	logic [6:0] v1c4l4_out [0:1];
+	assign v1c4l4_out[0] = v1c4l3[0] + v1c4l3[1];
+	assign v1c4l4_out[1] = v1c4l3[2] + v1c4l3[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v1c4l4[i] <= v1c4l4_out[i];
+    end
+
+	reg [7:0] v1c4l5 [0:0];
+	logic [7:0] v1c4l5_out [0:0];
+	assign v1c4l5_out[0] = v1c4l4[0] + v1c4l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v1c4l5[i] <= v1c4l5_out[i];
+    end
+
+	assign val[1] = v1c4l5[0];
 	
 	// -0.0625
 	logic [0:77] g2;
@@ -3425,7 +7463,96 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g2_reg <= g2;
     end
     
-	assign val[2] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3] + g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7] + g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11] + g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15] + g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19] + g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23] + g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27] + g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31] + g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35] + g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39] + g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43] + g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47] + g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51] + g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55] + g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59] + g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63] + g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67] + g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71] + g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75] + g2_reg[76] + g2_reg[77];
+	logic [2:0] v2c4l0_out [0:19];
+	logic [2:0] v2c4l0 [0:19];
+	assign v2c4l0_out[0] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3];
+	assign v2c4l0_out[1] = g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7];
+	assign v2c4l0_out[2] = g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11];
+	assign v2c4l0_out[3] = g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15];
+	assign v2c4l0_out[4] = g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19];
+	assign v2c4l0_out[5] = g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23];
+	assign v2c4l0_out[6] = g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27];
+	assign v2c4l0_out[7] = g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31];
+	assign v2c4l0_out[8] = g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35];
+	assign v2c4l0_out[9] = g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39];
+	assign v2c4l0_out[10] = g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43];
+	assign v2c4l0_out[11] = g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47];
+	assign v2c4l0_out[12] = g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51];
+	assign v2c4l0_out[13] = g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55];
+	assign v2c4l0_out[14] = g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59];
+	assign v2c4l0_out[15] = g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63];
+	assign v2c4l0_out[16] = g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67];
+	assign v2c4l0_out[17] = g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71];
+	assign v2c4l0_out[18] = g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75];
+	assign v2c4l0_out[19] = g2_reg[76] + g2_reg[77];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 20; i = i + 1)
+            v2c4l0[i] <= v2c4l0_out[i];
+    end
+
+	reg [3:0] v2c4l1 [0:9];
+	logic [3:0] v2c4l1_out [0:9];
+	assign v2c4l1_out[0] = v2c4l0[0] + v2c4l0[1];
+	assign v2c4l1_out[1] = v2c4l0[2] + v2c4l0[3];
+	assign v2c4l1_out[2] = v2c4l0[4] + v2c4l0[5];
+	assign v2c4l1_out[3] = v2c4l0[6] + v2c4l0[7];
+	assign v2c4l1_out[4] = v2c4l0[8] + v2c4l0[9];
+	assign v2c4l1_out[5] = v2c4l0[10] + v2c4l0[11];
+	assign v2c4l1_out[6] = v2c4l0[12] + v2c4l0[13];
+	assign v2c4l1_out[7] = v2c4l0[14] + v2c4l0[15];
+	assign v2c4l1_out[8] = v2c4l0[16] + v2c4l0[17];
+	assign v2c4l1_out[9] = v2c4l0[18] + v2c4l0[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v2c4l1[i] <= v2c4l1_out[i];
+    end
+
+	reg [4:0] v2c4l2 [0:4];
+	logic [4:0] v2c4l2_out [0:4];
+	assign v2c4l2_out[0] = v2c4l1[0] + v2c4l1[1];
+	assign v2c4l2_out[1] = v2c4l1[2] + v2c4l1[3];
+	assign v2c4l2_out[2] = v2c4l1[4] + v2c4l1[5];
+	assign v2c4l2_out[3] = v2c4l1[6] + v2c4l1[7];
+	assign v2c4l2_out[4] = v2c4l1[8] + v2c4l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v2c4l2[i] <= v2c4l2_out[i];
+    end
+
+	reg [5:0] v2c4l3 [0:2];
+	logic [5:0] v2c4l3_out [0:2];
+	assign v2c4l3_out[0] = v2c4l2[0] + v2c4l2[1];
+	assign v2c4l3_out[1] = v2c4l2[2] + v2c4l2[3];
+	assign v2c4l3_out[2] = v2c4l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v2c4l3[i] <= v2c4l3_out[i];
+    end
+
+	reg [6:0] v2c4l4 [0:1];
+	logic [6:0] v2c4l4_out [0:1];
+	assign v2c4l4_out[0] = v2c4l3[0] + v2c4l3[1];
+	assign v2c4l4_out[1] = v2c4l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v2c4l4[i] <= v2c4l4_out[i];
+    end
+
+	reg [7:0] v2c4l5 [0:0];
+	logic [7:0] v2c4l5_out [0:0];
+	assign v2c4l5_out[0] = v2c4l4[0] + v2c4l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v2c4l5[i] <= v2c4l5_out[i];
+    end
+
+	assign val[2] = v2c4l5[0];
 	
 	// -0.03125
 	logic [0:54] g3;
@@ -3490,7 +7617,84 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g3_reg <= g3;
     end
     
-	assign val[3] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3] + g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7] + g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11] + g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15] + g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19] + g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23] + g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27] + g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31] + g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35] + g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39] + g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43] + g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47] + g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51] + g3_reg[52] + g3_reg[53] + g3_reg[54];
+	logic [2:0] v3c4l0_out [0:13];
+	logic [2:0] v3c4l0 [0:13];
+	assign v3c4l0_out[0] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3];
+	assign v3c4l0_out[1] = g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7];
+	assign v3c4l0_out[2] = g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11];
+	assign v3c4l0_out[3] = g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15];
+	assign v3c4l0_out[4] = g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19];
+	assign v3c4l0_out[5] = g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23];
+	assign v3c4l0_out[6] = g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27];
+	assign v3c4l0_out[7] = g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31];
+	assign v3c4l0_out[8] = g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35];
+	assign v3c4l0_out[9] = g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39];
+	assign v3c4l0_out[10] = g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43];
+	assign v3c4l0_out[11] = g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47];
+	assign v3c4l0_out[12] = g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51];
+	assign v3c4l0_out[13] = g3_reg[52] + g3_reg[53] + g3_reg[54];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 14; i = i + 1)
+            v3c4l0[i] <= v3c4l0_out[i];
+    end
+
+	reg [3:0] v3c4l1 [0:6];
+	logic [3:0] v3c4l1_out [0:6];
+	assign v3c4l1_out[0] = v3c4l0[0] + v3c4l0[1];
+	assign v3c4l1_out[1] = v3c4l0[2] + v3c4l0[3];
+	assign v3c4l1_out[2] = v3c4l0[4] + v3c4l0[5];
+	assign v3c4l1_out[3] = v3c4l0[6] + v3c4l0[7];
+	assign v3c4l1_out[4] = v3c4l0[8] + v3c4l0[9];
+	assign v3c4l1_out[5] = v3c4l0[10] + v3c4l0[11];
+	assign v3c4l1_out[6] = v3c4l0[12] + v3c4l0[13];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v3c4l1[i] <= v3c4l1_out[i];
+    end
+
+	reg [4:0] v3c4l2 [0:3];
+	logic [4:0] v3c4l2_out [0:3];
+	assign v3c4l2_out[0] = v3c4l1[0] + v3c4l1[1];
+	assign v3c4l2_out[1] = v3c4l1[2] + v3c4l1[3];
+	assign v3c4l2_out[2] = v3c4l1[4] + v3c4l1[5];
+	assign v3c4l2_out[3] = v3c4l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v3c4l2[i] <= v3c4l2_out[i];
+    end
+
+	reg [5:0] v3c4l3 [0:1];
+	logic [5:0] v3c4l3_out [0:1];
+	assign v3c4l3_out[0] = v3c4l2[0] + v3c4l2[1];
+	assign v3c4l3_out[1] = v3c4l2[2] + v3c4l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v3c4l3[i] <= v3c4l3_out[i];
+    end
+
+	reg [6:0] v3c4l4 [0:0];
+	logic [6:0] v3c4l4_out [0:0];
+	assign v3c4l4_out[0] = v3c4l3[0] + v3c4l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c4l4[i] <= v3c4l4_out[i];
+    end
+
+	reg [7:0] v3c4l5 [0:0];
+	logic [7:0] v3c4l5_out [0:0];
+	assign v3c4l5_out[0] = v3c4l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c4l5[i] <= v3c4l5_out[i];
+    end
+
+	assign val[3] = v3c4l5[0];
 	
 	// -0.015625
 	logic [0:35] g4;
@@ -3536,7 +7740,76 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g4_reg <= g4;
     end
     
-	assign val[4] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3] + g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7] + g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11] + g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15] + g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19] + g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23] + g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27] + g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31] + g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	logic [2:0] v4c4l0_out [0:8];
+	logic [2:0] v4c4l0 [0:8];
+	assign v4c4l0_out[0] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3];
+	assign v4c4l0_out[1] = g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7];
+	assign v4c4l0_out[2] = g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11];
+	assign v4c4l0_out[3] = g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15];
+	assign v4c4l0_out[4] = g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19];
+	assign v4c4l0_out[5] = g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23];
+	assign v4c4l0_out[6] = g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27];
+	assign v4c4l0_out[7] = g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31];
+	assign v4c4l0_out[8] = g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v4c4l0[i] <= v4c4l0_out[i];
+    end
+
+	reg [3:0] v4c4l1 [0:4];
+	logic [3:0] v4c4l1_out [0:4];
+	assign v4c4l1_out[0] = v4c4l0[0] + v4c4l0[1];
+	assign v4c4l1_out[1] = v4c4l0[2] + v4c4l0[3];
+	assign v4c4l1_out[2] = v4c4l0[4] + v4c4l0[5];
+	assign v4c4l1_out[3] = v4c4l0[6] + v4c4l0[7];
+	assign v4c4l1_out[4] = v4c4l0[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v4c4l1[i] <= v4c4l1_out[i];
+    end
+
+	reg [4:0] v4c4l2 [0:2];
+	logic [4:0] v4c4l2_out [0:2];
+	assign v4c4l2_out[0] = v4c4l1[0] + v4c4l1[1];
+	assign v4c4l2_out[1] = v4c4l1[2] + v4c4l1[3];
+	assign v4c4l2_out[2] = v4c4l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v4c4l2[i] <= v4c4l2_out[i];
+    end
+
+	reg [5:0] v4c4l3 [0:1];
+	logic [5:0] v4c4l3_out [0:1];
+	assign v4c4l3_out[0] = v4c4l2[0] + v4c4l2[1];
+	assign v4c4l3_out[1] = v4c4l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v4c4l3[i] <= v4c4l3_out[i];
+    end
+
+	reg [6:0] v4c4l4 [0:0];
+	logic [6:0] v4c4l4_out [0:0];
+	assign v4c4l4_out[0] = v4c4l3[0] + v4c4l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c4l4[i] <= v4c4l4_out[i];
+    end
+
+	reg [7:0] v4c4l5 [0:0];
+	logic [7:0] v4c4l5_out [0:0];
+	assign v4c4l5_out[0] = v4c4l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c4l5[i] <= v4c4l5_out[i];
+    end
+
+	assign val[4] = v4c4l5[0];
 	
 	// 0.015625
 	logic [0:43] g5;
@@ -3590,7 +7863,79 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g5_reg <= g5;
     end
     
-	assign val[5] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3] + g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7] + g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11] + g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15] + g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19] + g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23] + g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27] + g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31] + g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35] + g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39] + g5_reg[40] + g5_reg[41] + g5_reg[42] + g5_reg[43];
+	logic [2:0] v5c4l0_out [0:10];
+	logic [2:0] v5c4l0 [0:10];
+	assign v5c4l0_out[0] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3];
+	assign v5c4l0_out[1] = g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7];
+	assign v5c4l0_out[2] = g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11];
+	assign v5c4l0_out[3] = g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15];
+	assign v5c4l0_out[4] = g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19];
+	assign v5c4l0_out[5] = g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23];
+	assign v5c4l0_out[6] = g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27];
+	assign v5c4l0_out[7] = g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31];
+	assign v5c4l0_out[8] = g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35];
+	assign v5c4l0_out[9] = g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39];
+	assign v5c4l0_out[10] = g5_reg[40] + g5_reg[41] + g5_reg[42] + g5_reg[43];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v5c4l0[i] <= v5c4l0_out[i];
+    end
+
+	reg [3:0] v5c4l1 [0:5];
+	logic [3:0] v5c4l1_out [0:5];
+	assign v5c4l1_out[0] = v5c4l0[0] + v5c4l0[1];
+	assign v5c4l1_out[1] = v5c4l0[2] + v5c4l0[3];
+	assign v5c4l1_out[2] = v5c4l0[4] + v5c4l0[5];
+	assign v5c4l1_out[3] = v5c4l0[6] + v5c4l0[7];
+	assign v5c4l1_out[4] = v5c4l0[8] + v5c4l0[9];
+	assign v5c4l1_out[5] = v5c4l0[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v5c4l1[i] <= v5c4l1_out[i];
+    end
+
+	reg [4:0] v5c4l2 [0:2];
+	logic [4:0] v5c4l2_out [0:2];
+	assign v5c4l2_out[0] = v5c4l1[0] + v5c4l1[1];
+	assign v5c4l2_out[1] = v5c4l1[2] + v5c4l1[3];
+	assign v5c4l2_out[2] = v5c4l1[4] + v5c4l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v5c4l2[i] <= v5c4l2_out[i];
+    end
+
+	reg [5:0] v5c4l3 [0:1];
+	logic [5:0] v5c4l3_out [0:1];
+	assign v5c4l3_out[0] = v5c4l2[0] + v5c4l2[1];
+	assign v5c4l3_out[1] = v5c4l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v5c4l3[i] <= v5c4l3_out[i];
+    end
+
+	reg [6:0] v5c4l4 [0:0];
+	logic [6:0] v5c4l4_out [0:0];
+	assign v5c4l4_out[0] = v5c4l3[0] + v5c4l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c4l4[i] <= v5c4l4_out[i];
+    end
+
+	reg [7:0] v5c4l5 [0:0];
+	logic [7:0] v5c4l5_out [0:0];
+	assign v5c4l5_out[0] = v5c4l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c4l5[i] <= v5c4l5_out[i];
+    end
+
+	assign val[5] = v5c4l5[0];
 	
 	// 0.03125
 	logic [0:56] g6;
@@ -3657,7 +8002,86 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g6_reg <= g6;
     end
     
-	assign val[6] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3] + g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7] + g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11] + g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15] + g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19] + g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23] + g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27] + g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31] + g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35] + g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39] + g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43] + g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47] + g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51] + g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55] + g6_reg[56];
+	logic [2:0] v6c4l0_out [0:14];
+	logic [2:0] v6c4l0 [0:14];
+	assign v6c4l0_out[0] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3];
+	assign v6c4l0_out[1] = g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7];
+	assign v6c4l0_out[2] = g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11];
+	assign v6c4l0_out[3] = g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15];
+	assign v6c4l0_out[4] = g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19];
+	assign v6c4l0_out[5] = g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23];
+	assign v6c4l0_out[6] = g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27];
+	assign v6c4l0_out[7] = g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31];
+	assign v6c4l0_out[8] = g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35];
+	assign v6c4l0_out[9] = g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39];
+	assign v6c4l0_out[10] = g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	assign v6c4l0_out[11] = g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47];
+	assign v6c4l0_out[12] = g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51];
+	assign v6c4l0_out[13] = g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55];
+	assign v6c4l0_out[14] = g6_reg[56];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 15; i = i + 1)
+            v6c4l0[i] <= v6c4l0_out[i];
+    end
+
+	reg [3:0] v6c4l1 [0:7];
+	logic [3:0] v6c4l1_out [0:7];
+	assign v6c4l1_out[0] = v6c4l0[0] + v6c4l0[1];
+	assign v6c4l1_out[1] = v6c4l0[2] + v6c4l0[3];
+	assign v6c4l1_out[2] = v6c4l0[4] + v6c4l0[5];
+	assign v6c4l1_out[3] = v6c4l0[6] + v6c4l0[7];
+	assign v6c4l1_out[4] = v6c4l0[8] + v6c4l0[9];
+	assign v6c4l1_out[5] = v6c4l0[10] + v6c4l0[11];
+	assign v6c4l1_out[6] = v6c4l0[12] + v6c4l0[13];
+	assign v6c4l1_out[7] = v6c4l0[14];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v6c4l1[i] <= v6c4l1_out[i];
+    end
+
+	reg [4:0] v6c4l2 [0:3];
+	logic [4:0] v6c4l2_out [0:3];
+	assign v6c4l2_out[0] = v6c4l1[0] + v6c4l1[1];
+	assign v6c4l2_out[1] = v6c4l1[2] + v6c4l1[3];
+	assign v6c4l2_out[2] = v6c4l1[4] + v6c4l1[5];
+	assign v6c4l2_out[3] = v6c4l1[6] + v6c4l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v6c4l2[i] <= v6c4l2_out[i];
+    end
+
+	reg [5:0] v6c4l3 [0:1];
+	logic [5:0] v6c4l3_out [0:1];
+	assign v6c4l3_out[0] = v6c4l2[0] + v6c4l2[1];
+	assign v6c4l3_out[1] = v6c4l2[2] + v6c4l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v6c4l3[i] <= v6c4l3_out[i];
+    end
+
+	reg [6:0] v6c4l4 [0:0];
+	logic [6:0] v6c4l4_out [0:0];
+	assign v6c4l4_out[0] = v6c4l3[0] + v6c4l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c4l4[i] <= v6c4l4_out[i];
+    end
+
+	reg [7:0] v6c4l5 [0:0];
+	logic [7:0] v6c4l5_out [0:0];
+	assign v6c4l5_out[0] = v6c4l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c4l5[i] <= v6c4l5_out[i];
+    end
+
+	assign val[6] = v6c4l5[0];
 	
 	// 0.0625
 	logic [0:76] g7;
@@ -3744,7 +8168,96 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g7_reg <= g7;
     end
     
-	assign val[7] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3] + g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7] + g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11] + g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15] + g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19] + g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23] + g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27] + g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31] + g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35] + g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39] + g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43] + g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47] + g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51] + g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55] + g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59] + g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63] + g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67] + g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71] + g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75] + g7_reg[76];
+	logic [2:0] v7c4l0_out [0:19];
+	logic [2:0] v7c4l0 [0:19];
+	assign v7c4l0_out[0] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3];
+	assign v7c4l0_out[1] = g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7];
+	assign v7c4l0_out[2] = g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11];
+	assign v7c4l0_out[3] = g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15];
+	assign v7c4l0_out[4] = g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19];
+	assign v7c4l0_out[5] = g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23];
+	assign v7c4l0_out[6] = g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27];
+	assign v7c4l0_out[7] = g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31];
+	assign v7c4l0_out[8] = g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35];
+	assign v7c4l0_out[9] = g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39];
+	assign v7c4l0_out[10] = g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43];
+	assign v7c4l0_out[11] = g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47];
+	assign v7c4l0_out[12] = g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51];
+	assign v7c4l0_out[13] = g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55];
+	assign v7c4l0_out[14] = g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59];
+	assign v7c4l0_out[15] = g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63];
+	assign v7c4l0_out[16] = g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67];
+	assign v7c4l0_out[17] = g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71];
+	assign v7c4l0_out[18] = g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75];
+	assign v7c4l0_out[19] = g7_reg[76];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 20; i = i + 1)
+            v7c4l0[i] <= v7c4l0_out[i];
+    end
+
+	reg [3:0] v7c4l1 [0:9];
+	logic [3:0] v7c4l1_out [0:9];
+	assign v7c4l1_out[0] = v7c4l0[0] + v7c4l0[1];
+	assign v7c4l1_out[1] = v7c4l0[2] + v7c4l0[3];
+	assign v7c4l1_out[2] = v7c4l0[4] + v7c4l0[5];
+	assign v7c4l1_out[3] = v7c4l0[6] + v7c4l0[7];
+	assign v7c4l1_out[4] = v7c4l0[8] + v7c4l0[9];
+	assign v7c4l1_out[5] = v7c4l0[10] + v7c4l0[11];
+	assign v7c4l1_out[6] = v7c4l0[12] + v7c4l0[13];
+	assign v7c4l1_out[7] = v7c4l0[14] + v7c4l0[15];
+	assign v7c4l1_out[8] = v7c4l0[16] + v7c4l0[17];
+	assign v7c4l1_out[9] = v7c4l0[18] + v7c4l0[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v7c4l1[i] <= v7c4l1_out[i];
+    end
+
+	reg [4:0] v7c4l2 [0:4];
+	logic [4:0] v7c4l2_out [0:4];
+	assign v7c4l2_out[0] = v7c4l1[0] + v7c4l1[1];
+	assign v7c4l2_out[1] = v7c4l1[2] + v7c4l1[3];
+	assign v7c4l2_out[2] = v7c4l1[4] + v7c4l1[5];
+	assign v7c4l2_out[3] = v7c4l1[6] + v7c4l1[7];
+	assign v7c4l2_out[4] = v7c4l1[8] + v7c4l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v7c4l2[i] <= v7c4l2_out[i];
+    end
+
+	reg [5:0] v7c4l3 [0:2];
+	logic [5:0] v7c4l3_out [0:2];
+	assign v7c4l3_out[0] = v7c4l2[0] + v7c4l2[1];
+	assign v7c4l3_out[1] = v7c4l2[2] + v7c4l2[3];
+	assign v7c4l3_out[2] = v7c4l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v7c4l3[i] <= v7c4l3_out[i];
+    end
+
+	reg [6:0] v7c4l4 [0:1];
+	logic [6:0] v7c4l4_out [0:1];
+	assign v7c4l4_out[0] = v7c4l3[0] + v7c4l3[1];
+	assign v7c4l4_out[1] = v7c4l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v7c4l4[i] <= v7c4l4_out[i];
+    end
+
+	reg [7:0] v7c4l5 [0:0];
+	logic [7:0] v7c4l5_out [0:0];
+	assign v7c4l5_out[0] = v7c4l4[0] + v7c4l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c4l5[i] <= v7c4l5_out[i];
+    end
+
+	assign val[7] = v7c4l5[0];
 	
 	// 0.125
 	logic [0:71] g8;
@@ -3826,7 +8339,93 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g8_reg <= g8;
     end
     
-	assign val[8] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3] + g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7] + g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11] + g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15] + g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19] + g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23] + g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27] + g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31] + g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35] + g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39] + g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43] + g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47] + g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51] + g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55] + g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59] + g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63] + g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67] + g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71];
+	logic [2:0] v8c4l0_out [0:17];
+	logic [2:0] v8c4l0 [0:17];
+	assign v8c4l0_out[0] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3];
+	assign v8c4l0_out[1] = g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7];
+	assign v8c4l0_out[2] = g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11];
+	assign v8c4l0_out[3] = g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15];
+	assign v8c4l0_out[4] = g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19];
+	assign v8c4l0_out[5] = g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23];
+	assign v8c4l0_out[6] = g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27];
+	assign v8c4l0_out[7] = g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31];
+	assign v8c4l0_out[8] = g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35];
+	assign v8c4l0_out[9] = g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39];
+	assign v8c4l0_out[10] = g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43];
+	assign v8c4l0_out[11] = g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47];
+	assign v8c4l0_out[12] = g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51];
+	assign v8c4l0_out[13] = g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55];
+	assign v8c4l0_out[14] = g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59];
+	assign v8c4l0_out[15] = g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63];
+	assign v8c4l0_out[16] = g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67];
+	assign v8c4l0_out[17] = g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 18; i = i + 1)
+            v8c4l0[i] <= v8c4l0_out[i];
+    end
+
+	reg [3:0] v8c4l1 [0:8];
+	logic [3:0] v8c4l1_out [0:8];
+	assign v8c4l1_out[0] = v8c4l0[0] + v8c4l0[1];
+	assign v8c4l1_out[1] = v8c4l0[2] + v8c4l0[3];
+	assign v8c4l1_out[2] = v8c4l0[4] + v8c4l0[5];
+	assign v8c4l1_out[3] = v8c4l0[6] + v8c4l0[7];
+	assign v8c4l1_out[4] = v8c4l0[8] + v8c4l0[9];
+	assign v8c4l1_out[5] = v8c4l0[10] + v8c4l0[11];
+	assign v8c4l1_out[6] = v8c4l0[12] + v8c4l0[13];
+	assign v8c4l1_out[7] = v8c4l0[14] + v8c4l0[15];
+	assign v8c4l1_out[8] = v8c4l0[16] + v8c4l0[17];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v8c4l1[i] <= v8c4l1_out[i];
+    end
+
+	reg [4:0] v8c4l2 [0:4];
+	logic [4:0] v8c4l2_out [0:4];
+	assign v8c4l2_out[0] = v8c4l1[0] + v8c4l1[1];
+	assign v8c4l2_out[1] = v8c4l1[2] + v8c4l1[3];
+	assign v8c4l2_out[2] = v8c4l1[4] + v8c4l1[5];
+	assign v8c4l2_out[3] = v8c4l1[6] + v8c4l1[7];
+	assign v8c4l2_out[4] = v8c4l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v8c4l2[i] <= v8c4l2_out[i];
+    end
+
+	reg [5:0] v8c4l3 [0:2];
+	logic [5:0] v8c4l3_out [0:2];
+	assign v8c4l3_out[0] = v8c4l2[0] + v8c4l2[1];
+	assign v8c4l3_out[1] = v8c4l2[2] + v8c4l2[3];
+	assign v8c4l3_out[2] = v8c4l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v8c4l3[i] <= v8c4l3_out[i];
+    end
+
+	reg [6:0] v8c4l4 [0:1];
+	logic [6:0] v8c4l4_out [0:1];
+	assign v8c4l4_out[0] = v8c4l3[0] + v8c4l3[1];
+	assign v8c4l4_out[1] = v8c4l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v8c4l4[i] <= v8c4l4_out[i];
+    end
+
+	reg [7:0] v8c4l5 [0:0];
+	logic [7:0] v8c4l5_out [0:0];
+	assign v8c4l5_out[0] = v8c4l4[0] + v8c4l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v8c4l5[i] <= v8c4l5_out[i];
+    end
+
+	assign val[8] = v8c4l5[0];
 	
 	// 0.25
 	logic [0:35] g9;
@@ -3872,7 +8471,76 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g9_reg <= g9;
     end
     
-	assign val[9] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3] + g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7] + g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11] + g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15] + g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19] + g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23] + g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27] + g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31] + g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	logic [2:0] v9c4l0_out [0:8];
+	logic [2:0] v9c4l0 [0:8];
+	assign v9c4l0_out[0] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3];
+	assign v9c4l0_out[1] = g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7];
+	assign v9c4l0_out[2] = g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11];
+	assign v9c4l0_out[3] = g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15];
+	assign v9c4l0_out[4] = g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19];
+	assign v9c4l0_out[5] = g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23];
+	assign v9c4l0_out[6] = g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27];
+	assign v9c4l0_out[7] = g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31];
+	assign v9c4l0_out[8] = g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v9c4l0[i] <= v9c4l0_out[i];
+    end
+
+	reg [3:0] v9c4l1 [0:4];
+	logic [3:0] v9c4l1_out [0:4];
+	assign v9c4l1_out[0] = v9c4l0[0] + v9c4l0[1];
+	assign v9c4l1_out[1] = v9c4l0[2] + v9c4l0[3];
+	assign v9c4l1_out[2] = v9c4l0[4] + v9c4l0[5];
+	assign v9c4l1_out[3] = v9c4l0[6] + v9c4l0[7];
+	assign v9c4l1_out[4] = v9c4l0[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v9c4l1[i] <= v9c4l1_out[i];
+    end
+
+	reg [4:0] v9c4l2 [0:2];
+	logic [4:0] v9c4l2_out [0:2];
+	assign v9c4l2_out[0] = v9c4l1[0] + v9c4l1[1];
+	assign v9c4l2_out[1] = v9c4l1[2] + v9c4l1[3];
+	assign v9c4l2_out[2] = v9c4l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v9c4l2[i] <= v9c4l2_out[i];
+    end
+
+	reg [5:0] v9c4l3 [0:1];
+	logic [5:0] v9c4l3_out [0:1];
+	assign v9c4l3_out[0] = v9c4l2[0] + v9c4l2[1];
+	assign v9c4l3_out[1] = v9c4l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v9c4l3[i] <= v9c4l3_out[i];
+    end
+
+	reg [6:0] v9c4l4 [0:0];
+	logic [6:0] v9c4l4_out [0:0];
+	assign v9c4l4_out[0] = v9c4l3[0] + v9c4l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c4l4[i] <= v9c4l4_out[i];
+    end
+
+	reg [7:0] v9c4l5 [0:0];
+	logic [7:0] v9c4l5_out [0:0];
+	assign v9c4l5_out[0] = v9c4l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c4l5[i] <= v9c4l5_out[i];
+    end
+
+	assign val[9] = v9c4l5[0];
 	
 	// 0.5
 	logic [0:3] g10;
@@ -3886,7 +8554,61 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g10_reg <= g10;
     end
     
-	assign val[10] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	logic [2:0] v10c4l0_out [0:0];
+	logic [2:0] v10c4l0 [0:0];
+	assign v10c4l0_out[0] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c4l0[i] <= v10c4l0_out[i];
+    end
+
+	reg [3:0] v10c4l1 [0:0];
+	logic [3:0] v10c4l1_out [0:0];
+	assign v10c4l1_out[0] = v10c4l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c4l1[i] <= v10c4l1_out[i];
+    end
+
+	reg [4:0] v10c4l2 [0:0];
+	logic [4:0] v10c4l2_out [0:0];
+	assign v10c4l2_out[0] = v10c4l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c4l2[i] <= v10c4l2_out[i];
+    end
+
+	reg [5:0] v10c4l3 [0:0];
+	logic [5:0] v10c4l3_out [0:0];
+	assign v10c4l3_out[0] = v10c4l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c4l3[i] <= v10c4l3_out[i];
+    end
+
+	reg [6:0] v10c4l4 [0:0];
+	logic [6:0] v10c4l4_out [0:0];
+	assign v10c4l4_out[0] = v10c4l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c4l4[i] <= v10c4l4_out[i];
+    end
+
+	reg [7:0] v10c4l5 [0:0];
+	logic [7:0] v10c4l5_out [0:0];
+	assign v10c4l5_out[0] = v10c4l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c4l5[i] <= v10c4l5_out[i];
+    end
+
+	assign val[10] = v10c4l5[0];
 	
 	// 1.0
 	logic [0:0] g11;
@@ -3897,7 +8619,61 @@ module leaf_counter_4(input logic clk, input logic [0:1315] l, output logic [7:0
         g11_reg <= g11;
     end
     
-	assign val[11] = g11_reg[0];
+	logic [2:0] v11c4l0_out [0:0];
+	logic [2:0] v11c4l0 [0:0];
+	assign v11c4l0_out[0] = g11_reg[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c4l0[i] <= v11c4l0_out[i];
+    end
+
+	reg [3:0] v11c4l1 [0:0];
+	logic [3:0] v11c4l1_out [0:0];
+	assign v11c4l1_out[0] = v11c4l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c4l1[i] <= v11c4l1_out[i];
+    end
+
+	reg [4:0] v11c4l2 [0:0];
+	logic [4:0] v11c4l2_out [0:0];
+	assign v11c4l2_out[0] = v11c4l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c4l2[i] <= v11c4l2_out[i];
+    end
+
+	reg [5:0] v11c4l3 [0:0];
+	logic [5:0] v11c4l3_out [0:0];
+	assign v11c4l3_out[0] = v11c4l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c4l3[i] <= v11c4l3_out[i];
+    end
+
+	reg [6:0] v11c4l4 [0:0];
+	logic [6:0] v11c4l4_out [0:0];
+	assign v11c4l4_out[0] = v11c4l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c4l4[i] <= v11c4l4_out[i];
+    end
+
+	reg [7:0] v11c4l5 [0:0];
+	logic [7:0] v11c4l5_out [0:0];
+	assign v11c4l5_out[0] = v11c4l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c4l5[i] <= v11c4l5_out[i];
+    end
+
+	assign val[11] = v11c4l5[0];
 	
 	// 2.0
 	assign val[12] = 0;
@@ -3906,6 +8682,7 @@ endmodule
 
 
 module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0] val [0:12]);
+    integer i;
 	// -0.25
 	logic [0:53] g0;
 	reg [0:53] g0_reg;
@@ -3968,7 +8745,84 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g0_reg <= g0;
     end
     
-	assign val[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3] + g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7] + g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11] + g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15] + g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19] + g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23] + g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27] + g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31] + g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35] + g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39] + g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43] + g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47] + g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51] + g0_reg[52] + g0_reg[53];
+	logic [2:0] v0c5l0_out [0:13];
+	logic [2:0] v0c5l0 [0:13];
+	assign v0c5l0_out[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3];
+	assign v0c5l0_out[1] = g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7];
+	assign v0c5l0_out[2] = g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11];
+	assign v0c5l0_out[3] = g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15];
+	assign v0c5l0_out[4] = g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19];
+	assign v0c5l0_out[5] = g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23];
+	assign v0c5l0_out[6] = g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27];
+	assign v0c5l0_out[7] = g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31];
+	assign v0c5l0_out[8] = g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35];
+	assign v0c5l0_out[9] = g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39];
+	assign v0c5l0_out[10] = g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43];
+	assign v0c5l0_out[11] = g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47];
+	assign v0c5l0_out[12] = g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51];
+	assign v0c5l0_out[13] = g0_reg[52] + g0_reg[53];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 14; i = i + 1)
+            v0c5l0[i] <= v0c5l0_out[i];
+    end
+
+	reg [3:0] v0c5l1 [0:6];
+	logic [3:0] v0c5l1_out [0:6];
+	assign v0c5l1_out[0] = v0c5l0[0] + v0c5l0[1];
+	assign v0c5l1_out[1] = v0c5l0[2] + v0c5l0[3];
+	assign v0c5l1_out[2] = v0c5l0[4] + v0c5l0[5];
+	assign v0c5l1_out[3] = v0c5l0[6] + v0c5l0[7];
+	assign v0c5l1_out[4] = v0c5l0[8] + v0c5l0[9];
+	assign v0c5l1_out[5] = v0c5l0[10] + v0c5l0[11];
+	assign v0c5l1_out[6] = v0c5l0[12] + v0c5l0[13];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v0c5l1[i] <= v0c5l1_out[i];
+    end
+
+	reg [4:0] v0c5l2 [0:3];
+	logic [4:0] v0c5l2_out [0:3];
+	assign v0c5l2_out[0] = v0c5l1[0] + v0c5l1[1];
+	assign v0c5l2_out[1] = v0c5l1[2] + v0c5l1[3];
+	assign v0c5l2_out[2] = v0c5l1[4] + v0c5l1[5];
+	assign v0c5l2_out[3] = v0c5l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v0c5l2[i] <= v0c5l2_out[i];
+    end
+
+	reg [5:0] v0c5l3 [0:1];
+	logic [5:0] v0c5l3_out [0:1];
+	assign v0c5l3_out[0] = v0c5l2[0] + v0c5l2[1];
+	assign v0c5l3_out[1] = v0c5l2[2] + v0c5l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v0c5l3[i] <= v0c5l3_out[i];
+    end
+
+	reg [6:0] v0c5l4 [0:0];
+	logic [6:0] v0c5l4_out [0:0];
+	assign v0c5l4_out[0] = v0c5l3[0] + v0c5l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c5l4[i] <= v0c5l4_out[i];
+    end
+
+	reg [7:0] v0c5l5 [0:0];
+	logic [7:0] v0c5l5_out [0:0];
+	assign v0c5l5_out[0] = v0c5l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c5l5[i] <= v0c5l5_out[i];
+    end
+
+	assign val[0] = v0c5l5[0];
 	
 	// -0.125
 	logic [0:95] g1;
@@ -4074,7 +8928,103 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g1_reg <= g1;
     end
     
-	assign val[1] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3] + g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7] + g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11] + g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15] + g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19] + g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23] + g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27] + g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31] + g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35] + g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39] + g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43] + g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47] + g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51] + g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55] + g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59] + g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63] + g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67] + g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71] + g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75] + g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79] + g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83] + g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87] + g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91] + g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	logic [2:0] v1c5l0_out [0:23];
+	logic [2:0] v1c5l0 [0:23];
+	assign v1c5l0_out[0] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3];
+	assign v1c5l0_out[1] = g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7];
+	assign v1c5l0_out[2] = g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11];
+	assign v1c5l0_out[3] = g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15];
+	assign v1c5l0_out[4] = g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19];
+	assign v1c5l0_out[5] = g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23];
+	assign v1c5l0_out[6] = g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27];
+	assign v1c5l0_out[7] = g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31];
+	assign v1c5l0_out[8] = g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35];
+	assign v1c5l0_out[9] = g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39];
+	assign v1c5l0_out[10] = g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43];
+	assign v1c5l0_out[11] = g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47];
+	assign v1c5l0_out[12] = g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51];
+	assign v1c5l0_out[13] = g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55];
+	assign v1c5l0_out[14] = g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59];
+	assign v1c5l0_out[15] = g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63];
+	assign v1c5l0_out[16] = g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67];
+	assign v1c5l0_out[17] = g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71];
+	assign v1c5l0_out[18] = g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75];
+	assign v1c5l0_out[19] = g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79];
+	assign v1c5l0_out[20] = g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83];
+	assign v1c5l0_out[21] = g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87];
+	assign v1c5l0_out[22] = g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91];
+	assign v1c5l0_out[23] = g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 24; i = i + 1)
+            v1c5l0[i] <= v1c5l0_out[i];
+    end
+
+	reg [3:0] v1c5l1 [0:11];
+	logic [3:0] v1c5l1_out [0:11];
+	assign v1c5l1_out[0] = v1c5l0[0] + v1c5l0[1];
+	assign v1c5l1_out[1] = v1c5l0[2] + v1c5l0[3];
+	assign v1c5l1_out[2] = v1c5l0[4] + v1c5l0[5];
+	assign v1c5l1_out[3] = v1c5l0[6] + v1c5l0[7];
+	assign v1c5l1_out[4] = v1c5l0[8] + v1c5l0[9];
+	assign v1c5l1_out[5] = v1c5l0[10] + v1c5l0[11];
+	assign v1c5l1_out[6] = v1c5l0[12] + v1c5l0[13];
+	assign v1c5l1_out[7] = v1c5l0[14] + v1c5l0[15];
+	assign v1c5l1_out[8] = v1c5l0[16] + v1c5l0[17];
+	assign v1c5l1_out[9] = v1c5l0[18] + v1c5l0[19];
+	assign v1c5l1_out[10] = v1c5l0[20] + v1c5l0[21];
+	assign v1c5l1_out[11] = v1c5l0[22] + v1c5l0[23];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 12; i = i + 1)
+            v1c5l1[i] <= v1c5l1_out[i];
+    end
+
+	reg [4:0] v1c5l2 [0:5];
+	logic [4:0] v1c5l2_out [0:5];
+	assign v1c5l2_out[0] = v1c5l1[0] + v1c5l1[1];
+	assign v1c5l2_out[1] = v1c5l1[2] + v1c5l1[3];
+	assign v1c5l2_out[2] = v1c5l1[4] + v1c5l1[5];
+	assign v1c5l2_out[3] = v1c5l1[6] + v1c5l1[7];
+	assign v1c5l2_out[4] = v1c5l1[8] + v1c5l1[9];
+	assign v1c5l2_out[5] = v1c5l1[10] + v1c5l1[11];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v1c5l2[i] <= v1c5l2_out[i];
+    end
+
+	reg [5:0] v1c5l3 [0:2];
+	logic [5:0] v1c5l3_out [0:2];
+	assign v1c5l3_out[0] = v1c5l2[0] + v1c5l2[1];
+	assign v1c5l3_out[1] = v1c5l2[2] + v1c5l2[3];
+	assign v1c5l3_out[2] = v1c5l2[4] + v1c5l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v1c5l3[i] <= v1c5l3_out[i];
+    end
+
+	reg [6:0] v1c5l4 [0:1];
+	logic [6:0] v1c5l4_out [0:1];
+	assign v1c5l4_out[0] = v1c5l3[0] + v1c5l3[1];
+	assign v1c5l4_out[1] = v1c5l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v1c5l4[i] <= v1c5l4_out[i];
+    end
+
+	reg [7:0] v1c5l5 [0:0];
+	logic [7:0] v1c5l5_out [0:0];
+	assign v1c5l5_out[0] = v1c5l4[0] + v1c5l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v1c5l5[i] <= v1c5l5_out[i];
+    end
+
+	assign val[1] = v1c5l5[0];
 	
 	// -0.0625
 	logic [0:82] g2;
@@ -4167,7 +9117,99 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g2_reg <= g2;
     end
     
-	assign val[2] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3] + g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7] + g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11] + g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15] + g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19] + g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23] + g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27] + g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31] + g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35] + g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39] + g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43] + g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47] + g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51] + g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55] + g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59] + g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63] + g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67] + g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71] + g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75] + g2_reg[76] + g2_reg[77] + g2_reg[78] + g2_reg[79] + g2_reg[80] + g2_reg[81] + g2_reg[82];
+	logic [2:0] v2c5l0_out [0:20];
+	logic [2:0] v2c5l0 [0:20];
+	assign v2c5l0_out[0] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3];
+	assign v2c5l0_out[1] = g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7];
+	assign v2c5l0_out[2] = g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11];
+	assign v2c5l0_out[3] = g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15];
+	assign v2c5l0_out[4] = g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19];
+	assign v2c5l0_out[5] = g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23];
+	assign v2c5l0_out[6] = g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27];
+	assign v2c5l0_out[7] = g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31];
+	assign v2c5l0_out[8] = g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35];
+	assign v2c5l0_out[9] = g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39];
+	assign v2c5l0_out[10] = g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43];
+	assign v2c5l0_out[11] = g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47];
+	assign v2c5l0_out[12] = g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51];
+	assign v2c5l0_out[13] = g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55];
+	assign v2c5l0_out[14] = g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59];
+	assign v2c5l0_out[15] = g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63];
+	assign v2c5l0_out[16] = g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67];
+	assign v2c5l0_out[17] = g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71];
+	assign v2c5l0_out[18] = g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75];
+	assign v2c5l0_out[19] = g2_reg[76] + g2_reg[77] + g2_reg[78] + g2_reg[79];
+	assign v2c5l0_out[20] = g2_reg[80] + g2_reg[81] + g2_reg[82];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 21; i = i + 1)
+            v2c5l0[i] <= v2c5l0_out[i];
+    end
+
+	reg [3:0] v2c5l1 [0:10];
+	logic [3:0] v2c5l1_out [0:10];
+	assign v2c5l1_out[0] = v2c5l0[0] + v2c5l0[1];
+	assign v2c5l1_out[1] = v2c5l0[2] + v2c5l0[3];
+	assign v2c5l1_out[2] = v2c5l0[4] + v2c5l0[5];
+	assign v2c5l1_out[3] = v2c5l0[6] + v2c5l0[7];
+	assign v2c5l1_out[4] = v2c5l0[8] + v2c5l0[9];
+	assign v2c5l1_out[5] = v2c5l0[10] + v2c5l0[11];
+	assign v2c5l1_out[6] = v2c5l0[12] + v2c5l0[13];
+	assign v2c5l1_out[7] = v2c5l0[14] + v2c5l0[15];
+	assign v2c5l1_out[8] = v2c5l0[16] + v2c5l0[17];
+	assign v2c5l1_out[9] = v2c5l0[18] + v2c5l0[19];
+	assign v2c5l1_out[10] = v2c5l0[20];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v2c5l1[i] <= v2c5l1_out[i];
+    end
+
+	reg [4:0] v2c5l2 [0:5];
+	logic [4:0] v2c5l2_out [0:5];
+	assign v2c5l2_out[0] = v2c5l1[0] + v2c5l1[1];
+	assign v2c5l2_out[1] = v2c5l1[2] + v2c5l1[3];
+	assign v2c5l2_out[2] = v2c5l1[4] + v2c5l1[5];
+	assign v2c5l2_out[3] = v2c5l1[6] + v2c5l1[7];
+	assign v2c5l2_out[4] = v2c5l1[8] + v2c5l1[9];
+	assign v2c5l2_out[5] = v2c5l1[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v2c5l2[i] <= v2c5l2_out[i];
+    end
+
+	reg [5:0] v2c5l3 [0:2];
+	logic [5:0] v2c5l3_out [0:2];
+	assign v2c5l3_out[0] = v2c5l2[0] + v2c5l2[1];
+	assign v2c5l3_out[1] = v2c5l2[2] + v2c5l2[3];
+	assign v2c5l3_out[2] = v2c5l2[4] + v2c5l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v2c5l3[i] <= v2c5l3_out[i];
+    end
+
+	reg [6:0] v2c5l4 [0:1];
+	logic [6:0] v2c5l4_out [0:1];
+	assign v2c5l4_out[0] = v2c5l3[0] + v2c5l3[1];
+	assign v2c5l4_out[1] = v2c5l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v2c5l4[i] <= v2c5l4_out[i];
+    end
+
+	reg [7:0] v2c5l5 [0:0];
+	logic [7:0] v2c5l5_out [0:0];
+	assign v2c5l5_out[0] = v2c5l4[0] + v2c5l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v2c5l5[i] <= v2c5l5_out[i];
+    end
+
+	assign val[2] = v2c5l5[0];
 	
 	// -0.03125
 	logic [0:68] g3;
@@ -4246,7 +9288,93 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g3_reg <= g3;
     end
     
-	assign val[3] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3] + g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7] + g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11] + g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15] + g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19] + g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23] + g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27] + g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31] + g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35] + g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39] + g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43] + g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47] + g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51] + g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55] + g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59] + g3_reg[60] + g3_reg[61] + g3_reg[62] + g3_reg[63] + g3_reg[64] + g3_reg[65] + g3_reg[66] + g3_reg[67] + g3_reg[68];
+	logic [2:0] v3c5l0_out [0:17];
+	logic [2:0] v3c5l0 [0:17];
+	assign v3c5l0_out[0] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3];
+	assign v3c5l0_out[1] = g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7];
+	assign v3c5l0_out[2] = g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11];
+	assign v3c5l0_out[3] = g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15];
+	assign v3c5l0_out[4] = g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19];
+	assign v3c5l0_out[5] = g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23];
+	assign v3c5l0_out[6] = g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27];
+	assign v3c5l0_out[7] = g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31];
+	assign v3c5l0_out[8] = g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35];
+	assign v3c5l0_out[9] = g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39];
+	assign v3c5l0_out[10] = g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43];
+	assign v3c5l0_out[11] = g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47];
+	assign v3c5l0_out[12] = g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51];
+	assign v3c5l0_out[13] = g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55];
+	assign v3c5l0_out[14] = g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59];
+	assign v3c5l0_out[15] = g3_reg[60] + g3_reg[61] + g3_reg[62] + g3_reg[63];
+	assign v3c5l0_out[16] = g3_reg[64] + g3_reg[65] + g3_reg[66] + g3_reg[67];
+	assign v3c5l0_out[17] = g3_reg[68];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 18; i = i + 1)
+            v3c5l0[i] <= v3c5l0_out[i];
+    end
+
+	reg [3:0] v3c5l1 [0:8];
+	logic [3:0] v3c5l1_out [0:8];
+	assign v3c5l1_out[0] = v3c5l0[0] + v3c5l0[1];
+	assign v3c5l1_out[1] = v3c5l0[2] + v3c5l0[3];
+	assign v3c5l1_out[2] = v3c5l0[4] + v3c5l0[5];
+	assign v3c5l1_out[3] = v3c5l0[6] + v3c5l0[7];
+	assign v3c5l1_out[4] = v3c5l0[8] + v3c5l0[9];
+	assign v3c5l1_out[5] = v3c5l0[10] + v3c5l0[11];
+	assign v3c5l1_out[6] = v3c5l0[12] + v3c5l0[13];
+	assign v3c5l1_out[7] = v3c5l0[14] + v3c5l0[15];
+	assign v3c5l1_out[8] = v3c5l0[16] + v3c5l0[17];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v3c5l1[i] <= v3c5l1_out[i];
+    end
+
+	reg [4:0] v3c5l2 [0:4];
+	logic [4:0] v3c5l2_out [0:4];
+	assign v3c5l2_out[0] = v3c5l1[0] + v3c5l1[1];
+	assign v3c5l2_out[1] = v3c5l1[2] + v3c5l1[3];
+	assign v3c5l2_out[2] = v3c5l1[4] + v3c5l1[5];
+	assign v3c5l2_out[3] = v3c5l1[6] + v3c5l1[7];
+	assign v3c5l2_out[4] = v3c5l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v3c5l2[i] <= v3c5l2_out[i];
+    end
+
+	reg [5:0] v3c5l3 [0:2];
+	logic [5:0] v3c5l3_out [0:2];
+	assign v3c5l3_out[0] = v3c5l2[0] + v3c5l2[1];
+	assign v3c5l3_out[1] = v3c5l2[2] + v3c5l2[3];
+	assign v3c5l3_out[2] = v3c5l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v3c5l3[i] <= v3c5l3_out[i];
+    end
+
+	reg [6:0] v3c5l4 [0:1];
+	logic [6:0] v3c5l4_out [0:1];
+	assign v3c5l4_out[0] = v3c5l3[0] + v3c5l3[1];
+	assign v3c5l4_out[1] = v3c5l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v3c5l4[i] <= v3c5l4_out[i];
+    end
+
+	reg [7:0] v3c5l5 [0:0];
+	logic [7:0] v3c5l5_out [0:0];
+	assign v3c5l5_out[0] = v3c5l4[0] + v3c5l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c5l5[i] <= v3c5l5_out[i];
+    end
+
+	assign val[3] = v3c5l5[0];
 	
 	// -0.015625
 	logic [0:39] g4;
@@ -4296,7 +9424,77 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g4_reg <= g4;
     end
     
-	assign val[4] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3] + g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7] + g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11] + g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15] + g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19] + g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23] + g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27] + g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31] + g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35] + g4_reg[36] + g4_reg[37] + g4_reg[38] + g4_reg[39];
+	logic [2:0] v4c5l0_out [0:9];
+	logic [2:0] v4c5l0 [0:9];
+	assign v4c5l0_out[0] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3];
+	assign v4c5l0_out[1] = g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7];
+	assign v4c5l0_out[2] = g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11];
+	assign v4c5l0_out[3] = g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15];
+	assign v4c5l0_out[4] = g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19];
+	assign v4c5l0_out[5] = g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23];
+	assign v4c5l0_out[6] = g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27];
+	assign v4c5l0_out[7] = g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31];
+	assign v4c5l0_out[8] = g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	assign v4c5l0_out[9] = g4_reg[36] + g4_reg[37] + g4_reg[38] + g4_reg[39];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v4c5l0[i] <= v4c5l0_out[i];
+    end
+
+	reg [3:0] v4c5l1 [0:4];
+	logic [3:0] v4c5l1_out [0:4];
+	assign v4c5l1_out[0] = v4c5l0[0] + v4c5l0[1];
+	assign v4c5l1_out[1] = v4c5l0[2] + v4c5l0[3];
+	assign v4c5l1_out[2] = v4c5l0[4] + v4c5l0[5];
+	assign v4c5l1_out[3] = v4c5l0[6] + v4c5l0[7];
+	assign v4c5l1_out[4] = v4c5l0[8] + v4c5l0[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v4c5l1[i] <= v4c5l1_out[i];
+    end
+
+	reg [4:0] v4c5l2 [0:2];
+	logic [4:0] v4c5l2_out [0:2];
+	assign v4c5l2_out[0] = v4c5l1[0] + v4c5l1[1];
+	assign v4c5l2_out[1] = v4c5l1[2] + v4c5l1[3];
+	assign v4c5l2_out[2] = v4c5l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v4c5l2[i] <= v4c5l2_out[i];
+    end
+
+	reg [5:0] v4c5l3 [0:1];
+	logic [5:0] v4c5l3_out [0:1];
+	assign v4c5l3_out[0] = v4c5l2[0] + v4c5l2[1];
+	assign v4c5l3_out[1] = v4c5l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v4c5l3[i] <= v4c5l3_out[i];
+    end
+
+	reg [6:0] v4c5l4 [0:0];
+	logic [6:0] v4c5l4_out [0:0];
+	assign v4c5l4_out[0] = v4c5l3[0] + v4c5l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c5l4[i] <= v4c5l4_out[i];
+    end
+
+	reg [7:0] v4c5l5 [0:0];
+	logic [7:0] v4c5l5_out [0:0];
+	assign v4c5l5_out[0] = v4c5l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c5l5[i] <= v4c5l5_out[i];
+    end
+
+	assign val[4] = v4c5l5[0];
 	
 	// 0.015625
 	logic [0:32] g5;
@@ -4339,7 +9537,76 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g5_reg <= g5;
     end
     
-	assign val[5] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3] + g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7] + g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11] + g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15] + g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19] + g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23] + g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27] + g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31] + g5_reg[32];
+	logic [2:0] v5c5l0_out [0:8];
+	logic [2:0] v5c5l0 [0:8];
+	assign v5c5l0_out[0] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3];
+	assign v5c5l0_out[1] = g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7];
+	assign v5c5l0_out[2] = g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11];
+	assign v5c5l0_out[3] = g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15];
+	assign v5c5l0_out[4] = g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19];
+	assign v5c5l0_out[5] = g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23];
+	assign v5c5l0_out[6] = g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27];
+	assign v5c5l0_out[7] = g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31];
+	assign v5c5l0_out[8] = g5_reg[32];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v5c5l0[i] <= v5c5l0_out[i];
+    end
+
+	reg [3:0] v5c5l1 [0:4];
+	logic [3:0] v5c5l1_out [0:4];
+	assign v5c5l1_out[0] = v5c5l0[0] + v5c5l0[1];
+	assign v5c5l1_out[1] = v5c5l0[2] + v5c5l0[3];
+	assign v5c5l1_out[2] = v5c5l0[4] + v5c5l0[5];
+	assign v5c5l1_out[3] = v5c5l0[6] + v5c5l0[7];
+	assign v5c5l1_out[4] = v5c5l0[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v5c5l1[i] <= v5c5l1_out[i];
+    end
+
+	reg [4:0] v5c5l2 [0:2];
+	logic [4:0] v5c5l2_out [0:2];
+	assign v5c5l2_out[0] = v5c5l1[0] + v5c5l1[1];
+	assign v5c5l2_out[1] = v5c5l1[2] + v5c5l1[3];
+	assign v5c5l2_out[2] = v5c5l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v5c5l2[i] <= v5c5l2_out[i];
+    end
+
+	reg [5:0] v5c5l3 [0:1];
+	logic [5:0] v5c5l3_out [0:1];
+	assign v5c5l3_out[0] = v5c5l2[0] + v5c5l2[1];
+	assign v5c5l3_out[1] = v5c5l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v5c5l3[i] <= v5c5l3_out[i];
+    end
+
+	reg [6:0] v5c5l4 [0:0];
+	logic [6:0] v5c5l4_out [0:0];
+	assign v5c5l4_out[0] = v5c5l3[0] + v5c5l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c5l4[i] <= v5c5l4_out[i];
+    end
+
+	reg [7:0] v5c5l5 [0:0];
+	logic [7:0] v5c5l5_out [0:0];
+	assign v5c5l5_out[0] = v5c5l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c5l5[i] <= v5c5l5_out[i];
+    end
+
+	assign val[5] = v5c5l5[0];
 	
 	// 0.03125
 	logic [0:65] g6;
@@ -4415,7 +9682,92 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g6_reg <= g6;
     end
     
-	assign val[6] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3] + g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7] + g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11] + g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15] + g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19] + g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23] + g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27] + g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31] + g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35] + g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39] + g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43] + g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47] + g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51] + g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55] + g6_reg[56] + g6_reg[57] + g6_reg[58] + g6_reg[59] + g6_reg[60] + g6_reg[61] + g6_reg[62] + g6_reg[63] + g6_reg[64] + g6_reg[65];
+	logic [2:0] v6c5l0_out [0:16];
+	logic [2:0] v6c5l0 [0:16];
+	assign v6c5l0_out[0] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3];
+	assign v6c5l0_out[1] = g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7];
+	assign v6c5l0_out[2] = g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11];
+	assign v6c5l0_out[3] = g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15];
+	assign v6c5l0_out[4] = g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19];
+	assign v6c5l0_out[5] = g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23];
+	assign v6c5l0_out[6] = g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27];
+	assign v6c5l0_out[7] = g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31];
+	assign v6c5l0_out[8] = g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35];
+	assign v6c5l0_out[9] = g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39];
+	assign v6c5l0_out[10] = g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	assign v6c5l0_out[11] = g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47];
+	assign v6c5l0_out[12] = g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51];
+	assign v6c5l0_out[13] = g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55];
+	assign v6c5l0_out[14] = g6_reg[56] + g6_reg[57] + g6_reg[58] + g6_reg[59];
+	assign v6c5l0_out[15] = g6_reg[60] + g6_reg[61] + g6_reg[62] + g6_reg[63];
+	assign v6c5l0_out[16] = g6_reg[64] + g6_reg[65];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 17; i = i + 1)
+            v6c5l0[i] <= v6c5l0_out[i];
+    end
+
+	reg [3:0] v6c5l1 [0:8];
+	logic [3:0] v6c5l1_out [0:8];
+	assign v6c5l1_out[0] = v6c5l0[0] + v6c5l0[1];
+	assign v6c5l1_out[1] = v6c5l0[2] + v6c5l0[3];
+	assign v6c5l1_out[2] = v6c5l0[4] + v6c5l0[5];
+	assign v6c5l1_out[3] = v6c5l0[6] + v6c5l0[7];
+	assign v6c5l1_out[4] = v6c5l0[8] + v6c5l0[9];
+	assign v6c5l1_out[5] = v6c5l0[10] + v6c5l0[11];
+	assign v6c5l1_out[6] = v6c5l0[12] + v6c5l0[13];
+	assign v6c5l1_out[7] = v6c5l0[14] + v6c5l0[15];
+	assign v6c5l1_out[8] = v6c5l0[16];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v6c5l1[i] <= v6c5l1_out[i];
+    end
+
+	reg [4:0] v6c5l2 [0:4];
+	logic [4:0] v6c5l2_out [0:4];
+	assign v6c5l2_out[0] = v6c5l1[0] + v6c5l1[1];
+	assign v6c5l2_out[1] = v6c5l1[2] + v6c5l1[3];
+	assign v6c5l2_out[2] = v6c5l1[4] + v6c5l1[5];
+	assign v6c5l2_out[3] = v6c5l1[6] + v6c5l1[7];
+	assign v6c5l2_out[4] = v6c5l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v6c5l2[i] <= v6c5l2_out[i];
+    end
+
+	reg [5:0] v6c5l3 [0:2];
+	logic [5:0] v6c5l3_out [0:2];
+	assign v6c5l3_out[0] = v6c5l2[0] + v6c5l2[1];
+	assign v6c5l3_out[1] = v6c5l2[2] + v6c5l2[3];
+	assign v6c5l3_out[2] = v6c5l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v6c5l3[i] <= v6c5l3_out[i];
+    end
+
+	reg [6:0] v6c5l4 [0:1];
+	logic [6:0] v6c5l4_out [0:1];
+	assign v6c5l4_out[0] = v6c5l3[0] + v6c5l3[1];
+	assign v6c5l4_out[1] = v6c5l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v6c5l4[i] <= v6c5l4_out[i];
+    end
+
+	reg [7:0] v6c5l5 [0:0];
+	logic [7:0] v6c5l5_out [0:0];
+	assign v6c5l5_out[0] = v6c5l4[0] + v6c5l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c5l5[i] <= v6c5l5_out[i];
+    end
+
+	assign val[6] = v6c5l5[0];
 	
 	// 0.0625
 	logic [0:76] g7;
@@ -4502,7 +9854,96 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g7_reg <= g7;
     end
     
-	assign val[7] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3] + g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7] + g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11] + g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15] + g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19] + g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23] + g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27] + g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31] + g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35] + g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39] + g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43] + g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47] + g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51] + g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55] + g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59] + g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63] + g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67] + g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71] + g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75] + g7_reg[76];
+	logic [2:0] v7c5l0_out [0:19];
+	logic [2:0] v7c5l0 [0:19];
+	assign v7c5l0_out[0] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3];
+	assign v7c5l0_out[1] = g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7];
+	assign v7c5l0_out[2] = g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11];
+	assign v7c5l0_out[3] = g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15];
+	assign v7c5l0_out[4] = g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19];
+	assign v7c5l0_out[5] = g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23];
+	assign v7c5l0_out[6] = g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27];
+	assign v7c5l0_out[7] = g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31];
+	assign v7c5l0_out[8] = g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35];
+	assign v7c5l0_out[9] = g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39];
+	assign v7c5l0_out[10] = g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43];
+	assign v7c5l0_out[11] = g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47];
+	assign v7c5l0_out[12] = g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51];
+	assign v7c5l0_out[13] = g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55];
+	assign v7c5l0_out[14] = g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59];
+	assign v7c5l0_out[15] = g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63];
+	assign v7c5l0_out[16] = g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67];
+	assign v7c5l0_out[17] = g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71];
+	assign v7c5l0_out[18] = g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75];
+	assign v7c5l0_out[19] = g7_reg[76];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 20; i = i + 1)
+            v7c5l0[i] <= v7c5l0_out[i];
+    end
+
+	reg [3:0] v7c5l1 [0:9];
+	logic [3:0] v7c5l1_out [0:9];
+	assign v7c5l1_out[0] = v7c5l0[0] + v7c5l0[1];
+	assign v7c5l1_out[1] = v7c5l0[2] + v7c5l0[3];
+	assign v7c5l1_out[2] = v7c5l0[4] + v7c5l0[5];
+	assign v7c5l1_out[3] = v7c5l0[6] + v7c5l0[7];
+	assign v7c5l1_out[4] = v7c5l0[8] + v7c5l0[9];
+	assign v7c5l1_out[5] = v7c5l0[10] + v7c5l0[11];
+	assign v7c5l1_out[6] = v7c5l0[12] + v7c5l0[13];
+	assign v7c5l1_out[7] = v7c5l0[14] + v7c5l0[15];
+	assign v7c5l1_out[8] = v7c5l0[16] + v7c5l0[17];
+	assign v7c5l1_out[9] = v7c5l0[18] + v7c5l0[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v7c5l1[i] <= v7c5l1_out[i];
+    end
+
+	reg [4:0] v7c5l2 [0:4];
+	logic [4:0] v7c5l2_out [0:4];
+	assign v7c5l2_out[0] = v7c5l1[0] + v7c5l1[1];
+	assign v7c5l2_out[1] = v7c5l1[2] + v7c5l1[3];
+	assign v7c5l2_out[2] = v7c5l1[4] + v7c5l1[5];
+	assign v7c5l2_out[3] = v7c5l1[6] + v7c5l1[7];
+	assign v7c5l2_out[4] = v7c5l1[8] + v7c5l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v7c5l2[i] <= v7c5l2_out[i];
+    end
+
+	reg [5:0] v7c5l3 [0:2];
+	logic [5:0] v7c5l3_out [0:2];
+	assign v7c5l3_out[0] = v7c5l2[0] + v7c5l2[1];
+	assign v7c5l3_out[1] = v7c5l2[2] + v7c5l2[3];
+	assign v7c5l3_out[2] = v7c5l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v7c5l3[i] <= v7c5l3_out[i];
+    end
+
+	reg [6:0] v7c5l4 [0:1];
+	logic [6:0] v7c5l4_out [0:1];
+	assign v7c5l4_out[0] = v7c5l3[0] + v7c5l3[1];
+	assign v7c5l4_out[1] = v7c5l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v7c5l4[i] <= v7c5l4_out[i];
+    end
+
+	reg [7:0] v7c5l5 [0:0];
+	logic [7:0] v7c5l5_out [0:0];
+	assign v7c5l5_out[0] = v7c5l4[0] + v7c5l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c5l5[i] <= v7c5l5_out[i];
+    end
+
+	assign val[7] = v7c5l5[0];
 	
 	// 0.125
 	logic [0:89] g8;
@@ -4602,7 +10043,102 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g8_reg <= g8;
     end
     
-	assign val[8] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3] + g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7] + g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11] + g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15] + g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19] + g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23] + g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27] + g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31] + g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35] + g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39] + g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43] + g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47] + g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51] + g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55] + g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59] + g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63] + g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67] + g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71] + g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75] + g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79] + g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83] + g8_reg[84] + g8_reg[85] + g8_reg[86] + g8_reg[87] + g8_reg[88] + g8_reg[89];
+	logic [2:0] v8c5l0_out [0:22];
+	logic [2:0] v8c5l0 [0:22];
+	assign v8c5l0_out[0] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3];
+	assign v8c5l0_out[1] = g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7];
+	assign v8c5l0_out[2] = g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11];
+	assign v8c5l0_out[3] = g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15];
+	assign v8c5l0_out[4] = g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19];
+	assign v8c5l0_out[5] = g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23];
+	assign v8c5l0_out[6] = g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27];
+	assign v8c5l0_out[7] = g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31];
+	assign v8c5l0_out[8] = g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35];
+	assign v8c5l0_out[9] = g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39];
+	assign v8c5l0_out[10] = g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43];
+	assign v8c5l0_out[11] = g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47];
+	assign v8c5l0_out[12] = g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51];
+	assign v8c5l0_out[13] = g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55];
+	assign v8c5l0_out[14] = g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59];
+	assign v8c5l0_out[15] = g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63];
+	assign v8c5l0_out[16] = g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67];
+	assign v8c5l0_out[17] = g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71];
+	assign v8c5l0_out[18] = g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75];
+	assign v8c5l0_out[19] = g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79];
+	assign v8c5l0_out[20] = g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83];
+	assign v8c5l0_out[21] = g8_reg[84] + g8_reg[85] + g8_reg[86] + g8_reg[87];
+	assign v8c5l0_out[22] = g8_reg[88] + g8_reg[89];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 23; i = i + 1)
+            v8c5l0[i] <= v8c5l0_out[i];
+    end
+
+	reg [3:0] v8c5l1 [0:11];
+	logic [3:0] v8c5l1_out [0:11];
+	assign v8c5l1_out[0] = v8c5l0[0] + v8c5l0[1];
+	assign v8c5l1_out[1] = v8c5l0[2] + v8c5l0[3];
+	assign v8c5l1_out[2] = v8c5l0[4] + v8c5l0[5];
+	assign v8c5l1_out[3] = v8c5l0[6] + v8c5l0[7];
+	assign v8c5l1_out[4] = v8c5l0[8] + v8c5l0[9];
+	assign v8c5l1_out[5] = v8c5l0[10] + v8c5l0[11];
+	assign v8c5l1_out[6] = v8c5l0[12] + v8c5l0[13];
+	assign v8c5l1_out[7] = v8c5l0[14] + v8c5l0[15];
+	assign v8c5l1_out[8] = v8c5l0[16] + v8c5l0[17];
+	assign v8c5l1_out[9] = v8c5l0[18] + v8c5l0[19];
+	assign v8c5l1_out[10] = v8c5l0[20] + v8c5l0[21];
+	assign v8c5l1_out[11] = v8c5l0[22];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 12; i = i + 1)
+            v8c5l1[i] <= v8c5l1_out[i];
+    end
+
+	reg [4:0] v8c5l2 [0:5];
+	logic [4:0] v8c5l2_out [0:5];
+	assign v8c5l2_out[0] = v8c5l1[0] + v8c5l1[1];
+	assign v8c5l2_out[1] = v8c5l1[2] + v8c5l1[3];
+	assign v8c5l2_out[2] = v8c5l1[4] + v8c5l1[5];
+	assign v8c5l2_out[3] = v8c5l1[6] + v8c5l1[7];
+	assign v8c5l2_out[4] = v8c5l1[8] + v8c5l1[9];
+	assign v8c5l2_out[5] = v8c5l1[10] + v8c5l1[11];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v8c5l2[i] <= v8c5l2_out[i];
+    end
+
+	reg [5:0] v8c5l3 [0:2];
+	logic [5:0] v8c5l3_out [0:2];
+	assign v8c5l3_out[0] = v8c5l2[0] + v8c5l2[1];
+	assign v8c5l3_out[1] = v8c5l2[2] + v8c5l2[3];
+	assign v8c5l3_out[2] = v8c5l2[4] + v8c5l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v8c5l3[i] <= v8c5l3_out[i];
+    end
+
+	reg [6:0] v8c5l4 [0:1];
+	logic [6:0] v8c5l4_out [0:1];
+	assign v8c5l4_out[0] = v8c5l3[0] + v8c5l3[1];
+	assign v8c5l4_out[1] = v8c5l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v8c5l4[i] <= v8c5l4_out[i];
+    end
+
+	reg [7:0] v8c5l5 [0:0];
+	logic [7:0] v8c5l5_out [0:0];
+	assign v8c5l5_out[0] = v8c5l4[0] + v8c5l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v8c5l5[i] <= v8c5l5_out[i];
+    end
+
+	assign val[8] = v8c5l5[0];
 	
 	// 0.25
 	logic [0:52] g9;
@@ -4665,7 +10201,84 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g9_reg <= g9;
     end
     
-	assign val[9] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3] + g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7] + g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11] + g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15] + g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19] + g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23] + g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27] + g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31] + g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35] + g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39] + g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43] + g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47] + g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51] + g9_reg[52];
+	logic [2:0] v9c5l0_out [0:13];
+	logic [2:0] v9c5l0 [0:13];
+	assign v9c5l0_out[0] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3];
+	assign v9c5l0_out[1] = g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7];
+	assign v9c5l0_out[2] = g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11];
+	assign v9c5l0_out[3] = g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15];
+	assign v9c5l0_out[4] = g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19];
+	assign v9c5l0_out[5] = g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23];
+	assign v9c5l0_out[6] = g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27];
+	assign v9c5l0_out[7] = g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31];
+	assign v9c5l0_out[8] = g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	assign v9c5l0_out[9] = g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39];
+	assign v9c5l0_out[10] = g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43];
+	assign v9c5l0_out[11] = g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47];
+	assign v9c5l0_out[12] = g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51];
+	assign v9c5l0_out[13] = g9_reg[52];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 14; i = i + 1)
+            v9c5l0[i] <= v9c5l0_out[i];
+    end
+
+	reg [3:0] v9c5l1 [0:6];
+	logic [3:0] v9c5l1_out [0:6];
+	assign v9c5l1_out[0] = v9c5l0[0] + v9c5l0[1];
+	assign v9c5l1_out[1] = v9c5l0[2] + v9c5l0[3];
+	assign v9c5l1_out[2] = v9c5l0[4] + v9c5l0[5];
+	assign v9c5l1_out[3] = v9c5l0[6] + v9c5l0[7];
+	assign v9c5l1_out[4] = v9c5l0[8] + v9c5l0[9];
+	assign v9c5l1_out[5] = v9c5l0[10] + v9c5l0[11];
+	assign v9c5l1_out[6] = v9c5l0[12] + v9c5l0[13];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v9c5l1[i] <= v9c5l1_out[i];
+    end
+
+	reg [4:0] v9c5l2 [0:3];
+	logic [4:0] v9c5l2_out [0:3];
+	assign v9c5l2_out[0] = v9c5l1[0] + v9c5l1[1];
+	assign v9c5l2_out[1] = v9c5l1[2] + v9c5l1[3];
+	assign v9c5l2_out[2] = v9c5l1[4] + v9c5l1[5];
+	assign v9c5l2_out[3] = v9c5l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v9c5l2[i] <= v9c5l2_out[i];
+    end
+
+	reg [5:0] v9c5l3 [0:1];
+	logic [5:0] v9c5l3_out [0:1];
+	assign v9c5l3_out[0] = v9c5l2[0] + v9c5l2[1];
+	assign v9c5l3_out[1] = v9c5l2[2] + v9c5l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v9c5l3[i] <= v9c5l3_out[i];
+    end
+
+	reg [6:0] v9c5l4 [0:0];
+	logic [6:0] v9c5l4_out [0:0];
+	assign v9c5l4_out[0] = v9c5l3[0] + v9c5l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c5l4[i] <= v9c5l4_out[i];
+    end
+
+	reg [7:0] v9c5l5 [0:0];
+	logic [7:0] v9c5l5_out [0:0];
+	assign v9c5l5_out[0] = v9c5l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c5l5[i] <= v9c5l5_out[i];
+    end
+
+	assign val[9] = v9c5l5[0];
 	
 	// 0.5
 	logic [0:10] g10;
@@ -4686,7 +10299,64 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g10_reg <= g10;
     end
     
-	assign val[10] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3] + g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7] + g10_reg[8] + g10_reg[9] + g10_reg[10];
+	logic [2:0] v10c5l0_out [0:2];
+	logic [2:0] v10c5l0 [0:2];
+	assign v10c5l0_out[0] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	assign v10c5l0_out[1] = g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7];
+	assign v10c5l0_out[2] = g10_reg[8] + g10_reg[9] + g10_reg[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v10c5l0[i] <= v10c5l0_out[i];
+    end
+
+	reg [3:0] v10c5l1 [0:1];
+	logic [3:0] v10c5l1_out [0:1];
+	assign v10c5l1_out[0] = v10c5l0[0] + v10c5l0[1];
+	assign v10c5l1_out[1] = v10c5l0[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v10c5l1[i] <= v10c5l1_out[i];
+    end
+
+	reg [4:0] v10c5l2 [0:0];
+	logic [4:0] v10c5l2_out [0:0];
+	assign v10c5l2_out[0] = v10c5l1[0] + v10c5l1[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c5l2[i] <= v10c5l2_out[i];
+    end
+
+	reg [5:0] v10c5l3 [0:0];
+	logic [5:0] v10c5l3_out [0:0];
+	assign v10c5l3_out[0] = v10c5l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c5l3[i] <= v10c5l3_out[i];
+    end
+
+	reg [6:0] v10c5l4 [0:0];
+	logic [6:0] v10c5l4_out [0:0];
+	assign v10c5l4_out[0] = v10c5l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c5l4[i] <= v10c5l4_out[i];
+    end
+
+	reg [7:0] v10c5l5 [0:0];
+	logic [7:0] v10c5l5_out [0:0];
+	assign v10c5l5_out[0] = v10c5l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c5l5[i] <= v10c5l5_out[i];
+    end
+
+	assign val[10] = v10c5l5[0];
 	
 	// 1.0
 	logic [0:1] g11;
@@ -4698,7 +10368,61 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g11_reg <= g11;
     end
     
-	assign val[11] = g11_reg[0] + g11_reg[1];
+	logic [2:0] v11c5l0_out [0:0];
+	logic [2:0] v11c5l0 [0:0];
+	assign v11c5l0_out[0] = g11_reg[0] + g11_reg[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c5l0[i] <= v11c5l0_out[i];
+    end
+
+	reg [3:0] v11c5l1 [0:0];
+	logic [3:0] v11c5l1_out [0:0];
+	assign v11c5l1_out[0] = v11c5l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c5l1[i] <= v11c5l1_out[i];
+    end
+
+	reg [4:0] v11c5l2 [0:0];
+	logic [4:0] v11c5l2_out [0:0];
+	assign v11c5l2_out[0] = v11c5l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c5l2[i] <= v11c5l2_out[i];
+    end
+
+	reg [5:0] v11c5l3 [0:0];
+	logic [5:0] v11c5l3_out [0:0];
+	assign v11c5l3_out[0] = v11c5l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c5l3[i] <= v11c5l3_out[i];
+    end
+
+	reg [6:0] v11c5l4 [0:0];
+	logic [6:0] v11c5l4_out [0:0];
+	assign v11c5l4_out[0] = v11c5l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c5l4[i] <= v11c5l4_out[i];
+    end
+
+	reg [7:0] v11c5l5 [0:0];
+	logic [7:0] v11c5l5_out [0:0];
+	assign v11c5l5_out[0] = v11c5l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c5l5[i] <= v11c5l5_out[i];
+    end
+
+	assign val[11] = v11c5l5[0];
 	
 	// 2.0
 	logic [0:0] g12;
@@ -4709,12 +10433,67 @@ module leaf_counter_5(input logic clk, input logic [0:1401] l, output logic [7:0
         g12_reg <= g12;
     end
     
-	assign val[12] = g12_reg[0];
+	logic [2:0] v12c5l0_out [0:0];
+	logic [2:0] v12c5l0 [0:0];
+	assign v12c5l0_out[0] = g12_reg[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c5l0[i] <= v12c5l0_out[i];
+    end
+
+	reg [3:0] v12c5l1 [0:0];
+	logic [3:0] v12c5l1_out [0:0];
+	assign v12c5l1_out[0] = v12c5l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c5l1[i] <= v12c5l1_out[i];
+    end
+
+	reg [4:0] v12c5l2 [0:0];
+	logic [4:0] v12c5l2_out [0:0];
+	assign v12c5l2_out[0] = v12c5l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c5l2[i] <= v12c5l2_out[i];
+    end
+
+	reg [5:0] v12c5l3 [0:0];
+	logic [5:0] v12c5l3_out [0:0];
+	assign v12c5l3_out[0] = v12c5l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c5l3[i] <= v12c5l3_out[i];
+    end
+
+	reg [6:0] v12c5l4 [0:0];
+	logic [6:0] v12c5l4_out [0:0];
+	assign v12c5l4_out[0] = v12c5l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c5l4[i] <= v12c5l4_out[i];
+    end
+
+	reg [7:0] v12c5l5 [0:0];
+	logic [7:0] v12c5l5_out [0:0];
+	assign v12c5l5_out[0] = v12c5l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c5l5[i] <= v12c5l5_out[i];
+    end
+
+	assign val[12] = v12c5l5[0];
 	
 endmodule
 
 
 module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0] val [0:12]);
+    integer i;
 	// -0.25
 	logic [0:56] g0;
 	reg [0:56] g0_reg;
@@ -4780,7 +10559,86 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g0_reg <= g0;
     end
     
-	assign val[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3] + g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7] + g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11] + g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15] + g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19] + g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23] + g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27] + g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31] + g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35] + g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39] + g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43] + g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47] + g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51] + g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55] + g0_reg[56];
+	logic [2:0] v0c6l0_out [0:14];
+	logic [2:0] v0c6l0 [0:14];
+	assign v0c6l0_out[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3];
+	assign v0c6l0_out[1] = g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7];
+	assign v0c6l0_out[2] = g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11];
+	assign v0c6l0_out[3] = g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15];
+	assign v0c6l0_out[4] = g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19];
+	assign v0c6l0_out[5] = g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23];
+	assign v0c6l0_out[6] = g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27];
+	assign v0c6l0_out[7] = g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31];
+	assign v0c6l0_out[8] = g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35];
+	assign v0c6l0_out[9] = g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39];
+	assign v0c6l0_out[10] = g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43];
+	assign v0c6l0_out[11] = g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47];
+	assign v0c6l0_out[12] = g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51];
+	assign v0c6l0_out[13] = g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55];
+	assign v0c6l0_out[14] = g0_reg[56];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 15; i = i + 1)
+            v0c6l0[i] <= v0c6l0_out[i];
+    end
+
+	reg [3:0] v0c6l1 [0:7];
+	logic [3:0] v0c6l1_out [0:7];
+	assign v0c6l1_out[0] = v0c6l0[0] + v0c6l0[1];
+	assign v0c6l1_out[1] = v0c6l0[2] + v0c6l0[3];
+	assign v0c6l1_out[2] = v0c6l0[4] + v0c6l0[5];
+	assign v0c6l1_out[3] = v0c6l0[6] + v0c6l0[7];
+	assign v0c6l1_out[4] = v0c6l0[8] + v0c6l0[9];
+	assign v0c6l1_out[5] = v0c6l0[10] + v0c6l0[11];
+	assign v0c6l1_out[6] = v0c6l0[12] + v0c6l0[13];
+	assign v0c6l1_out[7] = v0c6l0[14];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v0c6l1[i] <= v0c6l1_out[i];
+    end
+
+	reg [4:0] v0c6l2 [0:3];
+	logic [4:0] v0c6l2_out [0:3];
+	assign v0c6l2_out[0] = v0c6l1[0] + v0c6l1[1];
+	assign v0c6l2_out[1] = v0c6l1[2] + v0c6l1[3];
+	assign v0c6l2_out[2] = v0c6l1[4] + v0c6l1[5];
+	assign v0c6l2_out[3] = v0c6l1[6] + v0c6l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v0c6l2[i] <= v0c6l2_out[i];
+    end
+
+	reg [5:0] v0c6l3 [0:1];
+	logic [5:0] v0c6l3_out [0:1];
+	assign v0c6l3_out[0] = v0c6l2[0] + v0c6l2[1];
+	assign v0c6l3_out[1] = v0c6l2[2] + v0c6l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v0c6l3[i] <= v0c6l3_out[i];
+    end
+
+	reg [6:0] v0c6l4 [0:0];
+	logic [6:0] v0c6l4_out [0:0];
+	assign v0c6l4_out[0] = v0c6l3[0] + v0c6l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c6l4[i] <= v0c6l4_out[i];
+    end
+
+	reg [7:0] v0c6l5 [0:0];
+	logic [7:0] v0c6l5_out [0:0];
+	assign v0c6l5_out[0] = v0c6l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c6l5[i] <= v0c6l5_out[i];
+    end
+
+	assign val[0] = v0c6l5[0];
 	
 	// -0.125
 	logic [0:98] g1;
@@ -4889,7 +10747,107 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g1_reg <= g1;
     end
     
-	assign val[1] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3] + g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7] + g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11] + g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15] + g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19] + g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23] + g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27] + g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31] + g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35] + g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39] + g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43] + g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47] + g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51] + g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55] + g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59] + g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63] + g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67] + g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71] + g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75] + g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79] + g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83] + g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87] + g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91] + g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95] + g1_reg[96] + g1_reg[97] + g1_reg[98];
+	logic [2:0] v1c6l0_out [0:24];
+	logic [2:0] v1c6l0 [0:24];
+	assign v1c6l0_out[0] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3];
+	assign v1c6l0_out[1] = g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7];
+	assign v1c6l0_out[2] = g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11];
+	assign v1c6l0_out[3] = g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15];
+	assign v1c6l0_out[4] = g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19];
+	assign v1c6l0_out[5] = g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23];
+	assign v1c6l0_out[6] = g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27];
+	assign v1c6l0_out[7] = g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31];
+	assign v1c6l0_out[8] = g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35];
+	assign v1c6l0_out[9] = g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39];
+	assign v1c6l0_out[10] = g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43];
+	assign v1c6l0_out[11] = g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47];
+	assign v1c6l0_out[12] = g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51];
+	assign v1c6l0_out[13] = g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55];
+	assign v1c6l0_out[14] = g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59];
+	assign v1c6l0_out[15] = g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63];
+	assign v1c6l0_out[16] = g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67];
+	assign v1c6l0_out[17] = g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71];
+	assign v1c6l0_out[18] = g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75];
+	assign v1c6l0_out[19] = g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79];
+	assign v1c6l0_out[20] = g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83];
+	assign v1c6l0_out[21] = g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87];
+	assign v1c6l0_out[22] = g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91];
+	assign v1c6l0_out[23] = g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	assign v1c6l0_out[24] = g1_reg[96] + g1_reg[97] + g1_reg[98];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 25; i = i + 1)
+            v1c6l0[i] <= v1c6l0_out[i];
+    end
+
+	reg [3:0] v1c6l1 [0:12];
+	logic [3:0] v1c6l1_out [0:12];
+	assign v1c6l1_out[0] = v1c6l0[0] + v1c6l0[1];
+	assign v1c6l1_out[1] = v1c6l0[2] + v1c6l0[3];
+	assign v1c6l1_out[2] = v1c6l0[4] + v1c6l0[5];
+	assign v1c6l1_out[3] = v1c6l0[6] + v1c6l0[7];
+	assign v1c6l1_out[4] = v1c6l0[8] + v1c6l0[9];
+	assign v1c6l1_out[5] = v1c6l0[10] + v1c6l0[11];
+	assign v1c6l1_out[6] = v1c6l0[12] + v1c6l0[13];
+	assign v1c6l1_out[7] = v1c6l0[14] + v1c6l0[15];
+	assign v1c6l1_out[8] = v1c6l0[16] + v1c6l0[17];
+	assign v1c6l1_out[9] = v1c6l0[18] + v1c6l0[19];
+	assign v1c6l1_out[10] = v1c6l0[20] + v1c6l0[21];
+	assign v1c6l1_out[11] = v1c6l0[22] + v1c6l0[23];
+	assign v1c6l1_out[12] = v1c6l0[24];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v1c6l1[i] <= v1c6l1_out[i];
+    end
+
+	reg [4:0] v1c6l2 [0:6];
+	logic [4:0] v1c6l2_out [0:6];
+	assign v1c6l2_out[0] = v1c6l1[0] + v1c6l1[1];
+	assign v1c6l2_out[1] = v1c6l1[2] + v1c6l1[3];
+	assign v1c6l2_out[2] = v1c6l1[4] + v1c6l1[5];
+	assign v1c6l2_out[3] = v1c6l1[6] + v1c6l1[7];
+	assign v1c6l2_out[4] = v1c6l1[8] + v1c6l1[9];
+	assign v1c6l2_out[5] = v1c6l1[10] + v1c6l1[11];
+	assign v1c6l2_out[6] = v1c6l1[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v1c6l2[i] <= v1c6l2_out[i];
+    end
+
+	reg [5:0] v1c6l3 [0:3];
+	logic [5:0] v1c6l3_out [0:3];
+	assign v1c6l3_out[0] = v1c6l2[0] + v1c6l2[1];
+	assign v1c6l3_out[1] = v1c6l2[2] + v1c6l2[3];
+	assign v1c6l3_out[2] = v1c6l2[4] + v1c6l2[5];
+	assign v1c6l3_out[3] = v1c6l2[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v1c6l3[i] <= v1c6l3_out[i];
+    end
+
+	reg [6:0] v1c6l4 [0:1];
+	logic [6:0] v1c6l4_out [0:1];
+	assign v1c6l4_out[0] = v1c6l3[0] + v1c6l3[1];
+	assign v1c6l4_out[1] = v1c6l3[2] + v1c6l3[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v1c6l4[i] <= v1c6l4_out[i];
+    end
+
+	reg [7:0] v1c6l5 [0:0];
+	logic [7:0] v1c6l5_out [0:0];
+	assign v1c6l5_out[0] = v1c6l4[0] + v1c6l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v1c6l5[i] <= v1c6l5_out[i];
+    end
+
+	assign val[1] = v1c6l5[0];
 	
 	// -0.0625
 	logic [0:74] g2;
@@ -4974,7 +10932,95 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g2_reg <= g2;
     end
     
-	assign val[2] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3] + g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7] + g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11] + g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15] + g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19] + g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23] + g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27] + g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31] + g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35] + g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39] + g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43] + g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47] + g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51] + g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55] + g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59] + g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63] + g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67] + g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71] + g2_reg[72] + g2_reg[73] + g2_reg[74];
+	logic [2:0] v2c6l0_out [0:18];
+	logic [2:0] v2c6l0 [0:18];
+	assign v2c6l0_out[0] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3];
+	assign v2c6l0_out[1] = g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7];
+	assign v2c6l0_out[2] = g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11];
+	assign v2c6l0_out[3] = g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15];
+	assign v2c6l0_out[4] = g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19];
+	assign v2c6l0_out[5] = g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23];
+	assign v2c6l0_out[6] = g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27];
+	assign v2c6l0_out[7] = g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31];
+	assign v2c6l0_out[8] = g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35];
+	assign v2c6l0_out[9] = g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39];
+	assign v2c6l0_out[10] = g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43];
+	assign v2c6l0_out[11] = g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47];
+	assign v2c6l0_out[12] = g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51];
+	assign v2c6l0_out[13] = g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55];
+	assign v2c6l0_out[14] = g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59];
+	assign v2c6l0_out[15] = g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63];
+	assign v2c6l0_out[16] = g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67];
+	assign v2c6l0_out[17] = g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71];
+	assign v2c6l0_out[18] = g2_reg[72] + g2_reg[73] + g2_reg[74];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 19; i = i + 1)
+            v2c6l0[i] <= v2c6l0_out[i];
+    end
+
+	reg [3:0] v2c6l1 [0:9];
+	logic [3:0] v2c6l1_out [0:9];
+	assign v2c6l1_out[0] = v2c6l0[0] + v2c6l0[1];
+	assign v2c6l1_out[1] = v2c6l0[2] + v2c6l0[3];
+	assign v2c6l1_out[2] = v2c6l0[4] + v2c6l0[5];
+	assign v2c6l1_out[3] = v2c6l0[6] + v2c6l0[7];
+	assign v2c6l1_out[4] = v2c6l0[8] + v2c6l0[9];
+	assign v2c6l1_out[5] = v2c6l0[10] + v2c6l0[11];
+	assign v2c6l1_out[6] = v2c6l0[12] + v2c6l0[13];
+	assign v2c6l1_out[7] = v2c6l0[14] + v2c6l0[15];
+	assign v2c6l1_out[8] = v2c6l0[16] + v2c6l0[17];
+	assign v2c6l1_out[9] = v2c6l0[18];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v2c6l1[i] <= v2c6l1_out[i];
+    end
+
+	reg [4:0] v2c6l2 [0:4];
+	logic [4:0] v2c6l2_out [0:4];
+	assign v2c6l2_out[0] = v2c6l1[0] + v2c6l1[1];
+	assign v2c6l2_out[1] = v2c6l1[2] + v2c6l1[3];
+	assign v2c6l2_out[2] = v2c6l1[4] + v2c6l1[5];
+	assign v2c6l2_out[3] = v2c6l1[6] + v2c6l1[7];
+	assign v2c6l2_out[4] = v2c6l1[8] + v2c6l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v2c6l2[i] <= v2c6l2_out[i];
+    end
+
+	reg [5:0] v2c6l3 [0:2];
+	logic [5:0] v2c6l3_out [0:2];
+	assign v2c6l3_out[0] = v2c6l2[0] + v2c6l2[1];
+	assign v2c6l3_out[1] = v2c6l2[2] + v2c6l2[3];
+	assign v2c6l3_out[2] = v2c6l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v2c6l3[i] <= v2c6l3_out[i];
+    end
+
+	reg [6:0] v2c6l4 [0:1];
+	logic [6:0] v2c6l4_out [0:1];
+	assign v2c6l4_out[0] = v2c6l3[0] + v2c6l3[1];
+	assign v2c6l4_out[1] = v2c6l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v2c6l4[i] <= v2c6l4_out[i];
+    end
+
+	reg [7:0] v2c6l5 [0:0];
+	logic [7:0] v2c6l5_out [0:0];
+	assign v2c6l5_out[0] = v2c6l4[0] + v2c6l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v2c6l5[i] <= v2c6l5_out[i];
+    end
+
+	assign val[2] = v2c6l5[0];
 	
 	// -0.03125
 	logic [0:42] g3;
@@ -5027,7 +11073,79 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g3_reg <= g3;
     end
     
-	assign val[3] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3] + g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7] + g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11] + g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15] + g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19] + g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23] + g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27] + g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31] + g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35] + g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39] + g3_reg[40] + g3_reg[41] + g3_reg[42];
+	logic [2:0] v3c6l0_out [0:10];
+	logic [2:0] v3c6l0 [0:10];
+	assign v3c6l0_out[0] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3];
+	assign v3c6l0_out[1] = g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7];
+	assign v3c6l0_out[2] = g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11];
+	assign v3c6l0_out[3] = g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15];
+	assign v3c6l0_out[4] = g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19];
+	assign v3c6l0_out[5] = g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23];
+	assign v3c6l0_out[6] = g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27];
+	assign v3c6l0_out[7] = g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31];
+	assign v3c6l0_out[8] = g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35];
+	assign v3c6l0_out[9] = g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39];
+	assign v3c6l0_out[10] = g3_reg[40] + g3_reg[41] + g3_reg[42];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v3c6l0[i] <= v3c6l0_out[i];
+    end
+
+	reg [3:0] v3c6l1 [0:5];
+	logic [3:0] v3c6l1_out [0:5];
+	assign v3c6l1_out[0] = v3c6l0[0] + v3c6l0[1];
+	assign v3c6l1_out[1] = v3c6l0[2] + v3c6l0[3];
+	assign v3c6l1_out[2] = v3c6l0[4] + v3c6l0[5];
+	assign v3c6l1_out[3] = v3c6l0[6] + v3c6l0[7];
+	assign v3c6l1_out[4] = v3c6l0[8] + v3c6l0[9];
+	assign v3c6l1_out[5] = v3c6l0[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v3c6l1[i] <= v3c6l1_out[i];
+    end
+
+	reg [4:0] v3c6l2 [0:2];
+	logic [4:0] v3c6l2_out [0:2];
+	assign v3c6l2_out[0] = v3c6l1[0] + v3c6l1[1];
+	assign v3c6l2_out[1] = v3c6l1[2] + v3c6l1[3];
+	assign v3c6l2_out[2] = v3c6l1[4] + v3c6l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v3c6l2[i] <= v3c6l2_out[i];
+    end
+
+	reg [5:0] v3c6l3 [0:1];
+	logic [5:0] v3c6l3_out [0:1];
+	assign v3c6l3_out[0] = v3c6l2[0] + v3c6l2[1];
+	assign v3c6l3_out[1] = v3c6l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v3c6l3[i] <= v3c6l3_out[i];
+    end
+
+	reg [6:0] v3c6l4 [0:0];
+	logic [6:0] v3c6l4_out [0:0];
+	assign v3c6l4_out[0] = v3c6l3[0] + v3c6l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c6l4[i] <= v3c6l4_out[i];
+    end
+
+	reg [7:0] v3c6l5 [0:0];
+	logic [7:0] v3c6l5_out [0:0];
+	assign v3c6l5_out[0] = v3c6l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c6l5[i] <= v3c6l5_out[i];
+    end
+
+	assign val[3] = v3c6l5[0];
 	
 	// -0.015625
 	logic [0:36] g4;
@@ -5074,7 +11192,77 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g4_reg <= g4;
     end
     
-	assign val[4] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3] + g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7] + g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11] + g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15] + g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19] + g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23] + g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27] + g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31] + g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35] + g4_reg[36];
+	logic [2:0] v4c6l0_out [0:9];
+	logic [2:0] v4c6l0 [0:9];
+	assign v4c6l0_out[0] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3];
+	assign v4c6l0_out[1] = g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7];
+	assign v4c6l0_out[2] = g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11];
+	assign v4c6l0_out[3] = g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15];
+	assign v4c6l0_out[4] = g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19];
+	assign v4c6l0_out[5] = g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23];
+	assign v4c6l0_out[6] = g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27];
+	assign v4c6l0_out[7] = g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31];
+	assign v4c6l0_out[8] = g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	assign v4c6l0_out[9] = g4_reg[36];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v4c6l0[i] <= v4c6l0_out[i];
+    end
+
+	reg [3:0] v4c6l1 [0:4];
+	logic [3:0] v4c6l1_out [0:4];
+	assign v4c6l1_out[0] = v4c6l0[0] + v4c6l0[1];
+	assign v4c6l1_out[1] = v4c6l0[2] + v4c6l0[3];
+	assign v4c6l1_out[2] = v4c6l0[4] + v4c6l0[5];
+	assign v4c6l1_out[3] = v4c6l0[6] + v4c6l0[7];
+	assign v4c6l1_out[4] = v4c6l0[8] + v4c6l0[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v4c6l1[i] <= v4c6l1_out[i];
+    end
+
+	reg [4:0] v4c6l2 [0:2];
+	logic [4:0] v4c6l2_out [0:2];
+	assign v4c6l2_out[0] = v4c6l1[0] + v4c6l1[1];
+	assign v4c6l2_out[1] = v4c6l1[2] + v4c6l1[3];
+	assign v4c6l2_out[2] = v4c6l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v4c6l2[i] <= v4c6l2_out[i];
+    end
+
+	reg [5:0] v4c6l3 [0:1];
+	logic [5:0] v4c6l3_out [0:1];
+	assign v4c6l3_out[0] = v4c6l2[0] + v4c6l2[1];
+	assign v4c6l3_out[1] = v4c6l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v4c6l3[i] <= v4c6l3_out[i];
+    end
+
+	reg [6:0] v4c6l4 [0:0];
+	logic [6:0] v4c6l4_out [0:0];
+	assign v4c6l4_out[0] = v4c6l3[0] + v4c6l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c6l4[i] <= v4c6l4_out[i];
+    end
+
+	reg [7:0] v4c6l5 [0:0];
+	logic [7:0] v4c6l5_out [0:0];
+	assign v4c6l5_out[0] = v4c6l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c6l5[i] <= v4c6l5_out[i];
+    end
+
+	assign val[4] = v4c6l5[0];
 	
 	// 0.015625
 	logic [0:37] g5;
@@ -5122,7 +11310,77 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g5_reg <= g5;
     end
     
-	assign val[5] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3] + g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7] + g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11] + g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15] + g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19] + g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23] + g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27] + g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31] + g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35] + g5_reg[36] + g5_reg[37];
+	logic [2:0] v5c6l0_out [0:9];
+	logic [2:0] v5c6l0 [0:9];
+	assign v5c6l0_out[0] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3];
+	assign v5c6l0_out[1] = g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7];
+	assign v5c6l0_out[2] = g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11];
+	assign v5c6l0_out[3] = g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15];
+	assign v5c6l0_out[4] = g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19];
+	assign v5c6l0_out[5] = g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23];
+	assign v5c6l0_out[6] = g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27];
+	assign v5c6l0_out[7] = g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31];
+	assign v5c6l0_out[8] = g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35];
+	assign v5c6l0_out[9] = g5_reg[36] + g5_reg[37];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v5c6l0[i] <= v5c6l0_out[i];
+    end
+
+	reg [3:0] v5c6l1 [0:4];
+	logic [3:0] v5c6l1_out [0:4];
+	assign v5c6l1_out[0] = v5c6l0[0] + v5c6l0[1];
+	assign v5c6l1_out[1] = v5c6l0[2] + v5c6l0[3];
+	assign v5c6l1_out[2] = v5c6l0[4] + v5c6l0[5];
+	assign v5c6l1_out[3] = v5c6l0[6] + v5c6l0[7];
+	assign v5c6l1_out[4] = v5c6l0[8] + v5c6l0[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v5c6l1[i] <= v5c6l1_out[i];
+    end
+
+	reg [4:0] v5c6l2 [0:2];
+	logic [4:0] v5c6l2_out [0:2];
+	assign v5c6l2_out[0] = v5c6l1[0] + v5c6l1[1];
+	assign v5c6l2_out[1] = v5c6l1[2] + v5c6l1[3];
+	assign v5c6l2_out[2] = v5c6l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v5c6l2[i] <= v5c6l2_out[i];
+    end
+
+	reg [5:0] v5c6l3 [0:1];
+	logic [5:0] v5c6l3_out [0:1];
+	assign v5c6l3_out[0] = v5c6l2[0] + v5c6l2[1];
+	assign v5c6l3_out[1] = v5c6l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v5c6l3[i] <= v5c6l3_out[i];
+    end
+
+	reg [6:0] v5c6l4 [0:0];
+	logic [6:0] v5c6l4_out [0:0];
+	assign v5c6l4_out[0] = v5c6l3[0] + v5c6l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c6l4[i] <= v5c6l4_out[i];
+    end
+
+	reg [7:0] v5c6l5 [0:0];
+	logic [7:0] v5c6l5_out [0:0];
+	assign v5c6l5_out[0] = v5c6l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c6l5[i] <= v5c6l5_out[i];
+    end
+
+	assign val[5] = v5c6l5[0];
 	
 	// 0.03125
 	logic [0:67] g6;
@@ -5200,7 +11458,92 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g6_reg <= g6;
     end
     
-	assign val[6] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3] + g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7] + g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11] + g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15] + g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19] + g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23] + g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27] + g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31] + g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35] + g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39] + g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43] + g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47] + g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51] + g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55] + g6_reg[56] + g6_reg[57] + g6_reg[58] + g6_reg[59] + g6_reg[60] + g6_reg[61] + g6_reg[62] + g6_reg[63] + g6_reg[64] + g6_reg[65] + g6_reg[66] + g6_reg[67];
+	logic [2:0] v6c6l0_out [0:16];
+	logic [2:0] v6c6l0 [0:16];
+	assign v6c6l0_out[0] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3];
+	assign v6c6l0_out[1] = g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7];
+	assign v6c6l0_out[2] = g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11];
+	assign v6c6l0_out[3] = g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15];
+	assign v6c6l0_out[4] = g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19];
+	assign v6c6l0_out[5] = g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23];
+	assign v6c6l0_out[6] = g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27];
+	assign v6c6l0_out[7] = g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31];
+	assign v6c6l0_out[8] = g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35];
+	assign v6c6l0_out[9] = g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39];
+	assign v6c6l0_out[10] = g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	assign v6c6l0_out[11] = g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47];
+	assign v6c6l0_out[12] = g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51];
+	assign v6c6l0_out[13] = g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55];
+	assign v6c6l0_out[14] = g6_reg[56] + g6_reg[57] + g6_reg[58] + g6_reg[59];
+	assign v6c6l0_out[15] = g6_reg[60] + g6_reg[61] + g6_reg[62] + g6_reg[63];
+	assign v6c6l0_out[16] = g6_reg[64] + g6_reg[65] + g6_reg[66] + g6_reg[67];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 17; i = i + 1)
+            v6c6l0[i] <= v6c6l0_out[i];
+    end
+
+	reg [3:0] v6c6l1 [0:8];
+	logic [3:0] v6c6l1_out [0:8];
+	assign v6c6l1_out[0] = v6c6l0[0] + v6c6l0[1];
+	assign v6c6l1_out[1] = v6c6l0[2] + v6c6l0[3];
+	assign v6c6l1_out[2] = v6c6l0[4] + v6c6l0[5];
+	assign v6c6l1_out[3] = v6c6l0[6] + v6c6l0[7];
+	assign v6c6l1_out[4] = v6c6l0[8] + v6c6l0[9];
+	assign v6c6l1_out[5] = v6c6l0[10] + v6c6l0[11];
+	assign v6c6l1_out[6] = v6c6l0[12] + v6c6l0[13];
+	assign v6c6l1_out[7] = v6c6l0[14] + v6c6l0[15];
+	assign v6c6l1_out[8] = v6c6l0[16];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v6c6l1[i] <= v6c6l1_out[i];
+    end
+
+	reg [4:0] v6c6l2 [0:4];
+	logic [4:0] v6c6l2_out [0:4];
+	assign v6c6l2_out[0] = v6c6l1[0] + v6c6l1[1];
+	assign v6c6l2_out[1] = v6c6l1[2] + v6c6l1[3];
+	assign v6c6l2_out[2] = v6c6l1[4] + v6c6l1[5];
+	assign v6c6l2_out[3] = v6c6l1[6] + v6c6l1[7];
+	assign v6c6l2_out[4] = v6c6l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v6c6l2[i] <= v6c6l2_out[i];
+    end
+
+	reg [5:0] v6c6l3 [0:2];
+	logic [5:0] v6c6l3_out [0:2];
+	assign v6c6l3_out[0] = v6c6l2[0] + v6c6l2[1];
+	assign v6c6l3_out[1] = v6c6l2[2] + v6c6l2[3];
+	assign v6c6l3_out[2] = v6c6l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v6c6l3[i] <= v6c6l3_out[i];
+    end
+
+	reg [6:0] v6c6l4 [0:1];
+	logic [6:0] v6c6l4_out [0:1];
+	assign v6c6l4_out[0] = v6c6l3[0] + v6c6l3[1];
+	assign v6c6l4_out[1] = v6c6l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v6c6l4[i] <= v6c6l4_out[i];
+    end
+
+	reg [7:0] v6c6l5 [0:0];
+	logic [7:0] v6c6l5_out [0:0];
+	assign v6c6l5_out[0] = v6c6l4[0] + v6c6l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c6l5[i] <= v6c6l5_out[i];
+    end
+
+	assign val[6] = v6c6l5[0];
 	
 	// 0.0625
 	logic [0:75] g7;
@@ -5286,7 +11629,95 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g7_reg <= g7;
     end
     
-	assign val[7] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3] + g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7] + g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11] + g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15] + g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19] + g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23] + g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27] + g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31] + g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35] + g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39] + g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43] + g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47] + g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51] + g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55] + g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59] + g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63] + g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67] + g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71] + g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75];
+	logic [2:0] v7c6l0_out [0:18];
+	logic [2:0] v7c6l0 [0:18];
+	assign v7c6l0_out[0] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3];
+	assign v7c6l0_out[1] = g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7];
+	assign v7c6l0_out[2] = g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11];
+	assign v7c6l0_out[3] = g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15];
+	assign v7c6l0_out[4] = g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19];
+	assign v7c6l0_out[5] = g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23];
+	assign v7c6l0_out[6] = g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27];
+	assign v7c6l0_out[7] = g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31];
+	assign v7c6l0_out[8] = g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35];
+	assign v7c6l0_out[9] = g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39];
+	assign v7c6l0_out[10] = g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43];
+	assign v7c6l0_out[11] = g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47];
+	assign v7c6l0_out[12] = g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51];
+	assign v7c6l0_out[13] = g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55];
+	assign v7c6l0_out[14] = g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59];
+	assign v7c6l0_out[15] = g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63];
+	assign v7c6l0_out[16] = g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67];
+	assign v7c6l0_out[17] = g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71];
+	assign v7c6l0_out[18] = g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 19; i = i + 1)
+            v7c6l0[i] <= v7c6l0_out[i];
+    end
+
+	reg [3:0] v7c6l1 [0:9];
+	logic [3:0] v7c6l1_out [0:9];
+	assign v7c6l1_out[0] = v7c6l0[0] + v7c6l0[1];
+	assign v7c6l1_out[1] = v7c6l0[2] + v7c6l0[3];
+	assign v7c6l1_out[2] = v7c6l0[4] + v7c6l0[5];
+	assign v7c6l1_out[3] = v7c6l0[6] + v7c6l0[7];
+	assign v7c6l1_out[4] = v7c6l0[8] + v7c6l0[9];
+	assign v7c6l1_out[5] = v7c6l0[10] + v7c6l0[11];
+	assign v7c6l1_out[6] = v7c6l0[12] + v7c6l0[13];
+	assign v7c6l1_out[7] = v7c6l0[14] + v7c6l0[15];
+	assign v7c6l1_out[8] = v7c6l0[16] + v7c6l0[17];
+	assign v7c6l1_out[9] = v7c6l0[18];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v7c6l1[i] <= v7c6l1_out[i];
+    end
+
+	reg [4:0] v7c6l2 [0:4];
+	logic [4:0] v7c6l2_out [0:4];
+	assign v7c6l2_out[0] = v7c6l1[0] + v7c6l1[1];
+	assign v7c6l2_out[1] = v7c6l1[2] + v7c6l1[3];
+	assign v7c6l2_out[2] = v7c6l1[4] + v7c6l1[5];
+	assign v7c6l2_out[3] = v7c6l1[6] + v7c6l1[7];
+	assign v7c6l2_out[4] = v7c6l1[8] + v7c6l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v7c6l2[i] <= v7c6l2_out[i];
+    end
+
+	reg [5:0] v7c6l3 [0:2];
+	logic [5:0] v7c6l3_out [0:2];
+	assign v7c6l3_out[0] = v7c6l2[0] + v7c6l2[1];
+	assign v7c6l3_out[1] = v7c6l2[2] + v7c6l2[3];
+	assign v7c6l3_out[2] = v7c6l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v7c6l3[i] <= v7c6l3_out[i];
+    end
+
+	reg [6:0] v7c6l4 [0:1];
+	logic [6:0] v7c6l4_out [0:1];
+	assign v7c6l4_out[0] = v7c6l3[0] + v7c6l3[1];
+	assign v7c6l4_out[1] = v7c6l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v7c6l4[i] <= v7c6l4_out[i];
+    end
+
+	reg [7:0] v7c6l5 [0:0];
+	logic [7:0] v7c6l5_out [0:0];
+	assign v7c6l5_out[0] = v7c6l4[0] + v7c6l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c6l5[i] <= v7c6l5_out[i];
+    end
+
+	assign val[7] = v7c6l5[0];
 	
 	// 0.125
 	logic [0:85] g8;
@@ -5382,7 +11813,100 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g8_reg <= g8;
     end
     
-	assign val[8] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3] + g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7] + g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11] + g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15] + g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19] + g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23] + g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27] + g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31] + g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35] + g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39] + g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43] + g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47] + g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51] + g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55] + g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59] + g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63] + g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67] + g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71] + g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75] + g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79] + g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83] + g8_reg[84] + g8_reg[85];
+	logic [2:0] v8c6l0_out [0:21];
+	logic [2:0] v8c6l0 [0:21];
+	assign v8c6l0_out[0] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3];
+	assign v8c6l0_out[1] = g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7];
+	assign v8c6l0_out[2] = g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11];
+	assign v8c6l0_out[3] = g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15];
+	assign v8c6l0_out[4] = g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19];
+	assign v8c6l0_out[5] = g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23];
+	assign v8c6l0_out[6] = g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27];
+	assign v8c6l0_out[7] = g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31];
+	assign v8c6l0_out[8] = g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35];
+	assign v8c6l0_out[9] = g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39];
+	assign v8c6l0_out[10] = g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43];
+	assign v8c6l0_out[11] = g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47];
+	assign v8c6l0_out[12] = g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51];
+	assign v8c6l0_out[13] = g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55];
+	assign v8c6l0_out[14] = g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59];
+	assign v8c6l0_out[15] = g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63];
+	assign v8c6l0_out[16] = g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67];
+	assign v8c6l0_out[17] = g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71];
+	assign v8c6l0_out[18] = g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75];
+	assign v8c6l0_out[19] = g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79];
+	assign v8c6l0_out[20] = g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83];
+	assign v8c6l0_out[21] = g8_reg[84] + g8_reg[85];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 22; i = i + 1)
+            v8c6l0[i] <= v8c6l0_out[i];
+    end
+
+	reg [3:0] v8c6l1 [0:10];
+	logic [3:0] v8c6l1_out [0:10];
+	assign v8c6l1_out[0] = v8c6l0[0] + v8c6l0[1];
+	assign v8c6l1_out[1] = v8c6l0[2] + v8c6l0[3];
+	assign v8c6l1_out[2] = v8c6l0[4] + v8c6l0[5];
+	assign v8c6l1_out[3] = v8c6l0[6] + v8c6l0[7];
+	assign v8c6l1_out[4] = v8c6l0[8] + v8c6l0[9];
+	assign v8c6l1_out[5] = v8c6l0[10] + v8c6l0[11];
+	assign v8c6l1_out[6] = v8c6l0[12] + v8c6l0[13];
+	assign v8c6l1_out[7] = v8c6l0[14] + v8c6l0[15];
+	assign v8c6l1_out[8] = v8c6l0[16] + v8c6l0[17];
+	assign v8c6l1_out[9] = v8c6l0[18] + v8c6l0[19];
+	assign v8c6l1_out[10] = v8c6l0[20] + v8c6l0[21];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v8c6l1[i] <= v8c6l1_out[i];
+    end
+
+	reg [4:0] v8c6l2 [0:5];
+	logic [4:0] v8c6l2_out [0:5];
+	assign v8c6l2_out[0] = v8c6l1[0] + v8c6l1[1];
+	assign v8c6l2_out[1] = v8c6l1[2] + v8c6l1[3];
+	assign v8c6l2_out[2] = v8c6l1[4] + v8c6l1[5];
+	assign v8c6l2_out[3] = v8c6l1[6] + v8c6l1[7];
+	assign v8c6l2_out[4] = v8c6l1[8] + v8c6l1[9];
+	assign v8c6l2_out[5] = v8c6l1[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v8c6l2[i] <= v8c6l2_out[i];
+    end
+
+	reg [5:0] v8c6l3 [0:2];
+	logic [5:0] v8c6l3_out [0:2];
+	assign v8c6l3_out[0] = v8c6l2[0] + v8c6l2[1];
+	assign v8c6l3_out[1] = v8c6l2[2] + v8c6l2[3];
+	assign v8c6l3_out[2] = v8c6l2[4] + v8c6l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v8c6l3[i] <= v8c6l3_out[i];
+    end
+
+	reg [6:0] v8c6l4 [0:1];
+	logic [6:0] v8c6l4_out [0:1];
+	assign v8c6l4_out[0] = v8c6l3[0] + v8c6l3[1];
+	assign v8c6l4_out[1] = v8c6l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v8c6l4[i] <= v8c6l4_out[i];
+    end
+
+	reg [7:0] v8c6l5 [0:0];
+	logic [7:0] v8c6l5_out [0:0];
+	assign v8c6l5_out[0] = v8c6l4[0] + v8c6l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v8c6l5[i] <= v8c6l5_out[i];
+    end
+
+	assign val[8] = v8c6l5[0];
 	
 	// 0.25
 	logic [0:53] g9;
@@ -5446,7 +11970,84 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g9_reg <= g9;
     end
     
-	assign val[9] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3] + g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7] + g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11] + g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15] + g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19] + g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23] + g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27] + g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31] + g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35] + g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39] + g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43] + g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47] + g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51] + g9_reg[52] + g9_reg[53];
+	logic [2:0] v9c6l0_out [0:13];
+	logic [2:0] v9c6l0 [0:13];
+	assign v9c6l0_out[0] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3];
+	assign v9c6l0_out[1] = g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7];
+	assign v9c6l0_out[2] = g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11];
+	assign v9c6l0_out[3] = g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15];
+	assign v9c6l0_out[4] = g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19];
+	assign v9c6l0_out[5] = g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23];
+	assign v9c6l0_out[6] = g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27];
+	assign v9c6l0_out[7] = g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31];
+	assign v9c6l0_out[8] = g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	assign v9c6l0_out[9] = g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39];
+	assign v9c6l0_out[10] = g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43];
+	assign v9c6l0_out[11] = g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47];
+	assign v9c6l0_out[12] = g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51];
+	assign v9c6l0_out[13] = g9_reg[52] + g9_reg[53];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 14; i = i + 1)
+            v9c6l0[i] <= v9c6l0_out[i];
+    end
+
+	reg [3:0] v9c6l1 [0:6];
+	logic [3:0] v9c6l1_out [0:6];
+	assign v9c6l1_out[0] = v9c6l0[0] + v9c6l0[1];
+	assign v9c6l1_out[1] = v9c6l0[2] + v9c6l0[3];
+	assign v9c6l1_out[2] = v9c6l0[4] + v9c6l0[5];
+	assign v9c6l1_out[3] = v9c6l0[6] + v9c6l0[7];
+	assign v9c6l1_out[4] = v9c6l0[8] + v9c6l0[9];
+	assign v9c6l1_out[5] = v9c6l0[10] + v9c6l0[11];
+	assign v9c6l1_out[6] = v9c6l0[12] + v9c6l0[13];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v9c6l1[i] <= v9c6l1_out[i];
+    end
+
+	reg [4:0] v9c6l2 [0:3];
+	logic [4:0] v9c6l2_out [0:3];
+	assign v9c6l2_out[0] = v9c6l1[0] + v9c6l1[1];
+	assign v9c6l2_out[1] = v9c6l1[2] + v9c6l1[3];
+	assign v9c6l2_out[2] = v9c6l1[4] + v9c6l1[5];
+	assign v9c6l2_out[3] = v9c6l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v9c6l2[i] <= v9c6l2_out[i];
+    end
+
+	reg [5:0] v9c6l3 [0:1];
+	logic [5:0] v9c6l3_out [0:1];
+	assign v9c6l3_out[0] = v9c6l2[0] + v9c6l2[1];
+	assign v9c6l3_out[1] = v9c6l2[2] + v9c6l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v9c6l3[i] <= v9c6l3_out[i];
+    end
+
+	reg [6:0] v9c6l4 [0:0];
+	logic [6:0] v9c6l4_out [0:0];
+	assign v9c6l4_out[0] = v9c6l3[0] + v9c6l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c6l4[i] <= v9c6l4_out[i];
+    end
+
+	reg [7:0] v9c6l5 [0:0];
+	logic [7:0] v9c6l5_out [0:0];
+	assign v9c6l5_out[0] = v9c6l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c6l5[i] <= v9c6l5_out[i];
+    end
+
+	assign val[9] = v9c6l5[0];
 	
 	// 0.5
 	logic [0:15] g10;
@@ -5472,7 +12073,65 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g10_reg <= g10;
     end
     
-	assign val[10] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3] + g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7] + g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11] + g10_reg[12] + g10_reg[13] + g10_reg[14] + g10_reg[15];
+	logic [2:0] v10c6l0_out [0:3];
+	logic [2:0] v10c6l0 [0:3];
+	assign v10c6l0_out[0] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	assign v10c6l0_out[1] = g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7];
+	assign v10c6l0_out[2] = g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11];
+	assign v10c6l0_out[3] = g10_reg[12] + g10_reg[13] + g10_reg[14] + g10_reg[15];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v10c6l0[i] <= v10c6l0_out[i];
+    end
+
+	reg [3:0] v10c6l1 [0:1];
+	logic [3:0] v10c6l1_out [0:1];
+	assign v10c6l1_out[0] = v10c6l0[0] + v10c6l0[1];
+	assign v10c6l1_out[1] = v10c6l0[2] + v10c6l0[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v10c6l1[i] <= v10c6l1_out[i];
+    end
+
+	reg [4:0] v10c6l2 [0:0];
+	logic [4:0] v10c6l2_out [0:0];
+	assign v10c6l2_out[0] = v10c6l1[0] + v10c6l1[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c6l2[i] <= v10c6l2_out[i];
+    end
+
+	reg [5:0] v10c6l3 [0:0];
+	logic [5:0] v10c6l3_out [0:0];
+	assign v10c6l3_out[0] = v10c6l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c6l3[i] <= v10c6l3_out[i];
+    end
+
+	reg [6:0] v10c6l4 [0:0];
+	logic [6:0] v10c6l4_out [0:0];
+	assign v10c6l4_out[0] = v10c6l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c6l4[i] <= v10c6l4_out[i];
+    end
+
+	reg [7:0] v10c6l5 [0:0];
+	logic [7:0] v10c6l5_out [0:0];
+	assign v10c6l5_out[0] = v10c6l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c6l5[i] <= v10c6l5_out[i];
+    end
+
+	assign val[10] = v10c6l5[0];
 	
 	// 1.0
 	logic [0:4] g11;
@@ -5487,7 +12146,62 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g11_reg <= g11;
     end
     
-	assign val[11] = g11_reg[0] + g11_reg[1] + g11_reg[2] + g11_reg[3] + g11_reg[4];
+	logic [2:0] v11c6l0_out [0:1];
+	logic [2:0] v11c6l0 [0:1];
+	assign v11c6l0_out[0] = g11_reg[0] + g11_reg[1] + g11_reg[2] + g11_reg[3];
+	assign v11c6l0_out[1] = g11_reg[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v11c6l0[i] <= v11c6l0_out[i];
+    end
+
+	reg [3:0] v11c6l1 [0:0];
+	logic [3:0] v11c6l1_out [0:0];
+	assign v11c6l1_out[0] = v11c6l0[0] + v11c6l0[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c6l1[i] <= v11c6l1_out[i];
+    end
+
+	reg [4:0] v11c6l2 [0:0];
+	logic [4:0] v11c6l2_out [0:0];
+	assign v11c6l2_out[0] = v11c6l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c6l2[i] <= v11c6l2_out[i];
+    end
+
+	reg [5:0] v11c6l3 [0:0];
+	logic [5:0] v11c6l3_out [0:0];
+	assign v11c6l3_out[0] = v11c6l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c6l3[i] <= v11c6l3_out[i];
+    end
+
+	reg [6:0] v11c6l4 [0:0];
+	logic [6:0] v11c6l4_out [0:0];
+	assign v11c6l4_out[0] = v11c6l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c6l4[i] <= v11c6l4_out[i];
+    end
+
+	reg [7:0] v11c6l5 [0:0];
+	logic [7:0] v11c6l5_out [0:0];
+	assign v11c6l5_out[0] = v11c6l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c6l5[i] <= v11c6l5_out[i];
+    end
+
+	assign val[11] = v11c6l5[0];
 	
 	// 2.0
 	logic [0:0] g12;
@@ -5498,12 +12212,67 @@ module leaf_counter_6(input logic clk, input logic [0:1336] l, output logic [7:0
         g12_reg <= g12;
     end
     
-	assign val[12] = g12_reg[0];
+	logic [2:0] v12c6l0_out [0:0];
+	logic [2:0] v12c6l0 [0:0];
+	assign v12c6l0_out[0] = g12_reg[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c6l0[i] <= v12c6l0_out[i];
+    end
+
+	reg [3:0] v12c6l1 [0:0];
+	logic [3:0] v12c6l1_out [0:0];
+	assign v12c6l1_out[0] = v12c6l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c6l1[i] <= v12c6l1_out[i];
+    end
+
+	reg [4:0] v12c6l2 [0:0];
+	logic [4:0] v12c6l2_out [0:0];
+	assign v12c6l2_out[0] = v12c6l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c6l2[i] <= v12c6l2_out[i];
+    end
+
+	reg [5:0] v12c6l3 [0:0];
+	logic [5:0] v12c6l3_out [0:0];
+	assign v12c6l3_out[0] = v12c6l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c6l3[i] <= v12c6l3_out[i];
+    end
+
+	reg [6:0] v12c6l4 [0:0];
+	logic [6:0] v12c6l4_out [0:0];
+	assign v12c6l4_out[0] = v12c6l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c6l4[i] <= v12c6l4_out[i];
+    end
+
+	reg [7:0] v12c6l5 [0:0];
+	logic [7:0] v12c6l5_out [0:0];
+	assign v12c6l5_out[0] = v12c6l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c6l5[i] <= v12c6l5_out[i];
+    end
+
+	assign val[12] = v12c6l5[0];
 	
 endmodule
 
 
 module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0] val [0:12]);
+    integer i;
 	// -0.25
 	logic [0:80] g0;
 	reg [0:80] g0_reg;
@@ -5593,7 +12362,99 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g0_reg <= g0;
     end
     
-	assign val[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3] + g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7] + g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11] + g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15] + g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19] + g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23] + g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27] + g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31] + g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35] + g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39] + g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43] + g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47] + g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51] + g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55] + g0_reg[56] + g0_reg[57] + g0_reg[58] + g0_reg[59] + g0_reg[60] + g0_reg[61] + g0_reg[62] + g0_reg[63] + g0_reg[64] + g0_reg[65] + g0_reg[66] + g0_reg[67] + g0_reg[68] + g0_reg[69] + g0_reg[70] + g0_reg[71] + g0_reg[72] + g0_reg[73] + g0_reg[74] + g0_reg[75] + g0_reg[76] + g0_reg[77] + g0_reg[78] + g0_reg[79] + g0_reg[80];
+	logic [2:0] v0c7l0_out [0:20];
+	logic [2:0] v0c7l0 [0:20];
+	assign v0c7l0_out[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3];
+	assign v0c7l0_out[1] = g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7];
+	assign v0c7l0_out[2] = g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11];
+	assign v0c7l0_out[3] = g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15];
+	assign v0c7l0_out[4] = g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19];
+	assign v0c7l0_out[5] = g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23];
+	assign v0c7l0_out[6] = g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27];
+	assign v0c7l0_out[7] = g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31];
+	assign v0c7l0_out[8] = g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35];
+	assign v0c7l0_out[9] = g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39];
+	assign v0c7l0_out[10] = g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43];
+	assign v0c7l0_out[11] = g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47];
+	assign v0c7l0_out[12] = g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51];
+	assign v0c7l0_out[13] = g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55];
+	assign v0c7l0_out[14] = g0_reg[56] + g0_reg[57] + g0_reg[58] + g0_reg[59];
+	assign v0c7l0_out[15] = g0_reg[60] + g0_reg[61] + g0_reg[62] + g0_reg[63];
+	assign v0c7l0_out[16] = g0_reg[64] + g0_reg[65] + g0_reg[66] + g0_reg[67];
+	assign v0c7l0_out[17] = g0_reg[68] + g0_reg[69] + g0_reg[70] + g0_reg[71];
+	assign v0c7l0_out[18] = g0_reg[72] + g0_reg[73] + g0_reg[74] + g0_reg[75];
+	assign v0c7l0_out[19] = g0_reg[76] + g0_reg[77] + g0_reg[78] + g0_reg[79];
+	assign v0c7l0_out[20] = g0_reg[80];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 21; i = i + 1)
+            v0c7l0[i] <= v0c7l0_out[i];
+    end
+
+	reg [3:0] v0c7l1 [0:10];
+	logic [3:0] v0c7l1_out [0:10];
+	assign v0c7l1_out[0] = v0c7l0[0] + v0c7l0[1];
+	assign v0c7l1_out[1] = v0c7l0[2] + v0c7l0[3];
+	assign v0c7l1_out[2] = v0c7l0[4] + v0c7l0[5];
+	assign v0c7l1_out[3] = v0c7l0[6] + v0c7l0[7];
+	assign v0c7l1_out[4] = v0c7l0[8] + v0c7l0[9];
+	assign v0c7l1_out[5] = v0c7l0[10] + v0c7l0[11];
+	assign v0c7l1_out[6] = v0c7l0[12] + v0c7l0[13];
+	assign v0c7l1_out[7] = v0c7l0[14] + v0c7l0[15];
+	assign v0c7l1_out[8] = v0c7l0[16] + v0c7l0[17];
+	assign v0c7l1_out[9] = v0c7l0[18] + v0c7l0[19];
+	assign v0c7l1_out[10] = v0c7l0[20];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v0c7l1[i] <= v0c7l1_out[i];
+    end
+
+	reg [4:0] v0c7l2 [0:5];
+	logic [4:0] v0c7l2_out [0:5];
+	assign v0c7l2_out[0] = v0c7l1[0] + v0c7l1[1];
+	assign v0c7l2_out[1] = v0c7l1[2] + v0c7l1[3];
+	assign v0c7l2_out[2] = v0c7l1[4] + v0c7l1[5];
+	assign v0c7l2_out[3] = v0c7l1[6] + v0c7l1[7];
+	assign v0c7l2_out[4] = v0c7l1[8] + v0c7l1[9];
+	assign v0c7l2_out[5] = v0c7l1[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v0c7l2[i] <= v0c7l2_out[i];
+    end
+
+	reg [5:0] v0c7l3 [0:2];
+	logic [5:0] v0c7l3_out [0:2];
+	assign v0c7l3_out[0] = v0c7l2[0] + v0c7l2[1];
+	assign v0c7l3_out[1] = v0c7l2[2] + v0c7l2[3];
+	assign v0c7l3_out[2] = v0c7l2[4] + v0c7l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v0c7l3[i] <= v0c7l3_out[i];
+    end
+
+	reg [6:0] v0c7l4 [0:1];
+	logic [6:0] v0c7l4_out [0:1];
+	assign v0c7l4_out[0] = v0c7l3[0] + v0c7l3[1];
+	assign v0c7l4_out[1] = v0c7l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v0c7l4[i] <= v0c7l4_out[i];
+    end
+
+	reg [7:0] v0c7l5 [0:0];
+	logic [7:0] v0c7l5_out [0:0];
+	assign v0c7l5_out[0] = v0c7l4[0] + v0c7l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c7l5[i] <= v0c7l5_out[i];
+    end
+
+	assign val[0] = v0c7l5[0];
 	
 	// -0.125
 	logic [0:95] g1;
@@ -5699,7 +12560,103 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g1_reg <= g1;
     end
     
-	assign val[1] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3] + g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7] + g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11] + g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15] + g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19] + g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23] + g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27] + g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31] + g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35] + g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39] + g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43] + g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47] + g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51] + g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55] + g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59] + g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63] + g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67] + g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71] + g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75] + g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79] + g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83] + g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87] + g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91] + g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	logic [2:0] v1c7l0_out [0:23];
+	logic [2:0] v1c7l0 [0:23];
+	assign v1c7l0_out[0] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3];
+	assign v1c7l0_out[1] = g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7];
+	assign v1c7l0_out[2] = g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11];
+	assign v1c7l0_out[3] = g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15];
+	assign v1c7l0_out[4] = g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19];
+	assign v1c7l0_out[5] = g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23];
+	assign v1c7l0_out[6] = g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27];
+	assign v1c7l0_out[7] = g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31];
+	assign v1c7l0_out[8] = g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35];
+	assign v1c7l0_out[9] = g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39];
+	assign v1c7l0_out[10] = g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43];
+	assign v1c7l0_out[11] = g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47];
+	assign v1c7l0_out[12] = g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51];
+	assign v1c7l0_out[13] = g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55];
+	assign v1c7l0_out[14] = g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59];
+	assign v1c7l0_out[15] = g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63];
+	assign v1c7l0_out[16] = g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67];
+	assign v1c7l0_out[17] = g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71];
+	assign v1c7l0_out[18] = g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75];
+	assign v1c7l0_out[19] = g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79];
+	assign v1c7l0_out[20] = g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83];
+	assign v1c7l0_out[21] = g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87];
+	assign v1c7l0_out[22] = g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91];
+	assign v1c7l0_out[23] = g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 24; i = i + 1)
+            v1c7l0[i] <= v1c7l0_out[i];
+    end
+
+	reg [3:0] v1c7l1 [0:11];
+	logic [3:0] v1c7l1_out [0:11];
+	assign v1c7l1_out[0] = v1c7l0[0] + v1c7l0[1];
+	assign v1c7l1_out[1] = v1c7l0[2] + v1c7l0[3];
+	assign v1c7l1_out[2] = v1c7l0[4] + v1c7l0[5];
+	assign v1c7l1_out[3] = v1c7l0[6] + v1c7l0[7];
+	assign v1c7l1_out[4] = v1c7l0[8] + v1c7l0[9];
+	assign v1c7l1_out[5] = v1c7l0[10] + v1c7l0[11];
+	assign v1c7l1_out[6] = v1c7l0[12] + v1c7l0[13];
+	assign v1c7l1_out[7] = v1c7l0[14] + v1c7l0[15];
+	assign v1c7l1_out[8] = v1c7l0[16] + v1c7l0[17];
+	assign v1c7l1_out[9] = v1c7l0[18] + v1c7l0[19];
+	assign v1c7l1_out[10] = v1c7l0[20] + v1c7l0[21];
+	assign v1c7l1_out[11] = v1c7l0[22] + v1c7l0[23];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 12; i = i + 1)
+            v1c7l1[i] <= v1c7l1_out[i];
+    end
+
+	reg [4:0] v1c7l2 [0:5];
+	logic [4:0] v1c7l2_out [0:5];
+	assign v1c7l2_out[0] = v1c7l1[0] + v1c7l1[1];
+	assign v1c7l2_out[1] = v1c7l1[2] + v1c7l1[3];
+	assign v1c7l2_out[2] = v1c7l1[4] + v1c7l1[5];
+	assign v1c7l2_out[3] = v1c7l1[6] + v1c7l1[7];
+	assign v1c7l2_out[4] = v1c7l1[8] + v1c7l1[9];
+	assign v1c7l2_out[5] = v1c7l1[10] + v1c7l1[11];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v1c7l2[i] <= v1c7l2_out[i];
+    end
+
+	reg [5:0] v1c7l3 [0:2];
+	logic [5:0] v1c7l3_out [0:2];
+	assign v1c7l3_out[0] = v1c7l2[0] + v1c7l2[1];
+	assign v1c7l3_out[1] = v1c7l2[2] + v1c7l2[3];
+	assign v1c7l3_out[2] = v1c7l2[4] + v1c7l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v1c7l3[i] <= v1c7l3_out[i];
+    end
+
+	reg [6:0] v1c7l4 [0:1];
+	logic [6:0] v1c7l4_out [0:1];
+	assign v1c7l4_out[0] = v1c7l3[0] + v1c7l3[1];
+	assign v1c7l4_out[1] = v1c7l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v1c7l4[i] <= v1c7l4_out[i];
+    end
+
+	reg [7:0] v1c7l5 [0:0];
+	logic [7:0] v1c7l5_out [0:0];
+	assign v1c7l5_out[0] = v1c7l4[0] + v1c7l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v1c7l5[i] <= v1c7l5_out[i];
+    end
+
+	assign val[1] = v1c7l5[0];
 	
 	// -0.0625
 	logic [0:78] g2;
@@ -5788,7 +12745,96 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g2_reg <= g2;
     end
     
-	assign val[2] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3] + g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7] + g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11] + g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15] + g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19] + g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23] + g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27] + g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31] + g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35] + g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39] + g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43] + g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47] + g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51] + g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55] + g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59] + g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63] + g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67] + g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71] + g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75] + g2_reg[76] + g2_reg[77] + g2_reg[78];
+	logic [2:0] v2c7l0_out [0:19];
+	logic [2:0] v2c7l0 [0:19];
+	assign v2c7l0_out[0] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3];
+	assign v2c7l0_out[1] = g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7];
+	assign v2c7l0_out[2] = g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11];
+	assign v2c7l0_out[3] = g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15];
+	assign v2c7l0_out[4] = g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19];
+	assign v2c7l0_out[5] = g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23];
+	assign v2c7l0_out[6] = g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27];
+	assign v2c7l0_out[7] = g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31];
+	assign v2c7l0_out[8] = g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35];
+	assign v2c7l0_out[9] = g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39];
+	assign v2c7l0_out[10] = g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43];
+	assign v2c7l0_out[11] = g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47];
+	assign v2c7l0_out[12] = g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51];
+	assign v2c7l0_out[13] = g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55];
+	assign v2c7l0_out[14] = g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59];
+	assign v2c7l0_out[15] = g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63];
+	assign v2c7l0_out[16] = g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67];
+	assign v2c7l0_out[17] = g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71];
+	assign v2c7l0_out[18] = g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75];
+	assign v2c7l0_out[19] = g2_reg[76] + g2_reg[77] + g2_reg[78];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 20; i = i + 1)
+            v2c7l0[i] <= v2c7l0_out[i];
+    end
+
+	reg [3:0] v2c7l1 [0:9];
+	logic [3:0] v2c7l1_out [0:9];
+	assign v2c7l1_out[0] = v2c7l0[0] + v2c7l0[1];
+	assign v2c7l1_out[1] = v2c7l0[2] + v2c7l0[3];
+	assign v2c7l1_out[2] = v2c7l0[4] + v2c7l0[5];
+	assign v2c7l1_out[3] = v2c7l0[6] + v2c7l0[7];
+	assign v2c7l1_out[4] = v2c7l0[8] + v2c7l0[9];
+	assign v2c7l1_out[5] = v2c7l0[10] + v2c7l0[11];
+	assign v2c7l1_out[6] = v2c7l0[12] + v2c7l0[13];
+	assign v2c7l1_out[7] = v2c7l0[14] + v2c7l0[15];
+	assign v2c7l1_out[8] = v2c7l0[16] + v2c7l0[17];
+	assign v2c7l1_out[9] = v2c7l0[18] + v2c7l0[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v2c7l1[i] <= v2c7l1_out[i];
+    end
+
+	reg [4:0] v2c7l2 [0:4];
+	logic [4:0] v2c7l2_out [0:4];
+	assign v2c7l2_out[0] = v2c7l1[0] + v2c7l1[1];
+	assign v2c7l2_out[1] = v2c7l1[2] + v2c7l1[3];
+	assign v2c7l2_out[2] = v2c7l1[4] + v2c7l1[5];
+	assign v2c7l2_out[3] = v2c7l1[6] + v2c7l1[7];
+	assign v2c7l2_out[4] = v2c7l1[8] + v2c7l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v2c7l2[i] <= v2c7l2_out[i];
+    end
+
+	reg [5:0] v2c7l3 [0:2];
+	logic [5:0] v2c7l3_out [0:2];
+	assign v2c7l3_out[0] = v2c7l2[0] + v2c7l2[1];
+	assign v2c7l3_out[1] = v2c7l2[2] + v2c7l2[3];
+	assign v2c7l3_out[2] = v2c7l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v2c7l3[i] <= v2c7l3_out[i];
+    end
+
+	reg [6:0] v2c7l4 [0:1];
+	logic [6:0] v2c7l4_out [0:1];
+	assign v2c7l4_out[0] = v2c7l3[0] + v2c7l3[1];
+	assign v2c7l4_out[1] = v2c7l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v2c7l4[i] <= v2c7l4_out[i];
+    end
+
+	reg [7:0] v2c7l5 [0:0];
+	logic [7:0] v2c7l5_out [0:0];
+	assign v2c7l5_out[0] = v2c7l4[0] + v2c7l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v2c7l5[i] <= v2c7l5_out[i];
+    end
+
+	assign val[2] = v2c7l5[0];
 	
 	// -0.03125
 	logic [0:59] g3;
@@ -5858,7 +12904,86 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g3_reg <= g3;
     end
     
-	assign val[3] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3] + g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7] + g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11] + g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15] + g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19] + g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23] + g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27] + g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31] + g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35] + g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39] + g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43] + g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47] + g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51] + g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55] + g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59];
+	logic [2:0] v3c7l0_out [0:14];
+	logic [2:0] v3c7l0 [0:14];
+	assign v3c7l0_out[0] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3];
+	assign v3c7l0_out[1] = g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7];
+	assign v3c7l0_out[2] = g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11];
+	assign v3c7l0_out[3] = g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15];
+	assign v3c7l0_out[4] = g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19];
+	assign v3c7l0_out[5] = g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23];
+	assign v3c7l0_out[6] = g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27];
+	assign v3c7l0_out[7] = g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31];
+	assign v3c7l0_out[8] = g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35];
+	assign v3c7l0_out[9] = g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39];
+	assign v3c7l0_out[10] = g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43];
+	assign v3c7l0_out[11] = g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47];
+	assign v3c7l0_out[12] = g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51];
+	assign v3c7l0_out[13] = g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55];
+	assign v3c7l0_out[14] = g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 15; i = i + 1)
+            v3c7l0[i] <= v3c7l0_out[i];
+    end
+
+	reg [3:0] v3c7l1 [0:7];
+	logic [3:0] v3c7l1_out [0:7];
+	assign v3c7l1_out[0] = v3c7l0[0] + v3c7l0[1];
+	assign v3c7l1_out[1] = v3c7l0[2] + v3c7l0[3];
+	assign v3c7l1_out[2] = v3c7l0[4] + v3c7l0[5];
+	assign v3c7l1_out[3] = v3c7l0[6] + v3c7l0[7];
+	assign v3c7l1_out[4] = v3c7l0[8] + v3c7l0[9];
+	assign v3c7l1_out[5] = v3c7l0[10] + v3c7l0[11];
+	assign v3c7l1_out[6] = v3c7l0[12] + v3c7l0[13];
+	assign v3c7l1_out[7] = v3c7l0[14];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v3c7l1[i] <= v3c7l1_out[i];
+    end
+
+	reg [4:0] v3c7l2 [0:3];
+	logic [4:0] v3c7l2_out [0:3];
+	assign v3c7l2_out[0] = v3c7l1[0] + v3c7l1[1];
+	assign v3c7l2_out[1] = v3c7l1[2] + v3c7l1[3];
+	assign v3c7l2_out[2] = v3c7l1[4] + v3c7l1[5];
+	assign v3c7l2_out[3] = v3c7l1[6] + v3c7l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v3c7l2[i] <= v3c7l2_out[i];
+    end
+
+	reg [5:0] v3c7l3 [0:1];
+	logic [5:0] v3c7l3_out [0:1];
+	assign v3c7l3_out[0] = v3c7l2[0] + v3c7l2[1];
+	assign v3c7l3_out[1] = v3c7l2[2] + v3c7l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v3c7l3[i] <= v3c7l3_out[i];
+    end
+
+	reg [6:0] v3c7l4 [0:0];
+	logic [6:0] v3c7l4_out [0:0];
+	assign v3c7l4_out[0] = v3c7l3[0] + v3c7l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c7l4[i] <= v3c7l4_out[i];
+    end
+
+	reg [7:0] v3c7l5 [0:0];
+	logic [7:0] v3c7l5_out [0:0];
+	assign v3c7l5_out[0] = v3c7l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c7l5[i] <= v3c7l5_out[i];
+    end
+
+	assign val[3] = v3c7l5[0];
 	
 	// -0.015625
 	logic [0:39] g4;
@@ -5908,7 +13033,77 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g4_reg <= g4;
     end
     
-	assign val[4] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3] + g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7] + g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11] + g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15] + g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19] + g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23] + g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27] + g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31] + g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35] + g4_reg[36] + g4_reg[37] + g4_reg[38] + g4_reg[39];
+	logic [2:0] v4c7l0_out [0:9];
+	logic [2:0] v4c7l0 [0:9];
+	assign v4c7l0_out[0] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3];
+	assign v4c7l0_out[1] = g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7];
+	assign v4c7l0_out[2] = g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11];
+	assign v4c7l0_out[3] = g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15];
+	assign v4c7l0_out[4] = g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19];
+	assign v4c7l0_out[5] = g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23];
+	assign v4c7l0_out[6] = g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27];
+	assign v4c7l0_out[7] = g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31];
+	assign v4c7l0_out[8] = g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	assign v4c7l0_out[9] = g4_reg[36] + g4_reg[37] + g4_reg[38] + g4_reg[39];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v4c7l0[i] <= v4c7l0_out[i];
+    end
+
+	reg [3:0] v4c7l1 [0:4];
+	logic [3:0] v4c7l1_out [0:4];
+	assign v4c7l1_out[0] = v4c7l0[0] + v4c7l0[1];
+	assign v4c7l1_out[1] = v4c7l0[2] + v4c7l0[3];
+	assign v4c7l1_out[2] = v4c7l0[4] + v4c7l0[5];
+	assign v4c7l1_out[3] = v4c7l0[6] + v4c7l0[7];
+	assign v4c7l1_out[4] = v4c7l0[8] + v4c7l0[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v4c7l1[i] <= v4c7l1_out[i];
+    end
+
+	reg [4:0] v4c7l2 [0:2];
+	logic [4:0] v4c7l2_out [0:2];
+	assign v4c7l2_out[0] = v4c7l1[0] + v4c7l1[1];
+	assign v4c7l2_out[1] = v4c7l1[2] + v4c7l1[3];
+	assign v4c7l2_out[2] = v4c7l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v4c7l2[i] <= v4c7l2_out[i];
+    end
+
+	reg [5:0] v4c7l3 [0:1];
+	logic [5:0] v4c7l3_out [0:1];
+	assign v4c7l3_out[0] = v4c7l2[0] + v4c7l2[1];
+	assign v4c7l3_out[1] = v4c7l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v4c7l3[i] <= v4c7l3_out[i];
+    end
+
+	reg [6:0] v4c7l4 [0:0];
+	logic [6:0] v4c7l4_out [0:0];
+	assign v4c7l4_out[0] = v4c7l3[0] + v4c7l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c7l4[i] <= v4c7l4_out[i];
+    end
+
+	reg [7:0] v4c7l5 [0:0];
+	logic [7:0] v4c7l5_out [0:0];
+	assign v4c7l5_out[0] = v4c7l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c7l5[i] <= v4c7l5_out[i];
+    end
+
+	assign val[4] = v4c7l5[0];
 	
 	// 0.015625
 	logic [0:32] g5;
@@ -5951,7 +13146,76 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g5_reg <= g5;
     end
     
-	assign val[5] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3] + g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7] + g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11] + g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15] + g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19] + g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23] + g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27] + g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31] + g5_reg[32];
+	logic [2:0] v5c7l0_out [0:8];
+	logic [2:0] v5c7l0 [0:8];
+	assign v5c7l0_out[0] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3];
+	assign v5c7l0_out[1] = g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7];
+	assign v5c7l0_out[2] = g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11];
+	assign v5c7l0_out[3] = g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15];
+	assign v5c7l0_out[4] = g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19];
+	assign v5c7l0_out[5] = g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23];
+	assign v5c7l0_out[6] = g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27];
+	assign v5c7l0_out[7] = g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31];
+	assign v5c7l0_out[8] = g5_reg[32];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v5c7l0[i] <= v5c7l0_out[i];
+    end
+
+	reg [3:0] v5c7l1 [0:4];
+	logic [3:0] v5c7l1_out [0:4];
+	assign v5c7l1_out[0] = v5c7l0[0] + v5c7l0[1];
+	assign v5c7l1_out[1] = v5c7l0[2] + v5c7l0[3];
+	assign v5c7l1_out[2] = v5c7l0[4] + v5c7l0[5];
+	assign v5c7l1_out[3] = v5c7l0[6] + v5c7l0[7];
+	assign v5c7l1_out[4] = v5c7l0[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v5c7l1[i] <= v5c7l1_out[i];
+    end
+
+	reg [4:0] v5c7l2 [0:2];
+	logic [4:0] v5c7l2_out [0:2];
+	assign v5c7l2_out[0] = v5c7l1[0] + v5c7l1[1];
+	assign v5c7l2_out[1] = v5c7l1[2] + v5c7l1[3];
+	assign v5c7l2_out[2] = v5c7l1[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v5c7l2[i] <= v5c7l2_out[i];
+    end
+
+	reg [5:0] v5c7l3 [0:1];
+	logic [5:0] v5c7l3_out [0:1];
+	assign v5c7l3_out[0] = v5c7l2[0] + v5c7l2[1];
+	assign v5c7l3_out[1] = v5c7l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v5c7l3[i] <= v5c7l3_out[i];
+    end
+
+	reg [6:0] v5c7l4 [0:0];
+	logic [6:0] v5c7l4_out [0:0];
+	assign v5c7l4_out[0] = v5c7l3[0] + v5c7l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c7l4[i] <= v5c7l4_out[i];
+    end
+
+	reg [7:0] v5c7l5 [0:0];
+	logic [7:0] v5c7l5_out [0:0];
+	assign v5c7l5_out[0] = v5c7l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c7l5[i] <= v5c7l5_out[i];
+    end
+
+	assign val[5] = v5c7l5[0];
 	
 	// 0.03125
 	logic [0:64] g6;
@@ -6026,7 +13290,92 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g6_reg <= g6;
     end
     
-	assign val[6] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3] + g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7] + g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11] + g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15] + g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19] + g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23] + g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27] + g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31] + g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35] + g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39] + g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43] + g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47] + g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51] + g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55] + g6_reg[56] + g6_reg[57] + g6_reg[58] + g6_reg[59] + g6_reg[60] + g6_reg[61] + g6_reg[62] + g6_reg[63] + g6_reg[64];
+	logic [2:0] v6c7l0_out [0:16];
+	logic [2:0] v6c7l0 [0:16];
+	assign v6c7l0_out[0] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3];
+	assign v6c7l0_out[1] = g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7];
+	assign v6c7l0_out[2] = g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11];
+	assign v6c7l0_out[3] = g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15];
+	assign v6c7l0_out[4] = g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19];
+	assign v6c7l0_out[5] = g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23];
+	assign v6c7l0_out[6] = g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27];
+	assign v6c7l0_out[7] = g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31];
+	assign v6c7l0_out[8] = g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35];
+	assign v6c7l0_out[9] = g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39];
+	assign v6c7l0_out[10] = g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	assign v6c7l0_out[11] = g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47];
+	assign v6c7l0_out[12] = g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51];
+	assign v6c7l0_out[13] = g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55];
+	assign v6c7l0_out[14] = g6_reg[56] + g6_reg[57] + g6_reg[58] + g6_reg[59];
+	assign v6c7l0_out[15] = g6_reg[60] + g6_reg[61] + g6_reg[62] + g6_reg[63];
+	assign v6c7l0_out[16] = g6_reg[64];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 17; i = i + 1)
+            v6c7l0[i] <= v6c7l0_out[i];
+    end
+
+	reg [3:0] v6c7l1 [0:8];
+	logic [3:0] v6c7l1_out [0:8];
+	assign v6c7l1_out[0] = v6c7l0[0] + v6c7l0[1];
+	assign v6c7l1_out[1] = v6c7l0[2] + v6c7l0[3];
+	assign v6c7l1_out[2] = v6c7l0[4] + v6c7l0[5];
+	assign v6c7l1_out[3] = v6c7l0[6] + v6c7l0[7];
+	assign v6c7l1_out[4] = v6c7l0[8] + v6c7l0[9];
+	assign v6c7l1_out[5] = v6c7l0[10] + v6c7l0[11];
+	assign v6c7l1_out[6] = v6c7l0[12] + v6c7l0[13];
+	assign v6c7l1_out[7] = v6c7l0[14] + v6c7l0[15];
+	assign v6c7l1_out[8] = v6c7l0[16];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v6c7l1[i] <= v6c7l1_out[i];
+    end
+
+	reg [4:0] v6c7l2 [0:4];
+	logic [4:0] v6c7l2_out [0:4];
+	assign v6c7l2_out[0] = v6c7l1[0] + v6c7l1[1];
+	assign v6c7l2_out[1] = v6c7l1[2] + v6c7l1[3];
+	assign v6c7l2_out[2] = v6c7l1[4] + v6c7l1[5];
+	assign v6c7l2_out[3] = v6c7l1[6] + v6c7l1[7];
+	assign v6c7l2_out[4] = v6c7l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v6c7l2[i] <= v6c7l2_out[i];
+    end
+
+	reg [5:0] v6c7l3 [0:2];
+	logic [5:0] v6c7l3_out [0:2];
+	assign v6c7l3_out[0] = v6c7l2[0] + v6c7l2[1];
+	assign v6c7l3_out[1] = v6c7l2[2] + v6c7l2[3];
+	assign v6c7l3_out[2] = v6c7l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v6c7l3[i] <= v6c7l3_out[i];
+    end
+
+	reg [6:0] v6c7l4 [0:1];
+	logic [6:0] v6c7l4_out [0:1];
+	assign v6c7l4_out[0] = v6c7l3[0] + v6c7l3[1];
+	assign v6c7l4_out[1] = v6c7l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v6c7l4[i] <= v6c7l4_out[i];
+    end
+
+	reg [7:0] v6c7l5 [0:0];
+	logic [7:0] v6c7l5_out [0:0];
+	assign v6c7l5_out[0] = v6c7l4[0] + v6c7l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c7l5[i] <= v6c7l5_out[i];
+    end
+
+	assign val[6] = v6c7l5[0];
 	
 	// 0.0625
 	logic [0:62] g7;
@@ -6099,7 +13448,87 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g7_reg <= g7;
     end
     
-	assign val[7] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3] + g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7] + g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11] + g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15] + g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19] + g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23] + g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27] + g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31] + g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35] + g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39] + g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43] + g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47] + g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51] + g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55] + g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59] + g7_reg[60] + g7_reg[61] + g7_reg[62];
+	logic [2:0] v7c7l0_out [0:15];
+	logic [2:0] v7c7l0 [0:15];
+	assign v7c7l0_out[0] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3];
+	assign v7c7l0_out[1] = g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7];
+	assign v7c7l0_out[2] = g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11];
+	assign v7c7l0_out[3] = g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15];
+	assign v7c7l0_out[4] = g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19];
+	assign v7c7l0_out[5] = g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23];
+	assign v7c7l0_out[6] = g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27];
+	assign v7c7l0_out[7] = g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31];
+	assign v7c7l0_out[8] = g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35];
+	assign v7c7l0_out[9] = g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39];
+	assign v7c7l0_out[10] = g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43];
+	assign v7c7l0_out[11] = g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47];
+	assign v7c7l0_out[12] = g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51];
+	assign v7c7l0_out[13] = g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55];
+	assign v7c7l0_out[14] = g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59];
+	assign v7c7l0_out[15] = g7_reg[60] + g7_reg[61] + g7_reg[62];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 16; i = i + 1)
+            v7c7l0[i] <= v7c7l0_out[i];
+    end
+
+	reg [3:0] v7c7l1 [0:7];
+	logic [3:0] v7c7l1_out [0:7];
+	assign v7c7l1_out[0] = v7c7l0[0] + v7c7l0[1];
+	assign v7c7l1_out[1] = v7c7l0[2] + v7c7l0[3];
+	assign v7c7l1_out[2] = v7c7l0[4] + v7c7l0[5];
+	assign v7c7l1_out[3] = v7c7l0[6] + v7c7l0[7];
+	assign v7c7l1_out[4] = v7c7l0[8] + v7c7l0[9];
+	assign v7c7l1_out[5] = v7c7l0[10] + v7c7l0[11];
+	assign v7c7l1_out[6] = v7c7l0[12] + v7c7l0[13];
+	assign v7c7l1_out[7] = v7c7l0[14] + v7c7l0[15];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v7c7l1[i] <= v7c7l1_out[i];
+    end
+
+	reg [4:0] v7c7l2 [0:3];
+	logic [4:0] v7c7l2_out [0:3];
+	assign v7c7l2_out[0] = v7c7l1[0] + v7c7l1[1];
+	assign v7c7l2_out[1] = v7c7l1[2] + v7c7l1[3];
+	assign v7c7l2_out[2] = v7c7l1[4] + v7c7l1[5];
+	assign v7c7l2_out[3] = v7c7l1[6] + v7c7l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v7c7l2[i] <= v7c7l2_out[i];
+    end
+
+	reg [5:0] v7c7l3 [0:1];
+	logic [5:0] v7c7l3_out [0:1];
+	assign v7c7l3_out[0] = v7c7l2[0] + v7c7l2[1];
+	assign v7c7l3_out[1] = v7c7l2[2] + v7c7l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v7c7l3[i] <= v7c7l3_out[i];
+    end
+
+	reg [6:0] v7c7l4 [0:0];
+	logic [6:0] v7c7l4_out [0:0];
+	assign v7c7l4_out[0] = v7c7l3[0] + v7c7l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c7l4[i] <= v7c7l4_out[i];
+    end
+
+	reg [7:0] v7c7l5 [0:0];
+	logic [7:0] v7c7l5_out [0:0];
+	assign v7c7l5_out[0] = v7c7l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c7l5[i] <= v7c7l5_out[i];
+    end
+
+	assign val[7] = v7c7l5[0];
 	
 	// 0.125
 	logic [0:77] g8;
@@ -6187,7 +13616,96 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g8_reg <= g8;
     end
     
-	assign val[8] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3] + g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7] + g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11] + g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15] + g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19] + g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23] + g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27] + g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31] + g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35] + g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39] + g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43] + g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47] + g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51] + g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55] + g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59] + g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63] + g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67] + g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71] + g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75] + g8_reg[76] + g8_reg[77];
+	logic [2:0] v8c7l0_out [0:19];
+	logic [2:0] v8c7l0 [0:19];
+	assign v8c7l0_out[0] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3];
+	assign v8c7l0_out[1] = g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7];
+	assign v8c7l0_out[2] = g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11];
+	assign v8c7l0_out[3] = g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15];
+	assign v8c7l0_out[4] = g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19];
+	assign v8c7l0_out[5] = g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23];
+	assign v8c7l0_out[6] = g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27];
+	assign v8c7l0_out[7] = g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31];
+	assign v8c7l0_out[8] = g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35];
+	assign v8c7l0_out[9] = g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39];
+	assign v8c7l0_out[10] = g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43];
+	assign v8c7l0_out[11] = g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47];
+	assign v8c7l0_out[12] = g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51];
+	assign v8c7l0_out[13] = g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55];
+	assign v8c7l0_out[14] = g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59];
+	assign v8c7l0_out[15] = g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63];
+	assign v8c7l0_out[16] = g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67];
+	assign v8c7l0_out[17] = g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71];
+	assign v8c7l0_out[18] = g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75];
+	assign v8c7l0_out[19] = g8_reg[76] + g8_reg[77];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 20; i = i + 1)
+            v8c7l0[i] <= v8c7l0_out[i];
+    end
+
+	reg [3:0] v8c7l1 [0:9];
+	logic [3:0] v8c7l1_out [0:9];
+	assign v8c7l1_out[0] = v8c7l0[0] + v8c7l0[1];
+	assign v8c7l1_out[1] = v8c7l0[2] + v8c7l0[3];
+	assign v8c7l1_out[2] = v8c7l0[4] + v8c7l0[5];
+	assign v8c7l1_out[3] = v8c7l0[6] + v8c7l0[7];
+	assign v8c7l1_out[4] = v8c7l0[8] + v8c7l0[9];
+	assign v8c7l1_out[5] = v8c7l0[10] + v8c7l0[11];
+	assign v8c7l1_out[6] = v8c7l0[12] + v8c7l0[13];
+	assign v8c7l1_out[7] = v8c7l0[14] + v8c7l0[15];
+	assign v8c7l1_out[8] = v8c7l0[16] + v8c7l0[17];
+	assign v8c7l1_out[9] = v8c7l0[18] + v8c7l0[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v8c7l1[i] <= v8c7l1_out[i];
+    end
+
+	reg [4:0] v8c7l2 [0:4];
+	logic [4:0] v8c7l2_out [0:4];
+	assign v8c7l2_out[0] = v8c7l1[0] + v8c7l1[1];
+	assign v8c7l2_out[1] = v8c7l1[2] + v8c7l1[3];
+	assign v8c7l2_out[2] = v8c7l1[4] + v8c7l1[5];
+	assign v8c7l2_out[3] = v8c7l1[6] + v8c7l1[7];
+	assign v8c7l2_out[4] = v8c7l1[8] + v8c7l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v8c7l2[i] <= v8c7l2_out[i];
+    end
+
+	reg [5:0] v8c7l3 [0:2];
+	logic [5:0] v8c7l3_out [0:2];
+	assign v8c7l3_out[0] = v8c7l2[0] + v8c7l2[1];
+	assign v8c7l3_out[1] = v8c7l2[2] + v8c7l2[3];
+	assign v8c7l3_out[2] = v8c7l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v8c7l3[i] <= v8c7l3_out[i];
+    end
+
+	reg [6:0] v8c7l4 [0:1];
+	logic [6:0] v8c7l4_out [0:1];
+	assign v8c7l4_out[0] = v8c7l3[0] + v8c7l3[1];
+	assign v8c7l4_out[1] = v8c7l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v8c7l4[i] <= v8c7l4_out[i];
+    end
+
+	reg [7:0] v8c7l5 [0:0];
+	logic [7:0] v8c7l5_out [0:0];
+	assign v8c7l5_out[0] = v8c7l4[0] + v8c7l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v8c7l5[i] <= v8c7l5_out[i];
+    end
+
+	assign val[8] = v8c7l5[0];
 	
 	// 0.25
 	logic [0:55] g9;
@@ -6253,7 +13771,84 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g9_reg <= g9;
     end
     
-	assign val[9] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3] + g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7] + g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11] + g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15] + g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19] + g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23] + g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27] + g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31] + g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35] + g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39] + g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43] + g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47] + g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51] + g9_reg[52] + g9_reg[53] + g9_reg[54] + g9_reg[55];
+	logic [2:0] v9c7l0_out [0:13];
+	logic [2:0] v9c7l0 [0:13];
+	assign v9c7l0_out[0] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3];
+	assign v9c7l0_out[1] = g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7];
+	assign v9c7l0_out[2] = g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11];
+	assign v9c7l0_out[3] = g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15];
+	assign v9c7l0_out[4] = g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19];
+	assign v9c7l0_out[5] = g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23];
+	assign v9c7l0_out[6] = g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27];
+	assign v9c7l0_out[7] = g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31];
+	assign v9c7l0_out[8] = g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	assign v9c7l0_out[9] = g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39];
+	assign v9c7l0_out[10] = g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43];
+	assign v9c7l0_out[11] = g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47];
+	assign v9c7l0_out[12] = g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51];
+	assign v9c7l0_out[13] = g9_reg[52] + g9_reg[53] + g9_reg[54] + g9_reg[55];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 14; i = i + 1)
+            v9c7l0[i] <= v9c7l0_out[i];
+    end
+
+	reg [3:0] v9c7l1 [0:6];
+	logic [3:0] v9c7l1_out [0:6];
+	assign v9c7l1_out[0] = v9c7l0[0] + v9c7l0[1];
+	assign v9c7l1_out[1] = v9c7l0[2] + v9c7l0[3];
+	assign v9c7l1_out[2] = v9c7l0[4] + v9c7l0[5];
+	assign v9c7l1_out[3] = v9c7l0[6] + v9c7l0[7];
+	assign v9c7l1_out[4] = v9c7l0[8] + v9c7l0[9];
+	assign v9c7l1_out[5] = v9c7l0[10] + v9c7l0[11];
+	assign v9c7l1_out[6] = v9c7l0[12] + v9c7l0[13];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v9c7l1[i] <= v9c7l1_out[i];
+    end
+
+	reg [4:0] v9c7l2 [0:3];
+	logic [4:0] v9c7l2_out [0:3];
+	assign v9c7l2_out[0] = v9c7l1[0] + v9c7l1[1];
+	assign v9c7l2_out[1] = v9c7l1[2] + v9c7l1[3];
+	assign v9c7l2_out[2] = v9c7l1[4] + v9c7l1[5];
+	assign v9c7l2_out[3] = v9c7l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v9c7l2[i] <= v9c7l2_out[i];
+    end
+
+	reg [5:0] v9c7l3 [0:1];
+	logic [5:0] v9c7l3_out [0:1];
+	assign v9c7l3_out[0] = v9c7l2[0] + v9c7l2[1];
+	assign v9c7l3_out[1] = v9c7l2[2] + v9c7l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v9c7l3[i] <= v9c7l3_out[i];
+    end
+
+	reg [6:0] v9c7l4 [0:0];
+	logic [6:0] v9c7l4_out [0:0];
+	assign v9c7l4_out[0] = v9c7l3[0] + v9c7l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c7l4[i] <= v9c7l4_out[i];
+    end
+
+	reg [7:0] v9c7l5 [0:0];
+	logic [7:0] v9c7l5_out [0:0];
+	assign v9c7l5_out[0] = v9c7l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c7l5[i] <= v9c7l5_out[i];
+    end
+
+	assign val[9] = v9c7l5[0];
 	
 	// 0.5
 	logic [0:14] g10;
@@ -6278,7 +13873,65 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g10_reg <= g10;
     end
     
-	assign val[10] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3] + g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7] + g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11] + g10_reg[12] + g10_reg[13] + g10_reg[14];
+	logic [2:0] v10c7l0_out [0:3];
+	logic [2:0] v10c7l0 [0:3];
+	assign v10c7l0_out[0] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	assign v10c7l0_out[1] = g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7];
+	assign v10c7l0_out[2] = g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11];
+	assign v10c7l0_out[3] = g10_reg[12] + g10_reg[13] + g10_reg[14];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v10c7l0[i] <= v10c7l0_out[i];
+    end
+
+	reg [3:0] v10c7l1 [0:1];
+	logic [3:0] v10c7l1_out [0:1];
+	assign v10c7l1_out[0] = v10c7l0[0] + v10c7l0[1];
+	assign v10c7l1_out[1] = v10c7l0[2] + v10c7l0[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v10c7l1[i] <= v10c7l1_out[i];
+    end
+
+	reg [4:0] v10c7l2 [0:0];
+	logic [4:0] v10c7l2_out [0:0];
+	assign v10c7l2_out[0] = v10c7l1[0] + v10c7l1[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c7l2[i] <= v10c7l2_out[i];
+    end
+
+	reg [5:0] v10c7l3 [0:0];
+	logic [5:0] v10c7l3_out [0:0];
+	assign v10c7l3_out[0] = v10c7l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c7l3[i] <= v10c7l3_out[i];
+    end
+
+	reg [6:0] v10c7l4 [0:0];
+	logic [6:0] v10c7l4_out [0:0];
+	assign v10c7l4_out[0] = v10c7l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c7l4[i] <= v10c7l4_out[i];
+    end
+
+	reg [7:0] v10c7l5 [0:0];
+	logic [7:0] v10c7l5_out [0:0];
+	assign v10c7l5_out[0] = v10c7l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c7l5[i] <= v10c7l5_out[i];
+    end
+
+	assign val[10] = v10c7l5[0];
 	
 	// 1.0
 	logic [0:1] g11;
@@ -6290,7 +13943,61 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g11_reg <= g11;
     end
     
-	assign val[11] = g11_reg[0] + g11_reg[1];
+	logic [2:0] v11c7l0_out [0:0];
+	logic [2:0] v11c7l0 [0:0];
+	assign v11c7l0_out[0] = g11_reg[0] + g11_reg[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c7l0[i] <= v11c7l0_out[i];
+    end
+
+	reg [3:0] v11c7l1 [0:0];
+	logic [3:0] v11c7l1_out [0:0];
+	assign v11c7l1_out[0] = v11c7l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c7l1[i] <= v11c7l1_out[i];
+    end
+
+	reg [4:0] v11c7l2 [0:0];
+	logic [4:0] v11c7l2_out [0:0];
+	assign v11c7l2_out[0] = v11c7l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c7l2[i] <= v11c7l2_out[i];
+    end
+
+	reg [5:0] v11c7l3 [0:0];
+	logic [5:0] v11c7l3_out [0:0];
+	assign v11c7l3_out[0] = v11c7l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c7l3[i] <= v11c7l3_out[i];
+    end
+
+	reg [6:0] v11c7l4 [0:0];
+	logic [6:0] v11c7l4_out [0:0];
+	assign v11c7l4_out[0] = v11c7l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c7l4[i] <= v11c7l4_out[i];
+    end
+
+	reg [7:0] v11c7l5 [0:0];
+	logic [7:0] v11c7l5_out [0:0];
+	assign v11c7l5_out[0] = v11c7l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c7l5[i] <= v11c7l5_out[i];
+    end
+
+	assign val[11] = v11c7l5[0];
 	
 	// 2.0
 	logic [0:0] g12;
@@ -6301,12 +14008,67 @@ module leaf_counter_7(input logic clk, input logic [0:1279] l, output logic [7:0
         g12_reg <= g12;
     end
     
-	assign val[12] = g12_reg[0];
+	logic [2:0] v12c7l0_out [0:0];
+	logic [2:0] v12c7l0 [0:0];
+	assign v12c7l0_out[0] = g12_reg[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c7l0[i] <= v12c7l0_out[i];
+    end
+
+	reg [3:0] v12c7l1 [0:0];
+	logic [3:0] v12c7l1_out [0:0];
+	assign v12c7l1_out[0] = v12c7l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c7l1[i] <= v12c7l1_out[i];
+    end
+
+	reg [4:0] v12c7l2 [0:0];
+	logic [4:0] v12c7l2_out [0:0];
+	assign v12c7l2_out[0] = v12c7l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c7l2[i] <= v12c7l2_out[i];
+    end
+
+	reg [5:0] v12c7l3 [0:0];
+	logic [5:0] v12c7l3_out [0:0];
+	assign v12c7l3_out[0] = v12c7l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c7l3[i] <= v12c7l3_out[i];
+    end
+
+	reg [6:0] v12c7l4 [0:0];
+	logic [6:0] v12c7l4_out [0:0];
+	assign v12c7l4_out[0] = v12c7l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c7l4[i] <= v12c7l4_out[i];
+    end
+
+	reg [7:0] v12c7l5 [0:0];
+	logic [7:0] v12c7l5_out [0:0];
+	assign v12c7l5_out[0] = v12c7l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c7l5[i] <= v12c7l5_out[i];
+    end
+
+	assign val[12] = v12c7l5[0];
 	
 endmodule
 
 
 module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0] val [0:12]);
+    integer i;
 	// -0.25
 	logic [0:25] g0;
 	reg [0:25] g0_reg;
@@ -6341,7 +14103,71 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g0_reg <= g0;
     end
     
-	assign val[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3] + g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7] + g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11] + g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15] + g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19] + g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23] + g0_reg[24] + g0_reg[25];
+	logic [2:0] v0c8l0_out [0:6];
+	logic [2:0] v0c8l0 [0:6];
+	assign v0c8l0_out[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3];
+	assign v0c8l0_out[1] = g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7];
+	assign v0c8l0_out[2] = g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11];
+	assign v0c8l0_out[3] = g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15];
+	assign v0c8l0_out[4] = g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19];
+	assign v0c8l0_out[5] = g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23];
+	assign v0c8l0_out[6] = g0_reg[24] + g0_reg[25];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v0c8l0[i] <= v0c8l0_out[i];
+    end
+
+	reg [3:0] v0c8l1 [0:3];
+	logic [3:0] v0c8l1_out [0:3];
+	assign v0c8l1_out[0] = v0c8l0[0] + v0c8l0[1];
+	assign v0c8l1_out[1] = v0c8l0[2] + v0c8l0[3];
+	assign v0c8l1_out[2] = v0c8l0[4] + v0c8l0[5];
+	assign v0c8l1_out[3] = v0c8l0[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v0c8l1[i] <= v0c8l1_out[i];
+    end
+
+	reg [4:0] v0c8l2 [0:1];
+	logic [4:0] v0c8l2_out [0:1];
+	assign v0c8l2_out[0] = v0c8l1[0] + v0c8l1[1];
+	assign v0c8l2_out[1] = v0c8l1[2] + v0c8l1[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v0c8l2[i] <= v0c8l2_out[i];
+    end
+
+	reg [5:0] v0c8l3 [0:0];
+	logic [5:0] v0c8l3_out [0:0];
+	assign v0c8l3_out[0] = v0c8l2[0] + v0c8l2[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c8l3[i] <= v0c8l3_out[i];
+    end
+
+	reg [6:0] v0c8l4 [0:0];
+	logic [6:0] v0c8l4_out [0:0];
+	assign v0c8l4_out[0] = v0c8l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c8l4[i] <= v0c8l4_out[i];
+    end
+
+	reg [7:0] v0c8l5 [0:0];
+	logic [7:0] v0c8l5_out [0:0];
+	assign v0c8l5_out[0] = v0c8l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c8l5[i] <= v0c8l5_out[i];
+    end
+
+	assign val[0] = v0c8l5[0];
 	
 	// -0.125
 	logic [0:97] g1;
@@ -6449,7 +14275,107 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g1_reg <= g1;
     end
     
-	assign val[1] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3] + g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7] + g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11] + g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15] + g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19] + g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23] + g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27] + g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31] + g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35] + g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39] + g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43] + g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47] + g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51] + g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55] + g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59] + g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63] + g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67] + g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71] + g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75] + g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79] + g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83] + g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87] + g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91] + g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95] + g1_reg[96] + g1_reg[97];
+	logic [2:0] v1c8l0_out [0:24];
+	logic [2:0] v1c8l0 [0:24];
+	assign v1c8l0_out[0] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3];
+	assign v1c8l0_out[1] = g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7];
+	assign v1c8l0_out[2] = g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11];
+	assign v1c8l0_out[3] = g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15];
+	assign v1c8l0_out[4] = g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19];
+	assign v1c8l0_out[5] = g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23];
+	assign v1c8l0_out[6] = g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27];
+	assign v1c8l0_out[7] = g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31];
+	assign v1c8l0_out[8] = g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35];
+	assign v1c8l0_out[9] = g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39];
+	assign v1c8l0_out[10] = g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43];
+	assign v1c8l0_out[11] = g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47];
+	assign v1c8l0_out[12] = g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51];
+	assign v1c8l0_out[13] = g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55];
+	assign v1c8l0_out[14] = g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59];
+	assign v1c8l0_out[15] = g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63];
+	assign v1c8l0_out[16] = g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67];
+	assign v1c8l0_out[17] = g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71];
+	assign v1c8l0_out[18] = g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75];
+	assign v1c8l0_out[19] = g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79];
+	assign v1c8l0_out[20] = g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83];
+	assign v1c8l0_out[21] = g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87];
+	assign v1c8l0_out[22] = g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91];
+	assign v1c8l0_out[23] = g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	assign v1c8l0_out[24] = g1_reg[96] + g1_reg[97];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 25; i = i + 1)
+            v1c8l0[i] <= v1c8l0_out[i];
+    end
+
+	reg [3:0] v1c8l1 [0:12];
+	logic [3:0] v1c8l1_out [0:12];
+	assign v1c8l1_out[0] = v1c8l0[0] + v1c8l0[1];
+	assign v1c8l1_out[1] = v1c8l0[2] + v1c8l0[3];
+	assign v1c8l1_out[2] = v1c8l0[4] + v1c8l0[5];
+	assign v1c8l1_out[3] = v1c8l0[6] + v1c8l0[7];
+	assign v1c8l1_out[4] = v1c8l0[8] + v1c8l0[9];
+	assign v1c8l1_out[5] = v1c8l0[10] + v1c8l0[11];
+	assign v1c8l1_out[6] = v1c8l0[12] + v1c8l0[13];
+	assign v1c8l1_out[7] = v1c8l0[14] + v1c8l0[15];
+	assign v1c8l1_out[8] = v1c8l0[16] + v1c8l0[17];
+	assign v1c8l1_out[9] = v1c8l0[18] + v1c8l0[19];
+	assign v1c8l1_out[10] = v1c8l0[20] + v1c8l0[21];
+	assign v1c8l1_out[11] = v1c8l0[22] + v1c8l0[23];
+	assign v1c8l1_out[12] = v1c8l0[24];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v1c8l1[i] <= v1c8l1_out[i];
+    end
+
+	reg [4:0] v1c8l2 [0:6];
+	logic [4:0] v1c8l2_out [0:6];
+	assign v1c8l2_out[0] = v1c8l1[0] + v1c8l1[1];
+	assign v1c8l2_out[1] = v1c8l1[2] + v1c8l1[3];
+	assign v1c8l2_out[2] = v1c8l1[4] + v1c8l1[5];
+	assign v1c8l2_out[3] = v1c8l1[6] + v1c8l1[7];
+	assign v1c8l2_out[4] = v1c8l1[8] + v1c8l1[9];
+	assign v1c8l2_out[5] = v1c8l1[10] + v1c8l1[11];
+	assign v1c8l2_out[6] = v1c8l1[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v1c8l2[i] <= v1c8l2_out[i];
+    end
+
+	reg [5:0] v1c8l3 [0:3];
+	logic [5:0] v1c8l3_out [0:3];
+	assign v1c8l3_out[0] = v1c8l2[0] + v1c8l2[1];
+	assign v1c8l3_out[1] = v1c8l2[2] + v1c8l2[3];
+	assign v1c8l3_out[2] = v1c8l2[4] + v1c8l2[5];
+	assign v1c8l3_out[3] = v1c8l2[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v1c8l3[i] <= v1c8l3_out[i];
+    end
+
+	reg [6:0] v1c8l4 [0:1];
+	logic [6:0] v1c8l4_out [0:1];
+	assign v1c8l4_out[0] = v1c8l3[0] + v1c8l3[1];
+	assign v1c8l4_out[1] = v1c8l3[2] + v1c8l3[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v1c8l4[i] <= v1c8l4_out[i];
+    end
+
+	reg [7:0] v1c8l5 [0:0];
+	logic [7:0] v1c8l5_out [0:0];
+	assign v1c8l5_out[0] = v1c8l4[0] + v1c8l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v1c8l5[i] <= v1c8l5_out[i];
+    end
+
+	assign val[1] = v1c8l5[0];
 	
 	// -0.0625
 	logic [0:88] g2;
@@ -6548,7 +14474,102 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g2_reg <= g2;
     end
     
-	assign val[2] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3] + g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7] + g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11] + g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15] + g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19] + g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23] + g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27] + g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31] + g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35] + g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39] + g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43] + g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47] + g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51] + g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55] + g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59] + g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63] + g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67] + g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71] + g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75] + g2_reg[76] + g2_reg[77] + g2_reg[78] + g2_reg[79] + g2_reg[80] + g2_reg[81] + g2_reg[82] + g2_reg[83] + g2_reg[84] + g2_reg[85] + g2_reg[86] + g2_reg[87] + g2_reg[88];
+	logic [2:0] v2c8l0_out [0:22];
+	logic [2:0] v2c8l0 [0:22];
+	assign v2c8l0_out[0] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3];
+	assign v2c8l0_out[1] = g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7];
+	assign v2c8l0_out[2] = g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11];
+	assign v2c8l0_out[3] = g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15];
+	assign v2c8l0_out[4] = g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19];
+	assign v2c8l0_out[5] = g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23];
+	assign v2c8l0_out[6] = g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27];
+	assign v2c8l0_out[7] = g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31];
+	assign v2c8l0_out[8] = g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35];
+	assign v2c8l0_out[9] = g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39];
+	assign v2c8l0_out[10] = g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43];
+	assign v2c8l0_out[11] = g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47];
+	assign v2c8l0_out[12] = g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51];
+	assign v2c8l0_out[13] = g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55];
+	assign v2c8l0_out[14] = g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59];
+	assign v2c8l0_out[15] = g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63];
+	assign v2c8l0_out[16] = g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67];
+	assign v2c8l0_out[17] = g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71];
+	assign v2c8l0_out[18] = g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75];
+	assign v2c8l0_out[19] = g2_reg[76] + g2_reg[77] + g2_reg[78] + g2_reg[79];
+	assign v2c8l0_out[20] = g2_reg[80] + g2_reg[81] + g2_reg[82] + g2_reg[83];
+	assign v2c8l0_out[21] = g2_reg[84] + g2_reg[85] + g2_reg[86] + g2_reg[87];
+	assign v2c8l0_out[22] = g2_reg[88];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 23; i = i + 1)
+            v2c8l0[i] <= v2c8l0_out[i];
+    end
+
+	reg [3:0] v2c8l1 [0:11];
+	logic [3:0] v2c8l1_out [0:11];
+	assign v2c8l1_out[0] = v2c8l0[0] + v2c8l0[1];
+	assign v2c8l1_out[1] = v2c8l0[2] + v2c8l0[3];
+	assign v2c8l1_out[2] = v2c8l0[4] + v2c8l0[5];
+	assign v2c8l1_out[3] = v2c8l0[6] + v2c8l0[7];
+	assign v2c8l1_out[4] = v2c8l0[8] + v2c8l0[9];
+	assign v2c8l1_out[5] = v2c8l0[10] + v2c8l0[11];
+	assign v2c8l1_out[6] = v2c8l0[12] + v2c8l0[13];
+	assign v2c8l1_out[7] = v2c8l0[14] + v2c8l0[15];
+	assign v2c8l1_out[8] = v2c8l0[16] + v2c8l0[17];
+	assign v2c8l1_out[9] = v2c8l0[18] + v2c8l0[19];
+	assign v2c8l1_out[10] = v2c8l0[20] + v2c8l0[21];
+	assign v2c8l1_out[11] = v2c8l0[22];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 12; i = i + 1)
+            v2c8l1[i] <= v2c8l1_out[i];
+    end
+
+	reg [4:0] v2c8l2 [0:5];
+	logic [4:0] v2c8l2_out [0:5];
+	assign v2c8l2_out[0] = v2c8l1[0] + v2c8l1[1];
+	assign v2c8l2_out[1] = v2c8l1[2] + v2c8l1[3];
+	assign v2c8l2_out[2] = v2c8l1[4] + v2c8l1[5];
+	assign v2c8l2_out[3] = v2c8l1[6] + v2c8l1[7];
+	assign v2c8l2_out[4] = v2c8l1[8] + v2c8l1[9];
+	assign v2c8l2_out[5] = v2c8l1[10] + v2c8l1[11];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v2c8l2[i] <= v2c8l2_out[i];
+    end
+
+	reg [5:0] v2c8l3 [0:2];
+	logic [5:0] v2c8l3_out [0:2];
+	assign v2c8l3_out[0] = v2c8l2[0] + v2c8l2[1];
+	assign v2c8l3_out[1] = v2c8l2[2] + v2c8l2[3];
+	assign v2c8l3_out[2] = v2c8l2[4] + v2c8l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v2c8l3[i] <= v2c8l3_out[i];
+    end
+
+	reg [6:0] v2c8l4 [0:1];
+	logic [6:0] v2c8l4_out [0:1];
+	assign v2c8l4_out[0] = v2c8l3[0] + v2c8l3[1];
+	assign v2c8l4_out[1] = v2c8l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v2c8l4[i] <= v2c8l4_out[i];
+    end
+
+	reg [7:0] v2c8l5 [0:0];
+	logic [7:0] v2c8l5_out [0:0];
+	assign v2c8l5_out[0] = v2c8l4[0] + v2c8l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v2c8l5[i] <= v2c8l5_out[i];
+    end
+
+	assign val[2] = v2c8l5[0];
 	
 	// -0.03125
 	logic [0:71] g3;
@@ -6630,7 +14651,93 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g3_reg <= g3;
     end
     
-	assign val[3] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3] + g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7] + g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11] + g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15] + g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19] + g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23] + g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27] + g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31] + g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35] + g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39] + g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43] + g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47] + g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51] + g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55] + g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59] + g3_reg[60] + g3_reg[61] + g3_reg[62] + g3_reg[63] + g3_reg[64] + g3_reg[65] + g3_reg[66] + g3_reg[67] + g3_reg[68] + g3_reg[69] + g3_reg[70] + g3_reg[71];
+	logic [2:0] v3c8l0_out [0:17];
+	logic [2:0] v3c8l0 [0:17];
+	assign v3c8l0_out[0] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3];
+	assign v3c8l0_out[1] = g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7];
+	assign v3c8l0_out[2] = g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11];
+	assign v3c8l0_out[3] = g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15];
+	assign v3c8l0_out[4] = g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19];
+	assign v3c8l0_out[5] = g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23];
+	assign v3c8l0_out[6] = g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27];
+	assign v3c8l0_out[7] = g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31];
+	assign v3c8l0_out[8] = g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35];
+	assign v3c8l0_out[9] = g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39];
+	assign v3c8l0_out[10] = g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43];
+	assign v3c8l0_out[11] = g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47];
+	assign v3c8l0_out[12] = g3_reg[48] + g3_reg[49] + g3_reg[50] + g3_reg[51];
+	assign v3c8l0_out[13] = g3_reg[52] + g3_reg[53] + g3_reg[54] + g3_reg[55];
+	assign v3c8l0_out[14] = g3_reg[56] + g3_reg[57] + g3_reg[58] + g3_reg[59];
+	assign v3c8l0_out[15] = g3_reg[60] + g3_reg[61] + g3_reg[62] + g3_reg[63];
+	assign v3c8l0_out[16] = g3_reg[64] + g3_reg[65] + g3_reg[66] + g3_reg[67];
+	assign v3c8l0_out[17] = g3_reg[68] + g3_reg[69] + g3_reg[70] + g3_reg[71];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 18; i = i + 1)
+            v3c8l0[i] <= v3c8l0_out[i];
+    end
+
+	reg [3:0] v3c8l1 [0:8];
+	logic [3:0] v3c8l1_out [0:8];
+	assign v3c8l1_out[0] = v3c8l0[0] + v3c8l0[1];
+	assign v3c8l1_out[1] = v3c8l0[2] + v3c8l0[3];
+	assign v3c8l1_out[2] = v3c8l0[4] + v3c8l0[5];
+	assign v3c8l1_out[3] = v3c8l0[6] + v3c8l0[7];
+	assign v3c8l1_out[4] = v3c8l0[8] + v3c8l0[9];
+	assign v3c8l1_out[5] = v3c8l0[10] + v3c8l0[11];
+	assign v3c8l1_out[6] = v3c8l0[12] + v3c8l0[13];
+	assign v3c8l1_out[7] = v3c8l0[14] + v3c8l0[15];
+	assign v3c8l1_out[8] = v3c8l0[16] + v3c8l0[17];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v3c8l1[i] <= v3c8l1_out[i];
+    end
+
+	reg [4:0] v3c8l2 [0:4];
+	logic [4:0] v3c8l2_out [0:4];
+	assign v3c8l2_out[0] = v3c8l1[0] + v3c8l1[1];
+	assign v3c8l2_out[1] = v3c8l1[2] + v3c8l1[3];
+	assign v3c8l2_out[2] = v3c8l1[4] + v3c8l1[5];
+	assign v3c8l2_out[3] = v3c8l1[6] + v3c8l1[7];
+	assign v3c8l2_out[4] = v3c8l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v3c8l2[i] <= v3c8l2_out[i];
+    end
+
+	reg [5:0] v3c8l3 [0:2];
+	logic [5:0] v3c8l3_out [0:2];
+	assign v3c8l3_out[0] = v3c8l2[0] + v3c8l2[1];
+	assign v3c8l3_out[1] = v3c8l2[2] + v3c8l2[3];
+	assign v3c8l3_out[2] = v3c8l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v3c8l3[i] <= v3c8l3_out[i];
+    end
+
+	reg [6:0] v3c8l4 [0:1];
+	logic [6:0] v3c8l4_out [0:1];
+	assign v3c8l4_out[0] = v3c8l3[0] + v3c8l3[1];
+	assign v3c8l4_out[1] = v3c8l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v3c8l4[i] <= v3c8l4_out[i];
+    end
+
+	reg [7:0] v3c8l5 [0:0];
+	logic [7:0] v3c8l5_out [0:0];
+	assign v3c8l5_out[0] = v3c8l4[0] + v3c8l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c8l5[i] <= v3c8l5_out[i];
+    end
+
+	assign val[3] = v3c8l5[0];
 	
 	// -0.015625
 	logic [0:44] g4;
@@ -6685,7 +14792,80 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g4_reg <= g4;
     end
     
-	assign val[4] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3] + g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7] + g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11] + g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15] + g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19] + g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23] + g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27] + g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31] + g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35] + g4_reg[36] + g4_reg[37] + g4_reg[38] + g4_reg[39] + g4_reg[40] + g4_reg[41] + g4_reg[42] + g4_reg[43] + g4_reg[44];
+	logic [2:0] v4c8l0_out [0:11];
+	logic [2:0] v4c8l0 [0:11];
+	assign v4c8l0_out[0] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3];
+	assign v4c8l0_out[1] = g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7];
+	assign v4c8l0_out[2] = g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11];
+	assign v4c8l0_out[3] = g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15];
+	assign v4c8l0_out[4] = g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19];
+	assign v4c8l0_out[5] = g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23];
+	assign v4c8l0_out[6] = g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27];
+	assign v4c8l0_out[7] = g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31];
+	assign v4c8l0_out[8] = g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	assign v4c8l0_out[9] = g4_reg[36] + g4_reg[37] + g4_reg[38] + g4_reg[39];
+	assign v4c8l0_out[10] = g4_reg[40] + g4_reg[41] + g4_reg[42] + g4_reg[43];
+	assign v4c8l0_out[11] = g4_reg[44];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 12; i = i + 1)
+            v4c8l0[i] <= v4c8l0_out[i];
+    end
+
+	reg [3:0] v4c8l1 [0:5];
+	logic [3:0] v4c8l1_out [0:5];
+	assign v4c8l1_out[0] = v4c8l0[0] + v4c8l0[1];
+	assign v4c8l1_out[1] = v4c8l0[2] + v4c8l0[3];
+	assign v4c8l1_out[2] = v4c8l0[4] + v4c8l0[5];
+	assign v4c8l1_out[3] = v4c8l0[6] + v4c8l0[7];
+	assign v4c8l1_out[4] = v4c8l0[8] + v4c8l0[9];
+	assign v4c8l1_out[5] = v4c8l0[10] + v4c8l0[11];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v4c8l1[i] <= v4c8l1_out[i];
+    end
+
+	reg [4:0] v4c8l2 [0:2];
+	logic [4:0] v4c8l2_out [0:2];
+	assign v4c8l2_out[0] = v4c8l1[0] + v4c8l1[1];
+	assign v4c8l2_out[1] = v4c8l1[2] + v4c8l1[3];
+	assign v4c8l2_out[2] = v4c8l1[4] + v4c8l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v4c8l2[i] <= v4c8l2_out[i];
+    end
+
+	reg [5:0] v4c8l3 [0:1];
+	logic [5:0] v4c8l3_out [0:1];
+	assign v4c8l3_out[0] = v4c8l2[0] + v4c8l2[1];
+	assign v4c8l3_out[1] = v4c8l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v4c8l3[i] <= v4c8l3_out[i];
+    end
+
+	reg [6:0] v4c8l4 [0:0];
+	logic [6:0] v4c8l4_out [0:0];
+	assign v4c8l4_out[0] = v4c8l3[0] + v4c8l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c8l4[i] <= v4c8l4_out[i];
+    end
+
+	reg [7:0] v4c8l5 [0:0];
+	logic [7:0] v4c8l5_out [0:0];
+	assign v4c8l5_out[0] = v4c8l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c8l5[i] <= v4c8l5_out[i];
+    end
+
+	assign val[4] = v4c8l5[0];
 	
 	// 0.015625
 	logic [0:48] g5;
@@ -6744,7 +14924,83 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g5_reg <= g5;
     end
     
-	assign val[5] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3] + g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7] + g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11] + g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15] + g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19] + g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23] + g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27] + g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31] + g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35] + g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39] + g5_reg[40] + g5_reg[41] + g5_reg[42] + g5_reg[43] + g5_reg[44] + g5_reg[45] + g5_reg[46] + g5_reg[47] + g5_reg[48];
+	logic [2:0] v5c8l0_out [0:12];
+	logic [2:0] v5c8l0 [0:12];
+	assign v5c8l0_out[0] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3];
+	assign v5c8l0_out[1] = g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7];
+	assign v5c8l0_out[2] = g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11];
+	assign v5c8l0_out[3] = g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15];
+	assign v5c8l0_out[4] = g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19];
+	assign v5c8l0_out[5] = g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23];
+	assign v5c8l0_out[6] = g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27];
+	assign v5c8l0_out[7] = g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31];
+	assign v5c8l0_out[8] = g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35];
+	assign v5c8l0_out[9] = g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39];
+	assign v5c8l0_out[10] = g5_reg[40] + g5_reg[41] + g5_reg[42] + g5_reg[43];
+	assign v5c8l0_out[11] = g5_reg[44] + g5_reg[45] + g5_reg[46] + g5_reg[47];
+	assign v5c8l0_out[12] = g5_reg[48];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v5c8l0[i] <= v5c8l0_out[i];
+    end
+
+	reg [3:0] v5c8l1 [0:6];
+	logic [3:0] v5c8l1_out [0:6];
+	assign v5c8l1_out[0] = v5c8l0[0] + v5c8l0[1];
+	assign v5c8l1_out[1] = v5c8l0[2] + v5c8l0[3];
+	assign v5c8l1_out[2] = v5c8l0[4] + v5c8l0[5];
+	assign v5c8l1_out[3] = v5c8l0[6] + v5c8l0[7];
+	assign v5c8l1_out[4] = v5c8l0[8] + v5c8l0[9];
+	assign v5c8l1_out[5] = v5c8l0[10] + v5c8l0[11];
+	assign v5c8l1_out[6] = v5c8l0[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v5c8l1[i] <= v5c8l1_out[i];
+    end
+
+	reg [4:0] v5c8l2 [0:3];
+	logic [4:0] v5c8l2_out [0:3];
+	assign v5c8l2_out[0] = v5c8l1[0] + v5c8l1[1];
+	assign v5c8l2_out[1] = v5c8l1[2] + v5c8l1[3];
+	assign v5c8l2_out[2] = v5c8l1[4] + v5c8l1[5];
+	assign v5c8l2_out[3] = v5c8l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v5c8l2[i] <= v5c8l2_out[i];
+    end
+
+	reg [5:0] v5c8l3 [0:1];
+	logic [5:0] v5c8l3_out [0:1];
+	assign v5c8l3_out[0] = v5c8l2[0] + v5c8l2[1];
+	assign v5c8l3_out[1] = v5c8l2[2] + v5c8l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v5c8l3[i] <= v5c8l3_out[i];
+    end
+
+	reg [6:0] v5c8l4 [0:0];
+	logic [6:0] v5c8l4_out [0:0];
+	assign v5c8l4_out[0] = v5c8l3[0] + v5c8l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c8l4[i] <= v5c8l4_out[i];
+    end
+
+	reg [7:0] v5c8l5 [0:0];
+	logic [7:0] v5c8l5_out [0:0];
+	assign v5c8l5_out[0] = v5c8l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c8l5[i] <= v5c8l5_out[i];
+    end
+
+	assign val[5] = v5c8l5[0];
 	
 	// 0.03125
 	logic [0:60] g6;
@@ -6815,7 +15071,87 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g6_reg <= g6;
     end
     
-	assign val[6] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3] + g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7] + g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11] + g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15] + g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19] + g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23] + g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27] + g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31] + g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35] + g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39] + g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43] + g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47] + g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51] + g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55] + g6_reg[56] + g6_reg[57] + g6_reg[58] + g6_reg[59] + g6_reg[60];
+	logic [2:0] v6c8l0_out [0:15];
+	logic [2:0] v6c8l0 [0:15];
+	assign v6c8l0_out[0] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3];
+	assign v6c8l0_out[1] = g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7];
+	assign v6c8l0_out[2] = g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11];
+	assign v6c8l0_out[3] = g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15];
+	assign v6c8l0_out[4] = g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19];
+	assign v6c8l0_out[5] = g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23];
+	assign v6c8l0_out[6] = g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27];
+	assign v6c8l0_out[7] = g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31];
+	assign v6c8l0_out[8] = g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35];
+	assign v6c8l0_out[9] = g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39];
+	assign v6c8l0_out[10] = g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	assign v6c8l0_out[11] = g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47];
+	assign v6c8l0_out[12] = g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51];
+	assign v6c8l0_out[13] = g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55];
+	assign v6c8l0_out[14] = g6_reg[56] + g6_reg[57] + g6_reg[58] + g6_reg[59];
+	assign v6c8l0_out[15] = g6_reg[60];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 16; i = i + 1)
+            v6c8l0[i] <= v6c8l0_out[i];
+    end
+
+	reg [3:0] v6c8l1 [0:7];
+	logic [3:0] v6c8l1_out [0:7];
+	assign v6c8l1_out[0] = v6c8l0[0] + v6c8l0[1];
+	assign v6c8l1_out[1] = v6c8l0[2] + v6c8l0[3];
+	assign v6c8l1_out[2] = v6c8l0[4] + v6c8l0[5];
+	assign v6c8l1_out[3] = v6c8l0[6] + v6c8l0[7];
+	assign v6c8l1_out[4] = v6c8l0[8] + v6c8l0[9];
+	assign v6c8l1_out[5] = v6c8l0[10] + v6c8l0[11];
+	assign v6c8l1_out[6] = v6c8l0[12] + v6c8l0[13];
+	assign v6c8l1_out[7] = v6c8l0[14] + v6c8l0[15];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v6c8l1[i] <= v6c8l1_out[i];
+    end
+
+	reg [4:0] v6c8l2 [0:3];
+	logic [4:0] v6c8l2_out [0:3];
+	assign v6c8l2_out[0] = v6c8l1[0] + v6c8l1[1];
+	assign v6c8l2_out[1] = v6c8l1[2] + v6c8l1[3];
+	assign v6c8l2_out[2] = v6c8l1[4] + v6c8l1[5];
+	assign v6c8l2_out[3] = v6c8l1[6] + v6c8l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v6c8l2[i] <= v6c8l2_out[i];
+    end
+
+	reg [5:0] v6c8l3 [0:1];
+	logic [5:0] v6c8l3_out [0:1];
+	assign v6c8l3_out[0] = v6c8l2[0] + v6c8l2[1];
+	assign v6c8l3_out[1] = v6c8l2[2] + v6c8l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v6c8l3[i] <= v6c8l3_out[i];
+    end
+
+	reg [6:0] v6c8l4 [0:0];
+	logic [6:0] v6c8l4_out [0:0];
+	assign v6c8l4_out[0] = v6c8l3[0] + v6c8l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c8l4[i] <= v6c8l4_out[i];
+    end
+
+	reg [7:0] v6c8l5 [0:0];
+	logic [7:0] v6c8l5_out [0:0];
+	assign v6c8l5_out[0] = v6c8l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c8l5[i] <= v6c8l5_out[i];
+    end
+
+	assign val[6] = v6c8l5[0];
 	
 	// 0.0625
 	logic [0:83] g7;
@@ -6909,7 +15245,99 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g7_reg <= g7;
     end
     
-	assign val[7] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3] + g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7] + g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11] + g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15] + g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19] + g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23] + g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27] + g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31] + g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35] + g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39] + g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43] + g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47] + g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51] + g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55] + g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59] + g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63] + g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67] + g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71] + g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75] + g7_reg[76] + g7_reg[77] + g7_reg[78] + g7_reg[79] + g7_reg[80] + g7_reg[81] + g7_reg[82] + g7_reg[83];
+	logic [2:0] v7c8l0_out [0:20];
+	logic [2:0] v7c8l0 [0:20];
+	assign v7c8l0_out[0] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3];
+	assign v7c8l0_out[1] = g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7];
+	assign v7c8l0_out[2] = g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11];
+	assign v7c8l0_out[3] = g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15];
+	assign v7c8l0_out[4] = g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19];
+	assign v7c8l0_out[5] = g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23];
+	assign v7c8l0_out[6] = g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27];
+	assign v7c8l0_out[7] = g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31];
+	assign v7c8l0_out[8] = g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35];
+	assign v7c8l0_out[9] = g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39];
+	assign v7c8l0_out[10] = g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43];
+	assign v7c8l0_out[11] = g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47];
+	assign v7c8l0_out[12] = g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51];
+	assign v7c8l0_out[13] = g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55];
+	assign v7c8l0_out[14] = g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59];
+	assign v7c8l0_out[15] = g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63];
+	assign v7c8l0_out[16] = g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67];
+	assign v7c8l0_out[17] = g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71];
+	assign v7c8l0_out[18] = g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75];
+	assign v7c8l0_out[19] = g7_reg[76] + g7_reg[77] + g7_reg[78] + g7_reg[79];
+	assign v7c8l0_out[20] = g7_reg[80] + g7_reg[81] + g7_reg[82] + g7_reg[83];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 21; i = i + 1)
+            v7c8l0[i] <= v7c8l0_out[i];
+    end
+
+	reg [3:0] v7c8l1 [0:10];
+	logic [3:0] v7c8l1_out [0:10];
+	assign v7c8l1_out[0] = v7c8l0[0] + v7c8l0[1];
+	assign v7c8l1_out[1] = v7c8l0[2] + v7c8l0[3];
+	assign v7c8l1_out[2] = v7c8l0[4] + v7c8l0[5];
+	assign v7c8l1_out[3] = v7c8l0[6] + v7c8l0[7];
+	assign v7c8l1_out[4] = v7c8l0[8] + v7c8l0[9];
+	assign v7c8l1_out[5] = v7c8l0[10] + v7c8l0[11];
+	assign v7c8l1_out[6] = v7c8l0[12] + v7c8l0[13];
+	assign v7c8l1_out[7] = v7c8l0[14] + v7c8l0[15];
+	assign v7c8l1_out[8] = v7c8l0[16] + v7c8l0[17];
+	assign v7c8l1_out[9] = v7c8l0[18] + v7c8l0[19];
+	assign v7c8l1_out[10] = v7c8l0[20];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v7c8l1[i] <= v7c8l1_out[i];
+    end
+
+	reg [4:0] v7c8l2 [0:5];
+	logic [4:0] v7c8l2_out [0:5];
+	assign v7c8l2_out[0] = v7c8l1[0] + v7c8l1[1];
+	assign v7c8l2_out[1] = v7c8l1[2] + v7c8l1[3];
+	assign v7c8l2_out[2] = v7c8l1[4] + v7c8l1[5];
+	assign v7c8l2_out[3] = v7c8l1[6] + v7c8l1[7];
+	assign v7c8l2_out[4] = v7c8l1[8] + v7c8l1[9];
+	assign v7c8l2_out[5] = v7c8l1[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v7c8l2[i] <= v7c8l2_out[i];
+    end
+
+	reg [5:0] v7c8l3 [0:2];
+	logic [5:0] v7c8l3_out [0:2];
+	assign v7c8l3_out[0] = v7c8l2[0] + v7c8l2[1];
+	assign v7c8l3_out[1] = v7c8l2[2] + v7c8l2[3];
+	assign v7c8l3_out[2] = v7c8l2[4] + v7c8l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v7c8l3[i] <= v7c8l3_out[i];
+    end
+
+	reg [6:0] v7c8l4 [0:1];
+	logic [6:0] v7c8l4_out [0:1];
+	assign v7c8l4_out[0] = v7c8l3[0] + v7c8l3[1];
+	assign v7c8l4_out[1] = v7c8l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v7c8l4[i] <= v7c8l4_out[i];
+    end
+
+	reg [7:0] v7c8l5 [0:0];
+	logic [7:0] v7c8l5_out [0:0];
+	assign v7c8l5_out[0] = v7c8l4[0] + v7c8l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c8l5[i] <= v7c8l5_out[i];
+    end
+
+	assign val[7] = v7c8l5[0];
 	
 	// 0.125
 	logic [0:96] g8;
@@ -7016,7 +15444,107 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g8_reg <= g8;
     end
     
-	assign val[8] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3] + g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7] + g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11] + g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15] + g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19] + g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23] + g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27] + g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31] + g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35] + g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39] + g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43] + g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47] + g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51] + g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55] + g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59] + g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63] + g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67] + g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71] + g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75] + g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79] + g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83] + g8_reg[84] + g8_reg[85] + g8_reg[86] + g8_reg[87] + g8_reg[88] + g8_reg[89] + g8_reg[90] + g8_reg[91] + g8_reg[92] + g8_reg[93] + g8_reg[94] + g8_reg[95] + g8_reg[96];
+	logic [2:0] v8c8l0_out [0:24];
+	logic [2:0] v8c8l0 [0:24];
+	assign v8c8l0_out[0] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3];
+	assign v8c8l0_out[1] = g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7];
+	assign v8c8l0_out[2] = g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11];
+	assign v8c8l0_out[3] = g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15];
+	assign v8c8l0_out[4] = g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19];
+	assign v8c8l0_out[5] = g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23];
+	assign v8c8l0_out[6] = g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27];
+	assign v8c8l0_out[7] = g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31];
+	assign v8c8l0_out[8] = g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35];
+	assign v8c8l0_out[9] = g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39];
+	assign v8c8l0_out[10] = g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43];
+	assign v8c8l0_out[11] = g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47];
+	assign v8c8l0_out[12] = g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51];
+	assign v8c8l0_out[13] = g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55];
+	assign v8c8l0_out[14] = g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59];
+	assign v8c8l0_out[15] = g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63];
+	assign v8c8l0_out[16] = g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67];
+	assign v8c8l0_out[17] = g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71];
+	assign v8c8l0_out[18] = g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75];
+	assign v8c8l0_out[19] = g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79];
+	assign v8c8l0_out[20] = g8_reg[80] + g8_reg[81] + g8_reg[82] + g8_reg[83];
+	assign v8c8l0_out[21] = g8_reg[84] + g8_reg[85] + g8_reg[86] + g8_reg[87];
+	assign v8c8l0_out[22] = g8_reg[88] + g8_reg[89] + g8_reg[90] + g8_reg[91];
+	assign v8c8l0_out[23] = g8_reg[92] + g8_reg[93] + g8_reg[94] + g8_reg[95];
+	assign v8c8l0_out[24] = g8_reg[96];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 25; i = i + 1)
+            v8c8l0[i] <= v8c8l0_out[i];
+    end
+
+	reg [3:0] v8c8l1 [0:12];
+	logic [3:0] v8c8l1_out [0:12];
+	assign v8c8l1_out[0] = v8c8l0[0] + v8c8l0[1];
+	assign v8c8l1_out[1] = v8c8l0[2] + v8c8l0[3];
+	assign v8c8l1_out[2] = v8c8l0[4] + v8c8l0[5];
+	assign v8c8l1_out[3] = v8c8l0[6] + v8c8l0[7];
+	assign v8c8l1_out[4] = v8c8l0[8] + v8c8l0[9];
+	assign v8c8l1_out[5] = v8c8l0[10] + v8c8l0[11];
+	assign v8c8l1_out[6] = v8c8l0[12] + v8c8l0[13];
+	assign v8c8l1_out[7] = v8c8l0[14] + v8c8l0[15];
+	assign v8c8l1_out[8] = v8c8l0[16] + v8c8l0[17];
+	assign v8c8l1_out[9] = v8c8l0[18] + v8c8l0[19];
+	assign v8c8l1_out[10] = v8c8l0[20] + v8c8l0[21];
+	assign v8c8l1_out[11] = v8c8l0[22] + v8c8l0[23];
+	assign v8c8l1_out[12] = v8c8l0[24];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v8c8l1[i] <= v8c8l1_out[i];
+    end
+
+	reg [4:0] v8c8l2 [0:6];
+	logic [4:0] v8c8l2_out [0:6];
+	assign v8c8l2_out[0] = v8c8l1[0] + v8c8l1[1];
+	assign v8c8l2_out[1] = v8c8l1[2] + v8c8l1[3];
+	assign v8c8l2_out[2] = v8c8l1[4] + v8c8l1[5];
+	assign v8c8l2_out[3] = v8c8l1[6] + v8c8l1[7];
+	assign v8c8l2_out[4] = v8c8l1[8] + v8c8l1[9];
+	assign v8c8l2_out[5] = v8c8l1[10] + v8c8l1[11];
+	assign v8c8l2_out[6] = v8c8l1[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v8c8l2[i] <= v8c8l2_out[i];
+    end
+
+	reg [5:0] v8c8l3 [0:3];
+	logic [5:0] v8c8l3_out [0:3];
+	assign v8c8l3_out[0] = v8c8l2[0] + v8c8l2[1];
+	assign v8c8l3_out[1] = v8c8l2[2] + v8c8l2[3];
+	assign v8c8l3_out[2] = v8c8l2[4] + v8c8l2[5];
+	assign v8c8l3_out[3] = v8c8l2[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v8c8l3[i] <= v8c8l3_out[i];
+    end
+
+	reg [6:0] v8c8l4 [0:1];
+	logic [6:0] v8c8l4_out [0:1];
+	assign v8c8l4_out[0] = v8c8l3[0] + v8c8l3[1];
+	assign v8c8l4_out[1] = v8c8l3[2] + v8c8l3[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v8c8l4[i] <= v8c8l4_out[i];
+    end
+
+	reg [7:0] v8c8l5 [0:0];
+	logic [7:0] v8c8l5_out [0:0];
+	assign v8c8l5_out[0] = v8c8l4[0] + v8c8l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v8c8l5[i] <= v8c8l5_out[i];
+    end
+
+	assign val[8] = v8c8l5[0];
 	
 	// 0.25
 	logic [0:63] g9;
@@ -7090,7 +15618,87 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g9_reg <= g9;
     end
     
-	assign val[9] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3] + g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7] + g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11] + g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15] + g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19] + g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23] + g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27] + g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31] + g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35] + g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39] + g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43] + g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47] + g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51] + g9_reg[52] + g9_reg[53] + g9_reg[54] + g9_reg[55] + g9_reg[56] + g9_reg[57] + g9_reg[58] + g9_reg[59] + g9_reg[60] + g9_reg[61] + g9_reg[62] + g9_reg[63];
+	logic [2:0] v9c8l0_out [0:15];
+	logic [2:0] v9c8l0 [0:15];
+	assign v9c8l0_out[0] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3];
+	assign v9c8l0_out[1] = g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7];
+	assign v9c8l0_out[2] = g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11];
+	assign v9c8l0_out[3] = g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15];
+	assign v9c8l0_out[4] = g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19];
+	assign v9c8l0_out[5] = g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23];
+	assign v9c8l0_out[6] = g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27];
+	assign v9c8l0_out[7] = g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31];
+	assign v9c8l0_out[8] = g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	assign v9c8l0_out[9] = g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39];
+	assign v9c8l0_out[10] = g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43];
+	assign v9c8l0_out[11] = g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47];
+	assign v9c8l0_out[12] = g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51];
+	assign v9c8l0_out[13] = g9_reg[52] + g9_reg[53] + g9_reg[54] + g9_reg[55];
+	assign v9c8l0_out[14] = g9_reg[56] + g9_reg[57] + g9_reg[58] + g9_reg[59];
+	assign v9c8l0_out[15] = g9_reg[60] + g9_reg[61] + g9_reg[62] + g9_reg[63];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 16; i = i + 1)
+            v9c8l0[i] <= v9c8l0_out[i];
+    end
+
+	reg [3:0] v9c8l1 [0:7];
+	logic [3:0] v9c8l1_out [0:7];
+	assign v9c8l1_out[0] = v9c8l0[0] + v9c8l0[1];
+	assign v9c8l1_out[1] = v9c8l0[2] + v9c8l0[3];
+	assign v9c8l1_out[2] = v9c8l0[4] + v9c8l0[5];
+	assign v9c8l1_out[3] = v9c8l0[6] + v9c8l0[7];
+	assign v9c8l1_out[4] = v9c8l0[8] + v9c8l0[9];
+	assign v9c8l1_out[5] = v9c8l0[10] + v9c8l0[11];
+	assign v9c8l1_out[6] = v9c8l0[12] + v9c8l0[13];
+	assign v9c8l1_out[7] = v9c8l0[14] + v9c8l0[15];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v9c8l1[i] <= v9c8l1_out[i];
+    end
+
+	reg [4:0] v9c8l2 [0:3];
+	logic [4:0] v9c8l2_out [0:3];
+	assign v9c8l2_out[0] = v9c8l1[0] + v9c8l1[1];
+	assign v9c8l2_out[1] = v9c8l1[2] + v9c8l1[3];
+	assign v9c8l2_out[2] = v9c8l1[4] + v9c8l1[5];
+	assign v9c8l2_out[3] = v9c8l1[6] + v9c8l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v9c8l2[i] <= v9c8l2_out[i];
+    end
+
+	reg [5:0] v9c8l3 [0:1];
+	logic [5:0] v9c8l3_out [0:1];
+	assign v9c8l3_out[0] = v9c8l2[0] + v9c8l2[1];
+	assign v9c8l3_out[1] = v9c8l2[2] + v9c8l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v9c8l3[i] <= v9c8l3_out[i];
+    end
+
+	reg [6:0] v9c8l4 [0:0];
+	logic [6:0] v9c8l4_out [0:0];
+	assign v9c8l4_out[0] = v9c8l3[0] + v9c8l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c8l4[i] <= v9c8l4_out[i];
+    end
+
+	reg [7:0] v9c8l5 [0:0];
+	logic [7:0] v9c8l5_out [0:0];
+	assign v9c8l5_out[0] = v9c8l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c8l5[i] <= v9c8l5_out[i];
+    end
+
+	assign val[9] = v9c8l5[0];
 	
 	// 0.5
 	logic [0:11] g10;
@@ -7112,7 +15720,64 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g10_reg <= g10;
     end
     
-	assign val[10] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3] + g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7] + g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11];
+	logic [2:0] v10c8l0_out [0:2];
+	logic [2:0] v10c8l0 [0:2];
+	assign v10c8l0_out[0] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	assign v10c8l0_out[1] = g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7];
+	assign v10c8l0_out[2] = g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v10c8l0[i] <= v10c8l0_out[i];
+    end
+
+	reg [3:0] v10c8l1 [0:1];
+	logic [3:0] v10c8l1_out [0:1];
+	assign v10c8l1_out[0] = v10c8l0[0] + v10c8l0[1];
+	assign v10c8l1_out[1] = v10c8l0[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v10c8l1[i] <= v10c8l1_out[i];
+    end
+
+	reg [4:0] v10c8l2 [0:0];
+	logic [4:0] v10c8l2_out [0:0];
+	assign v10c8l2_out[0] = v10c8l1[0] + v10c8l1[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c8l2[i] <= v10c8l2_out[i];
+    end
+
+	reg [5:0] v10c8l3 [0:0];
+	logic [5:0] v10c8l3_out [0:0];
+	assign v10c8l3_out[0] = v10c8l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c8l3[i] <= v10c8l3_out[i];
+    end
+
+	reg [6:0] v10c8l4 [0:0];
+	logic [6:0] v10c8l4_out [0:0];
+	assign v10c8l4_out[0] = v10c8l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c8l4[i] <= v10c8l4_out[i];
+    end
+
+	reg [7:0] v10c8l5 [0:0];
+	logic [7:0] v10c8l5_out [0:0];
+	assign v10c8l5_out[0] = v10c8l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c8l5[i] <= v10c8l5_out[i];
+    end
+
+	assign val[10] = v10c8l5[0];
 	
 	// 1.0
 	logic [0:1] g11;
@@ -7124,7 +15789,61 @@ module leaf_counter_8(input logic clk, input logic [0:1497] l, output logic [7:0
         g11_reg <= g11;
     end
     
-	assign val[11] = g11_reg[0] + g11_reg[1];
+	logic [2:0] v11c8l0_out [0:0];
+	logic [2:0] v11c8l0 [0:0];
+	assign v11c8l0_out[0] = g11_reg[0] + g11_reg[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c8l0[i] <= v11c8l0_out[i];
+    end
+
+	reg [3:0] v11c8l1 [0:0];
+	logic [3:0] v11c8l1_out [0:0];
+	assign v11c8l1_out[0] = v11c8l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c8l1[i] <= v11c8l1_out[i];
+    end
+
+	reg [4:0] v11c8l2 [0:0];
+	logic [4:0] v11c8l2_out [0:0];
+	assign v11c8l2_out[0] = v11c8l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c8l2[i] <= v11c8l2_out[i];
+    end
+
+	reg [5:0] v11c8l3 [0:0];
+	logic [5:0] v11c8l3_out [0:0];
+	assign v11c8l3_out[0] = v11c8l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c8l3[i] <= v11c8l3_out[i];
+    end
+
+	reg [6:0] v11c8l4 [0:0];
+	logic [6:0] v11c8l4_out [0:0];
+	assign v11c8l4_out[0] = v11c8l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c8l4[i] <= v11c8l4_out[i];
+    end
+
+	reg [7:0] v11c8l5 [0:0];
+	logic [7:0] v11c8l5_out [0:0];
+	assign v11c8l5_out[0] = v11c8l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c8l5[i] <= v11c8l5_out[i];
+    end
+
+	assign val[11] = v11c8l5[0];
 	
 	// 2.0
 	assign val[12] = 0;
@@ -7133,6 +15852,7 @@ endmodule
 
 
 module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0] val [0:12]);
+    integer i;
 	// -0.25
 	logic [0:59] g0;
 	reg [0:59] g0_reg;
@@ -7201,7 +15921,86 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g0_reg <= g0;
     end
     
-	assign val[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3] + g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7] + g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11] + g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15] + g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19] + g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23] + g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27] + g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31] + g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35] + g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39] + g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43] + g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47] + g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51] + g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55] + g0_reg[56] + g0_reg[57] + g0_reg[58] + g0_reg[59];
+	logic [2:0] v0c9l0_out [0:14];
+	logic [2:0] v0c9l0 [0:14];
+	assign v0c9l0_out[0] = g0_reg[0] + g0_reg[1] + g0_reg[2] + g0_reg[3];
+	assign v0c9l0_out[1] = g0_reg[4] + g0_reg[5] + g0_reg[6] + g0_reg[7];
+	assign v0c9l0_out[2] = g0_reg[8] + g0_reg[9] + g0_reg[10] + g0_reg[11];
+	assign v0c9l0_out[3] = g0_reg[12] + g0_reg[13] + g0_reg[14] + g0_reg[15];
+	assign v0c9l0_out[4] = g0_reg[16] + g0_reg[17] + g0_reg[18] + g0_reg[19];
+	assign v0c9l0_out[5] = g0_reg[20] + g0_reg[21] + g0_reg[22] + g0_reg[23];
+	assign v0c9l0_out[6] = g0_reg[24] + g0_reg[25] + g0_reg[26] + g0_reg[27];
+	assign v0c9l0_out[7] = g0_reg[28] + g0_reg[29] + g0_reg[30] + g0_reg[31];
+	assign v0c9l0_out[8] = g0_reg[32] + g0_reg[33] + g0_reg[34] + g0_reg[35];
+	assign v0c9l0_out[9] = g0_reg[36] + g0_reg[37] + g0_reg[38] + g0_reg[39];
+	assign v0c9l0_out[10] = g0_reg[40] + g0_reg[41] + g0_reg[42] + g0_reg[43];
+	assign v0c9l0_out[11] = g0_reg[44] + g0_reg[45] + g0_reg[46] + g0_reg[47];
+	assign v0c9l0_out[12] = g0_reg[48] + g0_reg[49] + g0_reg[50] + g0_reg[51];
+	assign v0c9l0_out[13] = g0_reg[52] + g0_reg[53] + g0_reg[54] + g0_reg[55];
+	assign v0c9l0_out[14] = g0_reg[56] + g0_reg[57] + g0_reg[58] + g0_reg[59];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 15; i = i + 1)
+            v0c9l0[i] <= v0c9l0_out[i];
+    end
+
+	reg [3:0] v0c9l1 [0:7];
+	logic [3:0] v0c9l1_out [0:7];
+	assign v0c9l1_out[0] = v0c9l0[0] + v0c9l0[1];
+	assign v0c9l1_out[1] = v0c9l0[2] + v0c9l0[3];
+	assign v0c9l1_out[2] = v0c9l0[4] + v0c9l0[5];
+	assign v0c9l1_out[3] = v0c9l0[6] + v0c9l0[7];
+	assign v0c9l1_out[4] = v0c9l0[8] + v0c9l0[9];
+	assign v0c9l1_out[5] = v0c9l0[10] + v0c9l0[11];
+	assign v0c9l1_out[6] = v0c9l0[12] + v0c9l0[13];
+	assign v0c9l1_out[7] = v0c9l0[14];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v0c9l1[i] <= v0c9l1_out[i];
+    end
+
+	reg [4:0] v0c9l2 [0:3];
+	logic [4:0] v0c9l2_out [0:3];
+	assign v0c9l2_out[0] = v0c9l1[0] + v0c9l1[1];
+	assign v0c9l2_out[1] = v0c9l1[2] + v0c9l1[3];
+	assign v0c9l2_out[2] = v0c9l1[4] + v0c9l1[5];
+	assign v0c9l2_out[3] = v0c9l1[6] + v0c9l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v0c9l2[i] <= v0c9l2_out[i];
+    end
+
+	reg [5:0] v0c9l3 [0:1];
+	logic [5:0] v0c9l3_out [0:1];
+	assign v0c9l3_out[0] = v0c9l2[0] + v0c9l2[1];
+	assign v0c9l3_out[1] = v0c9l2[2] + v0c9l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v0c9l3[i] <= v0c9l3_out[i];
+    end
+
+	reg [6:0] v0c9l4 [0:0];
+	logic [6:0] v0c9l4_out [0:0];
+	assign v0c9l4_out[0] = v0c9l3[0] + v0c9l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c9l4[i] <= v0c9l4_out[i];
+    end
+
+	reg [7:0] v0c9l5 [0:0];
+	logic [7:0] v0c9l5_out [0:0];
+	assign v0c9l5_out[0] = v0c9l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v0c9l5[i] <= v0c9l5_out[i];
+    end
+
+	assign val[0] = v0c9l5[0];
 	
 	// -0.125
 	logic [0:96] g1;
@@ -7308,7 +16107,107 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g1_reg <= g1;
     end
     
-	assign val[1] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3] + g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7] + g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11] + g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15] + g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19] + g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23] + g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27] + g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31] + g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35] + g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39] + g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43] + g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47] + g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51] + g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55] + g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59] + g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63] + g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67] + g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71] + g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75] + g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79] + g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83] + g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87] + g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91] + g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95] + g1_reg[96];
+	logic [2:0] v1c9l0_out [0:24];
+	logic [2:0] v1c9l0 [0:24];
+	assign v1c9l0_out[0] = g1_reg[0] + g1_reg[1] + g1_reg[2] + g1_reg[3];
+	assign v1c9l0_out[1] = g1_reg[4] + g1_reg[5] + g1_reg[6] + g1_reg[7];
+	assign v1c9l0_out[2] = g1_reg[8] + g1_reg[9] + g1_reg[10] + g1_reg[11];
+	assign v1c9l0_out[3] = g1_reg[12] + g1_reg[13] + g1_reg[14] + g1_reg[15];
+	assign v1c9l0_out[4] = g1_reg[16] + g1_reg[17] + g1_reg[18] + g1_reg[19];
+	assign v1c9l0_out[5] = g1_reg[20] + g1_reg[21] + g1_reg[22] + g1_reg[23];
+	assign v1c9l0_out[6] = g1_reg[24] + g1_reg[25] + g1_reg[26] + g1_reg[27];
+	assign v1c9l0_out[7] = g1_reg[28] + g1_reg[29] + g1_reg[30] + g1_reg[31];
+	assign v1c9l0_out[8] = g1_reg[32] + g1_reg[33] + g1_reg[34] + g1_reg[35];
+	assign v1c9l0_out[9] = g1_reg[36] + g1_reg[37] + g1_reg[38] + g1_reg[39];
+	assign v1c9l0_out[10] = g1_reg[40] + g1_reg[41] + g1_reg[42] + g1_reg[43];
+	assign v1c9l0_out[11] = g1_reg[44] + g1_reg[45] + g1_reg[46] + g1_reg[47];
+	assign v1c9l0_out[12] = g1_reg[48] + g1_reg[49] + g1_reg[50] + g1_reg[51];
+	assign v1c9l0_out[13] = g1_reg[52] + g1_reg[53] + g1_reg[54] + g1_reg[55];
+	assign v1c9l0_out[14] = g1_reg[56] + g1_reg[57] + g1_reg[58] + g1_reg[59];
+	assign v1c9l0_out[15] = g1_reg[60] + g1_reg[61] + g1_reg[62] + g1_reg[63];
+	assign v1c9l0_out[16] = g1_reg[64] + g1_reg[65] + g1_reg[66] + g1_reg[67];
+	assign v1c9l0_out[17] = g1_reg[68] + g1_reg[69] + g1_reg[70] + g1_reg[71];
+	assign v1c9l0_out[18] = g1_reg[72] + g1_reg[73] + g1_reg[74] + g1_reg[75];
+	assign v1c9l0_out[19] = g1_reg[76] + g1_reg[77] + g1_reg[78] + g1_reg[79];
+	assign v1c9l0_out[20] = g1_reg[80] + g1_reg[81] + g1_reg[82] + g1_reg[83];
+	assign v1c9l0_out[21] = g1_reg[84] + g1_reg[85] + g1_reg[86] + g1_reg[87];
+	assign v1c9l0_out[22] = g1_reg[88] + g1_reg[89] + g1_reg[90] + g1_reg[91];
+	assign v1c9l0_out[23] = g1_reg[92] + g1_reg[93] + g1_reg[94] + g1_reg[95];
+	assign v1c9l0_out[24] = g1_reg[96];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 25; i = i + 1)
+            v1c9l0[i] <= v1c9l0_out[i];
+    end
+
+	reg [3:0] v1c9l1 [0:12];
+	logic [3:0] v1c9l1_out [0:12];
+	assign v1c9l1_out[0] = v1c9l0[0] + v1c9l0[1];
+	assign v1c9l1_out[1] = v1c9l0[2] + v1c9l0[3];
+	assign v1c9l1_out[2] = v1c9l0[4] + v1c9l0[5];
+	assign v1c9l1_out[3] = v1c9l0[6] + v1c9l0[7];
+	assign v1c9l1_out[4] = v1c9l0[8] + v1c9l0[9];
+	assign v1c9l1_out[5] = v1c9l0[10] + v1c9l0[11];
+	assign v1c9l1_out[6] = v1c9l0[12] + v1c9l0[13];
+	assign v1c9l1_out[7] = v1c9l0[14] + v1c9l0[15];
+	assign v1c9l1_out[8] = v1c9l0[16] + v1c9l0[17];
+	assign v1c9l1_out[9] = v1c9l0[18] + v1c9l0[19];
+	assign v1c9l1_out[10] = v1c9l0[20] + v1c9l0[21];
+	assign v1c9l1_out[11] = v1c9l0[22] + v1c9l0[23];
+	assign v1c9l1_out[12] = v1c9l0[24];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v1c9l1[i] <= v1c9l1_out[i];
+    end
+
+	reg [4:0] v1c9l2 [0:6];
+	logic [4:0] v1c9l2_out [0:6];
+	assign v1c9l2_out[0] = v1c9l1[0] + v1c9l1[1];
+	assign v1c9l2_out[1] = v1c9l1[2] + v1c9l1[3];
+	assign v1c9l2_out[2] = v1c9l1[4] + v1c9l1[5];
+	assign v1c9l2_out[3] = v1c9l1[6] + v1c9l1[7];
+	assign v1c9l2_out[4] = v1c9l1[8] + v1c9l1[9];
+	assign v1c9l2_out[5] = v1c9l1[10] + v1c9l1[11];
+	assign v1c9l2_out[6] = v1c9l1[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v1c9l2[i] <= v1c9l2_out[i];
+    end
+
+	reg [5:0] v1c9l3 [0:3];
+	logic [5:0] v1c9l3_out [0:3];
+	assign v1c9l3_out[0] = v1c9l2[0] + v1c9l2[1];
+	assign v1c9l3_out[1] = v1c9l2[2] + v1c9l2[3];
+	assign v1c9l3_out[2] = v1c9l2[4] + v1c9l2[5];
+	assign v1c9l3_out[3] = v1c9l2[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v1c9l3[i] <= v1c9l3_out[i];
+    end
+
+	reg [6:0] v1c9l4 [0:1];
+	logic [6:0] v1c9l4_out [0:1];
+	assign v1c9l4_out[0] = v1c9l3[0] + v1c9l3[1];
+	assign v1c9l4_out[1] = v1c9l3[2] + v1c9l3[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v1c9l4[i] <= v1c9l4_out[i];
+    end
+
+	reg [7:0] v1c9l5 [0:0];
+	logic [7:0] v1c9l5_out [0:0];
+	assign v1c9l5_out[0] = v1c9l4[0] + v1c9l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v1c9l5[i] <= v1c9l5_out[i];
+    end
+
+	assign val[1] = v1c9l5[0];
 	
 	// -0.0625
 	logic [0:78] g2;
@@ -7397,7 +16296,96 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g2_reg <= g2;
     end
     
-	assign val[2] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3] + g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7] + g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11] + g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15] + g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19] + g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23] + g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27] + g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31] + g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35] + g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39] + g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43] + g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47] + g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51] + g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55] + g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59] + g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63] + g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67] + g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71] + g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75] + g2_reg[76] + g2_reg[77] + g2_reg[78];
+	logic [2:0] v2c9l0_out [0:19];
+	logic [2:0] v2c9l0 [0:19];
+	assign v2c9l0_out[0] = g2_reg[0] + g2_reg[1] + g2_reg[2] + g2_reg[3];
+	assign v2c9l0_out[1] = g2_reg[4] + g2_reg[5] + g2_reg[6] + g2_reg[7];
+	assign v2c9l0_out[2] = g2_reg[8] + g2_reg[9] + g2_reg[10] + g2_reg[11];
+	assign v2c9l0_out[3] = g2_reg[12] + g2_reg[13] + g2_reg[14] + g2_reg[15];
+	assign v2c9l0_out[4] = g2_reg[16] + g2_reg[17] + g2_reg[18] + g2_reg[19];
+	assign v2c9l0_out[5] = g2_reg[20] + g2_reg[21] + g2_reg[22] + g2_reg[23];
+	assign v2c9l0_out[6] = g2_reg[24] + g2_reg[25] + g2_reg[26] + g2_reg[27];
+	assign v2c9l0_out[7] = g2_reg[28] + g2_reg[29] + g2_reg[30] + g2_reg[31];
+	assign v2c9l0_out[8] = g2_reg[32] + g2_reg[33] + g2_reg[34] + g2_reg[35];
+	assign v2c9l0_out[9] = g2_reg[36] + g2_reg[37] + g2_reg[38] + g2_reg[39];
+	assign v2c9l0_out[10] = g2_reg[40] + g2_reg[41] + g2_reg[42] + g2_reg[43];
+	assign v2c9l0_out[11] = g2_reg[44] + g2_reg[45] + g2_reg[46] + g2_reg[47];
+	assign v2c9l0_out[12] = g2_reg[48] + g2_reg[49] + g2_reg[50] + g2_reg[51];
+	assign v2c9l0_out[13] = g2_reg[52] + g2_reg[53] + g2_reg[54] + g2_reg[55];
+	assign v2c9l0_out[14] = g2_reg[56] + g2_reg[57] + g2_reg[58] + g2_reg[59];
+	assign v2c9l0_out[15] = g2_reg[60] + g2_reg[61] + g2_reg[62] + g2_reg[63];
+	assign v2c9l0_out[16] = g2_reg[64] + g2_reg[65] + g2_reg[66] + g2_reg[67];
+	assign v2c9l0_out[17] = g2_reg[68] + g2_reg[69] + g2_reg[70] + g2_reg[71];
+	assign v2c9l0_out[18] = g2_reg[72] + g2_reg[73] + g2_reg[74] + g2_reg[75];
+	assign v2c9l0_out[19] = g2_reg[76] + g2_reg[77] + g2_reg[78];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 20; i = i + 1)
+            v2c9l0[i] <= v2c9l0_out[i];
+    end
+
+	reg [3:0] v2c9l1 [0:9];
+	logic [3:0] v2c9l1_out [0:9];
+	assign v2c9l1_out[0] = v2c9l0[0] + v2c9l0[1];
+	assign v2c9l1_out[1] = v2c9l0[2] + v2c9l0[3];
+	assign v2c9l1_out[2] = v2c9l0[4] + v2c9l0[5];
+	assign v2c9l1_out[3] = v2c9l0[6] + v2c9l0[7];
+	assign v2c9l1_out[4] = v2c9l0[8] + v2c9l0[9];
+	assign v2c9l1_out[5] = v2c9l0[10] + v2c9l0[11];
+	assign v2c9l1_out[6] = v2c9l0[12] + v2c9l0[13];
+	assign v2c9l1_out[7] = v2c9l0[14] + v2c9l0[15];
+	assign v2c9l1_out[8] = v2c9l0[16] + v2c9l0[17];
+	assign v2c9l1_out[9] = v2c9l0[18] + v2c9l0[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v2c9l1[i] <= v2c9l1_out[i];
+    end
+
+	reg [4:0] v2c9l2 [0:4];
+	logic [4:0] v2c9l2_out [0:4];
+	assign v2c9l2_out[0] = v2c9l1[0] + v2c9l1[1];
+	assign v2c9l2_out[1] = v2c9l1[2] + v2c9l1[3];
+	assign v2c9l2_out[2] = v2c9l1[4] + v2c9l1[5];
+	assign v2c9l2_out[3] = v2c9l1[6] + v2c9l1[7];
+	assign v2c9l2_out[4] = v2c9l1[8] + v2c9l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v2c9l2[i] <= v2c9l2_out[i];
+    end
+
+	reg [5:0] v2c9l3 [0:2];
+	logic [5:0] v2c9l3_out [0:2];
+	assign v2c9l3_out[0] = v2c9l2[0] + v2c9l2[1];
+	assign v2c9l3_out[1] = v2c9l2[2] + v2c9l2[3];
+	assign v2c9l3_out[2] = v2c9l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v2c9l3[i] <= v2c9l3_out[i];
+    end
+
+	reg [6:0] v2c9l4 [0:1];
+	logic [6:0] v2c9l4_out [0:1];
+	assign v2c9l4_out[0] = v2c9l3[0] + v2c9l3[1];
+	assign v2c9l4_out[1] = v2c9l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v2c9l4[i] <= v2c9l4_out[i];
+    end
+
+	reg [7:0] v2c9l5 [0:0];
+	logic [7:0] v2c9l5_out [0:0];
+	assign v2c9l5_out[0] = v2c9l4[0] + v2c9l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v2c9l5[i] <= v2c9l5_out[i];
+    end
+
+	assign val[2] = v2c9l5[0];
 	
 	// -0.03125
 	logic [0:50] g3;
@@ -7458,7 +16446,83 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g3_reg <= g3;
     end
     
-	assign val[3] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3] + g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7] + g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11] + g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15] + g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19] + g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23] + g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27] + g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31] + g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35] + g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39] + g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43] + g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47] + g3_reg[48] + g3_reg[49] + g3_reg[50];
+	logic [2:0] v3c9l0_out [0:12];
+	logic [2:0] v3c9l0 [0:12];
+	assign v3c9l0_out[0] = g3_reg[0] + g3_reg[1] + g3_reg[2] + g3_reg[3];
+	assign v3c9l0_out[1] = g3_reg[4] + g3_reg[5] + g3_reg[6] + g3_reg[7];
+	assign v3c9l0_out[2] = g3_reg[8] + g3_reg[9] + g3_reg[10] + g3_reg[11];
+	assign v3c9l0_out[3] = g3_reg[12] + g3_reg[13] + g3_reg[14] + g3_reg[15];
+	assign v3c9l0_out[4] = g3_reg[16] + g3_reg[17] + g3_reg[18] + g3_reg[19];
+	assign v3c9l0_out[5] = g3_reg[20] + g3_reg[21] + g3_reg[22] + g3_reg[23];
+	assign v3c9l0_out[6] = g3_reg[24] + g3_reg[25] + g3_reg[26] + g3_reg[27];
+	assign v3c9l0_out[7] = g3_reg[28] + g3_reg[29] + g3_reg[30] + g3_reg[31];
+	assign v3c9l0_out[8] = g3_reg[32] + g3_reg[33] + g3_reg[34] + g3_reg[35];
+	assign v3c9l0_out[9] = g3_reg[36] + g3_reg[37] + g3_reg[38] + g3_reg[39];
+	assign v3c9l0_out[10] = g3_reg[40] + g3_reg[41] + g3_reg[42] + g3_reg[43];
+	assign v3c9l0_out[11] = g3_reg[44] + g3_reg[45] + g3_reg[46] + g3_reg[47];
+	assign v3c9l0_out[12] = g3_reg[48] + g3_reg[49] + g3_reg[50];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 13; i = i + 1)
+            v3c9l0[i] <= v3c9l0_out[i];
+    end
+
+	reg [3:0] v3c9l1 [0:6];
+	logic [3:0] v3c9l1_out [0:6];
+	assign v3c9l1_out[0] = v3c9l0[0] + v3c9l0[1];
+	assign v3c9l1_out[1] = v3c9l0[2] + v3c9l0[3];
+	assign v3c9l1_out[2] = v3c9l0[4] + v3c9l0[5];
+	assign v3c9l1_out[3] = v3c9l0[6] + v3c9l0[7];
+	assign v3c9l1_out[4] = v3c9l0[8] + v3c9l0[9];
+	assign v3c9l1_out[5] = v3c9l0[10] + v3c9l0[11];
+	assign v3c9l1_out[6] = v3c9l0[12];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 7; i = i + 1)
+            v3c9l1[i] <= v3c9l1_out[i];
+    end
+
+	reg [4:0] v3c9l2 [0:3];
+	logic [4:0] v3c9l2_out [0:3];
+	assign v3c9l2_out[0] = v3c9l1[0] + v3c9l1[1];
+	assign v3c9l2_out[1] = v3c9l1[2] + v3c9l1[3];
+	assign v3c9l2_out[2] = v3c9l1[4] + v3c9l1[5];
+	assign v3c9l2_out[3] = v3c9l1[6];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v3c9l2[i] <= v3c9l2_out[i];
+    end
+
+	reg [5:0] v3c9l3 [0:1];
+	logic [5:0] v3c9l3_out [0:1];
+	assign v3c9l3_out[0] = v3c9l2[0] + v3c9l2[1];
+	assign v3c9l3_out[1] = v3c9l2[2] + v3c9l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v3c9l3[i] <= v3c9l3_out[i];
+    end
+
+	reg [6:0] v3c9l4 [0:0];
+	logic [6:0] v3c9l4_out [0:0];
+	assign v3c9l4_out[0] = v3c9l3[0] + v3c9l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c9l4[i] <= v3c9l4_out[i];
+    end
+
+	reg [7:0] v3c9l5 [0:0];
+	logic [7:0] v3c9l5_out [0:0];
+	assign v3c9l5_out[0] = v3c9l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v3c9l5[i] <= v3c9l5_out[i];
+    end
+
+	assign val[3] = v3c9l5[0];
 	
 	// -0.015625
 	logic [0:43] g4;
@@ -7512,7 +16576,79 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g4_reg <= g4;
     end
     
-	assign val[4] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3] + g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7] + g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11] + g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15] + g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19] + g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23] + g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27] + g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31] + g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35] + g4_reg[36] + g4_reg[37] + g4_reg[38] + g4_reg[39] + g4_reg[40] + g4_reg[41] + g4_reg[42] + g4_reg[43];
+	logic [2:0] v4c9l0_out [0:10];
+	logic [2:0] v4c9l0 [0:10];
+	assign v4c9l0_out[0] = g4_reg[0] + g4_reg[1] + g4_reg[2] + g4_reg[3];
+	assign v4c9l0_out[1] = g4_reg[4] + g4_reg[5] + g4_reg[6] + g4_reg[7];
+	assign v4c9l0_out[2] = g4_reg[8] + g4_reg[9] + g4_reg[10] + g4_reg[11];
+	assign v4c9l0_out[3] = g4_reg[12] + g4_reg[13] + g4_reg[14] + g4_reg[15];
+	assign v4c9l0_out[4] = g4_reg[16] + g4_reg[17] + g4_reg[18] + g4_reg[19];
+	assign v4c9l0_out[5] = g4_reg[20] + g4_reg[21] + g4_reg[22] + g4_reg[23];
+	assign v4c9l0_out[6] = g4_reg[24] + g4_reg[25] + g4_reg[26] + g4_reg[27];
+	assign v4c9l0_out[7] = g4_reg[28] + g4_reg[29] + g4_reg[30] + g4_reg[31];
+	assign v4c9l0_out[8] = g4_reg[32] + g4_reg[33] + g4_reg[34] + g4_reg[35];
+	assign v4c9l0_out[9] = g4_reg[36] + g4_reg[37] + g4_reg[38] + g4_reg[39];
+	assign v4c9l0_out[10] = g4_reg[40] + g4_reg[41] + g4_reg[42] + g4_reg[43];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v4c9l0[i] <= v4c9l0_out[i];
+    end
+
+	reg [3:0] v4c9l1 [0:5];
+	logic [3:0] v4c9l1_out [0:5];
+	assign v4c9l1_out[0] = v4c9l0[0] + v4c9l0[1];
+	assign v4c9l1_out[1] = v4c9l0[2] + v4c9l0[3];
+	assign v4c9l1_out[2] = v4c9l0[4] + v4c9l0[5];
+	assign v4c9l1_out[3] = v4c9l0[6] + v4c9l0[7];
+	assign v4c9l1_out[4] = v4c9l0[8] + v4c9l0[9];
+	assign v4c9l1_out[5] = v4c9l0[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v4c9l1[i] <= v4c9l1_out[i];
+    end
+
+	reg [4:0] v4c9l2 [0:2];
+	logic [4:0] v4c9l2_out [0:2];
+	assign v4c9l2_out[0] = v4c9l1[0] + v4c9l1[1];
+	assign v4c9l2_out[1] = v4c9l1[2] + v4c9l1[3];
+	assign v4c9l2_out[2] = v4c9l1[4] + v4c9l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v4c9l2[i] <= v4c9l2_out[i];
+    end
+
+	reg [5:0] v4c9l3 [0:1];
+	logic [5:0] v4c9l3_out [0:1];
+	assign v4c9l3_out[0] = v4c9l2[0] + v4c9l2[1];
+	assign v4c9l3_out[1] = v4c9l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v4c9l3[i] <= v4c9l3_out[i];
+    end
+
+	reg [6:0] v4c9l4 [0:0];
+	logic [6:0] v4c9l4_out [0:0];
+	assign v4c9l4_out[0] = v4c9l3[0] + v4c9l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c9l4[i] <= v4c9l4_out[i];
+    end
+
+	reg [7:0] v4c9l5 [0:0];
+	logic [7:0] v4c9l5_out [0:0];
+	assign v4c9l5_out[0] = v4c9l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v4c9l5[i] <= v4c9l5_out[i];
+    end
+
+	assign val[4] = v4c9l5[0];
 	
 	// 0.015625
 	logic [0:40] g5;
@@ -7563,7 +16699,79 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g5_reg <= g5;
     end
     
-	assign val[5] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3] + g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7] + g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11] + g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15] + g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19] + g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23] + g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27] + g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31] + g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35] + g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39] + g5_reg[40];
+	logic [2:0] v5c9l0_out [0:10];
+	logic [2:0] v5c9l0 [0:10];
+	assign v5c9l0_out[0] = g5_reg[0] + g5_reg[1] + g5_reg[2] + g5_reg[3];
+	assign v5c9l0_out[1] = g5_reg[4] + g5_reg[5] + g5_reg[6] + g5_reg[7];
+	assign v5c9l0_out[2] = g5_reg[8] + g5_reg[9] + g5_reg[10] + g5_reg[11];
+	assign v5c9l0_out[3] = g5_reg[12] + g5_reg[13] + g5_reg[14] + g5_reg[15];
+	assign v5c9l0_out[4] = g5_reg[16] + g5_reg[17] + g5_reg[18] + g5_reg[19];
+	assign v5c9l0_out[5] = g5_reg[20] + g5_reg[21] + g5_reg[22] + g5_reg[23];
+	assign v5c9l0_out[6] = g5_reg[24] + g5_reg[25] + g5_reg[26] + g5_reg[27];
+	assign v5c9l0_out[7] = g5_reg[28] + g5_reg[29] + g5_reg[30] + g5_reg[31];
+	assign v5c9l0_out[8] = g5_reg[32] + g5_reg[33] + g5_reg[34] + g5_reg[35];
+	assign v5c9l0_out[9] = g5_reg[36] + g5_reg[37] + g5_reg[38] + g5_reg[39];
+	assign v5c9l0_out[10] = g5_reg[40];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v5c9l0[i] <= v5c9l0_out[i];
+    end
+
+	reg [3:0] v5c9l1 [0:5];
+	logic [3:0] v5c9l1_out [0:5];
+	assign v5c9l1_out[0] = v5c9l0[0] + v5c9l0[1];
+	assign v5c9l1_out[1] = v5c9l0[2] + v5c9l0[3];
+	assign v5c9l1_out[2] = v5c9l0[4] + v5c9l0[5];
+	assign v5c9l1_out[3] = v5c9l0[6] + v5c9l0[7];
+	assign v5c9l1_out[4] = v5c9l0[8] + v5c9l0[9];
+	assign v5c9l1_out[5] = v5c9l0[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v5c9l1[i] <= v5c9l1_out[i];
+    end
+
+	reg [4:0] v5c9l2 [0:2];
+	logic [4:0] v5c9l2_out [0:2];
+	assign v5c9l2_out[0] = v5c9l1[0] + v5c9l1[1];
+	assign v5c9l2_out[1] = v5c9l1[2] + v5c9l1[3];
+	assign v5c9l2_out[2] = v5c9l1[4] + v5c9l1[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v5c9l2[i] <= v5c9l2_out[i];
+    end
+
+	reg [5:0] v5c9l3 [0:1];
+	logic [5:0] v5c9l3_out [0:1];
+	assign v5c9l3_out[0] = v5c9l2[0] + v5c9l2[1];
+	assign v5c9l3_out[1] = v5c9l2[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v5c9l3[i] <= v5c9l3_out[i];
+    end
+
+	reg [6:0] v5c9l4 [0:0];
+	logic [6:0] v5c9l4_out [0:0];
+	assign v5c9l4_out[0] = v5c9l3[0] + v5c9l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c9l4[i] <= v5c9l4_out[i];
+    end
+
+	reg [7:0] v5c9l5 [0:0];
+	logic [7:0] v5c9l5_out [0:0];
+	assign v5c9l5_out[0] = v5c9l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v5c9l5[i] <= v5c9l5_out[i];
+    end
+
+	assign val[5] = v5c9l5[0];
 	
 	// 0.03125
 	logic [0:64] g6;
@@ -7638,7 +16846,92 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g6_reg <= g6;
     end
     
-	assign val[6] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3] + g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7] + g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11] + g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15] + g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19] + g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23] + g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27] + g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31] + g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35] + g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39] + g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43] + g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47] + g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51] + g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55] + g6_reg[56] + g6_reg[57] + g6_reg[58] + g6_reg[59] + g6_reg[60] + g6_reg[61] + g6_reg[62] + g6_reg[63] + g6_reg[64];
+	logic [2:0] v6c9l0_out [0:16];
+	logic [2:0] v6c9l0 [0:16];
+	assign v6c9l0_out[0] = g6_reg[0] + g6_reg[1] + g6_reg[2] + g6_reg[3];
+	assign v6c9l0_out[1] = g6_reg[4] + g6_reg[5] + g6_reg[6] + g6_reg[7];
+	assign v6c9l0_out[2] = g6_reg[8] + g6_reg[9] + g6_reg[10] + g6_reg[11];
+	assign v6c9l0_out[3] = g6_reg[12] + g6_reg[13] + g6_reg[14] + g6_reg[15];
+	assign v6c9l0_out[4] = g6_reg[16] + g6_reg[17] + g6_reg[18] + g6_reg[19];
+	assign v6c9l0_out[5] = g6_reg[20] + g6_reg[21] + g6_reg[22] + g6_reg[23];
+	assign v6c9l0_out[6] = g6_reg[24] + g6_reg[25] + g6_reg[26] + g6_reg[27];
+	assign v6c9l0_out[7] = g6_reg[28] + g6_reg[29] + g6_reg[30] + g6_reg[31];
+	assign v6c9l0_out[8] = g6_reg[32] + g6_reg[33] + g6_reg[34] + g6_reg[35];
+	assign v6c9l0_out[9] = g6_reg[36] + g6_reg[37] + g6_reg[38] + g6_reg[39];
+	assign v6c9l0_out[10] = g6_reg[40] + g6_reg[41] + g6_reg[42] + g6_reg[43];
+	assign v6c9l0_out[11] = g6_reg[44] + g6_reg[45] + g6_reg[46] + g6_reg[47];
+	assign v6c9l0_out[12] = g6_reg[48] + g6_reg[49] + g6_reg[50] + g6_reg[51];
+	assign v6c9l0_out[13] = g6_reg[52] + g6_reg[53] + g6_reg[54] + g6_reg[55];
+	assign v6c9l0_out[14] = g6_reg[56] + g6_reg[57] + g6_reg[58] + g6_reg[59];
+	assign v6c9l0_out[15] = g6_reg[60] + g6_reg[61] + g6_reg[62] + g6_reg[63];
+	assign v6c9l0_out[16] = g6_reg[64];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 17; i = i + 1)
+            v6c9l0[i] <= v6c9l0_out[i];
+    end
+
+	reg [3:0] v6c9l1 [0:8];
+	logic [3:0] v6c9l1_out [0:8];
+	assign v6c9l1_out[0] = v6c9l0[0] + v6c9l0[1];
+	assign v6c9l1_out[1] = v6c9l0[2] + v6c9l0[3];
+	assign v6c9l1_out[2] = v6c9l0[4] + v6c9l0[5];
+	assign v6c9l1_out[3] = v6c9l0[6] + v6c9l0[7];
+	assign v6c9l1_out[4] = v6c9l0[8] + v6c9l0[9];
+	assign v6c9l1_out[5] = v6c9l0[10] + v6c9l0[11];
+	assign v6c9l1_out[6] = v6c9l0[12] + v6c9l0[13];
+	assign v6c9l1_out[7] = v6c9l0[14] + v6c9l0[15];
+	assign v6c9l1_out[8] = v6c9l0[16];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 9; i = i + 1)
+            v6c9l1[i] <= v6c9l1_out[i];
+    end
+
+	reg [4:0] v6c9l2 [0:4];
+	logic [4:0] v6c9l2_out [0:4];
+	assign v6c9l2_out[0] = v6c9l1[0] + v6c9l1[1];
+	assign v6c9l2_out[1] = v6c9l1[2] + v6c9l1[3];
+	assign v6c9l2_out[2] = v6c9l1[4] + v6c9l1[5];
+	assign v6c9l2_out[3] = v6c9l1[6] + v6c9l1[7];
+	assign v6c9l2_out[4] = v6c9l1[8];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v6c9l2[i] <= v6c9l2_out[i];
+    end
+
+	reg [5:0] v6c9l3 [0:2];
+	logic [5:0] v6c9l3_out [0:2];
+	assign v6c9l3_out[0] = v6c9l2[0] + v6c9l2[1];
+	assign v6c9l3_out[1] = v6c9l2[2] + v6c9l2[3];
+	assign v6c9l3_out[2] = v6c9l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v6c9l3[i] <= v6c9l3_out[i];
+    end
+
+	reg [6:0] v6c9l4 [0:1];
+	logic [6:0] v6c9l4_out [0:1];
+	assign v6c9l4_out[0] = v6c9l3[0] + v6c9l3[1];
+	assign v6c9l4_out[1] = v6c9l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v6c9l4[i] <= v6c9l4_out[i];
+    end
+
+	reg [7:0] v6c9l5 [0:0];
+	logic [7:0] v6c9l5_out [0:0];
+	assign v6c9l5_out[0] = v6c9l4[0] + v6c9l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v6c9l5[i] <= v6c9l5_out[i];
+    end
+
+	assign val[6] = v6c9l5[0];
 	
 	// 0.0625
 	logic [0:76] g7;
@@ -7725,7 +17018,96 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g7_reg <= g7;
     end
     
-	assign val[7] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3] + g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7] + g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11] + g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15] + g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19] + g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23] + g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27] + g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31] + g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35] + g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39] + g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43] + g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47] + g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51] + g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55] + g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59] + g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63] + g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67] + g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71] + g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75] + g7_reg[76];
+	logic [2:0] v7c9l0_out [0:19];
+	logic [2:0] v7c9l0 [0:19];
+	assign v7c9l0_out[0] = g7_reg[0] + g7_reg[1] + g7_reg[2] + g7_reg[3];
+	assign v7c9l0_out[1] = g7_reg[4] + g7_reg[5] + g7_reg[6] + g7_reg[7];
+	assign v7c9l0_out[2] = g7_reg[8] + g7_reg[9] + g7_reg[10] + g7_reg[11];
+	assign v7c9l0_out[3] = g7_reg[12] + g7_reg[13] + g7_reg[14] + g7_reg[15];
+	assign v7c9l0_out[4] = g7_reg[16] + g7_reg[17] + g7_reg[18] + g7_reg[19];
+	assign v7c9l0_out[5] = g7_reg[20] + g7_reg[21] + g7_reg[22] + g7_reg[23];
+	assign v7c9l0_out[6] = g7_reg[24] + g7_reg[25] + g7_reg[26] + g7_reg[27];
+	assign v7c9l0_out[7] = g7_reg[28] + g7_reg[29] + g7_reg[30] + g7_reg[31];
+	assign v7c9l0_out[8] = g7_reg[32] + g7_reg[33] + g7_reg[34] + g7_reg[35];
+	assign v7c9l0_out[9] = g7_reg[36] + g7_reg[37] + g7_reg[38] + g7_reg[39];
+	assign v7c9l0_out[10] = g7_reg[40] + g7_reg[41] + g7_reg[42] + g7_reg[43];
+	assign v7c9l0_out[11] = g7_reg[44] + g7_reg[45] + g7_reg[46] + g7_reg[47];
+	assign v7c9l0_out[12] = g7_reg[48] + g7_reg[49] + g7_reg[50] + g7_reg[51];
+	assign v7c9l0_out[13] = g7_reg[52] + g7_reg[53] + g7_reg[54] + g7_reg[55];
+	assign v7c9l0_out[14] = g7_reg[56] + g7_reg[57] + g7_reg[58] + g7_reg[59];
+	assign v7c9l0_out[15] = g7_reg[60] + g7_reg[61] + g7_reg[62] + g7_reg[63];
+	assign v7c9l0_out[16] = g7_reg[64] + g7_reg[65] + g7_reg[66] + g7_reg[67];
+	assign v7c9l0_out[17] = g7_reg[68] + g7_reg[69] + g7_reg[70] + g7_reg[71];
+	assign v7c9l0_out[18] = g7_reg[72] + g7_reg[73] + g7_reg[74] + g7_reg[75];
+	assign v7c9l0_out[19] = g7_reg[76];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 20; i = i + 1)
+            v7c9l0[i] <= v7c9l0_out[i];
+    end
+
+	reg [3:0] v7c9l1 [0:9];
+	logic [3:0] v7c9l1_out [0:9];
+	assign v7c9l1_out[0] = v7c9l0[0] + v7c9l0[1];
+	assign v7c9l1_out[1] = v7c9l0[2] + v7c9l0[3];
+	assign v7c9l1_out[2] = v7c9l0[4] + v7c9l0[5];
+	assign v7c9l1_out[3] = v7c9l0[6] + v7c9l0[7];
+	assign v7c9l1_out[4] = v7c9l0[8] + v7c9l0[9];
+	assign v7c9l1_out[5] = v7c9l0[10] + v7c9l0[11];
+	assign v7c9l1_out[6] = v7c9l0[12] + v7c9l0[13];
+	assign v7c9l1_out[7] = v7c9l0[14] + v7c9l0[15];
+	assign v7c9l1_out[8] = v7c9l0[16] + v7c9l0[17];
+	assign v7c9l1_out[9] = v7c9l0[18] + v7c9l0[19];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 10; i = i + 1)
+            v7c9l1[i] <= v7c9l1_out[i];
+    end
+
+	reg [4:0] v7c9l2 [0:4];
+	logic [4:0] v7c9l2_out [0:4];
+	assign v7c9l2_out[0] = v7c9l1[0] + v7c9l1[1];
+	assign v7c9l2_out[1] = v7c9l1[2] + v7c9l1[3];
+	assign v7c9l2_out[2] = v7c9l1[4] + v7c9l1[5];
+	assign v7c9l2_out[3] = v7c9l1[6] + v7c9l1[7];
+	assign v7c9l2_out[4] = v7c9l1[8] + v7c9l1[9];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 5; i = i + 1)
+            v7c9l2[i] <= v7c9l2_out[i];
+    end
+
+	reg [5:0] v7c9l3 [0:2];
+	logic [5:0] v7c9l3_out [0:2];
+	assign v7c9l3_out[0] = v7c9l2[0] + v7c9l2[1];
+	assign v7c9l3_out[1] = v7c9l2[2] + v7c9l2[3];
+	assign v7c9l3_out[2] = v7c9l2[4];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v7c9l3[i] <= v7c9l3_out[i];
+    end
+
+	reg [6:0] v7c9l4 [0:1];
+	logic [6:0] v7c9l4_out [0:1];
+	assign v7c9l4_out[0] = v7c9l3[0] + v7c9l3[1];
+	assign v7c9l4_out[1] = v7c9l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v7c9l4[i] <= v7c9l4_out[i];
+    end
+
+	reg [7:0] v7c9l5 [0:0];
+	logic [7:0] v7c9l5_out [0:0];
+	assign v7c9l5_out[0] = v7c9l4[0] + v7c9l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v7c9l5[i] <= v7c9l5_out[i];
+    end
+
+	assign val[7] = v7c9l5[0];
 	
 	// 0.125
 	logic [0:81] g8;
@@ -7817,7 +17199,99 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g8_reg <= g8;
     end
     
-	assign val[8] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3] + g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7] + g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11] + g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15] + g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19] + g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23] + g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27] + g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31] + g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35] + g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39] + g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43] + g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47] + g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51] + g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55] + g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59] + g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63] + g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67] + g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71] + g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75] + g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79] + g8_reg[80] + g8_reg[81];
+	logic [2:0] v8c9l0_out [0:20];
+	logic [2:0] v8c9l0 [0:20];
+	assign v8c9l0_out[0] = g8_reg[0] + g8_reg[1] + g8_reg[2] + g8_reg[3];
+	assign v8c9l0_out[1] = g8_reg[4] + g8_reg[5] + g8_reg[6] + g8_reg[7];
+	assign v8c9l0_out[2] = g8_reg[8] + g8_reg[9] + g8_reg[10] + g8_reg[11];
+	assign v8c9l0_out[3] = g8_reg[12] + g8_reg[13] + g8_reg[14] + g8_reg[15];
+	assign v8c9l0_out[4] = g8_reg[16] + g8_reg[17] + g8_reg[18] + g8_reg[19];
+	assign v8c9l0_out[5] = g8_reg[20] + g8_reg[21] + g8_reg[22] + g8_reg[23];
+	assign v8c9l0_out[6] = g8_reg[24] + g8_reg[25] + g8_reg[26] + g8_reg[27];
+	assign v8c9l0_out[7] = g8_reg[28] + g8_reg[29] + g8_reg[30] + g8_reg[31];
+	assign v8c9l0_out[8] = g8_reg[32] + g8_reg[33] + g8_reg[34] + g8_reg[35];
+	assign v8c9l0_out[9] = g8_reg[36] + g8_reg[37] + g8_reg[38] + g8_reg[39];
+	assign v8c9l0_out[10] = g8_reg[40] + g8_reg[41] + g8_reg[42] + g8_reg[43];
+	assign v8c9l0_out[11] = g8_reg[44] + g8_reg[45] + g8_reg[46] + g8_reg[47];
+	assign v8c9l0_out[12] = g8_reg[48] + g8_reg[49] + g8_reg[50] + g8_reg[51];
+	assign v8c9l0_out[13] = g8_reg[52] + g8_reg[53] + g8_reg[54] + g8_reg[55];
+	assign v8c9l0_out[14] = g8_reg[56] + g8_reg[57] + g8_reg[58] + g8_reg[59];
+	assign v8c9l0_out[15] = g8_reg[60] + g8_reg[61] + g8_reg[62] + g8_reg[63];
+	assign v8c9l0_out[16] = g8_reg[64] + g8_reg[65] + g8_reg[66] + g8_reg[67];
+	assign v8c9l0_out[17] = g8_reg[68] + g8_reg[69] + g8_reg[70] + g8_reg[71];
+	assign v8c9l0_out[18] = g8_reg[72] + g8_reg[73] + g8_reg[74] + g8_reg[75];
+	assign v8c9l0_out[19] = g8_reg[76] + g8_reg[77] + g8_reg[78] + g8_reg[79];
+	assign v8c9l0_out[20] = g8_reg[80] + g8_reg[81];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 21; i = i + 1)
+            v8c9l0[i] <= v8c9l0_out[i];
+    end
+
+	reg [3:0] v8c9l1 [0:10];
+	logic [3:0] v8c9l1_out [0:10];
+	assign v8c9l1_out[0] = v8c9l0[0] + v8c9l0[1];
+	assign v8c9l1_out[1] = v8c9l0[2] + v8c9l0[3];
+	assign v8c9l1_out[2] = v8c9l0[4] + v8c9l0[5];
+	assign v8c9l1_out[3] = v8c9l0[6] + v8c9l0[7];
+	assign v8c9l1_out[4] = v8c9l0[8] + v8c9l0[9];
+	assign v8c9l1_out[5] = v8c9l0[10] + v8c9l0[11];
+	assign v8c9l1_out[6] = v8c9l0[12] + v8c9l0[13];
+	assign v8c9l1_out[7] = v8c9l0[14] + v8c9l0[15];
+	assign v8c9l1_out[8] = v8c9l0[16] + v8c9l0[17];
+	assign v8c9l1_out[9] = v8c9l0[18] + v8c9l0[19];
+	assign v8c9l1_out[10] = v8c9l0[20];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 11; i = i + 1)
+            v8c9l1[i] <= v8c9l1_out[i];
+    end
+
+	reg [4:0] v8c9l2 [0:5];
+	logic [4:0] v8c9l2_out [0:5];
+	assign v8c9l2_out[0] = v8c9l1[0] + v8c9l1[1];
+	assign v8c9l2_out[1] = v8c9l1[2] + v8c9l1[3];
+	assign v8c9l2_out[2] = v8c9l1[4] + v8c9l1[5];
+	assign v8c9l2_out[3] = v8c9l1[6] + v8c9l1[7];
+	assign v8c9l2_out[4] = v8c9l1[8] + v8c9l1[9];
+	assign v8c9l2_out[5] = v8c9l1[10];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 6; i = i + 1)
+            v8c9l2[i] <= v8c9l2_out[i];
+    end
+
+	reg [5:0] v8c9l3 [0:2];
+	logic [5:0] v8c9l3_out [0:2];
+	assign v8c9l3_out[0] = v8c9l2[0] + v8c9l2[1];
+	assign v8c9l3_out[1] = v8c9l2[2] + v8c9l2[3];
+	assign v8c9l3_out[2] = v8c9l2[4] + v8c9l2[5];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 3; i = i + 1)
+            v8c9l3[i] <= v8c9l3_out[i];
+    end
+
+	reg [6:0] v8c9l4 [0:1];
+	logic [6:0] v8c9l4_out [0:1];
+	assign v8c9l4_out[0] = v8c9l3[0] + v8c9l3[1];
+	assign v8c9l4_out[1] = v8c9l3[2];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v8c9l4[i] <= v8c9l4_out[i];
+    end
+
+	reg [7:0] v8c9l5 [0:0];
+	logic [7:0] v8c9l5_out [0:0];
+	assign v8c9l5_out[0] = v8c9l4[0] + v8c9l4[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v8c9l5[i] <= v8c9l5_out[i];
+    end
+
+	assign val[8] = v8c9l5[0];
 	
 	// 0.25
 	logic [0:61] g9;
@@ -7889,7 +17363,87 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g9_reg <= g9;
     end
     
-	assign val[9] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3] + g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7] + g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11] + g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15] + g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19] + g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23] + g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27] + g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31] + g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35] + g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39] + g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43] + g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47] + g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51] + g9_reg[52] + g9_reg[53] + g9_reg[54] + g9_reg[55] + g9_reg[56] + g9_reg[57] + g9_reg[58] + g9_reg[59] + g9_reg[60] + g9_reg[61];
+	logic [2:0] v9c9l0_out [0:15];
+	logic [2:0] v9c9l0 [0:15];
+	assign v9c9l0_out[0] = g9_reg[0] + g9_reg[1] + g9_reg[2] + g9_reg[3];
+	assign v9c9l0_out[1] = g9_reg[4] + g9_reg[5] + g9_reg[6] + g9_reg[7];
+	assign v9c9l0_out[2] = g9_reg[8] + g9_reg[9] + g9_reg[10] + g9_reg[11];
+	assign v9c9l0_out[3] = g9_reg[12] + g9_reg[13] + g9_reg[14] + g9_reg[15];
+	assign v9c9l0_out[4] = g9_reg[16] + g9_reg[17] + g9_reg[18] + g9_reg[19];
+	assign v9c9l0_out[5] = g9_reg[20] + g9_reg[21] + g9_reg[22] + g9_reg[23];
+	assign v9c9l0_out[6] = g9_reg[24] + g9_reg[25] + g9_reg[26] + g9_reg[27];
+	assign v9c9l0_out[7] = g9_reg[28] + g9_reg[29] + g9_reg[30] + g9_reg[31];
+	assign v9c9l0_out[8] = g9_reg[32] + g9_reg[33] + g9_reg[34] + g9_reg[35];
+	assign v9c9l0_out[9] = g9_reg[36] + g9_reg[37] + g9_reg[38] + g9_reg[39];
+	assign v9c9l0_out[10] = g9_reg[40] + g9_reg[41] + g9_reg[42] + g9_reg[43];
+	assign v9c9l0_out[11] = g9_reg[44] + g9_reg[45] + g9_reg[46] + g9_reg[47];
+	assign v9c9l0_out[12] = g9_reg[48] + g9_reg[49] + g9_reg[50] + g9_reg[51];
+	assign v9c9l0_out[13] = g9_reg[52] + g9_reg[53] + g9_reg[54] + g9_reg[55];
+	assign v9c9l0_out[14] = g9_reg[56] + g9_reg[57] + g9_reg[58] + g9_reg[59];
+	assign v9c9l0_out[15] = g9_reg[60] + g9_reg[61];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 16; i = i + 1)
+            v9c9l0[i] <= v9c9l0_out[i];
+    end
+
+	reg [3:0] v9c9l1 [0:7];
+	logic [3:0] v9c9l1_out [0:7];
+	assign v9c9l1_out[0] = v9c9l0[0] + v9c9l0[1];
+	assign v9c9l1_out[1] = v9c9l0[2] + v9c9l0[3];
+	assign v9c9l1_out[2] = v9c9l0[4] + v9c9l0[5];
+	assign v9c9l1_out[3] = v9c9l0[6] + v9c9l0[7];
+	assign v9c9l1_out[4] = v9c9l0[8] + v9c9l0[9];
+	assign v9c9l1_out[5] = v9c9l0[10] + v9c9l0[11];
+	assign v9c9l1_out[6] = v9c9l0[12] + v9c9l0[13];
+	assign v9c9l1_out[7] = v9c9l0[14] + v9c9l0[15];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 8; i = i + 1)
+            v9c9l1[i] <= v9c9l1_out[i];
+    end
+
+	reg [4:0] v9c9l2 [0:3];
+	logic [4:0] v9c9l2_out [0:3];
+	assign v9c9l2_out[0] = v9c9l1[0] + v9c9l1[1];
+	assign v9c9l2_out[1] = v9c9l1[2] + v9c9l1[3];
+	assign v9c9l2_out[2] = v9c9l1[4] + v9c9l1[5];
+	assign v9c9l2_out[3] = v9c9l1[6] + v9c9l1[7];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v9c9l2[i] <= v9c9l2_out[i];
+    end
+
+	reg [5:0] v9c9l3 [0:1];
+	logic [5:0] v9c9l3_out [0:1];
+	assign v9c9l3_out[0] = v9c9l2[0] + v9c9l2[1];
+	assign v9c9l3_out[1] = v9c9l2[2] + v9c9l2[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v9c9l3[i] <= v9c9l3_out[i];
+    end
+
+	reg [6:0] v9c9l4 [0:0];
+	logic [6:0] v9c9l4_out [0:0];
+	assign v9c9l4_out[0] = v9c9l3[0] + v9c9l3[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c9l4[i] <= v9c9l4_out[i];
+    end
+
+	reg [7:0] v9c9l5 [0:0];
+	logic [7:0] v9c9l5_out [0:0];
+	assign v9c9l5_out[0] = v9c9l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v9c9l5[i] <= v9c9l5_out[i];
+    end
+
+	assign val[9] = v9c9l5[0];
 	
 	// 0.5
 	logic [0:14] g10;
@@ -7914,7 +17468,65 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g10_reg <= g10;
     end
     
-	assign val[10] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3] + g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7] + g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11] + g10_reg[12] + g10_reg[13] + g10_reg[14];
+	logic [2:0] v10c9l0_out [0:3];
+	logic [2:0] v10c9l0 [0:3];
+	assign v10c9l0_out[0] = g10_reg[0] + g10_reg[1] + g10_reg[2] + g10_reg[3];
+	assign v10c9l0_out[1] = g10_reg[4] + g10_reg[5] + g10_reg[6] + g10_reg[7];
+	assign v10c9l0_out[2] = g10_reg[8] + g10_reg[9] + g10_reg[10] + g10_reg[11];
+	assign v10c9l0_out[3] = g10_reg[12] + g10_reg[13] + g10_reg[14];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 4; i = i + 1)
+            v10c9l0[i] <= v10c9l0_out[i];
+    end
+
+	reg [3:0] v10c9l1 [0:1];
+	logic [3:0] v10c9l1_out [0:1];
+	assign v10c9l1_out[0] = v10c9l0[0] + v10c9l0[1];
+	assign v10c9l1_out[1] = v10c9l0[2] + v10c9l0[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 2; i = i + 1)
+            v10c9l1[i] <= v10c9l1_out[i];
+    end
+
+	reg [4:0] v10c9l2 [0:0];
+	logic [4:0] v10c9l2_out [0:0];
+	assign v10c9l2_out[0] = v10c9l1[0] + v10c9l1[1];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c9l2[i] <= v10c9l2_out[i];
+    end
+
+	reg [5:0] v10c9l3 [0:0];
+	logic [5:0] v10c9l3_out [0:0];
+	assign v10c9l3_out[0] = v10c9l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c9l3[i] <= v10c9l3_out[i];
+    end
+
+	reg [6:0] v10c9l4 [0:0];
+	logic [6:0] v10c9l4_out [0:0];
+	assign v10c9l4_out[0] = v10c9l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c9l4[i] <= v10c9l4_out[i];
+    end
+
+	reg [7:0] v10c9l5 [0:0];
+	logic [7:0] v10c9l5_out [0:0];
+	assign v10c9l5_out[0] = v10c9l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v10c9l5[i] <= v10c9l5_out[i];
+    end
+
+	assign val[10] = v10c9l5[0];
 	
 	// 1.0
 	logic [0:3] g11;
@@ -7928,7 +17540,61 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g11_reg <= g11;
     end
     
-	assign val[11] = g11_reg[0] + g11_reg[1] + g11_reg[2] + g11_reg[3];
+	logic [2:0] v11c9l0_out [0:0];
+	logic [2:0] v11c9l0 [0:0];
+	assign v11c9l0_out[0] = g11_reg[0] + g11_reg[1] + g11_reg[2] + g11_reg[3];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c9l0[i] <= v11c9l0_out[i];
+    end
+
+	reg [3:0] v11c9l1 [0:0];
+	logic [3:0] v11c9l1_out [0:0];
+	assign v11c9l1_out[0] = v11c9l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c9l1[i] <= v11c9l1_out[i];
+    end
+
+	reg [4:0] v11c9l2 [0:0];
+	logic [4:0] v11c9l2_out [0:0];
+	assign v11c9l2_out[0] = v11c9l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c9l2[i] <= v11c9l2_out[i];
+    end
+
+	reg [5:0] v11c9l3 [0:0];
+	logic [5:0] v11c9l3_out [0:0];
+	assign v11c9l3_out[0] = v11c9l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c9l3[i] <= v11c9l3_out[i];
+    end
+
+	reg [6:0] v11c9l4 [0:0];
+	logic [6:0] v11c9l4_out [0:0];
+	assign v11c9l4_out[0] = v11c9l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c9l4[i] <= v11c9l4_out[i];
+    end
+
+	reg [7:0] v11c9l5 [0:0];
+	logic [7:0] v11c9l5_out [0:0];
+	assign v11c9l5_out[0] = v11c9l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v11c9l5[i] <= v11c9l5_out[i];
+    end
+
+	assign val[11] = v11c9l5[0];
 	
 	// 2.0
 	logic [0:0] g12;
@@ -7939,6 +17605,60 @@ module leaf_counter_9(input logic clk, input logic [0:1347] l, output logic [7:0
         g12_reg <= g12;
     end
     
-	assign val[12] = g12_reg[0];
+	logic [2:0] v12c9l0_out [0:0];
+	logic [2:0] v12c9l0 [0:0];
+	assign v12c9l0_out[0] = g12_reg[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c9l0[i] <= v12c9l0_out[i];
+    end
+
+	reg [3:0] v12c9l1 [0:0];
+	logic [3:0] v12c9l1_out [0:0];
+	assign v12c9l1_out[0] = v12c9l0[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c9l1[i] <= v12c9l1_out[i];
+    end
+
+	reg [4:0] v12c9l2 [0:0];
+	logic [4:0] v12c9l2_out [0:0];
+	assign v12c9l2_out[0] = v12c9l1[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c9l2[i] <= v12c9l2_out[i];
+    end
+
+	reg [5:0] v12c9l3 [0:0];
+	logic [5:0] v12c9l3_out [0:0];
+	assign v12c9l3_out[0] = v12c9l2[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c9l3[i] <= v12c9l3_out[i];
+    end
+
+	reg [6:0] v12c9l4 [0:0];
+	logic [6:0] v12c9l4_out [0:0];
+	assign v12c9l4_out[0] = v12c9l3[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c9l4[i] <= v12c9l4_out[i];
+    end
+
+	reg [7:0] v12c9l5 [0:0];
+	logic [7:0] v12c9l5_out [0:0];
+	assign v12c9l5_out[0] = v12c9l4[0];
+	
+    always_ff @(posedge clk) begin
+        for (i = 0; i < 1; i = i + 1)
+            v12c9l5[i] <= v12c9l5_out[i];
+    end
+
+	assign val[12] = v12c9l5[0];
 	
 endmodule
