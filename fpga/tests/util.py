@@ -25,13 +25,12 @@ def get_mnist_dataset(train, as_np_array=False, treshhold=0.3):
     return data, labels
 
 
-
 async def wait_clock(dut, cycles):
     for i in range(cycles):
         dut.clk.value = 0
-        await Timer(1, units="ns")
+        await Timer(2, units="ns")
         dut.clk.value = 1
-        await Timer(1, units="ns")
+        await Timer(2, units="ns")
 
 
 def vector_high_at(signal, high_indices):
@@ -44,3 +43,9 @@ def set_vector(signal, values):
     assert len(signal) == len(values)
     for i in range(len(signal)):
         signal[i].value = values[i]
+
+def print_vector_decimal(signal, zero_offset=0):
+    print([(int(x) - zero_offset) if str(x).isdigit() else x for x in signal])
+
+def print_signal_decimal(signal, zero_offset=0):
+    print((int(signal) - zero_offset) if str(signal).isdigit() else signal)

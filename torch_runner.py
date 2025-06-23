@@ -116,5 +116,5 @@ y_pred = class_scores.argmax(-1)
 accuracy = (y_pred == y_test).sum().item() / y_test.numel()
 
 print(f"Accuracy: {accuracy}")
-print(y_pred[0:4])
-print(y_test[0:4])
+print(y_pred[0:10])
+print(y_test[0:10])
