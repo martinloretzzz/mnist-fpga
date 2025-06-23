@@ -4,7 +4,6 @@
 
 module mnist_runner (
     input logic clk,
-    input logic clk_data,
     output logic [3:0] digit,
     input logic write_enable,
     input logic [9:0] write_addr,
@@ -26,7 +25,7 @@ module mnist_runner (
         digit_mem <= digit_out;
     end
 
-    always_ff @(posedge clk_data) begin
+    always_ff @(posedge clk) begin
         if (write_enable) begin
             image_mem[write_addr] <= write_data;
         end
