@@ -4,6 +4,7 @@ from util import get_mnist_dataset
 x_train, y_train = get_mnist_dataset(train=True, as_np_array=True)
 x_test, y_test = get_mnist_dataset(train=False, as_np_array=True)
 
+# image binarization treshhold: 0.3
 model = xgb.XGBClassifier(
     learning_rate=0.5,
     n_estimators=100,
