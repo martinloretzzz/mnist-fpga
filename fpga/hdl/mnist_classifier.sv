@@ -4,21 +4,19 @@
 
 
 module mnist_classifier(input logic clk, input logic [0:783] image, output logic [3:0] digit);
-    reg [7:0] score [0:9];
+    logic [7:0] score [0:9];
     integer i;
     
     // Digit 0
     wire [0:1411] leaf_0;
     wire [7:0] val_count_0 [0:12];
     wire [7:0] score_0;
-    reg [0:1411] leaf_0_reg; 
     reg [7:0] val_count_0_reg [0:12];
     decision_tree_leaves_0 dtl_0 (.f(image), .leaf(leaf_0));
-    leaf_counter_0 lc_0 (.l(leaf_0_reg), .val(val_count_0));
+    leaf_counter_0 lc_0 (.clk(clk), .l(leaf_0), .val(val_count_0));
     counter_adder ca_0 (.val(val_count_0_reg), .score(score_0));
     
     always_ff @(posedge clk) begin
-        leaf_0_reg <= leaf_0;
         for (i = 0; i < 13; i = i + 1)
             val_count_0_reg[i] <= val_count_0[i];
         score[0] <= score_0;
@@ -30,14 +28,12 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [0:1154] leaf_1;
     wire [7:0] val_count_1 [0:12];
     wire [7:0] score_1;
-    reg [0:1154] leaf_1_reg; 
     reg [7:0] val_count_1_reg [0:12];
     decision_tree_leaves_1 dtl_1 (.f(image), .leaf(leaf_1));
-    leaf_counter_1 lc_1 (.l(leaf_1_reg), .val(val_count_1));
+    leaf_counter_1 lc_1 (.clk(clk), .l(leaf_1), .val(val_count_1));
     counter_adder ca_1 (.val(val_count_1_reg), .score(score_1));
     
     always_ff @(posedge clk) begin
-        leaf_1_reg <= leaf_1;
         for (i = 0; i < 13; i = i + 1)
             val_count_1_reg[i] <= val_count_1[i];
         score[1] <= score_1;
@@ -49,14 +45,12 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [0:1374] leaf_2;
     wire [7:0] val_count_2 [0:12];
     wire [7:0] score_2;
-    reg [0:1374] leaf_2_reg; 
     reg [7:0] val_count_2_reg [0:12];
     decision_tree_leaves_2 dtl_2 (.f(image), .leaf(leaf_2));
-    leaf_counter_2 lc_2 (.l(leaf_2_reg), .val(val_count_2));
+    leaf_counter_2 lc_2 (.clk(clk), .l(leaf_2), .val(val_count_2));
     counter_adder ca_2 (.val(val_count_2_reg), .score(score_2));
     
     always_ff @(posedge clk) begin
-        leaf_2_reg <= leaf_2;
         for (i = 0; i < 13; i = i + 1)
             val_count_2_reg[i] <= val_count_2[i];
         score[2] <= score_2;
@@ -68,14 +62,12 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [0:1472] leaf_3;
     wire [7:0] val_count_3 [0:12];
     wire [7:0] score_3;
-    reg [0:1472] leaf_3_reg; 
     reg [7:0] val_count_3_reg [0:12];
     decision_tree_leaves_3 dtl_3 (.f(image), .leaf(leaf_3));
-    leaf_counter_3 lc_3 (.l(leaf_3_reg), .val(val_count_3));
+    leaf_counter_3 lc_3 (.clk(clk), .l(leaf_3), .val(val_count_3));
     counter_adder ca_3 (.val(val_count_3_reg), .score(score_3));
     
     always_ff @(posedge clk) begin
-        leaf_3_reg <= leaf_3;
         for (i = 0; i < 13; i = i + 1)
             val_count_3_reg[i] <= val_count_3[i];
         score[3] <= score_3;
@@ -87,14 +79,12 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [0:1315] leaf_4;
     wire [7:0] val_count_4 [0:12];
     wire [7:0] score_4;
-    reg [0:1315] leaf_4_reg; 
     reg [7:0] val_count_4_reg [0:12];
     decision_tree_leaves_4 dtl_4 (.f(image), .leaf(leaf_4));
-    leaf_counter_4 lc_4 (.l(leaf_4_reg), .val(val_count_4));
+    leaf_counter_4 lc_4 (.clk(clk), .l(leaf_4), .val(val_count_4));
     counter_adder ca_4 (.val(val_count_4_reg), .score(score_4));
     
     always_ff @(posedge clk) begin
-        leaf_4_reg <= leaf_4;
         for (i = 0; i < 13; i = i + 1)
             val_count_4_reg[i] <= val_count_4[i];
         score[4] <= score_4;
@@ -106,14 +96,12 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [0:1401] leaf_5;
     wire [7:0] val_count_5 [0:12];
     wire [7:0] score_5;
-    reg [0:1401] leaf_5_reg; 
     reg [7:0] val_count_5_reg [0:12];
     decision_tree_leaves_5 dtl_5 (.f(image), .leaf(leaf_5));
-    leaf_counter_5 lc_5 (.l(leaf_5_reg), .val(val_count_5));
+    leaf_counter_5 lc_5 (.clk(clk), .l(leaf_5), .val(val_count_5));
     counter_adder ca_5 (.val(val_count_5_reg), .score(score_5));
     
     always_ff @(posedge clk) begin
-        leaf_5_reg <= leaf_5;
         for (i = 0; i < 13; i = i + 1)
             val_count_5_reg[i] <= val_count_5[i];
         score[5] <= score_5;
@@ -125,14 +113,12 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [0:1336] leaf_6;
     wire [7:0] val_count_6 [0:12];
     wire [7:0] score_6;
-    reg [0:1336] leaf_6_reg; 
     reg [7:0] val_count_6_reg [0:12];
     decision_tree_leaves_6 dtl_6 (.f(image), .leaf(leaf_6));
-    leaf_counter_6 lc_6 (.l(leaf_6_reg), .val(val_count_6));
+    leaf_counter_6 lc_6 (.clk(clk), .l(leaf_6), .val(val_count_6));
     counter_adder ca_6 (.val(val_count_6_reg), .score(score_6));
     
     always_ff @(posedge clk) begin
-        leaf_6_reg <= leaf_6;
         for (i = 0; i < 13; i = i + 1)
             val_count_6_reg[i] <= val_count_6[i];
         score[6] <= score_6;
@@ -144,14 +130,12 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [0:1279] leaf_7;
     wire [7:0] val_count_7 [0:12];
     wire [7:0] score_7;
-    reg [0:1279] leaf_7_reg; 
     reg [7:0] val_count_7_reg [0:12];
     decision_tree_leaves_7 dtl_7 (.f(image), .leaf(leaf_7));
-    leaf_counter_7 lc_7 (.l(leaf_7_reg), .val(val_count_7));
+    leaf_counter_7 lc_7 (.clk(clk), .l(leaf_7), .val(val_count_7));
     counter_adder ca_7 (.val(val_count_7_reg), .score(score_7));
     
     always_ff @(posedge clk) begin
-        leaf_7_reg <= leaf_7;
         for (i = 0; i < 13; i = i + 1)
             val_count_7_reg[i] <= val_count_7[i];
         score[7] <= score_7;
@@ -163,14 +147,12 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [0:1497] leaf_8;
     wire [7:0] val_count_8 [0:12];
     wire [7:0] score_8;
-    reg [0:1497] leaf_8_reg; 
     reg [7:0] val_count_8_reg [0:12];
     decision_tree_leaves_8 dtl_8 (.f(image), .leaf(leaf_8));
-    leaf_counter_8 lc_8 (.l(leaf_8_reg), .val(val_count_8));
+    leaf_counter_8 lc_8 (.clk(clk), .l(leaf_8), .val(val_count_8));
     counter_adder ca_8 (.val(val_count_8_reg), .score(score_8));
     
     always_ff @(posedge clk) begin
-        leaf_8_reg <= leaf_8;
         for (i = 0; i < 13; i = i + 1)
             val_count_8_reg[i] <= val_count_8[i];
         score[8] <= score_8;
@@ -182,14 +164,12 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [0:1347] leaf_9;
     wire [7:0] val_count_9 [0:12];
     wire [7:0] score_9;
-    reg [0:1347] leaf_9_reg; 
     reg [7:0] val_count_9_reg [0:12];
     decision_tree_leaves_9 dtl_9 (.f(image), .leaf(leaf_9));
-    leaf_counter_9 lc_9 (.l(leaf_9_reg), .val(val_count_9));
+    leaf_counter_9 lc_9 (.clk(clk), .l(leaf_9), .val(val_count_9));
     counter_adder ca_9 (.val(val_count_9_reg), .score(score_9));
     
     always_ff @(posedge clk) begin
-        leaf_9_reg <= leaf_9;
         for (i = 0; i < 13; i = i + 1)
             val_count_9_reg[i] <= val_count_9[i];
         score[9] <= score_9;
@@ -197,5 +177,5 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     
 
     // Get maximum score
-    max_value_index mvi(.score(score), .digit(digit));
+    max_value_index mvi(.clk(clk), .score(score), .digit(digit));
 endmodule

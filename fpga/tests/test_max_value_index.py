@@ -1,17 +1,11 @@
 import cocotb
-from cocotb.triggers import Timer
-
-
-def set_vector(signal, values):
-    assert len(signal) == len(values)
-    for i in range(len(signal)):
-        signal[i].value = values[i]
+from util import wait_clock, set_vector
 
 
 @cocotb.test()
 async def test_max_on_pos_with_one_score(dut):
     set_vector(dut.score, [0, 0, 1, 0, 0, 0, 0, 0, 0, 0])
-    await Timer(1, units="ns")
+    await wait_clock(dut, 4)
 
     assert dut.digit.value == 2
 
@@ -19,7 +13,7 @@ async def test_max_on_pos_with_one_score(dut):
 @cocotb.test()
 async def test_max_on_pos_with_other_scores(dut):
     set_vector(dut.score, [1, 4, 0, 1, 16, 0, 2, 0, 0, 0])
-    await Timer(1, units="ns")    
+    await wait_clock(dut, 4)
 
     assert dut.digit.value == 4
 
@@ -27,7 +21,7 @@ async def test_max_on_pos_with_other_scores(dut):
 @cocotb.test()
 async def test_max_on_pos_with_two_equal(dut):
     set_vector(dut.score, [0, 0, 0, 8, 0, 0, 0, 0, 8, 0])
-    await Timer(1, units="ns")
+    await wait_clock(dut, 4)
 
     assert dut.digit.value == 3
 
@@ -35,6 +29,6 @@ async def test_max_on_pos_with_two_equal(dut):
 @cocotb.test()
 async def test_max_on_pos_with_max_9(dut):
     set_vector(dut.score, [0, 0, 0, 0, 0, 0, 0, 0, 0, 4])
-    await Timer(1, units="ns")
+    await wait_clock(dut, 4)
 
     assert dut.digit.value == 9
