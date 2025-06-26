@@ -1,14 +1,8 @@
 import cocotb
-from tqdm import tqdm
-from util import get_mnist_dataset, wait_clock
+from util import get_mnist_dataset, wait_clock, set_vector
 
 x_test, y_test = get_mnist_dataset(train=False)
 x_test, y_test = x_test.long(), y_test.long()
-
-def set_vector(signal, values):
-    assert len(signal) == len(values)
-    for i in range(len(signal)):
-        signal[i].value = values[i]
 
 classifier_latency = 17
 

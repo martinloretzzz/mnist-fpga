@@ -9,7 +9,7 @@ def binarize(x, treshhold):
 
 def get_mnist_dataset(train, as_np_array=False, treshhold=0.3):
     transform = torchvision.transforms.ToTensor()
-    dataset = torchvision.datasets.MNIST(root='./data', train=train, download=True, transform=transform)
+    dataset = torchvision.datasets.MNIST(root='../data', train=train, download=True, transform=transform)
 
     data = []
     labels = []

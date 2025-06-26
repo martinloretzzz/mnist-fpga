@@ -52,7 +52,3 @@ Power:
 - 610mW @ 100MHz
 
 > Higher clock rates yield higher img/s/W, because the relative fraction of the static power gets smaller.
-
-Settings:
-Go to Assignments > Settings > Compiler Settings > Advanced Settings >Auto Shift Register Recognition = OFF
-Settings > Optimization mode > Performance (Aggressive - increases runtime and area)
