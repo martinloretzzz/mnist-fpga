@@ -36,6 +36,14 @@ Pipeline classifier:
 - Power: 424mW
 - 235.8 Mimg/s/W
 
+Pipeline everything to the maximum and aggressive perfomance compiler:
+- Clock: 200MHz
+- ALM: 16.0k
+- Setup Slack: 0.312 (Fmax=213.3 MHz)
+- Power: 892.7mW
+- 224.2 Mimg/s/W
+- 228.0 Mimg/s/W @ 210.5MHz & 921mW
+
 Power:
 - 350mW Static (Base) Power consumption
 - 61mW @ 10MHz
@@ -44,3 +52,7 @@ Power:
 - 610mW @ 100MHz
 
 > Higher clock rates yield higher img/s/W, because the relative fraction of the static power gets smaller.
+
+Settings:
+Go to Assignments > Settings > Compiler Settings > Advanced Settings >Auto Shift Register Recognition = OFF
+Settings > Optimization mode > Performance (Aggressive - increases runtime and area)

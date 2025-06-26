@@ -9,22 +9,26 @@ module mnist_runner (
     input logic [9:0] write_addr,
     input logic [7:0] write_data
 );
-    logic [0:783] mem;
+    reg [0:783] image_mem;
+    reg [3:0] digit_mem;
     logic [3:0] digit_out;
 
     initial begin
         for (int i = 0; i < 784; i++) begin
-            mem[i] = 0;
+            image_mem[i] = 0;
         end
     end
 
-    mnist_classifier mcl (.clk(clk), .image(mem), .digit(digit_out));
+    mnist_classifier mcl (.clk(clk), .image(image_mem), .digit(digit_out));
+
+    always_ff @(posedge clk) begin
+        digit_mem <= digit_out;
+    end
 
     always_ff @(posedge clk) begin
         if (write_enable) begin
-            mem[write_addr] <= write_data;
+            image_mem[write_addr] <= write_data;
         end
-
-        digit <= digit_out;
+        digit <= digit_mem;
     end
 endmodule
