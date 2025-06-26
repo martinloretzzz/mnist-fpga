@@ -1,12 +1,6 @@
-mnist_unused_mask.pth
-mnist_unused_pixels.png
-model.joblib
 histogram.png
 data/
-wandb/
-hidden/
 .venv
 .vscode
-xgboost
 __pycache__
 *.log
