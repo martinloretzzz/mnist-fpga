@@ -4,7 +4,7 @@ from util import get_mnist_dataset, wait_clock, set_vector
 x_test, y_test = get_mnist_dataset(train=False)
 x_test, y_test = x_test.long(), y_test.long()
 
-classifier_latency = 17
+classifier_latency = 16
 
 @cocotb.test(skip=False)
 async def test_classifier_on_first_digit(dut):
