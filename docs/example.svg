@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="442.19pt"
+   height="258.4375pt"
+   viewBox="0 0 442.19 258.4375"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="example.svg"
+   inkscape:version="1.4.2 (2aeb623e1d, 2025-05-12)"
+   inkscape:export-filename="../11f71e22/example.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     id="namedview11"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#515151"
+     inkscape:document-units="pt"
+     showguides="true"
+     inkscape:zoom="1.037594"
+     inkscape:cx="291.05797"
+     inkscape:cy="247.20652"
+     inkscape:window-width="1352"
+     inkscape:window-height="1083"
+     inkscape:window-x="1584"
+     inkscape:window-y="32"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="graph0" />
+  <g
+     id="graph0"
+     class="graph"
+     transform="translate(4,128.8)">
+    <title
+       id="title1">DecisionTree</title>
+    <polygon
+       fill="#ffffff"
+       stroke="none"
+       points="438.19,4 -4,4 -4,-128.8 438.19,-128.8 "
+       id="polygon1"
+       transform="matrix(1.0903119,0,0,1.9460655,0.36124731,121.85324)" />
+    <!-- P12 -->
+    <g
+       id="node1"
+       class="node"
+       transform="matrix(0.7226273,0,0,0.7226273,117.68197,-23.17328)">
+      <title
+         id="title2">P12</title>
+      <ellipse
+         fill="none"
+         stroke="#000000"
+         cx="106.51"
+         cy="-106.8"
+         rx="27"
+         ry="18"
+         id="ellipse2" />
+      <text
+         text-anchor="middle"
+         x="106.51"
+         y="-102.6"
+         font-family="Times, serif"
+         font-size="14px"
+         id="text2"><tspan
+           style="font-size:16.6061px"
+           id="tspan40">P</tspan><tspan
+           style="font-size:11.0707px"
+           id="tspan37">12</tspan></text>
+    </g>
+    <!-- L0 (0.25) -->
+    <g
+       id="node2"
+       class="node"
+       transform="matrix(0.7226273,0,0,0.7226273,117.68197,-23.17328)">
+      <title
+         id="title3">L0 (0.25)</title>
+      <ellipse
+         fill="none"
+         stroke="#000000"
+         cx="47.509998"
+         cy="-18"
+         rx="47.509998"
+         ry="18"
+         id="ellipse3" />
+      <text
+         text-anchor="middle"
+         x="47.509998"
+         y="-13.8"
+         font-family="Times, serif"
+         font-size="14px"
+         id="text3">L<tspan
+   style="font-size:11.0707px"
+   id="tspan41">0</tspan> (0.25)</text>
+    </g>
+    <!-- P12&#45;&gt;L0 (0.25) -->
+    <g
+       id="edge1"
+       class="edge"
+       transform="matrix(0.7226273,0,0,0.7226273,117.68197,-23.17328)"
+       style="fill:#0000ff">
+      <title
+         id="title4">P12-&gt;L0 (0.25)</title>
+      <path
+         fill="none"
+         stroke="#0000ff"
+         d="M 95.69,-89.88 C 87.2,-77.39 75.21,-59.75 65.31,-45.19"
+         id="path4"
+         style="fill:#0000ff" />
+      <polygon
+         fill="#0000ff"
+         stroke="#0000ff"
+         points="59.72,-36.96 62.44,-47.2 68.23,-43.26 "
+         id="polygon4"
+         style="fill:#0000ff" />
+      <text
+         text-anchor="middle"
+         x="85.790001"
+         y="-58.200001"
+         font-family="Times, serif"
+         font-size="14px"
+         id="text4"
+         style="fill:#0000ff">1</text>
+    </g>
+    <!-- L1 (0.125) -->
+    <g
+       id="node3"
+       class="node"
+       transform="matrix(0.7226273,0,0,0.7226273,117.68197,-23.17328)">
+      <title
+         id="title5">L1 (0.125)</title>
+      <ellipse
+         fill="none"
+         stroke="#000000"
+         cx="165.50999"
+         cy="-18"
+         rx="52.34"
+         ry="18"
+         id="ellipse5" />
+      <text
+         text-anchor="middle"
+         x="165.50999"
+         y="-13.8"
+         font-family="Times, serif"
+         font-size="14px"
+         id="text5">L<tspan
+   style="font-size:11.0707px"
+   id="tspan42">1</tspan> (0.125)</text>
+    </g>
+    <!-- P12&#45;&gt;L1 (0.125) -->
+    <g
+       id="edge2"
+       class="edge"
+       transform="matrix(0.7226273,0,0,0.7226273,117.68197,-23.17328)">
+      <title
+         id="title6">P12-&gt;L1 (0.125)</title>
+      <path
+         fill="none"
+         stroke="#000000"
+         d="m 117.33,-89.88 c 8.43,12.41 20.33,29.9 30.19,44.41"
+         id="path6" />
+      <polygon
+         fill="#000000"
+         stroke="#000000"
+         points="153.1,-37.26 144.58,-43.56 150.37,-47.5 "
+         id="polygon6" />
+      <text
+         text-anchor="middle"
+         x="144.78999"
+         y="-58.200001"
+         font-family="Times, serif"
+         font-size="14px"
+         id="text6">0</text>
+    </g>
+    <!-- P14 -->
+    <g
+       id="node4"
+       class="node"
+       transform="matrix(0.7226273,0,0,0.7226273,117.68197,-23.17328)">
+      <title
+         id="title7">P14</title>
+      <ellipse
+         fill="none"
+         stroke="#000000"
+         cx="337.51001"
+         cy="-106.8"
+         rx="27"
+         ry="18"
+         id="ellipse7" />
+      <text
+         text-anchor="middle"
+         x="337.51001"
+         y="-102.6"
+         font-family="Times, serif"
+         font-size="14px"
+         id="text7"><tspan
+           style="font-size:16.6061px"
+           id="tspan39">P</tspan><tspan
+           style="font-size:11.0707px"
+           id="tspan38">14</tspan></text>
+    </g>
+    <!-- L2 (0.25) -->
+    <g
+       id="node5"
+       class="node"
+       transform="matrix(0.7226273,0,0,0.7226273,117.68197,-23.17328)">
+      <title
+         id="title8">L2 (0.25)</title>
+      <ellipse
+         fill="none"
+         stroke="#000000"
+         cx="283.51001"
+         cy="-18"
+         rx="47.509998"
+         ry="18"
+         id="ellipse8" />
+      <text
+         text-anchor="middle"
+         x="283.51001"
+         y="-13.8"
+         font-family="Times, serif"
+         font-size="14px"
+         id="text8">L<tspan
+   style="font-size:11.0707px"
+   id="tspan43">2</tspan> (0.25)</text>
+    </g>
+    <!-- P14&#45;&gt;L2 (0.25) -->
+    <g
+       id="edge3"
+       class="edge"
+       transform="matrix(0.7226273,0,0,0.7226273,117.68197,-23.17328)">
+      <title
+         id="title9">P14-&gt;L2 (0.25)</title>
+      <path
+         fill="none"
+         stroke="#000000"
+         d="m 327.6,-89.88 c -7.71,12.41 -18.6,29.9 -27.62,44.41"
+         id="path9" />
+      <polygon
+         fill="#000000"
+         stroke="#000000"
+         points="294.89,-37.29 297.2,-47.63 303.14,-43.93 "
+         id="polygon9" />
+      <text
+         text-anchor="middle"
+         x="318.85001"
+         y="-58.200001"
+         font-family="Times, serif"
+         font-size="14px"
+         id="text9">1</text>
+    </g>
+    <!-- L3 (0.5) -->
+    <g
+       id="node6"
+       class="node"
+       transform="matrix(0.7226273,0,0,0.7226273,117.68197,-23.17328)">
+      <title
+         id="title10">L3 (0.5)</title>
+      <ellipse
+         fill="none"
+         stroke="#000000"
+         cx="391.51001"
+         cy="-18"
+         rx="42.68"
+         ry="18"
+         id="ellipse10" />
+      <text
+         text-anchor="middle"
+         x="391.51001"
+         y="-13.8"
+         font-family="Times, serif"
+         font-size="14px"
+         id="text10">L<tspan
+   style="font-size:11.0707px"
+   id="tspan44">3</tspan> (0.5)</text>
+    </g>
+    <!-- P14&#45;&gt;L3 (0.5) -->
+    <g
+       id="edge4"
+       class="edge"
+       transform="matrix(0.7226273,0,0,0.7226273,117.68197,-23.17328)"
+       style="fill:#0000ff">
+      <title
+         id="title11">P14-&gt;L3 (0.5)</title>
+      <path
+         fill="none"
+         stroke="#0000ff"
+         d="m 347.41,-89.88 c 7.77,12.49 18.75,30.13 27.8,44.69"
+         id="path11"
+         style="fill:#0000ff" />
+      <polygon
+         fill="#0000ff"
+         stroke="#0000ff"
+         points="380.32,-36.99 372.06,-43.63 378.01,-47.33 "
+         id="polygon11"
+         style="fill:#0000ff" />
+      <text
+         text-anchor="middle"
+         x="372.85001"
+         y="-58.200001"
+         font-family="Times, serif"
+         font-size="14px"
+         id="text11"
+         style="fill:#0000ff">0</text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:14px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.75"
+       x="12.624999"
+       y="2.7869453"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="12.624999"
+         y="2.7869453">Active Leaves:          <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';fill:#0000ff"
+   id="tspan32">1</tspan> (P<tspan
+   style="font-size:8px"
+   id="tspan1">12</tspan>)           0 (~P<tspan
+   style="font-size:8px"
+   id="tspan2">12</tspan>)          0 (P<tspan
+   style="font-size:8px"
+   id="tspan3">14</tspan>)             <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';fill:#0000ff"
+   id="tspan33">1<tspan
+   style="fill:#000000"
+   id="tspan5"> (~P</tspan><tspan
+   style="font-size:8px;fill:#000000"
+   id="tspan4">14</tspan></tspan>)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:14px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.75"
+       x="14.070651"
+       y="49.047829"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="14.070651"
+         y="49.047829">Leaf Counter: </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="14.070651"
+         y="66.759575"
+         id="tspan14">C<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
+   id="tspan19">0.5</tspan> = L<tspan
+   style="font-size:8px"
+   id="tspan6">3</tspan> = <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';fill:#0000ff"
+   id="tspan34">1 </tspan></tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="14.070651"
+         y="84.471321"
+         id="tspan16">C<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
+   id="tspan20">0.25</tspan> = L<tspan
+   style="font-size:8px"
+   id="tspan7">0</tspan> + L<tspan
+   style="font-size:8px"
+   id="tspan8">2</tspan> = <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';fill:#0000ff"
+   id="tspan35">1</tspan> + 0</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="14.070651"
+         y="102.18307"
+         id="tspan15">C<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
+   id="tspan21">0.125</tspan> = L<tspan
+   style="font-size:8px"
+   id="tspan9">1</tspan> = 0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:14px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.75"
+       x="144.70715"
+       y="67.299255"
+       id="text14-2"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="144.70715"
+         y="67.299255"
+         id="tspan14-0">= 1</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="144.70715"
+         y="85.011002"
+         id="tspan22">= 1</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="144.70715"
+         y="102.72275"
+         id="tspan15-0">= 0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:14px;font-family:Quicksand;-inkscape-font-specification:'Quicksand Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.75"
+       x="201.4222"
+       y="49.047829"
+       id="text14-3"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="201.4222"
+         y="49.047829"
+         id="tspan15-9">Classifier Score in base 0.5:</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="201.4222"
+         y="66.759583"
+         id="tspan36">score<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
+   id="tspan25">0.5</tspan>   = C<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
+   id="tspan24">0.5</tspan> + (C<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
+   id="tspan26">0.25</tspan> &lt;&lt; 1) + (C<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
+   id="tspan27">0.125</tspan> &lt;&lt; 2)</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="201.4222"
+         y="84.471329"
+         id="tspan28">               = 1 + 2 + 0</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
+         x="201.4222"
+         y="102.18307"
+         id="tspan29">               = 3 </tspan></text>
+  </g>
+</svg>
