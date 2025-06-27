@@ -44,6 +44,15 @@ Pipeline everything to the maximum and aggressive perfomance compiler:
 - 224.2 Mimg/s/W
 - 228.0 Mimg/s/W @ 210.5MHz & 921mW
 
+Multicore Design
+- Clock: 160MHz
+- ALM: 51.1k
+- Setup Slack: 0.01
+- Power: 623.6mW
+- 1026.3 Mimg/s/W
+- 2050.0 Mimg/s/W @ 320MHz
+
+
 Power:
 - 350mW Static (Base) Power consumption
 - 61mW @ 10MHz

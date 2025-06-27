@@ -160,15 +160,13 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [7:0] val_count_{i} [0:12];
     wire [7:0] score_{i};
     (* preserve, noprune *) reg [0:783] image_{i}_reg;
-    reg [0:{sum([len(tree) for tree in trees])-1}] leaf_{i}_reg;
     reg [7:0] val_count_{i}_reg [0:12];
     decision_tree_leaves_{i} dtl_{i} (.f(image_{i}_reg), .leaf(leaf_{i}));
-    leaf_counter_{i} lc_{i} (.clk(clk), .l(leaf_{i}_reg), .val(val_count_{i}));
+    leaf_counter_{i} lc_{i} (.clk(clk), .l(leaf_{i}), .val(val_count_{i}));
     counter_adder ca_{i} (.clk(clk), .val(val_count_{i}_reg), .score(score_{i}));
-    
+
     always_ff @(posedge clk) begin
         image_{i}_reg <= image;
-        leaf_{i}_reg <= leaf_{i};
         for (i = 0; i < 13; i = i + 1)
             val_count_{i}_reg[i] <= val_count_{i}[i];
         score[{i}] <= score_{i};
