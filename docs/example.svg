@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="442.19pt"
+   width="482.12503pt"
    height="258.4375pt"
-   viewBox="0 0 442.19 258.4375"
+   viewBox="0 0 482.12503 258.4375"
    version="1.1"
    id="svg11"
    sodipodi:docname="example.svg"
@@ -27,10 +27,10 @@
      inkscape:deskcolor="#515151"
      inkscape:document-units="pt"
      showguides="true"
-     inkscape:zoom="1.037594"
-     inkscape:cx="291.05797"
-     inkscape:cy="247.20652"
-     inkscape:window-width="1352"
+     inkscape:zoom="1.4673795"
+     inkscape:cx="431.72199"
+     inkscape:cy="255.21687"
+     inkscape:window-width="1608"
      inkscape:window-height="1083"
      inkscape:window-x="1584"
      inkscape:window-y="32"
@@ -39,13 +39,13 @@
   <g
      id="graph0"
      class="graph"
-     transform="translate(4,128.8)">
+     transform="translate(4.0000003,128.8)">
     <title
        id="title1">DecisionTree</title>
     <polygon
        fill="#ffffff"
        stroke="none"
-       points="438.19,4 -4,4 -4,-128.8 438.19,-128.8 "
+       points="-4,-128.8 438.19,-128.8 438.19,4 -4,4 "
        id="polygon1"
        transform="matrix(1.0903119,0,0,1.9460655,0.36124731,121.85324)" />
     <!-- P12 -->
@@ -117,7 +117,7 @@
       <polygon
          fill="#0000ff"
          stroke="#0000ff"
-         points="59.72,-36.96 62.44,-47.2 68.23,-43.26 "
+         points="68.23,-43.26 59.72,-36.96 62.44,-47.2 "
          id="polygon4"
          style="fill:#0000ff" />
       <text
@@ -169,7 +169,7 @@
       <polygon
          fill="#000000"
          stroke="#000000"
-         points="153.1,-37.26 144.58,-43.56 150.37,-47.5 "
+         points="150.37,-47.5 153.1,-37.26 144.58,-43.56 "
          id="polygon6" />
       <text
          text-anchor="middle"
@@ -246,7 +246,7 @@
       <polygon
          fill="#000000"
          stroke="#000000"
-         points="294.89,-37.29 297.2,-47.63 303.14,-43.93 "
+         points="303.14,-43.93 294.89,-37.29 297.2,-47.63 "
          id="polygon9" />
       <text
          text-anchor="middle"
@@ -298,7 +298,7 @@
       <polygon
          fill="#0000ff"
          stroke="#0000ff"
-         points="380.32,-36.99 372.06,-43.63 378.01,-47.33 "
+         points="378.01,-47.33 380.32,-36.99 372.06,-43.63 "
          id="polygon11"
          style="fill:#0000ff" />
       <text
@@ -410,29 +410,29 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
          x="201.4222"
          y="49.047829"
-         id="tspan15-9">Classifier Score in base 0.5:</tspan><tspan
+         id="tspan15-9">Classifier Score in base 0.125:</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
          x="201.4222"
-         y="66.759583"
+         y="66.759575"
          id="tspan36">score<tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
-   id="tspan25">0.5</tspan>   = C<tspan
+   id="tspan25">0.125</tspan>   = C<tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
-   id="tspan24">0.5</tspan> + (C<tspan
+   id="tspan24">0.125</tspan> + (C<tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
    id="tspan26">0.25</tspan> &lt;&lt; 1) + (C<tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold'"
-   id="tspan27">0.125</tspan> &lt;&lt; 2)</tspan><tspan
+   id="tspan27">0.5</tspan> &lt;&lt; 2)</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
          x="201.4222"
-         y="84.471329"
-         id="tspan28">               = 1 + 2 + 0</tspan><tspan
+         y="84.471321"
+         id="tspan28">               = 0 + 2 + 4</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.75"
          x="201.4222"
          y="102.18307"
-         id="tspan29">               = 3 </tspan></text>
+         id="tspan29">               = 6</tspan></text>
   </g>
 </svg>

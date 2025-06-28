@@ -8,7 +8,7 @@ This work is submitted to the [Digit Recognition Low Power and Speed Challenge @
 
 ### Synthesize Verilog Design using Quartus Prime
 
-Create a new project and import all SystemVerilog files from /fpga/hdl/. The following custom settings are used:
+Create a new project and import all SystemVerilog files from /fpga/hdl/. Assign all pins. The following custom settings are used:
 
 - Compiler Settings > Advanced Settings > Auto Shift Register Recognition = OFF
 - Optimization mode > Balanced (Normal flow)

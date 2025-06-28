@@ -1,11 +1,4 @@
-## Install
-
-pip install cocotb pytest torch torchvision
-sudo apt update
-sudo apt install iverilog
-
-ALM Usage:
-- Initial Design: 14418
+## Designs
 
 Initial Design:
 - Clock: 25MHz
@@ -60,4 +53,4 @@ Power:
 - 305mW @ 50MHz
 - 610mW @ 100MHz
 
-> Higher clock rates yield higher img/s/W, because the relative fraction of the static power gets smaller.
+Higher clock rates yield higher img/s/W, because the relative fraction of the static power gets smaller.
