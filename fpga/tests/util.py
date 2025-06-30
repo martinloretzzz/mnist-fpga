@@ -39,6 +39,9 @@ def vector_high_at(signal, high_indices):
     for index in high_indices:
         signal[index].value = 1
 
+def set_zeros(signal):
+    vector_high_at(signal, [])
+
 def set_vector(signal, values):
     assert len(signal) == len(values)
     for i in range(len(signal)):
