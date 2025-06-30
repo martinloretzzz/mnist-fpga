@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
-// This module has dynamic memory, so that that synthesisation tool can't optimize it away.
+// This module includes the capability to write to the image memory,
+// so that that synthesisation tool can't optimize it away for being all zero.
 
 module mnist_runner (
     input logic clk,
@@ -14,14 +15,6 @@ module mnist_runner (
     reg [3:0] digit_mem [0:3];
     logic [3:0] digit_out [0:3];
 
-    initial begin
-        for (int d = 0; d < 4; d++) begin
-            for (int i = 0; i < 784; i++) begin
-                image_mem[d][i] = 0;
-            end
-        end
-    end
-
     mnist_classifier mcl0 (.clk(clk), .image(image_mem[0]), .digit(digit_out[0]));
     mnist_classifier mcl1 (.clk(clk), .image(image_mem[1]), .digit(digit_out[1]));
     mnist_classifier mcl2 (.clk(clk), .image(image_mem[2]), .digit(digit_out[2]));
@@ -29,6 +22,16 @@ module mnist_runner (
 
     always_ff @(posedge clk) begin
         digit_mem <= digit_out;
+    end
+
+
+    // Image register writer
+    initial begin
+        for (int d = 0; d < 4; d++) begin
+            for (int i = 0; i < 784; i++) begin
+                image_mem[d][i] = 0;
+            end
+        end
     end
 
     always_ff @(posedge clk) begin

@@ -4,7 +4,7 @@
 
 
 module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf);
-	// Classifier: 0 Iteration: 0
+	// Digit: 0, Tree: 0
 	assign leaf[0] = !f[358] && !f[357] && !f[359] && !f[384];
 	assign leaf[1] = !f[358] && !f[357] && !f[359] && f[384];
 	assign leaf[2] = !f[358] && !f[357] && f[359] && !f[462];
@@ -22,7 +22,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[14] = f[358] && f[435] && f[295] && !f[538];
 	assign leaf[15] = f[358] && f[435] && f[295] && f[538];
 	
-	// Classifier: 0 Iteration: 1
+	// Digit: 0, Tree: 1
 	assign leaf[16] = !f[407] && !f[463] && !f[351] && !f[627];
 	assign leaf[17] = !f[407] && !f[463] && !f[351] && f[627];
 	assign leaf[18] = !f[407] && !f[463] && f[351] && !f[455];
@@ -39,7 +39,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[29] = f[407] && f[359] && f[509] && !f[296];
 	assign leaf[30] = f[407] && f[359] && f[509] && f[296];
 	
-	// Classifier: 0 Iteration: 2
+	// Digit: 0, Tree: 2
 	assign leaf[31] = !f[407] && !f[490] && !f[352] && !f[184];
 	assign leaf[32] = !f[407] && !f[490] && !f[352] && f[184];
 	assign leaf[33] = !f[407] && !f[490] && f[352] && !f[456];
@@ -56,7 +56,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[44] = f[407] && f[359] && f[322] && !f[432];
 	assign leaf[45] = f[407] && f[359] && f[322] && f[432];
 	
-	// Classifier: 0 Iteration: 3
+	// Digit: 0, Tree: 3
 	assign leaf[46] = !f[434] && !f[380] && !f[489] && !f[484];
 	assign leaf[47] = !f[434] && !f[380] && !f[489] && f[484];
 	assign leaf[48] = !f[434] && !f[380] && f[489] && !f[386];
@@ -73,7 +73,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[59] = f[434] && f[386] && f[625] && !f[468];
 	assign leaf[60] = f[434] && f[386] && f[625] && f[468];
 	
-	// Classifier: 0 Iteration: 4
+	// Digit: 0, Tree: 4
 	assign leaf[61] = !f[407] && !f[511] && !f[513] && !f[481];
 	assign leaf[62] = !f[407] && !f[511] && !f[513] && f[481];
 	assign leaf[63] = !f[407] && !f[511] && f[513] && !f[490];
@@ -91,7 +91,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[75] = f[407] && f[359] && f[245] && !f[468];
 	assign leaf[76] = f[407] && f[359] && f[245] && f[468];
 	
-	// Classifier: 0 Iteration: 5
+	// Digit: 0, Tree: 5
 	assign leaf[77] = !f[435] && !f[379] && !f[598] && !f[539];
 	assign leaf[78] = !f[435] && !f[379] && !f[598] && f[539];
 	assign leaf[79] = !f[435] && !f[379] && f[598] && !f[489];
@@ -109,7 +109,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[91] = f[435] && f[386] && f[322] && !f[433];
 	assign leaf[92] = f[435] && f[386] && f[322] && f[433];
 	
-	// Classifier: 0 Iteration: 6
+	// Digit: 0, Tree: 6
 	assign leaf[93] = !f[434] && !f[455] && !f[457] && !f[425];
 	assign leaf[94] = !f[434] && !f[455] && !f[457] && f[425];
 	assign leaf[95] = !f[434] && !f[455] && f[457] && !f[628];
@@ -126,7 +126,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[106] = f[434] && f[385] && f[409] && !f[274];
 	assign leaf[107] = f[434] && f[385] && f[409] && f[274];
 	
-	// Classifier: 0 Iteration: 7
+	// Digit: 0, Tree: 7
 	assign leaf[108] = !f[408] && !f[461] && !f[352] && !f[214];
 	assign leaf[109] = !f[408] && !f[461] && !f[352] && f[214];
 	assign leaf[110] = !f[408] && !f[461] && f[352] && !f[265];
@@ -144,7 +144,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[122] = f[408] && f[484] && f[626] && !f[433];
 	assign leaf[123] = f[408] && f[484] && f[626] && f[433];
 	
-	// Classifier: 0 Iteration: 8
+	// Digit: 0, Tree: 8
 	assign leaf[124] = !f[408] && !f[427] && !f[429] && !f[425];
 	assign leaf[125] = !f[408] && !f[427] && !f[429] && f[425];
 	assign leaf[126] = !f[408] && !f[427] && f[429] && !f[485];
@@ -161,7 +161,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[137] = f[408] && f[293] && f[406] && !f[414];
 	assign leaf[138] = f[408] && f[293] && f[406] && f[414];
 	
-	// Classifier: 0 Iteration: 9
+	// Digit: 0, Tree: 9
 	assign leaf[139] = !f[462] && !f[378] && !f[402] && !f[410];
 	assign leaf[140] = !f[462] && !f[378] && !f[402] && f[410];
 	assign leaf[141] = !f[462] && !f[378] && f[402] && !f[599];
@@ -179,7 +179,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[153] = f[462] && f[386] && f[297] && !f[155];
 	assign leaf[154] = f[462] && f[386] && f[297] && f[155];
 	
-	// Classifier: 0 Iteration: 10
+	// Digit: 0, Tree: 10
 	assign leaf[155] = !f[434] && !f[455] && !f[458] && !f[425];
 	assign leaf[156] = !f[434] && !f[455] && !f[458] && f[425];
 	assign leaf[157] = !f[434] && !f[455] && f[458] && !f[355];
@@ -196,7 +196,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[168] = f[434] && f[385] && f[468] && !f[213];
 	assign leaf[169] = f[434] && f[385] && f[468] && f[213];
 	
-	// Classifier: 0 Iteration: 11
+	// Digit: 0, Tree: 11
 	assign leaf[170] = !f[379] && !f[491] && !f[323] && !f[436];
 	assign leaf[171] = !f[379] && !f[491] && !f[323] && f[436];
 	assign leaf[172] = !f[379] && !f[491] && f[323] && !f[239];
@@ -214,7 +214,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[184] = f[379] && f[329] && f[215] && !f[382];
 	assign leaf[185] = f[379] && f[329] && f[215] && f[382];
 	
-	// Classifier: 0 Iteration: 12
+	// Digit: 0, Tree: 12
 	assign leaf[186] = !f[387] && !f[429] && !f[427] && !f[430];
 	assign leaf[187] = !f[387] && !f[429] && !f[427] && f[430];
 	assign leaf[188] = !f[387] && !f[429] && f[427] && !f[625];
@@ -232,7 +232,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[200] = f[387] && f[426] && f[437] && !f[301];
 	assign leaf[201] = f[387] && f[426] && f[437] && f[301];
 	
-	// Classifier: 0 Iteration: 13
+	// Digit: 0, Tree: 13
 	assign leaf[202] = !f[434] && !f[242] && !f[387] && !f[240];
 	assign leaf[203] = !f[434] && !f[242] && !f[387] && f[240];
 	assign leaf[204] = !f[434] && !f[242] && f[387] && !f[350];
@@ -249,7 +249,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[215] = f[434] && f[540] && f[344] && !f[656];
 	assign leaf[216] = f[434] && f[540] && f[344] && f[656];
 	
-	// Classifier: 0 Iteration: 14
+	// Digit: 0, Tree: 14
 	assign leaf[217] = !f[406] && !f[490] && !f[323] && !f[629];
 	assign leaf[218] = !f[406] && !f[490] && !f[323] && f[629];
 	assign leaf[219] = !f[406] && !f[490] && f[323] && !f[239];
@@ -267,7 +267,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[231] = f[406] && f[329] && f[295] && !f[412];
 	assign leaf[232] = f[406] && f[329] && f[295] && f[412];
 	
-	// Classifier: 0 Iteration: 15
+	// Digit: 0, Tree: 15
 	assign leaf[233] = !f[379] && !f[491] && !f[322] && !f[435];
 	assign leaf[234] = !f[379] && !f[491] && !f[322] && f[435];
 	assign leaf[235] = !f[379] && !f[491] && f[322] && !f[273];
@@ -285,7 +285,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[247] = f[379] && f[329] && f[268] && !f[540];
 	assign leaf[248] = f[379] && f[329] && f[268] && f[540];
 	
-	// Classifier: 0 Iteration: 16
+	// Digit: 0, Tree: 16
 	assign leaf[249] = !f[482] && !f[485] && !f[486] && !f[480];
 	assign leaf[250] = !f[482] && !f[485] && !f[486] && f[480];
 	assign leaf[251] = !f[482] && !f[485] && f[486] && !f[154];
@@ -303,7 +303,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[263] = f[482] && f[399] && f[409] && !f[320];
 	assign leaf[264] = f[482] && f[399] && f[409] && f[320];
 	
-	// Classifier: 0 Iteration: 17
+	// Digit: 0, Tree: 17
 	assign leaf[265] = !f[406] && !f[387] && !f[402] && !f[400];
 	assign leaf[266] = !f[406] && !f[387] && !f[402] && f[400];
 	assign leaf[267] = !f[406] && !f[387] && f[402] && !f[299];
@@ -321,7 +321,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[279] = f[406] && f[244] && f[540] && !f[357];
 	assign leaf[280] = f[406] && f[244] && f[540] && f[357];
 	
-	// Classifier: 0 Iteration: 18
+	// Digit: 0, Tree: 18
 	assign leaf[281] = !f[379] && !f[518] && !f[323] && !f[462];
 	assign leaf[282] = !f[379] && !f[518] && !f[323] && f[462];
 	assign leaf[283] = !f[379] && !f[518] && f[323] && !f[238];
@@ -339,7 +339,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[295] = f[379] && f[569] && f[377] && !f[380];
 	assign leaf[296] = f[379] && f[569] && f[377] && f[380];
 	
-	// Classifier: 0 Iteration: 19
+	// Digit: 0, Tree: 19
 	assign leaf[297] = !f[570] && !f[624] && !f[543] && !f[623];
 	assign leaf[298] = !f[570] && !f[624] && !f[543] && f[623];
 	assign leaf[299] = !f[570] && !f[624] && f[543] && !f[491];
@@ -357,7 +357,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[311] = f[570] && f[656] && f[486] && !f[608];
 	assign leaf[312] = f[570] && f[656] && f[486] && f[608];
 	
-	// Classifier: 0 Iteration: 20
+	// Digit: 0, Tree: 20
 	assign leaf[313] = !f[415] && !f[401] && !f[403] && !f[399];
 	assign leaf[314] = !f[415] && !f[401] && !f[403] && f[399];
 	assign leaf[315] = !f[415] && !f[401] && f[403] && !f[514];
@@ -375,7 +375,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[327] = f[415] && f[425] && f[404] && !f[346];
 	assign leaf[328] = f[415] && f[425] && f[404] && f[346];
 	
-	// Classifier: 0 Iteration: 21
+	// Digit: 0, Tree: 21
 	assign leaf[329] = !f[240] && !f[350] && !f[518] && !f[214];
 	assign leaf[330] = !f[240] && !f[350] && !f[518] && f[214];
 	assign leaf[331] = !f[240] && !f[350] && f[518] && !f[442];
@@ -393,7 +393,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[343] = f[240] && f[462] && f[512] && !f[401];
 	assign leaf[344] = f[240] && f[462] && f[512] && f[401];
 	
-	// Classifier: 0 Iteration: 22
+	// Digit: 0, Tree: 22
 	assign leaf[345] = !f[453] && !f[429] && !f[431] && !f[427];
 	assign leaf[346] = !f[453] && !f[429] && !f[431] && f[427];
 	assign leaf[347] = !f[453] && !f[429] && f[431] && !f[241];
@@ -411,7 +411,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[359] = f[453] && f[458] && f[346] && !f[544];
 	assign leaf[360] = f[453] && f[458] && f[346] && f[544];
 	
-	// Classifier: 0 Iteration: 23
+	// Digit: 0, Tree: 23
 	assign leaf[361] = !f[663] && !f[434] && !f[241] && !f[215];
 	assign leaf[362] = !f[663] && !f[434] && !f[241] && f[215];
 	assign leaf[363] = !f[663] && !f[434] && f[241] && !f[713];
@@ -429,7 +429,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[375] = f[663] && f[526] && f[347] && !f[551];
 	assign leaf[376] = f[663] && f[526] && f[347] && f[551];
 	
-	// Classifier: 0 Iteration: 24
+	// Digit: 0, Tree: 24
 	assign leaf[377] = !f[663] && !f[406] && !f[688] && !f[398];
 	assign leaf[378] = !f[663] && !f[406] && !f[688] && f[398];
 	assign leaf[379] = !f[663] && !f[406] && f[688] && !f[656];
@@ -447,7 +447,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[391] = f[663] && f[526] && f[347] && !f[572];
 	assign leaf[392] = f[663] && f[526] && f[347] && f[572];
 	
-	// Classifier: 0 Iteration: 25
+	// Digit: 0, Tree: 25
 	assign leaf[393] = !f[434] && !f[177] && !f[517] && !f[350];
 	assign leaf[394] = !f[434] && !f[177] && !f[517] && f[350];
 	assign leaf[395] = !f[434] && !f[177] && f[517] && !f[297];
@@ -463,7 +463,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[405] = f[434] && f[569] && f[428] && !f[431];
 	assign leaf[406] = f[434] && f[569] && f[428] && f[431];
 	
-	// Classifier: 0 Iteration: 26
+	// Digit: 0, Tree: 26
 	assign leaf[407] = !f[542] && !f[510] && !f[512] && !f[471];
 	assign leaf[408] = !f[542] && !f[510] && !f[512] && f[471];
 	assign leaf[409] = !f[542] && !f[510] && f[512] && !f[654];
@@ -481,7 +481,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[421] = f[542] && f[298] && f[430] && !f[383];
 	assign leaf[422] = f[542] && f[298] && f[430] && f[383];
 	
-	// Classifier: 0 Iteration: 27
+	// Digit: 0, Tree: 27
 	assign leaf[423] = !f[378] && !f[571] && !f[654] && !f[415];
 	assign leaf[424] = !f[378] && !f[571] && !f[654] && f[415];
 	assign leaf[425] = !f[378] && !f[571] && f[654] && !f[455];
@@ -499,7 +499,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[437] = f[378] && f[294] && f[245] && !f[352];
 	assign leaf[438] = f[378] && f[294] && f[245] && f[352];
 	
-	// Classifier: 0 Iteration: 28
+	// Digit: 0, Tree: 28
 	assign leaf[439] = !f[265] && !f[351] && !f[493] && !f[321];
 	assign leaf[440] = !f[265] && !f[351] && !f[493] && f[321];
 	assign leaf[441] = !f[265] && !f[351] && f[493] && !f[288];
@@ -516,7 +516,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[452] = f[265] && f[416] && f[414] && !f[398];
 	assign leaf[453] = f[265] && f[416] && f[414] && f[398];
 	
-	// Classifier: 0 Iteration: 29
+	// Digit: 0, Tree: 29
 	assign leaf[454] = !f[663] && !f[453] && !f[486] && !f[456];
 	assign leaf[455] = !f[663] && !f[453] && !f[486] && f[456];
 	assign leaf[456] = !f[663] && !f[453] && f[486] && !f[489];
@@ -534,7 +534,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[468] = f[663] && f[498] && f[347] && !f[600];
 	assign leaf[469] = f[663] && f[498] && f[347] && f[600];
 	
-	// Classifier: 0 Iteration: 30
+	// Digit: 0, Tree: 30
 	assign leaf[470] = !f[444] && !f[213] && !f[240] && !f[326];
 	assign leaf[471] = !f[444] && !f[213] && !f[240] && f[326];
 	assign leaf[472] = !f[444] && !f[213] && f[240] && !f[542];
@@ -550,7 +550,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[482] = f[444] && f[152] && !f[302] && f[299];
 	assign leaf[483] = f[444] && f[152] && f[302];
 	
-	// Classifier: 0 Iteration: 31
+	// Digit: 0, Tree: 31
 	assign leaf[484] = !f[204] && !f[664] && !f[415] && !f[241];
 	assign leaf[485] = !f[204] && !f[664] && !f[415] && f[241];
 	assign leaf[486] = !f[204] && !f[664] && f[415] && !f[436];
@@ -566,7 +566,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[496] = f[204] && f[398] && f[470] && !f[378];
 	assign leaf[497] = f[204] && f[398] && f[470] && f[378];
 	
-	// Classifier: 0 Iteration: 32
+	// Digit: 0, Tree: 32
 	assign leaf[498] = !f[688] && !f[103] && !f[663] && !f[406];
 	assign leaf[499] = !f[688] && !f[103] && !f[663] && f[406];
 	assign leaf[500] = !f[688] && !f[103] && f[663] && !f[659];
@@ -583,7 +583,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[511] = f[688] && f[657] && f[571] && !f[523];
 	assign leaf[512] = f[688] && f[657] && f[571] && f[523];
 	
-	// Classifier: 0 Iteration: 33
+	// Digit: 0, Tree: 33
 	assign leaf[513] = !f[571] && !f[436] && !f[360] && !f[512];
 	assign leaf[514] = !f[571] && !f[436] && !f[360] && f[512];
 	assign leaf[515] = !f[571] && !f[436] && f[360] && !f[275];
@@ -601,7 +601,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[527] = f[571] && f[597] && f[608] && !f[498];
 	assign leaf[528] = f[571] && f[597] && f[608] && f[498];
 	
-	// Classifier: 0 Iteration: 34
+	// Digit: 0, Tree: 34
 	assign leaf[529] = !f[514] && !f[510] && !f[512] && !f[508];
 	assign leaf[530] = !f[514] && !f[510] && !f[512] && f[508];
 	assign leaf[531] = !f[514] && !f[510] && f[512] && !f[323];
@@ -619,7 +619,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[543] = f[514] && f[656] && f[521] && !f[483];
 	assign leaf[544] = f[514] && f[656] && f[521] && f[483];
 	
-	// Classifier: 0 Iteration: 35
+	// Digit: 0, Tree: 35
 	assign leaf[545] = !f[240] && !f[377] && !f[436] && !f[321];
 	assign leaf[546] = !f[240] && !f[377] && !f[436] && f[321];
 	assign leaf[547] = !f[240] && !f[377] && f[436] && !f[270];
@@ -637,7 +637,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[559] = f[240] && f[297] && f[486] && !f[375];
 	assign leaf[560] = f[240] && f[297] && f[486] && f[375];
 	
-	// Classifier: 0 Iteration: 36
+	// Digit: 0, Tree: 36
 	assign leaf[561] = !f[711] && !f[609] && !f[177] && !f[415];
 	assign leaf[562] = !f[711] && !f[609] && !f[177] && f[415];
 	assign leaf[563] = !f[711] && !f[609] && f[177] && !f[572];
@@ -649,7 +649,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[569] = f[711] && !f[573];
 	assign leaf[570] = f[711] && f[573];
 	
-	// Classifier: 0 Iteration: 37
+	// Digit: 0, Tree: 37
 	assign leaf[571] = !f[213] && !f[408] && !f[377] && !f[461];
 	assign leaf[572] = !f[213] && !f[408] && !f[377] && f[461];
 	assign leaf[573] = !f[213] && !f[408] && f[377] && !f[437];
@@ -665,7 +665,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[583] = f[213] && f[711] && !f[295];
 	assign leaf[584] = f[213] && f[711] && f[295];
 	
-	// Classifier: 0 Iteration: 38
+	// Digit: 0, Tree: 38
 	assign leaf[585] = !f[378] && !f[517] && !f[629] && !f[684];
 	assign leaf[586] = !f[378] && !f[517] && !f[629] && f[684];
 	assign leaf[587] = !f[378] && !f[517] && f[629] && !f[323];
@@ -683,7 +683,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[599] = f[378] && f[216] && f[568] && !f[326];
 	assign leaf[600] = f[378] && f[216] && f[568] && f[326];
 	
-	// Classifier: 0 Iteration: 39
+	// Digit: 0, Tree: 39
 	assign leaf[601] = !f[240] && !f[326] && !f[436] && !f[128];
 	assign leaf[602] = !f[240] && !f[326] && !f[436] && f[128];
 	assign leaf[603] = !f[240] && !f[326] && f[436] && !f[218];
@@ -701,7 +701,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[615] = f[240] && f[326] && f[298] && !f[354];
 	assign leaf[616] = f[240] && f[326] && f[298] && f[354];
 	
-	// Classifier: 0 Iteration: 40
+	// Digit: 0, Tree: 40
 	assign leaf[617] = !f[688] && !f[453] && !f[298] && !f[300];
 	assign leaf[618] = !f[688] && !f[453] && !f[298] && f[300];
 	assign leaf[619] = !f[688] && !f[453] && f[298] && !f[459];
@@ -718,7 +718,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[630] = f[688] && f[657] && f[186] && !f[272];
 	assign leaf[631] = f[688] && f[657] && f[186] && f[272];
 	
-	// Classifier: 0 Iteration: 41
+	// Digit: 0, Tree: 41
 	assign leaf[632] = !f[444] && !f[319] && !f[494] && !f[413];
 	assign leaf[633] = !f[444] && !f[319] && !f[494] && f[413];
 	assign leaf[634] = !f[444] && !f[319] && f[494] && !f[657];
@@ -734,7 +734,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[644] = f[444] && f[152] && f[483] && !f[302];
 	assign leaf[645] = f[444] && f[152] && f[483] && f[302];
 	
-	// Classifier: 0 Iteration: 42
+	// Digit: 0, Tree: 42
 	assign leaf[646] = !f[347] && !f[466] && !f[404] && !f[293];
 	assign leaf[647] = !f[347] && !f[466] && !f[404] && f[293];
 	assign leaf[648] = !f[347] && !f[466] && f[404] && !f[465];
@@ -752,7 +752,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[660] = f[347] && f[493] && f[577] && !f[491];
 	assign leaf[661] = f[347] && f[493] && f[577] && f[491];
 	
-	// Classifier: 0 Iteration: 43
+	// Digit: 0, Tree: 43
 	assign leaf[662] = !f[408] && !f[491] && !f[209] && !f[150];
 	assign leaf[663] = !f[408] && !f[491] && !f[209] && f[150];
 	assign leaf[664] = !f[408] && !f[491] && f[209] && !f[488];
@@ -769,7 +769,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[675] = f[408] && f[268] && f[514] && !f[656];
 	assign leaf[676] = f[408] && f[268] && f[514] && f[656];
 	
-	// Classifier: 0 Iteration: 44
+	// Digit: 0, Tree: 44
 	assign leaf[677] = !f[319] && !f[494] && !f[374] && !f[627];
 	assign leaf[678] = !f[319] && !f[494] && !f[374] && f[627];
 	assign leaf[679] = !f[319] && !f[494] && f[374] && !f[376];
@@ -787,7 +787,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[691] = f[319] && f[543] && f[541] && !f[160];
 	assign leaf[692] = f[319] && f[543] && f[541] && f[160];
 	
-	// Classifier: 0 Iteration: 45
+	// Digit: 0, Tree: 45
 	assign leaf[693] = !f[444] && !f[375] && !f[520] && !f[293];
 	assign leaf[694] = !f[444] && !f[375] && !f[520] && f[293];
 	assign leaf[695] = !f[444] && !f[375] && f[520] && !f[373];
@@ -801,7 +801,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[703] = f[444] && !f[437] && f[370] && f[379];
 	assign leaf[704] = f[444] && f[437];
 	
-	// Classifier: 0 Iteration: 46
+	// Digit: 0, Tree: 46
 	assign leaf[705] = !f[434] && !f[664] && !f[379] && !f[332];
 	assign leaf[706] = !f[434] && !f[664] && !f[379] && f[332];
 	assign leaf[707] = !f[434] && !f[664] && f[379] && !f[488];
@@ -817,7 +817,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[717] = f[434] && f[436] && f[433] && !f[414];
 	assign leaf[718] = f[434] && f[436] && f[433] && f[414];
 	
-	// Classifier: 0 Iteration: 47
+	// Digit: 0, Tree: 47
 	assign leaf[719] = !f[714] && !f[710] && !f[427] && !f[431];
 	assign leaf[720] = !f[714] && !f[710] && !f[427] && f[431];
 	assign leaf[721] = !f[714] && !f[710] && f[427] && !f[377];
@@ -826,7 +826,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[724] = f[714] && !f[576];
 	assign leaf[725] = f[714] && f[576];
 	
-	// Classifier: 0 Iteration: 48
+	// Digit: 0, Tree: 48
 	assign leaf[726] = !f[238] && !f[219] && !f[266] && !f[464];
 	assign leaf[727] = !f[238] && !f[219] && !f[266] && f[464];
 	assign leaf[728] = !f[238] && !f[219] && f[266] && !f[602];
@@ -844,7 +844,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[740] = f[238] && f[269] && f[244] && !f[295];
 	assign leaf[741] = f[238] && f[269] && f[244] && f[295];
 	
-	// Classifier: 0 Iteration: 49
+	// Digit: 0, Tree: 49
 	assign leaf[742] = !f[414] && !f[382] && !f[516] && !f[655];
 	assign leaf[743] = !f[414] && !f[382] && !f[516] && f[655];
 	assign leaf[744] = !f[414] && !f[382] && f[516] && !f[151];
@@ -861,7 +861,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[755] = f[414] && f[190] && f[521] && !f[492];
 	assign leaf[756] = f[414] && f[190] && f[521] && f[492];
 	
-	// Classifier: 0 Iteration: 50
+	// Digit: 0, Tree: 50
 	assign leaf[757] = !f[572] && !f[460] && !f[404] && !f[537];
 	assign leaf[758] = !f[572] && !f[460] && !f[404] && f[537];
 	assign leaf[759] = !f[572] && !f[460] && f[404] && !f[266];
@@ -877,7 +877,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[769] = f[572] && f[683] && !f[577];
 	assign leaf[770] = f[572] && f[683] && f[577];
 	
-	// Classifier: 0 Iteration: 51
+	// Digit: 0, Tree: 51
 	assign leaf[771] = !f[133] && !f[397] && !f[428] && !f[567];
 	assign leaf[772] = !f[133] && !f[397] && !f[428] && f[567];
 	assign leaf[773] = !f[133] && !f[397] && f[428] && !f[458];
@@ -891,7 +891,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[781] = f[133] && f[653] && !f[512];
 	assign leaf[782] = f[133] && f[653] && f[512];
 	
-	// Classifier: 0 Iteration: 52
+	// Digit: 0, Tree: 52
 	assign leaf[783] = !f[378] && !f[352] && !f[453] && !f[518];
 	assign leaf[784] = !f[378] && !f[352] && !f[453] && f[518];
 	assign leaf[785] = !f[378] && !f[352] && f[453] && !f[661];
@@ -908,7 +908,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[796] = f[378] && f[488] && !f[686] && f[542];
 	assign leaf[797] = f[378] && f[488] && f[686];
 	
-	// Classifier: 0 Iteration: 53
+	// Digit: 0, Tree: 53
 	assign leaf[798] = !f[713] && !f[605] && !f[406] && !f[637];
 	assign leaf[799] = !f[713] && !f[605] && !f[406] && f[637];
 	assign leaf[800] = !f[713] && !f[605] && f[406] && !f[216];
@@ -920,7 +920,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[806] = f[713] && !f[295];
 	assign leaf[807] = f[713] && f[295];
 	
-	// Classifier: 0 Iteration: 54
+	// Digit: 0, Tree: 54
 	assign leaf[808] = !f[713] && !f[710] && !f[427] && !f[344];
 	assign leaf[809] = !f[713] && !f[710] && !f[427] && f[344];
 	assign leaf[810] = !f[713] && !f[710] && f[427] && !f[345];
@@ -929,7 +929,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[813] = f[713] && !f[376];
 	assign leaf[814] = f[713] && f[376];
 	
-	// Classifier: 0 Iteration: 55
+	// Digit: 0, Tree: 55
 	assign leaf[815] = !f[444] && !f[609] && !f[402] && !f[494];
 	assign leaf[816] = !f[444] && !f[609] && !f[402] && f[494];
 	assign leaf[817] = !f[444] && !f[609] && f[402] && !f[347];
@@ -944,7 +944,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[826] = f[444] && f[152] && !f[272];
 	assign leaf[827] = f[444] && f[152] && f[272];
 	
-	// Classifier: 0 Iteration: 56
+	// Digit: 0, Tree: 56
 	assign leaf[828] = !f[416] && !f[214] && !f[241] && !f[438];
 	assign leaf[829] = !f[416] && !f[214] && !f[241] && f[438];
 	assign leaf[830] = !f[416] && !f[214] && f[241] && !f[542];
@@ -958,7 +958,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[838] = f[416] && f[398] && f[289] && !f[430];
 	assign leaf[839] = f[416] && f[398] && f[289] && f[430];
 	
-	// Classifier: 0 Iteration: 57
+	// Digit: 0, Tree: 57
 	assign leaf[840] = !f[434] && !f[664] && !f[433] && !f[547];
 	assign leaf[841] = !f[434] && !f[664] && !f[433] && f[547];
 	assign leaf[842] = !f[434] && !f[664] && f[433] && !f[348];
@@ -972,7 +972,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[850] = f[434] && f[456] && f[461] && !f[357];
 	assign leaf[851] = f[434] && f[456] && f[461] && f[357];
 	
-	// Classifier: 0 Iteration: 58
+	// Digit: 0, Tree: 58
 	assign leaf[852] = !f[688] && !f[663] && !f[712] && !f[397];
 	assign leaf[853] = !f[688] && !f[663] && !f[712] && f[397];
 	assign leaf[854] = !f[688] && !f[663] && f[712] && !f[573];
@@ -984,7 +984,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[860] = f[688] && !f[548] && f[287];
 	assign leaf[861] = f[688] && f[548];
 	
-	// Classifier: 0 Iteration: 59
+	// Digit: 0, Tree: 59
 	assign leaf[862] = !f[380] && !f[512] && !f[271] && !f[403];
 	assign leaf[863] = !f[380] && !f[512] && !f[271] && f[403];
 	assign leaf[864] = !f[380] && !f[512] && f[271] && !f[462];
@@ -1001,7 +1001,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[875] = f[380] && f[268] && f[325] && !f[596];
 	assign leaf[876] = f[380] && f[268] && f[325] && f[596];
 	
-	// Classifier: 0 Iteration: 60
+	// Digit: 0, Tree: 60
 	assign leaf[877] = !f[605] && !f[321] && !f[320] && !f[431];
 	assign leaf[878] = !f[605] && !f[321] && !f[320] && f[431];
 	assign leaf[879] = !f[605] && !f[321] && f[320] && !f[468];
@@ -1019,7 +1019,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[891] = f[605] && f[207] && f[185] && !f[316];
 	assign leaf[892] = f[605] && f[207] && f[185] && f[316];
 	
-	// Classifier: 0 Iteration: 61
+	// Digit: 0, Tree: 61
 	assign leaf[893] = !f[572] && !f[547] && !f[376] && !f[460];
 	assign leaf[894] = !f[572] && !f[547] && !f[376] && f[460];
 	assign leaf[895] = !f[572] && !f[547] && f[376] && !f[189];
@@ -1034,7 +1034,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[904] = f[572] && !f[683] && f[319] && f[598];
 	assign leaf[905] = f[572] && f[683];
 	
-	// Classifier: 0 Iteration: 62
+	// Digit: 0, Tree: 62
 	assign leaf[906] = !f[572] && !f[541] && !f[494] && !f[595];
 	assign leaf[907] = !f[572] && !f[541] && !f[494] && f[595];
 	assign leaf[908] = !f[572] && !f[541] && f[494] && !f[316];
@@ -1050,7 +1050,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[918] = f[572] && f[683] && !f[549];
 	assign leaf[919] = f[572] && f[683] && f[549];
 	
-	// Classifier: 0 Iteration: 63
+	// Digit: 0, Tree: 63
 	assign leaf[920] = !f[380] && !f[382] && !f[303] && !f[517];
 	assign leaf[921] = !f[380] && !f[382] && !f[303] && f[517];
 	assign leaf[922] = !f[380] && !f[382] && f[303] && !f[385];
@@ -1067,7 +1067,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[933] = f[380] && f[406] && f[244] && !f[129];
 	assign leaf[934] = f[380] && f[406] && f[244] && f[129];
 	
-	// Classifier: 0 Iteration: 64
+	// Digit: 0, Tree: 64
 	assign leaf[935] = !f[412] && !f[238] && !f[269] && !f[437];
 	assign leaf[936] = !f[412] && !f[238] && !f[269] && f[437];
 	assign leaf[937] = !f[412] && !f[238] && f[269] && !f[354];
@@ -1085,7 +1085,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[949] = f[412] && f[572] && f[321] && !f[403];
 	assign leaf[950] = f[412] && f[572] && f[321] && f[403];
 	
-	// Classifier: 0 Iteration: 65
+	// Digit: 0, Tree: 65
 	assign leaf[951] = !f[602] && !f[456] && !f[461] && !f[427];
 	assign leaf[952] = !f[602] && !f[456] && !f[461] && f[427];
 	assign leaf[953] = !f[602] && !f[456] && f[461];
@@ -1102,7 +1102,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[964] = f[602] && f[236] && f[463] && !f[321];
 	assign leaf[965] = f[602] && f[236] && f[463] && f[321];
 	
-	// Classifier: 0 Iteration: 66
+	// Digit: 0, Tree: 66
 	assign leaf[966] = !f[572] && !f[684] && !f[541] && !f[629];
 	assign leaf[967] = !f[572] && !f[684] && !f[541] && f[629];
 	assign leaf[968] = !f[572] && !f[684] && f[541] && !f[212];
@@ -1118,7 +1118,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[978] = f[572] && f[683] && !f[548];
 	assign leaf[979] = f[572] && f[683] && f[548];
 	
-	// Classifier: 0 Iteration: 67
+	// Digit: 0, Tree: 67
 	assign leaf[980] = !f[444] && !f[633] && !f[580] && !f[713];
 	assign leaf[981] = !f[444] && !f[633] && !f[580] && f[713];
 	assign leaf[982] = !f[444] && !f[633] && f[580] && !f[354];
@@ -1131,7 +1131,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[989] = f[444] && !f[152] && f[317];
 	assign leaf[990] = f[444] && f[152];
 	
-	// Classifier: 0 Iteration: 68
+	// Digit: 0, Tree: 68
 	assign leaf[991] = !f[444] && !f[516] && !f[379] && !f[486];
 	assign leaf[992] = !f[444] && !f[516] && !f[379] && f[486];
 	assign leaf[993] = !f[444] && !f[516] && f[379] && !f[268];
@@ -1145,7 +1145,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1001] = f[444] && f[514] && !f[602];
 	assign leaf[1002] = f[444] && f[514] && f[602];
 	
-	// Classifier: 0 Iteration: 69
+	// Digit: 0, Tree: 69
 	assign leaf[1003] = !f[633] && !f[580] && !f[378] && !f[599];
 	assign leaf[1004] = !f[633] && !f[580] && !f[378] && f[599];
 	assign leaf[1005] = !f[633] && !f[580] && f[378] && !f[435];
@@ -1162,7 +1162,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1016] = f[633] && f[234] && f[629] && !f[655];
 	assign leaf[1017] = f[633] && f[234] && f[629] && f[655];
 	
-	// Classifier: 0 Iteration: 70
+	// Digit: 0, Tree: 70
 	assign leaf[1018] = !f[380] && !f[456] && !f[424] && !f[267];
 	assign leaf[1019] = !f[380] && !f[456] && !f[424] && f[267];
 	assign leaf[1020] = !f[380] && !f[456] && f[424] && !f[439];
@@ -1180,7 +1180,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1032] = f[380] && f[350] && f[154] && !f[382];
 	assign leaf[1033] = f[380] && f[350] && f[154] && f[382];
 	
-	// Classifier: 0 Iteration: 71
+	// Digit: 0, Tree: 71
 	assign leaf[1034] = !f[688] && !f[152] && !f[654] && !f[275];
 	assign leaf[1035] = !f[688] && !f[152] && !f[654] && f[275];
 	assign leaf[1036] = !f[688] && !f[152] && f[654] && !f[157];
@@ -1193,7 +1193,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1043] = f[688] && f[657] && !f[231];
 	assign leaf[1044] = f[688] && f[657] && f[231];
 	
-	// Classifier: 0 Iteration: 72
+	// Digit: 0, Tree: 72
 	assign leaf[1045] = !f[466] && !f[213] && !f[293] && !f[517];
 	assign leaf[1046] = !f[466] && !f[213] && !f[293] && f[517];
 	assign leaf[1047] = !f[466] && !f[213] && f[293] && !f[521];
@@ -1208,7 +1208,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1056] = f[466] && !f[688] && f[379] && f[659];
 	assign leaf[1057] = f[466] && f[688];
 	
-	// Classifier: 0 Iteration: 73
+	// Digit: 0, Tree: 73
 	assign leaf[1058] = !f[683] && !f[714] && !f[183] && !f[609];
 	assign leaf[1059] = !f[683] && !f[714] && !f[183] && f[609];
 	assign leaf[1060] = !f[683] && !f[714] && f[183] && !f[630];
@@ -1219,7 +1219,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1065] = f[683] && f[185] && !f[490] && f[272];
 	assign leaf[1066] = f[683] && f[185] && f[490];
 	
-	// Classifier: 0 Iteration: 74
+	// Digit: 0, Tree: 74
 	assign leaf[1067] = !f[427] && !f[597] && !f[571] && !f[317];
 	assign leaf[1068] = !f[427] && !f[597] && !f[571] && f[317];
 	assign leaf[1069] = !f[427] && !f[597] && f[571] && !f[263];
@@ -1236,7 +1236,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1080] = f[427] && f[569] && f[458] && !f[440];
 	assign leaf[1081] = f[427] && f[569] && f[458] && f[440];
 	
-	// Classifier: 0 Iteration: 75
+	// Digit: 0, Tree: 75
 	assign leaf[1082] = !f[602] && !f[576] && !f[460] && !f[205];
 	assign leaf[1083] = !f[602] && !f[576] && !f[460] && f[205];
 	assign leaf[1084] = !f[602] && !f[576] && f[460] && !f[351];
@@ -1253,7 +1253,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1095] = f[602] && f[323] && f[264] && !f[626];
 	assign leaf[1096] = f[602] && f[323] && f[264] && f[626];
 	
-	// Classifier: 0 Iteration: 76
+	// Digit: 0, Tree: 76
 	assign leaf[1097] = !f[213] && !f[544] && !f[384] && !f[408];
 	assign leaf[1098] = !f[213] && !f[544] && !f[384] && f[408];
 	assign leaf[1099] = !f[213] && !f[544] && f[384] && !f[215];
@@ -1271,7 +1271,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1111] = f[213] && f[323] && f[153] && !f[490];
 	assign leaf[1112] = f[213] && f[323] && f[153] && f[490];
 	
-	// Classifier: 0 Iteration: 77
+	// Digit: 0, Tree: 77
 	assign leaf[1113] = !f[434] && !f[486] && !f[489] && !f[276];
 	assign leaf[1114] = !f[434] && !f[486] && !f[489] && f[276];
 	assign leaf[1115] = !f[434] && !f[486] && f[489] && !f[354];
@@ -1287,7 +1287,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1125] = f[434] && f[357] && f[158] && !f[409];
 	assign leaf[1126] = f[434] && f[357] && f[158] && f[409];
 	
-	// Classifier: 0 Iteration: 78
+	// Digit: 0, Tree: 78
 	assign leaf[1127] = !f[512] && !f[462] && !f[597] && !f[155];
 	assign leaf[1128] = !f[512] && !f[462] && !f[597] && f[155];
 	assign leaf[1129] = !f[512] && !f[462] && f[597] && !f[606];
@@ -1302,7 +1302,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1138] = f[512] && f[654] && !f[247] && f[400];
 	assign leaf[1139] = f[512] && f[654] && f[247];
 	
-	// Classifier: 0 Iteration: 79
+	// Digit: 0, Tree: 79
 	assign leaf[1140] = !f[607] && !f[688] && !f[192] && !f[258];
 	assign leaf[1141] = !f[607] && !f[688] && !f[192] && f[258];
 	assign leaf[1142] = !f[607] && !f[688] && f[192];
@@ -1314,7 +1314,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1148] = f[607] && f[633] && f[208] && !f[157];
 	assign leaf[1149] = f[607] && f[633] && f[208] && f[157];
 	
-	// Classifier: 0 Iteration: 80
+	// Digit: 0, Tree: 80
 	assign leaf[1150] = !f[526] && !f[635] && !f[688] && !f[378];
 	assign leaf[1151] = !f[526] && !f[635] && !f[688] && f[378];
 	assign leaf[1152] = !f[526] && !f[635] && f[688];
@@ -1329,7 +1329,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1161] = f[526] && f[374] && !f[544] && f[233];
 	assign leaf[1162] = f[526] && f[374] && f[544];
 	
-	// Classifier: 0 Iteration: 81
+	// Digit: 0, Tree: 81
 	assign leaf[1163] = !f[386] && !f[497] && !f[354] && !f[511];
 	assign leaf[1164] = !f[386] && !f[497] && !f[354] && f[511];
 	assign leaf[1165] = !f[386] && !f[497] && f[354] && !f[509];
@@ -1345,7 +1345,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1175] = f[386] && f[410] && f[513] && !f[297];
 	assign leaf[1176] = f[386] && f[410] && f[513] && f[297];
 	
-	// Classifier: 0 Iteration: 82
+	// Digit: 0, Tree: 82
 	assign leaf[1177] = !f[434] && !f[459] && !f[349] && !f[547];
 	assign leaf[1178] = !f[434] && !f[459] && !f[349] && f[547];
 	assign leaf[1179] = !f[434] && !f[459] && f[349] && !f[426];
@@ -1359,7 +1359,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1187] = f[434] && f[433] && f[431] && !f[521];
 	assign leaf[1188] = f[434] && f[433] && f[431] && f[521];
 	
-	// Classifier: 0 Iteration: 83
+	// Digit: 0, Tree: 83
 	assign leaf[1189] = !f[380] && !f[512] && !f[629] && !f[290];
 	assign leaf[1190] = !f[380] && !f[512] && !f[629] && f[290];
 	assign leaf[1191] = !f[380] && !f[512] && f[629] && !f[209];
@@ -1375,7 +1375,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1201] = f[380] && f[297] && f[435] && !f[406];
 	assign leaf[1202] = f[380] && f[297] && f[435] && f[406];
 	
-	// Classifier: 0 Iteration: 84
+	// Digit: 0, Tree: 84
 	assign leaf[1203] = !f[152] && !f[294] && !f[155] && !f[488];
 	assign leaf[1204] = !f[152] && !f[294] && !f[155] && f[488];
 	assign leaf[1205] = !f[152] && !f[294] && f[155] && !f[463];
@@ -1391,7 +1391,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1215] = f[152] && f[371] && f[455] && !f[214];
 	assign leaf[1216] = f[152] && f[371] && f[455] && f[214];
 	
-	// Classifier: 0 Iteration: 85
+	// Digit: 0, Tree: 85
 	assign leaf[1217] = !f[681] && !f[345] && !f[375] && !f[498];
 	assign leaf[1218] = !f[681] && !f[345] && !f[375] && f[498];
 	assign leaf[1219] = !f[681] && !f[345] && f[375] && !f[429];
@@ -1406,7 +1406,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1228] = f[681] && f[599] && !f[575];
 	assign leaf[1229] = f[681] && f[599] && f[575];
 	
-	// Classifier: 0 Iteration: 86
+	// Digit: 0, Tree: 86
 	assign leaf[1230] = !f[633] && !f[683] && !f[608] && !f[378];
 	assign leaf[1231] = !f[633] && !f[683] && !f[608] && f[378];
 	assign leaf[1232] = !f[633] && !f[683] && f[608];
@@ -1421,7 +1421,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1241] = f[633] && f[579] && f[234] && !f[157];
 	assign leaf[1242] = f[633] && f[579] && f[234] && f[157];
 	
-	// Classifier: 0 Iteration: 87
+	// Digit: 0, Tree: 87
 	assign leaf[1243] = !f[380] && !f[456] && !f[516] && !f[212];
 	assign leaf[1244] = !f[380] && !f[456] && !f[516] && f[212];
 	assign leaf[1245] = !f[380] && !f[456] && f[516] && !f[266];
@@ -1438,7 +1438,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1256] = f[380] && f[378] && f[427] && !f[273];
 	assign leaf[1257] = f[380] && f[378] && f[427] && f[273];
 	
-	// Classifier: 0 Iteration: 88
+	// Digit: 0, Tree: 88
 	assign leaf[1258] = !f[514] && !f[539] && !f[513] && !f[508];
 	assign leaf[1259] = !f[514] && !f[539] && !f[513] && f[508];
 	assign leaf[1260] = !f[514] && !f[539] && f[513] && !f[185];
@@ -1455,7 +1455,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1271] = f[514] && f[567] && !f[371] && f[651];
 	assign leaf[1272] = f[514] && f[567] && f[371];
 	
-	// Classifier: 0 Iteration: 89
+	// Digit: 0, Tree: 89
 	assign leaf[1273] = !f[602] && !f[456] && !f[687] && !f[356];
 	assign leaf[1274] = !f[602] && !f[456] && !f[687] && f[356];
 	assign leaf[1275] = !f[602] && !f[456] && f[687] && !f[156];
@@ -1473,7 +1473,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1287] = f[602] && f[128] && f[322] && !f[463];
 	assign leaf[1288] = f[602] && f[128] && f[322] && f[463];
 	
-	// Classifier: 0 Iteration: 90
+	// Digit: 0, Tree: 90
 	assign leaf[1289] = !f[240] && !f[325] && !f[214] && !f[331];
 	assign leaf[1290] = !f[240] && !f[325] && !f[214] && f[331];
 	assign leaf[1291] = !f[240] && !f[325] && f[214] && !f[128];
@@ -1490,7 +1490,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1302] = f[240] && f[466] && f[403] && !f[457];
 	assign leaf[1303] = f[240] && f[466] && f[403] && f[457];
 	
-	// Classifier: 0 Iteration: 91
+	// Digit: 0, Tree: 91
 	assign leaf[1304] = !f[663] && !f[583] && !f[513] && !f[328];
 	assign leaf[1305] = !f[663] && !f[583] && !f[513] && f[328];
 	assign leaf[1306] = !f[663] && !f[583] && f[513] && !f[183];
@@ -1499,7 +1499,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1309] = f[663] && !f[346];
 	assign leaf[1310] = f[663] && f[346];
 	
-	// Classifier: 0 Iteration: 92
+	// Digit: 0, Tree: 92
 	assign leaf[1311] = !f[605] && !f[260] && !f[242] && !f[566];
 	assign leaf[1312] = !f[605] && !f[260] && !f[242] && f[566];
 	assign leaf[1313] = !f[605] && !f[260] && f[242] && !f[683];
@@ -1515,7 +1515,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1323] = f[605] && f[397] && f[207] && !f[428];
 	assign leaf[1324] = f[605] && f[397] && f[207] && f[428];
 	
-	// Classifier: 0 Iteration: 93
+	// Digit: 0, Tree: 93
 	assign leaf[1325] = !f[294] && !f[351] && !f[518] && !f[344];
 	assign leaf[1326] = !f[294] && !f[351] && !f[518] && f[344];
 	assign leaf[1327] = !f[294] && !f[351] && f[518] && !f[455];
@@ -1528,7 +1528,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1334] = f[294] && !f[99] && f[384] && f[402];
 	assign leaf[1335] = f[294] && f[99];
 	
-	// Classifier: 0 Iteration: 94
+	// Digit: 0, Tree: 94
 	assign leaf[1336] = !f[434] && !f[526] && !f[319] && !f[291];
 	assign leaf[1337] = !f[434] && !f[526] && !f[319] && f[291];
 	assign leaf[1338] = !f[434] && !f[526] && f[319] && !f[468];
@@ -1543,7 +1543,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1347] = f[434] && f[273] && f[349] && !f[595];
 	assign leaf[1348] = f[434] && f[273] && f[349] && f[595];
 	
-	// Classifier: 0 Iteration: 95
+	// Digit: 0, Tree: 95
 	assign leaf[1349] = !f[408] && !f[574] && !f[233] && !f[541];
 	assign leaf[1350] = !f[408] && !f[574] && !f[233] && f[541];
 	assign leaf[1351] = !f[408] && !f[574] && f[233] && !f[347];
@@ -1558,7 +1558,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1360] = f[408] && f[464] && f[571] && !f[577];
 	assign leaf[1361] = f[408] && f[464] && f[571] && f[577];
 	
-	// Classifier: 0 Iteration: 96
+	// Digit: 0, Tree: 96
 	assign leaf[1362] = !f[294] && !f[547] && !f[659] && !f[550];
 	assign leaf[1363] = !f[294] && !f[547] && !f[659] && f[550];
 	assign leaf[1364] = !f[294] && !f[547] && f[659] && !f[432];
@@ -1575,7 +1575,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1375] = f[294] && f[435] && f[434] && !f[130];
 	assign leaf[1376] = f[294] && f[435] && f[434] && f[130];
 	
-	// Classifier: 0 Iteration: 97
+	// Digit: 0, Tree: 97
 	assign leaf[1377] = !f[555] && !f[468] && !f[602] && !f[460];
 	assign leaf[1378] = !f[555] && !f[468] && !f[602] && f[460];
 	assign leaf[1379] = !f[555] && !f[468] && f[602] && !f[432];
@@ -1587,7 +1587,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1385] = f[555] && !f[398];
 	assign leaf[1386] = f[555] && f[398];
 	
-	// Classifier: 0 Iteration: 98
+	// Digit: 0, Tree: 98
 	assign leaf[1387] = !f[425] && !f[542] && !f[541] && !f[271];
 	assign leaf[1388] = !f[425] && !f[542] && !f[541] && f[271];
 	assign leaf[1389] = !f[425] && !f[542] && f[541] && !f[382];
@@ -1601,7 +1601,7 @@ module decision_tree_leaves_0(input logic [0:783] f, output logic [0:1411] leaf)
 	assign leaf[1397] = f[425] && f[471] && !f[317];
 	assign leaf[1398] = f[425] && f[471] && f[317];
 	
-	// Classifier: 0 Iteration: 99
+	// Digit: 0, Tree: 99
 	assign leaf[1399] = !f[386] && !f[354] && !f[416] && !f[356];
 	assign leaf[1400] = !f[386] && !f[354] && !f[416] && f[356];
 	assign leaf[1401] = !f[386] && !f[354] && f[416];
@@ -1622,7 +1622,7 @@ endmodule
 
 
 module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf);
-	// Classifier: 1 Iteration: 0
+	// Digit: 1, Tree: 0
 	assign leaf[0] = !f[350] && !f[351] && !f[349];
 	assign leaf[1] = !f[350] && !f[351] && f[349] && !f[347];
 	assign leaf[2] = !f[350] && !f[351] && f[349] && f[347];
@@ -1639,7 +1639,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[13] = f[350] && f[489] && f[521] && !f[487];
 	assign leaf[14] = f[350] && f[489] && f[521] && f[487];
 	
-	// Classifier: 1 Iteration: 1
+	// Digit: 1, Tree: 1
 	assign leaf[15] = !f[409] && !f[378] && !f[379] && !f[377];
 	assign leaf[16] = !f[409] && !f[378] && !f[379] && f[377];
 	assign leaf[17] = !f[409] && !f[378] && f[379] && !f[353];
@@ -1656,7 +1656,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[28] = f[409] && f[410] && !f[171] && f[613];
 	assign leaf[29] = f[409] && f[410] && f[171];
 	
-	// Classifier: 1 Iteration: 2
+	// Digit: 1, Tree: 2
 	assign leaf[30] = !f[437] && !f[262] && !f[406] && !f[407];
 	assign leaf[31] = !f[437] && !f[262] && !f[406] && f[407];
 	assign leaf[32] = !f[437] && !f[262] && f[406] && !f[178];
@@ -1672,7 +1672,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[42] = f[437] && f[438] && !f[613] && f[69];
 	assign leaf[43] = f[437] && f[438] && f[613];
 	
-	// Classifier: 1 Iteration: 3
+	// Digit: 1, Tree: 3
 	assign leaf[44] = !f[350] && !f[351] && !f[382] && !f[374];
 	assign leaf[45] = !f[350] && !f[351] && !f[382] && f[374];
 	assign leaf[46] = !f[350] && !f[351] && f[382];
@@ -1689,7 +1689,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[57] = f[350] && f[375] && f[374] && !f[294];
 	assign leaf[58] = f[350] && f[375] && f[374] && f[294];
 	
-	// Classifier: 1 Iteration: 4
+	// Digit: 1, Tree: 4
 	assign leaf[59] = !f[437] && !f[346] && !f[578] && !f[300];
 	assign leaf[60] = !f[437] && !f[346] && !f[578] && f[300];
 	assign leaf[61] = !f[437] && !f[346] && f[578] && !f[293];
@@ -1706,7 +1706,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[72] = f[437] && f[438] && f[69] && !f[383];
 	assign leaf[73] = f[437] && f[438] && f[69] && f[383];
 	
-	// Classifier: 1 Iteration: 5
+	// Digit: 1, Tree: 5
 	assign leaf[74] = !f[382] && !f[465] && !f[378] && !f[379];
 	assign leaf[75] = !f[382] && !f[465] && !f[378] && f[379];
 	assign leaf[76] = !f[382] && !f[465] && f[378] && !f[206];
@@ -1723,7 +1723,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[87] = f[382] && f[162] && f[269] && !f[320];
 	assign leaf[88] = f[382] && f[162] && f[269] && f[320];
 	
-	// Classifier: 1 Iteration: 6
+	// Digit: 1, Tree: 6
 	assign leaf[89] = !f[323] && !f[322] && !f[211] && !f[650];
 	assign leaf[90] = !f[323] && !f[322] && !f[211] && f[650];
 	assign leaf[91] = !f[323] && !f[322] && f[211] && !f[378];
@@ -1740,7 +1740,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[102] = f[323] && f[494] && !f[71] && f[98];
 	assign leaf[103] = f[323] && f[494] && f[71];
 	
-	// Classifier: 1 Iteration: 7
+	// Digit: 1, Tree: 7
 	assign leaf[104] = !f[323] && !f[212] && !f[322] && !f[650];
 	assign leaf[105] = !f[323] && !f[212] && !f[322] && f[650];
 	assign leaf[106] = !f[323] && !f[212] && f[322] && !f[380];
@@ -1758,7 +1758,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[118] = f[323] && f[430] && f[236] && !f[347];
 	assign leaf[119] = f[323] && f[430] && f[236] && f[347];
 	
-	// Classifier: 1 Iteration: 8
+	// Digit: 1, Tree: 8
 	assign leaf[120] = !f[402] && !f[406] && !f[99] && !f[405];
 	assign leaf[121] = !f[402] && !f[406] && !f[99] && f[405];
 	assign leaf[122] = !f[402] && !f[406] && f[99] && !f[379];
@@ -1772,7 +1772,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[130] = f[402] && f[295] && !f[494] && f[373];
 	assign leaf[131] = f[402] && f[295] && f[494];
 	
-	// Classifier: 1 Iteration: 9
+	// Digit: 1, Tree: 9
 	assign leaf[132] = !f[410] && !f[318] && !f[511] && !f[205];
 	assign leaf[133] = !f[410] && !f[318] && !f[511] && f[205];
 	assign leaf[134] = !f[410] && !f[318] && f[511] && !f[649];
@@ -1787,7 +1787,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[143] = f[410] && f[163] && !f[269];
 	assign leaf[144] = f[410] && f[163] && f[269];
 	
-	// Classifier: 1 Iteration: 10
+	// Digit: 1, Tree: 10
 	assign leaf[145] = !f[430] && !f[434] && !f[433] && !f[101];
 	assign leaf[146] = !f[430] && !f[434] && !f[433] && f[101];
 	assign leaf[147] = !f[430] && !f[434] && f[433] && !f[548];
@@ -1804,7 +1804,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[158] = f[430] && f[349] && !f[521] && f[268];
 	assign leaf[159] = f[430] && f[349] && f[521];
 	
-	// Classifier: 1 Iteration: 11
+	// Digit: 1, Tree: 11
 	assign leaf[160] = !f[466] && !f[374] && !f[511] && !f[683];
 	assign leaf[161] = !f[466] && !f[374] && !f[511] && f[683];
 	assign leaf[162] = !f[466] && !f[374] && f[511] && !f[649];
@@ -1817,7 +1817,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[169] = f[466] && !f[145] && f[556];
 	assign leaf[170] = f[466] && f[145];
 	
-	// Classifier: 1 Iteration: 12
+	// Digit: 1, Tree: 12
 	assign leaf[171] = !f[438] && !f[235] && !f[493] && !f[150];
 	assign leaf[172] = !f[438] && !f[235] && !f[493] && f[150];
 	assign leaf[173] = !f[438] && !f[235] && f[493] && !f[181];
@@ -1832,7 +1832,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[182] = f[438] && f[439] && !f[163];
 	assign leaf[183] = f[438] && f[439] && f[163];
 	
-	// Classifier: 1 Iteration: 13
+	// Digit: 1, Tree: 13
 	assign leaf[184] = !f[429] && !f[354] && !f[272] && !f[462];
 	assign leaf[185] = !f[429] && !f[354] && !f[272] && f[462];
 	assign leaf[186] = !f[429] && !f[354] && f[272] && !f[518];
@@ -1847,7 +1847,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[195] = f[429] && f[375] && f[687] && !f[345];
 	assign leaf[196] = f[429] && f[375] && f[687] && f[345];
 	
-	// Classifier: 1 Iteration: 14
+	// Digit: 1, Tree: 14
 	assign leaf[197] = !f[355] && !f[684] && !f[467] && !f[510];
 	assign leaf[198] = !f[355] && !f[684] && !f[467] && f[510];
 	assign leaf[199] = !f[355] && !f[684] && f[467] && !f[98];
@@ -1864,7 +1864,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[210] = f[355] && f[161] && f[211] && !f[659];
 	assign leaf[211] = f[355] && f[161] && f[211] && f[659];
 	
-	// Classifier: 1 Iteration: 15
+	// Digit: 1, Tree: 15
 	assign leaf[212] = !f[430] && !f[434] && !f[100] && !f[189];
 	assign leaf[213] = !f[430] && !f[434] && !f[100] && f[189];
 	assign leaf[214] = !f[430] && !f[434] && f[100] && !f[350];
@@ -1881,7 +1881,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[225] = f[430] && f[349] && f[408] && !f[410];
 	assign leaf[226] = f[430] && f[349] && f[408] && f[410];
 	
-	// Classifier: 1 Iteration: 16
+	// Digit: 1, Tree: 16
 	assign leaf[227] = !f[317] && !f[628] && !f[684] && !f[204];
 	assign leaf[228] = !f[317] && !f[628] && !f[684] && f[204];
 	assign leaf[229] = !f[317] && !f[628] && f[684] && !f[631];
@@ -1896,7 +1896,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[238] = f[317] && f[98] && !f[237];
 	assign leaf[239] = f[317] && f[98] && f[237];
 	
-	// Classifier: 1 Iteration: 17
+	// Digit: 1, Tree: 17
 	assign leaf[240] = !f[374] && !f[456] && !f[685] && !f[628];
 	assign leaf[241] = !f[374] && !f[456] && !f[685] && f[628];
 	assign leaf[242] = !f[374] && !f[456] && f[685] && !f[208];
@@ -1910,7 +1910,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[250] = f[374] && f[294] && f[126] && !f[491];
 	assign leaf[251] = f[374] && f[294] && f[126] && f[491];
 	
-	// Classifier: 1 Iteration: 18
+	// Digit: 1, Tree: 18
 	assign leaf[252] = !f[289] && !f[351] && !f[240] && !f[184];
 	assign leaf[253] = !f[289] && !f[351] && !f[240] && f[184];
 	assign leaf[254] = !f[289] && !f[351] && f[240] && !f[608];
@@ -1924,7 +1924,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[262] = f[289] && !f[174] && f[98] && f[293];
 	assign leaf[263] = f[289] && f[174];
 	
-	// Classifier: 1 Iteration: 19
+	// Digit: 1, Tree: 19
 	assign leaf[264] = !f[438] && !f[271] && !f[485] && !f[294];
 	assign leaf[265] = !f[438] && !f[271] && !f[485] && f[294];
 	assign leaf[266] = !f[438] && !f[271] && f[485] && !f[431];
@@ -1939,7 +1939,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[275] = f[438] && f[265] && f[152] && !f[491];
 	assign leaf[276] = f[438] && f[265] && f[152] && f[491];
 	
-	// Classifier: 1 Iteration: 20
+	// Digit: 1, Tree: 20
 	assign leaf[277] = !f[439] && !f[683] && !f[204] && !f[537];
 	assign leaf[278] = !f[439] && !f[683] && !f[204] && f[537];
 	assign leaf[279] = !f[439] && !f[683] && f[204] && !f[625];
@@ -1950,7 +1950,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[284] = !f[439] && f[683] && f[544] && f[264];
 	assign leaf[285] = f[439];
 	
-	// Classifier: 1 Iteration: 21
+	// Digit: 1, Tree: 21
 	assign leaf[286] = !f[494] && !f[344] && !f[713] && !f[683];
 	assign leaf[287] = !f[494] && !f[344] && !f[713] && f[683];
 	assign leaf[288] = !f[494] && !f[344] && f[713] && !f[345];
@@ -1965,7 +1965,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[297] = f[494] && f[125] && f[237] && !f[459];
 	assign leaf[298] = f[494] && f[125] && f[237] && f[459];
 	
-	// Classifier: 1 Iteration: 22
+	// Digit: 1, Tree: 22
 	assign leaf[299] = !f[289] && !f[629] && !f[211] && !f[155];
 	assign leaf[300] = !f[289] && !f[629] && !f[211] && f[155];
 	assign leaf[301] = !f[289] && !f[629] && f[211] && !f[326];
@@ -1980,7 +1980,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[310] = f[289] && f[578] && f[491] && !f[206];
 	assign leaf[311] = f[289] && f[578] && f[491] && f[206];
 	
-	// Classifier: 1 Iteration: 23
+	// Digit: 1, Tree: 23
 	assign leaf[312] = !f[300] && !f[440] && !f[715] && !f[242];
 	assign leaf[313] = !f[300] && !f[440] && !f[715] && f[242];
 	assign leaf[314] = !f[300] && !f[440] && f[715] && !f[429];
@@ -1993,7 +1993,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[321] = f[300] && f[162] && !f[265] && f[573];
 	assign leaf[322] = f[300] && f[162] && f[265];
 	
-	// Classifier: 1 Iteration: 24
+	// Digit: 1, Tree: 24
 	assign leaf[323] = !f[711] && !f[510] && !f[344] && !f[629];
 	assign leaf[324] = !f[711] && !f[510] && !f[344] && f[629];
 	assign leaf[325] = !f[711] && !f[510] && f[344] && !f[597];
@@ -2007,7 +2007,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[333] = f[711] && f[656] && f[710] && !f[354];
 	assign leaf[334] = f[711] && f[656] && f[710] && f[354];
 	
-	// Classifier: 1 Iteration: 25
+	// Digit: 1, Tree: 25
 	assign leaf[335] = !f[483] && !f[711] && !f[715] && !f[185];
 	assign leaf[336] = !f[483] && !f[711] && !f[715] && f[185];
 	assign leaf[337] = !f[483] && !f[711] && f[715] && !f[428];
@@ -2020,7 +2020,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[344] = f[483] && !f[651] && f[656] && f[239];
 	assign leaf[345] = f[483] && f[651];
 	
-	// Classifier: 1 Iteration: 26
+	// Digit: 1, Tree: 26
 	assign leaf[346] = !f[209] && !f[153] && !f[265] && !f[520];
 	assign leaf[347] = !f[209] && !f[153] && !f[265] && f[520];
 	assign leaf[348] = !f[209] && !f[153] && f[265] && !f[155];
@@ -2038,7 +2038,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[360] = f[209] && f[266] && f[242] && !f[431];
 	assign leaf[361] = f[209] && f[266] && f[242] && f[431];
 	
-	// Classifier: 1 Iteration: 27
+	// Digit: 1, Tree: 27
 	assign leaf[362] = !f[383] && !f[710] && !f[492] && !f[235];
 	assign leaf[363] = !f[383] && !f[710] && !f[492] && f[235];
 	assign leaf[364] = !f[383] && !f[710] && f[492] && !f[606];
@@ -2051,7 +2051,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[371] = f[383] && f[218] && !f[325];
 	assign leaf[372] = f[383] && f[218] && f[325];
 	
-	// Classifier: 1 Iteration: 28
+	// Digit: 1, Tree: 28
 	assign leaf[373] = !f[485] && !f[274] && !f[710] && !f[686];
 	assign leaf[374] = !f[485] && !f[274] && !f[710] && f[686];
 	assign leaf[375] = !f[485] && !f[274] && f[710] && !f[210];
@@ -2065,7 +2065,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[383] = f[485] && f[237] && f[347] && !f[607];
 	assign leaf[384] = f[485] && f[237] && f[347] && f[607];
 	
-	// Classifier: 1 Iteration: 29
+	// Digit: 1, Tree: 29
 	assign leaf[385] = !f[440] && !f[301] && !f[520] && !f[207];
 	assign leaf[386] = !f[440] && !f[301] && !f[520] && f[207];
 	assign leaf[387] = !f[440] && !f[301] && f[520] && !f[606];
@@ -2076,7 +2076,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[392] = f[440] && !f[300];
 	assign leaf[393] = f[440] && f[300];
 	
-	// Classifier: 1 Iteration: 30
+	// Digit: 1, Tree: 30
 	assign leaf[394] = !f[439] && !f[272] && !f[294] && !f[182];
 	assign leaf[395] = !f[439] && !f[272] && !f[294] && f[182];
 	assign leaf[396] = !f[439] && !f[272] && f[294] && !f[189];
@@ -2088,7 +2088,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[402] = f[439] && !f[652];
 	assign leaf[403] = f[439] && f[652];
 	
-	// Classifier: 1 Iteration: 31
+	// Digit: 1, Tree: 31
 	assign leaf[404] = !f[456] && !f[490] && !f[629] && !f[658];
 	assign leaf[405] = !f[456] && !f[490] && !f[629] && f[658];
 	assign leaf[406] = !f[456] && !f[490] && f[629] && !f[378];
@@ -2102,7 +2102,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[414] = f[456] && f[658] && !f[460];
 	assign leaf[415] = f[456] && f[658] && f[460];
 	
-	// Classifier: 1 Iteration: 32
+	// Digit: 1, Tree: 32
 	assign leaf[416] = !f[316] && !f[711] && !f[540] && !f[515];
 	assign leaf[417] = !f[316] && !f[711] && !f[540] && f[515];
 	assign leaf[418] = !f[316] && !f[711] && f[540] && !f[542];
@@ -2114,7 +2114,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[424] = f[316] && f[127] && !f[265];
 	assign leaf[425] = f[316] && f[127] && f[265];
 	
-	// Classifier: 1 Iteration: 33
+	// Digit: 1, Tree: 33
 	assign leaf[426] = !f[716] && !f[713] && !f[496] && !f[185];
 	assign leaf[427] = !f[716] && !f[713] && !f[496] && f[185];
 	assign leaf[428] = !f[716] && !f[713] && f[496] && !f[566];
@@ -2124,7 +2124,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[432] = !f[716] && f[713] && f[345];
 	assign leaf[433] = f[716];
 	
-	// Classifier: 1 Iteration: 34
+	// Digit: 1, Tree: 34
 	assign leaf[434] = !f[537] && !f[407] && !f[463] && !f[548];
 	assign leaf[435] = !f[537] && !f[407] && !f[463] && f[548];
 	assign leaf[436] = !f[537] && !f[407] && f[463] && !f[460];
@@ -2136,7 +2136,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[442] = f[537] && !f[487];
 	assign leaf[443] = f[537] && f[487];
 	
-	// Classifier: 1 Iteration: 35
+	// Digit: 1, Tree: 35
 	assign leaf[444] = !f[344] && !f[711] && !f[679] && !f[294];
 	assign leaf[445] = !f[344] && !f[711] && !f[679] && f[294];
 	assign leaf[446] = !f[344] && !f[711] && f[679] && !f[185];
@@ -2148,7 +2148,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[452] = f[344] && !f[125] && f[156] && f[293];
 	assign leaf[453] = f[344] && f[125];
 	
-	// Classifier: 1 Iteration: 36
+	// Digit: 1, Tree: 36
 	assign leaf[454] = !f[440] && !f[710] && !f[407] && !f[463];
 	assign leaf[455] = !f[440] && !f[710] && !f[407] && f[463];
 	assign leaf[456] = !f[440] && !f[710] && f[407] && !f[578];
@@ -2157,7 +2157,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[459] = !f[440] && f[710] && f[238];
 	assign leaf[460] = f[440];
 	
-	// Classifier: 1 Iteration: 37
+	// Digit: 1, Tree: 37
 	assign leaf[461] = !f[511] && !f[713] && !f[537] && !f[316];
 	assign leaf[462] = !f[511] && !f[713] && !f[537] && f[316];
 	assign leaf[463] = !f[511] && !f[713] && f[537];
@@ -2172,7 +2172,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[472] = f[511] && f[430] && f[242] && !f[600];
 	assign leaf[473] = f[511] && f[430] && f[242] && f[600];
 	
-	// Classifier: 1 Iteration: 38
+	// Digit: 1, Tree: 38
 	assign leaf[474] = !f[621] && !f[204] && !f[565] && !f[628];
 	assign leaf[475] = !f[621] && !f[204] && !f[565] && f[628];
 	assign leaf[476] = !f[621] && !f[204] && f[565] && !f[488];
@@ -2186,7 +2186,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[484] = f[621] && !f[605] && f[600];
 	assign leaf[485] = f[621] && f[605];
 	
-	// Classifier: 1 Iteration: 39
+	// Digit: 1, Tree: 39
 	assign leaf[486] = !f[683] && !f[95] && !f[314] && !f[609];
 	assign leaf[487] = !f[683] && !f[95] && !f[314] && f[609];
 	assign leaf[488] = !f[683] && !f[95] && f[314] && !f[184];
@@ -2200,7 +2200,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[496] = f[683] && f[268] && f[208] && !f[319];
 	assign leaf[497] = f[683] && f[268] && f[208] && f[319];
 	
-	// Classifier: 1 Iteration: 40
+	// Digit: 1, Tree: 40
 	assign leaf[498] = !f[468] && !f[716] && !f[680] && !f[685];
 	assign leaf[499] = !f[468] && !f[716] && !f[680] && f[685];
 	assign leaf[500] = !f[468] && !f[716] && f[680] && !f[211];
@@ -2208,7 +2208,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[502] = !f[468] && f[716];
 	assign leaf[503] = f[468];
 	
-	// Classifier: 1 Iteration: 41
+	// Digit: 1, Tree: 41
 	assign leaf[504] = !f[383] && !f[518] && !f[631] && !f[210];
 	assign leaf[505] = !f[383] && !f[518] && !f[631] && f[210];
 	assign leaf[506] = !f[383] && !f[518] && f[631] && !f[405];
@@ -2222,7 +2222,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[514] = f[383] && f[300] && !f[213];
 	assign leaf[515] = f[383] && f[300] && f[213];
 	
-	// Classifier: 1 Iteration: 42
+	// Digit: 1, Tree: 42
 	assign leaf[516] = !f[244] && !f[293] && !f[181] && !f[604];
 	assign leaf[517] = !f[244] && !f[293] && !f[181] && f[604];
 	assign leaf[518] = !f[244] && !f[293] && f[181] && !f[405];
@@ -2239,7 +2239,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[529] = f[244] && f[265] && !f[577] && f[291];
 	assign leaf[530] = f[244] && f[265] && f[577];
 	
-	// Classifier: 1 Iteration: 43
+	// Digit: 1, Tree: 43
 	assign leaf[531] = !f[176] && !f[271] && !f[189] && !f[266];
 	assign leaf[532] = !f[176] && !f[271] && !f[189] && f[266];
 	assign leaf[533] = !f[176] && !f[271] && f[189] && !f[491];
@@ -2252,7 +2252,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[540] = f[176] && !f[290] && f[127];
 	assign leaf[541] = f[176] && f[290];
 	
-	// Classifier: 1 Iteration: 44
+	// Digit: 1, Tree: 44
 	assign leaf[542] = !f[608] && !f[260] && !f[661] && !f[292];
 	assign leaf[543] = !f[608] && !f[260] && !f[661] && f[292];
 	assign leaf[544] = !f[608] && !f[260] && f[661] && !f[547];
@@ -2267,7 +2267,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[553] = f[608] && f[488] && !f[318] && f[379];
 	assign leaf[554] = f[608] && f[488] && f[318];
 	
-	// Classifier: 1 Iteration: 45
+	// Digit: 1, Tree: 45
 	assign leaf[555] = !f[578] && !f[148] && !f[289] && !f[99];
 	assign leaf[556] = !f[578] && !f[148] && !f[289] && f[99];
 	assign leaf[557] = !f[578] && !f[148] && f[289] && !f[627];
@@ -2282,7 +2282,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[566] = f[578] && f[519] && f[461] && !f[263];
 	assign leaf[567] = f[578] && f[519] && f[461] && f[263];
 	
-	// Classifier: 1 Iteration: 46
+	// Digit: 1, Tree: 46
 	assign leaf[568] = !f[578] && !f[148] && !f[493] && !f[320];
 	assign leaf[569] = !f[578] && !f[148] && !f[493] && f[320];
 	assign leaf[570] = !f[578] && !f[148] && f[493] && !f[237];
@@ -2297,7 +2297,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[579] = f[578] && f[460] && f[319] && !f[213];
 	assign leaf[580] = f[578] && f[460] && f[319] && f[213];
 	
-	// Classifier: 1 Iteration: 47
+	// Digit: 1, Tree: 47
 	assign leaf[581] = !f[606] && !f[204] && !f[555] && !f[544];
 	assign leaf[582] = !f[606] && !f[204] && !f[555] && f[544];
 	assign leaf[583] = !f[606] && !f[204] && f[555];
@@ -2312,7 +2312,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[592] = f[606] && f[515] && f[494] && !f[241];
 	assign leaf[593] = f[606] && f[515] && f[494] && f[241];
 	
-	// Classifier: 1 Iteration: 48
+	// Digit: 1, Tree: 48
 	assign leaf[594] = !f[271] && !f[382] && !f[459] && !f[577];
 	assign leaf[595] = !f[271] && !f[382] && !f[459] && f[577];
 	assign leaf[596] = !f[271] && !f[382] && f[459] && !f[377];
@@ -2328,7 +2328,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[606] = f[271] && f[408] && f[132] && !f[156];
 	assign leaf[607] = f[271] && f[408] && f[132] && f[156];
 	
-	// Classifier: 1 Iteration: 49
+	// Digit: 1, Tree: 49
 	assign leaf[608] = !f[556] && !f[260] && !f[552] && !f[99];
 	assign leaf[609] = !f[556] && !f[260] && !f[552] && f[99];
 	assign leaf[610] = !f[556] && !f[260] && f[552] && !f[433];
@@ -2338,7 +2338,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[614] = !f[556] && f[260] && f[625];
 	assign leaf[615] = f[556];
 	
-	// Classifier: 1 Iteration: 50
+	// Digit: 1, Tree: 50
 	assign leaf[616] = !f[96] && !f[608] && !f[510] && !f[289];
 	assign leaf[617] = !f[96] && !f[608] && !f[510] && f[289];
 	assign leaf[618] = !f[96] && !f[608] && f[510];
@@ -2349,7 +2349,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[623] = f[96] && !f[182];
 	assign leaf[624] = f[96] && f[182];
 	
-	// Classifier: 1 Iteration: 51
+	// Digit: 1, Tree: 51
 	assign leaf[625] = !f[604] && !f[180] && !f[264] && !f[296];
 	assign leaf[626] = !f[604] && !f[180] && !f[264] && f[296];
 	assign leaf[627] = !f[604] && !f[180] && f[264] && !f[663];
@@ -2367,7 +2367,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[639] = f[604] && f[546] && f[514] && !f[291];
 	assign leaf[640] = f[604] && f[546] && f[514] && f[291];
 	
-	// Classifier: 1 Iteration: 52
+	// Digit: 1, Tree: 52
 	assign leaf[641] = !f[72] && !f[493] && !f[148] && !f[244];
 	assign leaf[642] = !f[72] && !f[493] && !f[148] && f[244];
 	assign leaf[643] = !f[72] && !f[493] && f[148] && !f[570];
@@ -2378,7 +2378,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[648] = !f[72] && f[493] && f[576] && f[519];
 	assign leaf[649] = f[72];
 	
-	// Classifier: 1 Iteration: 53
+	// Digit: 1, Tree: 53
 	assign leaf[650] = !f[316] && !f[627] && !f[240] && !f[185];
 	assign leaf[651] = !f[316] && !f[627] && !f[240] && f[185];
 	assign leaf[652] = !f[316] && !f[627] && f[240] && !f[151];
@@ -2390,7 +2390,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[658] = f[316] && !f[597];
 	assign leaf[659] = f[316] && f[597];
 	
-	// Classifier: 1 Iteration: 54
+	// Digit: 1, Tree: 54
 	assign leaf[660] = !f[511] && !f[72] && !f[711] && !f[678];
 	assign leaf[661] = !f[511] && !f[72] && !f[711] && f[678];
 	assign leaf[662] = !f[511] && !f[72] && f[711];
@@ -2400,7 +2400,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[666] = f[511] && f[430] && !f[186];
 	assign leaf[667] = f[511] && f[430] && f[186];
 	
-	// Classifier: 1 Iteration: 55
+	// Digit: 1, Tree: 55
 	assign leaf[668] = !f[683] && !f[411] && !f[556] && !f[606];
 	assign leaf[669] = !f[683] && !f[411] && !f[556] && f[606];
 	assign leaf[670] = !f[683] && !f[411] && f[556];
@@ -2411,7 +2411,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[675] = f[683] && f[268] && !f[207] && f[352];
 	assign leaf[676] = f[683] && f[268] && f[207];
 	
-	// Classifier: 1 Iteration: 56
+	// Digit: 1, Tree: 56
 	assign leaf[677] = !f[583] && !f[152] && !f[98] && !f[236];
 	assign leaf[678] = !f[583] && !f[152] && !f[98] && f[236];
 	assign leaf[679] = !f[583] && !f[152] && f[98] && !f[236];
@@ -2422,7 +2422,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[684] = !f[583] && f[152] && f[269] && f[604];
 	assign leaf[685] = f[583];
 	
-	// Classifier: 1 Iteration: 57
+	// Digit: 1, Tree: 57
 	assign leaf[686] = !f[604] && !f[180] && !f[320] && !f[492];
 	assign leaf[687] = !f[604] && !f[180] && !f[320] && f[492];
 	assign leaf[688] = !f[604] && !f[180] && f[320] && !f[631];
@@ -2440,7 +2440,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[700] = f[604] && f[547] && f[488] && !f[574];
 	assign leaf[701] = f[604] && f[547] && f[488] && f[574];
 	
-	// Classifier: 1 Iteration: 58
+	// Digit: 1, Tree: 58
 	assign leaf[702] = !f[716] && !f[408] && !f[464] && !f[548];
 	assign leaf[703] = !f[716] && !f[408] && !f[464] && f[548];
 	assign leaf[704] = !f[716] && !f[408] && f[464] && !f[268];
@@ -2451,7 +2451,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[709] = !f[716] && f[408] && f[324] && f[630];
 	assign leaf[710] = f[716];
 	
-	// Classifier: 1 Iteration: 59
+	// Digit: 1, Tree: 59
 	assign leaf[711] = !f[609] && !f[204] && !f[157] && !f[241];
 	assign leaf[712] = !f[609] && !f[204] && !f[157] && f[241];
 	assign leaf[713] = !f[609] && !f[204] && f[157] && !f[268];
@@ -2464,7 +2464,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[720] = f[609] && !f[157] && f[548] && f[516];
 	assign leaf[721] = f[609] && f[157];
 	
-	// Classifier: 1 Iteration: 60
+	// Digit: 1, Tree: 60
 	assign leaf[722] = !f[710] && !f[716] && !f[181] && !f[125];
 	assign leaf[723] = !f[710] && !f[716] && !f[181] && f[125];
 	assign leaf[724] = !f[710] && !f[716] && f[181] && !f[266];
@@ -2472,7 +2472,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[726] = !f[710] && f[716];
 	assign leaf[727] = f[710];
 	
-	// Classifier: 1 Iteration: 61
+	// Digit: 1, Tree: 61
 	assign leaf[728] = !f[204] && !f[634] && !f[493] && !f[235];
 	assign leaf[729] = !f[204] && !f[634] && !f[493] && f[235];
 	assign leaf[730] = !f[204] && !f[634] && f[493] && !f[547];
@@ -2487,7 +2487,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[739] = f[204] && f[544] && !f[609];
 	assign leaf[740] = f[204] && f[544] && f[609];
 	
-	// Classifier: 1 Iteration: 62
+	// Digit: 1, Tree: 62
 	assign leaf[741] = !f[381] && !f[242] && !f[155] && !f[295];
 	assign leaf[742] = !f[381] && !f[242] && !f[155] && f[295];
 	assign leaf[743] = !f[381] && !f[242] && f[155] && !f[465];
@@ -2505,7 +2505,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[755] = f[381] && f[297] && f[463] && !f[207];
 	assign leaf[756] = f[381] && f[297] && f[463] && f[207];
 	
-	// Classifier: 1 Iteration: 63
+	// Digit: 1, Tree: 63
 	assign leaf[757] = !f[510] && !f[538] && !f[408] && !f[520];
 	assign leaf[758] = !f[510] && !f[538] && !f[408] && f[520];
 	assign leaf[759] = !f[510] && !f[538] && f[408] && !f[491];
@@ -2514,7 +2514,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[762] = !f[510] && f[538] && f[625];
 	assign leaf[763] = f[510];
 	
-	// Classifier: 1 Iteration: 64
+	// Digit: 1, Tree: 64
 	assign leaf[764] = !f[316] && !f[604] && !f[547] && !f[347];
 	assign leaf[765] = !f[316] && !f[604] && !f[547] && f[347];
 	assign leaf[766] = !f[316] && !f[604] && f[547] && !f[545];
@@ -2526,7 +2526,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[772] = f[316] && !f[126];
 	assign leaf[773] = f[316] && f[126];
 	
-	// Classifier: 1 Iteration: 65
+	// Digit: 1, Tree: 65
 	assign leaf[774] = !f[102] && !f[344] && !f[132] && !f[234];
 	assign leaf[775] = !f[102] && !f[344] && !f[132] && f[234];
 	assign leaf[776] = !f[102] && !f[344] && f[132] && !f[520];
@@ -2537,7 +2537,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[781] = f[102] && !f[629] && f[626];
 	assign leaf[782] = f[102] && f[629];
 	
-	// Classifier: 1 Iteration: 66
+	// Digit: 1, Tree: 66
 	assign leaf[783] = !f[556] && !f[511] && !f[323] && !f[183];
 	assign leaf[784] = !f[556] && !f[511] && !f[323] && f[183];
 	assign leaf[785] = !f[556] && !f[511] && f[323] && !f[351];
@@ -2546,7 +2546,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[788] = !f[556] && f[511] && f[622];
 	assign leaf[789] = f[556];
 	
-	// Classifier: 1 Iteration: 67
+	// Digit: 1, Tree: 67
 	assign leaf[790] = !f[378] && !f[322] && !f[517] && !f[434];
 	assign leaf[791] = !f[378] && !f[322] && !f[517] && f[434];
 	assign leaf[792] = !f[378] && !f[322] && f[517] && !f[549];
@@ -2564,7 +2564,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[804] = f[378] && f[294] && f[375] && !f[657];
 	assign leaf[805] = f[378] && f[294] && f[375] && f[657];
 	
-	// Classifier: 1 Iteration: 68
+	// Digit: 1, Tree: 68
 	assign leaf[806] = !f[606] && !f[204] && !f[661] && !f[263];
 	assign leaf[807] = !f[606] && !f[204] && !f[661] && f[263];
 	assign leaf[808] = !f[606] && !f[204] && f[661] && !f[208];
@@ -2578,7 +2578,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[816] = f[606] && f[267] && !f[149] && f[661];
 	assign leaf[817] = f[606] && f[267] && f[149];
 	
-	// Classifier: 1 Iteration: 69
+	// Digit: 1, Tree: 69
 	assign leaf[818] = !f[102] && !f[213] && !f[269] && !f[321];
 	assign leaf[819] = !f[102] && !f[213] && !f[269] && f[321];
 	assign leaf[820] = !f[102] && !f[213] && f[269] && !f[188];
@@ -2590,7 +2590,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[826] = f[102] && !f[213];
 	assign leaf[827] = f[102] && f[213];
 	
-	// Classifier: 1 Iteration: 70
+	// Digit: 1, Tree: 70
 	assign leaf[828] = !f[440] && !f[609] && !f[260] && !f[600];
 	assign leaf[829] = !f[440] && !f[609] && !f[260] && f[600];
 	assign leaf[830] = !f[440] && !f[609] && f[260] && !f[153];
@@ -2601,7 +2601,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[835] = !f[440] && f[609] && f[433] && f[376];
 	assign leaf[836] = f[440];
 	
-	// Classifier: 1 Iteration: 71
+	// Digit: 1, Tree: 71
 	assign leaf[837] = !f[606] && !f[289] && !f[151] && !f[99];
 	assign leaf[838] = !f[606] && !f[289] && !f[151] && f[99];
 	assign leaf[839] = !f[606] && !f[289] && f[151] && !f[236];
@@ -2615,7 +2615,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[847] = f[606] && f[491] && !f[373] && f[576];
 	assign leaf[848] = f[606] && f[491] && f[373];
 	
-	// Classifier: 1 Iteration: 72
+	// Digit: 1, Tree: 72
 	assign leaf[849] = !f[578] && !f[177] && !f[658] && !f[601];
 	assign leaf[850] = !f[578] && !f[177] && !f[658] && f[601];
 	assign leaf[851] = !f[578] && !f[177] && f[658] && !f[266];
@@ -2630,7 +2630,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[860] = f[578] && f[515] && !f[540] && f[375];
 	assign leaf[861] = f[578] && f[515] && f[540];
 	
-	// Classifier: 1 Iteration: 73
+	// Digit: 1, Tree: 73
 	assign leaf[862] = !f[381] && !f[464] && !f[324] && !f[177];
 	assign leaf[863] = !f[381] && !f[464] && !f[324] && f[177];
 	assign leaf[864] = !f[381] && !f[464] && f[324] && !f[264];
@@ -2648,7 +2648,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[876] = f[381] && f[297] && f[268] && !f[152];
 	assign leaf[877] = f[381] && f[297] && f[268] && f[152];
 	
-	// Classifier: 1 Iteration: 74
+	// Digit: 1, Tree: 74
 	assign leaf[878] = !f[555] && !f[96] && !f[378] && !f[517];
 	assign leaf[879] = !f[555] && !f[96] && !f[378] && f[517];
 	assign leaf[880] = !f[555] && !f[96] && f[378] && !f[322];
@@ -2657,7 +2657,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[883] = f[555] && !f[568];
 	assign leaf[884] = f[555] && f[568];
 	
-	// Classifier: 1 Iteration: 75
+	// Digit: 1, Tree: 75
 	assign leaf[885] = !f[375] && !f[321] && !f[686] && !f[460];
 	assign leaf[886] = !f[375] && !f[321] && !f[686] && f[460];
 	assign leaf[887] = !f[375] && !f[321] && f[686] && !f[432];
@@ -2673,7 +2673,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[897] = f[375] && f[321] && f[687] && !f[377];
 	assign leaf[898] = f[375] && f[321] && f[687] && f[377];
 	
-	// Classifier: 1 Iteration: 76
+	// Digit: 1, Tree: 76
 	assign leaf[899] = !f[715] && !f[401] && !f[376] && !f[153];
 	assign leaf[900] = !f[715] && !f[401] && !f[376] && f[153];
 	assign leaf[901] = !f[715] && !f[401] && f[376] && !f[658];
@@ -2684,7 +2684,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[906] = f[715] && !f[403];
 	assign leaf[907] = f[715] && f[403];
 	
-	// Classifier: 1 Iteration: 77
+	// Digit: 1, Tree: 77
 	assign leaf[908] = !f[384] && !f[131] && !f[270] && !f[187];
 	assign leaf[909] = !f[384] && !f[131] && !f[270] && f[187];
 	assign leaf[910] = !f[384] && !f[131] && f[270] && !f[408];
@@ -2695,7 +2695,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[915] = !f[384] && f[131] && f[324] && f[241];
 	assign leaf[916] = f[384];
 	
-	// Classifier: 1 Iteration: 78
+	// Digit: 1, Tree: 78
 	assign leaf[917] = !f[316] && !f[635] && !f[566] && !f[540];
 	assign leaf[918] = !f[316] && !f[635] && !f[566] && f[540];
 	assign leaf[919] = !f[316] && !f[635] && f[566] && !f[404];
@@ -2707,7 +2707,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[925] = f[316] && !f[598];
 	assign leaf[926] = f[316] && f[598];
 	
-	// Classifier: 1 Iteration: 79
+	// Digit: 1, Tree: 79
 	assign leaf[927] = !f[603] && !f[209] && !f[265] && !f[346];
 	assign leaf[928] = !f[603] && !f[209] && !f[265] && f[346];
 	assign leaf[929] = !f[603] && !f[209] && f[265] && !f[636];
@@ -2725,7 +2725,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[941] = f[603] && f[546] && f[241] && !f[129];
 	assign leaf[942] = f[603] && f[546] && f[241] && f[129];
 	
-	// Classifier: 1 Iteration: 80
+	// Digit: 1, Tree: 80
 	assign leaf[943] = !f[440] && !f[204] && !f[658] && !f[517];
 	assign leaf[944] = !f[440] && !f[204] && !f[658] && f[517];
 	assign leaf[945] = !f[440] && !f[204] && f[658] && !f[436];
@@ -2735,7 +2735,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[949] = !f[440] && f[204] && f[291];
 	assign leaf[950] = f[440];
 	
-	// Classifier: 1 Iteration: 81
+	// Digit: 1, Tree: 81
 	assign leaf[951] = !f[456] && !f[686] && !f[578] && !f[433];
 	assign leaf[952] = !f[456] && !f[686] && !f[578] && f[433];
 	assign leaf[953] = !f[456] && !f[686] && f[578] && !f[491];
@@ -2747,7 +2747,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[959] = f[456] && !f[630];
 	assign leaf[960] = f[456] && f[630];
 	
-	// Classifier: 1 Iteration: 82
+	// Digit: 1, Tree: 82
 	assign leaf[961] = !f[329] && !f[375] && !f[321] && !f[181];
 	assign leaf[962] = !f[329] && !f[375] && !f[321] && f[181];
 	assign leaf[963] = !f[329] && !f[375] && f[321] && !f[622];
@@ -2758,7 +2758,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[968] = !f[329] && f[375] && f[321] && f[658];
 	assign leaf[969] = f[329];
 	
-	// Classifier: 1 Iteration: 83
+	// Digit: 1, Tree: 83
 	assign leaf[970] = !f[709] && !f[204] && !f[245] && !f[538];
 	assign leaf[971] = !f[709] && !f[204] && !f[245] && f[538];
 	assign leaf[972] = !f[709] && !f[204] && f[245] && !f[162];
@@ -2768,7 +2768,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[976] = !f[709] && f[204] && f[569];
 	assign leaf[977] = f[709];
 	
-	// Classifier: 1 Iteration: 84
+	// Digit: 1, Tree: 84
 	assign leaf[978] = !f[708] && !f[244] && !f[204] && !f[266];
 	assign leaf[979] = !f[708] && !f[244] && !f[204] && f[266];
 	assign leaf[980] = !f[708] && !f[244] && f[204] && !f[156];
@@ -2779,7 +2779,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[985] = !f[708] && f[244] && f[293] && f[595];
 	assign leaf[986] = f[708];
 	
-	// Classifier: 1 Iteration: 85
+	// Digit: 1, Tree: 85
 	assign leaf[987] = !f[493] && !f[519] && !f[464] && !f[353];
 	assign leaf[988] = !f[493] && !f[519] && !f[464] && f[353];
 	assign leaf[989] = !f[493] && !f[519] && f[464] && !f[487];
@@ -2793,7 +2793,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[997] = f[493] && !f[636] && f[547] && f[265];
 	assign leaf[998] = f[493] && f[636];
 	
-	// Classifier: 1 Iteration: 86
+	// Digit: 1, Tree: 86
 	assign leaf[999] = !f[356] && !f[215] && !f[353] && !f[566];
 	assign leaf[1000] = !f[356] && !f[215] && !f[353] && f[566];
 	assign leaf[1001] = !f[356] && !f[215] && f[353] && !f[659];
@@ -2804,7 +2804,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1006] = !f[356] && f[215] && f[381] && f[436];
 	assign leaf[1007] = f[356];
 	
-	// Classifier: 1 Iteration: 87
+	// Digit: 1, Tree: 87
 	assign leaf[1008] = !f[152] && !f[656] && !f[573] && !f[714];
 	assign leaf[1009] = !f[152] && !f[656] && !f[573] && f[714];
 	assign leaf[1010] = !f[152] && !f[656] && f[573] && !f[486];
@@ -2821,7 +2821,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1021] = f[152] && f[269] && f[462] && !f[375];
 	assign leaf[1022] = f[152] && f[269] && f[462] && f[375];
 	
-	// Classifier: 1 Iteration: 88
+	// Digit: 1, Tree: 88
 	assign leaf[1023] = !f[244] && !f[566] && !f[493] && !f[178];
 	assign leaf[1024] = !f[244] && !f[566] && !f[493] && f[178];
 	assign leaf[1025] = !f[244] && !f[566] && f[493] && !f[519];
@@ -2835,7 +2835,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1033] = f[244] && f[321] && !f[320] && f[430];
 	assign leaf[1034] = f[244] && f[321] && f[320];
 	
-	// Classifier: 1 Iteration: 89
+	// Digit: 1, Tree: 89
 	assign leaf[1035] = !f[713] && !f[548] && !f[151] && !f[569];
 	assign leaf[1036] = !f[713] && !f[548] && !f[151] && f[569];
 	assign leaf[1037] = !f[713] && !f[548] && f[151] && !f[659];
@@ -2847,7 +2847,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1043] = f[713] && !f[349];
 	assign leaf[1044] = f[713] && f[349];
 	
-	// Classifier: 1 Iteration: 90
+	// Digit: 1, Tree: 90
 	assign leaf[1045] = !f[712] && !f[440] && !f[578] && !f[177];
 	assign leaf[1046] = !f[712] && !f[440] && !f[578] && f[177];
 	assign leaf[1047] = !f[712] && !f[440] && f[578] && !f[517];
@@ -2856,7 +2856,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1050] = f[712] && !f[432];
 	assign leaf[1051] = f[712] && f[432];
 	
-	// Classifier: 1 Iteration: 91
+	// Digit: 1, Tree: 91
 	assign leaf[1052] = !f[215] && !f[381] && !f[241] && !f[210];
 	assign leaf[1053] = !f[215] && !f[381] && !f[241] && f[210];
 	assign leaf[1054] = !f[215] && !f[381] && f[241] && !f[575];
@@ -2871,7 +2871,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1063] = f[215] && f[324] && f[381] && !f[209];
 	assign leaf[1064] = f[215] && f[324] && f[381] && f[209];
 	
-	// Classifier: 1 Iteration: 92
+	// Digit: 1, Tree: 92
 	assign leaf[1065] = !f[95] && !f[609] && !f[708] && !f[204];
 	assign leaf[1066] = !f[95] && !f[609] && !f[708] && f[204];
 	assign leaf[1067] = !f[95] && !f[609] && f[708];
@@ -2879,7 +2879,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1069] = !f[95] && f[609] && f[516];
 	assign leaf[1070] = f[95];
 	
-	// Classifier: 1 Iteration: 93
+	// Digit: 1, Tree: 93
 	assign leaf[1071] = !f[715] && !f[712] && !f[374] && !f[244];
 	assign leaf[1072] = !f[715] && !f[712] && !f[374] && f[244];
 	assign leaf[1073] = !f[715] && !f[712] && f[374] && !f[323];
@@ -2889,7 +2889,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1077] = f[715] && !f[346];
 	assign leaf[1078] = f[715] && f[346];
 	
-	// Classifier: 1 Iteration: 94
+	// Digit: 1, Tree: 94
 	assign leaf[1079] = !f[490] && !f[378] && !f[322] && !f[434];
 	assign leaf[1080] = !f[490] && !f[378] && !f[322] && f[434];
 	assign leaf[1081] = !f[490] && !f[378] && f[322];
@@ -2906,7 +2906,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1092] = f[490] && f[603] && f[573] && !f[177];
 	assign leaf[1093] = f[490] && f[603] && f[573] && f[177];
 	
-	// Classifier: 1 Iteration: 95
+	// Digit: 1, Tree: 95
 	assign leaf[1094] = !f[378] && !f[682] && !f[624] && !f[321];
 	assign leaf[1095] = !f[378] && !f[682] && !f[624] && f[321];
 	assign leaf[1096] = !f[378] && !f[682] && f[624] && !f[379];
@@ -2919,7 +2919,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1103] = f[378] && f[294] && f[322] && !f[177];
 	assign leaf[1104] = f[378] && f[294] && f[322] && f[177];
 	
-	// Classifier: 1 Iteration: 96
+	// Digit: 1, Tree: 96
 	assign leaf[1105] = !f[265] && !f[155] && !f[241] && !f[295];
 	assign leaf[1106] = !f[265] && !f[155] && !f[241] && f[295];
 	assign leaf[1107] = !f[265] && !f[155] && f[241] && !f[324];
@@ -2936,7 +2936,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1118] = f[265] && f[159] && f[406] && !f[486];
 	assign leaf[1119] = f[265] && f[159] && f[406] && f[486];
 	
-	// Classifier: 1 Iteration: 97
+	// Digit: 1, Tree: 97
 	assign leaf[1120] = !f[658] && !f[517] && !f[184] && !f[238];
 	assign leaf[1121] = !f[658] && !f[517] && !f[184] && f[238];
 	assign leaf[1122] = !f[658] && !f[517] && f[184] && !f[578];
@@ -2953,7 +2953,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1133] = f[658] && f[266] && f[517] && !f[600];
 	assign leaf[1134] = f[658] && f[266] && f[517] && f[600];
 	
-	// Classifier: 1 Iteration: 98
+	// Digit: 1, Tree: 98
 	assign leaf[1135] = !f[320] && !f[687] && !f[373] && !f[657];
 	assign leaf[1136] = !f[320] && !f[687] && !f[373] && f[657];
 	assign leaf[1137] = !f[320] && !f[687] && f[373];
@@ -2967,7 +2967,7 @@ module decision_tree_leaves_1(input logic [0:783] f, output logic [0:1154] leaf)
 	assign leaf[1145] = f[320] && f[662] && !f[267];
 	assign leaf[1146] = f[320] && f[662] && f[267];
 	
-	// Classifier: 1 Iteration: 99
+	// Digit: 1, Tree: 99
 	assign leaf[1147] = !f[708] && !f[403] && !f[714] && !f[321];
 	assign leaf[1148] = !f[708] && !f[403] && !f[714] && f[321];
 	assign leaf[1149] = !f[708] && !f[403] && f[714] && !f[184];
@@ -2983,7 +2983,7 @@ endmodule
 
 
 module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf);
-	// Classifier: 2 Iteration: 0
+	// Digit: 2, Tree: 0
 	assign leaf[0] = !f[583] && !f[124] && !f[528] && !f[564];
 	assign leaf[1] = !f[583] && !f[124] && !f[528] && f[564];
 	assign leaf[2] = !f[583] && !f[124] && f[528] && !f[371];
@@ -3001,7 +3001,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[14] = f[583] && f[343] && f[519] && !f[442];
 	assign leaf[15] = f[583] && f[343] && f[519] && f[442];
 	
-	// Classifier: 2 Iteration: 1
+	// Digit: 2, Tree: 1
 	assign leaf[16] = !f[542] && !f[512] && !f[99] && !f[571];
 	assign leaf[17] = !f[542] && !f[512] && !f[99] && f[571];
 	assign leaf[18] = !f[542] && !f[512] && f[99] && !f[482];
@@ -3019,7 +3019,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[30] = f[542] && f[347] && f[528] && !f[414];
 	assign leaf[31] = f[542] && f[347] && f[528] && f[414];
 	
-	// Classifier: 2 Iteration: 2
+	// Digit: 2, Tree: 2
 	assign leaf[32] = !f[568] && !f[123] && !f[539] && !f[473];
 	assign leaf[33] = !f[568] && !f[123] && !f[539] && f[473];
 	assign leaf[34] = !f[568] && !f[123] && f[539] && !f[346];
@@ -3037,7 +3037,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[46] = f[568] && f[517] && f[320] && !f[580];
 	assign leaf[47] = f[568] && f[517] && f[320] && f[580];
 	
-	// Classifier: 2 Iteration: 3
+	// Digit: 2, Tree: 3
 	assign leaf[48] = !f[346] && !f[569] && !f[511] && !f[582];
 	assign leaf[49] = !f[346] && !f[569] && !f[511] && f[582];
 	assign leaf[50] = !f[346] && !f[569] && f[511] && !f[343];
@@ -3054,7 +3054,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[61] = f[346] && f[528] && f[413] && !f[493];
 	assign leaf[62] = f[346] && f[528] && f[413] && f[493];
 	
-	// Classifier: 2 Iteration: 4
+	// Digit: 2, Tree: 4
 	assign leaf[63] = !f[345] && !f[348] && !f[153] && !f[538];
 	assign leaf[64] = !f[345] && !f[348] && !f[153] && f[538];
 	assign leaf[65] = !f[345] && !f[348] && f[153] && !f[516];
@@ -3072,7 +3072,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[77] = f[345] && f[583] && f[518] && !f[430];
 	assign leaf[78] = f[345] && f[583] && f[518] && f[430];
 	
-	// Classifier: 2 Iteration: 5
+	// Digit: 2, Tree: 5
 	assign leaf[79] = !f[543] && !f[512] && !f[99] && !f[514];
 	assign leaf[80] = !f[543] && !f[512] && !f[99] && f[514];
 	assign leaf[81] = !f[543] && !f[512] && f[99] && !f[351];
@@ -3090,7 +3090,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[93] = f[543] && f[346] && f[318] && !f[374];
 	assign leaf[94] = f[543] && f[346] && f[318] && f[374];
 	
-	// Classifier: 2 Iteration: 6
+	// Digit: 2, Tree: 6
 	assign leaf[95] = !f[346] && !f[543] && !f[485] && !f[514];
 	assign leaf[96] = !f[346] && !f[543] && !f[485] && f[514];
 	assign leaf[97] = !f[346] && !f[543] && f[485] && !f[343];
@@ -3108,7 +3108,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[109] = f[346] && f[582] && f[633] && !f[547];
 	assign leaf[110] = f[346] && f[582] && f[633] && f[547];
 	
-	// Classifier: 2 Iteration: 7
+	// Digit: 2, Tree: 7
 	assign leaf[111] = !f[319] && !f[344] && !f[321] && !f[127];
 	assign leaf[112] = !f[319] && !f[344] && !f[321] && f[127];
 	assign leaf[113] = !f[319] && !f[344] && f[321] && !f[499];
@@ -3125,7 +3125,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[124] = f[319] && f[473] && !f[454] && f[539];
 	assign leaf[125] = f[319] && f[473] && f[454];
 	
-	// Classifier: 2 Iteration: 8
+	// Digit: 2, Tree: 8
 	assign leaf[126] = !f[543] && !f[125] && !f[511] && !f[501];
 	assign leaf[127] = !f[543] && !f[125] && !f[511] && f[501];
 	assign leaf[128] = !f[543] && !f[125] && f[511] && !f[630];
@@ -3143,7 +3143,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[140] = f[543] && f[607] && f[496] && !f[594];
 	assign leaf[141] = f[543] && f[607] && f[496] && f[594];
 	
-	// Classifier: 2 Iteration: 9
+	// Digit: 2, Tree: 9
 	assign leaf[142] = !f[345] && !f[320] && !f[343] && !f[379];
 	assign leaf[143] = !f[345] && !f[320] && !f[343] && f[379];
 	assign leaf[144] = !f[345] && !f[320] && f[343] && !f[399];
@@ -3161,7 +3161,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[156] = f[345] && f[568] && f[464] && !f[658];
 	assign leaf[157] = f[345] && f[568] && f[464] && f[658];
 	
-	// Classifier: 2 Iteration: 10
+	// Digit: 2, Tree: 10
 	assign leaf[158] = !f[151] && !f[657] && !f[156] && !f[527];
 	assign leaf[159] = !f[151] && !f[657] && !f[156] && f[527];
 	assign leaf[160] = !f[151] && !f[657] && f[156] && !f[322];
@@ -3179,7 +3179,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[172] = f[151] && f[317] && f[639] && !f[554];
 	assign leaf[173] = f[151] && f[317] && f[639] && f[554];
 	
-	// Classifier: 2 Iteration: 11
+	// Digit: 2, Tree: 11
 	assign leaf[174] = !f[580] && !f[525] && !f[635] && !f[471];
 	assign leaf[175] = !f[580] && !f[525] && !f[635] && f[471];
 	assign leaf[176] = !f[580] && !f[525] && f[635] && !f[551];
@@ -3196,7 +3196,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[187] = f[580] && f[468] && f[520] && !f[371];
 	assign leaf[188] = f[580] && f[468] && f[520] && f[371];
 	
-	// Classifier: 2 Iteration: 12
+	// Digit: 2, Tree: 12
 	assign leaf[189] = !f[128] && !f[149] && !f[516] && !f[473];
 	assign leaf[190] = !f[128] && !f[149] && !f[516] && f[473];
 	assign leaf[191] = !f[128] && !f[149] && f[516] && !f[526];
@@ -3214,7 +3214,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[203] = f[128] && f[630] && f[487] && !f[464];
 	assign leaf[204] = f[128] && f[630] && f[487] && f[464];
 	
-	// Classifier: 2 Iteration: 13
+	// Digit: 2, Tree: 13
 	assign leaf[205] = !f[345] && !f[348] && !f[370] && !f[607];
 	assign leaf[206] = !f[345] && !f[348] && !f[370] && f[607];
 	assign leaf[207] = !f[345] && !f[348] && f[370] && !f[342];
@@ -3232,7 +3232,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[219] = f[345] && f[401] && f[317] && !f[667];
 	assign leaf[220] = f[345] && f[401] && f[317] && f[667];
 	
-	// Classifier: 2 Iteration: 14
+	// Digit: 2, Tree: 14
 	assign leaf[221] = !f[683] && !f[659] && !f[492] && !f[576];
 	assign leaf[222] = !f[683] && !f[659] && !f[492] && f[576];
 	assign leaf[223] = !f[683] && !f[659] && f[492] && !f[352];
@@ -3248,7 +3248,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[233] = f[683] && f[403] && f[610] && !f[325];
 	assign leaf[234] = f[683] && f[403] && f[610] && f[325];
 	
-	// Classifier: 2 Iteration: 15
+	// Digit: 2, Tree: 15
 	assign leaf[235] = !f[345] && !f[348] && !f[342] && !f[455];
 	assign leaf[236] = !f[345] && !f[348] && !f[342] && f[455];
 	assign leaf[237] = !f[345] && !f[348] && f[342] && !f[398];
@@ -3266,7 +3266,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[249] = f[345] && f[401] && f[290] && !f[667];
 	assign leaf[250] = f[345] && f[401] && f[290] && f[667];
 	
-	// Classifier: 2 Iteration: 16
+	// Digit: 2, Tree: 16
 	assign leaf[251] = !f[150] && !f[657] && !f[157] && !f[471];
 	assign leaf[252] = !f[150] && !f[657] && !f[157] && f[471];
 	assign leaf[253] = !f[150] && !f[657] && f[157] && !f[322];
@@ -3284,7 +3284,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[265] = f[150] && f[290] && f[269] && !f[625];
 	assign leaf[266] = f[150] && f[290] && f[269] && f[625];
 	
-	// Classifier: 2 Iteration: 17
+	// Digit: 2, Tree: 17
 	assign leaf[267] = !f[514] && !f[379] && !f[319] && !f[546];
 	assign leaf[268] = !f[514] && !f[379] && !f[319] && f[546];
 	assign leaf[269] = !f[514] && !f[379] && f[319] && !f[570];
@@ -3302,7 +3302,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[281] = f[514] && f[343] && f[427] && !f[375];
 	assign leaf[282] = f[514] && f[343] && f[427] && f[375];
 	
-	// Classifier: 2 Iteration: 18
+	// Digit: 2, Tree: 18
 	assign leaf[283] = !f[513] && !f[377] && !f[572] && !f[509];
 	assign leaf[284] = !f[513] && !f[377] && !f[572] && f[509];
 	assign leaf[285] = !f[513] && !f[377] && f[572] && !f[634];
@@ -3320,7 +3320,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[297] = f[513] && f[370] && f[260] && !f[398];
 	assign leaf[298] = f[513] && f[370] && f[260] && f[398];
 	
-	// Classifier: 2 Iteration: 19
+	// Digit: 2, Tree: 19
 	assign leaf[299] = !f[373] && !f[458] && !f[377] && !f[176];
 	assign leaf[300] = !f[373] && !f[458] && !f[377] && f[176];
 	assign leaf[301] = !f[373] && !f[458] && f[377] && !f[429];
@@ -3338,7 +3338,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[313] = f[373] && f[453] && f[291] && !f[581];
 	assign leaf[314] = f[373] && f[453] && f[291] && f[581];
 	
-	// Classifier: 2 Iteration: 20
+	// Digit: 2, Tree: 20
 	assign leaf[315] = !f[682] && !f[488] && !f[380] && !f[547];
 	assign leaf[316] = !f[682] && !f[488] && !f[380] && f[547];
 	assign leaf[317] = !f[682] && !f[488] && f[380] && !f[517];
@@ -3356,7 +3356,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[329] = f[682] && f[658] && f[404] && !f[541];
 	assign leaf[330] = f[682] && f[658] && f[404] && f[541];
 	
-	// Classifier: 2 Iteration: 21
+	// Digit: 2, Tree: 21
 	assign leaf[331] = !f[152] && !f[417] && !f[98] && !f[500];
 	assign leaf[332] = !f[152] && !f[417] && !f[98] && f[500];
 	assign leaf[333] = !f[152] && !f[417] && f[98] && !f[292];
@@ -3373,7 +3373,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[344] = f[152] && f[291] && f[547] && !f[240];
 	assign leaf[345] = f[152] && f[291] && f[547] && f[240];
 	
-	// Classifier: 2 Iteration: 22
+	// Digit: 2, Tree: 22
 	assign leaf[346] = !f[380] && !f[397] && !f[372] && !f[204];
 	assign leaf[347] = !f[380] && !f[397] && !f[372] && f[204];
 	assign leaf[348] = !f[380] && !f[397] && f[372] && !f[377];
@@ -3391,7 +3391,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[360] = f[380] && f[438] && f[511] && !f[630];
 	assign leaf[361] = f[380] && f[438] && f[511] && f[630];
 	
-	// Classifier: 2 Iteration: 23
+	// Digit: 2, Tree: 23
 	assign leaf[362] = !f[685] && !f[353] && !f[122] && !f[566];
 	assign leaf[363] = !f[685] && !f[353] && !f[122] && f[566];
 	assign leaf[364] = !f[685] && !f[353] && f[122] && !f[318];
@@ -3407,7 +3407,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[374] = f[685] && f[665] && !f[582] && f[463];
 	assign leaf[375] = f[685] && f[665] && f[582];
 	
-	// Classifier: 2 Iteration: 24
+	// Digit: 2, Tree: 24
 	assign leaf[376] = !f[501] && !f[373] && !f[349] && !f[398];
 	assign leaf[377] = !f[501] && !f[373] && !f[349] && f[398];
 	assign leaf[378] = !f[501] && !f[373] && f[349] && !f[415];
@@ -3421,7 +3421,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[386] = f[501] && !f[370] && f[654];
 	assign leaf[387] = f[501] && f[370];
 	
-	// Classifier: 2 Iteration: 25
+	// Digit: 2, Tree: 25
 	assign leaf[388] = !f[352] && !f[566] && !f[407] && !f[371];
 	assign leaf[389] = !f[352] && !f[566] && !f[407] && f[371];
 	assign leaf[390] = !f[352] && !f[566] && f[407] && !f[512];
@@ -3439,7 +3439,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[402] = f[352] && f[411] && f[388] && !f[234];
 	assign leaf[403] = f[352] && f[411] && f[388] && f[234];
 	
-	// Classifier: 2 Iteration: 26
+	// Digit: 2, Tree: 26
 	assign leaf[404] = !f[152] && !f[497] && !f[580] && !f[415];
 	assign leaf[405] = !f[152] && !f[497] && !f[580] && f[415];
 	assign leaf[406] = !f[152] && !f[497] && f[580] && !f[260];
@@ -3457,7 +3457,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[418] = f[152] && f[409] && f[519] && !f[609];
 	assign leaf[419] = f[152] && f[409] && f[519] && f[609];
 	
-	// Classifier: 2 Iteration: 27
+	// Digit: 2, Tree: 27
 	assign leaf[420] = !f[372] && !f[347] && !f[397] && !f[679];
 	assign leaf[421] = !f[372] && !f[347] && !f[397] && f[679];
 	assign leaf[422] = !f[372] && !f[347] && f[397] && !f[313];
@@ -3475,7 +3475,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[434] = f[372] && f[316] && f[400] && !f[652];
 	assign leaf[435] = f[372] && f[316] && f[400] && f[652];
 	
-	// Classifier: 2 Iteration: 28
+	// Digit: 2, Tree: 28
 	assign leaf[436] = !f[514] && !f[379] && !f[572] && !f[174];
 	assign leaf[437] = !f[514] && !f[379] && !f[572] && f[174];
 	assign leaf[438] = !f[514] && !f[379] && f[572] && !f[294];
@@ -3493,7 +3493,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[450] = f[514] && f[460] && f[679] && !f[631];
 	assign leaf[451] = f[514] && f[460] && f[679] && f[631];
 	
-	// Classifier: 2 Iteration: 29
+	// Digit: 2, Tree: 29
 	assign leaf[452] = !f[473] && !f[514] && !f[379] && !f[548];
 	assign leaf[453] = !f[473] && !f[514] && !f[379] && f[548];
 	assign leaf[454] = !f[473] && !f[514] && f[379] && !f[638];
@@ -3506,7 +3506,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[461] = f[473] && !f[343] && f[354];
 	assign leaf[462] = f[473] && f[343];
 	
-	// Classifier: 2 Iteration: 30
+	// Digit: 2, Tree: 30
 	assign leaf[463] = !f[682] && !f[713] && !f[372] && !f[351];
 	assign leaf[464] = !f[682] && !f[713] && !f[372] && f[351];
 	assign leaf[465] = !f[682] && !f[713] && f[372] && !f[316];
@@ -3520,7 +3520,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[473] = f[682] && f[180] && f[431] && !f[541];
 	assign leaf[474] = f[682] && f[180] && f[431] && f[541];
 	
-	// Classifier: 2 Iteration: 31
+	// Digit: 2, Tree: 31
 	assign leaf[475] = !f[176] && !f[485] && !f[516] && !f[455];
 	assign leaf[476] = !f[176] && !f[485] && !f[516] && f[455];
 	assign leaf[477] = !f[176] && !f[485] && f[516] && !f[609];
@@ -3538,7 +3538,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[489] = f[176] && f[551] && f[661] && !f[380];
 	assign leaf[490] = f[176] && f[551] && f[661] && f[380];
 	
-	// Classifier: 2 Iteration: 32
+	// Digit: 2, Tree: 32
 	assign leaf[491] = !f[121] && !f[545] && !f[509] && !f[417];
 	assign leaf[492] = !f[121] && !f[545] && !f[509] && f[417];
 	assign leaf[493] = !f[121] && !f[545] && f[509] && !f[434];
@@ -3555,7 +3555,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[504] = f[121] && f[232] && f[496] && !f[633];
 	assign leaf[505] = f[121] && f[232] && f[496] && f[633];
 	
-	// Classifier: 2 Iteration: 33
+	// Digit: 2, Tree: 33
 	assign leaf[506] = !f[713] && !f[710] && !f[95] && !f[322];
 	assign leaf[507] = !f[713] && !f[710] && !f[95] && f[322];
 	assign leaf[508] = !f[713] && !f[710] && f[95] && !f[262];
@@ -3564,7 +3564,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[511] = f[713] && !f[626];
 	assign leaf[512] = f[713] && f[626];
 	
-	// Classifier: 2 Iteration: 34
+	// Digit: 2, Tree: 34
 	assign leaf[513] = !f[639] && !f[677] && !f[351] && !f[372];
 	assign leaf[514] = !f[639] && !f[677] && !f[351] && f[372];
 	assign leaf[515] = !f[639] && !f[677] && f[351] && !f[487];
@@ -3578,7 +3578,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[523] = f[639] && f[554] && !f[550] && f[382];
 	assign leaf[524] = f[639] && f[554] && f[550];
 	
-	// Classifier: 2 Iteration: 35
+	// Digit: 2, Tree: 35
 	assign leaf[525] = !f[179] && !f[655] && !f[630] && !f[242];
 	assign leaf[526] = !f[179] && !f[655] && !f[630] && f[242];
 	assign leaf[527] = !f[179] && !f[655] && f[630] && !f[651];
@@ -3596,7 +3596,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[539] = f[179] && f[599] && f[690] && !f[636];
 	assign leaf[540] = f[179] && f[599] && f[690] && f[636];
 	
-	// Classifier: 2 Iteration: 36
+	// Digit: 2, Tree: 36
 	assign leaf[541] = !f[397] && !f[388] && !f[374] && !f[349];
 	assign leaf[542] = !f[397] && !f[388] && !f[374] && f[349];
 	assign leaf[543] = !f[397] && !f[388] && f[374] && !f[318];
@@ -3613,7 +3613,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[554] = f[397] && f[374] && !f[287] && f[521];
 	assign leaf[555] = f[397] && f[374] && f[287];
 	
-	// Classifier: 2 Iteration: 37
+	// Digit: 2, Tree: 37
 	assign leaf[556] = !f[473] && !f[293] && !f[289] && !f[427];
 	assign leaf[557] = !f[473] && !f[293] && !f[289] && f[427];
 	assign leaf[558] = !f[473] && !f[293] && f[289] && !f[373];
@@ -3627,7 +3627,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[566] = f[473] && !f[416] && f[485] && f[400];
 	assign leaf[567] = f[473] && f[416];
 	
-	// Classifier: 2 Iteration: 38
+	// Digit: 2, Tree: 38
 	assign leaf[568] = !f[324] && !f[485] && !f[298] && !f[380];
 	assign leaf[569] = !f[324] && !f[485] && !f[298] && f[380];
 	assign leaf[570] = !f[324] && !f[485] && f[298] && !f[432];
@@ -3645,7 +3645,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[582] = f[324] && f[411] && f[415] && !f[243];
 	assign leaf[583] = f[324] && f[411] && f[415] && f[243];
 	
-	// Classifier: 2 Iteration: 39
+	// Digit: 2, Tree: 39
 	assign leaf[584] = !f[95] && !f[547] && !f[630] && !f[652];
 	assign leaf[585] = !f[95] && !f[547] && !f[630] && f[652];
 	assign leaf[586] = !f[95] && !f[547] && f[630] && !f[522];
@@ -3662,7 +3662,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[597] = f[95] && f[354] && f[521] && !f[270];
 	assign leaf[598] = f[95] && f[354] && f[521] && f[270];
 	
-	// Classifier: 2 Iteration: 40
+	// Digit: 2, Tree: 40
 	assign leaf[599] = !f[666] && !f[611] && !f[556] && !f[472];
 	assign leaf[600] = !f[666] && !f[611] && !f[556] && f[472];
 	assign leaf[601] = !f[666] && !f[611] && f[556] && !f[127];
@@ -3677,7 +3677,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[610] = f[666] && f[525] && !f[155];
 	assign leaf[611] = f[666] && f[525] && f[155];
 	
-	// Classifier: 2 Iteration: 41
+	// Digit: 2, Tree: 41
 	assign leaf[612] = !f[409] && !f[354] && !f[97] && !f[149];
 	assign leaf[613] = !f[409] && !f[354] && !f[97] && f[149];
 	assign leaf[614] = !f[409] && !f[354] && f[97] && !f[463];
@@ -3695,7 +3695,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[626] = f[409] && f[463] && f[538] && !f[600];
 	assign leaf[627] = f[409] && f[463] && f[538] && f[600];
 	
-	// Classifier: 2 Iteration: 42
+	// Digit: 2, Tree: 42
 	assign leaf[628] = !f[409] && !f[549] && !f[605] && !f[443];
 	assign leaf[629] = !f[409] && !f[549] && !f[605] && f[443];
 	assign leaf[630] = !f[409] && !f[549] && f[605] && !f[523];
@@ -3713,7 +3713,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[642] = f[409] && f[463] && f[609] && !f[469];
 	assign leaf[643] = f[409] && f[463] && f[609] && f[469];
 	
-	// Classifier: 2 Iteration: 43
+	// Digit: 2, Tree: 43
 	assign leaf[644] = !f[486] && !f[432] && !f[512] && !f[689];
 	assign leaf[645] = !f[486] && !f[432] && !f[512] && f[689];
 	assign leaf[646] = !f[486] && !f[432] && f[512] && !f[404];
@@ -3730,7 +3730,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[657] = f[486] && f[690] && !f[657] && f[573];
 	assign leaf[658] = f[486] && f[690] && f[657];
 	
-	// Classifier: 2 Iteration: 44
+	// Digit: 2, Tree: 44
 	assign leaf[659] = !f[677] && !f[323] && !f[261] && !f[292];
 	assign leaf[660] = !f[677] && !f[323] && !f[261] && f[292];
 	assign leaf[661] = !f[677] && !f[323] && f[261] && !f[652];
@@ -3742,7 +3742,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[667] = f[677] && !f[158];
 	assign leaf[668] = f[677] && f[158];
 	
-	// Classifier: 2 Iteration: 45
+	// Digit: 2, Tree: 45
 	assign leaf[669] = !f[681] && !f[461] && !f[573] && !f[430];
 	assign leaf[670] = !f[681] && !f[461] && !f[573] && f[430];
 	assign leaf[671] = !f[681] && !f[461] && f[573] && !f[204];
@@ -3760,7 +3760,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[683] = f[681] && f[603] && f[432] && !f[594];
 	assign leaf[684] = f[681] && f[603] && f[432] && f[594];
 	
-	// Classifier: 2 Iteration: 46
+	// Digit: 2, Tree: 46
 	assign leaf[685] = !f[324] && !f[509] && !f[571] && !f[267];
 	assign leaf[686] = !f[324] && !f[509] && !f[571] && f[267];
 	assign leaf[687] = !f[324] && !f[509] && f[571] && !f[297];
@@ -3777,7 +3777,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[698] = f[324] && f[347] && !f[96] && f[453];
 	assign leaf[699] = f[324] && f[347] && f[96];
 	
-	// Classifier: 2 Iteration: 47
+	// Digit: 2, Tree: 47
 	assign leaf[700] = !f[367] && !f[665] && !f[219] && !f[104];
 	assign leaf[701] = !f[367] && !f[665] && !f[219] && f[104];
 	assign leaf[702] = !f[367] && !f[665] && f[219] && !f[159];
@@ -3788,7 +3788,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[707] = !f[367] && f[665] && f[553] && f[546];
 	assign leaf[708] = f[367];
 	
-	// Classifier: 2 Iteration: 48
+	// Digit: 2, Tree: 48
 	assign leaf[709] = !f[418] && !f[473] && !f[571] && !f[510];
 	assign leaf[710] = !f[418] && !f[473] && !f[571] && f[510];
 	assign leaf[711] = !f[418] && !f[473] && f[571] && !f[715];
@@ -3798,7 +3798,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[715] = !f[418] && f[473] && f[416];
 	assign leaf[716] = f[418];
 	
-	// Classifier: 2 Iteration: 49
+	// Digit: 2, Tree: 49
 	assign leaf[717] = !f[104] && !f[70] && !f[445] && !f[501];
 	assign leaf[718] = !f[104] && !f[70] && !f[445] && f[501];
 	assign leaf[719] = !f[104] && !f[70] && f[445] && !f[552];
@@ -3811,7 +3811,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[726] = f[104] && f[431] && !f[322];
 	assign leaf[727] = f[104] && f[431] && f[322];
 	
-	// Classifier: 2 Iteration: 50
+	// Digit: 2, Tree: 50
 	assign leaf[728] = !f[95] && !f[390] && !f[235] && !f[351];
 	assign leaf[729] = !f[95] && !f[390] && !f[235] && f[351];
 	assign leaf[730] = !f[95] && !f[390] && f[235] && !f[401];
@@ -3822,7 +3822,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[735] = f[95] && !f[262] && f[453];
 	assign leaf[736] = f[95] && f[262];
 	
-	// Classifier: 2 Iteration: 51
+	// Digit: 2, Tree: 51
 	assign leaf[737] = !f[134] && !f[411] && !f[356] && !f[470];
 	assign leaf[738] = !f[134] && !f[411] && !f[356] && f[470];
 	assign leaf[739] = !f[134] && !f[411] && f[356] && !f[324];
@@ -3835,7 +3835,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[746] = f[134] && f[301] && !f[467];
 	assign leaf[747] = f[134] && f[301] && f[467];
 	
-	// Classifier: 2 Iteration: 52
+	// Digit: 2, Tree: 52
 	assign leaf[748] = !f[708] && !f[514] && !f[432] && !f[231];
 	assign leaf[749] = !f[708] && !f[514] && !f[432] && f[231];
 	assign leaf[750] = !f[708] && !f[514] && f[432] && !f[408];
@@ -3847,7 +3847,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[756] = f[708] && !f[460];
 	assign leaf[757] = f[708] && f[460];
 	
-	// Classifier: 2 Iteration: 53
+	// Digit: 2, Tree: 53
 	assign leaf[758] = !f[242] && !f[154] && !f[213] && !f[299];
 	assign leaf[759] = !f[242] && !f[154] && !f[213] && f[299];
 	assign leaf[760] = !f[242] && !f[154] && f[213] && !f[355];
@@ -3865,7 +3865,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[772] = f[242] && f[156] && f[597] && !f[594];
 	assign leaf[773] = f[242] && f[156] && f[597] && f[594];
 	
-	// Classifier: 2 Iteration: 54
+	// Digit: 2, Tree: 54
 	assign leaf[774] = !f[400] && !f[344] && !f[233] && !f[607];
 	assign leaf[775] = !f[400] && !f[344] && !f[233] && f[607];
 	assign leaf[776] = !f[400] && !f[344] && f[233] && !f[466];
@@ -3883,7 +3883,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[788] = f[400] && f[376] && f[659] && !f[547];
 	assign leaf[789] = f[400] && f[376] && f[659] && f[547];
 	
-	// Classifier: 2 Iteration: 55
+	// Digit: 2, Tree: 55
 	assign leaf[790] = !f[378] && !f[400] && !f[425] && !f[149];
 	assign leaf[791] = !f[378] && !f[400] && !f[425] && f[149];
 	assign leaf[792] = !f[378] && !f[400] && f[425] && !f[433];
@@ -3900,7 +3900,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[803] = f[378] && f[484] && !f[690] && f[314];
 	assign leaf[804] = f[378] && f[484] && f[690];
 	
-	// Classifier: 2 Iteration: 56
+	// Digit: 2, Tree: 56
 	assign leaf[805] = !f[418] && !f[411] && !f[329] && !f[378];
 	assign leaf[806] = !f[418] && !f[411] && !f[329] && f[378];
 	assign leaf[807] = !f[418] && !f[411] && f[329] && !f[324];
@@ -3911,7 +3911,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[812] = !f[418] && f[411] && f[353] && f[519];
 	assign leaf[813] = f[418];
 	
-	// Classifier: 2 Iteration: 57
+	// Digit: 2, Tree: 57
 	assign leaf[814] = !f[513] && !f[404] && !f[568] && !f[458];
 	assign leaf[815] = !f[513] && !f[404] && !f[568] && f[458];
 	assign leaf[816] = !f[513] && !f[404] && f[568] && !f[320];
@@ -3929,7 +3929,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[828] = f[513] && f[459] && f[294] && !f[96];
 	assign leaf[829] = f[513] && f[459] && f[294] && f[96];
 	
-	// Classifier: 2 Iteration: 58
+	// Digit: 2, Tree: 58
 	assign leaf[830] = !f[104] && !f[545] && !f[660] && !f[469];
 	assign leaf[831] = !f[104] && !f[545] && !f[660] && f[469];
 	assign leaf[832] = !f[104] && !f[545] && f[660] && !f[464];
@@ -3943,7 +3943,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[840] = f[104] && f[432] && !f[593];
 	assign leaf[841] = f[104] && f[432] && f[593];
 	
-	// Classifier: 2 Iteration: 59
+	// Digit: 2, Tree: 59
 	assign leaf[842] = !f[677] && !f[622] && !f[219] && !f[103];
 	assign leaf[843] = !f[677] && !f[622] && !f[219] && f[103];
 	assign leaf[844] = !f[677] && !f[622] && f[219] && !f[374];
@@ -3955,7 +3955,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[850] = f[677] && !f[188];
 	assign leaf[851] = f[677] && f[188];
 	
-	// Classifier: 2 Iteration: 60
+	// Digit: 2, Tree: 60
 	assign leaf[852] = !f[513] && !f[404] && !f[257] && !f[571];
 	assign leaf[853] = !f[513] && !f[404] && !f[257] && f[571];
 	assign leaf[854] = !f[513] && !f[404] && f[257] && !f[204];
@@ -3973,7 +3973,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[866] = f[513] && f[433] && f[257] && !f[262];
 	assign leaf[867] = f[513] && f[433] && f[257] && f[262];
 	
-	// Classifier: 2 Iteration: 61
+	// Digit: 2, Tree: 61
 	assign leaf[868] = !f[351] && !f[547] && !f[261] && !f[681];
 	assign leaf[869] = !f[351] && !f[547] && !f[261] && f[681];
 	assign leaf[870] = !f[351] && !f[547] && f[261] && !f[657];
@@ -3991,7 +3991,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[882] = f[351] && f[437] && f[659] && !f[257];
 	assign leaf[883] = f[351] && f[437] && f[659] && f[257];
 	
-	// Classifier: 2 Iteration: 62
+	// Digit: 2, Tree: 62
 	assign leaf[884] = !f[121] && !f[497] && !f[607] && !f[689];
 	assign leaf[885] = !f[121] && !f[497] && !f[607] && f[689];
 	assign leaf[886] = !f[121] && !f[497] && f[607] && !f[551];
@@ -4006,7 +4006,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[895] = f[121] && f[232] && !f[467];
 	assign leaf[896] = f[121] && f[232] && f[467];
 	
-	// Classifier: 2 Iteration: 63
+	// Digit: 2, Tree: 63
 	assign leaf[897] = !f[709] && !f[409] && !f[460] && !f[494];
 	assign leaf[898] = !f[709] && !f[409] && !f[460] && f[494];
 	assign leaf[899] = !f[709] && !f[409] && f[460] && !f[374];
@@ -4017,7 +4017,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[904] = !f[709] && f[409] && f[463] && f[679];
 	assign leaf[905] = f[709];
 	
-	// Classifier: 2 Iteration: 64
+	// Digit: 2, Tree: 64
 	assign leaf[906] = !f[515] && !f[378] && !f[373] && !f[342];
 	assign leaf[907] = !f[515] && !f[378] && !f[373] && f[342];
 	assign leaf[908] = !f[515] && !f[378] && f[373] && !f[154];
@@ -4035,7 +4035,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[920] = f[515] && f[466] && f[632] && !f[329];
 	assign leaf[921] = f[515] && f[466] && f[632] && f[329];
 	
-	// Classifier: 2 Iteration: 65
+	// Digit: 2, Tree: 65
 	assign leaf[922] = !f[154] && !f[133] && !f[219] && !f[213];
 	assign leaf[923] = !f[154] && !f[133] && !f[219] && f[213];
 	assign leaf[924] = !f[154] && !f[133] && f[219] && !f[603];
@@ -4052,7 +4052,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[935] = f[154] && f[625] && f[594] && !f[346];
 	assign leaf[936] = f[154] && f[625] && f[594] && f[346];
 	
-	// Classifier: 2 Iteration: 66
+	// Digit: 2, Tree: 66
 	assign leaf[937] = !f[242] && !f[183] && !f[326] && !f[240];
 	assign leaf[938] = !f[242] && !f[183] && !f[326] && f[240];
 	assign leaf[939] = !f[242] && !f[183] && f[326] && !f[269];
@@ -4070,7 +4070,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[951] = f[242] && f[184] && f[540] && !f[651];
 	assign leaf[952] = f[242] && f[184] && f[540] && f[651];
 	
-	// Classifier: 2 Iteration: 67
+	// Digit: 2, Tree: 67
 	assign leaf[953] = !f[485] && !f[403] && !f[512] && !f[257];
 	assign leaf[954] = !f[485] && !f[403] && !f[512] && f[257];
 	assign leaf[955] = !f[485] && !f[403] && f[512] && !f[459];
@@ -4086,7 +4086,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[965] = f[485] && f[690] && !f[187];
 	assign leaf[966] = f[485] && f[690] && f[187];
 	
-	// Classifier: 2 Iteration: 68
+	// Digit: 2, Tree: 68
 	assign leaf[967] = !f[323] && !f[261] && !f[292] && !f[399];
 	assign leaf[968] = !f[323] && !f[261] && !f[292] && f[399];
 	assign leaf[969] = !f[323] && !f[261] && f[292] && !f[322];
@@ -4104,7 +4104,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[981] = f[323] && f[217] && f[607] && !f[511];
 	assign leaf[982] = f[323] && f[217] && f[607] && f[511];
 	
-	// Classifier: 2 Iteration: 69
+	// Digit: 2, Tree: 69
 	assign leaf[983] = !f[570] && !f[480] && !f[525] && !f[415];
 	assign leaf[984] = !f[570] && !f[480] && !f[525] && f[415];
 	assign leaf[985] = !f[570] && !f[480] && f[525] && !f[607];
@@ -4121,7 +4121,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[996] = f[570] && f[453] && f[401] && !f[319];
 	assign leaf[997] = f[570] && f[453] && f[401] && f[319];
 	
-	// Classifier: 2 Iteration: 70
+	// Digit: 2, Tree: 70
 	assign leaf[998] = !f[104] && !f[546] && !f[602] && !f[101];
 	assign leaf[999] = !f[104] && !f[546] && !f[602] && f[101];
 	assign leaf[1000] = !f[104] && !f[546] && f[602] && !f[492];
@@ -4133,7 +4133,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1006] = f[104] && !f[432];
 	assign leaf[1007] = f[104] && f[432];
 	
-	// Classifier: 2 Iteration: 71
+	// Digit: 2, Tree: 71
 	assign leaf[1008] = !f[276] && !f[378] && !f[400] && !f[275];
 	assign leaf[1009] = !f[276] && !f[378] && !f[400] && f[275];
 	assign leaf[1010] = !f[276] && !f[378] && f[400] && !f[404];
@@ -4144,7 +4144,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1015] = !f[276] && f[378] && f[214] && f[100];
 	assign leaf[1016] = f[276];
 	
-	// Classifier: 2 Iteration: 72
+	// Digit: 2, Tree: 72
 	assign leaf[1017] = !f[712] && !f[677] && !f[322] && !f[657];
 	assign leaf[1018] = !f[712] && !f[677] && !f[322] && f[657];
 	assign leaf[1019] = !f[712] && !f[677] && f[322] && !f[325];
@@ -4153,7 +4153,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1022] = f[712] && !f[406];
 	assign leaf[1023] = f[712] && f[406];
 	
-	// Classifier: 2 Iteration: 73
+	// Digit: 2, Tree: 73
 	assign leaf[1024] = !f[219] && !f[514] && !f[460] && !f[715];
 	assign leaf[1025] = !f[219] && !f[514] && !f[460] && f[715];
 	assign leaf[1026] = !f[219] && !f[514] && f[460] && !f[509];
@@ -4167,7 +4167,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1034] = f[219] && f[622] && !f[603];
 	assign leaf[1035] = f[219] && f[622] && f[603];
 	
-	// Classifier: 2 Iteration: 74
+	// Digit: 2, Tree: 74
 	assign leaf[1036] = !f[411] && !f[173] && !f[356] && !f[463];
 	assign leaf[1037] = !f[411] && !f[173] && !f[356] && f[463];
 	assign leaf[1038] = !f[411] && !f[173] && f[356] && !f[463];
@@ -4184,7 +4184,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1049] = f[411] && f[493] && f[518] && !f[555];
 	assign leaf[1050] = f[411] && f[493] && f[518] && f[555];
 	
-	// Classifier: 2 Iteration: 75
+	// Digit: 2, Tree: 75
 	assign leaf[1051] = !f[715] && !f[718] && !f[547] && !f[603];
 	assign leaf[1052] = !f[715] && !f[718] && !f[547] && f[603];
 	assign leaf[1053] = !f[715] && !f[718] && f[547] && !f[636];
@@ -4196,7 +4196,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1059] = f[715] && f[576] && !f[295];
 	assign leaf[1060] = f[715] && f[576] && f[295];
 	
-	// Classifier: 2 Iteration: 76
+	// Digit: 2, Tree: 76
 	assign leaf[1061] = !f[258] && !f[636] && !f[553] && !f[470];
 	assign leaf[1062] = !f[258] && !f[636] && !f[553] && f[470];
 	assign leaf[1063] = !f[258] && !f[636] && f[553] && !f[607];
@@ -4211,7 +4211,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1072] = f[258] && !f[455] && f[635] && f[604];
 	assign leaf[1073] = f[258] && f[455];
 	
-	// Classifier: 2 Iteration: 77
+	// Digit: 2, Tree: 77
 	assign leaf[1074] = !f[125] && !f[546] && !f[657] && !f[688];
 	assign leaf[1075] = !f[125] && !f[546] && !f[657] && f[688];
 	assign leaf[1076] = !f[125] && !f[546] && f[657] && !f[376];
@@ -4229,7 +4229,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1088] = f[125] && f[240] && f[438] && !f[266];
 	assign leaf[1089] = f[125] && f[240] && f[438] && f[266];
 	
-	// Classifier: 2 Iteration: 78
+	// Digit: 2, Tree: 78
 	assign leaf[1090] = !f[501] && !f[570] && !f[539] && !f[356];
 	assign leaf[1091] = !f[501] && !f[570] && !f[539] && f[356];
 	assign leaf[1092] = !f[501] && !f[570] && f[539] && !f[459];
@@ -4241,7 +4241,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1098] = f[501] && !f[322];
 	assign leaf[1099] = f[501] && f[322];
 	
-	// Classifier: 2 Iteration: 79
+	// Digit: 2, Tree: 79
 	assign leaf[1100] = !f[622] && !f[216] && !f[102] && !f[633];
 	assign leaf[1101] = !f[622] && !f[216] && !f[102] && f[633];
 	assign leaf[1102] = !f[622] && !f[216] && f[102] && !f[601];
@@ -4257,7 +4257,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1112] = f[622] && f[634] && !f[271];
 	assign leaf[1113] = f[622] && f[634] && f[271];
 	
-	// Classifier: 2 Iteration: 80
+	// Digit: 2, Tree: 80
 	assign leaf[1114] = !f[677] && !f[659] && !f[689] && !f[684];
 	assign leaf[1115] = !f[677] && !f[659] && !f[689] && f[684];
 	assign leaf[1116] = !f[677] && !f[659] && f[689] && !f[572];
@@ -4268,7 +4268,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1121] = !f[677] && f[659] && f[465] && f[229];
 	assign leaf[1122] = f[677];
 	
-	// Classifier: 2 Iteration: 81
+	// Digit: 2, Tree: 81
 	assign leaf[1123] = !f[486] && !f[433] && !f[545] && !f[494];
 	assign leaf[1124] = !f[486] && !f[433] && !f[545] && f[494];
 	assign leaf[1125] = !f[486] && !f[433] && f[545] && !f[652];
@@ -4286,7 +4286,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1137] = f[486] && f[432] && f[207] && !f[567];
 	assign leaf[1138] = f[486] && f[432] && f[207] && f[567];
 	
-	// Classifier: 2 Iteration: 82
+	// Digit: 2, Tree: 82
 	assign leaf[1139] = !f[121] && !f[528] && !f[500] && !f[388];
 	assign leaf[1140] = !f[121] && !f[528] && !f[500] && f[388];
 	assign leaf[1141] = !f[121] && !f[528] && f[500] && !f[241];
@@ -4301,7 +4301,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1150] = f[121] && !f[289] && f[633] && f[498];
 	assign leaf[1151] = f[121] && f[289];
 	
-	// Classifier: 2 Iteration: 83
+	// Digit: 2, Tree: 83
 	assign leaf[1152] = !f[154] && !f[99] && !f[377] && !f[372];
 	assign leaf[1153] = !f[154] && !f[99] && !f[377] && f[372];
 	assign leaf[1154] = !f[154] && !f[99] && f[377] && !f[484];
@@ -4318,7 +4318,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1165] = f[154] && f[636] && f[524] && !f[662];
 	assign leaf[1166] = f[154] && f[636] && f[524] && f[662];
 	
-	// Classifier: 2 Iteration: 84
+	// Digit: 2, Tree: 84
 	assign leaf[1167] = !f[417] && !f[351] && !f[355] && !f[228];
 	assign leaf[1168] = !f[417] && !f[351] && !f[355] && f[228];
 	assign leaf[1169] = !f[417] && !f[351] && f[355] && !f[384];
@@ -4330,7 +4330,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1175] = f[417] && !f[240];
 	assign leaf[1176] = f[417] && f[240];
 	
-	// Classifier: 2 Iteration: 85
+	// Digit: 2, Tree: 85
 	assign leaf[1177] = !f[709] && !f[712] && !f[134] && !f[104];
 	assign leaf[1178] = !f[709] && !f[712] && !f[134] && f[104];
 	assign leaf[1179] = !f[709] && !f[712] && f[134] && !f[273];
@@ -4338,7 +4338,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1181] = !f[709] && f[712];
 	assign leaf[1182] = f[709];
 	
-	// Classifier: 2 Iteration: 86
+	// Digit: 2, Tree: 86
 	assign leaf[1183] = !f[374] && !f[125] && !f[209] && !f[326];
 	assign leaf[1184] = !f[374] && !f[125] && !f[209] && f[326];
 	assign leaf[1185] = !f[374] && !f[125] && f[209] && !f[599];
@@ -4355,7 +4355,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1196] = f[374] && f[398] && !f[323] && f[573];
 	assign leaf[1197] = f[374] && f[398] && f[323];
 	
-	// Classifier: 2 Iteration: 87
+	// Digit: 2, Tree: 87
 	assign leaf[1198] = !f[413] && !f[572] && !f[322] && !f[233];
 	assign leaf[1199] = !f[413] && !f[572] && !f[322] && f[233];
 	assign leaf[1200] = !f[413] && !f[572] && f[322] && !f[525];
@@ -4372,7 +4372,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1211] = f[413] && f[464] && f[490] && !f[242];
 	assign leaf[1212] = f[413] && f[464] && f[490] && f[242];
 	
-	// Classifier: 2 Iteration: 88
+	// Digit: 2, Tree: 88
 	assign leaf[1213] = !f[486] && !f[432] && !f[209] && !f[492];
 	assign leaf[1214] = !f[486] && !f[432] && !f[209] && f[492];
 	assign leaf[1215] = !f[486] && !f[432] && f[209] && !f[568];
@@ -4389,7 +4389,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1226] = f[486] && f[687] && !f[548] && f[690];
 	assign leaf[1227] = f[486] && f[687] && f[548];
 	
-	// Classifier: 2 Iteration: 89
+	// Digit: 2, Tree: 89
 	assign leaf[1228] = !f[679] && !f[369] && !f[425] && !f[401];
 	assign leaf[1229] = !f[679] && !f[369] && !f[425] && f[401];
 	assign leaf[1230] = !f[679] && !f[369] && f[425] && !f[401];
@@ -4402,7 +4402,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1237] = f[679] && f[568] && !f[189];
 	assign leaf[1238] = f[679] && f[568] && f[189];
 	
-	// Classifier: 2 Iteration: 90
+	// Digit: 2, Tree: 90
 	assign leaf[1239] = !f[570] && !f[480] && !f[268] && !f[180];
 	assign leaf[1240] = !f[570] && !f[480] && !f[268] && f[180];
 	assign leaf[1241] = !f[570] && !f[480] && f[268] && !f[458];
@@ -4418,7 +4418,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1251] = f[570] && f[655] && f[403] && !f[484];
 	assign leaf[1252] = f[570] && f[655] && f[403] && f[484];
 	
-	// Classifier: 2 Iteration: 91
+	// Digit: 2, Tree: 91
 	assign leaf[1253] = !f[512] && !f[575] && !f[714] && !f[654];
 	assign leaf[1254] = !f[512] && !f[575] && !f[714] && f[654];
 	assign leaf[1255] = !f[512] && !f[575] && f[714];
@@ -4435,7 +4435,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1266] = f[512] && f[433] && f[457] && !f[245];
 	assign leaf[1267] = f[512] && f[433] && f[457] && f[245];
 	
-	// Classifier: 2 Iteration: 92
+	// Digit: 2, Tree: 92
 	assign leaf[1268] = !f[455] && !f[611] && !f[430] && !f[346];
 	assign leaf[1269] = !f[455] && !f[611] && !f[430] && f[346];
 	assign leaf[1270] = !f[455] && !f[611] && f[430] && !f[484];
@@ -4451,7 +4451,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1280] = f[455] && f[261] && f[566] && !f[158];
 	assign leaf[1281] = f[455] && f[261] && f[566] && f[158];
 	
-	// Classifier: 2 Iteration: 93
+	// Digit: 2, Tree: 93
 	assign leaf[1282] = !f[598] && !f[655] && !f[208] && !f[635];
 	assign leaf[1283] = !f[598] && !f[655] && !f[208] && f[635];
 	assign leaf[1284] = !f[598] && !f[655] && f[208] && !f[238];
@@ -4468,7 +4468,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1295] = f[598] && f[179] && f[268] && !f[432];
 	assign leaf[1296] = f[598] && f[179] && f[268] && f[432];
 	
-	// Classifier: 2 Iteration: 94
+	// Digit: 2, Tree: 94
 	assign leaf[1297] = !f[397] && !f[154] && !f[374] && !f[493];
 	assign leaf[1298] = !f[397] && !f[154] && !f[374] && f[493];
 	assign leaf[1299] = !f[397] && !f[154] && f[374] && !f[182];
@@ -4482,7 +4482,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1307] = f[397] && f[426] && !f[375];
 	assign leaf[1308] = f[397] && f[426] && f[375];
 	
-	// Classifier: 2 Iteration: 95
+	// Digit: 2, Tree: 95
 	assign leaf[1309] = !f[513] && !f[259] && !f[580] && !f[662];
 	assign leaf[1310] = !f[513] && !f[259] && !f[580] && f[662];
 	assign leaf[1311] = !f[513] && !f[259] && f[580] && !f[497];
@@ -4499,7 +4499,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1322] = f[513] && f[287] && !f[595] && f[579];
 	assign leaf[1323] = f[513] && f[287] && f[595];
 	
-	// Classifier: 2 Iteration: 96
+	// Digit: 2, Tree: 96
 	assign leaf[1324] = !f[715] && !f[121] && !f[570] && !f[296];
 	assign leaf[1325] = !f[715] && !f[121] && !f[570] && f[296];
 	assign leaf[1326] = !f[715] && !f[121] && f[570] && !f[400];
@@ -4511,7 +4511,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1332] = f[715] && !f[494] && f[178];
 	assign leaf[1333] = f[715] && f[494];
 	
-	// Classifier: 2 Iteration: 97
+	// Digit: 2, Tree: 97
 	assign leaf[1334] = !f[94] && !f[133] && !f[543] && !f[554];
 	assign leaf[1335] = !f[94] && !f[133] && !f[543] && f[554];
 	assign leaf[1336] = !f[94] && !f[133] && f[543] && !f[570];
@@ -4523,7 +4523,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1342] = f[94] && !f[149];
 	assign leaf[1343] = f[94] && f[149];
 	
-	// Classifier: 2 Iteration: 98
+	// Digit: 2, Tree: 98
 	assign leaf[1344] = !f[487] && !f[433] && !f[174] && !f[653];
 	assign leaf[1345] = !f[487] && !f[433] && !f[174] && f[653];
 	assign leaf[1346] = !f[487] && !f[433] && f[174] && !f[609];
@@ -4541,7 +4541,7 @@ module decision_tree_leaves_2(input logic [0:783] f, output logic [0:1374] leaf)
 	assign leaf[1358] = f[487] && f[630] && f[492] && !f[385];
 	assign leaf[1359] = f[487] && f[630] && f[492] && f[385];
 	
-	// Classifier: 2 Iteration: 99
+	// Digit: 2, Tree: 99
 	assign leaf[1360] = !f[266] && !f[317] && !f[715] && !f[513];
 	assign leaf[1361] = !f[266] && !f[317] && !f[715] && f[513];
 	assign leaf[1362] = !f[266] && !f[317] && f[715];
@@ -4564,7 +4564,7 @@ endmodule
 
 
 module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf);
-	// Classifier: 3 Iteration: 0
+	// Digit: 3, Tree: 0
 	assign leaf[0] = !f[350] && !f[378] && !f[322] && !f[428];
 	assign leaf[1] = !f[350] && !f[378] && !f[322] && f[428];
 	assign leaf[2] = !f[350] && !f[378] && f[322] && !f[151];
@@ -4582,7 +4582,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[14] = f[350] && f[489] && f[517] && !f[536];
 	assign leaf[15] = f[350] && f[489] && f[517] && f[536];
 	
-	// Classifier: 3 Iteration: 1
+	// Digit: 3, Tree: 1
 	assign leaf[16] = !f[151] && !f[622] && !f[179] && !f[564];
 	assign leaf[17] = !f[151] && !f[622] && !f[179] && f[564];
 	assign leaf[18] = !f[151] && !f[622] && f[179] && !f[317];
@@ -4600,7 +4600,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[30] = f[151] && f[514] && f[321] && !f[459];
 	assign leaf[31] = f[151] && f[514] && f[321] && f[459];
 	
-	// Classifier: 3 Iteration: 2
+	// Digit: 3, Tree: 2
 	assign leaf[32] = !f[350] && !f[378] && !f[322] && !f[406];
 	assign leaf[33] = !f[350] && !f[378] && !f[322] && f[406];
 	assign leaf[34] = !f[350] && !f[378] && f[322] && !f[153];
@@ -4618,7 +4618,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[46] = f[350] && f[517] && f[462] && !f[594];
 	assign leaf[47] = f[350] && f[517] && f[462] && f[594];
 	
-	// Classifier: 3 Iteration: 3
+	// Digit: 3, Tree: 3
 	assign leaf[48] = !f[490] && !f[317] && !f[487] && !f[291];
 	assign leaf[49] = !f[490] && !f[317] && !f[487] && f[291];
 	assign leaf[50] = !f[490] && !f[317] && f[487] && !f[515];
@@ -4636,7 +4636,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[62] = f[490] && f[178] && f[657] && !f[545];
 	assign leaf[63] = f[490] && f[178] && f[657] && f[545];
 	
-	// Classifier: 3 Iteration: 4
+	// Digit: 3, Tree: 4
 	assign leaf[64] = !f[518] && !f[316] && !f[291] && !f[515];
 	assign leaf[65] = !f[518] && !f[316] && !f[291] && f[515];
 	assign leaf[66] = !f[518] && !f[316] && f[291] && !f[176];
@@ -4654,7 +4654,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[78] = f[518] && f[624] && f[351] && !f[485];
 	assign leaf[79] = f[518] && f[624] && f[351] && f[485];
 	
-	// Classifier: 3 Iteration: 5
+	// Digit: 3, Tree: 5
 	assign leaf[80] = !f[152] && !f[180] && !f[563] && !f[507];
 	assign leaf[81] = !f[152] && !f[180] && !f[563] && f[507];
 	assign leaf[82] = !f[152] && !f[180] && f[563] && !f[482];
@@ -4672,7 +4672,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[94] = f[152] && f[485] && f[295] && !f[431];
 	assign leaf[95] = f[152] && f[485] && f[295] && f[431];
 	
-	// Classifier: 3 Iteration: 6
+	// Digit: 3, Tree: 6
 	assign leaf[96] = !f[490] && !f[343] && !f[485] && !f[263];
 	assign leaf[97] = !f[490] && !f[343] && !f[485] && f[263];
 	assign leaf[98] = !f[490] && !f[343] && f[485] && !f[203];
@@ -4690,7 +4690,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[110] = f[490] && f[324] && f[181] && !f[654];
 	assign leaf[111] = f[490] && f[324] && f[181] && f[654];
 	
-	// Classifier: 3 Iteration: 7
+	// Digit: 3, Tree: 7
 	assign leaf[112] = !f[177] && !f[623] && !f[122] && !f[678];
 	assign leaf[113] = !f[177] && !f[623] && !f[122] && f[678];
 	assign leaf[114] = !f[177] && !f[623] && f[122] && !f[629];
@@ -4708,7 +4708,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[126] = f[177] && f[288] && f[264] && !f[371];
 	assign leaf[127] = f[177] && f[288] && f[264] && f[371];
 	
-	// Classifier: 3 Iteration: 8
+	// Digit: 3, Tree: 8
 	assign leaf[128] = !f[655] && !f[710] && !f[627] && !f[175];
 	assign leaf[129] = !f[655] && !f[710] && !f[627] && f[175];
 	assign leaf[130] = !f[655] && !f[710] && f[627] && !f[457];
@@ -4725,7 +4725,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[141] = f[655] && f[517] && f[603] && !f[290];
 	assign leaf[142] = f[655] && f[517] && f[603] && f[290];
 	
-	// Classifier: 3 Iteration: 9
+	// Digit: 3, Tree: 9
 	assign leaf[143] = !f[518] && !f[344] && !f[516] && !f[485];
 	assign leaf[144] = !f[518] && !f[344] && !f[516] && f[485];
 	assign leaf[145] = !f[518] && !f[344] && f[516] && !f[488];
@@ -4743,7 +4743,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[157] = f[518] && f[463] && f[623] && !f[352];
 	assign leaf[158] = f[518] && f[463] && f[623] && f[352];
 	
-	// Classifier: 3 Iteration: 10
+	// Digit: 3, Tree: 10
 	assign leaf[159] = !f[655] && !f[400] && !f[495] && !f[469];
 	assign leaf[160] = !f[655] && !f[400] && !f[495] && f[469];
 	assign leaf[161] = !f[655] && !f[400] && f[495] && !f[458];
@@ -4761,7 +4761,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[173] = f[655] && f[291] && f[149] && !f[261];
 	assign leaf[174] = f[655] && f[291] && f[149] && f[261];
 	
-	// Classifier: 3 Iteration: 11
+	// Digit: 3, Tree: 11
 	assign leaf[175] = !f[428] && !f[523] && !f[565] && !f[181];
 	assign leaf[176] = !f[428] && !f[523] && !f[565] && f[181];
 	assign leaf[177] = !f[428] && !f[523] && f[565] && !f[353];
@@ -4779,7 +4779,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[189] = f[428] && f[680] && f[318] && !f[204];
 	assign leaf[190] = f[428] && f[680] && f[318] && f[204];
 	
-	// Classifier: 3 Iteration: 12
+	// Digit: 3, Tree: 12
 	assign leaf[191] = !f[371] && !f[291] && !f[182] && !f[578];
 	assign leaf[192] = !f[371] && !f[291] && !f[182] && f[578];
 	assign leaf[193] = !f[371] && !f[291] && f[182] && !f[317];
@@ -4797,7 +4797,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[205] = f[371] && f[320] && f[151] && !f[260];
 	assign leaf[206] = f[371] && f[320] && f[151] && f[260];
 	
-	// Classifier: 3 Iteration: 13
+	// Digit: 3, Tree: 13
 	assign leaf[207] = !f[456] && !f[518] && !f[515] && !f[342];
 	assign leaf[208] = !f[456] && !f[518] && !f[515] && f[342];
 	assign leaf[209] = !f[456] && !f[518] && f[515] && !f[460];
@@ -4814,7 +4814,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[220] = f[456] && f[678] && !f[292] && f[322];
 	assign leaf[221] = f[456] && f[678] && f[292];
 	
-	// Classifier: 3 Iteration: 14
+	// Digit: 3, Tree: 14
 	assign leaf[222] = !f[351] && !f[546] && !f[294] && !f[682];
 	assign leaf[223] = !f[351] && !f[546] && !f[294] && f[682];
 	assign leaf[224] = !f[351] && !f[546] && f[294] && !f[298];
@@ -4832,7 +4832,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[236] = f[351] && f[269] && f[183] && !f[514];
 	assign leaf[237] = f[351] && f[269] && f[183] && f[514];
 	
-	// Classifier: 3 Iteration: 15
+	// Digit: 3, Tree: 15
 	assign leaf[238] = !f[429] && !f[495] && !f[469] && !f[521];
 	assign leaf[239] = !f[429] && !f[495] && !f[469] && f[521];
 	assign leaf[240] = !f[429] && !f[495] && f[469] && !f[265];
@@ -4850,7 +4850,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[252] = f[429] && f[511] && f[453] && !f[464];
 	assign leaf[253] = f[429] && f[511] && f[453] && f[464];
 	
-	// Classifier: 3 Iteration: 16
+	// Digit: 3, Tree: 16
 	assign leaf[254] = !f[372] && !f[212] && !f[173] && !f[487];
 	assign leaf[255] = !f[372] && !f[212] && !f[173] && f[487];
 	assign leaf[256] = !f[372] && !f[212] && f[173] && !f[493];
@@ -4868,7 +4868,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[268] = f[372] && f[321] && f[455] && !f[202];
 	assign leaf[269] = f[372] && f[321] && f[455] && f[202];
 	
-	// Classifier: 3 Iteration: 17
+	// Digit: 3, Tree: 17
 	assign leaf[270] = !f[427] && !f[202] && !f[292] && !f[317];
 	assign leaf[271] = !f[427] && !f[202] && !f[292] && f[317];
 	assign leaf[272] = !f[427] && !f[202] && f[292] && !f[267];
@@ -4886,7 +4886,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[284] = f[427] && f[357] && f[189] && !f[400];
 	assign leaf[285] = f[427] && f[357] && f[189] && f[400];
 	
-	// Classifier: 3 Iteration: 18
+	// Digit: 3, Tree: 18
 	assign leaf[286] = !f[551] && !f[184] && !f[581] && !f[373];
 	assign leaf[287] = !f[551] && !f[184] && !f[581] && f[373];
 	assign leaf[288] = !f[551] && !f[184] && f[581] && !f[265];
@@ -4904,7 +4904,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[300] = f[551] && f[371] && f[347] && !f[482];
 	assign leaf[301] = f[551] && f[371] && f[347] && f[482];
 	
-	// Classifier: 3 Iteration: 19
+	// Digit: 3, Tree: 19
 	assign leaf[302] = !f[373] && !f[536] && !f[682] && !f[123];
 	assign leaf[303] = !f[373] && !f[536] && !f[682] && f[123];
 	assign leaf[304] = !f[373] && !f[536] && f[682] && !f[570];
@@ -4922,7 +4922,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[316] = f[373] && f[321] && f[152] && !f[289];
 	assign leaf[317] = f[373] && f[321] && f[152] && f[289];
 	
-	// Classifier: 3 Iteration: 20
+	// Digit: 3, Tree: 20
 	assign leaf[318] = !f[578] && !f[457] && !f[625] && !f[679];
 	assign leaf[319] = !f[578] && !f[457] && !f[625] && f[679];
 	assign leaf[320] = !f[578] && !f[457] && f[625] && !f[487];
@@ -4940,7 +4940,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[332] = f[578] && f[712] && f[461] && !f[206];
 	assign leaf[333] = f[578] && f[712] && f[461] && f[206];
 	
-	// Classifier: 3 Iteration: 21
+	// Digit: 3, Tree: 21
 	assign leaf[334] = !f[429] && !f[537] && !f[544] && !f[240];
 	assign leaf[335] = !f[429] && !f[537] && !f[544] && f[240];
 	assign leaf[336] = !f[429] && !f[537] && f[544] && !f[489];
@@ -4957,7 +4957,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[347] = f[429] && f[512] && !f[425] && f[484];
 	assign leaf[348] = f[429] && f[512] && f[425];
 	
-	// Classifier: 3 Iteration: 22
+	// Digit: 3, Tree: 22
 	assign leaf[349] = !f[373] && !f[320] && !f[406] && !f[323];
 	assign leaf[350] = !f[373] && !f[320] && !f[406] && f[323];
 	assign leaf[351] = !f[373] && !f[320] && f[406] && !f[353];
@@ -4975,7 +4975,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[363] = f[373] && f[321] && f[327] && !f[455];
 	assign leaf[364] = f[373] && f[321] && f[327] && f[455];
 	
-	// Classifier: 3 Iteration: 23
+	// Digit: 3, Tree: 23
 	assign leaf[365] = !f[386] && !f[485] && !f[654] && !f[569];
 	assign leaf[366] = !f[386] && !f[485] && !f[654] && f[569];
 	assign leaf[367] = !f[386] && !f[485] && f[654] && !f[543];
@@ -4990,7 +4990,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[376] = f[386] && f[355] && f[294] && !f[150];
 	assign leaf[377] = f[386] && f[355] && f[294] && f[150];
 	
-	// Classifier: 3 Iteration: 24
+	// Digit: 3, Tree: 24
 	assign leaf[378] = !f[357] && !f[123] && !f[682] && !f[202];
 	assign leaf[379] = !f[357] && !f[123] && !f[682] && f[202];
 	assign leaf[380] = !f[357] && !f[123] && f[682] && !f[572];
@@ -5007,7 +5007,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[391] = f[357] && f[355] && f[399] && !f[160];
 	assign leaf[392] = f[357] && f[355] && f[399] && f[160];
 	
-	// Classifier: 3 Iteration: 25
+	// Digit: 3, Tree: 25
 	assign leaf[393] = !f[429] && !f[124] && !f[406] && !f[465];
 	assign leaf[394] = !f[429] && !f[124] && !f[406] && f[465];
 	assign leaf[395] = !f[429] && !f[124] && f[406] && !f[347];
@@ -5025,7 +5025,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[407] = f[429] && f[511] && f[425] && !f[572];
 	assign leaf[408] = f[429] && f[511] && f[425] && f[572];
 	
-	// Classifier: 3 Iteration: 26
+	// Digit: 3, Tree: 26
 	assign leaf[409] = !f[712] && !f[120] && !f[242] && !f[239];
 	assign leaf[410] = !f[712] && !f[120] && !f[242] && f[239];
 	assign leaf[411] = !f[712] && !f[120] && f[242] && !f[157];
@@ -5043,7 +5043,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[423] = f[712] && f[601] && f[659] && !f[374];
 	assign leaf[424] = f[712] && f[601] && f[659] && f[374];
 	
-	// Classifier: 3 Iteration: 27
+	// Digit: 3, Tree: 27
 	assign leaf[425] = !f[200] && !f[373] && !f[320] && !f[681];
 	assign leaf[426] = !f[200] && !f[373] && !f[320] && f[681];
 	assign leaf[427] = !f[200] && !f[373] && f[320] && !f[267];
@@ -5058,7 +5058,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[436] = f[200] && !f[314] && f[298] && f[547];
 	assign leaf[437] = f[200] && f[314];
 	
-	// Classifier: 3 Iteration: 28
+	// Digit: 3, Tree: 28
 	assign leaf[438] = !f[429] && !f[98] && !f[467] && !f[571];
 	assign leaf[439] = !f[429] && !f[98] && !f[467] && f[571];
 	assign leaf[440] = !f[429] && !f[98] && f[467] && !f[407];
@@ -5076,7 +5076,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[452] = f[429] && f[512] && f[453] && !f[432];
 	assign leaf[453] = f[429] && f[512] && f[453] && f[432];
 	
-	// Classifier: 3 Iteration: 29
+	// Digit: 3, Tree: 29
 	assign leaf[454] = !f[678] && !f[147] && !f[318] && !f[292];
 	assign leaf[455] = !f[678] && !f[147] && !f[318] && f[292];
 	assign leaf[456] = !f[678] && !f[147] && f[318] && !f[293];
@@ -5092,7 +5092,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[466] = f[678] && f[568] && !f[514];
 	assign leaf[467] = f[678] && f[568] && f[514];
 	
-	// Classifier: 3 Iteration: 30
+	// Digit: 3, Tree: 30
 	assign leaf[468] = !f[429] && !f[549] && !f[487] && !f[553];
 	assign leaf[469] = !f[429] && !f[549] && !f[487] && f[553];
 	assign leaf[470] = !f[429] && !f[549] && f[487] && !f[716];
@@ -5110,7 +5110,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[482] = f[429] && f[433] && f[580] && !f[370];
 	assign leaf[483] = f[429] && f[433] && f[580] && f[370];
 	
-	// Classifier: 3 Iteration: 31
+	// Digit: 3, Tree: 31
 	assign leaf[484] = !f[399] && !f[536] && !f[551] && !f[125];
 	assign leaf[485] = !f[399] && !f[536] && !f[551] && f[125];
 	assign leaf[486] = !f[399] && !f[536] && f[551] && !f[238];
@@ -5128,7 +5128,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[498] = f[399] && f[294] && f[288] && !f[516];
 	assign leaf[499] = f[399] && f[294] && f[288] && f[516];
 	
-	// Classifier: 3 Iteration: 32
+	// Digit: 3, Tree: 32
 	assign leaf[500] = !f[370] && !f[346] && !f[320] && !f[372];
 	assign leaf[501] = !f[370] && !f[346] && !f[320] && f[372];
 	assign leaf[502] = !f[370] && !f[346] && f[320] && !f[292];
@@ -5143,7 +5143,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[511] = f[370] && !f[711] && f[314] && f[284];
 	assign leaf[512] = f[370] && f[711];
 	
-	// Classifier: 3 Iteration: 33
+	// Digit: 3, Tree: 33
 	assign leaf[513] = !f[712] && !f[535] && !f[657] && !f[458];
 	assign leaf[514] = !f[712] && !f[535] && !f[657] && f[458];
 	assign leaf[515] = !f[712] && !f[535] && f[657] && !f[709];
@@ -5161,7 +5161,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[527] = f[712] && f[573] && f[488] && !f[599];
 	assign leaf[528] = f[712] && f[573] && f[488] && f[599];
 	
-	// Classifier: 3 Iteration: 34
+	// Digit: 3, Tree: 34
 	assign leaf[529] = !f[712] && !f[649] && !f[173] && !f[480];
 	assign leaf[530] = !f[712] && !f[649] && !f[173] && f[480];
 	assign leaf[531] = !f[712] && !f[649] && f[173] && !f[553];
@@ -5178,7 +5178,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[542] = f[712] && f[600] && !f[287] && f[328];
 	assign leaf[543] = f[712] && f[600] && f[287];
 	
-	// Classifier: 3 Iteration: 35
+	// Digit: 3, Tree: 35
 	assign leaf[544] = !f[373] && !f[523] && !f[320] && !f[327];
 	assign leaf[545] = !f[373] && !f[523] && !f[320] && f[327];
 	assign leaf[546] = !f[373] && !f[523] && f[320] && !f[126];
@@ -5196,7 +5196,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[558] = f[373] && f[288] && f[264] && !f[469];
 	assign leaf[559] = f[373] && f[288] && f[264] && f[469];
 	
-	// Classifier: 3 Iteration: 36
+	// Digit: 3, Tree: 36
 	assign leaf[560] = !f[386] && !f[269] && !f[129] && !f[491];
 	assign leaf[561] = !f[386] && !f[269] && !f[129] && f[491];
 	assign leaf[562] = !f[386] && !f[269] && f[129] && !f[272];
@@ -5211,7 +5211,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[571] = f[386] && f[354] && f[149] && !f[267];
 	assign leaf[572] = f[386] && f[354] && f[149] && f[267];
 	
-	// Classifier: 3 Iteration: 37
+	// Digit: 3, Tree: 37
 	assign leaf[573] = !f[708] && !f[550] && !f[553] && !f[98];
 	assign leaf[574] = !f[708] && !f[550] && !f[553] && f[98];
 	assign leaf[575] = !f[708] && !f[550] && f[553] && !f[547];
@@ -5228,7 +5228,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[586] = f[708] && f[576] && f[376] && !f[380];
 	assign leaf[587] = f[708] && f[576] && f[376] && f[380];
 	
-	// Classifier: 3 Iteration: 38
+	// Digit: 3, Tree: 38
 	assign leaf[588] = !f[457] && !f[96] && !f[406] && !f[461];
 	assign leaf[589] = !f[457] && !f[96] && !f[406] && f[461];
 	assign leaf[590] = !f[457] && !f[96] && f[406] && !f[300];
@@ -5246,7 +5246,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[602] = f[457] && f[235] && f[406] && !f[346];
 	assign leaf[603] = f[457] && f[235] && f[406] && f[346];
 	
-	// Classifier: 3 Iteration: 39
+	// Digit: 3, Tree: 39
 	assign leaf[604] = !f[358] && !f[486] && !f[456] && !f[595];
 	assign leaf[605] = !f[358] && !f[486] && !f[456] && f[595];
 	assign leaf[606] = !f[358] && !f[486] && f[456] && !f[299];
@@ -5261,7 +5261,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[615] = f[358] && f[291] && !f[582] && f[319];
 	assign leaf[616] = f[358] && f[291] && f[582];
 	
-	// Classifier: 3 Iteration: 40
+	// Digit: 3, Tree: 40
 	assign leaf[617] = !f[210] && !f[234] && !f[156] && !f[525];
 	assign leaf[618] = !f[210] && !f[234] && !f[156] && f[525];
 	assign leaf[619] = !f[210] && !f[234] && f[156] && !f[236];
@@ -5279,7 +5279,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[631] = f[210] && f[346] && f[442] && !f[314];
 	assign leaf[632] = f[210] && f[346] && f[442] && f[314];
 	
-	// Classifier: 3 Iteration: 41
+	// Digit: 3, Tree: 41
 	assign leaf[633] = !f[269] && !f[513] && !f[497] && !f[299];
 	assign leaf[634] = !f[269] && !f[513] && !f[497] && f[299];
 	assign leaf[635] = !f[269] && !f[513] && f[497] && !f[265];
@@ -5296,7 +5296,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[646] = f[269] && f[341] && f[656] && !f[399];
 	assign leaf[647] = f[269] && f[341] && f[656] && f[399];
 	
-	// Classifier: 3 Iteration: 42
+	// Digit: 3, Tree: 42
 	assign leaf[648] = !f[371] && !f[211] && !f[235] && !f[156];
 	assign leaf[649] = !f[371] && !f[211] && !f[235] && f[156];
 	assign leaf[650] = !f[371] && !f[211] && f[235] && !f[202];
@@ -5313,7 +5313,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[661] = f[371] && f[315] && f[232] && !f[689];
 	assign leaf[662] = f[371] && f[315] && f[232] && f[689];
 	
-	// Classifier: 3 Iteration: 43
+	// Digit: 3, Tree: 43
 	assign leaf[663] = !f[708] && !f[120] && !f[318] && !f[344];
 	assign leaf[664] = !f[708] && !f[120] && !f[318] && f[344];
 	assign leaf[665] = !f[708] && !f[120] && f[318] && !f[293];
@@ -5329,7 +5329,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[675] = f[708] && f[599] && !f[602];
 	assign leaf[676] = f[708] && f[599] && f[602];
 	
-	// Classifier: 3 Iteration: 44
+	// Digit: 3, Tree: 44
 	assign leaf[677] = !f[427] && !f[486] && !f[124] && !f[554];
 	assign leaf[678] = !f[427] && !f[486] && !f[124] && f[554];
 	assign leaf[679] = !f[427] && !f[486] && f[124] && !f[207];
@@ -5346,7 +5346,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[690] = f[427] && f[158] && f[356] && !f[486];
 	assign leaf[691] = f[427] && f[158] && f[356] && f[486];
 	
-	// Classifier: 3 Iteration: 45
+	// Digit: 3, Tree: 45
 	assign leaf[692] = !f[451] && !f[133] && !f[591] && !f[210];
 	assign leaf[693] = !f[451] && !f[133] && !f[591] && f[210];
 	assign leaf[694] = !f[451] && !f[133] && f[591] && !f[404];
@@ -5359,7 +5359,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[701] = f[451] && f[352] && !f[159];
 	assign leaf[702] = f[451] && f[352] && f[159];
 	
-	// Classifier: 3 Iteration: 46
+	// Digit: 3, Tree: 46
 	assign leaf[703] = !f[458] && !f[566] && !f[266] && !f[355];
 	assign leaf[704] = !f[458] && !f[566] && !f[266] && f[355];
 	assign leaf[705] = !f[458] && !f[566] && f[266] && !f[468];
@@ -5377,7 +5377,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[717] = f[458] && f[489] && f[605] && !f[346];
 	assign leaf[718] = f[458] && f[489] && f[605] && f[346];
 	
-	// Classifier: 3 Iteration: 47
+	// Digit: 3, Tree: 47
 	assign leaf[719] = !f[712] && !f[377] && !f[537] && !f[571];
 	assign leaf[720] = !f[712] && !f[377] && !f[537] && f[571];
 	assign leaf[721] = !f[712] && !f[377] && f[537] && !f[209];
@@ -5393,7 +5393,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[731] = f[712] && f[600] && !f[317];
 	assign leaf[732] = f[712] && f[600] && f[317];
 	
-	// Classifier: 3 Iteration: 48
+	// Digit: 3, Tree: 48
 	assign leaf[733] = !f[161] && !f[655] && !f[464] && !f[548];
 	assign leaf[734] = !f[161] && !f[655] && !f[464] && f[548];
 	assign leaf[735] = !f[161] && !f[655] && f[464] && !f[547];
@@ -5410,7 +5410,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[746] = f[161] && f[272] && f[326] && !f[460];
 	assign leaf[747] = f[161] && f[272] && f[326] && f[460];
 	
-	// Classifier: 3 Iteration: 49
+	// Digit: 3, Tree: 49
 	assign leaf[748] = !f[228] && !f[406] && !f[96] && !f[436];
 	assign leaf[749] = !f[228] && !f[406] && !f[96] && f[436];
 	assign leaf[750] = !f[228] && !f[406] && f[96] && !f[431];
@@ -5427,7 +5427,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[761] = f[228] && f[375] && !f[344] && f[293];
 	assign leaf[762] = f[228] && f[375] && f[344];
 	
-	// Classifier: 3 Iteration: 50
+	// Digit: 3, Tree: 50
 	assign leaf[763] = !f[429] && !f[544] && !f[489] && !f[459];
 	assign leaf[764] = !f[429] && !f[544] && !f[489] && f[459];
 	assign leaf[765] = !f[429] && !f[544] && f[489] && !f[460];
@@ -5445,7 +5445,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[777] = f[429] && f[460] && f[349] && !f[657];
 	assign leaf[778] = f[429] && f[460] && f[349] && f[657];
 	
-	// Classifier: 3 Iteration: 51
+	// Digit: 3, Tree: 51
 	assign leaf[779] = !f[373] && !f[316] && !f[718] && !f[689];
 	assign leaf[780] = !f[373] && !f[316] && !f[718] && f[689];
 	assign leaf[781] = !f[373] && !f[316] && f[718] && !f[460];
@@ -5463,7 +5463,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[793] = f[373] && f[289] && f[264] && !f[183];
 	assign leaf[794] = f[373] && f[289] && f[264] && f[183];
 	
-	// Classifier: 3 Iteration: 52
+	// Digit: 3, Tree: 52
 	assign leaf[795] = !f[401] && !f[716] && !f[459] && !f[537];
 	assign leaf[796] = !f[401] && !f[716] && !f[459] && f[537];
 	assign leaf[797] = !f[401] && !f[716] && f[459] && !f[570];
@@ -5481,7 +5481,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[809] = f[401] && f[482] && f[538] && !f[541];
 	assign leaf[810] = f[401] && f[482] && f[538] && f[541];
 	
-	// Classifier: 3 Iteration: 53
+	// Digit: 3, Tree: 53
 	assign leaf[811] = !f[708] && !f[386] && !f[269] && !f[239];
 	assign leaf[812] = !f[708] && !f[386] && !f[269] && f[239];
 	assign leaf[813] = !f[708] && !f[386] && f[269] && !f[101];
@@ -5495,7 +5495,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[821] = f[708] && f[599] && !f[602];
 	assign leaf[822] = f[708] && f[599] && f[602];
 	
-	// Classifier: 3 Iteration: 54
+	// Digit: 3, Tree: 54
 	assign leaf[823] = !f[712] && !f[370] && !f[480] && !f[678];
 	assign leaf[824] = !f[712] && !f[370] && !f[480] && f[678];
 	assign leaf[825] = !f[712] && !f[370] && f[480] && !f[545];
@@ -5513,7 +5513,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[837] = f[712] && f[231] && f[465] && !f[578];
 	assign leaf[838] = f[712] && f[231] && f[465] && f[578];
 	
-	// Classifier: 3 Iteration: 55
+	// Digit: 3, Tree: 55
 	assign leaf[839] = !f[241] && !f[203] && !f[147] && !f[244];
 	assign leaf[840] = !f[241] && !f[203] && !f[147] && f[244];
 	assign leaf[841] = !f[241] && !f[203] && f[147] && !f[264];
@@ -5531,7 +5531,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[853] = f[241] && f[347] && f[264] && !f[295];
 	assign leaf[854] = f[241] && f[347] && f[264] && f[295];
 	
-	// Classifier: 3 Iteration: 56
+	// Digit: 3, Tree: 56
 	assign leaf[855] = !f[369] && !f[402] && !f[544] && !f[211];
 	assign leaf[856] = !f[369] && !f[402] && !f[544] && f[211];
 	assign leaf[857] = !f[369] && !f[402] && f[544] && !f[547];
@@ -5546,7 +5546,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[866] = f[369] && f[544] && !f[234];
 	assign leaf[867] = f[369] && f[544] && f[234];
 	
-	// Classifier: 3 Iteration: 57
+	// Digit: 3, Tree: 57
 	assign leaf[868] = !f[708] && !f[357] && !f[190] && !f[649];
 	assign leaf[869] = !f[708] && !f[357] && !f[190] && f[649];
 	assign leaf[870] = !f[708] && !f[357] && f[190] && !f[355];
@@ -5561,7 +5561,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[879] = f[708] && f[599] && !f[602];
 	assign leaf[880] = f[708] && f[599] && f[602];
 	
-	// Classifier: 3 Iteration: 58
+	// Digit: 3, Tree: 58
 	assign leaf[881] = !f[384] && !f[495] && !f[293] && !f[298];
 	assign leaf[882] = !f[384] && !f[495] && !f[293] && f[298];
 	assign leaf[883] = !f[384] && !f[495] && f[293] && !f[319];
@@ -5578,7 +5578,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[894] = f[384] && f[438] && f[517] && !f[126];
 	assign leaf[895] = f[384] && f[438] && f[517] && f[126];
 	
-	// Classifier: 3 Iteration: 59
+	// Digit: 3, Tree: 59
 	assign leaf[896] = !f[492] && !f[547] && !f[517] && !f[407];
 	assign leaf[897] = !f[492] && !f[547] && !f[517] && f[407];
 	assign leaf[898] = !f[492] && !f[547] && f[517] && !f[572];
@@ -5596,7 +5596,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[910] = f[492] && f[438] && f[295] && !f[155];
 	assign leaf[911] = f[492] && f[438] && f[295] && f[155];
 	
-	// Classifier: 3 Iteration: 60
+	// Digit: 3, Tree: 60
 	assign leaf[912] = !f[429] && !f[127] && !f[209] && !f[173];
 	assign leaf[913] = !f[429] && !f[127] && !f[209] && f[173];
 	assign leaf[914] = !f[429] && !f[127] && f[209] && !f[320];
@@ -5614,7 +5614,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[926] = f[429] && f[544] && f[687] && !f[327];
 	assign leaf[927] = f[429] && f[544] && f[687] && f[327];
 	
-	// Classifier: 3 Iteration: 61
+	// Digit: 3, Tree: 61
 	assign leaf[928] = !f[384] && !f[358] && !f[328] && !f[190];
 	assign leaf[929] = !f[384] && !f[358] && !f[328] && f[190];
 	assign leaf[930] = !f[384] && !f[358] && f[328] && !f[241];
@@ -5629,7 +5629,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[939] = f[384] && f[266] && f[122] && !f[261];
 	assign leaf[940] = f[384] && f[266] && f[122] && f[261];
 	
-	// Classifier: 3 Iteration: 62
+	// Digit: 3, Tree: 62
 	assign leaf[941] = !f[705] && !f[386] && !f[346] && !f[372];
 	assign leaf[942] = !f[705] && !f[386] && !f[346] && f[372];
 	assign leaf[943] = !f[705] && !f[386] && f[346] && !f[321];
@@ -5640,7 +5640,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[948] = !f[705] && f[386] && f[152] && f[237];
 	assign leaf[949] = f[705];
 	
-	// Classifier: 3 Iteration: 63
+	// Digit: 3, Tree: 63
 	assign leaf[950] = !f[707] && !f[571] && !f[546] && !f[490];
 	assign leaf[951] = !f[707] && !f[571] && !f[546] && f[490];
 	assign leaf[952] = !f[707] && !f[571] && f[546] && !f[492];
@@ -5653,7 +5653,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[959] = f[707] && f[267] && !f[571];
 	assign leaf[960] = f[707] && f[267] && f[571];
 	
-	// Classifier: 3 Iteration: 64
+	// Digit: 3, Tree: 64
 	assign leaf[961] = !f[346] && !f[290] && !f[292] && !f[376];
 	assign leaf[962] = !f[346] && !f[290] && !f[292] && f[376];
 	assign leaf[963] = !f[346] && !f[290] && f[292] && !f[266];
@@ -5671,7 +5671,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[975] = f[346] && f[321] && f[289] && !f[627];
 	assign leaf[976] = f[346] && f[321] && f[289] && f[627];
 	
-	// Classifier: 3 Iteration: 65
+	// Digit: 3, Tree: 65
 	assign leaf[977] = !f[399] && !f[740] && !f[626] && !f[600];
 	assign leaf[978] = !f[399] && !f[740] && !f[626] && f[600];
 	assign leaf[979] = !f[399] && !f[740] && f[626] && !f[629];
@@ -5686,7 +5686,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[988] = f[399] && f[411] && f[294] && !f[317];
 	assign leaf[989] = f[399] && f[411] && f[294] && f[317];
 	
-	// Classifier: 3 Iteration: 66
+	// Digit: 3, Tree: 66
 	assign leaf[990] = !f[429] && !f[213] && !f[713] && !f[458];
 	assign leaf[991] = !f[429] && !f[213] && !f[713] && f[458];
 	assign leaf[992] = !f[429] && !f[213] && f[713] && !f[323];
@@ -5704,7 +5704,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1004] = f[429] && f[459] && f[346] && !f[182];
 	assign leaf[1005] = f[429] && f[459] && f[346] && f[182];
 	
-	// Classifier: 3 Iteration: 67
+	// Digit: 3, Tree: 67
 	assign leaf[1006] = !f[386] && !f[537] && !f[570] && !f[460];
 	assign leaf[1007] = !f[386] && !f[537] && !f[570] && f[460];
 	assign leaf[1008] = !f[386] && !f[537] && f[570] && !f[600];
@@ -5719,7 +5719,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1017] = f[386] && f[355] && f[580] && !f[259];
 	assign leaf[1018] = f[386] && f[355] && f[580] && f[259];
 	
-	// Classifier: 3 Iteration: 68
+	// Digit: 3, Tree: 68
 	assign leaf[1019] = !f[682] && !f[626] && !f[602] && !f[714];
 	assign leaf[1020] = !f[682] && !f[626] && !f[602] && f[714];
 	assign leaf[1021] = !f[682] && !f[626] && f[602] && !f[598];
@@ -5737,7 +5737,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1033] = f[682] && f[541] && f[514] && !f[407];
 	assign leaf[1034] = f[682] && f[541] && f[514] && f[407];
 	
-	// Classifier: 3 Iteration: 69
+	// Digit: 3, Tree: 69
 	assign leaf[1035] = !f[434] && !f[321] && !f[96] && !f[351];
 	assign leaf[1036] = !f[434] && !f[321] && !f[96] && f[351];
 	assign leaf[1037] = !f[434] && !f[321] && f[96] && !f[549];
@@ -5755,7 +5755,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1049] = f[434] && f[208] && f[572] && !f[489];
 	assign leaf[1050] = f[434] && f[208] && f[572] && f[489];
 	
-	// Classifier: 3 Iteration: 70
+	// Digit: 3, Tree: 70
 	assign leaf[1051] = !f[402] && !f[709] && !f[266] && !f[378];
 	assign leaf[1052] = !f[402] && !f[709] && !f[266] && f[378];
 	assign leaf[1053] = !f[402] && !f[709] && f[266] && !f[160];
@@ -5772,7 +5772,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1064] = f[402] && f[512] && f[457] && !f[454];
 	assign leaf[1065] = f[402] && f[512] && f[457] && f[454];
 	
-	// Classifier: 3 Iteration: 71
+	// Digit: 3, Tree: 71
 	assign leaf[1066] = !f[712] && !f[718] && !f[626] && !f[683];
 	assign leaf[1067] = !f[712] && !f[718] && !f[626] && f[683];
 	assign leaf[1068] = !f[712] && !f[718] && f[626] && !f[426];
@@ -5790,7 +5790,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1080] = f[712] && f[375] && f[322] && !f[319];
 	assign leaf[1081] = f[712] && f[375] && f[322] && f[319];
 	
-	// Classifier: 3 Iteration: 72
+	// Digit: 3, Tree: 72
 	assign leaf[1082] = !f[373] && !f[689] && !f[740] && !f[715];
 	assign leaf[1083] = !f[373] && !f[689] && !f[740] && f[715];
 	assign leaf[1084] = !f[373] && !f[689] && f[740];
@@ -5807,7 +5807,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1095] = f[373] && f[320] && f[298] && !f[155];
 	assign leaf[1096] = f[373] && f[320] && f[298] && f[155];
 	
-	// Classifier: 3 Iteration: 73
+	// Digit: 3, Tree: 73
 	assign leaf[1097] = !f[331] && !f[676] && !f[479] && !f[604];
 	assign leaf[1098] = !f[331] && !f[676] && !f[479] && f[604];
 	assign leaf[1099] = !f[331] && !f[676] && f[479] && !f[426];
@@ -5816,7 +5816,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1102] = f[331] && !f[234];
 	assign leaf[1103] = f[331] && f[234];
 	
-	// Classifier: 3 Iteration: 74
+	// Digit: 3, Tree: 74
 	assign leaf[1104] = !f[120] && !f[269] && !f[296] && !f[513];
 	assign leaf[1105] = !f[120] && !f[269] && !f[296] && f[513];
 	assign leaf[1106] = !f[120] && !f[269] && f[296] && !f[129];
@@ -5830,7 +5830,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1114] = f[120] && f[630] && !f[458] && f[292];
 	assign leaf[1115] = f[120] && f[630] && f[458];
 	
-	// Classifier: 3 Iteration: 75
+	// Digit: 3, Tree: 75
 	assign leaf[1116] = !f[712] && !f[313] && !f[202] && !f[258];
 	assign leaf[1117] = !f[712] && !f[313] && !f[202] && f[258];
 	assign leaf[1118] = !f[712] && !f[313] && f[202] && !f[576];
@@ -5846,7 +5846,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1128] = f[712] && f[684] && f[576] && !f[299];
 	assign leaf[1129] = f[712] && f[684] && f[576] && f[299];
 	
-	// Classifier: 3 Iteration: 76
+	// Digit: 3, Tree: 76
 	assign leaf[1130] = !f[708] && !f[466] && !f[718] && !f[200];
 	assign leaf[1131] = !f[708] && !f[466] && !f[718] && f[200];
 	assign leaf[1132] = !f[708] && !f[466] && f[718] && !f[213];
@@ -5859,7 +5859,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1139] = f[708] && !f[599] && f[491];
 	assign leaf[1140] = f[708] && f[599];
 	
-	// Classifier: 3 Iteration: 77
+	// Digit: 3, Tree: 77
 	assign leaf[1141] = !f[427] && !f[651] && !f[712] && !f[626];
 	assign leaf[1142] = !f[427] && !f[651] && !f[712] && f[626];
 	assign leaf[1143] = !f[427] && !f[651] && f[712] && !f[488];
@@ -5877,7 +5877,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1155] = f[427] && f[436] && f[580] && !f[658];
 	assign leaf[1156] = f[427] && f[436] && f[580] && f[658];
 	
-	// Classifier: 3 Iteration: 78
+	// Digit: 3, Tree: 78
 	assign leaf[1157] = !f[384] && !f[487] && !f[124] && !f[554];
 	assign leaf[1158] = !f[384] && !f[487] && !f[124] && f[554];
 	assign leaf[1159] = !f[384] && !f[487] && f[124] && !f[207];
@@ -5895,7 +5895,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1171] = f[384] && f[295] && f[239] && !f[126];
 	assign leaf[1172] = f[384] && f[295] && f[239] && f[126];
 	
-	// Classifier: 3 Iteration: 79
+	// Digit: 3, Tree: 79
 	assign leaf[1173] = !f[346] && !f[433] && !f[462] && !f[314];
 	assign leaf[1174] = !f[346] && !f[433] && !f[462] && f[314];
 	assign leaf[1175] = !f[346] && !f[433] && f[462] && !f[298];
@@ -5912,7 +5912,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1186] = f[346] && f[470] && !f[463] && f[410];
 	assign leaf[1187] = f[346] && f[470] && f[463];
 	
-	// Classifier: 3 Iteration: 80
+	// Digit: 3, Tree: 80
 	assign leaf[1188] = !f[209] && !f[265] && !f[261] && !f[235];
 	assign leaf[1189] = !f[209] && !f[265] && !f[261] && f[235];
 	assign leaf[1190] = !f[209] && !f[265] && f[261] && !f[470];
@@ -5928,7 +5928,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1200] = f[209] && f[98] && !f[123];
 	assign leaf[1201] = f[209] && f[98] && f[123];
 	
-	// Classifier: 3 Iteration: 81
+	// Digit: 3, Tree: 81
 	assign leaf[1202] = !f[429] && !f[96] && !f[178] && !f[241];
 	assign leaf[1203] = !f[429] && !f[96] && !f[178] && f[241];
 	assign leaf[1204] = !f[429] && !f[96] && f[178] && !f[261];
@@ -5946,7 +5946,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1216] = f[429] && f[511] && f[542] && !f[181];
 	assign leaf[1217] = f[429] && f[511] && f[542] && f[181];
 	
-	// Classifier: 3 Iteration: 82
+	// Digit: 3, Tree: 82
 	assign leaf[1218] = !f[705] && !f[358] && !f[330] && !f[357];
 	assign leaf[1219] = !f[705] && !f[358] && !f[330] && f[357];
 	assign leaf[1220] = !f[705] && !f[358] && f[330] && !f[321];
@@ -5956,7 +5956,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1224] = !f[705] && f[358] && f[595] && f[576];
 	assign leaf[1225] = f[705];
 	
-	// Classifier: 3 Iteration: 83
+	// Digit: 3, Tree: 83
 	assign leaf[1226] = !f[377] && !f[324] && !f[436] && !f[321];
 	assign leaf[1227] = !f[377] && !f[324] && !f[436] && f[321];
 	assign leaf[1228] = !f[377] && !f[324] && f[436] && !f[539];
@@ -5974,7 +5974,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1240] = f[377] && f[181] && f[264] && !f[316];
 	assign leaf[1241] = f[377] && f[181] && f[264] && f[316];
 	
-	// Classifier: 3 Iteration: 84
+	// Digit: 3, Tree: 84
 	assign leaf[1242] = !f[315] && !f[259] && !f[150] && !f[325];
 	assign leaf[1243] = !f[315] && !f[259] && !f[150] && f[325];
 	assign leaf[1244] = !f[315] && !f[259] && f[150] && !f[233];
@@ -5991,7 +5991,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1255] = f[315] && f[345] && f[291] && !f[238];
 	assign leaf[1256] = f[315] && f[345] && f[291] && f[238];
 	
-	// Classifier: 3 Iteration: 85
+	// Digit: 3, Tree: 85
 	assign leaf[1257] = !f[406] && !f[315] && !f[517] && !f[348];
 	assign leaf[1258] = !f[406] && !f[315] && !f[517] && f[348];
 	assign leaf[1259] = !f[406] && !f[315] && f[517] && !f[296];
@@ -6009,7 +6009,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1271] = f[406] && f[604] && f[346] && !f[403];
 	assign leaf[1272] = f[406] && f[604] && f[346] && f[403];
 	
-	// Classifier: 3 Iteration: 86
+	// Digit: 3, Tree: 86
 	assign leaf[1273] = !f[386] && !f[401] && !f[347] && !f[290];
 	assign leaf[1274] = !f[386] && !f[401] && !f[347] && f[290];
 	assign leaf[1275] = !f[386] && !f[401] && f[347] && !f[459];
@@ -6022,7 +6022,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1282] = f[386] && f[499] && !f[287];
 	assign leaf[1283] = f[386] && f[499] && f[287];
 	
-	// Classifier: 3 Iteration: 87
+	// Digit: 3, Tree: 87
 	assign leaf[1284] = !f[707] && !f[344] && !f[270] && !f[187];
 	assign leaf[1285] = !f[707] && !f[344] && !f[270] && f[187];
 	assign leaf[1286] = !f[707] && !f[344] && f[270] && !f[293];
@@ -6035,7 +6035,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1293] = f[707] && f[267] && !f[493];
 	assign leaf[1294] = f[707] && f[267] && f[493];
 	
-	// Classifier: 3 Iteration: 88
+	// Digit: 3, Tree: 88
 	assign leaf[1295] = !f[429] && !f[491] && !f[461] && !f[407];
 	assign leaf[1296] = !f[429] && !f[491] && !f[461] && f[407];
 	assign leaf[1297] = !f[429] && !f[491] && f[461] && !f[544];
@@ -6052,7 +6052,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1308] = f[429] && f[526] && !f[521] && f[317];
 	assign leaf[1309] = f[429] && f[526] && f[521];
 	
-	// Classifier: 3 Iteration: 89
+	// Digit: 3, Tree: 89
 	assign leaf[1310] = !f[549] && !f[487] && !f[458] && !f[346];
 	assign leaf[1311] = !f[549] && !f[487] && !f[458] && f[346];
 	assign leaf[1312] = !f[549] && !f[487] && f[458] && !f[209];
@@ -6070,7 +6070,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1324] = f[549] && f[657] && f[384] && !f[522];
 	assign leaf[1325] = f[549] && f[657] && f[384] && f[522];
 	
-	// Classifier: 3 Iteration: 90
+	// Digit: 3, Tree: 90
 	assign leaf[1326] = !f[492] && !f[547] && !f[517] && !f[322];
 	assign leaf[1327] = !f[492] && !f[547] && !f[517] && f[322];
 	assign leaf[1328] = !f[492] && !f[547] && f[517] && !f[572];
@@ -6088,7 +6088,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1340] = f[492] && f[437] && f[625] && !f[154];
 	assign leaf[1341] = f[492] && f[437] && f[625] && f[154];
 	
-	// Classifier: 3 Iteration: 91
+	// Digit: 3, Tree: 91
 	assign leaf[1342] = !f[427] && !f[705] && !f[591] && !f[218];
 	assign leaf[1343] = !f[427] && !f[705] && !f[591] && f[218];
 	assign leaf[1344] = !f[427] && !f[705] && f[591] && !f[159];
@@ -6100,7 +6100,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1350] = f[427] && !f[219] && f[212] && f[429];
 	assign leaf[1351] = f[427] && f[219];
 	
-	// Classifier: 3 Iteration: 92
+	// Digit: 3, Tree: 92
 	assign leaf[1352] = !f[637] && !f[555] && !f[122] && !f[347];
 	assign leaf[1353] = !f[637] && !f[555] && !f[122] && f[347];
 	assign leaf[1354] = !f[637] && !f[555] && f[122] && !f[233];
@@ -6115,7 +6115,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1363] = f[637] && f[207] && f[607] && !f[321];
 	assign leaf[1364] = f[637] && f[207] && f[607] && f[321];
 	
-	// Classifier: 3 Iteration: 93
+	// Digit: 3, Tree: 93
 	assign leaf[1365] = !f[342] && !f[260] && !f[177] && !f[574];
 	assign leaf[1366] = !f[342] && !f[260] && !f[177] && f[574];
 	assign leaf[1367] = !f[342] && !f[260] && f[177] && !f[347];
@@ -6131,7 +6131,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1377] = f[342] && f[323] && f[525] && !f[270];
 	assign leaf[1378] = f[342] && f[323] && f[525] && f[270];
 	
-	// Classifier: 3 Iteration: 94
+	// Digit: 3, Tree: 94
 	assign leaf[1379] = !f[406] && !f[517] && !f[325] && !f[217];
 	assign leaf[1380] = !f[406] && !f[517] && !f[325] && f[217];
 	assign leaf[1381] = !f[406] && !f[517] && f[325] && !f[437];
@@ -6149,7 +6149,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1393] = f[406] && f[466] && f[347] && !f[318];
 	assign leaf[1394] = f[406] && f[466] && f[347] && f[318];
 	
-	// Classifier: 3 Iteration: 95
+	// Digit: 3, Tree: 95
 	assign leaf[1395] = !f[401] && !f[347] && !f[321] && !f[570];
 	assign leaf[1396] = !f[401] && !f[347] && !f[321] && f[570];
 	assign leaf[1397] = !f[401] && !f[347] && f[321] && !f[127];
@@ -6167,7 +6167,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1409] = f[401] && f[651] && f[565] && !f[455];
 	assign leaf[1410] = f[401] && f[651] && f[565] && f[455];
 	
-	// Classifier: 3 Iteration: 96
+	// Digit: 3, Tree: 96
 	assign leaf[1411] = !f[427] && !f[241] && !f[719] && !f[518];
 	assign leaf[1412] = !f[427] && !f[241] && !f[719] && f[518];
 	assign leaf[1413] = !f[427] && !f[241] && f[719];
@@ -6183,7 +6183,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1423] = f[427] && f[437] && f[428] && !f[241];
 	assign leaf[1424] = f[427] && f[437] && f[428] && f[241];
 	
-	// Classifier: 3 Iteration: 97
+	// Digit: 3, Tree: 97
 	assign leaf[1425] = !f[492] && !f[598] && !f[575] && !f[600];
 	assign leaf[1426] = !f[492] && !f[598] && !f[575] && f[600];
 	assign leaf[1427] = !f[492] && !f[598] && f[575] && !f[354];
@@ -6201,7 +6201,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1439] = f[492] && f[468] && f[554] && !f[297];
 	assign leaf[1440] = f[492] && f[468] && f[554] && f[297];
 	
-	// Classifier: 3 Iteration: 98
+	// Digit: 3, Tree: 98
 	assign leaf[1441] = !f[240] && !f[189] && !f[356] && !f[129];
 	assign leaf[1442] = !f[240] && !f[189] && !f[356] && f[129];
 	assign leaf[1443] = !f[240] && !f[189] && f[356] && !f[155];
@@ -6219,7 +6219,7 @@ module decision_tree_leaves_3(input logic [0:783] f, output logic [0:1472] leaf)
 	assign leaf[1455] = f[240] && f[128] && f[293] && !f[244];
 	assign leaf[1456] = f[240] && f[128] && f[293] && f[244];
 	
-	// Classifier: 3 Iteration: 99
+	// Digit: 3, Tree: 99
 	assign leaf[1457] = !f[411] && !f[466] && !f[179] && !f[493];
 	assign leaf[1458] = !f[411] && !f[466] && !f[179] && f[493];
 	assign leaf[1459] = !f[411] && !f[466] && f[179] && !f[571];
@@ -6243,7 +6243,7 @@ endmodule
 
 
 module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf);
-	// Classifier: 4 Iteration: 0
+	// Digit: 4, Tree: 0
 	assign leaf[0] = !f[211] && !f[428] && !f[402] && !f[398];
 	assign leaf[1] = !f[211] && !f[428] && !f[402] && f[398];
 	assign leaf[2] = !f[211] && !f[428] && f[402] && !f[155];
@@ -6261,7 +6261,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[14] = f[211] && f[429] && f[210] && !f[213];
 	assign leaf[15] = f[211] && f[429] && f[210] && f[213];
 	
-	// Classifier: 4 Iteration: 1
+	// Digit: 4, Tree: 1
 	assign leaf[16] = !f[400] && !f[402] && !f[398] && !f[375];
 	assign leaf[17] = !f[400] && !f[402] && !f[398] && f[375];
 	assign leaf[18] = !f[400] && !f[402] && f[398] && !f[458];
@@ -6279,7 +6279,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[30] = f[400] && f[210] && f[463] && !f[212];
 	assign leaf[31] = f[400] && f[210] && f[463] && f[212];
 	
-	// Classifier: 4 Iteration: 2
+	// Digit: 4, Tree: 2
 	assign leaf[32] = !f[183] && !f[267] && !f[437] && !f[464];
 	assign leaf[33] = !f[183] && !f[267] && !f[437] && f[464];
 	assign leaf[34] = !f[183] && !f[267] && f[437] && !f[126];
@@ -6297,7 +6297,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[46] = f[183] && f[180] && f[182] && !f[184];
 	assign leaf[47] = f[183] && f[180] && f[182] && f[184];
 	
-	// Classifier: 4 Iteration: 3
+	// Digit: 4, Tree: 3
 	assign leaf[48] = !f[401] && !f[399] && !f[374] && !f[397];
 	assign leaf[49] = !f[401] && !f[399] && !f[374] && f[397];
 	assign leaf[50] = !f[401] && !f[399] && f[374] && !f[184];
@@ -6315,7 +6315,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[62] = f[401] && f[569] && f[488] && !f[574];
 	assign leaf[63] = f[401] && f[569] && f[488] && f[574];
 	
-	// Classifier: 4 Iteration: 4
+	// Digit: 4, Tree: 4
 	assign leaf[64] = !f[597] && !f[210] && !f[543] && !f[266];
 	assign leaf[65] = !f[597] && !f[210] && !f[543] && f[266];
 	assign leaf[66] = !f[597] && !f[210] && f[543] && !f[189];
@@ -6333,7 +6333,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[78] = f[597] && f[163] && f[187] && !f[213];
 	assign leaf[79] = f[597] && f[163] && f[187] && f[213];
 	
-	// Classifier: 4 Iteration: 5
+	// Digit: 4, Tree: 5
 	assign leaf[80] = !f[464] && !f[183] && !f[436] && !f[295];
 	assign leaf[81] = !f[464] && !f[183] && !f[436] && f[295];
 	assign leaf[82] = !f[464] && !f[183] && f[436] && !f[575];
@@ -6351,7 +6351,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[94] = f[464] && f[210] && f[213] && !f[442];
 	assign leaf[95] = f[464] && f[210] && f[213] && f[442];
 	
-	// Classifier: 4 Iteration: 6
+	// Digit: 4, Tree: 6
 	assign leaf[96] = !f[569] && !f[427] && !f[374] && !f[373];
 	assign leaf[97] = !f[569] && !f[427] && !f[374] && f[373];
 	assign leaf[98] = !f[569] && !f[427] && f[374] && !f[551];
@@ -6369,7 +6369,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[110] = f[569] && f[163] && f[595] && !f[567];
 	assign leaf[111] = f[569] && f[163] && f[595] && f[567];
 	
-	// Classifier: 4 Iteration: 7
+	// Digit: 4, Tree: 7
 	assign leaf[112] = !f[401] && !f[598] && !f[238] && !f[182];
 	assign leaf[113] = !f[401] && !f[598] && !f[238] && f[182];
 	assign leaf[114] = !f[401] && !f[598] && f[238] && !f[430];
@@ -6387,7 +6387,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[126] = f[401] && f[552] && f[664] && !f[209];
 	assign leaf[127] = f[401] && f[552] && f[664] && f[209];
 	
-	// Classifier: 4 Iteration: 8
+	// Digit: 4, Tree: 8
 	assign leaf[128] = !f[568] && !f[455] && !f[238] && !f[182];
 	assign leaf[129] = !f[568] && !f[455] && !f[238] && f[182];
 	assign leaf[130] = !f[568] && !f[455] && f[238] && !f[240];
@@ -6405,7 +6405,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[142] = f[568] && f[626] && f[426] && !f[462];
 	assign leaf[143] = f[568] && f[626] && f[426] && f[462];
 	
-	// Classifier: 4 Iteration: 9
+	// Digit: 4, Tree: 9
 	assign leaf[144] = !f[464] && !f[603] && !f[295] && !f[659];
 	assign leaf[145] = !f[464] && !f[603] && !f[295] && f[659];
 	assign leaf[146] = !f[464] && !f[603] && f[295] && !f[346];
@@ -6423,7 +6423,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[158] = f[464] && f[569] && f[163] && !f[213];
 	assign leaf[159] = f[464] && f[569] && f[163] && f[213];
 	
-	// Classifier: 4 Iteration: 10
+	// Digit: 4, Tree: 10
 	assign leaf[160] = !f[463] && !f[628] && !f[322] && !f[238];
 	assign leaf[161] = !f[463] && !f[628] && !f[322] && f[238];
 	assign leaf[162] = !f[463] && !f[628] && f[322] && !f[375];
@@ -6441,7 +6441,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[174] = f[463] && f[542] && f[163] && !f[213];
 	assign leaf[175] = f[463] && f[542] && f[163] && f[213];
 	
-	// Classifier: 4 Iteration: 11
+	// Digit: 4, Tree: 11
 	assign leaf[176] = !f[437] && !f[577] && !f[322] && !f[239];
 	assign leaf[177] = !f[437] && !f[577] && !f[322] && f[239];
 	assign leaf[178] = !f[437] && !f[577] && f[322] && !f[408];
@@ -6459,7 +6459,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[190] = f[437] && f[461] && f[542] && !f[183];
 	assign leaf[191] = f[437] && f[461] && f[542] && f[183];
 	
-	// Classifier: 4 Iteration: 12
+	// Digit: 4, Tree: 12
 	assign leaf[192] = !f[346] && !f[208] && !f[465] && !f[637];
 	assign leaf[193] = !f[346] && !f[208] && !f[465] && f[637];
 	assign leaf[194] = !f[346] && !f[208] && f[465] && !f[291];
@@ -6477,7 +6477,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[206] = f[346] && f[427] && f[568] && !f[157];
 	assign leaf[207] = f[346] && f[427] && f[568] && f[157];
 	
-	// Classifier: 4 Iteration: 13
+	// Digit: 4, Tree: 13
 	assign leaf[208] = !f[595] && !f[374] && !f[426] && !f[373];
 	assign leaf[209] = !f[595] && !f[374] && !f[426] && f[373];
 	assign leaf[210] = !f[595] && !f[374] && f[426] && !f[294];
@@ -6493,7 +6493,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[220] = f[595] && f[542] && f[401] && !f[567];
 	assign leaf[221] = f[595] && f[542] && f[401] && f[567];
 	
-	// Classifier: 4 Iteration: 14
+	// Digit: 4, Tree: 14
 	assign leaf[222] = !f[408] && !f[466] && !f[146] && !f[381];
 	assign leaf[223] = !f[408] && !f[466] && !f[146] && f[381];
 	assign leaf[224] = !f[408] && !f[466] && f[146];
@@ -6510,7 +6510,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[235] = f[408] && f[209] && f[212] && !f[320];
 	assign leaf[236] = f[408] && f[209] && f[212] && f[320];
 	
-	// Classifier: 4 Iteration: 15
+	// Digit: 4, Tree: 15
 	assign leaf[237] = !f[427] && !f[375] && !f[293] && !f[209];
 	assign leaf[238] = !f[427] && !f[375] && !f[293] && f[209];
 	assign leaf[239] = !f[427] && !f[375] && f[293] && !f[190];
@@ -6528,7 +6528,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[251] = f[427] && f[346] && f[328] && !f[241];
 	assign leaf[252] = f[427] && f[346] && f[328] && f[241];
 	
-	// Classifier: 4 Iteration: 16
+	// Digit: 4, Tree: 16
 	assign leaf[253] = !f[568] && !f[454] && !f[375] && !f[401];
 	assign leaf[254] = !f[568] && !f[454] && !f[375] && f[401];
 	assign leaf[255] = !f[568] && !f[454] && f[375] && !f[551];
@@ -6545,7 +6545,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[266] = f[568] && f[626] && f[399] && !f[628];
 	assign leaf[267] = f[568] && f[626] && f[399] && f[628];
 	
-	// Classifier: 4 Iteration: 17
+	// Digit: 4, Tree: 17
 	assign leaf[268] = !f[463] && !f[628] && !f[323] && !f[574];
 	assign leaf[269] = !f[463] && !f[628] && !f[323] && f[574];
 	assign leaf[270] = !f[463] && !f[628] && f[323] && !f[380];
@@ -6561,7 +6561,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[280] = f[463] && f[740] && !f[426];
 	assign leaf[281] = f[463] && f[740] && f[426];
 	
-	// Classifier: 4 Iteration: 18
+	// Digit: 4, Tree: 18
 	assign leaf[282] = !f[594] && !f[208] && !f[601] && !f[657];
 	assign leaf[283] = !f[594] && !f[208] && !f[601] && f[657];
 	assign leaf[284] = !f[594] && !f[208] && f[601] && !f[490];
@@ -6575,7 +6575,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[292] = f[594] && !f[527] && f[372] && f[625];
 	assign leaf[293] = f[594] && f[527];
 	
-	// Classifier: 4 Iteration: 19
+	// Digit: 4, Tree: 19
 	assign leaf[294] = !f[491] && !f[629] && !f[236] && !f[180];
 	assign leaf[295] = !f[491] && !f[629] && !f[236] && f[180];
 	assign leaf[296] = !f[491] && !f[629] && f[236] && !f[291];
@@ -6593,7 +6593,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[308] = f[491] && f[466] && f[260] && !f[293];
 	assign leaf[309] = f[491] && f[466] && f[260] && f[293];
 	
-	// Classifier: 4 Iteration: 20
+	// Digit: 4, Tree: 20
 	assign leaf[310] = !f[409] && !f[405] && !f[488] && !f[460];
 	assign leaf[311] = !f[409] && !f[405] && !f[488] && f[460];
 	assign leaf[312] = !f[409] && !f[405] && f[488] && !f[490];
@@ -6611,7 +6611,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[324] = f[409] && f[375] && f[213] && !f[296];
 	assign leaf[325] = f[409] && f[375] && f[213] && f[296];
 	
-	// Classifier: 4 Iteration: 21
+	// Digit: 4, Tree: 21
 	assign leaf[326] = !f[491] && !f[629] && !f[322] && !f[657];
 	assign leaf[327] = !f[491] && !f[629] && !f[322] && f[657];
 	assign leaf[328] = !f[491] && !f[629] && f[322] && !f[289];
@@ -6628,7 +6628,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[339] = f[491] && f[214] && f[297] && !f[183];
 	assign leaf[340] = f[491] && f[214] && f[297] && f[183];
 	
-	// Classifier: 4 Iteration: 22
+	// Digit: 4, Tree: 22
 	assign leaf[341] = !f[430] && !f[625] && !f[482] && !f[347];
 	assign leaf[342] = !f[430] && !f[625] && !f[482] && f[347];
 	assign leaf[343] = !f[430] && !f[625] && f[482] && !f[406];
@@ -6646,7 +6646,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[355] = f[430] && f[552] && f[270] && !f[209];
 	assign leaf[356] = f[430] && f[552] && f[270] && f[209];
 	
-	// Classifier: 4 Iteration: 23
+	// Digit: 4, Tree: 23
 	assign leaf[357] = !f[465] && !f[577] && !f[212] && !f[295];
 	assign leaf[358] = !f[465] && !f[577] && !f[212] && f[295];
 	assign leaf[359] = !f[465] && !f[577] && f[212] && !f[237];
@@ -6664,7 +6664,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[371] = f[465] && f[235] && f[232] && !f[219];
 	assign leaf[372] = f[465] && f[235] && f[232] && f[219];
 	
-	// Classifier: 4 Iteration: 24
+	// Digit: 4, Tree: 24
 	assign leaf[373] = !f[347] && !f[345] && !f[343] && !f[348];
 	assign leaf[374] = !f[347] && !f[345] && !f[343] && f[348];
 	assign leaf[375] = !f[347] && !f[345] && f[343] && !f[180];
@@ -6682,7 +6682,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[387] = f[347] && f[408] && f[241] && !f[244];
 	assign leaf[388] = f[347] && f[408] && f[241] && f[244];
 	
-	// Classifier: 4 Iteration: 25
+	// Digit: 4, Tree: 25
 	assign leaf[389] = !f[346] && !f[207] && !f[263] && !f[571];
 	assign leaf[390] = !f[346] && !f[207] && !f[263] && f[571];
 	assign leaf[391] = !f[346] && !f[207] && f[263] && !f[260];
@@ -6700,7 +6700,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[403] = f[346] && f[428] && f[214] && !f[273];
 	assign leaf[404] = f[346] && f[428] && f[214] && f[273];
 	
-	// Classifier: 4 Iteration: 26
+	// Digit: 4, Tree: 26
 	assign leaf[405] = !f[740] && !f[409] && !f[438] && !f[577];
 	assign leaf[406] = !f[740] && !f[409] && !f[438] && f[577];
 	assign leaf[407] = !f[740] && !f[409] && f[438] && !f[248];
@@ -6712,7 +6712,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[413] = f[740] && !f[412];
 	assign leaf[414] = f[740] && f[412];
 	
-	// Classifier: 4 Iteration: 27
+	// Digit: 4, Tree: 27
 	assign leaf[415] = !f[743] && !f[96] && !f[628] && !f[684];
 	assign leaf[416] = !f[743] && !f[96] && !f[628] && f[684];
 	assign leaf[417] = !f[743] && !f[96] && f[628] && !f[604];
@@ -6723,7 +6723,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[422] = f[743] && !f[459] && f[295];
 	assign leaf[423] = f[743] && f[459];
 	
-	// Classifier: 4 Iteration: 28
+	// Digit: 4, Tree: 28
 	assign leaf[424] = !f[491] && !f[630] && !f[744] && !f[526];
 	assign leaf[425] = !f[491] && !f[630] && !f[744] && f[526];
 	assign leaf[426] = !f[491] && !f[630] && f[744];
@@ -6740,7 +6740,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[437] = f[491] && f[571] && f[186] && !f[497];
 	assign leaf[438] = f[491] && f[571] && f[186] && f[497];
 	
-	// Classifier: 4 Iteration: 29
+	// Digit: 4, Tree: 29
 	assign leaf[439] = !f[286] && !f[594] && !f[348] && !f[345];
 	assign leaf[440] = !f[286] && !f[594] && !f[348] && f[345];
 	assign leaf[441] = !f[286] && !f[594] && f[348] && !f[381];
@@ -6757,7 +6757,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[452] = f[286] && f[262] && f[218] && !f[412];
 	assign leaf[453] = f[286] && f[262] && f[218] && f[412];
 	
-	// Classifier: 4 Iteration: 30
+	// Digit: 4, Tree: 30
 	assign leaf[454] = !f[745] && !f[399] && !f[375] && !f[373];
 	assign leaf[455] = !f[745] && !f[399] && !f[375] && f[373];
 	assign leaf[456] = !f[745] && !f[399] && f[375] && !f[601];
@@ -6769,7 +6769,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[462] = f[745] && !f[483];
 	assign leaf[463] = f[745] && f[483];
 	
-	// Classifier: 4 Iteration: 31
+	// Digit: 4, Tree: 31
 	assign leaf[464] = !f[208] && !f[327] && !f[352] && !f[272];
 	assign leaf[465] = !f[208] && !f[327] && !f[352] && f[272];
 	assign leaf[466] = !f[208] && !f[327] && f[352] && !f[436];
@@ -6787,7 +6787,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[478] = f[208] && f[184] && f[182] && !f[248];
 	assign leaf[479] = f[208] && f[184] && f[182] && f[248];
 	
-	// Classifier: 4 Iteration: 32
+	// Digit: 4, Tree: 32
 	assign leaf[480] = !f[219] && !f[286] && !f[600] && !f[655];
 	assign leaf[481] = !f[219] && !f[286] && !f[600] && f[655];
 	assign leaf[482] = !f[219] && !f[286] && f[600] && !f[576];
@@ -6804,7 +6804,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[493] = f[219] && f[242] && !f[240] && f[655];
 	assign leaf[494] = f[219] && f[242] && f[240];
 	
-	// Classifier: 4 Iteration: 33
+	// Digit: 4, Tree: 33
 	assign leaf[495] = !f[490] && !f[411] && !f[236] && !f[268];
 	assign leaf[496] = !f[490] && !f[411] && !f[236] && f[268];
 	assign leaf[497] = !f[490] && !f[411] && f[236] && !f[262];
@@ -6822,7 +6822,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[509] = f[490] && f[348] && f[322] && !f[211];
 	assign leaf[510] = f[490] && f[348] && f[322] && f[211];
 	
-	// Classifier: 4 Iteration: 34
+	// Digit: 4, Tree: 34
 	assign leaf[511] = !f[746] && !f[456] && !f[408] && !f[322];
 	assign leaf[512] = !f[746] && !f[456] && !f[408] && f[322];
 	assign leaf[513] = !f[746] && !f[456] && f[408] && !f[524];
@@ -6833,7 +6833,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[518] = !f[746] && f[456] && f[439] && f[513];
 	assign leaf[519] = f[746];
 	
-	// Classifier: 4 Iteration: 35
+	// Digit: 4, Tree: 35
 	assign leaf[520] = !f[740] && !f[185] && !f[183] && !f[294];
 	assign leaf[521] = !f[740] && !f[185] && !f[183] && f[294];
 	assign leaf[522] = !f[740] && !f[185] && f[183] && !f[180];
@@ -6845,7 +6845,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[528] = f[740] && !f[240];
 	assign leaf[529] = f[740] && f[240];
 	
-	// Classifier: 4 Iteration: 36
+	// Digit: 4, Tree: 36
 	assign leaf[530] = !f[744] && !f[128] && !f[739] && !f[747];
 	assign leaf[531] = !f[744] && !f[128] && !f[739] && f[747];
 	assign leaf[532] = !f[744] && !f[128] && f[739] && !f[412];
@@ -6858,7 +6858,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[539] = f[744] && !f[455] && f[411];
 	assign leaf[540] = f[744] && f[455];
 	
-	// Classifier: 4 Iteration: 37
+	// Digit: 4, Tree: 37
 	assign leaf[541] = !f[737] && !f[743] && !f[180] && !f[236];
 	assign leaf[542] = !f[737] && !f[743] && !f[180] && f[236];
 	assign leaf[543] = !f[737] && !f[743] && f[180] && !f[183];
@@ -6870,7 +6870,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[549] = f[737] && !f[385];
 	assign leaf[550] = f[737] && f[385];
 	
-	// Classifier: 4 Iteration: 38
+	// Digit: 4, Tree: 38
 	assign leaf[551] = !f[332] && !f[737] && !f[185] && !f[187];
 	assign leaf[552] = !f[332] && !f[737] && !f[185] && f[187];
 	assign leaf[553] = !f[332] && !f[737] && f[185] && !f[182];
@@ -6880,7 +6880,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[557] = f[332] && !f[371];
 	assign leaf[558] = f[332] && f[371];
 	
-	// Classifier: 4 Iteration: 39
+	// Digit: 4, Tree: 39
 	assign leaf[559] = !f[96] && !f[409] && !f[405] && !f[516];
 	assign leaf[560] = !f[96] && !f[409] && !f[405] && f[516];
 	assign leaf[561] = !f[96] && !f[409] && f[405] && !f[326];
@@ -6892,7 +6892,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[567] = f[96] && !f[574];
 	assign leaf[568] = f[96] && f[574];
 	
-	// Classifier: 4 Iteration: 40
+	// Digit: 4, Tree: 40
 	assign leaf[569] = !f[465] && !f[605] && !f[238] && !f[294];
 	assign leaf[570] = !f[465] && !f[605] && !f[238] && f[294];
 	assign leaf[571] = !f[465] && !f[605] && f[238] && !f[240];
@@ -6910,7 +6910,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[583] = f[465] && f[381] && f[375] && !f[715];
 	assign leaf[584] = f[465] && f[381] && f[375] && f[715];
 	
-	// Classifier: 4 Iteration: 41
+	// Digit: 4, Tree: 41
 	assign leaf[585] = !f[96] && !f[346] && !f[625] && !f[348];
 	assign leaf[586] = !f[96] && !f[346] && !f[625] && f[348];
 	assign leaf[587] = !f[96] && !f[346] && f[625] && !f[709];
@@ -6922,7 +6922,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[593] = f[96] && !f[455];
 	assign leaf[594] = f[96] && f[455];
 	
-	// Classifier: 4 Iteration: 42
+	// Digit: 4, Tree: 42
 	assign leaf[595] = !f[625] && !f[491] && !f[321] && !f[411];
 	assign leaf[596] = !f[625] && !f[491] && !f[321] && f[411];
 	assign leaf[597] = !f[625] && !f[491] && f[321] && !f[654];
@@ -6939,7 +6939,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[608] = f[625] && f[543] && f[186] && !f[132];
 	assign leaf[609] = f[625] && f[543] && f[186] && f[132];
 	
-	// Classifier: 4 Iteration: 43
+	// Digit: 4, Tree: 43
 	assign leaf[610] = !f[398] && !f[403] && !f[181] && !f[206];
 	assign leaf[611] = !f[398] && !f[403] && !f[181] && f[206];
 	assign leaf[612] = !f[398] && !f[403] && f[181] && !f[184];
@@ -6957,7 +6957,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[624] = f[398] && f[331] && f[461] && !f[241];
 	assign leaf[625] = f[398] && f[331] && f[461] && f[241];
 	
-	// Classifier: 4 Iteration: 44
+	// Digit: 4, Tree: 44
 	assign leaf[626] = !f[102] && !f[97] && !f[714] && !f[381];
 	assign leaf[627] = !f[102] && !f[97] && !f[714] && f[381];
 	assign leaf[628] = !f[102] && !f[97] && f[714] && !f[237];
@@ -6967,7 +6967,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[632] = f[102] && !f[296];
 	assign leaf[633] = f[102] && f[296];
 	
-	// Classifier: 4 Iteration: 45
+	// Digit: 4, Tree: 45
 	assign leaf[634] = !f[179] && !f[635] && !f[241] && !f[158];
 	assign leaf[635] = !f[179] && !f[635] && !f[241] && f[158];
 	assign leaf[636] = !f[179] && !f[635] && f[241] && !f[244];
@@ -6984,7 +6984,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[647] = f[179] && f[181] && f[263] && !f[183];
 	assign leaf[648] = f[179] && f[181] && f[263] && f[183];
 	
-	// Classifier: 4 Iteration: 46
+	// Digit: 4, Tree: 46
 	assign leaf[649] = !f[220] && !f[163] && !f[301] && !f[490];
 	assign leaf[650] = !f[220] && !f[163] && !f[301] && f[490];
 	assign leaf[651] = !f[220] && !f[163] && f[301] && !f[384];
@@ -6998,7 +6998,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[659] = f[220] && !f[214] && f[210] && f[191];
 	assign leaf[660] = f[220] && f[214];
 	
-	// Classifier: 4 Iteration: 47
+	// Digit: 4, Tree: 47
 	assign leaf[661] = !f[744] && !f[128] && !f[404] && !f[483];
 	assign leaf[662] = !f[744] && !f[128] && !f[404] && f[483];
 	assign leaf[663] = !f[744] && !f[128] && f[404] && !f[496];
@@ -7010,7 +7010,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[669] = f[744] && !f[605];
 	assign leaf[670] = f[744] && f[605];
 	
-	// Classifier: 4 Iteration: 48
+	// Digit: 4, Tree: 48
 	assign leaf[671] = !f[96] && !f[740] && !f[408] && !f[485];
 	assign leaf[672] = !f[96] && !f[740] && !f[408] && f[485];
 	assign leaf[673] = !f[96] && !f[740] && f[408] && !f[348];
@@ -7020,7 +7020,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[677] = f[96] && !f[545];
 	assign leaf[678] = f[96] && f[545];
 	
-	// Classifier: 4 Iteration: 49
+	// Digit: 4, Tree: 49
 	assign leaf[679] = !f[93] && !f[520] && !f[632] && !f[385];
 	assign leaf[680] = !f[93] && !f[520] && !f[632] && f[385];
 	assign leaf[681] = !f[93] && !f[520] && f[632] && !f[485];
@@ -7032,7 +7032,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[687] = f[93] && !f[456];
 	assign leaf[688] = f[93] && f[456];
 	
-	// Classifier: 4 Iteration: 50
+	// Digit: 4, Tree: 50
 	assign leaf[689] = !f[286] && !f[184] && !f[240] && !f[323];
 	assign leaf[690] = !f[286] && !f[184] && !f[240] && f[323];
 	assign leaf[691] = !f[286] && !f[184] && f[240] && !f[238];
@@ -7050,7 +7050,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[703] = f[286] && f[213] && f[205] && !f[636];
 	assign leaf[704] = f[286] && f[213] && f[205] && f[636];
 	
-	// Classifier: 4 Iteration: 51
+	// Digit: 4, Tree: 51
 	assign leaf[705] = !f[397] && !f[346] && !f[348] && !f[344];
 	assign leaf[706] = !f[397] && !f[346] && !f[348] && f[344];
 	assign leaf[707] = !f[397] && !f[346] && f[348] && !f[490];
@@ -7066,7 +7066,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[717] = f[397] && f[359] && !f[429];
 	assign leaf[718] = f[397] && f[359] && f[429];
 	
-	// Classifier: 4 Iteration: 52
+	// Digit: 4, Tree: 52
 	assign leaf[719] = !f[347] && !f[344] && !f[405] && !f[349];
 	assign leaf[720] = !f[347] && !f[344] && !f[405] && f[349];
 	assign leaf[721] = !f[347] && !f[344] && f[405] && !f[318];
@@ -7083,7 +7083,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[732] = f[347] && f[341] && !f[636] && f[271];
 	assign leaf[733] = f[347] && f[341] && f[636];
 	
-	// Classifier: 4 Iteration: 53
+	// Digit: 4, Tree: 53
 	assign leaf[734] = !f[122] && !f[128] && !f[376] && !f[399];
 	assign leaf[735] = !f[122] && !f[128] && !f[376] && f[399];
 	assign leaf[736] = !f[122] && !f[128] && f[376] && !f[408];
@@ -7097,7 +7097,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[744] = f[122] && f[546] && !f[513];
 	assign leaf[745] = f[122] && f[546] && f[513];
 	
-	// Classifier: 4 Iteration: 54
+	// Digit: 4, Tree: 54
 	assign leaf[746] = !f[72] && !f[741] && !f[94] && !f[737];
 	assign leaf[747] = !f[72] && !f[741] && !f[94] && f[737];
 	assign leaf[748] = !f[72] && !f[741] && f[94];
@@ -7106,7 +7106,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[751] = !f[72] && f[741] && f[264];
 	assign leaf[752] = f[72];
 	
-	// Classifier: 4 Iteration: 55
+	// Digit: 4, Tree: 55
 	assign leaf[753] = !f[318] && !f[320] && !f[316] && !f[230];
 	assign leaf[754] = !f[318] && !f[320] && !f[316] && f[230];
 	assign leaf[755] = !f[318] && !f[320] && f[316] && !f[181];
@@ -7124,7 +7124,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[767] = f[318] && f[321] && f[289] && !f[291];
 	assign leaf[768] = f[318] && f[321] && f[289] && f[291];
 	
-	// Classifier: 4 Iteration: 56
+	// Digit: 4, Tree: 56
 	assign leaf[769] = !f[430] && !f[569] && !f[549] && !f[413];
 	assign leaf[770] = !f[430] && !f[569] && !f[549] && f[413];
 	assign leaf[771] = !f[430] && !f[569] && f[549] && !f[691];
@@ -7141,7 +7141,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[782] = f[430] && f[206] && f[237] && !f[272];
 	assign leaf[783] = f[430] && f[206] && f[237] && f[272];
 	
-	// Classifier: 4 Iteration: 57
+	// Digit: 4, Tree: 57
 	assign leaf[784] = !f[430] && !f[300] && !f[181] && !f[265];
 	assign leaf[785] = !f[430] && !f[300] && !f[181] && f[265];
 	assign leaf[786] = !f[430] && !f[300] && f[181] && !f[234];
@@ -7159,7 +7159,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[798] = f[430] && f[427] && f[513] && !f[497];
 	assign leaf[799] = f[430] && f[427] && f[513] && f[497];
 	
-	// Classifier: 4 Iteration: 58
+	// Digit: 4, Tree: 58
 	assign leaf[800] = !f[637] && !f[286] && !f[318] && !f[320];
 	assign leaf[801] = !f[637] && !f[286] && !f[318] && f[320];
 	assign leaf[802] = !f[637] && !f[286] && f[318] && !f[321];
@@ -7174,7 +7174,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[811] = f[637] && f[234] && !f[482] && f[462];
 	assign leaf[812] = f[637] && f[234] && f[482];
 	
-	// Classifier: 4 Iteration: 59
+	// Digit: 4, Tree: 59
 	assign leaf[813] = !f[743] && !f[398] && !f[347] && !f[181];
 	assign leaf[814] = !f[743] && !f[398] && !f[347] && f[181];
 	assign leaf[815] = !f[743] && !f[398] && f[347] && !f[313];
@@ -7187,7 +7187,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[822] = f[743] && f[521] && !f[411];
 	assign leaf[823] = f[743] && f[521] && f[411];
 	
-	// Classifier: 4 Iteration: 60
+	// Digit: 4, Tree: 60
 	assign leaf[824] = !f[179] && !f[154] && !f[404] && !f[636];
 	assign leaf[825] = !f[179] && !f[154] && !f[404] && f[636];
 	assign leaf[826] = !f[179] && !f[154] && f[404] && !f[434];
@@ -7205,7 +7205,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[838] = f[179] && f[235] && f[214] && !f[155];
 	assign leaf[839] = f[179] && f[235] && f[214] && f[155];
 	
-	// Classifier: 4 Iteration: 61
+	// Digit: 4, Tree: 61
 	assign leaf[840] = !f[519] && !f[630] && !f[686] && !f[201];
 	assign leaf[841] = !f[519] && !f[630] && !f[686] && f[201];
 	assign leaf[842] = !f[519] && !f[630] && f[686] && !f[660];
@@ -7223,7 +7223,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[854] = f[519] && f[524] && f[261] && !f[273];
 	assign leaf[855] = f[519] && f[524] && f[261] && f[273];
 	
-	// Classifier: 4 Iteration: 62
+	// Digit: 4, Tree: 62
 	assign leaf[856] = !f[318] && !f[320] && !f[316] && !f[257];
 	assign leaf[857] = !f[318] && !f[320] && !f[316] && f[257];
 	assign leaf[858] = !f[318] && !f[320] && f[316] && !f[264];
@@ -7241,7 +7241,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[870] = f[318] && f[321] && f[183] && !f[296];
 	assign leaf[871] = f[318] && f[321] && f[183] && f[296];
 	
-	// Classifier: 4 Iteration: 63
+	// Digit: 4, Tree: 63
 	assign leaf[872] = !f[381] && !f[515] && !f[321] && !f[182];
 	assign leaf[873] = !f[381] && !f[515] && !f[321] && f[182];
 	assign leaf[874] = !f[381] && !f[515] && f[321] && !f[662];
@@ -7259,7 +7259,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[886] = f[381] && f[465] && f[235] && !f[246];
 	assign leaf[887] = f[381] && f[465] && f[235] && f[246];
 	
-	// Classifier: 4 Iteration: 64
+	// Digit: 4, Tree: 64
 	assign leaf[888] = !f[128] && !f[555] && !f[348] && !f[219];
 	assign leaf[889] = !f[128] && !f[555] && !f[348] && f[219];
 	assign leaf[890] = !f[128] && !f[555] && f[348] && !f[716];
@@ -7273,7 +7273,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[898] = f[128] && f[405] && !f[129];
 	assign leaf[899] = f[128] && f[405] && f[129];
 	
-	// Classifier: 4 Iteration: 65
+	// Digit: 4, Tree: 65
 	assign leaf[900] = !f[744] && !f[121] && !f[102] && !f[656];
 	assign leaf[901] = !f[744] && !f[121] && !f[102] && f[656];
 	assign leaf[902] = !f[744] && !f[121] && f[102] && !f[467];
@@ -7283,7 +7283,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[906] = f[744] && !f[299];
 	assign leaf[907] = f[744] && f[299];
 	
-	// Classifier: 4 Iteration: 66
+	// Digit: 4, Tree: 66
 	assign leaf[908] = !f[738] && !f[96] && !f[747] && !f[384];
 	assign leaf[909] = !f[738] && !f[96] && !f[747] && f[384];
 	assign leaf[910] = !f[738] && !f[96] && f[747];
@@ -7291,7 +7291,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[912] = f[738] && !f[269];
 	assign leaf[913] = f[738] && f[269];
 	
-	// Classifier: 4 Iteration: 67
+	// Digit: 4, Tree: 67
 	assign leaf[914] = !f[429] && !f[349] && !f[237] && !f[293];
 	assign leaf[915] = !f[429] && !f[349] && !f[237] && f[293];
 	assign leaf[916] = !f[429] && !f[349] && f[237] && !f[211];
@@ -7309,7 +7309,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[928] = f[429] && f[205] && f[289] && !f[265];
 	assign leaf[929] = f[429] && f[205] && f[289] && f[265];
 	
-	// Classifier: 4 Iteration: 68
+	// Digit: 4, Tree: 68
 	assign leaf[930] = !f[179] && !f[690] && !f[525] && !f[539];
 	assign leaf[931] = !f[179] && !f[690] && !f[525] && f[539];
 	assign leaf[932] = !f[179] && !f[690] && f[525] && !f[596];
@@ -7327,7 +7327,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[944] = f[179] && f[263] && f[213] && !f[182];
 	assign leaf[945] = f[179] && f[263] && f[213] && f[182];
 	
-	// Classifier: 4 Iteration: 69
+	// Digit: 4, Tree: 69
 	assign leaf[946] = !f[739] && !f[72] && !f[96] && !f[519];
 	assign leaf[947] = !f[739] && !f[72] && !f[96] && f[519];
 	assign leaf[948] = !f[739] && !f[72] && f[96];
@@ -7335,7 +7335,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[950] = f[739] && !f[438];
 	assign leaf[951] = f[739] && f[438];
 	
-	// Classifier: 4 Iteration: 70
+	// Digit: 4, Tree: 70
 	assign leaf[952] = !f[399] && !f[286] && !f[184] && !f[267];
 	assign leaf[953] = !f[399] && !f[286] && !f[184] && f[267];
 	assign leaf[954] = !f[399] && !f[286] && f[184] && !f[214];
@@ -7352,7 +7352,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[965] = f[399] && f[514] && f[467] && !f[382];
 	assign leaf[966] = f[399] && f[514] && f[467] && f[382];
 	
-	// Classifier: 4 Iteration: 71
+	// Digit: 4, Tree: 71
 	assign leaf[967] = !f[738] && !f[741] && !f[184] && !f[240];
 	assign leaf[968] = !f[738] && !f[741] && !f[184] && f[240];
 	assign leaf[969] = !f[738] && !f[741] && f[184] && !f[240];
@@ -7361,7 +7361,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[972] = !f[738] && f[741] && f[264];
 	assign leaf[973] = f[738];
 	
-	// Classifier: 4 Iteration: 72
+	// Digit: 4, Tree: 72
 	assign leaf[974] = !f[179] && !f[153] && !f[178] && !f[263];
 	assign leaf[975] = !f[179] && !f[153] && !f[178] && f[263];
 	assign leaf[976] = !f[179] && !f[153] && f[178] && !f[269];
@@ -7378,7 +7378,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[987] = f[179] && f[155] && !f[540] && f[267];
 	assign leaf[988] = f[179] && f[155] && f[540];
 	
-	// Classifier: 4 Iteration: 73
+	// Digit: 4, Tree: 73
 	assign leaf[989] = !f[637] && !f[444] && !f[570] && !f[624];
 	assign leaf[990] = !f[637] && !f[444] && !f[570] && f[624];
 	assign leaf[991] = !f[637] && !f[444] && f[570] && !f[400];
@@ -7394,7 +7394,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1001] = f[637] && f[234] && !f[453] && f[210];
 	assign leaf[1002] = f[637] && f[234] && f[453];
 	
-	// Classifier: 4 Iteration: 74
+	// Digit: 4, Tree: 74
 	assign leaf[1003] = !f[601] && !f[657] && !f[441] && !f[459];
 	assign leaf[1004] = !f[601] && !f[657] && !f[441] && f[459];
 	assign leaf[1005] = !f[601] && !f[657] && f[441] && !f[217];
@@ -7411,7 +7411,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1016] = f[601] && f[518] && f[239] && !f[468];
 	assign leaf[1017] = f[601] && f[518] && f[239] && f[468];
 	
-	// Classifier: 4 Iteration: 75
+	// Digit: 4, Tree: 75
 	assign leaf[1018] = !f[737] && !f[303] && !f[398] && !f[347];
 	assign leaf[1019] = !f[737] && !f[303] && !f[398] && f[347];
 	assign leaf[1020] = !f[737] && !f[303] && f[398] && !f[294];
@@ -7421,7 +7421,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1024] = !f[737] && f[303] && f[453];
 	assign leaf[1025] = f[737];
 	
-	// Classifier: 4 Iteration: 76
+	// Digit: 4, Tree: 76
 	assign leaf[1026] = !f[746] && !f[376] && !f[321] && !f[182];
 	assign leaf[1027] = !f[746] && !f[376] && !f[321] && f[182];
 	assign leaf[1028] = !f[746] && !f[376] && f[321] && !f[238];
@@ -7432,7 +7432,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1033] = !f[746] && f[376] && f[435] && f[155];
 	assign leaf[1034] = f[746];
 	
-	// Classifier: 4 Iteration: 77
+	// Digit: 4, Tree: 77
 	assign leaf[1035] = !f[465] && !f[238] && !f[213] && !f[215];
 	assign leaf[1036] = !f[465] && !f[238] && !f[213] && f[215];
 	assign leaf[1037] = !f[465] && !f[238] && f[213] && !f[182];
@@ -7449,7 +7449,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1048] = f[465] && f[340] && !f[240] && f[352];
 	assign leaf[1049] = f[465] && f[340] && f[240];
 	
-	// Classifier: 4 Iteration: 78
+	// Digit: 4, Tree: 78
 	assign leaf[1050] = !f[102] && !f[430] && !f[379] && !f[580];
 	assign leaf[1051] = !f[102] && !f[430] && !f[379] && f[580];
 	assign leaf[1052] = !f[102] && !f[430] && f[379] && !f[459];
@@ -7461,7 +7461,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1058] = f[102] && !f[185];
 	assign leaf[1059] = f[102] && f[185];
 	
-	// Classifier: 4 Iteration: 79
+	// Digit: 4, Tree: 79
 	assign leaf[1060] = !f[685] && !f[320] && !f[289] && !f[287];
 	assign leaf[1061] = !f[685] && !f[320] && !f[289] && f[287];
 	assign leaf[1062] = !f[685] && !f[320] && f[289] && !f[180];
@@ -7479,7 +7479,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1074] = f[685] && f[239] && f[322] && !f[460];
 	assign leaf[1075] = f[685] && f[239] && f[322] && f[460];
 	
-	// Classifier: 4 Iteration: 80
+	// Digit: 4, Tree: 80
 	assign leaf[1076] = !f[385] && !f[320] && !f[237] && !f[181];
 	assign leaf[1077] = !f[385] && !f[320] && !f[237] && f[181];
 	assign leaf[1078] = !f[385] && !f[320] && f[237] && !f[154];
@@ -7497,7 +7497,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1090] = f[385] && f[522] && f[353] && !f[518];
 	assign leaf[1091] = f[385] && f[522] && f[353] && f[518];
 	
-	// Classifier: 4 Iteration: 81
+	// Digit: 4, Tree: 81
 	assign leaf[1092] = !f[121] && !f[186] && !f[188] && !f[269];
 	assign leaf[1093] = !f[121] && !f[186] && !f[188] && f[269];
 	assign leaf[1094] = !f[121] && !f[186] && f[188] && !f[601];
@@ -7509,14 +7509,14 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1100] = f[121] && !f[574];
 	assign leaf[1101] = f[121] && f[574];
 	
-	// Classifier: 4 Iteration: 82
+	// Digit: 4, Tree: 82
 	assign leaf[1102] = !f[738] && !f[72] && !f[94] && !f[383];
 	assign leaf[1103] = !f[738] && !f[72] && !f[94] && f[383];
 	assign leaf[1104] = !f[738] && !f[72] && f[94];
 	assign leaf[1105] = !f[738] && f[72];
 	assign leaf[1106] = f[738];
 	
-	// Classifier: 4 Iteration: 83
+	// Digit: 4, Tree: 83
 	assign leaf[1107] = !f[384] && !f[494] && !f[435] && !f[294];
 	assign leaf[1108] = !f[384] && !f[494] && !f[435] && f[294];
 	assign leaf[1109] = !f[384] && !f[494] && f[435] && !f[326];
@@ -7534,7 +7534,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1121] = f[384] && f[439] && f[353] && !f[271];
 	assign leaf[1122] = f[384] && f[439] && f[353] && f[271];
 	
-	// Classifier: 4 Iteration: 84
+	// Digit: 4, Tree: 84
 	assign leaf[1123] = !f[275] && !f[123] && !f[238] && !f[240];
 	assign leaf[1124] = !f[275] && !f[123] && !f[238] && f[240];
 	assign leaf[1125] = !f[275] && !f[123] && f[238] && !f[154];
@@ -7547,7 +7547,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1132] = f[275] && !f[453] && f[385] && f[245];
 	assign leaf[1133] = f[275] && f[453];
 	
-	// Classifier: 4 Iteration: 85
+	// Digit: 4, Tree: 85
 	assign leaf[1134] = !f[663] && !f[606] && !f[579] && !f[513];
 	assign leaf[1135] = !f[663] && !f[606] && !f[579] && f[513];
 	assign leaf[1136] = !f[663] && !f[606] && f[579] && !f[213];
@@ -7564,7 +7564,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1147] = f[663] && f[462] && f[206] && !f[232];
 	assign leaf[1148] = f[663] && f[462] && f[206] && f[232];
 	
-	// Classifier: 4 Iteration: 86
+	// Digit: 4, Tree: 86
 	assign leaf[1149] = !f[184] && !f[182] && !f[294] && !f[239];
 	assign leaf[1150] = !f[184] && !f[182] && !f[294] && f[239];
 	assign leaf[1151] = !f[184] && !f[182] && f[294] && !f[291];
@@ -7581,7 +7581,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1162] = f[184] && f[215] && !f[581] && f[441];
 	assign leaf[1163] = f[184] && f[215] && f[581];
 	
-	// Classifier: 4 Iteration: 87
+	// Digit: 4, Tree: 87
 	assign leaf[1164] = !f[746] && !f[429] && !f[349] && !f[188];
 	assign leaf[1165] = !f[746] && !f[429] && !f[349] && f[188];
 	assign leaf[1166] = !f[746] && !f[429] && f[349] && !f[466];
@@ -7592,7 +7592,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1171] = !f[746] && f[429] && f[397] && f[382];
 	assign leaf[1172] = f[746];
 	
-	// Classifier: 4 Iteration: 88
+	// Digit: 4, Tree: 88
 	assign leaf[1173] = !f[465] && !f[424] && !f[380] && !f[439];
 	assign leaf[1174] = !f[465] && !f[424] && !f[380] && f[439];
 	assign leaf[1175] = !f[465] && !f[424] && f[380] && !f[466];
@@ -7607,7 +7607,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1184] = f[465] && f[431] && f[216] && !f[184];
 	assign leaf[1185] = f[465] && f[431] && f[216] && f[184];
 	
-	// Classifier: 4 Iteration: 89
+	// Digit: 4, Tree: 89
 	assign leaf[1186] = !f[303] && !f[386] && !f[234] && !f[684];
 	assign leaf[1187] = !f[303] && !f[386] && !f[234] && f[684];
 	assign leaf[1188] = !f[303] && !f[386] && f[234] && !f[237];
@@ -7621,7 +7621,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1196] = f[303] && !f[324] && f[216];
 	assign leaf[1197] = f[303] && f[324];
 	
-	// Classifier: 4 Iteration: 90
+	// Digit: 4, Tree: 90
 	assign leaf[1198] = !f[389] && !f[128] && !f[555] && !f[370];
 	assign leaf[1199] = !f[389] && !f[128] && !f[555] && f[370];
 	assign leaf[1200] = !f[389] && !f[128] && f[555] && !f[466];
@@ -7632,7 +7632,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1205] = !f[389] && f[128] && f[497] && f[293];
 	assign leaf[1206] = f[389];
 	
-	// Classifier: 4 Iteration: 91
+	// Digit: 4, Tree: 91
 	assign leaf[1207] = !f[746] && !f[400] && !f[490] && !f[628];
 	assign leaf[1208] = !f[746] && !f[400] && !f[490] && f[628];
 	assign leaf[1209] = !f[746] && !f[400] && f[490] && !f[376];
@@ -7643,7 +7643,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1214] = !f[746] && f[400] && f[547] && f[549];
 	assign leaf[1215] = f[746];
 	
-	// Classifier: 4 Iteration: 92
+	// Digit: 4, Tree: 92
 	assign leaf[1216] = !f[494] && !f[435] && !f[520] && !f[408];
 	assign leaf[1217] = !f[494] && !f[435] && !f[520] && f[408];
 	assign leaf[1218] = !f[494] && !f[435] && f[520] && !f[295];
@@ -7661,7 +7661,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1230] = f[494] && f[434] && f[510] && !f[498];
 	assign leaf[1231] = f[494] && f[434] && f[510] && f[498];
 	
-	// Classifier: 4 Iteration: 93
+	// Digit: 4, Tree: 93
 	assign leaf[1232] = !f[237] && !f[261] && !f[239] && !f[236];
 	assign leaf[1233] = !f[237] && !f[261] && !f[239] && f[236];
 	assign leaf[1234] = !f[237] && !f[261] && f[239] && !f[215];
@@ -7679,7 +7679,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1246] = f[237] && f[261] && f[272] && !f[241];
 	assign leaf[1247] = f[237] && f[261] && f[272] && f[241];
 	
-	// Classifier: 4 Iteration: 94
+	// Digit: 4, Tree: 94
 	assign leaf[1248] = !f[234] && !f[178] && !f[232] && !f[180];
 	assign leaf[1249] = !f[234] && !f[178] && !f[232] && f[180];
 	assign leaf[1250] = !f[234] && !f[178] && f[232] && !f[544];
@@ -7695,7 +7695,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1260] = f[234] && f[290] && f[209] && !f[239];
 	assign leaf[1261] = f[234] && f[290] && f[209] && f[239];
 	
-	// Classifier: 4 Iteration: 95
+	// Digit: 4, Tree: 95
 	assign leaf[1262] = !f[741] && !f[97] && !f[381] && !f[379];
 	assign leaf[1263] = !f[741] && !f[97] && !f[381] && f[379];
 	assign leaf[1264] = !f[741] && !f[97] && f[381] && !f[373];
@@ -7704,7 +7704,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1267] = f[741] && !f[462];
 	assign leaf[1268] = f[741] && f[462];
 	
-	// Classifier: 4 Iteration: 96
+	// Digit: 4, Tree: 96
 	assign leaf[1269] = !f[400] && !f[349] && !f[211] && !f[294];
 	assign leaf[1270] = !f[400] && !f[349] && !f[211] && f[294];
 	assign leaf[1271] = !f[400] && !f[349] && f[211] && !f[237];
@@ -7722,7 +7722,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1283] = f[400] && f[457] && f[439] && !f[520];
 	assign leaf[1284] = f[400] && f[457] && f[439] && f[520];
 	
-	// Classifier: 4 Iteration: 97
+	// Digit: 4, Tree: 97
 	assign leaf[1285] = !f[708] && !f[267] && !f[184] && !f[215];
 	assign leaf[1286] = !f[708] && !f[267] && !f[184] && f[215];
 	assign leaf[1287] = !f[708] && !f[267] && f[184] && !f[268];
@@ -7734,7 +7734,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1293] = f[708] && !f[241];
 	assign leaf[1294] = f[708] && f[241];
 	
-	// Classifier: 4 Iteration: 98
+	// Digit: 4, Tree: 98
 	assign leaf[1295] = !f[637] && !f[409] && !f[681] && !f[398];
 	assign leaf[1296] = !f[637] && !f[409] && !f[681] && f[398];
 	assign leaf[1297] = !f[637] && !f[409] && f[681];
@@ -7748,7 +7748,7 @@ module decision_tree_leaves_4(input logic [0:783] f, output logic [0:1315] leaf)
 	assign leaf[1305] = f[637] && f[205] && !f[180];
 	assign leaf[1306] = f[637] && f[205] && f[180];
 	
-	// Classifier: 4 Iteration: 99
+	// Digit: 4, Tree: 99
 	assign leaf[1307] = !f[102] && !f[432] && !f[523] && !f[233];
 	assign leaf[1308] = !f[102] && !f[432] && !f[523] && f[233];
 	assign leaf[1309] = !f[102] && !f[432] && f[523] && !f[635];
@@ -7765,7 +7765,7 @@ endmodule
 
 
 module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf);
-	// Classifier: 5 Iteration: 0
+	// Digit: 5, Tree: 0
 	assign leaf[0] = !f[220] && !f[163] && !f[276] && !f[347];
 	assign leaf[1] = !f[220] && !f[163] && !f[276] && f[347];
 	assign leaf[2] = !f[220] && !f[163] && f[276] && !f[330];
@@ -7782,7 +7782,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[13] = f[220] && f[328] && f[355] && !f[382];
 	assign leaf[14] = f[220] && f[328] && f[355] && f[382];
 	
-	// Classifier: 5 Iteration: 1
+	// Digit: 5, Tree: 1
 	assign leaf[15] = !f[347] && !f[248] && !f[192] && !f[375];
 	assign leaf[16] = !f[347] && !f[248] && !f[192] && f[375];
 	assign leaf[17] = !f[347] && !f[248] && f[192] && !f[300];
@@ -7799,7 +7799,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[28] = f[347] && f[326] && f[408] && !f[304];
 	assign leaf[29] = f[347] && f[326] && f[408] && f[304];
 	
-	// Classifier: 5 Iteration: 2
+	// Digit: 5, Tree: 2
 	assign leaf[30] = !f[326] && !f[296] && !f[356] && !f[655];
 	assign leaf[31] = !f[326] && !f[296] && !f[356] && f[655];
 	assign leaf[32] = !f[326] && !f[296] && f[356] && !f[351];
@@ -7817,7 +7817,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[44] = f[326] && f[304] && f[381] && !f[322];
 	assign leaf[45] = f[326] && f[304] && f[381] && f[322];
 	
-	// Classifier: 5 Iteration: 3
+	// Digit: 5, Tree: 3
 	assign leaf[46] = !f[489] && !f[298] && !f[300] && !f[295];
 	assign leaf[47] = !f[489] && !f[298] && !f[300] && f[295];
 	assign leaf[48] = !f[489] && !f[298] && f[300] && !f[328];
@@ -7835,7 +7835,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[60] = f[489] && f[248] && f[355] && !f[323];
 	assign leaf[61] = f[489] && f[248] && f[355] && f[323];
 	
-	// Classifier: 5 Iteration: 4
+	// Digit: 5, Tree: 4
 	assign leaf[62] = !f[375] && !f[320] && !f[191] && !f[248];
 	assign leaf[63] = !f[375] && !f[320] && !f[191] && f[248];
 	assign leaf[64] = !f[375] && !f[320] && f[191] && !f[300];
@@ -7853,7 +7853,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[76] = f[375] && f[486] && f[514] && !f[458];
 	assign leaf[77] = f[375] && f[486] && f[514] && f[458];
 	
-	// Classifier: 5 Iteration: 5
+	// Digit: 5, Tree: 5
 	assign leaf[78] = !f[327] && !f[296] && !f[517] && !f[330];
 	assign leaf[79] = !f[327] && !f[296] && !f[517] && f[330];
 	assign leaf[80] = !f[327] && !f[296] && f[517] && !f[217];
@@ -7871,7 +7871,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[92] = f[327] && f[323] && f[409] && !f[248];
 	assign leaf[93] = f[327] && f[323] && f[409] && f[248];
 	
-	// Classifier: 5 Iteration: 6
+	// Digit: 5, Tree: 6
 	assign leaf[94] = !f[489] && !f[298] && !f[267] && !f[301];
 	assign leaf[95] = !f[489] && !f[298] && !f[267] && f[301];
 	assign leaf[96] = !f[489] && !f[298] && f[267] && !f[243];
@@ -7889,7 +7889,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[108] = f[489] && f[380] && f[510] && !f[461];
 	assign leaf[109] = f[489] && f[380] && f[510] && f[461];
 	
-	// Classifier: 5 Iteration: 7
+	// Digit: 5, Tree: 7
 	assign leaf[110] = !f[490] && !f[297] && !f[300] && !f[186];
 	assign leaf[111] = !f[490] && !f[297] && !f[300] && f[186];
 	assign leaf[112] = !f[490] && !f[297] && f[300] && !f[328];
@@ -7907,7 +7907,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[124] = f[490] && f[381] && f[435] && !f[221];
 	assign leaf[125] = f[490] && f[381] && f[435] && f[221];
 	
-	// Classifier: 5 Iteration: 8
+	// Digit: 5, Tree: 8
 	assign leaf[126] = !f[488] && !f[188] && !f[247] && !f[158];
 	assign leaf[127] = !f[488] && !f[188] && !f[247] && f[158];
 	assign leaf[128] = !f[488] && !f[188] && f[247] && !f[356];
@@ -7925,7 +7925,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[140] = f[488] && f[380] && f[461] && !f[353];
 	assign leaf[141] = f[488] && f[380] && f[461] && f[353];
 	
-	// Classifier: 5 Iteration: 9
+	// Digit: 5, Tree: 9
 	assign leaf[142] = !f[463] && !f[269] && !f[266] && !f[271];
 	assign leaf[143] = !f[463] && !f[269] && !f[266] && f[271];
 	assign leaf[144] = !f[463] && !f[269] && f[266] && !f[215];
@@ -7943,7 +7943,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[156] = f[463] && f[353] && f[304] && !f[213];
 	assign leaf[157] = f[463] && f[353] && f[304] && f[213];
 	
-	// Classifier: 5 Iteration: 10
+	// Digit: 5, Tree: 10
 	assign leaf[158] = !f[487] && !f[598] && !f[546] && !f[296];
 	assign leaf[159] = !f[487] && !f[598] && !f[546] && f[296];
 	assign leaf[160] = !f[487] && !f[598] && f[546] && !f[542];
@@ -7961,7 +7961,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[172] = f[487] && f[247] && f[356] && !f[710];
 	assign leaf[173] = f[487] && f[247] && f[356] && f[710];
 	
-	// Classifier: 5 Iteration: 11
+	// Digit: 5, Tree: 11
 	assign leaf[174] = !f[190] && !f[248] && !f[491] && !f[268];
 	assign leaf[175] = !f[190] && !f[248] && !f[491] && f[268];
 	assign leaf[176] = !f[190] && !f[248] && f[491] && !f[304];
@@ -7978,7 +7978,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[187] = f[190] && f[301] && f[269] && !f[329];
 	assign leaf[188] = f[190] && f[301] && f[269] && f[329];
 	
-	// Classifier: 5 Iteration: 12
+	// Digit: 5, Tree: 12
 	assign leaf[189] = !f[485] && !f[160] && !f[218] && !f[435];
 	assign leaf[190] = !f[485] && !f[160] && !f[218] && f[435];
 	assign leaf[191] = !f[485] && !f[160] && f[218] && !f[331];
@@ -7996,7 +7996,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[203] = f[485] && f[458] && f[513] && !f[177];
 	assign leaf[204] = f[485] && f[458] && f[513] && f[177];
 	
-	// Classifier: 5 Iteration: 13
+	// Digit: 5, Tree: 13
 	assign leaf[205] = !f[346] && !f[459] && !f[568] && !f[189];
 	assign leaf[206] = !f[346] && !f[459] && !f[568] && f[189];
 	assign leaf[207] = !f[346] && !f[459] && f[568] && !f[293];
@@ -8014,7 +8014,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[219] = f[346] && f[206] && f[269] && !f[238];
 	assign leaf[220] = f[346] && f[206] && f[269] && f[238];
 	
-	// Classifier: 5 Iteration: 14
+	// Digit: 5, Tree: 14
 	assign leaf[221] = !f[488] && !f[457] && !f[159] && !f[217];
 	assign leaf[222] = !f[488] && !f[457] && !f[159] && f[217];
 	assign leaf[223] = !f[488] && !f[457] && f[159] && !f[271];
@@ -8032,7 +8032,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[235] = f[488] && f[380] && f[434] && !f[551];
 	assign leaf[236] = f[488] && f[380] && f[434] && f[551];
 	
-	// Classifier: 5 Iteration: 15
+	// Digit: 5, Tree: 15
 	assign leaf[237] = !f[490] && !f[235] && !f[247] && !f[261];
 	assign leaf[238] = !f[490] && !f[235] && !f[247] && f[261];
 	assign leaf[239] = !f[490] && !f[235] && f[247] && !f[387];
@@ -8050,7 +8050,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[251] = f[490] && f[380] && f[538] && !f[354];
 	assign leaf[252] = f[490] && f[380] && f[538] && f[354];
 	
-	// Classifier: 5 Iteration: 16
+	// Digit: 5, Tree: 16
 	assign leaf[253] = !f[435] && !f[493] && !f[289] && !f[379];
 	assign leaf[254] = !f[435] && !f[493] && !f[289] && f[379];
 	assign leaf[255] = !f[435] && !f[493] && f[289] && !f[387];
@@ -8067,7 +8067,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[266] = f[435] && f[353] && !f[333] && f[191];
 	assign leaf[267] = f[435] && f[353] && f[333];
 	
-	// Classifier: 5 Iteration: 17
+	// Digit: 5, Tree: 17
 	assign leaf[268] = !f[435] && !f[464] && !f[455] && !f[289];
 	assign leaf[269] = !f[435] && !f[464] && !f[455] && f[289];
 	assign leaf[270] = !f[435] && !f[464] && f[455] && !f[522];
@@ -8085,7 +8085,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[282] = f[435] && f[353] && f[276] && !f[324];
 	assign leaf[283] = f[435] && f[353] && f[276] && f[324];
 	
-	// Classifier: 5 Iteration: 18
+	// Digit: 5, Tree: 18
 	assign leaf[284] = !f[277] && !f[461] && !f[130] && !f[187];
 	assign leaf[285] = !f[277] && !f[461] && !f[130] && f[187];
 	assign leaf[286] = !f[277] && !f[461] && f[130] && !f[243];
@@ -8100,7 +8100,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[295] = f[277] && !f[383] && f[183] && f[244];
 	assign leaf[296] = f[277] && f[383];
 	
-	// Classifier: 5 Iteration: 19
+	// Digit: 5, Tree: 19
 	assign leaf[297] = !f[374] && !f[321] && !f[325] && !f[402];
 	assign leaf[298] = !f[374] && !f[321] && !f[325] && f[402];
 	assign leaf[299] = !f[374] && !f[321] && f[325] && !f[380];
@@ -8118,7 +8118,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[311] = f[374] && f[456] && f[540] && !f[163];
 	assign leaf[312] = f[374] && f[456] && f[540] && f[163];
 	
-	// Classifier: 5 Iteration: 20
+	// Digit: 5, Tree: 20
 	assign leaf[313] = !f[374] && !f[292] && !f[356] && !f[325];
 	assign leaf[314] = !f[374] && !f[292] && !f[356] && f[325];
 	assign leaf[315] = !f[374] && !f[292] && f[356] && !f[471];
@@ -8136,7 +8136,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[327] = f[374] && f[456] && f[686] && !f[317];
 	assign leaf[328] = f[374] && f[456] && f[686] && f[317];
 	
-	// Classifier: 5 Iteration: 21
+	// Digit: 5, Tree: 21
 	assign leaf[329] = !f[461] && !f[305] && !f[459] && !f[131];
 	assign leaf[330] = !f[461] && !f[305] && !f[459] && f[131];
 	assign leaf[331] = !f[461] && !f[305] && f[459] && !f[542];
@@ -8153,7 +8153,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[342] = f[461] && f[381] && f[551] && !f[657];
 	assign leaf[343] = f[461] && f[381] && f[551] && f[657];
 	
-	// Classifier: 5 Iteration: 22
+	// Digit: 5, Tree: 22
 	assign leaf[344] = !f[627] && !f[304] && !f[216] && !f[273];
 	assign leaf[345] = !f[627] && !f[304] && !f[216] && f[273];
 	assign leaf[346] = !f[627] && !f[304] && f[216] && !f[300];
@@ -8171,7 +8171,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[358] = f[627] && f[513] && f[458] && !f[177];
 	assign leaf[359] = f[627] && f[513] && f[458] && f[177];
 	
-	// Classifier: 5 Iteration: 23
+	// Digit: 5, Tree: 23
 	assign leaf[360] = !f[462] && !f[464] && !f[228] && !f[610];
 	assign leaf[361] = !f[462] && !f[464] && !f[228] && f[610];
 	assign leaf[362] = !f[462] && !f[464] && f[228] && !f[691];
@@ -8189,7 +8189,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[374] = f[462] && f[353] && f[331] && !f[321];
 	assign leaf[375] = f[462] && f[353] && f[331] && f[321];
 	
-	// Classifier: 5 Iteration: 24
+	// Digit: 5, Tree: 24
 	assign leaf[376] = !f[380] && !f[325] && !f[411] && !f[242];
 	assign leaf[377] = !f[380] && !f[325] && !f[411] && f[242];
 	assign leaf[378] = !f[380] && !f[325] && f[411] && !f[520];
@@ -8207,7 +8207,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[390] = f[380] && f[297] && f[274] && !f[354];
 	assign leaf[391] = f[380] && f[297] && f[274] && f[354];
 	
-	// Classifier: 5 Iteration: 25
+	// Digit: 5, Tree: 25
 	assign leaf[392] = !f[102] && !f[305] && !f[188] && !f[246];
 	assign leaf[393] = !f[102] && !f[305] && !f[188] && f[246];
 	assign leaf[394] = !f[102] && !f[305] && f[188] && !f[301];
@@ -8223,7 +8223,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[404] = f[102] && f[207] && !f[372] && f[264];
 	assign leaf[405] = f[102] && f[207] && f[372];
 	
-	// Classifier: 5 Iteration: 26
+	// Digit: 5, Tree: 26
 	assign leaf[406] = !f[485] && !f[541] && !f[379] && !f[409];
 	assign leaf[407] = !f[485] && !f[541] && !f[379] && f[409];
 	assign leaf[408] = !f[485] && !f[541] && f[379] && !f[324];
@@ -8241,7 +8241,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[420] = f[485] && f[541] && f[430] && !f[276];
 	assign leaf[421] = f[485] && f[541] && f[430] && f[276];
 	
-	// Classifier: 5 Iteration: 27
+	// Digit: 5, Tree: 27
 	assign leaf[422] = !f[102] && !f[583] && !f[455] && !f[538];
 	assign leaf[423] = !f[102] && !f[583] && !f[455] && f[538];
 	assign leaf[424] = !f[102] && !f[583] && f[455] && !f[400];
@@ -8258,7 +8258,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[435] = f[102] && f[352] && !f[243] && f[320];
 	assign leaf[436] = f[102] && f[352] && f[243];
 	
-	// Classifier: 5 Iteration: 28
+	// Digit: 5, Tree: 28
 	assign leaf[437] = !f[380] && !f[454] && !f[465] && !f[378];
 	assign leaf[438] = !f[380] && !f[454] && !f[465] && f[378];
 	assign leaf[439] = !f[380] && !f[454] && f[465] && !f[383];
@@ -8276,7 +8276,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[451] = f[380] && f[434] && f[353] && !f[468];
 	assign leaf[452] = f[380] && f[434] && f[353] && f[468];
 	
-	// Classifier: 5 Iteration: 29
+	// Digit: 5, Tree: 29
 	assign leaf[453] = !f[228] && !f[292] && !f[609] && !f[103];
 	assign leaf[454] = !f[228] && !f[292] && !f[609] && f[103];
 	assign leaf[455] = !f[228] && !f[292] && f[609] && !f[294];
@@ -8288,7 +8288,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[461] = f[228] && !f[172];
 	assign leaf[462] = f[228] && f[172];
 	
-	// Classifier: 5 Iteration: 30
+	// Digit: 5, Tree: 30
 	assign leaf[463] = !f[684] && !f[600] && !f[603] && !f[440];
 	assign leaf[464] = !f[684] && !f[600] && !f[603] && f[440];
 	assign leaf[465] = !f[684] && !f[600] && f[603] && !f[628];
@@ -8306,7 +8306,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[477] = f[684] && f[289] && f[578] && !f[401];
 	assign leaf[478] = f[684] && f[289] && f[578] && f[401];
 	
-	// Classifier: 5 Iteration: 31
+	// Digit: 5, Tree: 31
 	assign leaf[479] = !f[277] && !f[628] && !f[548] && !f[332];
 	assign leaf[480] = !f[277] && !f[628] && !f[548] && f[332];
 	assign leaf[481] = !f[277] && !f[628] && f[548] && !f[683];
@@ -8319,7 +8319,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[488] = f[277] && f[274] && !f[651];
 	assign leaf[489] = f[277] && f[274] && f[651];
 	
-	// Classifier: 5 Iteration: 32
+	// Digit: 5, Tree: 32
 	assign leaf[490] = !f[490] && !f[103] && !f[609] && !f[263];
 	assign leaf[491] = !f[490] && !f[103] && !f[609] && f[263];
 	assign leaf[492] = !f[490] && !f[103] && f[609] && !f[287];
@@ -8336,7 +8336,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[503] = f[490] && f[304] && f[300] && !f[599];
 	assign leaf[504] = f[490] && f[304] && f[300] && f[599];
 	
-	// Classifier: 5 Iteration: 33
+	// Digit: 5, Tree: 33
 	assign leaf[505] = !f[434] && !f[464] && !f[713] && !f[120];
 	assign leaf[506] = !f[434] && !f[464] && !f[713] && f[120];
 	assign leaf[507] = !f[434] && !f[464] && f[713] && !f[465];
@@ -8354,7 +8354,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[519] = f[434] && f[353] && f[347] && !f[276];
 	assign leaf[520] = f[434] && f[353] && f[347] && f[276];
 	
-	// Classifier: 5 Iteration: 34
+	// Digit: 5, Tree: 34
 	assign leaf[521] = !f[228] && !f[191] && !f[248] && !f[269];
 	assign leaf[522] = !f[228] && !f[191] && !f[248] && f[269];
 	assign leaf[523] = !f[228] && !f[191] && f[248] && !f[269];
@@ -8366,7 +8366,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[529] = f[228] && !f[172];
 	assign leaf[530] = f[228] && f[172];
 	
-	// Classifier: 5 Iteration: 35
+	// Digit: 5, Tree: 35
 	assign leaf[531] = !f[188] && !f[245] && !f[240] && !f[157];
 	assign leaf[532] = !f[188] && !f[245] && !f[240] && f[157];
 	assign leaf[533] = !f[188] && !f[245] && f[240] && !f[236];
@@ -8384,7 +8384,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[545] = f[188] && f[213] && f[300] && !f[688];
 	assign leaf[546] = f[188] && f[213] && f[300] && f[688];
 	
-	// Classifier: 5 Iteration: 36
+	// Digit: 5, Tree: 36
 	assign leaf[547] = !f[102] && !f[565] && !f[289] && !f[481];
 	assign leaf[548] = !f[102] && !f[565] && !f[289] && f[481];
 	assign leaf[549] = !f[102] && !f[565] && f[289] && !f[178];
@@ -8400,7 +8400,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[559] = f[102] && f[242] && !f[347];
 	assign leaf[560] = f[102] && f[242] && f[347];
 	
-	// Classifier: 5 Iteration: 37
+	// Digit: 5, Tree: 37
 	assign leaf[561] = !f[333] && !f[485] && !f[160] && !f[218];
 	assign leaf[562] = !f[333] && !f[485] && !f[160] && f[218];
 	assign leaf[563] = !f[333] && !f[485] && f[160] && !f[243];
@@ -8413,7 +8413,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[570] = f[333] && f[330] && !f[571];
 	assign leaf[571] = f[333] && f[330] && f[571];
 	
-	// Classifier: 5 Iteration: 38
+	// Digit: 5, Tree: 38
 	assign leaf[572] = !f[103] && !f[380] && !f[455] && !f[539];
 	assign leaf[573] = !f[103] && !f[380] && !f[455] && f[539];
 	assign leaf[574] = !f[103] && !f[380] && f[455] && !f[597];
@@ -8428,7 +8428,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[583] = f[103] && !f[243] && f[324] && f[437];
 	assign leaf[584] = f[103] && f[243];
 	
-	// Classifier: 5 Iteration: 39
+	// Digit: 5, Tree: 39
 	assign leaf[585] = !f[304] && !f[188] && !f[490] && !f[239];
 	assign leaf[586] = !f[304] && !f[188] && !f[490] && f[239];
 	assign leaf[587] = !f[304] && !f[188] && f[490] && !f[273];
@@ -8443,7 +8443,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[596] = f[304] && f[301] && !f[383] && f[234];
 	assign leaf[597] = f[304] && f[301] && f[383];
 	
-	// Classifier: 5 Iteration: 40
+	// Digit: 5, Tree: 40
 	assign leaf[598] = !f[276] && !f[200] && !f[332] && !f[329];
 	assign leaf[599] = !f[276] && !f[200] && !f[332] && f[329];
 	assign leaf[600] = !f[276] && !f[200] && f[332] && !f[214];
@@ -8456,7 +8456,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[607] = f[276] && f[186] && !f[244];
 	assign leaf[608] = f[276] && f[186] && f[244];
 	
-	// Classifier: 5 Iteration: 41
+	// Digit: 5, Tree: 41
 	assign leaf[609] = !f[103] && !f[436] && !f[485] && !f[402];
 	assign leaf[610] = !f[103] && !f[436] && !f[485] && f[402];
 	assign leaf[611] = !f[103] && !f[436] && f[485] && !f[541];
@@ -8470,7 +8470,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[619] = f[103] && !f[245] && f[576] && f[348];
 	assign leaf[620] = f[103] && f[245];
 	
-	// Classifier: 5 Iteration: 42
+	// Digit: 5, Tree: 42
 	assign leaf[621] = !f[612] && !f[565] && !f[289] && !f[481];
 	assign leaf[622] = !f[612] && !f[565] && !f[289] && f[481];
 	assign leaf[623] = !f[612] && !f[565] && f[289] && !f[205];
@@ -8481,7 +8481,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[628] = !f[612] && f[565] && f[454] && f[246];
 	assign leaf[629] = f[612];
 	
-	// Classifier: 5 Iteration: 43
+	// Digit: 5, Tree: 43
 	assign leaf[630] = !f[488] && !f[485] && !f[133] && !f[380];
 	assign leaf[631] = !f[488] && !f[485] && !f[133] && f[380];
 	assign leaf[632] = !f[488] && !f[485] && f[133] && !f[218];
@@ -8497,7 +8497,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[642] = f[488] && f[717] && !f[632];
 	assign leaf[643] = f[488] && f[717] && f[632];
 	
-	// Classifier: 5 Iteration: 44
+	// Digit: 5, Tree: 44
 	assign leaf[644] = !f[411] && !f[301] && !f[217] && !f[295];
 	assign leaf[645] = !f[411] && !f[301] && !f[217] && f[295];
 	assign leaf[646] = !f[411] && !f[301] && f[217] && !f[298];
@@ -8515,7 +8515,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[658] = f[411] && f[496] && f[185] && !f[271];
 	assign leaf[659] = f[411] && f[496] && f[185] && f[271];
 	
-	// Classifier: 5 Iteration: 45
+	// Digit: 5, Tree: 45
 	assign leaf[660] = !f[556] && !f[654] && !f[459] && !f[543];
 	assign leaf[661] = !f[556] && !f[654] && !f[459] && f[543];
 	assign leaf[662] = !f[556] && !f[654] && f[459] && !f[401];
@@ -8529,7 +8529,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[670] = f[556] && f[372] && f[526] && !f[636];
 	assign leaf[671] = f[556] && f[372] && f[526] && f[636];
 	
-	// Classifier: 5 Iteration: 46
+	// Digit: 5, Tree: 46
 	assign leaf[672] = !f[433] && !f[347] && !f[293] && !f[547];
 	assign leaf[673] = !f[433] && !f[347] && !f[293] && f[547];
 	assign leaf[674] = !f[433] && !f[347] && f[293] && !f[258];
@@ -8547,7 +8547,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[686] = f[433] && f[352] && f[331] && !f[275];
 	assign leaf[687] = f[433] && f[352] && f[331] && f[275];
 	
-	// Classifier: 5 Iteration: 47
+	// Digit: 5, Tree: 47
 	assign leaf[688] = !f[517] && !f[262] && !f[551] && !f[571];
 	assign leaf[689] = !f[517] && !f[262] && !f[551] && f[571];
 	assign leaf[690] = !f[517] && !f[262] && f[551] && !f[236];
@@ -8565,7 +8565,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[702] = f[517] && f[467] && f[540] && !f[381];
 	assign leaf[703] = f[517] && f[467] && f[540] && f[381];
 	
-	// Classifier: 5 Iteration: 48
+	// Digit: 5, Tree: 48
 	assign leaf[704] = !f[264] && !f[241] && !f[239] && !f[243];
 	assign leaf[705] = !f[264] && !f[241] && !f[239] && f[243];
 	assign leaf[706] = !f[264] && !f[241] && f[239] && !f[187];
@@ -8583,7 +8583,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[718] = f[264] && f[241] && f[352] && !f[243];
 	assign leaf[719] = f[264] && f[241] && f[352] && f[243];
 	
-	// Classifier: 5 Iteration: 49
+	// Digit: 5, Tree: 49
 	assign leaf[720] = !f[411] && !f[329] && !f[325] && !f[215];
 	assign leaf[721] = !f[411] && !f[329] && !f[325] && f[215];
 	assign leaf[722] = !f[411] && !f[329] && f[325] && !f[352];
@@ -8600,7 +8600,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[733] = f[411] && f[329] && !f[150] && f[130];
 	assign leaf[734] = f[411] && f[329] && f[150];
 	
-	// Classifier: 5 Iteration: 50
+	// Digit: 5, Tree: 50
 	assign leaf[735] = !f[102] && !f[556] && !f[433] && !f[468];
 	assign leaf[736] = !f[102] && !f[556] && !f[433] && f[468];
 	assign leaf[737] = !f[102] && !f[556] && f[433] && !f[684];
@@ -8614,7 +8614,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[745] = f[102] && f[604] && !f[344] && f[349];
 	assign leaf[746] = f[102] && f[604] && f[344];
 	
-	// Classifier: 5 Iteration: 51
+	// Digit: 5, Tree: 51
 	assign leaf[747] = !f[200] && !f[717] && !f[599] && !f[681];
 	assign leaf[748] = !f[200] && !f[717] && !f[599] && f[681];
 	assign leaf[749] = !f[200] && !f[717] && f[599] && !f[602];
@@ -8625,7 +8625,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[754] = !f[200] && f[717] && f[577] && f[214];
 	assign leaf[755] = f[200];
 	
-	// Classifier: 5 Iteration: 52
+	// Digit: 5, Tree: 52
 	assign leaf[756] = !f[264] && !f[241] && !f[243] && !f[239];
 	assign leaf[757] = !f[264] && !f[241] && !f[243] && f[239];
 	assign leaf[758] = !f[264] && !f[241] && f[243] && !f[268];
@@ -8643,7 +8643,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[770] = f[264] && f[207] && f[174] && !f[413];
 	assign leaf[771] = f[264] && f[207] && f[174] && f[413];
 	
-	// Classifier: 5 Iteration: 53
+	// Digit: 5, Tree: 53
 	assign leaf[772] = !f[228] && !f[101] && !f[565] && !f[481];
 	assign leaf[773] = !f[228] && !f[101] && !f[565] && f[481];
 	assign leaf[774] = !f[228] && !f[101] && f[565] && !f[427];
@@ -8653,7 +8653,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[778] = !f[228] && f[101] && f[242];
 	assign leaf[779] = f[228];
 	
-	// Classifier: 5 Iteration: 54
+	// Digit: 5, Tree: 54
 	assign leaf[780] = !f[382] && !f[440] && !f[324] && !f[270];
 	assign leaf[781] = !f[382] && !f[440] && !f[324] && f[270];
 	assign leaf[782] = !f[382] && !f[440] && f[324] && !f[328];
@@ -8671,7 +8671,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[794] = f[382] && f[328] && f[324] && !f[272];
 	assign leaf[795] = f[382] && f[328] && f[324] && f[272];
 	
-	// Classifier: 5 Iteration: 55
+	// Digit: 5, Tree: 55
 	assign leaf[796] = !f[583] && !f[386] && !f[471] && !f[331];
 	assign leaf[797] = !f[583] && !f[386] && !f[471] && f[331];
 	assign leaf[798] = !f[583] && !f[386] && f[471] && !f[354];
@@ -8687,7 +8687,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[808] = f[583] && f[230] && f[287] && !f[238];
 	assign leaf[809] = f[583] && f[230] && f[287] && f[238];
 	
-	// Classifier: 5 Iteration: 56
+	// Digit: 5, Tree: 56
 	assign leaf[810] = !f[598] && !f[214] && !f[270] && !f[266];
 	assign leaf[811] = !f[598] && !f[214] && !f[270] && f[266];
 	assign leaf[812] = !f[598] && !f[214] && f[270] && !f[294];
@@ -8705,7 +8705,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[824] = f[598] && f[486] && f[541] && !f[370];
 	assign leaf[825] = f[598] && f[486] && f[541] && f[370];
 	
-	// Classifier: 5 Iteration: 57
+	// Digit: 5, Tree: 57
 	assign leaf[826] = !f[129] && !f[215] && !f[273] && !f[239];
 	assign leaf[827] = !f[129] && !f[215] && !f[273] && f[239];
 	assign leaf[828] = !f[129] && !f[215] && f[273] && !f[270];
@@ -8721,7 +8721,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[838] = f[129] && f[242] && f[239] && !f[125];
 	assign leaf[839] = f[129] && f[242] && f[239] && f[125];
 	
-	// Classifier: 5 Iteration: 58
+	// Digit: 5, Tree: 58
 	assign leaf[840] = !f[380] && !f[292] && !f[413] && !f[345];
 	assign leaf[841] = !f[380] && !f[292] && !f[413] && f[345];
 	assign leaf[842] = !f[380] && !f[292] && f[413] && !f[661];
@@ -8739,7 +8739,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[854] = f[380] && f[131] && f[630] && !f[651];
 	assign leaf[855] = f[380] && f[131] && f[630] && f[651];
 	
-	// Classifier: 5 Iteration: 59
+	// Digit: 5, Tree: 59
 	assign leaf[856] = !f[442] && !f[538] && !f[160] && !f[546];
 	assign leaf[857] = !f[442] && !f[538] && !f[160] && f[546];
 	assign leaf[858] = !f[442] && !f[538] && f[160] && !f[513];
@@ -8756,7 +8756,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[869] = f[442] && f[176] && f[179] && !f[287];
 	assign leaf[870] = f[442] && f[176] && f[179] && f[287];
 	
-	// Classifier: 5 Iteration: 60
+	// Digit: 5, Tree: 60
 	assign leaf[871] = !f[713] && !f[630] && !f[403] && !f[511];
 	assign leaf[872] = !f[713] && !f[630] && !f[403] && f[511];
 	assign leaf[873] = !f[713] && !f[630] && f[403] && !f[406];
@@ -8773,7 +8773,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[884] = f[713] && f[574] && !f[710] && f[683];
 	assign leaf[885] = f[713] && f[574] && f[710];
 	
-	// Classifier: 5 Iteration: 61
+	// Digit: 5, Tree: 61
 	assign leaf[886] = !f[459] && !f[411] && !f[551] && !f[151];
 	assign leaf[887] = !f[459] && !f[411] && !f[551] && f[151];
 	assign leaf[888] = !f[459] && !f[411] && f[551] && !f[294];
@@ -8789,7 +8789,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[898] = f[459] && f[430] && f[542] && !f[576];
 	assign leaf[899] = f[459] && f[430] && f[542] && f[576];
 	
-	// Classifier: 5 Iteration: 62
+	// Digit: 5, Tree: 62
 	assign leaf[900] = !f[402] && !f[630] && !f[270] && !f[126];
 	assign leaf[901] = !f[402] && !f[630] && !f[270] && f[126];
 	assign leaf[902] = !f[402] && !f[630] && f[270] && !f[214];
@@ -8807,7 +8807,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[914] = f[402] && f[546] && f[185] && !f[378];
 	assign leaf[915] = f[402] && f[546] && f[185] && f[378];
 	
-	// Classifier: 5 Iteration: 63
+	// Digit: 5, Tree: 63
 	assign leaf[916] = !f[631] && !f[715] && !f[514] && !f[440];
 	assign leaf[917] = !f[631] && !f[715] && !f[514] && f[440];
 	assign leaf[918] = !f[631] && !f[715] && f[514] && !f[655];
@@ -8824,7 +8824,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[929] = f[631] && f[457] && f[712] && !f[295];
 	assign leaf[930] = f[631] && f[457] && f[712] && f[295];
 	
-	// Classifier: 5 Iteration: 64
+	// Digit: 5, Tree: 64
 	assign leaf[931] = !f[612] && !f[598] && !f[684] && !f[512];
 	assign leaf[932] = !f[612] && !f[598] && !f[684] && f[512];
 	assign leaf[933] = !f[612] && !f[598] && f[684] && !f[576];
@@ -8835,7 +8835,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[938] = !f[612] && f[598] && f[486] && f[371];
 	assign leaf[939] = f[612];
 	
-	// Classifier: 5 Iteration: 65
+	// Digit: 5, Tree: 65
 	assign leaf[940] = !f[381] && !f[326] && !f[441] && !f[324];
 	assign leaf[941] = !f[381] && !f[326] && !f[441] && f[324];
 	assign leaf[942] = !f[381] && !f[326] && f[441] && !f[661];
@@ -8853,7 +8853,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[954] = f[381] && f[327] && f[294] && !f[653];
 	assign leaf[955] = f[381] && f[327] && f[294] && f[653];
 	
-	// Classifier: 5 Iteration: 66
+	// Digit: 5, Tree: 66
 	assign leaf[956] = !f[99] && !f[188] && !f[244] && !f[239];
 	assign leaf[957] = !f[99] && !f[188] && !f[244] && f[239];
 	assign leaf[958] = !f[99] && !f[188] && f[244] && !f[267];
@@ -8869,7 +8869,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[968] = f[99] && f[240] && !f[185];
 	assign leaf[969] = f[99] && f[240] && f[185];
 	
-	// Classifier: 5 Iteration: 67
+	// Digit: 5, Tree: 67
 	assign leaf[970] = !f[200] && !f[436] && !f[485] && !f[292];
 	assign leaf[971] = !f[200] && !f[436] && !f[485] && f[292];
 	assign leaf[972] = !f[200] && !f[436] && f[485] && !f[352];
@@ -8880,7 +8880,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[977] = !f[200] && f[436] && f[354] && f[324];
 	assign leaf[978] = f[200];
 	
-	// Classifier: 5 Iteration: 68
+	// Digit: 5, Tree: 68
 	assign leaf[979] = !f[120] && !f[686] && !f[598] && !f[509];
 	assign leaf[980] = !f[120] && !f[686] && !f[598] && f[509];
 	assign leaf[981] = !f[120] && !f[686] && f[598] && !f[214];
@@ -8893,7 +8893,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[988] = f[120] && !f[204] && f[553];
 	assign leaf[989] = f[120] && f[204];
 	
-	// Classifier: 5 Iteration: 69
+	// Digit: 5, Tree: 69
 	assign leaf[990] = !f[465] && !f[409] && !f[379] && !f[496];
 	assign leaf[991] = !f[465] && !f[409] && !f[379] && f[496];
 	assign leaf[992] = !f[465] && !f[409] && f[379] && !f[433];
@@ -8911,7 +8911,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1004] = f[465] && f[355] && f[509] && !f[190];
 	assign leaf[1005] = f[465] && f[355] && f[509] && f[190];
 	
-	// Classifier: 5 Iteration: 70
+	// Digit: 5, Tree: 70
 	assign leaf[1006] = !f[120] && !f[630] && !f[714] && !f[270];
 	assign leaf[1007] = !f[120] && !f[630] && !f[714] && f[270];
 	assign leaf[1008] = !f[120] && !f[630] && f[714] && !f[296];
@@ -8924,7 +8924,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1015] = f[120] && !f[231] && f[553];
 	assign leaf[1016] = f[120] && f[231];
 	
-	// Classifier: 5 Iteration: 71
+	// Digit: 5, Tree: 71
 	assign leaf[1017] = !f[382] && !f[440] && !f[301] && !f[324];
 	assign leaf[1018] = !f[382] && !f[440] && !f[301] && f[324];
 	assign leaf[1019] = !f[382] && !f[440] && f[301] && !f[186];
@@ -8942,7 +8942,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1031] = f[382] && f[524] && f[490] && !f[240];
 	assign leaf[1032] = f[382] && f[524] && f[490] && f[240];
 	
-	// Classifier: 5 Iteration: 72
+	// Digit: 5, Tree: 72
 	assign leaf[1033] = !f[102] && !f[584] && !f[483] && !f[625];
 	assign leaf[1034] = !f[102] && !f[584] && !f[483] && f[625];
 	assign leaf[1035] = !f[102] && !f[584] && f[483] && !f[428];
@@ -8955,7 +8955,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1042] = f[102] && f[603] && f[401] && !f[237];
 	assign leaf[1043] = f[102] && f[603] && f[401] && f[237];
 	
-	// Classifier: 5 Iteration: 73
+	// Digit: 5, Tree: 73
 	assign leaf[1044] = !f[145] && !f[285] && !f[380] && !f[353];
 	assign leaf[1045] = !f[145] && !f[285] && !f[380] && f[353];
 	assign leaf[1046] = !f[145] && !f[285] && f[380] && !f[377];
@@ -8966,7 +8966,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1051] = !f[145] && f[285] && f[371] && f[527];
 	assign leaf[1052] = f[145];
 	
-	// Classifier: 5 Iteration: 74
+	// Digit: 5, Tree: 74
 	assign leaf[1053] = !f[322] && !f[349] && !f[520] && !f[263];
 	assign leaf[1054] = !f[322] && !f[349] && !f[520] && f[263];
 	assign leaf[1055] = !f[322] && !f[349] && f[520] && !f[490];
@@ -8984,7 +8984,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1067] = f[322] && f[218] && f[160] && !f[237];
 	assign leaf[1068] = f[322] && f[218] && f[160] && f[237];
 	
-	// Classifier: 5 Iteration: 75
+	// Digit: 5, Tree: 75
 	assign leaf[1069] = !f[402] && !f[484] && !f[631] && !f[493];
 	assign leaf[1070] = !f[402] && !f[484] && !f[631] && f[493];
 	assign leaf[1071] = !f[402] && !f[484] && f[631] && !f[601];
@@ -9002,7 +9002,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1083] = f[402] && f[484] && f[625] && !f[489];
 	assign leaf[1084] = f[402] && f[484] && f[625] && f[489];
 	
-	// Classifier: 5 Iteration: 76
+	// Digit: 5, Tree: 76
 	assign leaf[1085] = !f[707] && !f[402] && !f[243] && !f[187];
 	assign leaf[1086] = !f[707] && !f[402] && !f[243] && f[187];
 	assign leaf[1087] = !f[707] && !f[402] && f[243] && !f[240];
@@ -9014,7 +9014,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1093] = f[707] && !f[627];
 	assign leaf[1094] = f[707] && f[627];
 	
-	// Classifier: 5 Iteration: 77
+	// Digit: 5, Tree: 77
 	assign leaf[1095] = !f[190] && !f[130] && !f[406] && !f[464];
 	assign leaf[1096] = !f[190] && !f[130] && !f[406] && f[464];
 	assign leaf[1097] = !f[190] && !f[130] && f[406] && !f[325];
@@ -9032,7 +9032,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1109] = f[190] && f[214] && f[275] && !f[270];
 	assign leaf[1110] = f[190] && f[214] && f[275] && f[270];
 	
-	// Classifier: 5 Iteration: 78
+	// Digit: 5, Tree: 78
 	assign leaf[1111] = !f[99] && !f[153] && !f[102] && !f[687];
 	assign leaf[1112] = !f[99] && !f[153] && !f[102] && f[687];
 	assign leaf[1113] = !f[99] && !f[153] && f[102] && !f[464];
@@ -9048,7 +9048,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1123] = f[99] && f[181] && !f[458] && f[237];
 	assign leaf[1124] = f[99] && f[181] && f[458];
 	
-	// Classifier: 5 Iteration: 79
+	// Digit: 5, Tree: 79
 	assign leaf[1125] = !f[411] && !f[468] && !f[354] && !f[301];
 	assign leaf[1126] = !f[411] && !f[468] && !f[354] && f[301];
 	assign leaf[1127] = !f[411] && !f[468] && f[354] && !f[324];
@@ -9065,7 +9065,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1138] = f[411] && f[523] && f[187] && !f[237];
 	assign leaf[1139] = f[411] && f[523] && f[187] && f[237];
 	
-	// Classifier: 5 Iteration: 80
+	// Digit: 5, Tree: 80
 	assign leaf[1140] = !f[612] && !f[484] && !f[134] && !f[429];
 	assign leaf[1141] = !f[612] && !f[484] && !f[134] && f[429];
 	assign leaf[1142] = !f[612] && !f[484] && f[134] && !f[191];
@@ -9076,7 +9076,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1147] = !f[612] && f[484] && f[429] && f[540];
 	assign leaf[1148] = f[612];
 	
-	// Classifier: 5 Iteration: 81
+	// Digit: 5, Tree: 81
 	assign leaf[1149] = !f[411] && !f[440] && !f[357] && !f[325];
 	assign leaf[1150] = !f[411] && !f[440] && !f[357] && f[325];
 	assign leaf[1151] = !f[411] && !f[440] && f[357] && !f[272];
@@ -9092,7 +9092,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1161] = f[411] && f[329] && !f[552];
 	assign leaf[1162] = f[411] && f[329] && f[552];
 	
-	// Classifier: 5 Iteration: 82
+	// Digit: 5, Tree: 82
 	assign leaf[1163] = !f[402] && !f[187] && !f[239] && !f[128];
 	assign leaf[1164] = !f[402] && !f[187] && !f[239] && f[128];
 	assign leaf[1165] = !f[402] && !f[187] && f[239] && !f[244];
@@ -9110,7 +9110,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1177] = f[402] && f[484] && f[625] && !f[467];
 	assign leaf[1178] = f[402] && f[484] && f[625] && f[467];
 	
-	// Classifier: 5 Iteration: 83
+	// Digit: 5, Tree: 83
 	assign leaf[1179] = !f[276] && !f[380] && !f[681] && !f[521];
 	assign leaf[1180] = !f[276] && !f[380] && !f[681] && f[521];
 	assign leaf[1181] = !f[276] && !f[380] && f[681] && !f[548];
@@ -9124,7 +9124,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1189] = f[276] && f[273] && !f[234] && f[351];
 	assign leaf[1190] = f[276] && f[273] && f[234];
 	
-	// Classifier: 5 Iteration: 84
+	// Digit: 5, Tree: 84
 	assign leaf[1191] = !f[216] && !f[322] && !f[599] && !f[524];
 	assign leaf[1192] = !f[216] && !f[322] && !f[599] && f[524];
 	assign leaf[1193] = !f[216] && !f[322] && f[599] && !f[242];
@@ -9141,7 +9141,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1204] = f[216] && f[299] && f[268] && !f[272];
 	assign leaf[1205] = f[216] && f[299] && f[268] && f[272];
 	
-	// Classifier: 5 Iteration: 85
+	// Digit: 5, Tree: 85
 	assign leaf[1206] = !f[717] && !f[577] && !f[432] && !f[411];
 	assign leaf[1207] = !f[717] && !f[577] && !f[432] && f[411];
 	assign leaf[1208] = !f[717] && !f[577] && f[432] && !f[330];
@@ -9154,7 +9154,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1215] = f[717] && !f[351] && f[577];
 	assign leaf[1216] = f[717] && f[351];
 	
-	// Classifier: 5 Iteration: 86
+	// Digit: 5, Tree: 86
 	assign leaf[1217] = !f[685] && !f[521] && !f[205] && !f[318];
 	assign leaf[1218] = !f[685] && !f[521] && !f[205] && f[318];
 	assign leaf[1219] = !f[685] && !f[521] && f[205] && !f[375];
@@ -9171,7 +9171,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1230] = f[685] && f[546] && f[210] && !f[274];
 	assign leaf[1231] = f[685] && f[546] && f[210] && f[274];
 	
-	// Classifier: 5 Iteration: 87
+	// Digit: 5, Tree: 87
 	assign leaf[1232] = !f[333] && !f[622] && !f[598] && !f[654];
 	assign leaf[1233] = !f[333] && !f[622] && !f[598] && f[654];
 	assign leaf[1234] = !f[333] && !f[622] && f[598] && !f[397];
@@ -9182,7 +9182,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1239] = !f[333] && f[622] && f[540] && f[537];
 	assign leaf[1240] = f[333];
 	
-	// Classifier: 5 Iteration: 88
+	// Digit: 5, Tree: 88
 	assign leaf[1241] = !f[492] && !f[490] && !f[510] && !f[99];
 	assign leaf[1242] = !f[492] && !f[490] && !f[510] && f[99];
 	assign leaf[1243] = !f[492] && !f[490] && f[510] && !f[625];
@@ -9200,7 +9200,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1255] = f[492] && f[625] && f[321] && !f[296];
 	assign leaf[1256] = f[492] && f[625] && f[321] && f[296];
 	
-	// Classifier: 5 Iteration: 89
+	// Digit: 5, Tree: 89
 	assign leaf[1257] = !f[351] && !f[454] && !f[296] && !f[327];
 	assign leaf[1258] = !f[351] && !f[454] && !f[296] && f[327];
 	assign leaf[1259] = !f[351] && !f[454] && f[296] && !f[184];
@@ -9218,7 +9218,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1271] = f[351] && f[406] && f[540] && !f[325];
 	assign leaf[1272] = f[351] && f[406] && f[540] && f[325];
 	
-	// Classifier: 5 Iteration: 90
+	// Digit: 5, Tree: 90
 	assign leaf[1273] = !f[119] && !f[322] && !f[519] && !f[517];
 	assign leaf[1274] = !f[119] && !f[322] && !f[519] && f[517];
 	assign leaf[1275] = !f[119] && !f[322] && f[519] && !f[295];
@@ -9230,7 +9230,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1281] = f[119] && !f[609];
 	assign leaf[1282] = f[119] && f[609];
 	
-	// Classifier: 5 Iteration: 91
+	// Digit: 5, Tree: 91
 	assign leaf[1283] = !f[485] && !f[291] && !f[596] && !f[266];
 	assign leaf[1284] = !f[485] && !f[291] && !f[596] && f[266];
 	assign leaf[1285] = !f[485] && !f[291] && f[596] && !f[235];
@@ -9247,7 +9247,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1296] = f[485] && f[407] && f[515] && !f[577];
 	assign leaf[1297] = f[485] && f[407] && f[515] && f[577];
 	
-	// Classifier: 5 Iteration: 92
+	// Digit: 5, Tree: 92
 	assign leaf[1298] = !f[627] && !f[428] && !f[271] && !f[184];
 	assign leaf[1299] = !f[627] && !f[428] && !f[271] && f[184];
 	assign leaf[1300] = !f[627] && !f[428] && f[271] && !f[269];
@@ -9265,7 +9265,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1312] = f[627] && f[463] && f[547] && !f[384];
 	assign leaf[1313] = f[627] && f[463] && f[547] && f[384];
 	
-	// Classifier: 5 Iteration: 93
+	// Digit: 5, Tree: 93
 	assign leaf[1314] = !f[276] && !f[434] && !f[520] && !f[322];
 	assign leaf[1315] = !f[276] && !f[434] && !f[520] && f[322];
 	assign leaf[1316] = !f[276] && !f[434] && f[520] && !f[264];
@@ -9279,7 +9279,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1324] = f[276] && f[273] && !f[262] && f[351];
 	assign leaf[1325] = f[276] && f[273] && f[262];
 	
-	// Classifier: 5 Iteration: 94
+	// Digit: 5, Tree: 94
 	assign leaf[1326] = !f[612] && !f[147] && !f[258] && !f[155];
 	assign leaf[1327] = !f[612] && !f[147] && !f[258] && f[155];
 	assign leaf[1328] = !f[612] && !f[147] && f[258] && !f[399];
@@ -9290,7 +9290,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1333] = !f[612] && f[147] && f[204] && f[498];
 	assign leaf[1334] = f[612];
 	
-	// Classifier: 5 Iteration: 95
+	// Digit: 5, Tree: 95
 	assign leaf[1335] = !f[636] && !f[177] && !f[315] && !f[232];
 	assign leaf[1336] = !f[636] && !f[177] && !f[315] && f[232];
 	assign leaf[1337] = !f[636] && !f[177] && f[315] && !f[204];
@@ -9308,7 +9308,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1349] = f[636] && f[344] && f[260] && !f[660];
 	assign leaf[1350] = f[636] && f[344] && f[260] && f[660];
 	
-	// Classifier: 5 Iteration: 96
+	// Digit: 5, Tree: 96
 	assign leaf[1351] = !f[380] && !f[686] && !f[549] && !f[293];
 	assign leaf[1352] = !f[380] && !f[686] && !f[549] && f[293];
 	assign leaf[1353] = !f[380] && !f[686] && f[549] && !f[427];
@@ -9324,7 +9324,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1363] = f[380] && f[248] && !f[219];
 	assign leaf[1364] = f[380] && f[248] && f[219];
 	
-	// Classifier: 5 Iteration: 97
+	// Digit: 5, Tree: 97
 	assign leaf[1365] = !f[707] && !f[424] && !f[508] && !f[322];
 	assign leaf[1366] = !f[707] && !f[424] && !f[508] && f[322];
 	assign leaf[1367] = !f[707] && !f[424] && f[508] && !f[301];
@@ -9333,7 +9333,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1370] = !f[707] && f[424] && f[357];
 	assign leaf[1371] = f[707];
 	
-	// Classifier: 5 Iteration: 98
+	// Digit: 5, Tree: 98
 	assign leaf[1372] = !f[411] && !f[158] && !f[434] && !f[270];
 	assign leaf[1373] = !f[411] && !f[158] && !f[434] && f[270];
 	assign leaf[1374] = !f[411] && !f[158] && f[434] && !f[352];
@@ -9350,7 +9350,7 @@ module decision_tree_leaves_5(input logic [0:783] f, output logic [0:1401] leaf)
 	assign leaf[1385] = f[411] && f[300] && f[383] && !f[356];
 	assign leaf[1386] = f[411] && f[300] && f[383] && f[356];
 	
-	// Classifier: 5 Iteration: 99
+	// Digit: 5, Tree: 99
 	assign leaf[1387] = !f[297] && !f[215] && !f[266] && !f[127];
 	assign leaf[1388] = !f[297] && !f[215] && !f[266] && f[127];
 	assign leaf[1389] = !f[297] && !f[215] && f[266] && !f[623];
@@ -9373,7 +9373,7 @@ endmodule
 
 
 module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf);
-	// Classifier: 6 Iteration: 0
+	// Digit: 6, Tree: 0
 	assign leaf[0] = !f[101] && !f[98] && !f[103] && !f[95];
 	assign leaf[1] = !f[101] && !f[98] && !f[103] && f[95];
 	assign leaf[2] = !f[101] && !f[98] && f[103] && !f[244];
@@ -9391,7 +9391,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[14] = f[101] && f[243] && f[317] && !f[461];
 	assign leaf[15] = f[101] && f[243] && f[317] && f[461];
 	
-	// Classifier: 6 Iteration: 1
+	// Digit: 6, Tree: 1
 	assign leaf[16] = !f[514] && !f[101] && !f[70] && !f[105];
 	assign leaf[17] = !f[514] && !f[101] && !f[70] && f[105];
 	assign leaf[18] = !f[514] && !f[101] && f[70] && !f[156];
@@ -9409,7 +9409,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[30] = f[514] && f[242] && f[105] && !f[325];
 	assign leaf[31] = f[514] && f[242] && f[105] && f[325];
 	
-	// Classifier: 6 Iteration: 2
+	// Digit: 6, Tree: 2
 	assign leaf[32] = !f[543] && !f[104] && !f[101] && !f[69];
 	assign leaf[33] = !f[543] && !f[104] && !f[101] && f[69];
 	assign leaf[34] = !f[543] && !f[104] && f[101] && !f[402];
@@ -9427,7 +9427,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[46] = f[543] && f[242] && f[106] && !f[325];
 	assign leaf[47] = f[543] && f[242] && f[106] && f[325];
 	
-	// Classifier: 6 Iteration: 3
+	// Digit: 6, Tree: 3
 	assign leaf[48] = !f[543] && !f[570] && !f[68] && !f[70];
 	assign leaf[49] = !f[543] && !f[570] && !f[68] && f[70];
 	assign leaf[50] = !f[543] && !f[570] && f[68];
@@ -9444,7 +9444,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[61] = f[543] && f[242] && f[105] && !f[298];
 	assign leaf[62] = f[543] && f[242] && f[105] && f[298];
 	
-	// Classifier: 6 Iteration: 4
+	// Digit: 6, Tree: 4
 	assign leaf[63] = !f[514] && !f[512] && !f[515] && !f[387];
 	assign leaf[64] = !f[514] && !f[512] && !f[515] && f[387];
 	assign leaf[65] = !f[514] && !f[512] && f[515] && !f[431];
@@ -9462,7 +9462,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[77] = f[514] && f[270] && f[386] && !f[241];
 	assign leaf[78] = f[514] && f[270] && f[386] && f[241];
 	
-	// Classifier: 6 Iteration: 5
+	// Digit: 6, Tree: 5
 	assign leaf[79] = !f[270] && !f[543] && !f[541] && !f[516];
 	assign leaf[80] = !f[270] && !f[543] && !f[541] && f[516];
 	assign leaf[81] = !f[270] && !f[543] && f[541] && !f[244];
@@ -9479,7 +9479,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[92] = f[270] && f[92] && !f[123] && f[150];
 	assign leaf[93] = f[270] && f[92] && f[123];
 	
-	// Classifier: 6 Iteration: 6
+	// Digit: 6, Tree: 6
 	assign leaf[94] = !f[270] && !f[486] && !f[484] && !f[487];
 	assign leaf[95] = !f[270] && !f[486] && !f[484] && f[487];
 	assign leaf[96] = !f[270] && !f[486] && f[484] && !f[244];
@@ -9496,7 +9496,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[107] = f[270] && f[386] && f[122] && !f[212];
 	assign leaf[108] = f[270] && f[386] && f[122] && f[212];
 	
-	// Classifier: 6 Iteration: 7
+	// Digit: 6, Tree: 7
 	assign leaf[109] = !f[242] && !f[572] && !f[388] && !f[131];
 	assign leaf[110] = !f[242] && !f[572] && !f[388] && f[131];
 	assign leaf[111] = !f[242] && !f[572] && f[388] && !f[329];
@@ -9514,7 +9514,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[123] = f[242] && f[133] && f[298] && !f[326];
 	assign leaf[124] = f[242] && f[133] && f[298] && f[326];
 	
-	// Classifier: 6 Iteration: 8
+	// Digit: 6, Tree: 8
 	assign leaf[125] = !f[486] && !f[484] && !f[388] && !f[487];
 	assign leaf[126] = !f[486] && !f[484] && !f[388] && f[487];
 	assign leaf[127] = !f[486] && !f[484] && f[388] && !f[266];
@@ -9532,7 +9532,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[139] = f[486] && f[271] && f[121] && !f[185];
 	assign leaf[140] = f[486] && f[271] && f[121] && f[185];
 	
-	// Classifier: 6 Iteration: 9
+	// Digit: 6, Tree: 9
 	assign leaf[141] = !f[269] && !f[244] && !f[323] && !f[246];
 	assign leaf[142] = !f[269] && !f[244] && !f[323] && f[246];
 	assign leaf[143] = !f[269] && !f[244] && f[323] && !f[430];
@@ -9550,7 +9550,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[155] = f[269] && f[133] && f[325] && !f[266];
 	assign leaf[156] = f[269] && f[133] && f[325] && f[266];
 	
-	// Classifier: 6 Iteration: 10
+	// Digit: 6, Tree: 10
 	assign leaf[157] = !f[269] && !f[243] && !f[549] && !f[323];
 	assign leaf[158] = !f[269] && !f[243] && !f[549] && f[323];
 	assign leaf[159] = !f[269] && !f[243] && f[549] && !f[633];
@@ -9567,7 +9567,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[170] = f[269] && f[133] && !f[299] && f[349];
 	assign leaf[171] = f[269] && f[133] && f[299];
 	
-	// Classifier: 6 Iteration: 11
+	// Digit: 6, Tree: 11
 	assign leaf[172] = !f[573] && !f[600] && !f[387] && !f[68];
 	assign leaf[173] = !f[573] && !f[600] && !f[387] && f[68];
 	assign leaf[174] = !f[573] && !f[600] && f[387] && !f[520];
@@ -9585,7 +9585,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[186] = f[573] && f[656] && f[132] && !f[381];
 	assign leaf[187] = f[573] && f[656] && f[132] && f[381];
 	
-	// Classifier: 6 Iteration: 12
+	// Digit: 6, Tree: 12
 	assign leaf[188] = !f[269] && !f[654] && !f[576] && !f[548];
 	assign leaf[189] = !f[269] && !f[654] && !f[576] && f[548];
 	assign leaf[190] = !f[269] && !f[654] && f[576] && !f[660];
@@ -9602,7 +9602,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[201] = f[269] && f[163] && f[349] && !f[622];
 	assign leaf[202] = f[269] && f[163] && f[349] && f[622];
 	
-	// Classifier: 6 Iteration: 13
+	// Digit: 6, Tree: 13
 	assign leaf[203] = !f[654] && !f[572] && !f[544] && !f[599];
 	assign leaf[204] = !f[654] && !f[572] && !f[544] && f[599];
 	assign leaf[205] = !f[654] && !f[572] && f[544] && !f[543];
@@ -9620,7 +9620,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[217] = f[654] && f[132] && f[458] && !f[326];
 	assign leaf[218] = f[654] && f[132] && f[458] && f[326];
 	
-	// Classifier: 6 Iteration: 14
+	// Digit: 6, Tree: 14
 	assign leaf[219] = !f[242] && !f[296] && !f[216] && !f[350];
 	assign leaf[220] = !f[242] && !f[296] && !f[216] && f[350];
 	assign leaf[221] = !f[242] && !f[296] && f[216] && !f[632];
@@ -9637,7 +9637,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[232] = f[242] && f[164] && f[623] && !f[622];
 	assign leaf[233] = f[242] && f[164] && f[623] && f[622];
 	
-	// Classifier: 6 Iteration: 15
+	// Digit: 6, Tree: 15
 	assign leaf[234] = !f[414] && !f[430] && !f[416] && !f[431];
 	assign leaf[235] = !f[414] && !f[430] && !f[416] && f[431];
 	assign leaf[236] = !f[414] && !f[430] && f[416] && !f[265];
@@ -9654,7 +9654,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[247] = f[414] && f[657] && f[454] && !f[434];
 	assign leaf[248] = f[414] && f[657] && f[454] && f[434];
 	
-	// Classifier: 6 Iteration: 16
+	// Digit: 6, Tree: 16
 	assign leaf[249] = !f[685] && !f[574] && !f[131] && !f[268];
 	assign leaf[250] = !f[685] && !f[574] && !f[131] && f[268];
 	assign leaf[251] = !f[685] && !f[574] && f[131] && !f[265];
@@ -9666,7 +9666,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[257] = f[685] && !f[192];
 	assign leaf[258] = f[685] && f[192];
 	
-	// Classifier: 6 Iteration: 17
+	// Digit: 6, Tree: 17
 	assign leaf[259] = !f[685] && !f[623] && !f[575] && !f[269];
 	assign leaf[260] = !f[685] && !f[623] && !f[575] && f[269];
 	assign leaf[261] = !f[685] && !f[623] && f[575] && !f[631];
@@ -9680,7 +9680,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[269] = f[685] && f[598] && !f[234] && f[158];
 	assign leaf[270] = f[685] && f[598] && f[234];
 	
-	// Classifier: 6 Iteration: 18
+	// Digit: 6, Tree: 18
 	assign leaf[271] = !f[544] && !f[570] && !f[134] && !f[119];
 	assign leaf[272] = !f[544] && !f[570] && !f[134] && f[119];
 	assign leaf[273] = !f[544] && !f[570] && f[134] && !f[241];
@@ -9698,7 +9698,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[285] = f[544] && f[653] && f[132] && !f[652];
 	assign leaf[286] = f[544] && f[653] && f[132] && f[652];
 	
-	// Classifier: 6 Iteration: 19
+	// Digit: 6, Tree: 19
 	assign leaf[287] = !f[522] && !f[578] && !f[132] && !f[129];
 	assign leaf[288] = !f[522] && !f[578] && !f[132] && f[129];
 	assign leaf[289] = !f[522] && !f[578] && f[132] && !f[403];
@@ -9716,7 +9716,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[301] = f[522] && f[207] && f[96] && !f[183];
 	assign leaf[302] = f[522] && f[207] && f[96] && f[183];
 	
-	// Classifier: 6 Iteration: 20
+	// Digit: 6, Tree: 20
 	assign leaf[303] = !f[486] && !f[387] && !f[488] && !f[456];
 	assign leaf[304] = !f[486] && !f[387] && !f[488] && f[456];
 	assign leaf[305] = !f[486] && !f[387] && f[488] && !f[522];
@@ -9734,7 +9734,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[317] = f[486] && f[430] && f[601] && !f[326];
 	assign leaf[318] = f[486] && f[430] && f[601] && f[326];
 	
-	// Classifier: 6 Iteration: 21
+	// Digit: 6, Tree: 21
 	assign leaf[319] = !f[297] && !f[273] && !f[351] && !f[271];
 	assign leaf[320] = !f[297] && !f[273] && !f[351] && f[271];
 	assign leaf[321] = !f[297] && !f[273] && f[351] && !f[430];
@@ -9752,7 +9752,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[333] = f[297] && f[329] && f[150] && !f[209];
 	assign leaf[334] = f[297] && f[329] && f[150] && f[209];
 	
-	// Classifier: 6 Iteration: 22
+	// Digit: 6, Tree: 22
 	assign leaf[335] = !f[683] && !f[635] && !f[622] && !f[687];
 	assign leaf[336] = !f[683] && !f[635] && !f[622] && f[687];
 	assign leaf[337] = !f[683] && !f[635] && f[622] && !f[498];
@@ -9763,7 +9763,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[342] = !f[683] && f[635] && f[345] && f[245];
 	assign leaf[343] = f[683];
 	
-	// Classifier: 6 Iteration: 23
+	// Digit: 6, Tree: 23
 	assign leaf[344] = !f[325] && !f[301] && !f[351] && !f[299];
 	assign leaf[345] = !f[325] && !f[301] && !f[351] && f[299];
 	assign leaf[346] = !f[325] && !f[301] && f[351] && !f[431];
@@ -9781,7 +9781,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[358] = f[325] && f[357] && f[268] && !f[490];
 	assign leaf[359] = f[325] && f[357] && f[268] && f[490];
 	
-	// Classifier: 6 Iteration: 24
+	// Digit: 6, Tree: 24
 	assign leaf[360] = !f[430] && !f[399] && !f[431] && !f[387];
 	assign leaf[361] = !f[430] && !f[399] && !f[431] && f[387];
 	assign leaf[362] = !f[430] && !f[399] && f[431] && !f[326];
@@ -9799,7 +9799,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[374] = f[430] && f[486] && f[374] && !f[571];
 	assign leaf[375] = f[430] && f[486] && f[374] && f[571];
 	
-	// Classifier: 6 Iteration: 25
+	// Digit: 6, Tree: 25
 	assign leaf[376] = !f[685] && !f[325] && !f[274] && !f[351];
 	assign leaf[377] = !f[685] && !f[325] && !f[274] && f[351];
 	assign leaf[378] = !f[685] && !f[325] && f[274] && !f[580];
@@ -9813,7 +9813,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[386] = f[685] && f[599] && !f[206] && f[325];
 	assign leaf[387] = f[685] && f[599] && f[206];
 	
-	// Classifier: 6 Iteration: 26
+	// Digit: 6, Tree: 26
 	assign leaf[388] = !f[683] && !f[609] && !f[403] && !f[414];
 	assign leaf[389] = !f[683] && !f[609] && !f[403] && f[414];
 	assign leaf[390] = !f[683] && !f[609] && f[403] && !f[487];
@@ -9824,7 +9824,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[395] = !f[683] && f[609] && f[455] && f[638];
 	assign leaf[396] = f[683];
 	
-	// Classifier: 6 Iteration: 27
+	// Digit: 6, Tree: 27
 	assign leaf[397] = !f[209] && !f[154] && !f[575] && !f[520];
 	assign leaf[398] = !f[209] && !f[154] && !f[575] && f[520];
 	assign leaf[399] = !f[209] && !f[154] && f[575] && !f[291];
@@ -9842,7 +9842,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[411] = f[209] && f[128] && f[430] && !f[292];
 	assign leaf[412] = f[209] && f[128] && f[430] && f[292];
 	
-	// Classifier: 6 Iteration: 28
+	// Digit: 6, Tree: 28
 	assign leaf[413] = !f[686] && !f[623] && !f[163] && !f[269];
 	assign leaf[414] = !f[686] && !f[623] && !f[163] && f[269];
 	assign leaf[415] = !f[686] && !f[623] && f[163] && !f[597];
@@ -9855,7 +9855,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[422] = f[686] && f[569] && !f[234];
 	assign leaf[423] = f[686] && f[569] && f[234];
 	
-	// Classifier: 6 Iteration: 29
+	// Digit: 6, Tree: 29
 	assign leaf[424] = !f[652] && !f[544] && !f[570] && !f[569];
 	assign leaf[425] = !f[652] && !f[544] && !f[570] && f[569];
 	assign leaf[426] = !f[652] && !f[544] && f[570] && !f[428];
@@ -9869,7 +9869,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[434] = f[652] && f[133] && !f[292];
 	assign leaf[435] = f[652] && f[133] && f[292];
 	
-	// Classifier: 6 Iteration: 30
+	// Digit: 6, Tree: 30
 	assign leaf[436] = !f[684] && !f[622] && !f[163] && !f[516];
 	assign leaf[437] = !f[684] && !f[622] && !f[163] && f[516];
 	assign leaf[438] = !f[684] && !f[622] && f[163] && !f[324];
@@ -9880,7 +9880,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[443] = f[684] && !f[408] && f[572];
 	assign leaf[444] = f[684] && f[408];
 	
-	// Classifier: 6 Iteration: 31
+	// Digit: 6, Tree: 31
 	assign leaf[445] = !f[602] && !f[547] && !f[630] && !f[164];
 	assign leaf[446] = !f[602] && !f[547] && !f[630] && f[164];
 	assign leaf[447] = !f[602] && !f[547] && f[630] && !f[206];
@@ -9898,7 +9898,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[459] = f[602] && f[400] && f[382] && !f[441];
 	assign leaf[460] = f[602] && f[400] && f[382] && f[441];
 	
-	// Classifier: 6 Iteration: 32
+	// Digit: 6, Tree: 32
 	assign leaf[461] = !f[522] && !f[409] && !f[519] && !f[525];
 	assign leaf[462] = !f[522] && !f[409] && !f[519] && f[525];
 	assign leaf[463] = !f[522] && !f[409] && f[519] && !f[209];
@@ -9916,7 +9916,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[475] = f[522] && f[402] && f[178] && !f[210];
 	assign leaf[476] = f[522] && f[402] && f[178] && f[210];
 	
-	// Classifier: 6 Iteration: 33
+	// Digit: 6, Tree: 33
 	assign leaf[477] = !f[683] && !f[459] && !f[457] && !f[454];
 	assign leaf[478] = !f[683] && !f[459] && !f[457] && f[454];
 	assign leaf[479] = !f[683] && !f[459] && f[457] && !f[462];
@@ -9927,7 +9927,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[484] = !f[683] && f[459] && f[375] && f[303];
 	assign leaf[485] = f[683];
 	
-	// Classifier: 6 Iteration: 34
+	// Digit: 6, Tree: 34
 	assign leaf[486] = !f[683] && !f[234] && !f[151] && !f[326];
 	assign leaf[487] = !f[683] && !f[234] && !f[151] && f[326];
 	assign leaf[488] = !f[683] && !f[234] && f[151] && !f[398];
@@ -9938,7 +9938,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[493] = !f[683] && f[234] && f[266] && f[272];
 	assign leaf[494] = f[683];
 	
-	// Classifier: 6 Iteration: 35
+	// Digit: 6, Tree: 35
 	assign leaf[495] = !f[601] && !f[64] && !f[295] && !f[241];
 	assign leaf[496] = !f[601] && !f[64] && !f[295] && f[241];
 	assign leaf[497] = !f[601] && !f[64] && f[295] && !f[132];
@@ -9953,7 +9953,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[506] = f[601] && f[486] && f[374] && !f[458];
 	assign leaf[507] = f[601] && f[486] && f[374] && f[458];
 	
-	// Classifier: 6 Iteration: 36
+	// Digit: 6, Tree: 36
 	assign leaf[508] = !f[637] && !f[299] && !f[301] && !f[324];
 	assign leaf[509] = !f[637] && !f[299] && !f[301] && f[324];
 	assign leaf[510] = !f[637] && !f[299] && f[301] && !f[122];
@@ -9968,7 +9968,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[519] = f[637] && f[511] && !f[263];
 	assign leaf[520] = f[637] && f[511] && f[263];
 	
-	// Classifier: 6 Iteration: 37
+	// Digit: 6, Tree: 37
 	assign leaf[521] = !f[653] && !f[689] && !f[517] && !f[151];
 	assign leaf[522] = !f[653] && !f[689] && !f[517] && f[151];
 	assign leaf[523] = !f[653] && !f[689] && f[517] && !f[240];
@@ -9982,7 +9982,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[531] = f[653] && f[162] && !f[490] && f[539];
 	assign leaf[532] = f[653] && f[162] && f[490];
 	
-	// Classifier: 6 Iteration: 38
+	// Digit: 6, Tree: 38
 	assign leaf[533] = !f[622] && !f[159] && !f[239] && !f[574];
 	assign leaf[534] = !f[622] && !f[159] && !f[239] && f[574];
 	assign leaf[535] = !f[622] && !f[159] && f[239] && !f[156];
@@ -9993,7 +9993,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[540] = !f[622] && f[159] && f[325] && f[467];
 	assign leaf[541] = f[622];
 	
-	// Classifier: 6 Iteration: 39
+	// Digit: 6, Tree: 39
 	assign leaf[542] = !f[91] && !f[682] && !f[459] && !f[457];
 	assign leaf[543] = !f[91] && !f[682] && !f[459] && f[457];
 	assign leaf[544] = !f[91] && !f[682] && f[459] && !f[403];
@@ -10002,7 +10002,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[547] = f[91] && !f[356];
 	assign leaf[548] = f[91] && f[356];
 	
-	// Classifier: 6 Iteration: 40
+	// Digit: 6, Tree: 40
 	assign leaf[549] = !f[609] && !f[93] && !f[270] && !f[274];
 	assign leaf[550] = !f[609] && !f[93] && !f[270] && f[274];
 	assign leaf[551] = !f[609] && !f[93] && f[270] && !f[350];
@@ -10020,7 +10020,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[563] = f[609] && f[455] && f[633] && !f[205];
 	assign leaf[564] = f[609] && f[455] && f[633] && f[205];
 	
-	// Classifier: 6 Iteration: 41
+	// Digit: 6, Tree: 41
 	assign leaf[565] = !f[622] && !f[208] && !f[98] && !f[550];
 	assign leaf[566] = !f[622] && !f[208] && !f[98] && f[550];
 	assign leaf[567] = !f[622] && !f[208] && f[98] && !f[551];
@@ -10031,7 +10031,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[572] = !f[622] && f[208] && f[318] && f[178];
 	assign leaf[573] = f[622];
 	
-	// Classifier: 6 Iteration: 42
+	// Digit: 6, Tree: 42
 	assign leaf[574] = !f[594] && !f[685] && !f[661] && !f[635];
 	assign leaf[575] = !f[594] && !f[685] && !f[661] && f[635];
 	assign leaf[576] = !f[594] && !f[685] && f[661] && !f[158];
@@ -10046,7 +10046,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[585] = f[594] && f[400] && !f[217] && f[435];
 	assign leaf[586] = f[594] && f[400] && f[217];
 	
-	// Classifier: 6 Iteration: 43
+	// Digit: 6, Tree: 43
 	assign leaf[587] = !f[275] && !f[101] && !f[163] && !f[268];
 	assign leaf[588] = !f[275] && !f[101] && !f[163] && f[268];
 	assign leaf[589] = !f[275] && !f[101] && f[163] && !f[355];
@@ -10060,7 +10060,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[597] = f[275] && f[272] && !f[332] && f[515];
 	assign leaf[598] = f[275] && f[272] && f[332];
 	
-	// Classifier: 6 Iteration: 44
+	// Digit: 6, Tree: 44
 	assign leaf[599] = !f[517] && !f[178] && !f[600] && !f[317];
 	assign leaf[600] = !f[517] && !f[178] && !f[600] && f[317];
 	assign leaf[601] = !f[517] && !f[178] && f[600] && !f[574];
@@ -10075,7 +10075,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[610] = f[517] && !f[652] && f[602] && f[381];
 	assign leaf[611] = f[517] && f[652];
 	
-	// Classifier: 6 Iteration: 45
+	// Digit: 6, Tree: 45
 	assign leaf[612] = !f[682] && !f[459] && !f[387] && !f[429];
 	assign leaf[613] = !f[682] && !f[459] && !f[387] && f[429];
 	assign leaf[614] = !f[682] && !f[459] && f[387] && !f[409];
@@ -10086,7 +10086,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[619] = !f[682] && f[459] && f[544] && f[487];
 	assign leaf[620] = f[682];
 	
-	// Classifier: 6 Iteration: 46
+	// Digit: 6, Tree: 46
 	assign leaf[621] = !f[622] && !f[132] && !f[267] && !f[213];
 	assign leaf[622] = !f[622] && !f[132] && !f[267] && f[213];
 	assign leaf[623] = !f[622] && !f[132] && f[267] && !f[263];
@@ -10097,7 +10097,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[628] = !f[622] && f[132] && f[326] && f[496];
 	assign leaf[629] = f[622];
 	
-	// Classifier: 6 Iteration: 47
+	// Digit: 6, Tree: 47
 	assign leaf[630] = !f[455] && !f[596] && !f[607] && !f[661];
 	assign leaf[631] = !f[455] && !f[596] && !f[607] && f[661];
 	assign leaf[632] = !f[455] && !f[596] && f[607] && !f[457];
@@ -10113,7 +10113,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[642] = f[455] && f[601] && f[186] && !f[346];
 	assign leaf[643] = f[455] && f[601] && f[186] && f[346];
 	
-	// Classifier: 6 Iteration: 48
+	// Digit: 6, Tree: 48
 	assign leaf[644] = !f[163] && !f[269] && !f[295] && !f[185];
 	assign leaf[645] = !f[163] && !f[269] && !f[295] && f[185];
 	assign leaf[646] = !f[163] && !f[269] && f[295] && !f[185];
@@ -10128,7 +10128,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[655] = f[163] && !f[328] && f[492] && f[220];
 	assign leaf[656] = f[163] && f[328];
 	
-	// Classifier: 6 Iteration: 49
+	// Digit: 6, Tree: 49
 	assign leaf[657] = !f[299] && !f[301] && !f[245] && !f[324];
 	assign leaf[658] = !f[299] && !f[301] && !f[245] && f[324];
 	assign leaf[659] = !f[299] && !f[301] && f[245] && !f[541];
@@ -10145,7 +10145,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[670] = f[299] && f[382] && f[357] && !f[383];
 	assign leaf[671] = f[299] && f[382] && f[357] && f[383];
 	
-	// Classifier: 6 Iteration: 50
+	// Digit: 6, Tree: 50
 	assign leaf[672] = !f[652] && !f[160] && !f[240] && !f[213];
 	assign leaf[673] = !f[652] && !f[160] && !f[240] && f[213];
 	assign leaf[674] = !f[652] && !f[160] && f[240] && !f[158];
@@ -10156,7 +10156,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[679] = f[652] && !f[163];
 	assign leaf[680] = f[652] && f[163];
 	
-	// Classifier: 6 Iteration: 51
+	// Digit: 6, Tree: 51
 	assign leaf[681] = !f[428] && !f[235] && !f[124] && !f[567];
 	assign leaf[682] = !f[428] && !f[235] && !f[124] && f[567];
 	assign leaf[683] = !f[428] && !f[235] && f[124] && !f[426];
@@ -10174,7 +10174,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[695] = f[428] && f[541] && f[318] && !f[157];
 	assign leaf[696] = f[428] && f[541] && f[318] && f[157];
 	
-	// Classifier: 6 Iteration: 52
+	// Digit: 6, Tree: 52
 	assign leaf[697] = !f[409] && !f[98] && !f[571] && !f[323];
 	assign leaf[698] = !f[409] && !f[98] && !f[571] && f[323];
 	assign leaf[699] = !f[409] && !f[98] && f[571] && !f[271];
@@ -10192,7 +10192,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[711] = f[409] && f[441] && f[377] && !f[484];
 	assign leaf[712] = f[409] && f[441] && f[377] && f[484];
 	
-	// Classifier: 6 Iteration: 53
+	// Digit: 6, Tree: 53
 	assign leaf[713] = !f[91] && !f[202] && !f[439] && !f[409];
 	assign leaf[714] = !f[91] && !f[202] && !f[439] && f[409];
 	assign leaf[715] = !f[91] && !f[202] && f[439] && !f[403];
@@ -10201,7 +10201,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[718] = !f[91] && f[202] && f[426];
 	assign leaf[719] = f[91];
 	
-	// Classifier: 6 Iteration: 54
+	// Digit: 6, Tree: 54
 	assign leaf[720] = !f[295] && !f[214] && !f[635] && !f[627];
 	assign leaf[721] = !f[295] && !f[214] && !f[635] && f[627];
 	assign leaf[722] = !f[295] && !f[214] && f[635] && !f[130];
@@ -10218,7 +10218,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[733] = f[295] && f[237] && f[374] && !f[155];
 	assign leaf[734] = f[295] && f[237] && f[374] && f[155];
 	
-	// Classifier: 6 Iteration: 55
+	// Digit: 6, Tree: 55
 	assign leaf[735] = !f[639] && !f[517] && !f[512] && !f[407];
 	assign leaf[736] = !f[639] && !f[517] && !f[512] && f[407];
 	assign leaf[737] = !f[639] && !f[517] && f[512] && !f[373];
@@ -10229,7 +10229,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[742] = !f[639] && f[517] && f[574] && f[239];
 	assign leaf[743] = f[639];
 	
-	// Classifier: 6 Iteration: 56
+	// Digit: 6, Tree: 56
 	assign leaf[744] = !f[684] && !f[302] && !f[455] && !f[288];
 	assign leaf[745] = !f[684] && !f[302] && !f[455] && f[288];
 	assign leaf[746] = !f[684] && !f[302] && f[455] && !f[511];
@@ -10241,7 +10241,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[752] = f[684] && !f[513];
 	assign leaf[753] = f[684] && f[513];
 	
-	// Classifier: 6 Iteration: 57
+	// Digit: 6, Tree: 57
 	assign leaf[754] = !f[495] && !f[494] && !f[497] && !f[131];
 	assign leaf[755] = !f[495] && !f[494] && !f[497] && f[131];
 	assign leaf[756] = !f[495] && !f[494] && f[497] && !f[348];
@@ -10258,7 +10258,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[767] = f[495] && f[431] && !f[230] && f[302];
 	assign leaf[768] = f[495] && f[431] && f[230];
 	
-	// Classifier: 6 Iteration: 58
+	// Digit: 6, Tree: 58
 	assign leaf[769] = !f[101] && !f[72] && !f[684] && !f[602];
 	assign leaf[770] = !f[101] && !f[72] && !f[684] && f[602];
 	assign leaf[771] = !f[101] && !f[72] && f[684] && !f[570];
@@ -10273,7 +10273,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[780] = f[101] && f[293] && f[126] && !f[626];
 	assign leaf[781] = f[101] && f[293] && f[126] && f[626];
 	
-	// Classifier: 6 Iteration: 59
+	// Digit: 6, Tree: 59
 	assign leaf[782] = !f[601] && !f[164] && !f[128] && !f[547];
 	assign leaf[783] = !f[601] && !f[164] && !f[128] && f[547];
 	assign leaf[784] = !f[601] && !f[164] && f[128] && !f[571];
@@ -10288,7 +10288,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[793] = f[601] && f[129] && f[574] && !f[266];
 	assign leaf[794] = f[601] && f[129] && f[574] && f[266];
 	
-	// Classifier: 6 Iteration: 60
+	// Digit: 6, Tree: 60
 	assign leaf[795] = !f[205] && !f[467] && !f[326] && !f[123];
 	assign leaf[796] = !f[205] && !f[467] && !f[326] && f[123];
 	assign leaf[797] = !f[205] && !f[467] && f[326] && !f[469];
@@ -10306,7 +10306,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[809] = f[205] && f[348] && f[344] && !f[488];
 	assign leaf[810] = f[205] && f[348] && f[344] && f[488];
 	
-	// Classifier: 6 Iteration: 61
+	// Digit: 6, Tree: 61
 	assign leaf[811] = !f[541] && !f[516] && !f[511] && !f[514];
 	assign leaf[812] = !f[541] && !f[516] && !f[511] && f[514];
 	assign leaf[813] = !f[541] && !f[516] && f[511] && !f[600];
@@ -10324,7 +10324,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[825] = f[541] && f[401] && f[457] && !f[136];
 	assign leaf[826] = f[541] && f[401] && f[457] && f[136];
 	
-	// Classifier: 6 Iteration: 62
+	// Digit: 6, Tree: 62
 	assign leaf[827] = !f[297] && !f[656] && !f[217] && !f[350];
 	assign leaf[828] = !f[297] && !f[656] && !f[217] && f[350];
 	assign leaf[829] = !f[297] && !f[656] && f[217] && !f[580];
@@ -10341,7 +10341,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[840] = f[297] && f[573] && f[350] && !f[212];
 	assign leaf[841] = f[297] && f[573] && f[350] && f[212];
 	
-	// Classifier: 6 Iteration: 63
+	// Digit: 6, Tree: 63
 	assign leaf[842] = !f[268] && !f[349] && !f[686] && !f[322];
 	assign leaf[843] = !f[268] && !f[349] && !f[686] && f[322];
 	assign leaf[844] = !f[268] && !f[349] && f[686] && !f[546];
@@ -10359,7 +10359,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[856] = f[268] && f[408] && f[349] && !f[579];
 	assign leaf[857] = f[268] && f[408] && f[349] && f[579];
 	
-	// Classifier: 6 Iteration: 64
+	// Digit: 6, Tree: 64
 	assign leaf[858] = !f[101] && !f[275] && !f[205] && !f[467];
 	assign leaf[859] = !f[101] && !f[275] && !f[205] && f[467];
 	assign leaf[860] = !f[101] && !f[275] && f[205] && !f[182];
@@ -10374,7 +10374,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[869] = f[101] && f[127] && f[547] && !f[539];
 	assign leaf[870] = f[101] && f[127] && f[547] && f[539];
 	
-	// Classifier: 6 Iteration: 65
+	// Digit: 6, Tree: 65
 	assign leaf[871] = !f[268] && !f[136] && !f[231] && !f[636];
 	assign leaf[872] = !f[268] && !f[136] && !f[231] && f[636];
 	assign leaf[873] = !f[268] && !f[136] && f[231] && !f[347];
@@ -10389,7 +10389,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[882] = f[268] && f[380] && f[324] && !f[161];
 	assign leaf[883] = f[268] && f[380] && f[324] && f[161];
 	
-	// Classifier: 6 Iteration: 66
+	// Digit: 6, Tree: 66
 	assign leaf[884] = !f[91] && !f[213] && !f[324] && !f[323];
 	assign leaf[885] = !f[91] && !f[213] && !f[324] && f[323];
 	assign leaf[886] = !f[91] && !f[213] && f[324] && !f[238];
@@ -10400,7 +10400,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[891] = !f[91] && f[213] && f[325] && f[190];
 	assign leaf[892] = f[91];
 	
-	// Classifier: 6 Iteration: 67
+	// Digit: 6, Tree: 67
 	assign leaf[893] = !f[602] && !f[126] && !f[629] && !f[291];
 	assign leaf[894] = !f[602] && !f[126] && !f[629] && f[291];
 	assign leaf[895] = !f[602] && !f[126] && f[629] && !f[522];
@@ -10418,7 +10418,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[907] = f[602] && f[486] && f[189] && !f[521];
 	assign leaf[908] = f[602] && f[486] && f[189] && f[521];
 	
-	// Classifier: 6 Iteration: 68
+	// Digit: 6, Tree: 68
 	assign leaf[909] = !f[270] && !f[514] && !f[406] && !f[267];
 	assign leaf[910] = !f[270] && !f[514] && !f[406] && f[267];
 	assign leaf[911] = !f[270] && !f[514] && f[406] && !f[462];
@@ -10436,7 +10436,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[923] = f[270] && f[272] && f[186] && !f[468];
 	assign leaf[924] = f[270] && f[272] && f[186] && f[468];
 	
-	// Classifier: 6 Iteration: 69
+	// Digit: 6, Tree: 69
 	assign leaf[925] = !f[601] && !f[208] && !f[523] && !f[542];
 	assign leaf[926] = !f[601] && !f[208] && !f[523] && f[542];
 	assign leaf[927] = !f[601] && !f[208] && f[523] && !f[263];
@@ -10453,7 +10453,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[938] = f[601] && f[627] && f[127] && !f[455];
 	assign leaf[939] = f[601] && f[627] && f[127] && f[455];
 	
-	// Classifier: 6 Iteration: 70
+	// Digit: 6, Tree: 70
 	assign leaf[940] = !f[236] && !f[181] && !f[656] && !f[480];
 	assign leaf[941] = !f[236] && !f[181] && !f[656] && f[480];
 	assign leaf[942] = !f[236] && !f[181] && f[656] && !f[547];
@@ -10471,7 +10471,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[954] = f[236] && f[541] && f[401] && !f[128];
 	assign leaf[955] = f[236] && f[541] && f[401] && f[128];
 	
-	// Classifier: 6 Iteration: 71
+	// Digit: 6, Tree: 71
 	assign leaf[956] = !f[622] && !f[101] && !f[212] && !f[320];
 	assign leaf[957] = !f[622] && !f[101] && !f[212] && f[320];
 	assign leaf[958] = !f[622] && !f[101] && f[212] && !f[486];
@@ -10482,7 +10482,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[963] = !f[622] && f[101] && f[211] && f[631];
 	assign leaf[964] = f[622];
 	
-	// Classifier: 6 Iteration: 72
+	// Digit: 6, Tree: 72
 	assign leaf[965] = !f[269] && !f[301] && !f[232] && !f[399];
 	assign leaf[966] = !f[269] && !f[301] && !f[232] && f[399];
 	assign leaf[967] = !f[269] && !f[301] && f[232] && !f[347];
@@ -10497,7 +10497,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[976] = f[269] && !f[662] && f[164] && f[319];
 	assign leaf[977] = f[269] && f[662];
 	
-	// Classifier: 6 Iteration: 73
+	// Digit: 6, Tree: 73
 	assign leaf[978] = !f[432] && !f[214] && !f[349] && !f[155];
 	assign leaf[979] = !f[432] && !f[214] && !f[349] && f[155];
 	assign leaf[980] = !f[432] && !f[214] && f[349] && !f[457];
@@ -10515,7 +10515,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[992] = f[432] && f[516] && f[155] && !f[244];
 	assign leaf[993] = f[432] && f[516] && f[155] && f[244];
 	
-	// Classifier: 6 Iteration: 74
+	// Digit: 6, Tree: 74
 	assign leaf[994] = !f[302] && !f[299] && !f[399] && !f[518];
 	assign leaf[995] = !f[302] && !f[299] && !f[399] && f[518];
 	assign leaf[996] = !f[302] && !f[299] && f[399] && !f[269];
@@ -10530,7 +10530,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1005] = f[302] && !f[416] && f[271] && f[430];
 	assign leaf[1006] = f[302] && f[416];
 	
-	// Classifier: 6 Iteration: 75
+	// Digit: 6, Tree: 75
 	assign leaf[1007] = !f[652] && !f[655] && !f[162] && !f[374];
 	assign leaf[1008] = !f[652] && !f[655] && !f[162] && f[374];
 	assign leaf[1009] = !f[652] && !f[655] && f[162] && !f[189];
@@ -10542,7 +10542,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1015] = f[652] && !f[488];
 	assign leaf[1016] = f[652] && f[488];
 	
-	// Classifier: 6 Iteration: 76
+	// Digit: 6, Tree: 76
 	assign leaf[1017] = !f[682] && !f[638] && !f[610] && !f[406];
 	assign leaf[1018] = !f[682] && !f[638] && !f[610] && f[406];
 	assign leaf[1019] = !f[682] && !f[638] && f[610] && !f[315];
@@ -10550,7 +10550,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1021] = !f[682] && f[638];
 	assign leaf[1022] = f[682];
 	
-	// Classifier: 6 Iteration: 77
+	// Digit: 6, Tree: 77
 	assign leaf[1023] = !f[214] && !f[637] && !f[295] && !f[247];
 	assign leaf[1024] = !f[214] && !f[637] && !f[295] && f[247];
 	assign leaf[1025] = !f[214] && !f[637] && f[295] && !f[265];
@@ -10564,7 +10564,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1033] = f[214] && f[348] && !f[687] && f[235];
 	assign leaf[1034] = f[214] && f[348] && f[687];
 	
-	// Classifier: 6 Iteration: 78
+	// Digit: 6, Tree: 78
 	assign leaf[1035] = !f[571] && !f[574] && !f[541] && !f[578];
 	assign leaf[1036] = !f[571] && !f[574] && !f[541] && f[578];
 	assign leaf[1037] = !f[571] && !f[574] && f[541] && !f[384];
@@ -10582,7 +10582,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1049] = f[571] && f[486] && f[540] && !f[400];
 	assign leaf[1050] = f[571] && f[486] && f[540] && f[400];
 	
-	// Classifier: 6 Iteration: 79
+	// Digit: 6, Tree: 79
 	assign leaf[1051] = !f[445] && !f[234] && !f[151] && !f[96];
 	assign leaf[1052] = !f[445] && !f[234] && !f[151] && f[96];
 	assign leaf[1053] = !f[445] && !f[234] && f[151] && !f[518];
@@ -10593,7 +10593,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1058] = !f[445] && f[234] && f[373] && f[152];
 	assign leaf[1059] = f[445];
 	
-	// Classifier: 6 Iteration: 80
+	// Digit: 6, Tree: 80
 	assign leaf[1060] = !f[517] && !f[234] && !f[151] && !f[242];
 	assign leaf[1061] = !f[517] && !f[234] && !f[151] && f[242];
 	assign leaf[1062] = !f[517] && !f[234] && f[151] && !f[347];
@@ -10611,7 +10611,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1074] = f[517] && f[212] && f[599] && !f[521];
 	assign leaf[1075] = f[517] && f[212] && f[599] && f[521];
 	
-	// Classifier: 6 Iteration: 81
+	// Digit: 6, Tree: 81
 	assign leaf[1076] = !f[459] && !f[515] && !f[489] && !f[512];
 	assign leaf[1077] = !f[459] && !f[515] && !f[489] && f[512];
 	assign leaf[1078] = !f[459] && !f[515] && f[489] && !f[405];
@@ -10626,7 +10626,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1087] = f[459] && !f[610] && f[316] && f[384];
 	assign leaf[1088] = f[459] && f[610];
 	
-	// Classifier: 6 Iteration: 82
+	// Digit: 6, Tree: 82
 	assign leaf[1089] = !f[652] && !f[267] && !f[237] && !f[183];
 	assign leaf[1090] = !f[652] && !f[267] && !f[237] && f[183];
 	assign leaf[1091] = !f[652] && !f[267] && f[237] && !f[328];
@@ -10638,7 +10638,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1097] = f[652] && !f[512];
 	assign leaf[1098] = f[652] && f[512];
 	
-	// Classifier: 6 Iteration: 83
+	// Digit: 6, Tree: 83
 	assign leaf[1099] = !f[299] && !f[301] && !f[272] && !f[383];
 	assign leaf[1100] = !f[299] && !f[301] && !f[272] && f[383];
 	assign leaf[1101] = !f[299] && !f[301] && f[272];
@@ -10654,7 +10654,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1111] = f[299] && f[382] && f[352] && !f[494];
 	assign leaf[1112] = f[299] && f[382] && f[352] && f[494];
 	
-	// Classifier: 6 Iteration: 84
+	// Digit: 6, Tree: 84
 	assign leaf[1113] = !f[571] && !f[575] && !f[399] && !f[187];
 	assign leaf[1114] = !f[571] && !f[575] && !f[399] && f[187];
 	assign leaf[1115] = !f[571] && !f[575] && f[399] && !f[401];
@@ -10671,7 +10671,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1126] = f[571] && f[486] && !f[687] && f[568];
 	assign leaf[1127] = f[571] && f[486] && f[687];
 	
-	// Classifier: 6 Iteration: 85
+	// Digit: 6, Tree: 85
 	assign leaf[1128] = !f[247] && !f[574] && !f[570] && !f[571];
 	assign leaf[1129] = !f[247] && !f[574] && !f[570] && f[571];
 	assign leaf[1130] = !f[247] && !f[574] && f[570] && !f[152];
@@ -10683,7 +10683,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1136] = f[247] && !f[630];
 	assign leaf[1137] = f[247] && f[630];
 	
-	// Classifier: 6 Iteration: 86
+	// Digit: 6, Tree: 86
 	assign leaf[1138] = !f[107] && !f[214] && !f[293] && !f[155];
 	assign leaf[1139] = !f[107] && !f[214] && !f[293] && f[155];
 	assign leaf[1140] = !f[107] && !f[214] && f[293] && !f[156];
@@ -10694,7 +10694,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1145] = !f[107] && f[214] && f[433] && f[352];
 	assign leaf[1146] = f[107];
 	
-	// Classifier: 6 Iteration: 87
+	// Digit: 6, Tree: 87
 	assign leaf[1147] = !f[299] && !f[301] && !f[383] && !f[123];
 	assign leaf[1148] = !f[299] && !f[301] && !f[383] && f[123];
 	assign leaf[1149] = !f[299] && !f[301] && f[383] && !f[405];
@@ -10710,7 +10710,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1159] = f[299] && f[358] && f[600] && !f[486];
 	assign leaf[1160] = f[299] && f[358] && f[600] && f[486];
 	
-	// Classifier: 6 Iteration: 88
+	// Digit: 6, Tree: 88
 	assign leaf[1161] = !f[629] && !f[383] && !f[549] && !f[521];
 	assign leaf[1162] = !f[629] && !f[383] && !f[549] && f[521];
 	assign leaf[1163] = !f[629] && !f[383] && f[549] && !f[514];
@@ -10727,7 +10727,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1174] = f[629] && f[260] && f[464] && !f[483];
 	assign leaf[1175] = f[629] && f[260] && f[464] && f[483];
 	
-	// Classifier: 6 Iteration: 89
+	// Digit: 6, Tree: 89
 	assign leaf[1176] = !f[409] && !f[436] && !f[354] && !f[603];
 	assign leaf[1177] = !f[409] && !f[436] && !f[354] && f[603];
 	assign leaf[1178] = !f[409] && !f[436] && f[354] && !f[270];
@@ -10745,7 +10745,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1190] = f[409] && f[435] && f[627] && !f[464];
 	assign leaf[1191] = f[409] && f[435] && f[627] && f[464];
 	
-	// Classifier: 6 Iteration: 90
+	// Digit: 6, Tree: 90
 	assign leaf[1192] = !f[355] && !f[272] && !f[297] && !f[358];
 	assign leaf[1193] = !f[355] && !f[272] && !f[297] && f[358];
 	assign leaf[1194] = !f[355] && !f[272] && f[297] && !f[625];
@@ -10762,7 +10762,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1205] = f[355] && f[352] && f[349] && !f[400];
 	assign leaf[1206] = f[355] && f[352] && f[349] && f[400];
 	
-	// Classifier: 6 Iteration: 91
+	// Digit: 6, Tree: 91
 	assign leaf[1207] = !f[516] && !f[485] && !f[483] && !f[486];
 	assign leaf[1208] = !f[516] && !f[485] && !f[483] && f[486];
 	assign leaf[1209] = !f[516] && !f[485] && f[483] && !f[497];
@@ -10777,7 +10777,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1218] = f[516] && !f[275] && f[216] && f[380];
 	assign leaf[1219] = f[516] && f[275];
 	
-	// Classifier: 6 Iteration: 92
+	// Digit: 6, Tree: 92
 	assign leaf[1220] = !f[522] && !f[570] && !f[634] && !f[242];
 	assign leaf[1221] = !f[522] && !f[570] && !f[634] && f[242];
 	assign leaf[1222] = !f[522] && !f[570] && f[634] && !f[184];
@@ -10795,7 +10795,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1234] = f[522] && f[261] && f[264] && !f[125];
 	assign leaf[1235] = f[522] && f[261] && f[264] && f[125];
 	
-	// Classifier: 6 Iteration: 93
+	// Digit: 6, Tree: 93
 	assign leaf[1236] = !f[516] && !f[486] && !f[511] && !f[485];
 	assign leaf[1237] = !f[516] && !f[486] && !f[511] && f[485];
 	assign leaf[1238] = !f[516] && !f[486] && f[511] && !f[349];
@@ -10813,7 +10813,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1250] = f[516] && f[432] && f[155] && !f[573];
 	assign leaf[1251] = f[516] && f[432] && f[155] && f[573];
 	
-	// Classifier: 6 Iteration: 94
+	// Digit: 6, Tree: 94
 	assign leaf[1252] = !f[656] && !f[146] && !f[351] && !f[299];
 	assign leaf[1253] = !f[656] && !f[146] && !f[351] && f[299];
 	assign leaf[1254] = !f[656] && !f[146] && f[351] && !f[491];
@@ -10827,7 +10827,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1262] = f[656] && f[181] && f[605] && !f[578];
 	assign leaf[1263] = f[656] && f[181] && f[605] && f[578];
 	
-	// Classifier: 6 Iteration: 95
+	// Digit: 6, Tree: 95
 	assign leaf[1264] = !f[661] && !f[262] && !f[521] && !f[490];
 	assign leaf[1265] = !f[661] && !f[262] && !f[521] && f[490];
 	assign leaf[1266] = !f[661] && !f[262] && f[521] && !f[348];
@@ -10844,7 +10844,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1277] = f[661] && f[552] && f[233] && !f[128];
 	assign leaf[1278] = f[661] && f[552] && f[233] && f[128];
 	
-	// Classifier: 6 Iteration: 96
+	// Digit: 6, Tree: 96
 	assign leaf[1279] = !f[267] && !f[120] && !f[237] && !f[155];
 	assign leaf[1280] = !f[267] && !f[120] && !f[237] && f[155];
 	assign leaf[1281] = !f[267] && !f[120] && f[237] && !f[634];
@@ -10858,7 +10858,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1289] = f[267] && f[321] && f[181] && !f[495];
 	assign leaf[1290] = f[267] && f[321] && f[181] && f[495];
 	
-	// Classifier: 6 Iteration: 97
+	// Digit: 6, Tree: 97
 	assign leaf[1291] = !f[547] && !f[631] && !f[603] && !f[463];
 	assign leaf[1292] = !f[547] && !f[631] && !f[603] && f[463];
 	assign leaf[1293] = !f[547] && !f[631] && f[603] && !f[493];
@@ -10876,7 +10876,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1305] = f[547] && f[488] && f[631] && !f[573];
 	assign leaf[1306] = f[547] && f[488] && f[631] && f[573];
 	
-	// Classifier: 6 Iteration: 98
+	// Digit: 6, Tree: 98
 	assign leaf[1307] = !f[516] && !f[405] && !f[240] && !f[123];
 	assign leaf[1308] = !f[516] && !f[405] && !f[240] && f[123];
 	assign leaf[1309] = !f[516] && !f[405] && f[240] && !f[433];
@@ -10894,7 +10894,7 @@ module decision_tree_leaves_6(input logic [0:783] f, output logic [0:1336] leaf)
 	assign leaf[1321] = f[516] && f[432] && f[434] && !f[216];
 	assign leaf[1322] = f[516] && f[432] && f[434] && f[216];
 	
-	// Classifier: 6 Iteration: 99
+	// Digit: 6, Tree: 99
 	assign leaf[1323] = !f[516] && !f[544] && !f[570] && !f[568];
 	assign leaf[1324] = !f[516] && !f[544] && !f[570] && f[568];
 	assign leaf[1325] = !f[516] && !f[544] && f[570] && !f[654];
@@ -10916,7 +10916,7 @@ endmodule
 
 
 module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf);
-	// Classifier: 7 Iteration: 0
+	// Digit: 7, Tree: 0
 	assign leaf[0] = !f[739] && !f[742] && !f[709] && !f[712];
 	assign leaf[1] = !f[739] && !f[742] && !f[709] && f[712];
 	assign leaf[2] = !f[739] && !f[742] && f[709] && !f[405];
@@ -10934,7 +10934,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[14] = f[739] && f[405] && f[233] && !f[374];
 	assign leaf[15] = f[739] && f[405] && f[233] && f[374];
 	
-	// Classifier: 7 Iteration: 1
+	// Digit: 7, Tree: 1
 	assign leaf[16] = !f[405] && !f[155] && !f[457] && !f[568];
 	assign leaf[17] = !f[405] && !f[155] && !f[457] && f[568];
 	assign leaf[18] = !f[405] && !f[155] && f[457] && !f[229];
@@ -10952,7 +10952,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[30] = f[405] && f[231] && f[606] && !f[312];
 	assign leaf[31] = f[405] && f[231] && f[606] && f[312];
 	
-	// Classifier: 7 Iteration: 2
+	// Digit: 7, Tree: 2
 	assign leaf[32] = !f[405] && !f[156] && !f[458] && !f[153];
 	assign leaf[33] = !f[405] && !f[156] && !f[458] && f[153];
 	assign leaf[34] = !f[405] && !f[156] && f[458] && !f[231];
@@ -10970,7 +10970,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[46] = f[405] && f[231] && f[519] && !f[550];
 	assign leaf[47] = f[405] && f[231] && f[519] && f[550];
 	
-	// Classifier: 7 Iteration: 3
+	// Digit: 7, Tree: 3
 	assign leaf[48] = !f[405] && !f[268] && !f[430] && !f[154];
 	assign leaf[49] = !f[405] && !f[268] && !f[430] && f[154];
 	assign leaf[50] = !f[405] && !f[268] && f[430] && !f[256];
@@ -10988,7 +10988,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[62] = f[405] && f[268] && f[235] && !f[376];
 	assign leaf[63] = f[405] && f[268] && f[235] && f[376];
 	
-	// Classifier: 7 Iteration: 4
+	// Digit: 7, Tree: 4
 	assign leaf[64] = !f[404] && !f[155] && !f[428] && !f[377];
 	assign leaf[65] = !f[404] && !f[155] && !f[428] && f[377];
 	assign leaf[66] = !f[404] && !f[155] && f[428] && !f[487];
@@ -11006,7 +11006,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[78] = f[404] && f[412] && f[715] && !f[322];
 	assign leaf[79] = f[404] && f[412] && f[715] && f[322];
 	
-	// Classifier: 7 Iteration: 5
+	// Digit: 7, Tree: 5
 	assign leaf[80] = !f[404] && !f[157] && !f[269] && !f[461];
 	assign leaf[81] = !f[404] && !f[157] && !f[269] && f[461];
 	assign leaf[82] = !f[404] && !f[157] && f[269] && !f[541];
@@ -11021,7 +11021,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[91] = f[404] && !f[155] && f[412] && f[323];
 	assign leaf[92] = f[404] && f[155];
 	
-	// Classifier: 7 Iteration: 6
+	// Digit: 7, Tree: 6
 	assign leaf[93] = !f[377] && !f[459] && !f[512] && !f[158];
 	assign leaf[94] = !f[377] && !f[459] && !f[512] && f[158];
 	assign leaf[95] = !f[377] && !f[459] && f[512] && !f[715];
@@ -11038,7 +11038,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[106] = f[377] && f[339] && !f[257] && f[269];
 	assign leaf[107] = f[377] && f[339] && f[257];
 	
-	// Classifier: 7 Iteration: 7
+	// Digit: 7, Tree: 7
 	assign leaf[108] = !f[154] && !f[432] && !f[513] && !f[378];
 	assign leaf[109] = !f[154] && !f[432] && !f[513] && f[378];
 	assign leaf[110] = !f[154] && !f[432] && f[513] && !f[399];
@@ -11055,7 +11055,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[121] = f[154] && f[577] && !f[284] && f[145];
 	assign leaf[122] = f[154] && f[577] && f[284];
 	
-	// Classifier: 7 Iteration: 8
+	// Digit: 7, Tree: 8
 	assign leaf[123] = !f[267] && !f[745] && !f[402] && !f[377];
 	assign leaf[124] = !f[267] && !f[745] && !f[402] && f[377];
 	assign leaf[125] = !f[267] && !f[745] && f[402] && !f[295];
@@ -11072,7 +11072,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[136] = f[267] && f[263] && f[567] && !f[677];
 	assign leaf[137] = f[267] && f[263] && f[567] && f[677];
 	
-	// Classifier: 7 Iteration: 9
+	// Digit: 7, Tree: 9
 	assign leaf[138] = !f[157] && !f[376] && !f[552] && !f[401];
 	assign leaf[139] = !f[157] && !f[376] && !f[552] && f[401];
 	assign leaf[140] = !f[157] && !f[376] && f[552] && !f[746];
@@ -11087,7 +11087,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[149] = f[157] && f[518] && f[148] && !f[552];
 	assign leaf[150] = f[157] && f[518] && f[148] && f[552];
 	
-	// Classifier: 7 Iteration: 10
+	// Digit: 7, Tree: 10
 	assign leaf[151] = !f[154] && !f[159] && !f[432] && !f[486];
 	assign leaf[152] = !f[154] && !f[159] && !f[432] && f[486];
 	assign leaf[153] = !f[154] && !f[159] && f[432] && !f[345];
@@ -11102,7 +11102,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[162] = f[154] && f[577] && !f[145];
 	assign leaf[163] = f[154] && f[577] && f[145];
 	
-	// Classifier: 7 Iteration: 11
+	// Digit: 7, Tree: 11
 	assign leaf[164] = !f[376] && !f[297] && !f[707] && !f[232];
 	assign leaf[165] = !f[376] && !f[297] && !f[707] && f[232];
 	assign leaf[166] = !f[376] && !f[297] && f[707] && !f[243];
@@ -11120,7 +11120,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[178] = f[376] && f[312] && f[581] && !f[413];
 	assign leaf[179] = f[376] && f[312] && f[581] && f[413];
 	
-	// Classifier: 7 Iteration: 12
+	// Digit: 7, Tree: 12
 	assign leaf[180] = !f[158] && !f[153] && !f[432] && !f[377];
 	assign leaf[181] = !f[158] && !f[153] && !f[432] && f[377];
 	assign leaf[182] = !f[158] && !f[153] && f[432] && !f[372];
@@ -11137,7 +11137,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[193] = f[158] && f[686] && f[573] && !f[374];
 	assign leaf[194] = f[158] && f[686] && f[573] && f[374];
 	
-	// Classifier: 7 Iteration: 13
+	// Digit: 7, Tree: 13
 	assign leaf[195] = !f[569] && !f[267] && !f[433] && !f[487];
 	assign leaf[196] = !f[569] && !f[267] && !f[433] && f[487];
 	assign leaf[197] = !f[569] && !f[267] && f[433] && !f[346];
@@ -11155,7 +11155,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[209] = f[569] && f[679] && f[271] && !f[602];
 	assign leaf[210] = f[569] && f[679] && f[271] && f[602];
 	
-	// Classifier: 7 Iteration: 14
+	// Digit: 7, Tree: 14
 	assign leaf[211] = !f[580] && !f[259] && !f[206] && !f[459];
 	assign leaf[212] = !f[580] && !f[259] && !f[206] && f[459];
 	assign leaf[213] = !f[580] && !f[259] && f[206] && !f[578];
@@ -11171,7 +11171,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[223] = f[580] && f[746] && !f[436];
 	assign leaf[224] = f[580] && f[746] && f[436];
 	
-	// Classifier: 7 Iteration: 15
+	// Digit: 7, Tree: 15
 	assign leaf[225] = !f[744] && !f[578] && !f[437] && !f[711];
 	assign leaf[226] = !f[744] && !f[578] && !f[437] && f[711];
 	assign leaf[227] = !f[744] && !f[578] && f[437] && !f[296];
@@ -11189,7 +11189,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[239] = f[744] && f[461] && f[458] && !f[344];
 	assign leaf[240] = f[744] && f[461] && f[458] && f[344];
 	
-	// Classifier: 7 Iteration: 16
+	// Digit: 7, Tree: 16
 	assign leaf[241] = !f[376] && !f[607] && !f[402] && !f[427];
 	assign leaf[242] = !f[376] && !f[607] && !f[402] && f[427];
 	assign leaf[243] = !f[376] && !f[607] && f[402] && !f[431];
@@ -11207,7 +11207,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[255] = f[376] && f[384] && f[183] && !f[715];
 	assign leaf[256] = f[376] && f[384] && f[183] && f[715];
 	
-	// Classifier: 7 Iteration: 17
+	// Digit: 7, Tree: 17
 	assign leaf[257] = !f[159] && !f[298] && !f[348] && !f[296];
 	assign leaf[258] = !f[159] && !f[298] && !f[348] && f[296];
 	assign leaf[259] = !f[159] && !f[298] && f[348] && !f[340];
@@ -11219,7 +11219,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[265] = f[159] && !f[149];
 	assign leaf[266] = f[159] && f[149];
 	
-	// Classifier: 7 Iteration: 18
+	// Digit: 7, Tree: 18
 	assign leaf[267] = !f[348] && !f[239] && !f[321] && !f[486];
 	assign leaf[268] = !f[348] && !f[239] && !f[321] && f[486];
 	assign leaf[269] = !f[348] && !f[239] && f[321] && !f[182];
@@ -11237,7 +11237,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[281] = f[348] && f[328] && f[184] && !f[350];
 	assign leaf[282] = f[348] && f[328] && f[184] && f[350];
 	
-	// Classifier: 7 Iteration: 19
+	// Digit: 7, Tree: 19
 	assign leaf[283] = !f[539] && !f[608] && !f[267] && !f[434];
 	assign leaf[284] = !f[539] && !f[608] && !f[267] && f[434];
 	assign leaf[285] = !f[539] && !f[608] && f[267] && !f[264];
@@ -11253,7 +11253,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[295] = f[539] && f[714] && !f[318];
 	assign leaf[296] = f[539] && f[714] && f[318];
 	
-	// Classifier: 7 Iteration: 20
+	// Digit: 7, Tree: 20
 	assign leaf[297] = !f[376] && !f[461] && !f[515] && !f[406];
 	assign leaf[298] = !f[376] && !f[461] && !f[515] && f[406];
 	assign leaf[299] = !f[376] && !f[461] && f[515] && !f[484];
@@ -11270,7 +11270,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[310] = f[376] && f[284] && !f[553] && f[271];
 	assign leaf[311] = f[376] && f[284] && f[553];
 	
-	// Classifier: 7 Iteration: 21
+	// Digit: 7, Tree: 21
 	assign leaf[312] = !f[566] && !f[270] && !f[324] && !f[678];
 	assign leaf[313] = !f[566] && !f[270] && !f[324] && f[678];
 	assign leaf[314] = !f[566] && !f[270] && f[324] && !f[570];
@@ -11284,7 +11284,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[322] = f[566] && !f[648] && f[341];
 	assign leaf[323] = f[566] && f[648];
 	
-	// Classifier: 7 Iteration: 22
+	// Digit: 7, Tree: 22
 	assign leaf[324] = !f[437] && !f[431] && !f[744] && !f[707];
 	assign leaf[325] = !f[437] && !f[431] && !f[744] && f[707];
 	assign leaf[326] = !f[437] && !f[431] && f[744] && !f[350];
@@ -11302,7 +11302,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[338] = f[437] && f[606] && f[717] && !f[516];
 	assign leaf[339] = f[437] && f[606] && f[717] && f[516];
 	
-	// Classifier: 7 Iteration: 23
+	// Digit: 7, Tree: 23
 	assign leaf[340] = !f[554] && !f[160] && !f[127] && !f[285];
 	assign leaf[341] = !f[554] && !f[160] && !f[127] && f[285];
 	assign leaf[342] = !f[554] && !f[160] && f[127] && !f[553];
@@ -11314,7 +11314,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[348] = f[554] && !f[274] && f[146];
 	assign leaf[349] = f[554] && f[274];
 	
-	// Classifier: 7 Iteration: 24
+	// Digit: 7, Tree: 24
 	assign leaf[350] = !f[298] && !f[347] && !f[687] && !f[685];
 	assign leaf[351] = !f[298] && !f[347] && !f[687] && f[685];
 	assign leaf[352] = !f[298] && !f[347] && f[687] && !f[574];
@@ -11332,7 +11332,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[364] = f[298] && f[182] && f[633] && !f[716];
 	assign leaf[365] = f[298] && f[182] && f[633] && f[716];
 	
-	// Classifier: 7 Iteration: 25
+	// Digit: 7, Tree: 25
 	assign leaf[366] = !f[607] && !f[438] && !f[349] && !f[432];
 	assign leaf[367] = !f[607] && !f[438] && !f[349] && f[432];
 	assign leaf[368] = !f[607] && !f[438] && f[349] && !f[294];
@@ -11350,7 +11350,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[380] = f[607] && f[435] && f[228] && !f[261];
 	assign leaf[381] = f[607] && f[435] && f[228] && f[261];
 	
-	// Classifier: 7 Iteration: 26
+	// Digit: 7, Tree: 26
 	assign leaf[382] = !f[159] && !f[124] && !f[582] && !f[349];
 	assign leaf[383] = !f[159] && !f[124] && !f[582] && f[349];
 	assign leaf[384] = !f[159] && !f[124] && f[582] && !f[722];
@@ -11363,7 +11363,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[391] = f[159] && f[205] && !f[297];
 	assign leaf[392] = f[159] && f[205] && f[297];
 	
-	// Classifier: 7 Iteration: 27
+	// Digit: 7, Tree: 27
 	assign leaf[393] = !f[581] && !f[566] && !f[128] && !f[240];
 	assign leaf[394] = !f[581] && !f[566] && !f[128] && f[240];
 	assign leaf[395] = !f[581] && !f[566] && f[128];
@@ -11378,7 +11378,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[404] = f[581] && f[292] && f[603] && !f[573];
 	assign leaf[405] = f[581] && f[292] && f[603] && f[573];
 	
-	// Classifier: 7 Iteration: 28
+	// Digit: 7, Tree: 28
 	assign leaf[406] = !f[124] && !f[161] && !f[527] && !f[266];
 	assign leaf[407] = !f[124] && !f[161] && !f[527] && f[266];
 	assign leaf[408] = !f[124] && !f[161] && f[527] && !f[511];
@@ -11388,7 +11388,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[412] = f[124] && !f[427];
 	assign leaf[413] = f[124] && f[427];
 	
-	// Classifier: 7 Iteration: 29
+	// Digit: 7, Tree: 29
 	assign leaf[414] = !f[744] && !f[577] && !f[662] && !f[207];
 	assign leaf[415] = !f[744] && !f[577] && !f[662] && f[207];
 	assign leaf[416] = !f[744] && !f[577] && f[662] && !f[178];
@@ -11405,7 +11405,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[427] = f[744] && f[433] && !f[440] && f[294];
 	assign leaf[428] = f[744] && f[433] && f[440];
 	
-	// Classifier: 7 Iteration: 30
+	// Digit: 7, Tree: 30
 	assign leaf[429] = !f[160] && !f[326] && !f[347] && !f[379];
 	assign leaf[430] = !f[160] && !f[326] && !f[347] && f[379];
 	assign leaf[431] = !f[160] && !f[326] && f[347] && !f[300];
@@ -11417,7 +11417,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[437] = f[160] && !f[687];
 	assign leaf[438] = f[160] && f[687];
 	
-	// Classifier: 7 Iteration: 31
+	// Digit: 7, Tree: 31
 	assign leaf[439] = !f[677] && !f[595] && !f[542] && !f[294];
 	assign leaf[440] = !f[677] && !f[595] && !f[542] && f[294];
 	assign leaf[441] = !f[677] && !f[595] && f[542] && !f[241];
@@ -11430,7 +11430,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[448] = f[677] && !f[682] && f[516] && f[234];
 	assign leaf[449] = f[677] && f[682];
 	
-	// Classifier: 7 Iteration: 32
+	// Digit: 7, Tree: 32
 	assign leaf[450] = !f[609] && !f[549] && !f[206] && !f[260];
 	assign leaf[451] = !f[609] && !f[549] && !f[206] && f[260];
 	assign leaf[452] = !f[609] && !f[549] && f[206] && !f[634];
@@ -11446,7 +11446,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[462] = f[609] && f[319] && f[262] && !f[397];
 	assign leaf[463] = f[609] && f[319] && f[262] && f[397];
 	
-	// Classifier: 7 Iteration: 33
+	// Digit: 7, Tree: 33
 	assign leaf[464] = !f[242] && !f[411] && !f[177] && !f[231];
 	assign leaf[465] = !f[242] && !f[411] && !f[177] && f[231];
 	assign leaf[466] = !f[242] && !f[411] && f[177] && !f[492];
@@ -11464,7 +11464,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[478] = f[242] && f[240] && f[349] && !f[267];
 	assign leaf[479] = f[242] && f[240] && f[349] && f[267];
 	
-	// Classifier: 7 Iteration: 34
+	// Digit: 7, Tree: 34
 	assign leaf[480] = !f[460] && !f[515] && !f[379] && !f[569];
 	assign leaf[481] = !f[460] && !f[515] && !f[379] && f[569];
 	assign leaf[482] = !f[460] && !f[515] && f[379] && !f[349];
@@ -11482,7 +11482,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[494] = f[460] && f[372] && f[471] && !f[549];
 	assign leaf[495] = f[460] && f[372] && f[471] && f[549];
 	
-	// Classifier: 7 Iteration: 35
+	// Digit: 7, Tree: 35
 	assign leaf[496] = !f[555] && !f[129] && !f[635] && !f[437];
 	assign leaf[497] = !f[555] && !f[129] && !f[635] && f[437];
 	assign leaf[498] = !f[555] && !f[129] && f[635] && !f[319];
@@ -11491,7 +11491,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[501] = f[555] && !f[540];
 	assign leaf[502] = f[555] && f[540];
 	
-	// Classifier: 7 Iteration: 36
+	// Digit: 7, Tree: 36
 	assign leaf[503] = !f[127] && !f[677] && !f[595] && !f[515];
 	assign leaf[504] = !f[127] && !f[677] && !f[595] && f[515];
 	assign leaf[505] = !f[127] && !f[677] && f[595] && !f[406];
@@ -11502,7 +11502,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[510] = f[127] && !f[539];
 	assign leaf[511] = f[127] && f[539];
 	
-	// Classifier: 7 Iteration: 37
+	// Digit: 7, Tree: 37
 	assign leaf[512] = !f[256] && !f[663] && !f[349] && !f[433];
 	assign leaf[513] = !f[256] && !f[663] && !f[349] && f[433];
 	assign leaf[514] = !f[256] && !f[663] && f[349] && !f[384];
@@ -11518,7 +11518,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[524] = f[256] && f[287] && !f[554] && f[294];
 	assign leaf[525] = f[256] && f[287] && f[554];
 	
-	// Classifier: 7 Iteration: 38
+	// Digit: 7, Tree: 38
 	assign leaf[526] = !f[122] && !f[160] && !f[129] && !f[325];
 	assign leaf[527] = !f[122] && !f[160] && !f[129] && f[325];
 	assign leaf[528] = !f[122] && !f[160] && f[129];
@@ -11526,7 +11526,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[530] = !f[122] && f[160] && f[684];
 	assign leaf[531] = f[122];
 	
-	// Classifier: 7 Iteration: 39
+	// Digit: 7, Tree: 39
 	assign leaf[532] = !f[124] && !f[459] && !f[183] && !f[151];
 	assign leaf[533] = !f[124] && !f[459] && !f[183] && f[151];
 	assign leaf[534] = !f[124] && !f[459] && f[183] && !f[321];
@@ -11537,7 +11537,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[539] = !f[124] && f[459] && f[400] && f[469];
 	assign leaf[540] = f[124];
 	
-	// Classifier: 7 Iteration: 40
+	// Digit: 7, Tree: 40
 	assign leaf[541] = !f[510] && !f[411] && !f[242] && !f[467];
 	assign leaf[542] = !f[510] && !f[411] && !f[242] && f[467];
 	assign leaf[543] = !f[510] && !f[411] && f[242] && !f[578];
@@ -11552,7 +11552,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[552] = f[510] && !f[257] && f[541] && f[219];
 	assign leaf[553] = f[510] && f[257];
 	
-	// Classifier: 7 Iteration: 41
+	// Digit: 7, Tree: 41
 	assign leaf[554] = !f[158] && !f[637] && !f[202] && !f[549];
 	assign leaf[555] = !f[158] && !f[637] && !f[202] && f[549];
 	assign leaf[556] = !f[158] && !f[637] && f[202] && !f[493];
@@ -11567,7 +11567,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[565] = f[158] && f[154] && f[235] && !f[263];
 	assign leaf[566] = f[158] && f[154] && f[235] && f[263];
 	
-	// Classifier: 7 Iteration: 42
+	// Digit: 7, Tree: 42
 	assign leaf[567] = !f[677] && !f[595] && !f[434] && !f[378];
 	assign leaf[568] = !f[677] && !f[595] && !f[434] && f[378];
 	assign leaf[569] = !f[677] && !f[595] && f[434] && !f[351];
@@ -11580,7 +11580,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[576] = f[677] && !f[404] && f[681];
 	assign leaf[577] = f[677] && f[404];
 	
-	// Classifier: 7 Iteration: 43
+	// Digit: 7, Tree: 43
 	assign leaf[578] = !f[438] && !f[214] && !f[301] && !f[349];
 	assign leaf[579] = !f[438] && !f[214] && !f[301] && f[349];
 	assign leaf[580] = !f[438] && !f[214] && f[301] && !f[541];
@@ -11598,7 +11598,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[592] = f[438] && f[202] && f[257] && !f[260];
 	assign leaf[593] = f[438] && f[202] && f[257] && f[260];
 	
-	// Classifier: 7 Iteration: 44
+	// Digit: 7, Tree: 44
 	assign leaf[594] = !f[715] && !f[576] && !f[632] && !f[179];
 	assign leaf[595] = !f[715] && !f[576] && !f[632] && f[179];
 	assign leaf[596] = !f[715] && !f[576] && f[632] && !f[716];
@@ -11616,7 +11616,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[608] = f[715] && f[631] && f[518] && !f[302];
 	assign leaf[609] = f[715] && f[631] && f[518] && f[302];
 	
-	// Classifier: 7 Iteration: 45
+	// Digit: 7, Tree: 45
 	assign leaf[610] = !f[128] && !f[241] && !f[322] && !f[434];
 	assign leaf[611] = !f[128] && !f[241] && !f[322] && f[434];
 	assign leaf[612] = !f[128] && !f[241] && f[322] && !f[412];
@@ -11627,7 +11627,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[617] = !f[128] && f[241] && f[239] && f[207];
 	assign leaf[618] = f[128];
 	
-	// Classifier: 7 Iteration: 46
+	// Digit: 7, Tree: 46
 	assign leaf[619] = !f[256] && !f[663] && !f[177] && !f[232];
 	assign leaf[620] = !f[256] && !f[663] && !f[177] && f[232];
 	assign leaf[621] = !f[256] && !f[663] && f[177] && !f[183];
@@ -11643,7 +11643,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[631] = f[256] && f[493] && !f[581] && f[552];
 	assign leaf[632] = f[256] && f[493] && f[581];
 	
-	// Classifier: 7 Iteration: 47
+	// Digit: 7, Tree: 47
 	assign leaf[633] = !f[295] && !f[350] && !f[213] && !f[435];
 	assign leaf[634] = !f[295] && !f[350] && !f[213] && f[435];
 	assign leaf[635] = !f[295] && !f[350] && f[213] && !f[461];
@@ -11661,7 +11661,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[647] = f[295] && f[404] && f[345] && !f[406];
 	assign leaf[648] = f[295] && f[404] && f[345] && f[406];
 	
-	// Classifier: 7 Iteration: 48
+	// Digit: 7, Tree: 48
 	assign leaf[649] = !f[128] && !f[296] && !f[431] && !f[485];
 	assign leaf[650] = !f[128] && !f[296] && !f[431] && f[485];
 	assign leaf[651] = !f[128] && !f[296] && f[431] && !f[457];
@@ -11672,7 +11672,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[656] = !f[128] && f[296] && f[404] && f[318];
 	assign leaf[657] = f[128];
 	
-	// Classifier: 7 Iteration: 49
+	// Digit: 7, Tree: 49
 	assign leaf[658] = !f[125] && !f[244] && !f[527] && !f[324];
 	assign leaf[659] = !f[125] && !f[244] && !f[527] && f[324];
 	assign leaf[660] = !f[125] && !f[244] && f[527] && !f[404];
@@ -11684,7 +11684,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[666] = f[125] && !f[486];
 	assign leaf[667] = f[125] && f[486];
 	
-	// Classifier: 7 Iteration: 50
+	// Digit: 7, Tree: 50
 	assign leaf[668] = !f[743] && !f[354] && !f[239] && !f[358];
 	assign leaf[669] = !f[743] && !f[354] && !f[239] && f[358];
 	assign leaf[670] = !f[743] && !f[354] && f[239] && !f[549];
@@ -11701,7 +11701,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[681] = f[743] && f[264] && f[343] && !f[260];
 	assign leaf[682] = f[743] && f[264] && f[343] && f[260];
 	
-	// Classifier: 7 Iteration: 51
+	// Digit: 7, Tree: 51
 	assign leaf[683] = !f[690] && !f[634] && !f[177] && !f[232];
 	assign leaf[684] = !f[690] && !f[634] && !f[177] && f[232];
 	assign leaf[685] = !f[690] && !f[634] && f[177] && !f[523];
@@ -11719,7 +11719,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[697] = f[690] && f[291] && f[489] && !f[286];
 	assign leaf[698] = f[690] && f[291] && f[489] && f[286];
 	
-	// Classifier: 7 Iteration: 52
+	// Digit: 7, Tree: 52
 	assign leaf[699] = !f[242] && !f[457] && !f[397] && !f[347];
 	assign leaf[700] = !f[242] && !f[457] && !f[397] && f[347];
 	assign leaf[701] = !f[242] && !f[457] && f[397] && !f[513];
@@ -11737,7 +11737,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[713] = f[242] && f[604] && f[716] && !f[515];
 	assign leaf[714] = f[242] && f[604] && f[716] && f[515];
 	
-	// Classifier: 7 Iteration: 53
+	// Digit: 7, Tree: 53
 	assign leaf[715] = !f[160] && !f[639] && !f[528] && !f[434];
 	assign leaf[716] = !f[160] && !f[639] && !f[528] && f[434];
 	assign leaf[717] = !f[160] && !f[639] && f[528] && !f[381];
@@ -11746,7 +11746,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[720] = f[160] && !f[182];
 	assign leaf[721] = f[160] && f[182];
 	
-	// Classifier: 7 Iteration: 54
+	// Digit: 7, Tree: 54
 	assign leaf[722] = !f[678] && !f[596] && !f[434] && !f[488];
 	assign leaf[723] = !f[678] && !f[596] && !f[434] && f[488];
 	assign leaf[724] = !f[678] && !f[596] && f[434] && !f[490];
@@ -11761,7 +11761,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[733] = f[678] && f[597] && !f[521] && f[404];
 	assign leaf[734] = f[678] && f[597] && f[521];
 	
-	// Classifier: 7 Iteration: 55
+	// Digit: 7, Tree: 55
 	assign leaf[735] = !f[122] && !f[148] && !f[160] && !f[600];
 	assign leaf[736] = !f[122] && !f[148] && !f[160] && f[600];
 	assign leaf[737] = !f[122] && !f[148] && f[160] && !f[651];
@@ -11772,7 +11772,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[742] = !f[122] && f[148] && f[153] && f[548];
 	assign leaf[743] = f[122];
 	
-	// Classifier: 7 Iteration: 56
+	// Digit: 7, Tree: 56
 	assign leaf[744] = !f[583] && !f[122] && !f[183] && !f[488];
 	assign leaf[745] = !f[583] && !f[122] && !f[183] && f[488];
 	assign leaf[746] = !f[583] && !f[122] && f[183] && !f[320];
@@ -11780,7 +11780,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[748] = !f[583] && f[122];
 	assign leaf[749] = f[583];
 	
-	// Classifier: 7 Iteration: 57
+	// Digit: 7, Tree: 57
 	assign leaf[750] = !f[359] && !f[202] && !f[548] && !f[603];
 	assign leaf[751] = !f[359] && !f[202] && !f[548] && f[603];
 	assign leaf[752] = !f[359] && !f[202] && f[548] && !f[433];
@@ -11797,7 +11797,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[763] = f[359] && f[240] && f[466] && !f[710];
 	assign leaf[764] = f[359] && f[240] && f[466] && f[710];
 	
-	// Classifier: 7 Iteration: 58
+	// Digit: 7, Tree: 58
 	assign leaf[765] = !f[191] && !f[126] && !f[608] && !f[295];
 	assign leaf[766] = !f[191] && !f[126] && !f[608] && f[295];
 	assign leaf[767] = !f[191] && !f[126] && f[608] && !f[270];
@@ -11807,7 +11807,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[771] = f[191] && !f[679];
 	assign leaf[772] = f[191] && f[679];
 	
-	// Classifier: 7 Iteration: 59
+	// Digit: 7, Tree: 59
 	assign leaf[773] = !f[129] && !f[122] && !f[432] && !f[377];
 	assign leaf[774] = !f[129] && !f[122] && !f[432] && f[377];
 	assign leaf[775] = !f[129] && !f[122] && f[432] && !f[345];
@@ -11815,7 +11815,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[777] = !f[129] && f[122];
 	assign leaf[778] = f[129];
 	
-	// Classifier: 7 Iteration: 60
+	// Digit: 7, Tree: 60
 	assign leaf[779] = !f[239] && !f[236] && !f[327] && !f[156];
 	assign leaf[780] = !f[239] && !f[236] && !f[327] && f[156];
 	assign leaf[781] = !f[239] && !f[236] && f[327] && !f[206];
@@ -11832,7 +11832,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[792] = f[239] && f[371] && f[460] && !f[428];
 	assign leaf[793] = f[239] && f[371] && f[460] && f[428];
 	
-	// Classifier: 7 Iteration: 61
+	// Digit: 7, Tree: 61
 	assign leaf[794] = !f[582] && !f[161] && !f[272] && !f[355];
 	assign leaf[795] = !f[582] && !f[161] && !f[272] && f[355];
 	assign leaf[796] = !f[582] && !f[161] && f[272] && !f[406];
@@ -11842,7 +11842,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[800] = f[582] && !f[350] && f[212];
 	assign leaf[801] = f[582] && f[350];
 	
-	// Classifier: 7 Iteration: 62
+	// Digit: 7, Tree: 62
 	assign leaf[802] = !f[638] && !f[348] && !f[374] && !f[185];
 	assign leaf[803] = !f[638] && !f[348] && !f[374] && f[185];
 	assign leaf[804] = !f[638] && !f[348] && f[374] && !f[460];
@@ -11853,7 +11853,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[809] = !f[638] && f[348] && f[401] && f[460];
 	assign leaf[810] = f[638];
 	
-	// Classifier: 7 Iteration: 63
+	// Digit: 7, Tree: 63
 	assign leaf[811] = !f[372] && !f[405] && !f[492] && !f[205];
 	assign leaf[812] = !f[372] && !f[405] && !f[492] && f[205];
 	assign leaf[813] = !f[372] && !f[405] && f[492] && !f[398];
@@ -11871,7 +11871,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[825] = f[372] && f[460] && f[470] && !f[577];
 	assign leaf[826] = f[372] && f[460] && f[470] && f[577];
 	
-	// Classifier: 7 Iteration: 64
+	// Digit: 7, Tree: 64
 	assign leaf[827] = !f[325] && !f[205] && !f[542] && !f[314];
 	assign leaf[828] = !f[325] && !f[205] && !f[542] && f[314];
 	assign leaf[829] = !f[325] && !f[205] && f[542] && !f[677];
@@ -11889,7 +11889,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[841] = f[325] && f[150] && f[233] && !f[430];
 	assign leaf[842] = f[325] && f[150] && f[233] && f[430];
 	
-	// Classifier: 7 Iteration: 65
+	// Digit: 7, Tree: 65
 	assign leaf[843] = !f[269] && !f[601] && !f[684] && !f[545];
 	assign leaf[844] = !f[269] && !f[601] && !f[684] && f[545];
 	assign leaf[845] = !f[269] && !f[601] && f[684] && !f[660];
@@ -11907,7 +11907,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[857] = f[269] && f[577] && f[522] && !f[660];
 	assign leaf[858] = f[269] && f[577] && f[522] && f[660];
 	
-	// Classifier: 7 Iteration: 66
+	// Digit: 7, Tree: 66
 	assign leaf[859] = !f[129] && !f[148] && !f[160] && !f[150];
 	assign leaf[860] = !f[129] && !f[148] && !f[160] && f[150];
 	assign leaf[861] = !f[129] && !f[148] && f[160];
@@ -11917,7 +11917,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[865] = !f[129] && f[148] && f[153] && f[520];
 	assign leaf[866] = f[129];
 	
-	// Classifier: 7 Iteration: 67
+	// Digit: 7, Tree: 67
 	assign leaf[867] = !f[473] && !f[441] && !f[206] && !f[432];
 	assign leaf[868] = !f[473] && !f[441] && !f[206] && f[432];
 	assign leaf[869] = !f[473] && !f[441] && f[206] && !f[260];
@@ -11928,7 +11928,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[874] = !f[473] && f[441] && f[542] && f[651];
 	assign leaf[875] = f[473];
 	
-	// Classifier: 7 Iteration: 68
+	// Digit: 7, Tree: 68
 	assign leaf[876] = !f[528] && !f[510] && !f[527] && !f[274];
 	assign leaf[877] = !f[528] && !f[510] && !f[527] && f[274];
 	assign leaf[878] = !f[528] && !f[510] && f[527] && !f[242];
@@ -11940,7 +11940,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[884] = f[528] && !f[353];
 	assign leaf[885] = f[528] && f[353];
 	
-	// Classifier: 7 Iteration: 69
+	// Digit: 7, Tree: 69
 	assign leaf[886] = !f[269] && !f[519] && !f[210] && !f[318];
 	assign leaf[887] = !f[269] && !f[519] && !f[210] && f[318];
 	assign leaf[888] = !f[269] && !f[519] && f[210] && !f[373];
@@ -11956,7 +11956,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[898] = f[269] && f[173] && !f[550];
 	assign leaf[899] = f[269] && f[173] && f[550];
 	
-	// Classifier: 7 Iteration: 70
+	// Digit: 7, Tree: 70
 	assign leaf[900] = !f[214] && !f[543] && !f[457] && !f[370];
 	assign leaf[901] = !f[214] && !f[543] && !f[457] && f[370];
 	assign leaf[902] = !f[214] && !f[543] && f[457] && !f[488];
@@ -11973,7 +11973,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[913] = f[214] && f[577] && f[716] && !f[261];
 	assign leaf[914] = f[214] && f[577] && f[716] && f[261];
 	
-	// Classifier: 7 Iteration: 71
+	// Digit: 7, Tree: 71
 	assign leaf[915] = !f[494] && !f[605] && !f[690] && !f[575];
 	assign leaf[916] = !f[494] && !f[605] && !f[690] && f[575];
 	assign leaf[917] = !f[494] && !f[605] && f[690] && !f[440];
@@ -11991,7 +11991,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[929] = f[494] && f[571] && f[654] && !f[516];
 	assign leaf[930] = f[494] && f[571] && f[654] && f[516];
 	
-	// Classifier: 7 Iteration: 72
+	// Digit: 7, Tree: 72
 	assign leaf[931] = !f[359] && !f[663] && !f[320] && !f[317];
 	assign leaf[932] = !f[359] && !f[663] && !f[320] && f[317];
 	assign leaf[933] = !f[359] && !f[663] && f[320] && !f[318];
@@ -12005,7 +12005,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[941] = f[359] && f[456] && !f[485];
 	assign leaf[942] = f[359] && f[456] && f[485];
 	
-	// Classifier: 7 Iteration: 73
+	// Digit: 7, Tree: 73
 	assign leaf[943] = !f[154] && !f[159] && !f[461] && !f[378];
 	assign leaf[944] = !f[154] && !f[159] && !f[461] && f[378];
 	assign leaf[945] = !f[154] && !f[159] && f[461] && !f[378];
@@ -12020,7 +12020,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[954] = f[154] && f[236] && f[684] && !f[234];
 	assign leaf[955] = f[154] && f[236] && f[684] && f[234];
 	
-	// Classifier: 7 Iteration: 74
+	// Digit: 7, Tree: 74
 	assign leaf[956] = !f[709] && !f[129] && !f[214] && !f[323];
 	assign leaf[957] = !f[709] && !f[129] && !f[214] && f[323];
 	assign leaf[958] = !f[709] && !f[129] && f[214] && !f[320];
@@ -12033,7 +12033,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[965] = f[709] && f[654] && f[322] && !f[329];
 	assign leaf[966] = f[709] && f[654] && f[322] && f[329];
 	
-	// Classifier: 7 Iteration: 75
+	// Digit: 7, Tree: 75
 	assign leaf[967] = !f[515] && !f[457] && !f[426] && !f[265];
 	assign leaf[968] = !f[515] && !f[457] && !f[426] && f[265];
 	assign leaf[969] = !f[515] && !f[457] && f[426] && !f[430];
@@ -12050,7 +12050,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[980] = f[515] && f[428] && f[485] && !f[405];
 	assign leaf[981] = f[515] && f[428] && f[485] && f[405];
 	
-	// Classifier: 7 Iteration: 76
+	// Digit: 7, Tree: 76
 	assign leaf[982] = !f[510] && !f[464] && !f[547] && !f[176];
 	assign leaf[983] = !f[510] && !f[464] && !f[547] && f[176];
 	assign leaf[984] = !f[510] && !f[464] && f[547] && !f[377];
@@ -12065,7 +12065,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[993] = f[510] && f[685] && !f[296];
 	assign leaf[994] = f[510] && f[685] && f[296];
 	
-	// Classifier: 7 Iteration: 77
+	// Digit: 7, Tree: 77
 	assign leaf[995] = !f[528] && !f[527] && !f[709] && !f[708];
 	assign leaf[996] = !f[528] && !f[527] && !f[709] && f[708];
 	assign leaf[997] = !f[528] && !f[527] && f[709] && !f[630];
@@ -12075,7 +12075,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1001] = f[528] && !f[600];
 	assign leaf[1002] = f[528] && f[600];
 	
-	// Classifier: 7 Iteration: 78
+	// Digit: 7, Tree: 78
 	assign leaf[1003] = !f[452] && !f[577] && !f[689] && !f[180];
 	assign leaf[1004] = !f[452] && !f[577] && !f[689] && f[180];
 	assign leaf[1005] = !f[452] && !f[577] && f[689] && !f[686];
@@ -12087,7 +12087,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1011] = f[452] && !f[427];
 	assign leaf[1012] = f[452] && f[427];
 	
-	// Classifier: 7 Iteration: 79
+	// Digit: 7, Tree: 79
 	assign leaf[1013] = !f[437] && !f[273] && !f[176] && !f[517];
 	assign leaf[1014] = !f[437] && !f[273] && !f[176] && f[517];
 	assign leaf[1015] = !f[437] && !f[273] && f[176] && !f[494];
@@ -12102,7 +12102,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1024] = f[437] && f[581] && !f[204];
 	assign leaf[1025] = f[437] && f[581] && f[204];
 	
-	// Classifier: 7 Iteration: 80
+	// Digit: 7, Tree: 80
 	assign leaf[1026] = !f[148] && !f[569] && !f[554] && !f[434];
 	assign leaf[1027] = !f[148] && !f[569] && !f[554] && f[434];
 	assign leaf[1028] = !f[148] && !f[569] && f[554] && !f[212];
@@ -12116,7 +12116,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1036] = f[148] && f[324] && !f[292] && f[522];
 	assign leaf[1037] = f[148] && f[324] && f[292];
 	
-	// Classifier: 7 Iteration: 81
+	// Digit: 7, Tree: 81
 	assign leaf[1038] = !f[154] && !f[266] && !f[575] && !f[269];
 	assign leaf[1039] = !f[154] && !f[266] && !f[575] && f[269];
 	assign leaf[1040] = !f[154] && !f[266] && f[575] && !f[205];
@@ -12132,7 +12132,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1050] = f[154] && f[463] && f[403] && !f[152];
 	assign leaf[1051] = f[154] && f[463] && f[403] && f[152];
 	
-	// Classifier: 7 Iteration: 82
+	// Digit: 7, Tree: 82
 	assign leaf[1052] = !f[686] && !f[575] && !f[683] && !f[518];
 	assign leaf[1053] = !f[686] && !f[575] && !f[683] && f[518];
 	assign leaf[1054] = !f[686] && !f[575] && f[683] && !f[624];
@@ -12149,7 +12149,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1065] = f[686] && f[682] && !f[301] && f[573];
 	assign leaf[1066] = f[686] && f[682] && f[301];
 	
-	// Classifier: 7 Iteration: 83
+	// Digit: 7, Tree: 83
 	assign leaf[1067] = !f[238] && !f[235] && !f[322] && !f[208];
 	assign leaf[1068] = !f[238] && !f[235] && !f[322] && f[208];
 	assign leaf[1069] = !f[238] && !f[235] && f[322] && !f[318];
@@ -12166,7 +12166,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1080] = f[238] && f[236] && f[329] && !f[274];
 	assign leaf[1081] = f[238] && f[236] && f[329] && f[274];
 	
-	// Classifier: 7 Iteration: 84
+	// Digit: 7, Tree: 84
 	assign leaf[1082] = !f[464] && !f[574] && !f[300] && !f[236];
 	assign leaf[1083] = !f[464] && !f[574] && !f[300] && f[236];
 	assign leaf[1084] = !f[464] && !f[574] && f[300] && !f[683];
@@ -12183,7 +12183,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1095] = f[464] && f[595] && !f[677] && f[440];
 	assign leaf[1096] = f[464] && f[595] && f[677];
 	
-	// Classifier: 7 Iteration: 85
+	// Digit: 7, Tree: 85
 	assign leaf[1097] = !f[510] && !f[609] && !f[291] && !f[288];
 	assign leaf[1098] = !f[510] && !f[609] && !f[291] && f[288];
 	assign leaf[1099] = !f[510] && !f[609] && f[291] && !f[287];
@@ -12195,7 +12195,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1105] = f[510] && !f[685] && f[342];
 	assign leaf[1106] = f[510] && f[685];
 	
-	// Classifier: 7 Iteration: 86
+	// Digit: 7, Tree: 86
 	assign leaf[1107] = !f[707] && !f[625] && !f[600] && !f[682];
 	assign leaf[1108] = !f[707] && !f[625] && !f[600] && f[682];
 	assign leaf[1109] = !f[707] && !f[625] && f[600] && !f[318];
@@ -12211,7 +12211,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1119] = f[707] && f[597] && !f[348] && f[318];
 	assign leaf[1120] = f[707] && f[597] && f[348];
 	
-	// Classifier: 7 Iteration: 87
+	// Digit: 7, Tree: 87
 	assign leaf[1121] = !f[434] && !f[488] && !f[458] && !f[432];
 	assign leaf[1122] = !f[434] && !f[488] && !f[458] && f[432];
 	assign leaf[1123] = !f[434] && !f[488] && f[458] && !f[374];
@@ -12228,7 +12228,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1134] = f[434] && f[606] && f[202] && !f[327];
 	assign leaf[1135] = f[434] && f[606] && f[202] && f[327];
 	
-	// Classifier: 7 Iteration: 88
+	// Digit: 7, Tree: 88
 	assign leaf[1136] = !f[148] && !f[494] && !f[690] && !f[206];
 	assign leaf[1137] = !f[148] && !f[494] && !f[690] && f[206];
 	assign leaf[1138] = !f[148] && !f[494] && f[690] && !f[182];
@@ -12242,7 +12242,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1146] = f[148] && !f[356] && f[211] && f[545];
 	assign leaf[1147] = f[148] && f[356];
 	
-	// Classifier: 7 Iteration: 89
+	// Digit: 7, Tree: 89
 	assign leaf[1148] = !f[510] && !f[428] && !f[457] && !f[544];
 	assign leaf[1149] = !f[510] && !f[428] && !f[457] && f[544];
 	assign leaf[1150] = !f[510] && !f[428] && f[457] && !f[401];
@@ -12255,7 +12255,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1157] = f[510] && !f[685] && f[342];
 	assign leaf[1158] = f[510] && f[685];
 	
-	// Classifier: 7 Iteration: 90
+	// Digit: 7, Tree: 90
 	assign leaf[1159] = !f[704] && !f[595] && !f[720] && !f[206];
 	assign leaf[1160] = !f[704] && !f[595] && !f[720] && f[206];
 	assign leaf[1161] = !f[704] && !f[595] && f[720] && !f[266];
@@ -12266,7 +12266,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1166] = !f[704] && f[595] && f[573] && f[294];
 	assign leaf[1167] = f[704];
 	
-	// Classifier: 7 Iteration: 91
+	// Digit: 7, Tree: 91
 	assign leaf[1168] = !f[148] && !f[312] && !f[463] && !f[601];
 	assign leaf[1169] = !f[148] && !f[312] && !f[463] && f[601];
 	assign leaf[1170] = !f[148] && !f[312] && f[463] && !f[578];
@@ -12279,7 +12279,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1177] = f[148] && f[630] && !f[655];
 	assign leaf[1178] = f[148] && f[630] && f[655];
 	
-	// Classifier: 7 Iteration: 92
+	// Digit: 7, Tree: 92
 	assign leaf[1179] = !f[298] && !f[323] && !f[287] && !f[715];
 	assign leaf[1180] = !f[298] && !f[323] && !f[287] && f[715];
 	assign leaf[1181] = !f[298] && !f[323] && f[287] && !f[461];
@@ -12296,7 +12296,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1192] = f[298] && f[406] && f[570] && !f[602];
 	assign leaf[1193] = f[298] && f[406] && f[570] && f[602];
 	
-	// Classifier: 7 Iteration: 93
+	// Digit: 7, Tree: 93
 	assign leaf[1194] = !f[349] && !f[432] && !f[488] && !f[290];
 	assign leaf[1195] = !f[349] && !f[432] && !f[488] && f[290];
 	assign leaf[1196] = !f[349] && !f[432] && f[488] && !f[429];
@@ -12314,7 +12314,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1208] = f[349] && f[234] && f[265] && !f[289];
 	assign leaf[1209] = f[349] && f[234] && f[265] && f[289];
 	
-	// Classifier: 7 Iteration: 94
+	// Digit: 7, Tree: 94
 	assign leaf[1210] = !f[605] && !f[472] && !f[482] && !f[411];
 	assign leaf[1211] = !f[605] && !f[472] && !f[482] && f[411];
 	assign leaf[1212] = !f[605] && !f[472] && f[482] && !f[429];
@@ -12329,7 +12329,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1221] = f[605] && f[516] && f[524] && !f[688];
 	assign leaf[1222] = f[605] && f[516] && f[524] && f[688];
 	
-	// Classifier: 7 Iteration: 95
+	// Digit: 7, Tree: 95
 	assign leaf[1223] = !f[241] && !f[350] && !f[434] && !f[349];
 	assign leaf[1224] = !f[241] && !f[350] && !f[434] && f[349];
 	assign leaf[1225] = !f[241] && !f[350] && f[434] && !f[653];
@@ -12346,7 +12346,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1236] = f[241] && f[229] && !f[541] && f[627];
 	assign leaf[1237] = f[241] && f[229] && f[541];
 	
-	// Classifier: 7 Iteration: 96
+	// Digit: 7, Tree: 96
 	assign leaf[1238] = !f[472] && !f[202] && !f[262] && !f[292];
 	assign leaf[1239] = !f[472] && !f[202] && !f[262] && f[292];
 	assign leaf[1240] = !f[472] && !f[202] && f[262] && !f[265];
@@ -12357,7 +12357,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1245] = f[472] && !f[457];
 	assign leaf[1246] = f[472] && f[457];
 	
-	// Classifier: 7 Iteration: 97
+	// Digit: 7, Tree: 97
 	assign leaf[1247] = !f[359] && !f[206] && !f[260] && !f[154];
 	assign leaf[1248] = !f[359] && !f[206] && !f[260] && f[154];
 	assign leaf[1249] = !f[359] && !f[206] && f[260] && !f[291];
@@ -12370,7 +12370,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1256] = f[359] && !f[683] && f[427];
 	assign leaf[1257] = f[359] && f[683];
 	
-	// Classifier: 7 Iteration: 98
+	// Digit: 7, Tree: 98
 	assign leaf[1258] = !f[154] && !f[159] && !f[182] && !f[542];
 	assign leaf[1259] = !f[154] && !f[159] && !f[182] && f[542];
 	assign leaf[1260] = !f[154] && !f[159] && f[182] && !f[290];
@@ -12383,7 +12383,7 @@ module decision_tree_leaves_7(input logic [0:783] f, output logic [0:1279] leaf)
 	assign leaf[1267] = f[154] && f[403] && !f[684];
 	assign leaf[1268] = f[154] && f[403] && f[684];
 	
-	// Classifier: 7 Iteration: 99
+	// Digit: 7, Tree: 99
 	assign leaf[1269] = !f[396] && !f[376] && !f[288] && !f[261];
 	assign leaf[1270] = !f[396] && !f[376] && !f[288] && f[261];
 	assign leaf[1271] = !f[396] && !f[376] && f[288] && !f[290];
@@ -12402,7 +12402,7 @@ endmodule
 
 
 module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf);
-	// Classifier: 8 Iteration: 0
+	// Digit: 8, Tree: 0
 	assign leaf[0] = !f[487] && !f[488] && !f[486] && !f[489];
 	assign leaf[1] = !f[487] && !f[488] && !f[486] && f[489];
 	assign leaf[2] = !f[487] && !f[488] && f[486] && !f[377];
@@ -12420,7 +12420,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[14] = f[487] && f[656] && f[405] && !f[514];
 	assign leaf[15] = f[487] && f[656] && f[405] && f[514];
 	
-	// Classifier: 8 Iteration: 1
+	// Digit: 8, Tree: 1
 	assign leaf[16] = !f[376] && !f[349] && !f[403] && !f[276];
 	assign leaf[17] = !f[376] && !f[349] && !f[403] && f[276];
 	assign leaf[18] = !f[376] && !f[349] && f[403] && !f[515];
@@ -12438,7 +12438,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[30] = f[376] && f[461] && f[657] && !f[515];
 	assign leaf[31] = f[376] && f[461] && f[657] && f[515];
 	
-	// Classifier: 8 Iteration: 2
+	// Digit: 8, Tree: 2
 	assign leaf[32] = !f[657] && !f[275] && !f[376] && !f[629];
 	assign leaf[33] = !f[657] && !f[275] && !f[376] && f[629];
 	assign leaf[34] = !f[657] && !f[275] && f[376] && !f[662];
@@ -12456,7 +12456,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[46] = f[657] && f[515] && f[433] && !f[573];
 	assign leaf[47] = f[657] && f[515] && f[433] && f[573];
 	
-	// Classifier: 8 Iteration: 3
+	// Digit: 8, Tree: 3
 	assign leaf[48] = !f[405] && !f[432] && !f[378] && !f[460];
 	assign leaf[49] = !f[405] && !f[432] && !f[378] && f[460];
 	assign leaf[50] = !f[405] && !f[432] && f[378] && !f[488];
@@ -12474,7 +12474,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[62] = f[405] && f[300] && f[438] && !f[660];
 	assign leaf[63] = f[405] && f[300] && f[438] && f[660];
 	
-	// Classifier: 8 Iteration: 4
+	// Digit: 8, Tree: 4
 	assign leaf[64] = !f[433] && !f[431] && !f[434] && !f[429];
 	assign leaf[65] = !f[433] && !f[431] && !f[434] && f[429];
 	assign leaf[66] = !f[433] && !f[431] && f[434] && !f[377];
@@ -12492,7 +12492,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[78] = f[433] && f[657] && f[515] && !f[290];
 	assign leaf[79] = f[433] && f[657] && f[515] && f[290];
 	
-	// Classifier: 8 Iteration: 5
+	// Digit: 8, Tree: 5
 	assign leaf[80] = !f[433] && !f[431] && !f[378] && !f[405];
 	assign leaf[81] = !f[433] && !f[431] && !f[378] && f[405];
 	assign leaf[82] = !f[433] && !f[431] && f[378] && !f[489];
@@ -12510,7 +12510,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[94] = f[433] && f[348] && f[402] && !f[289];
 	assign leaf[95] = f[433] && f[348] && f[402] && f[289];
 	
-	// Classifier: 8 Iteration: 6
+	// Digit: 8, Tree: 6
 	assign leaf[96] = !f[406] && !f[404] && !f[430] && !f[350];
 	assign leaf[97] = !f[406] && !f[404] && !f[430] && f[350];
 	assign leaf[98] = !f[406] && !f[404] && f[430] && !f[493];
@@ -12528,7 +12528,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[110] = f[406] && f[487] && f[428] && !f[625];
 	assign leaf[111] = f[406] && f[487] && f[428] && f[625];
 	
-	// Classifier: 8 Iteration: 7
+	// Digit: 8, Tree: 7
 	assign leaf[112] = !f[658] && !f[652] && !f[686] && !f[303];
 	assign leaf[113] = !f[658] && !f[652] && !f[686] && f[303];
 	assign leaf[114] = !f[658] && !f[652] && f[686] && !f[571];
@@ -12546,7 +12546,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[126] = f[658] && f[543] && f[484] && !f[303];
 	assign leaf[127] = f[658] && f[543] && f[484] && f[303];
 	
-	// Classifier: 8 Iteration: 8
+	// Digit: 8, Tree: 8
 	assign leaf[128] = !f[439] && !f[267] && !f[349] && !f[375];
 	assign leaf[129] = !f[439] && !f[267] && !f[349] && f[375];
 	assign leaf[130] = !f[439] && !f[267] && f[349] && !f[406];
@@ -12564,7 +12564,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[142] = f[439] && f[521] && f[304] && !f[468];
 	assign leaf[143] = f[439] && f[521] && f[304] && f[468];
 	
-	// Classifier: 8 Iteration: 9
+	// Digit: 8, Tree: 9
 	assign leaf[144] = !f[658] && !f[624] && !f[686] && !f[630];
 	assign leaf[145] = !f[658] && !f[624] && !f[686] && f[630];
 	assign leaf[146] = !f[658] && !f[624] && f[686] && !f[516];
@@ -12582,7 +12582,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[158] = f[658] && f[516] && f[602] && !f[317];
 	assign leaf[159] = f[658] && f[516] && f[602] && f[317];
 	
-	// Classifier: 8 Iteration: 10
+	// Digit: 8, Tree: 10
 	assign leaf[160] = !f[439] && !f[302] && !f[183] && !f[154];
 	assign leaf[161] = !f[439] && !f[302] && !f[183] && f[154];
 	assign leaf[162] = !f[439] && !f[302] && f[183] && !f[299];
@@ -12600,7 +12600,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[174] = f[439] && f[521] && f[304] && !f[382];
 	assign leaf[175] = f[439] && f[521] && f[304] && f[382];
 	
-	// Classifier: 8 Iteration: 11
+	// Digit: 8, Tree: 11
 	assign leaf[176] = !f[438] && !f[434] && !f[378] && !f[410];
 	assign leaf[177] = !f[438] && !f[434] && !f[378] && f[410];
 	assign leaf[178] = !f[438] && !f[434] && f[378] && !f[153];
@@ -12618,7 +12618,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[190] = f[438] && f[520] && f[302] && !f[427];
 	assign leaf[191] = f[438] && f[520] && f[302] && f[427];
 	
-	// Classifier: 8 Iteration: 12
+	// Digit: 8, Tree: 12
 	assign leaf[192] = !f[274] && !f[660] && !f[597] && !f[567];
 	assign leaf[193] = !f[274] && !f[660] && !f[597] && f[567];
 	assign leaf[194] = !f[274] && !f[660] && f[597] && !f[572];
@@ -12636,7 +12636,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[206] = f[274] && f[426] && f[520] && !f[634];
 	assign leaf[207] = f[274] && f[426] && f[520] && f[634];
 	
-	// Classifier: 8 Iteration: 13
+	// Digit: 8, Tree: 13
 	assign leaf[208] = !f[440] && !f[288] && !f[541] && !f[511];
 	assign leaf[209] = !f[440] && !f[288] && !f[541] && f[511];
 	assign leaf[210] = !f[440] && !f[288] && f[541] && !f[571];
@@ -12654,7 +12654,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[222] = f[440] && f[582] && f[525] && !f[460];
 	assign leaf[223] = f[440] && f[582] && f[525] && f[460];
 	
-	// Classifier: 8 Iteration: 14
+	// Digit: 8, Tree: 14
 	assign leaf[224] = !f[466] && !f[185] && !f[157] && !f[627];
 	assign leaf[225] = !f[466] && !f[185] && !f[157] && f[627];
 	assign leaf[226] = !f[466] && !f[185] && f[157] && !f[580];
@@ -12672,7 +12672,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[238] = f[466] && f[520] && f[180] && !f[275];
 	assign leaf[239] = f[466] && f[520] && f[180] && f[275];
 	
-	// Classifier: 8 Iteration: 15
+	// Digit: 8, Tree: 15
 	assign leaf[240] = !f[467] && !f[658] && !f[513] && !f[663];
 	assign leaf[241] = !f[467] && !f[658] && !f[513] && f[663];
 	assign leaf[242] = !f[467] && !f[658] && f[513] && !f[628];
@@ -12690,7 +12690,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[254] = f[467] && f[521] && f[351] && !f[274];
 	assign leaf[255] = f[467] && f[521] && f[351] && f[274];
 	
-	// Classifier: 8 Iteration: 16
+	// Digit: 8, Tree: 16
 	assign leaf[256] = !f[434] && !f[520] && !f[549] && !f[457];
 	assign leaf[257] = !f[434] && !f[520] && !f[549] && f[457];
 	assign leaf[258] = !f[434] && !f[520] && f[549] && !f[407];
@@ -12708,7 +12708,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[270] = f[434] && f[437] && f[634] && !f[315];
 	assign leaf[271] = f[434] && f[437] && f[634] && f[315];
 	
-	// Classifier: 8 Iteration: 17
+	// Digit: 8, Tree: 17
 	assign leaf[272] = !f[440] && !f[357] && !f[410] && !f[289];
 	assign leaf[273] = !f[440] && !f[357] && !f[410] && f[289];
 	assign leaf[274] = !f[440] && !f[357] && f[410] && !f[465];
@@ -12726,7 +12726,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[286] = f[440] && f[522] && f[303] && !f[399];
 	assign leaf[287] = f[440] && f[522] && f[303] && f[399];
 	
-	// Classifier: 8 Iteration: 18
+	// Digit: 8, Tree: 18
 	assign leaf[288] = !f[434] && !f[520] && !f[457] && !f[459];
 	assign leaf[289] = !f[434] && !f[520] && !f[457] && f[459];
 	assign leaf[290] = !f[434] && !f[520] && f[457] && !f[380];
@@ -12744,7 +12744,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[302] = f[434] && f[428] && f[662] && !f[573];
 	assign leaf[303] = f[434] && f[428] && f[662] && f[573];
 	
-	// Classifier: 8 Iteration: 19
+	// Digit: 8, Tree: 19
 	assign leaf[304] = !f[302] && !f[332] && !f[349] && !f[375];
 	assign leaf[305] = !f[302] && !f[332] && !f[349] && f[375];
 	assign leaf[306] = !f[302] && !f[332] && f[349] && !f[375];
@@ -12761,7 +12761,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[317] = f[302] && f[272] && f[458] && !f[352];
 	assign leaf[318] = f[302] && f[272] && f[458] && f[352];
 	
-	// Classifier: 8 Iteration: 20
+	// Digit: 8, Tree: 20
 	assign leaf[319] = !f[441] && !f[314] && !f[401] && !f[318];
 	assign leaf[320] = !f[441] && !f[314] && !f[401] && f[318];
 	assign leaf[321] = !f[441] && !f[314] && f[401] && !f[437];
@@ -12779,7 +12779,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[333] = f[441] && f[523] && f[593] && !f[330];
 	assign leaf[334] = f[441] && f[523] && f[593] && f[330];
 	
-	// Classifier: 8 Iteration: 21
+	// Digit: 8, Tree: 21
 	assign leaf[335] = !f[153] && !f[186] && !f[158] && !f[542];
 	assign leaf[336] = !f[153] && !f[186] && !f[158] && f[542];
 	assign leaf[337] = !f[153] && !f[186] && f[158] && !f[326];
@@ -12797,7 +12797,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[349] = f[153] && f[210] && f[289] && !f[264];
 	assign leaf[350] = f[153] && f[210] && f[289] && f[264];
 	
-	// Classifier: 8 Iteration: 22
+	// Digit: 8, Tree: 22
 	assign leaf[351] = !f[688] && !f[219] && !f[631] && !f[596];
 	assign leaf[352] = !f[688] && !f[219] && !f[631] && f[596];
 	assign leaf[353] = !f[688] && !f[219] && f[631] && !f[516];
@@ -12815,7 +12815,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[365] = f[688] && f[573] && f[513] && !f[214];
 	assign leaf[366] = f[688] && f[573] && f[513] && f[214];
 	
-	// Classifier: 8 Iteration: 23
+	// Digit: 8, Tree: 23
 	assign leaf[367] = !f[301] && !f[330] && !f[271] && !f[300];
 	assign leaf[368] = !f[301] && !f[330] && !f[271] && f[300];
 	assign leaf[369] = !f[301] && !f[330] && f[271] && !f[242];
@@ -12832,7 +12832,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[380] = f[301] && f[298] && f[458] && !f[243];
 	assign leaf[381] = f[301] && f[298] && f[458] && f[243];
 	
-	// Classifier: 8 Iteration: 24
+	// Digit: 8, Tree: 24
 	assign leaf[382] = !f[322] && !f[489] && !f[487] && !f[484];
 	assign leaf[383] = !f[322] && !f[489] && !f[487] && f[484];
 	assign leaf[384] = !f[322] && !f[489] && f[487] && !f[457];
@@ -12850,7 +12850,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[396] = f[322] && f[239] && f[296] && !f[662];
 	assign leaf[397] = f[322] && f[239] && f[296] && f[662];
 	
-	// Classifier: 8 Iteration: 25
+	// Digit: 8, Tree: 25
 	assign leaf[398] = !f[287] && !f[468] && !f[357] && !f[410];
 	assign leaf[399] = !f[287] && !f[468] && !f[357] && f[410];
 	assign leaf[400] = !f[287] && !f[468] && f[357] && !f[327];
@@ -12868,7 +12868,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[412] = f[287] && f[517] && f[514] && !f[343];
 	assign leaf[413] = f[287] && f[517] && f[514] && f[343];
 	
-	// Classifier: 8 Iteration: 26
+	// Digit: 8, Tree: 26
 	assign leaf[414] = !f[469] && !f[287] && !f[274] && !f[330];
 	assign leaf[415] = !f[469] && !f[287] && !f[274] && f[330];
 	assign leaf[416] = !f[469] && !f[287] && f[274] && !f[677];
@@ -12886,7 +12886,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[428] = f[469] && f[523] && f[569] && !f[414];
 	assign leaf[429] = f[469] && f[523] && f[569] && f[414];
 	
-	// Classifier: 8 Iteration: 27
+	// Digit: 8, Tree: 27
 	assign leaf[430] = !f[441] && !f[314] && !f[437] && !f[406];
 	assign leaf[431] = !f[441] && !f[314] && !f[437] && f[406];
 	assign leaf[432] = !f[441] && !f[314] && f[437] && !f[152];
@@ -12903,7 +12903,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[443] = f[441] && f[332] && !f[549] && f[187];
 	assign leaf[444] = f[441] && f[332] && f[549];
 	
-	// Classifier: 8 Iteration: 28
+	// Digit: 8, Tree: 28
 	assign leaf[445] = !f[322] && !f[489] && !f[663] && !f[301];
 	assign leaf[446] = !f[322] && !f[489] && !f[663] && f[301];
 	assign leaf[447] = !f[322] && !f[489] && f[663] && !f[546];
@@ -12921,7 +12921,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[459] = f[322] && f[546] && f[348] && !f[233];
 	assign leaf[460] = f[322] && f[546] && f[348] && f[233];
 	
-	// Classifier: 8 Iteration: 29
+	// Digit: 8, Tree: 29
 	assign leaf[461] = !f[261] && !f[374] && !f[292] && !f[266];
 	assign leaf[462] = !f[261] && !f[374] && !f[292] && f[266];
 	assign leaf[463] = !f[261] && !f[374] && f[292] && !f[238];
@@ -12939,7 +12939,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[475] = f[261] && f[348] && f[372] && !f[434];
 	assign leaf[476] = f[261] && f[348] && f[372] && f[434];
 	
-	// Classifier: 8 Iteration: 30
+	// Digit: 8, Tree: 30
 	assign leaf[477] = !f[219] && !f[467] && !f[315] && !f[202];
 	assign leaf[478] = !f[219] && !f[467] && !f[315] && f[202];
 	assign leaf[479] = !f[219] && !f[467] && f[315] && !f[290];
@@ -12957,7 +12957,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[491] = f[219] && f[458] && f[460] && !f[428];
 	assign leaf[492] = f[219] && f[458] && f[460] && f[428];
 	
-	// Classifier: 8 Iteration: 31
+	// Digit: 8, Tree: 31
 	assign leaf[493] = !f[439] && !f[525] && !f[542] && !f[512];
 	assign leaf[494] = !f[439] && !f[525] && !f[542] && f[512];
 	assign leaf[495] = !f[439] && !f[525] && f[542] && !f[544];
@@ -12975,7 +12975,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[507] = f[439] && f[521] && f[594] && !f[457];
 	assign leaf[508] = f[439] && f[521] && f[594] && f[457];
 	
-	// Classifier: 8 Iteration: 32
+	// Digit: 8, Tree: 32
 	assign leaf[509] = !f[441] && !f[341] && !f[357] && !f[410];
 	assign leaf[510] = !f[441] && !f[341] && !f[357] && f[410];
 	assign leaf[511] = !f[441] && !f[341] && f[357] && !f[328];
@@ -12993,7 +12993,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[523] = f[441] && f[595] && f[496] && !f[456];
 	assign leaf[524] = f[441] && f[595] && f[496] && f[456];
 	
-	// Classifier: 8 Iteration: 33
+	// Digit: 8, Tree: 33
 	assign leaf[525] = !f[440] && !f[315] && !f[290] && !f[292];
 	assign leaf[526] = !f[440] && !f[315] && !f[290] && f[292];
 	assign leaf[527] = !f[440] && !f[315] && f[290] && !f[264];
@@ -13011,7 +13011,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[539] = f[440] && f[576] && f[637] && !f[657];
 	assign leaf[540] = f[440] && f[576] && f[637] && f[657];
 	
-	// Classifier: 8 Iteration: 34
+	// Digit: 8, Tree: 34
 	assign leaf[541] = !f[248] && !f[350] && !f[517] && !f[514];
 	assign leaf[542] = !f[248] && !f[350] && !f[517] && f[514];
 	assign leaf[543] = !f[248] && !f[350] && f[517] && !f[456];
@@ -13029,7 +13029,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[555] = f[248] && f[186] && f[577] && !f[328];
 	assign leaf[556] = f[248] && f[186] && f[577] && f[328];
 	
-	// Classifier: 8 Iteration: 35
+	// Digit: 8, Tree: 35
 	assign leaf[557] = !f[248] && !f[156] && !f[542] && !f[544];
 	assign leaf[558] = !f[248] && !f[156] && !f[542] && f[544];
 	assign leaf[559] = !f[248] && !f[156] && f[542] && !f[455];
@@ -13047,7 +13047,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[571] = f[248] && f[347] && f[383] && !f[371];
 	assign leaf[572] = f[248] && f[347] && f[383] && f[371];
 	
-	// Classifier: 8 Iteration: 36
+	// Digit: 8, Tree: 36
 	assign leaf[573] = !f[340] && !f[399] && !f[317] && !f[291];
 	assign leaf[574] = !f[340] && !f[399] && !f[317] && f[291];
 	assign leaf[575] = !f[340] && !f[399] && f[317] && !f[403];
@@ -13061,7 +13061,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[583] = f[340] && f[464] && !f[152] && f[546];
 	assign leaf[584] = f[340] && f[464] && f[152];
 	
-	// Classifier: 8 Iteration: 37
+	// Digit: 8, Tree: 37
 	assign leaf[585] = !f[679] && !f[273] && !f[710] && !f[438];
 	assign leaf[586] = !f[679] && !f[273] && !f[710] && f[438];
 	assign leaf[587] = !f[679] && !f[273] && f[710] && !f[542];
@@ -13079,7 +13079,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[599] = f[679] && f[540] && f[681] && !f[232];
 	assign leaf[600] = f[679] && f[540] && f[681] && f[232];
 	
-	// Classifier: 8 Iteration: 38
+	// Digit: 8, Tree: 38
 	assign leaf[601] = !f[399] && !f[317] && !f[292] && !f[265];
 	assign leaf[602] = !f[399] && !f[317] && !f[292] && f[265];
 	assign leaf[603] = !f[399] && !f[317] && f[292] && !f[347];
@@ -13097,7 +13097,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[615] = f[399] && f[607] && f[489] && !f[374];
 	assign leaf[616] = f[399] && f[607] && f[489] && f[374];
 	
-	// Classifier: 8 Iteration: 39
+	// Digit: 8, Tree: 39
 	assign leaf[617] = !f[219] && !f[412] && !f[688] && !f[350];
 	assign leaf[618] = !f[219] && !f[412] && !f[688] && f[350];
 	assign leaf[619] = !f[219] && !f[412] && f[688] && !f[545];
@@ -13115,7 +13115,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[631] = f[219] && f[454] && f[272] && !f[595];
 	assign leaf[632] = f[219] && f[454] && f[272] && f[595];
 	
-	// Classifier: 8 Iteration: 40
+	// Digit: 8, Tree: 40
 	assign leaf[633] = !f[340] && !f[468] && !f[357] && !f[410];
 	assign leaf[634] = !f[340] && !f[468] && !f[357] && f[410];
 	assign leaf[635] = !f[340] && !f[468] && f[357] && !f[326];
@@ -13129,7 +13129,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[643] = f[340] && f[464] && !f[152] && f[321];
 	assign leaf[644] = f[340] && f[464] && f[152];
 	
-	// Classifier: 8 Iteration: 41
+	// Digit: 8, Tree: 41
 	assign leaf[645] = !f[437] && !f[492] && !f[547] && !f[543];
 	assign leaf[646] = !f[437] && !f[492] && !f[547] && f[543];
 	assign leaf[647] = !f[437] && !f[492] && f[547] && !f[550];
@@ -13147,7 +13147,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[659] = f[437] && f[353] && f[491] && !f[662];
 	assign leaf[660] = f[437] && f[353] && f[491] && f[662];
 	
-	// Classifier: 8 Iteration: 42
+	// Digit: 8, Tree: 42
 	assign leaf[661] = !f[303] && !f[650] && !f[244] && !f[637];
 	assign leaf[662] = !f[303] && !f[650] && !f[244] && f[637];
 	assign leaf[663] = !f[303] && !f[650] && f[244] && !f[242];
@@ -13165,7 +13165,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[675] = f[303] && f[485] && f[207] && !f[354];
 	assign leaf[676] = f[303] && f[485] && f[207] && f[354];
 	
-	// Classifier: 8 Iteration: 43
+	// Digit: 8, Tree: 43
 	assign leaf[677] = !f[542] && !f[512] && !f[544] && !f[510];
 	assign leaf[678] = !f[542] && !f[512] && !f[544] && f[510];
 	assign leaf[679] = !f[542] && !f[512] && f[544] && !f[549];
@@ -13183,7 +13183,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[691] = f[542] && f[511] && f[681] && !f[491];
 	assign leaf[692] = f[542] && f[511] && f[681] && f[491];
 	
-	// Classifier: 8 Iteration: 44
+	// Digit: 8, Tree: 44
 	assign leaf[693] = !f[341] && !f[688] && !f[542] && !f[511];
 	assign leaf[694] = !f[341] && !f[688] && !f[542] && f[511];
 	assign leaf[695] = !f[341] && !f[688] && f[542] && !f[511];
@@ -13199,7 +13199,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[705] = f[341] && f[315] && f[491] && !f[350];
 	assign leaf[706] = f[341] && f[315] && f[491] && f[350];
 	
-	// Classifier: 8 Iteration: 45
+	// Digit: 8, Tree: 45
 	assign leaf[707] = !f[325] && !f[354] && !f[268] && !f[356];
 	assign leaf[708] = !f[325] && !f[354] && !f[268] && f[356];
 	assign leaf[709] = !f[325] && !f[354] && f[268] && !f[632];
@@ -13217,7 +13217,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[721] = f[325] && f[409] && f[495] && !f[426];
 	assign leaf[722] = f[325] && f[409] && f[495] && f[426];
 	
-	// Classifier: 8 Iteration: 46
+	// Digit: 8, Tree: 46
 	assign leaf[723] = !f[649] && !f[201] && !f[663] && !f[494];
 	assign leaf[724] = !f[649] && !f[201] && !f[663] && f[494];
 	assign leaf[725] = !f[649] && !f[201] && f[663] && !f[574];
@@ -13233,7 +13233,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[735] = f[649] && f[624] && f[456] && !f[437];
 	assign leaf[736] = f[649] && f[624] && f[456] && f[437];
 	
-	// Classifier: 8 Iteration: 47
+	// Digit: 8, Tree: 47
 	assign leaf[737] = !f[238] && !f[321] && !f[347] && !f[374];
 	assign leaf[738] = !f[238] && !f[321] && !f[347] && f[374];
 	assign leaf[739] = !f[238] && !f[321] && f[347] && !f[402];
@@ -13251,7 +13251,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[751] = f[238] && f[304] && f[400] && !f[348];
 	assign leaf[752] = f[238] && f[304] && f[400] && f[348];
 	
-	// Classifier: 8 Iteration: 48
+	// Digit: 8, Tree: 48
 	assign leaf[753] = !f[273] && !f[289] && !f[375] && !f[320];
 	assign leaf[754] = !f[273] && !f[289] && !f[375] && f[320];
 	assign leaf[755] = !f[273] && !f[289] && f[375] && !f[315];
@@ -13269,7 +13269,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[767] = f[273] && f[322] && f[347] && !f[519];
 	assign leaf[768] = f[273] && f[322] && f[347] && f[519];
 	
-	// Classifier: 8 Iteration: 49
+	// Digit: 8, Tree: 49
 	assign leaf[769] = !f[441] && !f[678] && !f[289] && !f[375];
 	assign leaf[770] = !f[441] && !f[678] && !f[289] && f[375];
 	assign leaf[771] = !f[441] && !f[678] && f[289] && !f[545];
@@ -13287,7 +13287,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[783] = f[441] && f[523] && f[218] && !f[239];
 	assign leaf[784] = f[441] && f[523] && f[218] && f[239];
 	
-	// Classifier: 8 Iteration: 50
+	// Digit: 8, Tree: 50
 	assign leaf[785] = !f[705] && !f[219] && !f[708] && !f[120];
 	assign leaf[786] = !f[705] && !f[219] && !f[708] && f[120];
 	assign leaf[787] = !f[705] && !f[219] && f[708] && !f[568];
@@ -13298,7 +13298,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[792] = !f[705] && f[219] && f[379] && f[346];
 	assign leaf[793] = f[705];
 	
-	// Classifier: 8 Iteration: 51
+	// Digit: 8, Tree: 51
 	assign leaf[794] = !f[452] && !f[333] && !f[705] && !f[563];
 	assign leaf[795] = !f[452] && !f[333] && !f[705] && f[563];
 	assign leaf[796] = !f[452] && !f[333] && f[705];
@@ -13307,7 +13307,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[799] = !f[452] && f[333] && f[299];
 	assign leaf[800] = f[452];
 	
-	// Classifier: 8 Iteration: 52
+	// Digit: 8, Tree: 52
 	assign leaf[801] = !f[304] && !f[708] && !f[322] && !f[462];
 	assign leaf[802] = !f[304] && !f[708] && !f[322] && f[462];
 	assign leaf[803] = !f[304] && !f[708] && f[322] && !f[546];
@@ -13323,7 +13323,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[813] = f[304] && f[322] && f[212] && !f[262];
 	assign leaf[814] = f[304] && f[322] && f[212] && f[262];
 	
-	// Classifier: 8 Iteration: 53
+	// Digit: 8, Tree: 53
 	assign leaf[815] = !f[649] && !f[708] && !f[434] && !f[429];
 	assign leaf[816] = !f[649] && !f[708] && !f[434] && f[429];
 	assign leaf[817] = !f[649] && !f[708] && f[434] && !f[100];
@@ -13337,7 +13337,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[825] = f[649] && f[539] && !f[347] && f[349];
 	assign leaf[826] = f[649] && f[539] && f[347];
 	
-	// Classifier: 8 Iteration: 54
+	// Digit: 8, Tree: 54
 	assign leaf[827] = !f[176] && !f[687] && !f[630] && !f[575];
 	assign leaf[828] = !f[176] && !f[687] && !f[630] && f[575];
 	assign leaf[829] = !f[176] && !f[687] && f[630] && !f[657];
@@ -13355,7 +13355,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[841] = f[176] && f[657] && f[209] && !f[492];
 	assign leaf[842] = f[176] && f[657] && f[209] && f[492];
 	
-	// Classifier: 8 Iteration: 55
+	// Digit: 8, Tree: 55
 	assign leaf[843] = !f[525] && !f[570] && !f[540] && !f[572];
 	assign leaf[844] = !f[525] && !f[570] && !f[540] && f[572];
 	assign leaf[845] = !f[525] && !f[570] && f[540] && !f[604];
@@ -13373,7 +13373,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[857] = f[525] && f[470] && f[456] && !f[125];
 	assign leaf[858] = f[525] && f[470] && f[456] && f[125];
 	
-	// Classifier: 8 Iteration: 56
+	// Digit: 8, Tree: 56
 	assign leaf[859] = !f[341] && !f[277] && !f[679] && !f[302];
 	assign leaf[860] = !f[341] && !f[277] && !f[679] && f[302];
 	assign leaf[861] = !f[341] && !f[277] && f[679] && !f[540];
@@ -13389,7 +13389,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[871] = f[341] && f[315] && f[264] && !f[383];
 	assign leaf[872] = f[341] && f[315] && f[264] && f[383];
 	
-	// Classifier: 8 Iteration: 57
+	// Digit: 8, Tree: 57
 	assign leaf[873] = !f[165] && !f[381] && !f[464] && !f[491];
 	assign leaf[874] = !f[165] && !f[381] && !f[464] && f[491];
 	assign leaf[875] = !f[165] && !f[381] && f[464] && !f[376];
@@ -13400,7 +13400,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[880] = !f[165] && f[381] && f[297] && f[180];
 	assign leaf[881] = f[165];
 	
-	// Classifier: 8 Iteration: 58
+	// Digit: 8, Tree: 58
 	assign leaf[882] = !f[439] && !f[525] && !f[542] && !f[660];
 	assign leaf[883] = !f[439] && !f[525] && !f[542] && f[660];
 	assign leaf[884] = !f[439] && !f[525] && f[542] && !f[538];
@@ -13418,7 +13418,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[896] = f[439] && f[154] && f[318] && !f[379];
 	assign leaf[897] = f[439] && f[154] && f[318] && f[379];
 	
-	// Classifier: 8 Iteration: 59
+	// Digit: 8, Tree: 59
 	assign leaf[898] = !f[276] && !f[284] && !f[684] && !f[601];
 	assign leaf[899] = !f[276] && !f[284] && !f[684] && f[601];
 	assign leaf[900] = !f[276] && !f[284] && f[684] && !f[601];
@@ -13434,7 +13434,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[910] = f[276] && f[403] && f[207] && !f[682];
 	assign leaf[911] = f[276] && f[403] && f[207] && f[682];
 	
-	// Classifier: 8 Iteration: 60
+	// Digit: 8, Tree: 60
 	assign leaf[912] = !f[469] && !f[317] && !f[627] && !f[653];
 	assign leaf[913] = !f[469] && !f[317] && !f[627] && f[653];
 	assign leaf[914] = !f[469] && !f[317] && f[627] && !f[600];
@@ -13452,7 +13452,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[926] = f[469] && f[523] && f[218] && !f[574];
 	assign leaf[927] = f[469] && f[523] && f[218] && f[574];
 	
-	// Classifier: 8 Iteration: 61
+	// Digit: 8, Tree: 61
 	assign leaf[928] = !f[466] && !f[549] && !f[575] && !f[324];
 	assign leaf[929] = !f[466] && !f[549] && !f[575] && f[324];
 	assign leaf[930] = !f[466] && !f[549] && f[575] && !f[659];
@@ -13469,7 +13469,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[941] = f[466] && f[520] && !f[284] && f[594];
 	assign leaf[942] = f[466] && f[520] && f[284];
 	
-	// Classifier: 8 Iteration: 62
+	// Digit: 8, Tree: 62
 	assign leaf[943] = !f[437] && !f[291] && !f[657] && !f[573];
 	assign leaf[944] = !f[437] && !f[291] && !f[657] && f[573];
 	assign leaf[945] = !f[437] && !f[291] && f[657] && !f[517];
@@ -13487,7 +13487,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[957] = f[437] && f[381] && f[273] && !f[686];
 	assign leaf[958] = f[437] && f[381] && f[273] && f[686];
 	
-	// Classifier: 8 Iteration: 63
+	// Digit: 8, Tree: 63
 	assign leaf[959] = !f[328] && !f[271] && !f[269] && !f[385];
 	assign leaf[960] = !f[328] && !f[271] && !f[269] && f[385];
 	assign leaf[961] = !f[328] && !f[271] && f[269] && !f[326];
@@ -13505,7 +13505,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[973] = f[328] && f[298] && f[240] && !f[650];
 	assign leaf[974] = f[328] && f[298] && f[240] && f[650];
 	
-	// Classifier: 8 Iteration: 64
+	// Digit: 8, Tree: 64
 	assign leaf[975] = !f[679] && !f[136] && !f[708] && !f[452];
 	assign leaf[976] = !f[679] && !f[136] && !f[708] && f[452];
 	assign leaf[977] = !f[679] && !f[136] && f[708];
@@ -13517,7 +13517,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[983] = f[679] && f[540] && !f[373] && f[548];
 	assign leaf[984] = f[679] && f[540] && f[373];
 	
-	// Classifier: 8 Iteration: 65
+	// Digit: 8, Tree: 65
 	assign leaf[985] = !f[341] && !f[491] && !f[294] && !f[303];
 	assign leaf[986] = !f[341] && !f[491] && !f[294] && f[303];
 	assign leaf[987] = !f[341] && !f[491] && f[294] && !f[380];
@@ -13533,7 +13533,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[997] = f[341] && f[315] && f[464] && !f[601];
 	assign leaf[998] = f[341] && f[315] && f[464] && f[601];
 	
-	// Classifier: 8 Iteration: 66
+	// Digit: 8, Tree: 66
 	assign leaf[999] = !f[465] && !f[520] && !f[207] && !f[627];
 	assign leaf[1000] = !f[465] && !f[520] && !f[207] && f[627];
 	assign leaf[1001] = !f[465] && !f[520] && f[207] && !f[600];
@@ -13551,7 +13551,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1013] = f[465] && f[151] && f[487] && !f[543];
 	assign leaf[1014] = f[465] && f[151] && f[487] && f[543];
 	
-	// Classifier: 8 Iteration: 67
+	// Digit: 8, Tree: 67
 	assign leaf[1015] = !f[382] && !f[326] && !f[263] && !f[290];
 	assign leaf[1016] = !f[382] && !f[326] && !f[263] && f[290];
 	assign leaf[1017] = !f[382] && !f[326] && f[263] && !f[296];
@@ -13569,7 +13569,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1029] = f[382] && f[352] && f[483] && !f[625];
 	assign leaf[1030] = f[382] && f[352] && f[483] && f[625];
 	
-	// Classifier: 8 Iteration: 68
+	// Digit: 8, Tree: 68
 	assign leaf[1031] = !f[314] && !f[290] && !f[316] && !f[232];
 	assign leaf[1032] = !f[314] && !f[290] && !f[316] && f[232];
 	assign leaf[1033] = !f[314] && !f[290] && f[316] && !f[234];
@@ -13586,7 +13586,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1044] = f[314] && f[353] && !f[681] && f[433];
 	assign leaf[1045] = f[314] && f[353] && f[681];
 	
-	// Classifier: 8 Iteration: 69
+	// Digit: 8, Tree: 69
 	assign leaf[1046] = !f[627] && !f[634] && !f[682] && !f[572];
 	assign leaf[1047] = !f[627] && !f[634] && !f[682] && f[572];
 	assign leaf[1048] = !f[627] && !f[634] && f[682] && !f[521];
@@ -13604,7 +13604,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1060] = f[627] && f[654] && f[600] && !f[623];
 	assign leaf[1061] = f[627] && f[654] && f[600] && f[623];
 	
-	// Classifier: 8 Iteration: 70
+	// Digit: 8, Tree: 70
 	assign leaf[1062] = !f[682] && !f[627] && !f[633] && !f[689];
 	assign leaf[1063] = !f[682] && !f[627] && !f[633] && f[689];
 	assign leaf[1064] = !f[682] && !f[627] && f[633] && !f[513];
@@ -13622,7 +13622,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1076] = f[682] && f[542] && f[661] && !f[657];
 	assign leaf[1077] = f[682] && f[542] && f[661] && f[657];
 	
-	// Classifier: 8 Iteration: 71
+	// Digit: 8, Tree: 71
 	assign leaf[1078] = !f[542] && !f[512] && !f[653] && !f[545];
 	assign leaf[1079] = !f[542] && !f[512] && !f[653] && f[545];
 	assign leaf[1080] = !f[542] && !f[512] && f[653] && !f[509];
@@ -13640,7 +13640,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1092] = f[542] && f[512] && f[458] && !f[682];
 	assign leaf[1093] = f[542] && f[512] && f[458] && f[682];
 	
-	// Classifier: 8 Iteration: 72
+	// Digit: 8, Tree: 72
 	assign leaf[1094] = !f[176] && !f[292] && !f[265] && !f[598];
 	assign leaf[1095] = !f[176] && !f[292] && !f[265] && f[598];
 	assign leaf[1096] = !f[176] && !f[292] && f[265] && !f[239];
@@ -13658,7 +13658,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1108] = f[176] && f[657] && f[321] && !f[346];
 	assign leaf[1109] = f[176] && f[657] && f[321] && f[346];
 	
-	// Classifier: 8 Iteration: 73
+	// Digit: 8, Tree: 73
 	assign leaf[1110] = !f[214] && !f[265] && !f[461] && !f[345];
 	assign leaf[1111] = !f[214] && !f[265] && !f[461] && f[345];
 	assign leaf[1112] = !f[214] && !f[265] && f[461] && !f[320];
@@ -13676,7 +13676,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1124] = f[214] && f[408] && f[603] && !f[398];
 	assign leaf[1125] = f[214] && f[408] && f[603] && f[398];
 	
-	// Classifier: 8 Iteration: 74
+	// Digit: 8, Tree: 74
 	assign leaf[1126] = !f[349] && !f[519] && !f[355] && !f[521];
 	assign leaf[1127] = !f[349] && !f[519] && !f[355] && f[521];
 	assign leaf[1128] = !f[349] && !f[519] && f[355] && !f[326];
@@ -13694,7 +13694,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1140] = f[349] && f[519] && f[375] && !f[579];
 	assign leaf[1141] = f[349] && f[519] && f[375] && f[579];
 	
-	// Classifier: 8 Iteration: 75
+	// Digit: 8, Tree: 75
 	assign leaf[1142] = !f[186] && !f[129] && !f[151] && !f[266];
 	assign leaf[1143] = !f[186] && !f[129] && !f[151] && f[266];
 	assign leaf[1144] = !f[186] && !f[129] && f[151] && !f[576];
@@ -13712,7 +13712,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1156] = f[186] && f[294] && f[348] && !f[262];
 	assign leaf[1157] = f[186] && f[294] && f[348] && f[262];
 	
-	// Classifier: 8 Iteration: 76
+	// Digit: 8, Tree: 76
 	assign leaf[1158] = !f[236] && !f[260] && !f[262] && !f[238];
 	assign leaf[1159] = !f[236] && !f[260] && !f[262] && f[238];
 	assign leaf[1160] = !f[236] && !f[260] && f[262] && !f[240];
@@ -13730,7 +13730,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1172] = f[236] && f[204] && f[352] && !f[300];
 	assign leaf[1173] = f[236] && f[204] && f[352] && f[300];
 	
-	// Classifier: 8 Iteration: 77
+	// Digit: 8, Tree: 77
 	assign leaf[1174] = !f[135] && !f[328] && !f[405] && !f[430];
 	assign leaf[1175] = !f[135] && !f[328] && !f[405] && f[430];
 	assign leaf[1176] = !f[135] && !f[328] && f[405] && !f[656];
@@ -13742,7 +13742,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1182] = f[135] && !f[270];
 	assign leaf[1183] = f[135] && f[270];
 	
-	// Classifier: 8 Iteration: 78
+	// Digit: 8, Tree: 78
 	assign leaf[1184] = !f[508] && !f[399] && !f[276] && !f[549];
 	assign leaf[1185] = !f[508] && !f[399] && !f[276] && f[549];
 	assign leaf[1186] = !f[508] && !f[399] && f[276] && !f[298];
@@ -13754,7 +13754,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1192] = f[508] && !f[538];
 	assign leaf[1193] = f[508] && f[538];
 	
-	// Classifier: 8 Iteration: 79
+	// Digit: 8, Tree: 79
 	assign leaf[1194] = !f[317] && !f[518] && !f[295] && !f[321];
 	assign leaf[1195] = !f[317] && !f[518] && !f[295] && f[321];
 	assign leaf[1196] = !f[317] && !f[518] && f[295] && !f[236];
@@ -13772,7 +13772,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1208] = f[317] && f[572] && f[685] && !f[580];
 	assign leaf[1209] = f[317] && f[572] && f[685] && f[580];
 	
-	// Classifier: 8 Iteration: 80
+	// Digit: 8, Tree: 80
 	assign leaf[1210] = !f[408] && !f[181] && !f[371] && !f[353];
 	assign leaf[1211] = !f[408] && !f[181] && !f[371] && f[353];
 	assign leaf[1212] = !f[408] && !f[181] && f[371] && !f[216];
@@ -13790,7 +13790,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1224] = f[408] && f[577] && f[576] && !f[660];
 	assign leaf[1225] = f[408] && f[577] && f[576] && f[660];
 	
-	// Classifier: 8 Iteration: 81
+	// Digit: 8, Tree: 81
 	assign leaf[1226] = !f[508] && !f[246] && !f[408] && !f[435];
 	assign leaf[1227] = !f[508] && !f[246] && !f[408] && f[435];
 	assign leaf[1228] = !f[508] && !f[246] && f[408] && !f[181];
@@ -13802,7 +13802,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1234] = f[508] && !f[153];
 	assign leaf[1235] = f[508] && f[153];
 	
-	// Classifier: 8 Iteration: 82
+	// Digit: 8, Tree: 82
 	assign leaf[1236] = !f[302] && !f[235] && !f[234] && !f[348];
 	assign leaf[1237] = !f[302] && !f[235] && !f[234] && f[348];
 	assign leaf[1238] = !f[302] && !f[235] && f[234] && !f[291];
@@ -13819,7 +13819,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1249] = f[302] && f[457] && !f[443] && f[329];
 	assign leaf[1250] = f[302] && f[457] && f[443];
 	
-	// Classifier: 8 Iteration: 83
+	// Digit: 8, Tree: 83
 	assign leaf[1251] = !f[469] && !f[386] && !f[453] && !f[133];
 	assign leaf[1252] = !f[469] && !f[386] && !f[453] && f[133];
 	assign leaf[1253] = !f[469] && !f[386] && f[453];
@@ -13836,7 +13836,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1264] = f[469] && f[523] && f[183] && !f[593];
 	assign leaf[1265] = f[469] && f[523] && f[183] && f[593];
 	
-	// Classifier: 8 Iteration: 84
+	// Digit: 8, Tree: 84
 	assign leaf[1266] = !f[525] && !f[629] && !f[684] && !f[608];
 	assign leaf[1267] = !f[525] && !f[629] && !f[684] && f[608];
 	assign leaf[1268] = !f[525] && !f[629] && f[684] && !f[464];
@@ -13854,7 +13854,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1280] = f[525] && f[458] && f[322] && !f[385];
 	assign leaf[1281] = f[525] && f[458] && f[322] && f[385];
 	
-	// Classifier: 8 Iteration: 85
+	// Digit: 8, Tree: 85
 	assign leaf[1282] = !f[214] && !f[434] && !f[379] && !f[435];
 	assign leaf[1283] = !f[214] && !f[434] && !f[379] && f[435];
 	assign leaf[1284] = !f[214] && !f[434] && f[379] && !f[271];
@@ -13872,7 +13872,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1296] = f[214] && f[212] && f[329] && !f[273];
 	assign leaf[1297] = f[214] && f[212] && f[329] && f[273];
 	
-	// Classifier: 8 Iteration: 86
+	// Digit: 8, Tree: 86
 	assign leaf[1298] = !f[125] && !f[439] && !f[525] && !f[592];
 	assign leaf[1299] = !f[125] && !f[439] && !f[525] && f[592];
 	assign leaf[1300] = !f[125] && !f[439] && f[525] && !f[187];
@@ -13889,7 +13889,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1311] = f[125] && f[128] && f[431] && !f[296];
 	assign leaf[1312] = f[125] && f[128] && f[431] && f[296];
 	
-	// Classifier: 8 Iteration: 87
+	// Digit: 8, Tree: 87
 	assign leaf[1313] = !f[692] && !f[689] && !f[688] && !f[715];
 	assign leaf[1314] = !f[692] && !f[689] && !f[688] && f[715];
 	assign leaf[1315] = !f[692] && !f[689] && f[688] && !f[631];
@@ -13904,7 +13904,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1324] = f[692] && f[268] && !f[575] && f[460];
 	assign leaf[1325] = f[692] && f[268] && f[575];
 	
-	// Classifier: 8 Iteration: 88
+	// Digit: 8, Tree: 88
 	assign leaf[1326] = !f[678] && !f[161] && !f[570] && !f[632];
 	assign leaf[1327] = !f[678] && !f[161] && !f[570] && f[632];
 	assign leaf[1328] = !f[678] && !f[161] && f[570] && !f[572];
@@ -13917,7 +13917,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1335] = f[678] && !f[539] && f[275];
 	assign leaf[1336] = f[678] && f[539];
 	
-	// Classifier: 8 Iteration: 89
+	// Digit: 8, Tree: 89
 	assign leaf[1337] = !f[149] && !f[603] && !f[605] && !f[540];
 	assign leaf[1338] = !f[149] && !f[603] && !f[605] && f[540];
 	assign leaf[1339] = !f[149] && !f[603] && f[605] && !f[689];
@@ -13934,7 +13934,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1350] = f[149] && f[204] && f[319] && !f[344];
 	assign leaf[1351] = f[149] && f[204] && f[319] && f[344];
 	
-	// Classifier: 8 Iteration: 90
+	// Digit: 8, Tree: 90
 	assign leaf[1352] = !f[486] && !f[488] && !f[517] && !f[456];
 	assign leaf[1353] = !f[486] && !f[488] && !f[517] && f[456];
 	assign leaf[1354] = !f[486] && !f[488] && f[517] && !f[549];
@@ -13952,7 +13952,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1366] = f[486] && f[516] && f[400] && !f[513];
 	assign leaf[1367] = f[486] && f[516] && f[400] && f[513];
 	
-	// Classifier: 8 Iteration: 91
+	// Digit: 8, Tree: 91
 	assign leaf[1368] = !f[440] && !f[388] && !f[315] && !f[410];
 	assign leaf[1369] = !f[440] && !f[388] && !f[315] && f[410];
 	assign leaf[1370] = !f[440] && !f[388] && f[315] && !f[292];
@@ -13966,7 +13966,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1378] = f[440] && f[555] && f[525] && !f[354];
 	assign leaf[1379] = f[440] && f[555] && f[525] && f[354];
 	
-	// Classifier: 8 Iteration: 92
+	// Digit: 8, Tree: 92
 	assign leaf[1380] = !f[275] && !f[679] && !f[457] && !f[597];
 	assign leaf[1381] = !f[275] && !f[679] && !f[457] && f[597];
 	assign leaf[1382] = !f[275] && !f[679] && f[457] && !f[488];
@@ -13984,7 +13984,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1394] = f[275] && f[520] && f[207] && !f[514];
 	assign leaf[1395] = f[275] && f[520] && f[207] && f[514];
 	
-	// Classifier: 8 Iteration: 93
+	// Digit: 8, Tree: 93
 	assign leaf[1396] = !f[341] && !f[214] && !f[601] && !f[656];
 	assign leaf[1397] = !f[341] && !f[214] && !f[601] && f[656];
 	assign leaf[1398] = !f[341] && !f[214] && f[601] && !f[656];
@@ -13999,7 +13999,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1407] = f[341] && f[522] && !f[628];
 	assign leaf[1408] = f[341] && f[522] && f[628];
 	
-	// Classifier: 8 Iteration: 94
+	// Digit: 8, Tree: 94
 	assign leaf[1409] = !f[657] && !f[629] && !f[381] && !f[317];
 	assign leaf[1410] = !f[657] && !f[629] && !f[381] && f[317];
 	assign leaf[1411] = !f[657] && !f[629] && f[381] && !f[433];
@@ -14017,7 +14017,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1423] = f[657] && f[630] && f[633] && !f[349];
 	assign leaf[1424] = f[657] && f[630] && f[633] && f[349];
 	
-	// Classifier: 8 Iteration: 95
+	// Digit: 8, Tree: 95
 	assign leaf[1425] = !f[571] && !f[595] && !f[569] && !f[513];
 	assign leaf[1426] = !f[571] && !f[595] && !f[569] && f[513];
 	assign leaf[1427] = !f[571] && !f[595] && f[569] && !f[494];
@@ -14035,7 +14035,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1439] = f[571] && f[680] && f[683] && !f[569];
 	assign leaf[1440] = f[571] && f[680] && f[683] && f[569];
 	
-	// Classifier: 8 Iteration: 96
+	// Digit: 8, Tree: 96
 	assign leaf[1441] = !f[442] && !f[258] && !f[526] && !f[601];
 	assign leaf[1442] = !f[442] && !f[258] && !f[526] && f[601];
 	assign leaf[1443] = !f[442] && !f[258] && f[526] && !f[484];
@@ -14049,7 +14049,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1451] = f[442] && f[291] && !f[386];
 	assign leaf[1452] = f[442] && f[291] && f[386];
 	
-	// Classifier: 8 Iteration: 97
+	// Digit: 8, Tree: 97
 	assign leaf[1453] = !f[211] && !f[636] && !f[154] && !f[569];
 	assign leaf[1454] = !f[211] && !f[636] && !f[154] && f[569];
 	assign leaf[1455] = !f[211] && !f[636] && f[154] && !f[322];
@@ -14067,7 +14067,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1467] = f[211] && f[210] && f[263] && !f[204];
 	assign leaf[1468] = f[211] && f[210] && f[263] && f[204];
 	
-	// Classifier: 8 Iteration: 98
+	// Digit: 8, Tree: 98
 	assign leaf[1469] = !f[458] && !f[512] && !f[488] && !f[517];
 	assign leaf[1470] = !f[458] && !f[512] && !f[488] && f[517];
 	assign leaf[1471] = !f[458] && !f[512] && f[488] && !f[517];
@@ -14085,7 +14085,7 @@ module decision_tree_leaves_8(input logic [0:783] f, output logic [0:1497] leaf)
 	assign leaf[1483] = f[458] && f[489] && f[373] && !f[521];
 	assign leaf[1484] = f[458] && f[489] && f[373] && f[521];
 	
-	// Classifier: 8 Iteration: 99
+	// Digit: 8, Tree: 99
 	assign leaf[1485] = !f[303] && !f[594] && !f[650] && !f[271];
 	assign leaf[1486] = !f[303] && !f[594] && !f[650] && f[271];
 	assign leaf[1487] = !f[303] && !f[594] && f[650] && !f[601];
@@ -14106,7 +14106,7 @@ endmodule
 
 
 module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf);
-	// Classifier: 9 Iteration: 0
+	// Digit: 9, Tree: 0
 	assign leaf[0] = !f[717] && !f[713] && !f[715] && !f[711];
 	assign leaf[1] = !f[717] && !f[713] && !f[715] && f[711];
 	assign leaf[2] = !f[717] && !f[713] && f[715] && !f[210];
@@ -14124,7 +14124,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[14] = f[717] && f[210] && f[231] && !f[398];
 	assign leaf[15] = f[717] && f[210] && f[231] && f[398];
 	
-	// Classifier: 9 Iteration: 1
+	// Digit: 9, Tree: 1
 	assign leaf[16] = !f[156] && !f[211] && !f[720] && !f[239];
 	assign leaf[17] = !f[156] && !f[211] && !f[720] && f[239];
 	assign leaf[18] = !f[156] && !f[211] && f[720] && !f[209];
@@ -14140,7 +14140,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[28] = f[156] && f[128] && !f[368];
 	assign leaf[29] = f[156] && f[128] && f[368];
 	
-	// Classifier: 9 Iteration: 2
+	// Digit: 9, Tree: 2
 	assign leaf[30] = !f[597] && !f[381] && !f[721] && !f[383];
 	assign leaf[31] = !f[597] && !f[381] && !f[721] && f[383];
 	assign leaf[32] = !f[597] && !f[381] && f[721] && !f[488];
@@ -14157,7 +14157,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[43] = f[597] && f[707] && f[376] && !f[219];
 	assign leaf[44] = f[597] && f[707] && f[376] && f[219];
 	
-	// Classifier: 9 Iteration: 3
+	// Digit: 9, Tree: 3
 	assign leaf[45] = !f[569] && !f[381] && !f[342] && !f[290];
 	assign leaf[46] = !f[569] && !f[381] && !f[342] && f[290];
 	assign leaf[47] = !f[569] && !f[381] && f[342] && !f[209];
@@ -14174,7 +14174,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[58] = f[569] && f[692] && !f[482] && f[511];
 	assign leaf[59] = f[569] && f[692] && f[482];
 	
-	// Classifier: 9 Iteration: 4
+	// Digit: 9, Tree: 4
 	assign leaf[60] = !f[598] && !f[372] && !f[398] && !f[346];
 	assign leaf[61] = !f[598] && !f[372] && !f[398] && f[346];
 	assign leaf[62] = !f[598] && !f[372] && f[398] && !f[209];
@@ -14192,7 +14192,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[74] = f[598] && f[708] && f[405] && !f[233];
 	assign leaf[75] = f[598] && f[708] && f[405] && f[233];
 	
-	// Classifier: 9 Iteration: 5
+	// Digit: 9, Tree: 5
 	assign leaf[76] = !f[570] && !f[624] && !f[212] && !f[692];
 	assign leaf[77] = !f[570] && !f[624] && !f[212] && f[692];
 	assign leaf[78] = !f[570] && !f[624] && f[212] && !f[205];
@@ -14209,7 +14209,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[89] = f[570] && f[680] && f[374] && !f[214];
 	assign leaf[90] = f[570] && f[680] && f[374] && f[214];
 	
-	// Classifier: 9 Iteration: 6
+	// Digit: 9, Tree: 6
 	assign leaf[91] = !f[569] && !f[354] && !f[157] && !f[290];
 	assign leaf[92] = !f[569] && !f[354] && !f[157] && f[290];
 	assign leaf[93] = !f[569] && !f[354] && f[157] && !f[384];
@@ -14226,7 +14226,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[104] = f[569] && f[368] && f[355] && !f[340];
 	assign leaf[105] = f[569] && f[368] && f[355] && f[340];
 	
-	// Classifier: 9 Iteration: 7
+	// Digit: 9, Tree: 7
 	assign leaf[106] = !f[570] && !f[624] && !f[212] && !f[719];
 	assign leaf[107] = !f[570] && !f[624] && !f[212] && f[719];
 	assign leaf[108] = !f[570] && !f[624] && f[212] && !f[204];
@@ -14243,7 +14243,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[119] = f[570] && f[680] && f[207] && !f[377];
 	assign leaf[120] = f[570] && f[680] && f[207] && f[377];
 	
-	// Classifier: 9 Iteration: 8
+	// Digit: 9, Tree: 8
 	assign leaf[121] = !f[157] && !f[571] && !f[203] && !f[189];
 	assign leaf[122] = !f[157] && !f[571] && !f[203] && f[189];
 	assign leaf[123] = !f[157] && !f[571] && f[203] && !f[342];
@@ -14261,7 +14261,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[135] = f[157] && f[372] && f[235] && !f[552];
 	assign leaf[136] = f[157] && f[372] && f[235] && f[552];
 	
-	// Classifier: 9 Iteration: 9
+	// Digit: 9, Tree: 9
 	assign leaf[137] = !f[154] && !f[596] && !f[210] && !f[266];
 	assign leaf[138] = !f[154] && !f[596] && !f[210] && f[266];
 	assign leaf[139] = !f[154] && !f[596] && f[210] && !f[206];
@@ -14279,7 +14279,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[151] = f[154] && f[316] && f[600] && !f[544];
 	assign leaf[152] = f[154] && f[316] && f[600] && f[544];
 	
-	// Classifier: 9 Iteration: 10
+	// Digit: 9, Tree: 10
 	assign leaf[153] = !f[568] && !f[720] && !f[177] && !f[294];
 	assign leaf[154] = !f[568] && !f[720] && !f[177] && f[294];
 	assign leaf[155] = !f[568] && !f[720] && f[177] && !f[287];
@@ -14297,7 +14297,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[167] = f[568] && f[341] && f[543] && !f[576];
 	assign leaf[168] = f[568] && f[341] && f[543] && f[576];
 	
-	// Classifier: 9 Iteration: 11
+	// Digit: 9, Tree: 11
 	assign leaf[169] = !f[158] && !f[126] && !f[218] && !f[400];
 	assign leaf[170] = !f[158] && !f[126] && !f[218] && f[400];
 	assign leaf[171] = !f[158] && !f[126] && f[218] && !f[214];
@@ -14314,7 +14314,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[182] = f[158] && f[329] && f[372] && !f[411];
 	assign leaf[183] = f[158] && f[329] && f[372] && f[411];
 	
-	// Classifier: 9 Iteration: 12
+	// Digit: 9, Tree: 12
 	assign leaf[184] = !f[719] && !f[578] && !f[318] && !f[316];
 	assign leaf[185] = !f[719] && !f[578] && !f[318] && f[316];
 	assign leaf[186] = !f[719] && !f[578] && f[318] && !f[468];
@@ -14332,7 +14332,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[198] = f[719] && f[717] && f[431] && !f[633];
 	assign leaf[199] = f[719] && f[717] && f[431] && f[633];
 	
-	// Classifier: 9 Iteration: 13
+	// Digit: 9, Tree: 13
 	assign leaf[200] = !f[159] && !f[632] && !f[212] && !f[572];
 	assign leaf[201] = !f[159] && !f[632] && !f[212] && f[572];
 	assign leaf[202] = !f[159] && !f[632] && f[212] && !f[291];
@@ -14349,7 +14349,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[213] = f[159] && f[355] && f[290] && !f[493];
 	assign leaf[214] = f[159] && f[355] && f[290] && f[493];
 	
-	// Classifier: 9 Iteration: 14
+	// Digit: 9, Tree: 14
 	assign leaf[215] = !f[469] && !f[436] && !f[438] && !f[468];
 	assign leaf[216] = !f[469] && !f[436] && !f[438] && f[468];
 	assign leaf[217] = !f[469] && !f[436] && f[438] && !f[320];
@@ -14366,7 +14366,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[228] = f[469] && f[369] && f[385] && !f[229];
 	assign leaf[229] = f[469] && f[369] && f[385] && f[229];
 	
-	// Classifier: 9 Iteration: 15
+	// Digit: 9, Tree: 15
 	assign leaf[230] = !f[128] && !f[443] && !f[189] && !f[355];
 	assign leaf[231] = !f[128] && !f[443] && !f[189] && f[355];
 	assign leaf[232] = !f[128] && !f[443] && f[189] && !f[383];
@@ -14380,7 +14380,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[240] = f[128] && !f[275] && f[659] && f[432];
 	assign leaf[241] = f[128] && f[275];
 	
-	// Classifier: 9 Iteration: 16
+	// Digit: 9, Tree: 16
 	assign leaf[242] = !f[160] && !f[176] && !f[126] && !f[219];
 	assign leaf[243] = !f[160] && !f[176] && !f[126] && f[219];
 	assign leaf[244] = !f[160] && !f[176] && f[126] && !f[462];
@@ -14397,7 +14397,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[255] = f[160] && f[427] && f[264] && !f[595];
 	assign leaf[256] = f[160] && f[427] && f[264] && f[595];
 	
-	// Classifier: 9 Iteration: 17
+	// Digit: 9, Tree: 17
 	assign leaf[257] = !f[694] && !f[742] && !f[719] && !f[380];
 	assign leaf[258] = !f[694] && !f[742] && !f[719] && f[380];
 	assign leaf[259] = !f[694] && !f[742] && f[719] && !f[659];
@@ -14413,7 +14413,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[269] = f[694] && f[439] && !f[174] && f[216];
 	assign leaf[270] = f[694] && f[439] && f[174];
 	
-	// Classifier: 9 Iteration: 18
+	// Digit: 9, Tree: 18
 	assign leaf[271] = !f[159] && !f[203] && !f[742] && !f[692];
 	assign leaf[272] = !f[159] && !f[203] && !f[742] && f[692];
 	assign leaf[273] = !f[159] && !f[203] && f[742] && !f[232];
@@ -14430,7 +14430,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[284] = f[159] && f[357] && f[439] && !f[262];
 	assign leaf[285] = f[159] && f[357] && f[439] && f[262];
 	
-	// Classifier: 9 Iteration: 19
+	// Digit: 9, Tree: 19
 	assign leaf[286] = !f[567] && !f[659] && !f[212] && !f[545];
 	assign leaf[287] = !f[567] && !f[659] && !f[212] && f[545];
 	assign leaf[288] = !f[567] && !f[659] && f[212] && !f[327];
@@ -14447,7 +14447,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[299] = f[567] && f[369] && !f[471] && f[466];
 	assign leaf[300] = f[567] && f[369] && f[471];
 	
-	// Classifier: 9 Iteration: 20
+	// Digit: 9, Tree: 20
 	assign leaf[301] = !f[599] && !f[229] && !f[653] && !f[443];
 	assign leaf[302] = !f[599] && !f[229] && !f[653] && f[443];
 	assign leaf[303] = !f[599] && !f[229] && f[653] && !f[155];
@@ -14465,7 +14465,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[315] = f[599] && f[709] && f[235] && !f[378];
 	assign leaf[316] = f[599] && f[709] && f[235] && f[378];
 	
-	// Classifier: 9 Iteration: 21
+	// Digit: 9, Tree: 21
 	assign leaf[317] = !f[150] && !f[129] && !f[191] && !f[355];
 	assign leaf[318] = !f[150] && !f[129] && !f[191] && f[355];
 	assign leaf[319] = !f[150] && !f[129] && f[191] && !f[187];
@@ -14483,7 +14483,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[331] = f[150] && f[259] && f[522] && !f[464];
 	assign leaf[332] = f[150] && f[259] && f[522] && f[464];
 	
-	// Classifier: 9 Iteration: 22
+	// Digit: 9, Tree: 22
 	assign leaf[333] = !f[469] && !f[353] && !f[405] && !f[455];
 	assign leaf[334] = !f[469] && !f[353] && !f[405] && f[455];
 	assign leaf[335] = !f[469] && !f[353] && f[405] && !f[660];
@@ -14500,7 +14500,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[346] = f[469] && f[385] && f[313] && !f[182];
 	assign leaf[347] = f[469] && f[385] && f[313] && f[182];
 	
-	// Classifier: 9 Iteration: 23
+	// Digit: 9, Tree: 23
 	assign leaf[348] = !f[571] && !f[188] && !f[218] && !f[378];
 	assign leaf[349] = !f[571] && !f[188] && !f[218] && f[378];
 	assign leaf[350] = !f[571] && !f[188] && f[218] && !f[211];
@@ -14518,7 +14518,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[362] = f[571] && f[213] && f[657] && !f[488];
 	assign leaf[363] = f[571] && f[213] && f[657] && f[488];
 	
-	// Classifier: 9 Iteration: 24
+	// Digit: 9, Tree: 24
 	assign leaf[364] = !f[571] && !f[443] && !f[569] && !f[176];
 	assign leaf[365] = !f[571] && !f[443] && !f[569] && f[176];
 	assign leaf[366] = !f[571] && !f[443] && f[569] && !f[486];
@@ -14535,7 +14535,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[377] = f[571] && f[680] && f[207] && !f[345];
 	assign leaf[378] = f[571] && f[680] && f[207] && f[345];
 	
-	// Classifier: 9 Iteration: 25
+	// Digit: 9, Tree: 25
 	assign leaf[379] = !f[544] && !f[380] && !f[488] && !f[324];
 	assign leaf[380] = !f[544] && !f[380] && !f[488] && f[324];
 	assign leaf[381] = !f[544] && !f[380] && f[488] && !f[348];
@@ -14553,7 +14553,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[393] = f[544] && f[629] && f[207] && !f[461];
 	assign leaf[394] = f[544] && f[629] && f[207] && f[461];
 	
-	// Classifier: 9 Iteration: 26
+	// Digit: 9, Tree: 26
 	assign leaf[395] = !f[742] && !f[355] && !f[439] && !f[523];
 	assign leaf[396] = !f[742] && !f[355] && !f[439] && f[523];
 	assign leaf[397] = !f[742] && !f[355] && f[439] && !f[356];
@@ -14571,7 +14571,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[409] = f[742] && f[323] && f[259] && !f[206];
 	assign leaf[410] = f[742] && f[323] && f[259] && f[206];
 	
-	// Classifier: 9 Iteration: 27
+	// Digit: 9, Tree: 27
 	assign leaf[411] = !f[201] && !f[694] && !f[517] && !f[543];
 	assign leaf[412] = !f[201] && !f[694] && !f[517] && f[543];
 	assign leaf[413] = !f[201] && !f[694] && f[517] && !f[658];
@@ -14584,7 +14584,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[420] = f[201] && !f[379] && f[665];
 	assign leaf[421] = f[201] && f[379];
 	
-	// Classifier: 9 Iteration: 28
+	// Digit: 9, Tree: 28
 	assign leaf[422] = !f[594] && !f[129] && !f[149] && !f[379];
 	assign leaf[423] = !f[594] && !f[129] && !f[149] && f[379];
 	assign leaf[424] = !f[594] && !f[129] && f[149] && !f[258];
@@ -14600,7 +14600,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[434] = f[594] && f[551] && f[399] && !f[466];
 	assign leaf[435] = f[594] && f[551] && f[399] && f[466];
 	
-	// Classifier: 9 Iteration: 29
+	// Digit: 9, Tree: 29
 	assign leaf[436] = !f[342] && !f[495] && !f[319] && !f[317];
 	assign leaf[437] = !f[342] && !f[495] && !f[319] && f[317];
 	assign leaf[438] = !f[342] && !f[495] && f[319] && !f[379];
@@ -14618,7 +14618,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[450] = f[342] && f[345] && f[456] && !f[410];
 	assign leaf[451] = f[342] && f[345] && f[456] && f[410];
 	
-	// Classifier: 9 Iteration: 30
+	// Digit: 9, Tree: 30
 	assign leaf[452] = !f[161] && !f[572] && !f[188] && !f[209];
 	assign leaf[453] = !f[161] && !f[572] && !f[188] && f[209];
 	assign leaf[454] = !f[161] && !f[572] && f[188] && !f[601];
@@ -14632,7 +14632,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[462] = f[161] && f[329] && !f[601] && f[319];
 	assign leaf[463] = f[161] && f[329] && f[601];
 	
-	// Classifier: 9 Iteration: 31
+	// Digit: 9, Tree: 31
 	assign leaf[464] = !f[631] && !f[715] && !f[566] && !f[350];
 	assign leaf[465] = !f[631] && !f[715] && !f[566] && f[350];
 	assign leaf[466] = !f[631] && !f[715] && f[566] && !f[606];
@@ -14650,7 +14650,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[478] = f[631] && f[545] && f[485] && !f[576];
 	assign leaf[479] = f[631] && f[545] && f[485] && f[576];
 	
-	// Classifier: 9 Iteration: 32
+	// Digit: 9, Tree: 32
 	assign leaf[480] = !f[693] && !f[608] && !f[351] && !f[385];
 	assign leaf[481] = !f[693] && !f[608] && !f[351] && f[385];
 	assign leaf[482] = !f[693] && !f[608] && f[351] && !f[461];
@@ -14667,7 +14667,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[493] = f[693] && f[229] && f[429] && !f[407];
 	assign leaf[494] = f[693] && f[229] && f[429] && f[407];
 	
-	// Classifier: 9 Iteration: 33
+	// Digit: 9, Tree: 33
 	assign leaf[495] = !f[436] && !f[465] && !f[667] && !f[492];
 	assign leaf[496] = !f[436] && !f[465] && !f[667] && f[492];
 	assign leaf[497] = !f[436] && !f[465] && f[667] && !f[454];
@@ -14685,7 +14685,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[509] = f[436] && f[469] && f[357] && !f[347];
 	assign leaf[510] = f[436] && f[469] && f[357] && f[347];
 	
-	// Classifier: 9 Iteration: 34
+	// Digit: 9, Tree: 34
 	assign leaf[511] = !f[229] && !f[162] && !f[175] && !f[639];
 	assign leaf[512] = !f[229] && !f[162] && !f[175] && f[639];
 	assign leaf[513] = !f[229] && !f[162] && f[175] && !f[151];
@@ -14697,7 +14697,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[519] = f[229] && !f[151] && f[407];
 	assign leaf[520] = f[229] && f[151];
 	
-	// Classifier: 9 Iteration: 35
+	// Digit: 9, Tree: 35
 	assign leaf[521] = !f[742] && !f[632] && !f[688] && !f[542];
 	assign leaf[522] = !f[742] && !f[632] && !f[688] && f[542];
 	assign leaf[523] = !f[742] && !f[632] && f[688] && !f[662];
@@ -14711,7 +14711,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[531] = f[742] && !f[634] && f[204];
 	assign leaf[532] = f[742] && f[634];
 	
-	// Classifier: 9 Iteration: 36
+	// Digit: 9, Tree: 36
 	assign leaf[533] = !f[356] && !f[468] && !f[412] && !f[244];
 	assign leaf[534] = !f[356] && !f[468] && !f[412] && f[244];
 	assign leaf[535] = !f[356] && !f[468] && f[412] && !f[495];
@@ -14728,7 +14728,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[546] = f[356] && f[411] && f[213] && !f[295];
 	assign leaf[547] = f[356] && f[411] && f[213] && f[295];
 	
-	// Classifier: 9 Iteration: 37
+	// Digit: 9, Tree: 37
 	assign leaf[548] = !f[191] && !f[319] && !f[371] && !f[345];
 	assign leaf[549] = !f[191] && !f[319] && !f[371] && f[345];
 	assign leaf[550] = !f[191] && !f[319] && f[371] && !f[345];
@@ -14742,7 +14742,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[558] = f[191] && f[273] && !f[482];
 	assign leaf[559] = f[191] && f[273] && f[482];
 	
-	// Classifier: 9 Iteration: 38
+	// Digit: 9, Tree: 38
 	assign leaf[560] = !f[368] && !f[437] && !f[549] && !f[382];
 	assign leaf[561] = !f[368] && !f[437] && !f[549] && f[382];
 	assign leaf[562] = !f[368] && !f[437] && f[549] && !f[462];
@@ -14758,7 +14758,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[572] = f[368] && f[373] && f[465] && !f[260];
 	assign leaf[573] = f[368] && f[373] && f[465] && f[260];
 	
-	// Classifier: 9 Iteration: 39
+	// Digit: 9, Tree: 39
 	assign leaf[574] = !f[350] && !f[486] && !f[406] && !f[512];
 	assign leaf[575] = !f[350] && !f[486] && !f[406] && f[512];
 	assign leaf[576] = !f[350] && !f[486] && f[406] && !f[489];
@@ -14776,7 +14776,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[588] = f[350] && f[325] && f[460] && !f[345];
 	assign leaf[589] = f[350] && f[325] && f[460] && f[345];
 	
-	// Classifier: 9 Iteration: 40
+	// Digit: 9, Tree: 40
 	assign leaf[590] = !f[408] && !f[439] && !f[410] && !f[550];
 	assign leaf[591] = !f[408] && !f[439] && !f[410] && f[550];
 	assign leaf[592] = !f[408] && !f[439] && f[410] && !f[324];
@@ -14792,7 +14792,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[602] = f[408] && f[149] && !f[286];
 	assign leaf[603] = f[408] && f[149] && f[286];
 	
-	// Classifier: 9 Iteration: 41
+	// Digit: 9, Tree: 41
 	assign leaf[604] = !f[500] && !f[273] && !f[327] && !f[439];
 	assign leaf[605] = !f[500] && !f[273] && !f[327] && f[439];
 	assign leaf[606] = !f[500] && !f[273] && f[327] && !f[351];
@@ -14804,7 +14804,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[612] = f[500] && !f[416];
 	assign leaf[613] = f[500] && f[416];
 	
-	// Classifier: 9 Iteration: 42
+	// Digit: 9, Tree: 42
 	assign leaf[614] = !f[350] && !f[406] && !f[487] && !f[514];
 	assign leaf[615] = !f[350] && !f[406] && !f[487] && f[514];
 	assign leaf[616] = !f[350] && !f[406] && f[487] && !f[404];
@@ -14822,7 +14822,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[628] = f[350] && f[487] && f[434] && !f[600];
 	assign leaf[629] = f[350] && f[487] && f[434] && f[600];
 	
-	// Classifier: 9 Iteration: 43
+	// Digit: 9, Tree: 43
 	assign leaf[630] = !f[472] && !f[201] && !f[315] && !f[205];
 	assign leaf[631] = !f[472] && !f[201] && !f[315] && f[205];
 	assign leaf[632] = !f[472] && !f[201] && f[315] && !f[317];
@@ -14831,7 +14831,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[635] = !f[472] && f[201] && f[666];
 	assign leaf[636] = f[472];
 	
-	// Classifier: 9 Iteration: 44
+	// Digit: 9, Tree: 44
 	assign leaf[637] = !f[740] && !f[742] && !f[709] && !f[182];
 	assign leaf[638] = !f[740] && !f[742] && !f[709] && f[182];
 	assign leaf[639] = !f[740] && !f[742] && f[709] && !f[236];
@@ -14849,7 +14849,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[651] = f[740] && f[243] && f[235] && !f[349];
 	assign leaf[652] = f[740] && f[243] && f[235] && f[349];
 	
-	// Classifier: 9 Iteration: 45
+	// Digit: 9, Tree: 45
 	assign leaf[653] = !f[746] && !f[734] && !f[275] && !f[606];
 	assign leaf[654] = !f[746] && !f[734] && !f[275] && f[606];
 	assign leaf[655] = !f[746] && !f[734] && f[275] && !f[215];
@@ -14863,7 +14863,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[663] = f[746] && f[431] && !f[661];
 	assign leaf[664] = f[746] && f[431] && f[661];
 	
-	// Classifier: 9 Iteration: 46
+	// Digit: 9, Tree: 46
 	assign leaf[665] = !f[368] && !f[415] && !f[353] && !f[405];
 	assign leaf[666] = !f[368] && !f[415] && !f[353] && f[405];
 	assign leaf[667] = !f[368] && !f[415] && f[353] && !f[378];
@@ -14879,7 +14879,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[677] = f[368] && f[373] && f[286] && !f[238];
 	assign leaf[678] = f[368] && f[373] && f[286] && f[238];
 	
-	// Classifier: 9 Iteration: 47
+	// Digit: 9, Tree: 47
 	assign leaf[679] = !f[274] && !f[356] && !f[323] && !f[523];
 	assign leaf[680] = !f[274] && !f[356] && !f[323] && f[523];
 	assign leaf[681] = !f[274] && !f[356] && f[323] && !f[434];
@@ -14897,7 +14897,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[693] = f[274] && f[215] && f[211] && !f[412];
 	assign leaf[694] = f[274] && f[215] && f[211] && f[412];
 	
-	// Classifier: 9 Iteration: 48
+	// Digit: 9, Tree: 48
 	assign leaf[695] = !f[162] && !f[175] && !f[229] && !f[720];
 	assign leaf[696] = !f[162] && !f[175] && !f[229] && f[720];
 	assign leaf[697] = !f[162] && !f[175] && f[229] && !f[369];
@@ -14908,7 +14908,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[702] = !f[162] && f[175] && f[257] && f[266];
 	assign leaf[703] = f[162];
 	
-	// Classifier: 9 Iteration: 49
+	// Digit: 9, Tree: 49
 	assign leaf[704] = !f[573] && !f[711] && !f[404] && !f[461];
 	assign leaf[705] = !f[573] && !f[711] && !f[404] && f[461];
 	assign leaf[706] = !f[573] && !f[711] && f[404] && !f[456];
@@ -14926,7 +14926,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[718] = f[573] && f[207] && f[489] && !f[290];
 	assign leaf[719] = f[573] && f[207] && f[489] && f[290];
 	
-	// Classifier: 9 Iteration: 50
+	// Digit: 9, Tree: 50
 	assign leaf[720] = !f[129] && !f[415] && !f[244] && !f[326];
 	assign leaf[721] = !f[129] && !f[415] && !f[244] && f[326];
 	assign leaf[722] = !f[129] && !f[415] && f[244] && !f[330];
@@ -14939,7 +14939,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[729] = f[129] && !f[217] && f[185];
 	assign leaf[730] = f[129] && f[217];
 	
-	// Classifier: 9 Iteration: 51
+	// Digit: 9, Tree: 51
 	assign leaf[731] = !f[340] && !f[353] && !f[385] && !f[156];
 	assign leaf[732] = !f[340] && !f[353] && !f[385] && f[156];
 	assign leaf[733] = !f[340] && !f[353] && f[385] && !f[214];
@@ -14954,7 +14954,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[742] = f[340] && f[346] && !f[214];
 	assign leaf[743] = f[340] && f[346] && f[214];
 	
-	// Classifier: 9 Iteration: 52
+	// Digit: 9, Tree: 52
 	assign leaf[744] = !f[584] && !f[500] && !f[740] && !f[326];
 	assign leaf[745] = !f[584] && !f[500] && !f[740] && f[326];
 	assign leaf[746] = !f[584] && !f[500] && f[740] && !f[714];
@@ -14963,7 +14963,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[749] = f[584] && !f[297];
 	assign leaf[750] = f[584] && f[297];
 	
-	// Classifier: 9 Iteration: 53
+	// Digit: 9, Tree: 53
 	assign leaf[751] = !f[605] && !f[566] && !f[717] && !f[378];
 	assign leaf[752] = !f[605] && !f[566] && !f[717] && f[378];
 	assign leaf[753] = !f[605] && !f[566] && f[717] && !f[233];
@@ -14979,7 +14979,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[763] = f[605] && f[546] && f[494] && !f[469];
 	assign leaf[764] = f[605] && f[546] && f[494] && f[469];
 	
-	// Classifier: 9 Iteration: 54
+	// Digit: 9, Tree: 54
 	assign leaf[765] = !f[323] && !f[355] && !f[297] && !f[463];
 	assign leaf[766] = !f[323] && !f[355] && !f[297] && f[463];
 	assign leaf[767] = !f[323] && !f[355] && f[297] && !f[241];
@@ -14997,7 +14997,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[779] = f[323] && f[295] && f[575] && !f[489];
 	assign leaf[780] = f[323] && f[295] && f[575] && f[489];
 	
-	// Classifier: 9 Iteration: 55
+	// Digit: 9, Tree: 55
 	assign leaf[781] = !f[742] && !f[686] && !f[740] && !f[602];
 	assign leaf[782] = !f[742] && !f[686] && !f[740] && f[602];
 	assign leaf[783] = !f[742] && !f[686] && f[740] && !f[710];
@@ -15014,7 +15014,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[794] = f[742] && f[242] && !f[684] && f[488];
 	assign leaf[795] = f[742] && f[242] && f[684];
 	
-	// Classifier: 9 Iteration: 56
+	// Digit: 9, Tree: 56
 	assign leaf[796] = !f[131] && !f[369] && !f[441] && !f[497];
 	assign leaf[797] = !f[131] && !f[369] && !f[441] && f[497];
 	assign leaf[798] = !f[131] && !f[369] && f[441] && !f[544];
@@ -15026,7 +15026,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[804] = f[131] && !f[509];
 	assign leaf[805] = f[131] && f[509];
 	
-	// Classifier: 9 Iteration: 57
+	// Digit: 9, Tree: 57
 	assign leaf[806] = !f[734] && !f[380] && !f[440] && !f[325];
 	assign leaf[807] = !f[734] && !f[380] && !f[440] && f[325];
 	assign leaf[808] = !f[734] && !f[380] && f[440] && !f[543];
@@ -15038,7 +15038,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[814] = f[734] && !f[597];
 	assign leaf[815] = f[734] && f[597];
 	
-	// Classifier: 9 Iteration: 58
+	// Digit: 9, Tree: 58
 	assign leaf[816] = !f[149] && !f[388] && !f[508] && !f[256];
 	assign leaf[817] = !f[149] && !f[388] && !f[508] && f[256];
 	assign leaf[818] = !f[149] && !f[388] && f[508] && !f[662];
@@ -15048,7 +15048,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[822] = f[149] && f[286] && !f[354];
 	assign leaf[823] = f[149] && f[286] && f[354];
 	
-	// Classifier: 9 Iteration: 59
+	// Digit: 9, Tree: 59
 	assign leaf[824] = !f[131] && !f[178] && !f[259] && !f[205];
 	assign leaf[825] = !f[131] && !f[178] && !f[259] && f[205];
 	assign leaf[826] = !f[131] && !f[178] && f[259] && !f[206];
@@ -15060,7 +15060,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[832] = f[131] && !f[128];
 	assign leaf[833] = f[131] && f[128];
 	
-	// Classifier: 9 Iteration: 60
+	// Digit: 9, Tree: 60
 	assign leaf[834] = !f[709] && !f[627] && !f[404] && !f[182];
 	assign leaf[835] = !f[709] && !f[627] && !f[404] && f[182];
 	assign leaf[836] = !f[709] && !f[627] && f[404] && !f[378];
@@ -15078,7 +15078,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[848] = f[709] && f[264] && f[213] && !f[712];
 	assign leaf[849] = f[709] && f[264] && f[213] && f[712];
 	
-	// Classifier: 9 Iteration: 61
+	// Digit: 9, Tree: 61
 	assign leaf[850] = !f[740] && !f[462] && !f[457] && !f[181];
 	assign leaf[851] = !f[740] && !f[462] && !f[457] && f[181];
 	assign leaf[852] = !f[740] && !f[462] && f[457] && !f[375];
@@ -15094,7 +15094,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[862] = f[740] && f[240] && f[214] && !f[410];
 	assign leaf[863] = f[740] && f[240] && f[214] && f[410];
 	
-	// Classifier: 9 Iteration: 62
+	// Digit: 9, Tree: 62
 	assign leaf[864] = !f[350] && !f[717] && !f[719] && !f[606];
 	assign leaf[865] = !f[350] && !f[717] && !f[719] && f[606];
 	assign leaf[866] = !f[350] && !f[717] && f[719] && !f[461];
@@ -15112,7 +15112,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[878] = f[350] && f[488] && f[708] && !f[405];
 	assign leaf[879] = f[350] && f[488] && f[708] && f[405];
 	
-	// Classifier: 9 Iteration: 63
+	// Digit: 9, Tree: 63
 	assign leaf[880] = !f[742] && !f[581] && !f[374] && !f[400];
 	assign leaf[881] = !f[742] && !f[581] && !f[374] && f[400];
 	assign leaf[882] = !f[742] && !f[581] && f[374] && !f[400];
@@ -15129,7 +15129,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[893] = f[742] && f[326] && f[351] && !f[660];
 	assign leaf[894] = f[742] && f[326] && f[351] && f[660];
 	
-	// Classifier: 9 Iteration: 64
+	// Digit: 9, Tree: 64
 	assign leaf[895] = !f[717] && !f[718] && !f[128] && !f[517];
 	assign leaf[896] = !f[717] && !f[718] && !f[128] && f[517];
 	assign leaf[897] = !f[717] && !f[718] && f[128] && !f[575];
@@ -15147,7 +15147,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[909] = f[717] && f[211] && f[691] && !f[438];
 	assign leaf[910] = f[717] && f[211] && f[691] && f[438];
 	
-	// Classifier: 9 Iteration: 65
+	// Digit: 9, Tree: 65
 	assign leaf[911] = !f[687] && !f[509] && !f[584] && !f[320];
 	assign leaf[912] = !f[687] && !f[509] && !f[584] && f[320];
 	assign leaf[913] = !f[687] && !f[509] && f[584];
@@ -15163,7 +15163,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[923] = f[687] && f[573] && f[158] && !f[428];
 	assign leaf[924] = f[687] && f[573] && f[158] && f[428];
 	
-	// Classifier: 9 Iteration: 66
+	// Digit: 9, Tree: 66
 	assign leaf[925] = !f[368] && !f[498] && !f[184] && !f[240];
 	assign leaf[926] = !f[368] && !f[498] && !f[184] && f[240];
 	assign leaf[927] = !f[368] && !f[498] && f[184] && !f[240];
@@ -15178,7 +15178,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[936] = f[368] && f[347] && !f[320];
 	assign leaf[937] = f[368] && f[347] && f[320];
 	
-	// Classifier: 9 Iteration: 67
+	// Digit: 9, Tree: 67
 	assign leaf[938] = !f[351] && !f[383] && !f[381] && !f[519];
 	assign leaf[939] = !f[351] && !f[383] && !f[381] && f[519];
 	assign leaf[940] = !f[351] && !f[383] && f[381] && !f[270];
@@ -15196,7 +15196,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[952] = f[351] && f[326] && f[213] && !f[538];
 	assign leaf[953] = f[351] && f[326] && f[213] && f[538];
 	
-	// Classifier: 9 Iteration: 68
+	// Digit: 9, Tree: 68
 	assign leaf[954] = !f[323] && !f[401] && !f[427] && !f[375];
 	assign leaf[955] = !f[323] && !f[401] && !f[427] && f[375];
 	assign leaf[956] = !f[323] && !f[401] && f[427] && !f[497];
@@ -15214,7 +15214,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[968] = f[323] && f[298] && f[245] && !f[405];
 	assign leaf[969] = f[323] && f[298] && f[245] && f[405];
 	
-	// Classifier: 9 Iteration: 69
+	// Digit: 9, Tree: 69
 	assign leaf[970] = !f[500] && !f[350] && !f[438] && !f[522];
 	assign leaf[971] = !f[500] && !f[350] && !f[438] && f[522];
 	assign leaf[972] = !f[500] && !f[350] && f[438] && !f[493];
@@ -15225,7 +15225,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[977] = !f[500] && f[350] && f[460] && f[372];
 	assign leaf[978] = f[500];
 	
-	// Classifier: 9 Iteration: 70
+	// Digit: 9, Tree: 70
 	assign leaf[979] = !f[734] && !f[247] && !f[122] && !f[228];
 	assign leaf[980] = !f[734] && !f[247] && !f[122] && f[228];
 	assign leaf[981] = !f[734] && !f[247] && f[122];
@@ -15236,7 +15236,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[986] = f[734] && !f[624];
 	assign leaf[987] = f[734] && f[624];
 	
-	// Classifier: 9 Iteration: 71
+	// Digit: 9, Tree: 71
 	assign leaf[988] = !f[566] && !f[175] && !f[639] && !f[524];
 	assign leaf[989] = !f[566] && !f[175] && !f[639] && f[524];
 	assign leaf[990] = !f[566] && !f[175] && f[639] && !f[426];
@@ -15248,7 +15248,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[996] = f[566] && f[551] && !f[320] && f[315];
 	assign leaf[997] = f[566] && f[551] && f[320];
 	
-	// Classifier: 9 Iteration: 72
+	// Digit: 9, Tree: 72
 	assign leaf[998] = !f[381] && !f[432] && !f[491] && !f[206];
 	assign leaf[999] = !f[381] && !f[432] && !f[491] && f[206];
 	assign leaf[1000] = !f[381] && !f[432] && f[491] && !f[156];
@@ -15266,7 +15266,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1012] = f[381] && f[437] && f[210] && !f[265];
 	assign leaf[1013] = f[381] && f[437] && f[210] && f[265];
 	
-	// Classifier: 9 Iteration: 73
+	// Digit: 9, Tree: 73
 	assign leaf[1014] = !f[734] && !f[368] && !f[374] && !f[400];
 	assign leaf[1015] = !f[734] && !f[368] && !f[374] && f[400];
 	assign leaf[1016] = !f[734] && !f[368] && f[374] && !f[400];
@@ -15277,7 +15277,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1021] = f[734] && !f[321];
 	assign leaf[1022] = f[734] && f[321];
 	
-	// Classifier: 9 Iteration: 74
+	// Digit: 9, Tree: 74
 	assign leaf[1023] = !f[351] && !f[377] && !f[323] && !f[407];
 	assign leaf[1024] = !f[351] && !f[377] && !f[323] && f[407];
 	assign leaf[1025] = !f[351] && !f[377] && f[323] && !f[709];
@@ -15295,7 +15295,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1037] = f[351] && f[511] && f[659] && !f[521];
 	assign leaf[1038] = f[351] && f[511] && f[659] && f[521];
 	
-	// Classifier: 9 Iteration: 75
+	// Digit: 9, Tree: 75
 	assign leaf[1039] = !f[686] && !f[603] && !f[715] && !f[186];
 	assign leaf[1040] = !f[686] && !f[603] && !f[715] && f[186];
 	assign leaf[1041] = !f[686] && !f[603] && f[715] && !f[521];
@@ -15313,7 +15313,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1053] = f[686] && f[572] && f[428] && !f[604];
 	assign leaf[1054] = f[686] && f[572] && f[428] && f[604];
 	
-	// Classifier: 9 Iteration: 76
+	// Digit: 9, Tree: 76
 	assign leaf[1055] = !f[742] && !f[162] && !f[229] && !f[740];
 	assign leaf[1056] = !f[742] && !f[162] && !f[229] && f[740];
 	assign leaf[1057] = !f[742] && !f[162] && f[229] && !f[260];
@@ -15327,7 +15327,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1065] = f[742] && f[328] && f[345] && !f[494];
 	assign leaf[1066] = f[742] && f[328] && f[345] && f[494];
 	
-	// Classifier: 9 Iteration: 77
+	// Digit: 9, Tree: 77
 	assign leaf[1067] = !f[350] && !f[384] && !f[467] && !f[378];
 	assign leaf[1068] = !f[350] && !f[384] && !f[467] && f[378];
 	assign leaf[1069] = !f[350] && !f[384] && f[467] && !f[288];
@@ -15344,7 +15344,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1080] = f[350] && f[324] && f[487] && !f[628];
 	assign leaf[1081] = f[350] && f[324] && f[487] && f[628];
 	
-	// Classifier: 9 Iteration: 78
+	// Digit: 9, Tree: 78
 	assign leaf[1082] = !f[575] && !f[294] && !f[685] && !f[345];
 	assign leaf[1083] = !f[575] && !f[294] && !f[685] && f[345];
 	assign leaf[1084] = !f[575] && !f[294] && f[685] && !f[520];
@@ -15362,7 +15362,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1096] = f[575] && f[517] && f[456] && !f[657];
 	assign leaf[1097] = f[575] && f[517] && f[456] && f[657];
 	
-	// Classifier: 9 Iteration: 79
+	// Digit: 9, Tree: 79
 	assign leaf[1098] = !f[131] && !f[599] && !f[377] && !f[488];
 	assign leaf[1099] = !f[131] && !f[599] && !f[377] && f[488];
 	assign leaf[1100] = !f[131] && !f[599] && f[377] && !f[714];
@@ -15373,7 +15373,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1105] = !f[131] && f[599] && f[487] && f[434];
 	assign leaf[1106] = f[131];
 	
-	// Classifier: 9 Iteration: 80
+	// Digit: 9, Tree: 80
 	assign leaf[1107] = !f[244] && !f[275] && !f[327] && !f[213];
 	assign leaf[1108] = !f[244] && !f[275] && !f[327] && f[213];
 	assign leaf[1109] = !f[244] && !f[275] && f[327] && !f[211];
@@ -15389,7 +15389,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1119] = f[244] && f[385] && f[440] && !f[486];
 	assign leaf[1120] = f[244] && f[385] && f[440] && f[486];
 	
-	// Classifier: 9 Iteration: 81
+	// Digit: 9, Tree: 81
 	assign leaf[1121] = !f[201] && !f[632] && !f[128] && !f[292];
 	assign leaf[1122] = !f[201] && !f[632] && !f[128] && f[292];
 	assign leaf[1123] = !f[201] && !f[632] && f[128];
@@ -15400,7 +15400,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1128] = f[201] && !f[428];
 	assign leaf[1129] = f[201] && f[428];
 	
-	// Classifier: 9 Iteration: 82
+	// Digit: 9, Tree: 82
 	assign leaf[1130] = !f[599] && !f[543] && !f[540] && !f[740];
 	assign leaf[1131] = !f[599] && !f[543] && !f[540] && f[740];
 	assign leaf[1132] = !f[599] && !f[543] && f[540] && !f[482];
@@ -15418,7 +15418,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1144] = f[599] && f[488] && f[186] && !f[680];
 	assign leaf[1145] = f[599] && f[488] && f[186] && f[680];
 	
-	// Classifier: 9 Iteration: 83
+	// Digit: 9, Tree: 83
 	assign leaf[1146] = !f[744] && !f[524] && !f[469] && !f[379];
 	assign leaf[1147] = !f[744] && !f[524] && !f[469] && f[379];
 	assign leaf[1148] = !f[744] && !f[524] && f[469] && !f[413];
@@ -15434,7 +15434,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1158] = f[744] && f[434] && !f[690] && f[287];
 	assign leaf[1159] = f[744] && f[434] && f[690];
 	
-	// Classifier: 9 Iteration: 84
+	// Digit: 9, Tree: 84
 	assign leaf[1160] = !f[508] && !f[350] && !f[340] && !f[401];
 	assign leaf[1161] = !f[508] && !f[350] && !f[340] && f[401];
 	assign leaf[1162] = !f[508] && !f[350] && f[340] && !f[212];
@@ -15445,7 +15445,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1167] = !f[508] && f[350] && f[352] && f[402];
 	assign leaf[1168] = f[508];
 	
-	// Classifier: 9 Iteration: 85
+	// Digit: 9, Tree: 85
 	assign leaf[1169] = !f[742] && !f[407] && !f[346] && !f[574];
 	assign leaf[1170] = !f[742] && !f[407] && !f[346] && f[574];
 	assign leaf[1171] = !f[742] && !f[407] && f[346] && !f[432];
@@ -15461,14 +15461,14 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1181] = f[742] && f[573] && !f[458];
 	assign leaf[1182] = f[742] && f[573] && f[458];
 	
-	// Classifier: 9 Iteration: 86
+	// Digit: 9, Tree: 86
 	assign leaf[1183] = !f[500] && !f[162] && !f[122] && !f[686];
 	assign leaf[1184] = !f[500] && !f[162] && !f[122] && f[686];
 	assign leaf[1185] = !f[500] && !f[162] && f[122];
 	assign leaf[1186] = !f[500] && f[162];
 	assign leaf[1187] = f[500];
 	
-	// Classifier: 9 Iteration: 87
+	// Digit: 9, Tree: 87
 	assign leaf[1188] = !f[742] && !f[351] && !f[433] && !f[489];
 	assign leaf[1189] = !f[742] && !f[351] && !f[433] && f[489];
 	assign leaf[1190] = !f[742] && !f[351] && f[433] && !f[516];
@@ -15485,7 +15485,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1201] = f[742] && f[290] && f[234] && !f[461];
 	assign leaf[1202] = f[742] && f[290] && f[234] && f[461];
 	
-	// Classifier: 9 Iteration: 88
+	// Digit: 9, Tree: 88
 	assign leaf[1203] = !f[269] && !f[185] && !f[299] && !f[412];
 	assign leaf[1204] = !f[269] && !f[185] && !f[299] && f[412];
 	assign leaf[1205] = !f[269] && !f[185] && f[299] && !f[241];
@@ -15503,7 +15503,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1217] = f[269] && f[187] && f[185] && !f[241];
 	assign leaf[1218] = f[269] && f[187] && f[185] && f[241];
 	
-	// Classifier: 9 Iteration: 89
+	// Digit: 9, Tree: 89
 	assign leaf[1219] = !f[183] && !f[239] && !f[657] && !f[291];
 	assign leaf[1220] = !f[183] && !f[239] && !f[657] && f[291];
 	assign leaf[1221] = !f[183] && !f[239] && f[657] && !f[156];
@@ -15520,7 +15520,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1232] = f[183] && f[211] && f[291] && !f[345];
 	assign leaf[1233] = f[183] && f[211] && f[291] && f[345];
 	
-	// Classifier: 9 Iteration: 90
+	// Digit: 9, Tree: 90
 	assign leaf[1234] = !f[256] && !f[342] && !f[387] && !f[320];
 	assign leaf[1235] = !f[256] && !f[342] && !f[387] && f[320];
 	assign leaf[1236] = !f[256] && !f[342] && f[387];
@@ -15531,7 +15531,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1241] = f[256] && !f[398];
 	assign leaf[1242] = f[256] && f[398];
 	
-	// Classifier: 9 Iteration: 91
+	// Digit: 9, Tree: 91
 	assign leaf[1243] = !f[742] && !f[740] && !f[182] && !f[266];
 	assign leaf[1244] = !f[742] && !f[740] && !f[182] && f[266];
 	assign leaf[1245] = !f[742] && !f[740] && f[182] && !f[237];
@@ -15546,7 +15546,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1254] = f[742] && f[326] && !f[601] && f[458];
 	assign leaf[1255] = f[742] && f[326] && f[601];
 	
-	// Classifier: 9 Iteration: 92
+	// Digit: 9, Tree: 92
 	assign leaf[1256] = !f[740] && !f[472] && !f[184] && !f[602];
 	assign leaf[1257] = !f[740] && !f[472] && !f[184] && f[602];
 	assign leaf[1258] = !f[740] && !f[472] && f[184] && !f[717];
@@ -15558,7 +15558,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1264] = f[740] && !f[544] && f[490] && f[713];
 	assign leaf[1265] = f[740] && f[544];
 	
-	// Classifier: 9 Iteration: 93
+	// Digit: 9, Tree: 93
 	assign leaf[1266] = !f[201] && !f[575] && !f[685] && !f[349];
 	assign leaf[1267] = !f[201] && !f[575] && !f[685] && f[349];
 	assign leaf[1268] = !f[201] && !f[575] && f[685] && !f[294];
@@ -15569,7 +15569,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1273] = !f[201] && f[575] && f[518] && f[179];
 	assign leaf[1274] = f[201];
 	
-	// Classifier: 9 Iteration: 94
+	// Digit: 9, Tree: 94
 	assign leaf[1275] = !f[536] && !f[201] && !f[599] && !f[654];
 	assign leaf[1276] = !f[536] && !f[201] && !f[599] && f[654];
 	assign leaf[1277] = !f[536] && !f[201] && f[599] && !f[487];
@@ -15577,7 +15577,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1279] = !f[536] && f[201];
 	assign leaf[1280] = f[536];
 	
-	// Classifier: 9 Iteration: 95
+	// Digit: 9, Tree: 95
 	assign leaf[1281] = !f[174] && !f[322] && !f[402] && !f[456];
 	assign leaf[1282] = !f[174] && !f[322] && !f[402] && f[456];
 	assign leaf[1283] = !f[174] && !f[322] && f[402] && !f[455];
@@ -15588,7 +15588,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1288] = !f[174] && f[322] && f[157] && f[315];
 	assign leaf[1289] = f[174];
 	
-	// Classifier: 9 Iteration: 96
+	// Digit: 9, Tree: 96
 	assign leaf[1290] = !f[408] && !f[468] && !f[157] && !f[410];
 	assign leaf[1291] = !f[408] && !f[468] && !f[157] && f[410];
 	assign leaf[1292] = !f[408] && !f[468] && f[157] && !f[521];
@@ -15606,7 +15606,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1304] = f[408] && f[467] && f[384] && !f[322];
 	assign leaf[1305] = f[408] && f[467] && f[384] && f[322];
 	
-	// Classifier: 9 Iteration: 97
+	// Digit: 9, Tree: 97
 	assign leaf[1306] = !f[191] && !f[326] && !f[396] && !f[462];
 	assign leaf[1307] = !f[191] && !f[326] && !f[396] && f[462];
 	assign leaf[1308] = !f[191] && !f[326] && f[396] && !f[398];
@@ -15618,7 +15618,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1314] = f[191] && !f[188];
 	assign leaf[1315] = f[191] && f[188];
 	
-	// Classifier: 9 Iteration: 98
+	// Digit: 9, Tree: 98
 	assign leaf[1316] = !f[186] && !f[262] && !f[205] && !f[466];
 	assign leaf[1317] = !f[186] && !f[262] && !f[205] && f[466];
 	assign leaf[1318] = !f[186] && !f[262] && f[205] && !f[179];
@@ -15636,7 +15636,7 @@ module decision_tree_leaves_9(input logic [0:783] f, output logic [0:1347] leaf)
 	assign leaf[1330] = f[186] && f[241] && f[238] && !f[491];
 	assign leaf[1331] = f[186] && f[241] && f[238] && f[491];
 	
-	// Classifier: 9 Iteration: 99
+	// Digit: 9, Tree: 99
 	assign leaf[1332] = !f[350] && !f[322] && !f[410] && !f[206];
 	assign leaf[1333] = !f[350] && !f[322] && !f[410] && f[206];
 	assign leaf[1334] = !f[350] && !f[322] && f[410] && !f[407];

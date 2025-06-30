@@ -32,7 +32,7 @@ def generate_decision_tree_module(classifiers):
         leaf_id = 0
         statements = []
         for iteration_id, tree in enumerate(classifier_trees):
-            statements.append(f"// Classifier: {classifier_id} Iteration: {iteration_id}")
+            statements.append(f"// Digit: {classifier_id}, Tree: {iteration_id}")
             for leaf, value in tree:
                 statement = f"assign leaf[{leaf_id}] = {" && ".join([f"{"!" if term.startswith("n") else ""}f[{term[1:]}]" for term in leaf])};"
                 statements.append(statement)
@@ -89,8 +89,9 @@ def generate_leaf_counter_module(classifiers):
 
             statements.append(f"""
     always_ff @(posedge clk) begin
-        for (i = 0; i < {len(terms)}; i = i + 1)
+        for (int i = 0; i < {len(terms)}; i = i + 1) begin
             {buf_prefix}l{0}[i] <= {buf_prefix}l{0}_out[i];
+        end
     end\n""")
 
             term_count = len(terms)
@@ -109,8 +110,9 @@ def generate_leaf_counter_module(classifiers):
                     statements.append(f"assign {buf(layer_i, i, postfix="_out")} = {buf(layer_i-1, i)};")
                 statements.append(f"""
     always_ff @(posedge clk) begin
-        for (i = 0; i < {next_term_count}; i = i + 1)
+        for (int i = 0; i < {next_term_count}; i = i + 1) begin
             {buf(layer_i, "i")} <= {buf(layer_i, "i", postfix="_out")};
+        end
     end\n""")
                 term_count = next_term_count
 
@@ -119,7 +121,7 @@ def generate_leaf_counter_module(classifiers):
 
         statements = []
         for value_id, value in enumerate(discrete_values):
-            statements.append(f"// {value}")
+            statements.append(f"// Digit: {classifier_id}, Value: {value}")
             if value in leaf_ids_by_value:
                 leaf_groups = combine_leaf_groups(leaf_ids_by_value[value])
                 statements.append(f"logic [0:{len(leaf_groups)-1}] g{value_id};")
@@ -141,7 +143,6 @@ def generate_leaf_counter_module(classifiers):
 
         leaf_count = leaf_id
         return f"""module leaf_counter_{classifier_id}(input logic clk, input logic [0:{leaf_count-1}] l, output logic [7:0] val [0:{len(discrete_values)-1}]);
-    integer i;
 \t{"\n\t".join(statements)}
 endmodule"""
 
@@ -152,8 +153,7 @@ def generate_classifier_module(classifiers):
     return f"""
 module mnist_classifier(input logic clk, input logic [0:783] image, output logic [3:0] digit);
     logic [7:0] score [0:9];
-    integer i;
-    
+
 {"\n\n\n".join([
     f'''    // Digit {i}
     wire [0:{sum([len(tree) for tree in trees])-1}] leaf_{i};
@@ -161,14 +161,16 @@ module mnist_classifier(input logic clk, input logic [0:783] image, output logic
     wire [7:0] score_{i};
     (* preserve, noprune *) reg [0:783] image_{i}_reg;
     reg [7:0] val_count_{i}_reg [0:12];
+    
     decision_tree_leaves_{i} dtl_{i} (.f(image_{i}_reg), .leaf(leaf_{i}));
     leaf_counter_{i} lc_{i} (.clk(clk), .l(leaf_{i}), .val(val_count_{i}));
     counter_adder ca_{i} (.clk(clk), .val(val_count_{i}_reg), .score(score_{i}));
 
     always_ff @(posedge clk) begin
         image_{i}_reg <= image;
-        for (i = 0; i < 13; i = i + 1)
+        for (int i = 0; i < 13; i = i + 1) begin
             val_count_{i}_reg[i] <= val_count_{i}[i];
+        end
         score[{i}] <= score_{i};
     end
     '''
