@@ -4,17 +4,17 @@ This repo contains the code for a high-speed, FPGA-optimized implementation of b
 
 This work is submitted to the [Digit Recognition Low Power and Speed Challenge @ ICIP 2025](https://mlunglma.github.io/challenge.html)
 
-## Reproduce Results
+## Reproduce Reports
 
-### Synthesize Verilog Design using Quartus Prime
-
-Create a new project and import all SystemVerilog files from /fpga/hdl/. Assign all pins. The following custom settings are used:
-
-- Compiler Settings > Advanced Settings > Auto Shift Register Recognition = OFF
-- Optimization mode > Balanced (Normal flow)
+Open the quartus/mnist_classifier.qpf project in Quartus Prime.
 
 Compile the design to get the utilization and timing report.
 Use the Power Analyzer Tool to get the power report.
+
+The project is based on the SystemVerilog files from /fpga/hdl/. The following custom settings are used:
+- Compiler Settings > Advanced Settings > Auto Shift Register Recognition = OFF
+- Optimization mode > Balanced (Normal flow)
+
 
 ### Get accuracy on MNIST test set:
 
