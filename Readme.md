@@ -1,4 +1,4 @@
-# MNIST FPGA
+# Discretized Boosted Decision Trees for High-Speed FPGA-Optimized Digit Recognition
 
 This repo contains the code for a high-speed, FPGA-optimized implementation of boosted decision trees for MNIST handwritten digit classification.
 
