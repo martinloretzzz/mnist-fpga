@@ -4,6 +4,10 @@ This repo contains the code for a high-speed, FPGA-optimized implementation of b
 
 This work is submitted to the [Digit Recognition Low Power and Speed Challenge @ ICIP 2025](https://mlunglma.github.io/challenge.html)
 
+## Paper
+[Discretized Boosted Decision Trees for High-Speed
+FPGA-Optimized Digit Recognition](./docs/paper.pdf)
+
 ## Reproduce Reports
 
 Open the quartus/mnist_classifier.qpf project in Quartus Prime.
