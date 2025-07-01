@@ -42,7 +42,7 @@ Build the fork from source and install python package (see the [XGBoost document
 ### Train boosted tree
 
 Run the following command to train the boosted tree and export the model to `model.json`:
-`python boosted_tree.py`
+`python train_boosted_tree.py`
 
 ### Generate SystemVerilog Code:
 
