@@ -1,6 +1,8 @@
 import json
 from collections import Counter
 import matplotlib.pyplot as plt
+import torchvision
+from util import binarize
 
 def extract_leaf_values(node):
     leaf_values = []
@@ -34,7 +36,7 @@ plt.xticks(fontsize=10)
 plt.yticks(fontsize=10)
 plt.tight_layout()
 
-output_image = "histogram.png"
+output_image = "docs/histogram.png"
 plt.savefig(output_image, dpi=300, bbox_inches='tight')
 plt.close()
 
@@ -59,3 +61,22 @@ discrete_leaf_values = [
     *[2**e for e in range(-6, 1 + 1)],
 ]
 print(f"Discrete leaf values: {discrete_leaf_values}")
+
+train_dataset = torchvision.datasets.MNIST(root='./data', train=True, download=True)
+
+plt.figure(figsize=(10, 5))
+
+for i in range(4):
+    plt.subplot(2, 4, i + 1)
+    plt.imshow(train_dataset.data[i], cmap='gray')
+    plt.title(f"Label: {train_dataset.targets[i]}")
+    plt.axis('off')
+
+for i in range(4):
+    plt.subplot(2, 4, 4 + i + 1)
+    img = binarize(train_dataset.data[i], 0.3 * 256)
+    plt.imshow(img, cmap='gray')
+    plt.axis('off')
+
+plt.tight_layout()
+plt.savefig("docs/binarized_input.png", dpi=300)
